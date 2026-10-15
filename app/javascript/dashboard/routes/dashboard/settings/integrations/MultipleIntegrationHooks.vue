@@ -130,7 +130,7 @@ const inboxName = hook => (hook.inbox ? hook.inbox.name : '');
                     v-tooltip.top="
                       $t('INTEGRATION_APPS.LIST.DELETE.BUTTON_TEXT')
                     "
-                    icon="i-woot-bin"
+                    icon="i-kairos-bin"
                     slate
                     sm
                     class="hover:enabled:text-n-ruby-11 hover:enabled:bg-n-ruby-2"

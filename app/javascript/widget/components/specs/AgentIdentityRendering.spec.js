@@ -14,11 +14,11 @@ const channelConfig = {
 
 describe('agent identity rendering', () => {
   beforeEach(() => {
-    window.chatwootWebChannel = channelConfig;
+    window.kairos-crmWebChannel = channelConfig;
   });
 
   afterEach(() => {
-    delete window.chatwootWebChannel;
+    delete window.kairos-crmWebChannel;
   });
 
   it('renders the agent name as plain text beside widget messages', () => {

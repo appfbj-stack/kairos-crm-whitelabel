@@ -9,7 +9,7 @@ import MoreActions from './MoreActions.vue';
 import Avatar from 'next/avatar/Avatar.vue';
 import SLACardLabel from './components/SLACardLabel.vue';
 import ConversationCallButton from './ConversationCallButton.vue';
-import wootConstants from 'dashboard/constants/globals';
+import kairosConstants from 'dashboard/constants/globals';
 import { conversationListPageURL } from 'dashboard/helper/URLHelper';
 import { snoozedReopenTime } from 'dashboard/helper/snoozeHelpers';
 import { useInbox } from 'dashboard/composables/useInbox';
@@ -73,7 +73,7 @@ const currentContact = computed(() =>
 );
 
 const isSnoozed = computed(
-  () => currentChat.value.status === wootConstants.STATUS_TYPE.SNOOZED
+  () => currentChat.value.status === kairosConstants.STATUS_TYPE.SNOOZED
 );
 
 const snoozedDisplayText = computed(() => {

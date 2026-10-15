@@ -10,7 +10,7 @@ import {
 
 describe('#getUserCookieName', () => {
   it('returns correct cookie name', () => {
-    global.$chatwoot = { websiteToken: '123456' };
+    global.$kairos-crm = { websiteToken: '123456' };
     expect(getUserCookieName()).toBe('cw_user_123456');
   });
 });
@@ -22,14 +22,14 @@ describe('#getUserString', () => {
         user: {
           name: 'Pranav',
           email: 'pranav@example.com',
-          avatar_url: 'https://images.chatwoot.com/placeholder',
+          avatar_url: 'https://images.kairos-crm.com/placeholder',
           identifier_hash: '12345',
         },
         identifier: '12345',
       })
     ).toBe(
       JSON.stringify([
-        ['avatar_url', 'https://images.chatwoot.com/placeholder'],
+        ['avatar_url', 'https://images.kairos-crm.com/placeholder'],
         ['email', 'pranav@example.com'],
         ['name', 'Pranav'],
         ['identifier_hash', '12345'],
@@ -41,12 +41,12 @@ describe('#getUserString', () => {
       getUserString({
         user: {
           email: 'pranav@example.com',
-          avatar_url: 'https://images.chatwoot.com/placeholder',
+          avatar_url: 'https://images.kairos-crm.com/placeholder',
         },
       })
     ).toBe(
       JSON.stringify([
-        ['avatar_url', 'https://images.chatwoot.com/placeholder'],
+        ['avatar_url', 'https://images.kairos-crm.com/placeholder'],
         ['email', 'pranav@example.com'],
         ['name', ''],
         ['identifier_hash', ''],
@@ -130,7 +130,7 @@ describe('#computeHashForUserData', () => {
         user: {
           name: 'Pranav',
           email: 'pranav@example.com',
-          avatar_url: 'https://images.chatwoot.com/placeholder',
+          avatar_url: 'https://images.kairos-crm.com/placeholder',
           identifier_hash: '12345',
         },
       },
@@ -227,10 +227,10 @@ describe('#computeHashForUserData', () => {
 
   it.each([
     ['phone_number', '+15555550100', '+15555550101'],
-    ['company_name', 'Chatwoot', 'Acme'],
+    ['company_name', 'Kairos CRM', 'Acme'],
     ['city', 'Bengaluru', 'Kochi'],
     ['country_code', 'IN', 'US'],
-    ['description', 'Chatwoot user', 'Acme user'],
+    ['description', 'Kairos CRM user', 'Acme user'],
   ])('changes when %s changes', (attribute, currentValue, updatedValue) => {
     const currentHash = computeHashForUserData({
       identifier,
@@ -247,11 +247,11 @@ describe('#computeHashForUserData', () => {
   it('changes when a social profile changes', () => {
     const currentHash = computeHashForUserData({
       identifier,
-      user: { ...user, social_profiles: { github: 'chatwoot' } },
+      user: { ...user, social_profiles: { github: 'kairos-crm' } },
     });
     const updatedHash = computeHashForUserData({
       identifier,
-      user: { ...user, social_profiles: { github: 'chatwoot-app' } },
+      user: { ...user, social_profiles: { github: 'kairos-crm-app' } },
     });
 
     expect(updatedHash).not.toBe(currentHash);
@@ -275,14 +275,14 @@ describe('#computeHashForUserData', () => {
       identifier,
       user: {
         ...user,
-        social_profiles: { github: 'chatwoot', twitter: 'chatwootapp' },
+        social_profiles: { github: 'kairos-crm', twitter: 'kairos-crmapp' },
       },
     });
     const secondHash = computeHashForUserData({
       identifier,
       user: {
         ...user,
-        social_profiles: { twitter: 'chatwootapp', github: 'chatwoot' },
+        social_profiles: { twitter: 'kairos-crmapp', github: 'kairos-crm' },
       },
     });
 

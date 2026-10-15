@@ -92,7 +92,7 @@ const ACTION_ICONS = {
   remove_assigned_agent: 'i-lucide-user-round-x',
   remove_assigned_team: 'i-lucide-users',
   add_label: 'i-lucide-tag',
-  remove_label: 'i-woot-tag-remove',
+  remove_label: 'i-kairos-tag-remove',
   send_email_to_team: 'i-lucide-send',
   send_email_transcript: 'i-lucide-mail',
   send_message: 'i-lucide-message-square',

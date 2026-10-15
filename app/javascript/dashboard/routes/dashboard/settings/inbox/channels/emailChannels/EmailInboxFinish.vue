@@ -36,7 +36,7 @@ const showForwardingAddress = computed(() => {
       <p class="mt-8 mb-4 font-medium text-n-slate-11">
         {{ $t('INBOX_MGMT.ADD.EMAIL_CHANNEL.FORWARDING_ADDRESS_LABEL') }}
       </p>
-      <woot-code lang="html" :script="inbox.forward_to_email" />
+      <kairos-code lang="html" :script="inbox.forward_to_email" />
     </div>
 
     <p class="mt-8 text-sm text-n-slate-11 pb-4">
@@ -45,7 +45,7 @@ const showForwardingAddress = computed(() => {
           name: 'settings_inbox_show',
           params: { inboxId: inboxId, tab: 'configuration' },
         }"
-        class="text-n-woot-600 hover:text-n-woot-700 underline"
+        class="text-n-kairos-600 hover:text-n-kairos-700 underline"
       >
         {{ $t('INBOX_MGMT.ADD.EMAIL_CHANNEL.CONFIGURE_SMTP_IMAP_LINK') }}
       </router-link>

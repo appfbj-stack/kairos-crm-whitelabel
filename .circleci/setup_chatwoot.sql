@@ -1,6 +1,6 @@
-CREATE USER chatwoot CREATEDB;
-ALTER USER chatwoot PASSWORD 'REPLACE_WITH_PASSWORD';
-ALTER ROLE chatwoot SUPERUSER;
+CREATE USER kairos-crm CREATEDB;
+ALTER USER kairos-crm PASSWORD 'REPLACE_WITH_PASSWORD';
+ALTER ROLE kairos-crm SUPERUSER;
 
 UPDATE pg_database SET datistemplate = FALSE WHERE datname = 'template1';
 DROP DATABASE template1;

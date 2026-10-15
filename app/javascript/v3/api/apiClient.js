@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const { apiHost = '' } = window.chatwootConfig || {};
-const wootAPI = axios.create({ baseURL: `${apiHost}/` });
+const { apiHost = '' } = window.kairos-crmConfig || {};
+const kairosAPI = axios.create({ baseURL: `${apiHost}/` });
 
-export default wootAPI;
+export default kairosAPI;

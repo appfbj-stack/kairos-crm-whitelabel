@@ -558,7 +558,7 @@ export default {
   width: 100%;
 }
 
-.ProseMirror-woot-style {
+.ProseMirror-kairos-style {
   min-height: 5rem;
   max-height: 7.5rem;
   overflow: auto;

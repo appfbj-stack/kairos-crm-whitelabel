@@ -6,7 +6,7 @@ import { getUnixTime } from 'date-fns';
 import { findSnoozeTime } from 'dashboard/helper/snoozeHelpers';
 import { emitter } from 'shared/helpers/mitt';
 import { useBulkActions } from 'dashboard/composables/chatlist/useBulkActions.js';
-import wootConstants from 'dashboard/constants/globals';
+import kairosConstants from 'dashboard/constants/globals';
 import {
   CMD_BULK_ACTION_SNOOZE_CONVERSATION,
   CMD_BULK_ACTION_REOPEN_CONVERSATION,
@@ -86,7 +86,7 @@ const selectedLabel = computed(() =>
 const showCustomTimeSnoozeModal = ref(false);
 
 function onCmdSnoozeConversation(snoozeType) {
-  if (snoozeType === wootConstants.SNOOZE_OPTIONS.UNTIL_CUSTOM_TIME) {
+  if (snoozeType === kairosConstants.SNOOZE_OPTIONS.UNTIL_CUSTOM_TIME) {
     showCustomTimeSnoozeModal.value = true;
   } else if (typeof snoozeType === 'number') {
     onUpdateConversations('snoozed', snoozeType);
@@ -204,7 +204,7 @@ onUnmounted(() => {
       </div>
     </div>
   </Transition>
-  <woot-modal
+  <kairos-modal
     v-model:show="showCustomTimeSnoozeModal"
     :on-close="hideCustomSnoozeModal"
   >
@@ -212,5 +212,5 @@ onUnmounted(() => {
       @close="hideCustomSnoozeModal"
       @choose-time="customSnoozeTime"
     />
-  </woot-modal>
+  </kairos-modal>
 </template>

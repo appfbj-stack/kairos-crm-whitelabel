@@ -158,7 +158,7 @@ module.exports = {
       'error',
       {
         ignorePatterns: [
-          '^woot-',
+          '^kairos-',
           '^fluent-',
           '^multiselect',
           '^router-link',

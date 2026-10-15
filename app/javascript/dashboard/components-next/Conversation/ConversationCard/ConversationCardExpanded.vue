@@ -109,7 +109,7 @@ const selectedModel = computed({
         />
         <Icon
           v-else
-          icon="i-woot-empty-assignee"
+          icon="i-kairos-empty-assignee"
           class="size-4 text-n-slate-7"
         />
       </div>
@@ -137,7 +137,7 @@ const selectedModel = computed({
         class="h-6 flex items-center gap-1 max-w-20 w-full min-w-0 flex-shrink-0"
       >
         <Icon
-          icon="i-woot-hash"
+          icon="i-kairos-hash"
           class="size-3.5 text-n-slate-10 flex-shrink-0"
         />
         <span class="text-body-main text-n-slate-11 truncate">

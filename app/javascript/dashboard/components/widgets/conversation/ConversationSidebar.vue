@@ -4,7 +4,7 @@ import ContactPanel from 'dashboard/routes/dashboard/conversation/ContactPanel.v
 import { useUISettings } from 'dashboard/composables/useUISettings';
 import { useWindowSize } from '@vueuse/core';
 import { vOnClickOutside } from '@vueuse/components';
-import wootConstants from 'dashboard/constants/globals';
+import kairosConstants from 'dashboard/constants/globals';
 
 defineProps({
   currentChat: {
@@ -26,7 +26,7 @@ const activeTab = computed(() => {
 });
 
 const isSmallScreen = computed(
-  () => windowWidth.value < wootConstants.SMALL_SCREEN_BREAKPOINT
+  () => windowWidth.value < kairosConstants.SMALL_SCREEN_BREAKPOINT
 );
 
 const closeContactPanel = () => {

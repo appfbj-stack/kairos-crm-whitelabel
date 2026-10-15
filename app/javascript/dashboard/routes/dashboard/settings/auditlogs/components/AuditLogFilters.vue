@@ -6,7 +6,7 @@ import { vOnClickOutside } from '@vueuse/components';
 import Button from 'dashboard/components-next/button/Button.vue';
 import DropdownMenu from 'dashboard/components-next/dropdown-menu/DropdownMenu.vue';
 import Icon from 'dashboard/components-next/icon/Icon.vue';
-import WootDatePicker from 'dashboard/components/ui/DatePicker/DatePicker.vue';
+import KairosDatePicker from 'dashboard/components/ui/DatePicker/DatePicker.vue';
 import { DATE_RANGE_TYPES } from 'dashboard/components/ui/DatePicker/helpers/DatePickerHelper';
 import { EVENT_TYPE_GROUPS } from 'dashboard/helper/auditlogHelper';
 
@@ -174,7 +174,7 @@ const handleFilterAction = ({ action, value }) => {
     v-on-click-outside="closeFilterMenu"
     class="flex flex-wrap sm:flex-nowrap items-center gap-2 sm:shrink-0"
   >
-    <WootDatePicker
+    <KairosDatePicker
       v-if="isPickerVisible"
       :key="pickerKey"
       v-model:date-range="pickerDateRange"

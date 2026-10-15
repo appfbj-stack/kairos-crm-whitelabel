@@ -438,7 +438,7 @@ describe Whatsapp::IncomingMessageWhatsappCloudService do
         }.with_indifferent_access
       end
 
-      context 'when the original message exists in Chatwoot' do
+      context 'when the original message exists in Kairos CRM' do
         it 'sets in_reply_to to reference the existing message' do
           # Create a conversation and the original message that will be replied to first
           contact = create(:contact, phone_number: '+16503071063', account: whatsapp_channel.account)
@@ -459,7 +459,7 @@ describe Whatsapp::IncomingMessageWhatsappCloudService do
         end
       end
 
-      context 'when the original message does not exist in Chatwoot' do
+      context 'when the original message does not exist in Kairos CRM' do
         it 'does not set in_reply_to (discards the reply reference)' do
           described_class.new(inbox: whatsapp_channel.inbox, params: reply_params).perform
 

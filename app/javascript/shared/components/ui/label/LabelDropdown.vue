@@ -136,7 +136,7 @@ export default {
       class="flex items-start justify-start flex-auto flex-grow flex-shrink overflow-auto"
     >
       <div class="w-full my-1">
-        <woot-dropdown-menu>
+        <kairos-dropdown-menu>
           <LabelDropdownItem
             v-for="label in filteredActiveLabels"
             :key="label.title"
@@ -145,7 +145,7 @@ export default {
             :selected="selectedLabels.includes(label.title)"
             @select-label="onAddRemove(label)"
           />
-        </woot-dropdown-menu>
+        </kairos-dropdown-menu>
         <div
           v-if="noResult"
           class="flex justify-center py-4 px-2.5 font-medium text-xs text-n-slate-11"
@@ -166,7 +166,7 @@ export default {
             @click="showCreateModal"
           />
 
-          <woot-modal
+          <kairos-modal
             v-model:show="createModalVisible"
             :on-close="hideCreateModal"
           >
@@ -174,7 +174,7 @@ export default {
               :prefill-title="parsedSearch"
               @close="hideCreateModal"
             />
-          </woot-modal>
+          </kairos-modal>
         </div>
       </div>
     </div>

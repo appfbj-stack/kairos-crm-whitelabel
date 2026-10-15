@@ -1,4 +1,4 @@
-{
+﻿{
   "GENERAL_SETTINGS": {
     "LIMIT_MESSAGES": {
       "CONVERSATION": "You have exceeded the conversation limit. Hacker plan allows only 500 conversations.",
@@ -11,8 +11,8 @@
     "BACK": "Atgal",
     "DISMISS": "Atsisakyti",
     "UPDATE": {
-      "ERROR": "Nepavyko atnaujinti nustatymų, bandykite dar kartą!",
-      "SUCCESS": "Sėkmingai atnaujinti paskyros nustatymai"
+      "ERROR": "Nepavyko atnaujinti nustatymÅ³, bandykite dar kartÄ…!",
+      "SUCCESS": "SÄ—kmingai atnaujinti paskyros nustatymai"
     },
     "ACCOUNT_DELETE_SECTION": {
       "TITLE": "Delete your Account",
@@ -21,9 +21,9 @@
       "CONFIRM": {
         "TITLE": "Delete Account",
         "MESSAGE": "Deleting your Account is irreversible. Enter your account name below to confirm you want to permanently delete it.",
-        "BUTTON_TEXT": "Ištrinti",
-        "DISMISS": "Atšaukti",
-        "PLACE_HOLDER": "Įveskite {accountName}, kad patvirtintumėte"
+        "BUTTON_TEXT": "IÅ¡trinti",
+        "DISMISS": "AtÅ¡aukti",
+        "PLACE_HOLDER": "Ä®veskite {accountName}, kad patvirtintumÄ—te"
       },
       "SUCCESS": "Account marked for deletion",
       "FAILURE": "Could not delete account, try again!",
@@ -35,14 +35,14 @@
       }
     },
     "FORM": {
-      "ERROR": "Ištaisykite formos klaidas",
+      "ERROR": "IÅ¡taisykite formos klaidas",
       "GENERAL_SECTION": {
         "TITLE": "Pagrindiniai nustatymai",
         "NOTE": ""
       },
       "ACCOUNT_ID": {
         "TITLE": "Paskyros ID",
-        "NOTE": "Šis ID reikalingas, jei kuriate API pagrįstą integraciją"
+        "NOTE": "Å is ID reikalingas, jei kuriate API pagrÄ¯stÄ… integracijÄ…"
       },
       "AUTO_RESOLVE": {
         "TITLE": "Auto-resolve conversations",
@@ -68,28 +68,28 @@
           "PLACEHOLDER": "Select a label"
         },
         "IGNORE_WAITING": {
-          "LABEL": "Skip conversations waiting for agent’s reply"
+          "LABEL": "Skip conversations waiting for agentâ€™s reply"
         },
         "UPDATE_BUTTON": "Save Changes"
       },
       "NAME": {
         "LABEL": "Paskyros vardas",
         "PLACEHOLDER": "Tavo paskyros vardas",
-        "ERROR": "Įveskite galiojantį paskyros vardą"
+        "ERROR": "Ä®veskite galiojantÄ¯ paskyros vardÄ…"
       },
       "LANGUAGE": {
-        "LABEL": "Pasirinkti kalbą",
+        "LABEL": "Pasirinkti kalbÄ…",
         "PLACEHOLDER": "Tavo paskyros vardas",
         "ERROR": ""
       },
       "DOMAIN": {
-        "LABEL": "Įeinančio el. pašto domenas",
-        "PLACEHOLDER": "Domenas, kuriuo gausite el. laiškus",
+        "LABEL": "Ä®einanÄio el. paÅ¡to domenas",
+        "PLACEHOLDER": "Domenas, kuriuo gausite el. laiÅ¡kus",
         "ERROR": ""
       },
       "SUPPORT_EMAIL": {
-        "LABEL": "Pagalbos el. paštas",
-        "PLACEHOLDER": "Jūsų įmonės pagalbos el. paštas",
+        "LABEL": "Pagalbos el. paÅ¡tas",
+        "PLACEHOLDER": "JÅ«sÅ³ Ä¯monÄ—s pagalbos el. paÅ¡tas",
         "ERROR": ""
       },
       "AUTO_RESOLVE_IGNORE_WAITING": {
@@ -119,52 +119,52 @@
         "MESSAGE_HELP": "This message is sent to the customer when a conversation is automatically resolved by the system due to inactivity."
       },
       "FEATURES": {
-        "INBOUND_EMAIL_ENABLED": "Jūsų paskyroje leistas pokalbių tęstinumas su el. laiškais.",
-        "CUSTOM_EMAIL_DOMAIN_ENABLED": "Dabar galite gauti el. laiškus pasirinktame domene."
+        "INBOUND_EMAIL_ENABLED": "JÅ«sÅ³ paskyroje leistas pokalbiÅ³ tÄ™stinumas su el. laiÅ¡kais.",
+        "CUSTOM_EMAIL_DOMAIN_ENABLED": "Dabar galite gauti el. laiÅ¡kus pasirinktame domene."
       }
     },
-    "UPDATE_CHATWOOT": "Yra Chatwoot naujinimas {latestChatwootVersion}. Atnaujinkite savo versiją.",
-    "LEARN_MORE": "Sužinoti daugiau",
-    "PAYMENT_PENDING": "Laukiama jūsų mokėjimo. Atnaujinkite savo mokėjimo informaciją, kad galėtumėte toliau naudoti Chatwoot",
-    "UPGRADE": "Upgrade to continue using Chatwoot",
-    "LIMITS_UPGRADE": "Jūsų paskyra viršijo naudojimo apribojimus, atnaujinkite savo planą, kad galėtumėte toliau naudoti Chatwoot",
-    "OPEN_BILLING": "Atidaryti mokėjimą"
+    "UPDATE_KAIROS_CRM": "Yra Kairos CRM naujinimas {latestKairos CRMVersion}. Atnaujinkite savo versijÄ….",
+    "LEARN_MORE": "SuÅ¾inoti daugiau",
+    "PAYMENT_PENDING": "Laukiama jÅ«sÅ³ mokÄ—jimo. Atnaujinkite savo mokÄ—jimo informacijÄ…, kad galÄ—tumÄ—te toliau naudoti Kairos CRM",
+    "UPGRADE": "Upgrade to continue using Kairos CRM",
+    "LIMITS_UPGRADE": "JÅ«sÅ³ paskyra virÅ¡ijo naudojimo apribojimus, atnaujinkite savo planÄ…, kad galÄ—tumÄ—te toliau naudoti Kairos CRM",
+    "OPEN_BILLING": "Atidaryti mokÄ—jimÄ…"
   },
   "FORMS": {
     "MULTISELECT": {
-      "ENTER_TO_SELECT": "Paspauskite Enter, kad pasirinktumėte",
-      "ENTER_TO_REMOVE": "Paspausti Enter, kad pašalintumėte",
+      "ENTER_TO_SELECT": "Paspauskite Enter, kad pasirinktumÄ—te",
+      "ENTER_TO_REMOVE": "Paspausti Enter, kad paÅ¡alintumÄ—te",
       "NO_OPTIONS": "List is empty",
-      "SELECT_ONE": "Pasirinkti vieną",
+      "SELECT_ONE": "Pasirinkti vienÄ…",
       "SELECT": "Pasirinkti"
     }
   },
   "NOTIFICATIONS_PAGE": {
-    "HEADER": "Perspėjimai",
-    "MARK_ALL_DONE": "Pažymėti viską kaip atliktą",
-    "DELETE_TITLE": "ištrinta",
+    "HEADER": "PerspÄ—jimai",
+    "MARK_ALL_DONE": "PaÅ¾ymÄ—ti viskÄ… kaip atliktÄ…",
+    "DELETE_TITLE": "iÅ¡trinta",
     "UNREAD_NOTIFICATION": {
-      "TITLE": "Neperskaityti Perspėjimai",
-      "ALL_NOTIFICATIONS": "Rodyti visus perspėjimus",
-      "LOADING_UNREAD_MESSAGE": "Neperskaityti perspėjimai parsiunčiami...",
-      "EMPTY_MESSAGE": "Turite neperskaitytų perspėjimų"
+      "TITLE": "Neperskaityti PerspÄ—jimai",
+      "ALL_NOTIFICATIONS": "Rodyti visus perspÄ—jimus",
+      "LOADING_UNREAD_MESSAGE": "Neperskaityti perspÄ—jimai parsiunÄiami...",
+      "EMPTY_MESSAGE": "Turite neperskaitytÅ³ perspÄ—jimÅ³"
     },
     "LIST": {
-      "LOADING_MESSAGE": "Perspėjimai parsiunčiami...",
-      "404": "Nėra Perspėjimų",
+      "LOADING_MESSAGE": "PerspÄ—jimai parsiunÄiami...",
+      "404": "NÄ—ra PerspÄ—jimÅ³",
       "TABLE_HEADER": [
         "Vardas",
         "Telefono numeris",
         "Pokalbiai",
-        "Paskutinį kartą susisiekta"
+        "PaskutinÄ¯ kartÄ… susisiekta"
       ]
     },
     "TYPE_LABEL": {
       "conversation_creation": "Naujas pokalbis",
       "conversation_assignment": "Pokalbis priskirtas",
-      "assigned_conversation_new_message": "Naujas pranešimas",
-      "participating_conversation_new_message": "Naujas pranešimas",
-      "conversation_mention": "Paminėjimas",
+      "assigned_conversation_new_message": "Naujas praneÅ¡imas",
+      "participating_conversation_new_message": "Naujas praneÅ¡imas",
+      "conversation_mention": "PaminÄ—jimas",
       "sla_missed_first_response": "SLA Missed",
       "sla_missed_next_response": "SLA Missed",
       "sla_missed_resolution": "SLA Missed"
@@ -172,7 +172,7 @@
   },
   "NETWORK": {
     "NOTIFICATION": {
-      "OFFLINE": "Atsijungęs",
+      "OFFLINE": "AtsijungÄ™s",
       "RECONNECTING": "Reconnecting...",
       "RECONNECT_SUCCESS": "Reconnected"
     },
@@ -181,88 +181,88 @@
     }
   },
   "COMMAND_BAR": {
-    "SEARCH_PLACEHOLDER": "Ieškoti ar pereiti į",
+    "SEARCH_PLACEHOLDER": "IeÅ¡koti ar pereiti Ä¯",
     "SNOOZE_PLACEHOLDER": "Type a time e.g. tomorrow, 2 hours, next friday, jan 15...",
     "SECTIONS": {
       "GENERAL": "Pagrindinis",
       "REPORTS": "Ataskaitos",
       "CONVERSATION": "Pokalbis",
       "BULK_ACTIONS": "Bulk Actions",
-      "CHANGE_ASSIGNEE": "Pakeisti Priskirtąjį",
-      "CHANGE_PRIORITY": "Pakeisti Prioritetą",
-      "CHANGE_TEAM": "Pakeisti Komandą",
-      "SNOOZE_CONVERSATION": "Atidėti Pokalbį",
-      "ADD_LABEL": "Pridėti etiketę pokalbiui",
-      "REMOVE_LABEL": "Pašalinti pokalbio etiketę",
+      "CHANGE_ASSIGNEE": "Pakeisti PriskirtÄ…jÄ¯",
+      "CHANGE_PRIORITY": "Pakeisti PrioritetÄ…",
+      "CHANGE_TEAM": "Pakeisti KomandÄ…",
+      "SNOOZE_CONVERSATION": "AtidÄ—ti PokalbÄ¯",
+      "ADD_LABEL": "PridÄ—ti etiketÄ™ pokalbiui",
+      "REMOVE_LABEL": "PaÅ¡alinti pokalbio etiketÄ™",
       "SETTINGS": "Nustatymai",
       "AI_ASSIST": "AI pagalba",
-      "APPEARANCE": "Išvaizda",
-      "SNOOZE_NOTIFICATION": "Atidėti pranešimą"
+      "APPEARANCE": "IÅ¡vaizda",
+      "SNOOZE_NOTIFICATION": "AtidÄ—ti praneÅ¡imÄ…"
     },
     "COMMANDS": {
       "GO_TO_MY_INBOX": "Go to My Inbox",
-      "GO_TO_CONVERSATION_DASHBOARD": "Eikite į Pokalbio informacijos skydelį",
-      "GO_TO_CONTACTS_DASHBOARD": "Eikite į Kontaktų informacijos skydelį",
+      "GO_TO_CONVERSATION_DASHBOARD": "Eikite Ä¯ Pokalbio informacijos skydelÄ¯",
+      "GO_TO_CONTACTS_DASHBOARD": "Eikite Ä¯ KontaktÅ³ informacijos skydelÄ¯",
       "GO_TO_CAPTAIN": "Go to Captain",
       "GO_TO_CALLS_DASHBOARD": "Go to Calls Dashboard",
       "GO_TO_CAMPAIGNS": "Go to Campaigns",
       "GO_TO_HELP_CENTER": "Go to Help Center",
-      "GO_TO_REPORTS_OVERVIEW": "Eiti į Ataskaitų apžvalgą",
-      "GO_TO_CONVERSATION_REPORTS": "Eiti į Pokalbių Ataskaitas",
-      "GO_TO_AGENT_REPORTS": "Eiti į Agento Ataskaitas",
-      "GO_TO_LABEL_REPORTS": "Eiti į Etiketės Ataskaitas",
-      "GO_TO_INBOX_REPORTS": "Eiti į Gautų Laiškų Aplanko Ataskaitas",
-      "GO_TO_TEAM_REPORTS": "Eiti į Komandos Ataskaitas",
+      "GO_TO_REPORTS_OVERVIEW": "Eiti Ä¯ AtaskaitÅ³ apÅ¾valgÄ…",
+      "GO_TO_CONVERSATION_REPORTS": "Eiti Ä¯ PokalbiÅ³ Ataskaitas",
+      "GO_TO_AGENT_REPORTS": "Eiti Ä¯ Agento Ataskaitas",
+      "GO_TO_LABEL_REPORTS": "Eiti Ä¯ EtiketÄ—s Ataskaitas",
+      "GO_TO_INBOX_REPORTS": "Eiti Ä¯ GautÅ³ LaiÅ¡kÅ³ Aplanko Ataskaitas",
+      "GO_TO_TEAM_REPORTS": "Eiti Ä¯ Komandos Ataskaitas",
       "GO_TO_CSAT_REPORTS": "Go to CSAT Reports",
       "GO_TO_BOT_REPORTS": "Go to Bot Reports",
       "GO_TO_SLA_REPORTS": "Go to SLA Reports",
-      "GO_TO_SETTINGS_AGENTS": "Eiti į Agento Nustatymus",
-      "GO_TO_SETTINGS_TEAMS": "Eiti į Komandos Nustatymus",
-      "GO_TO_SETTINGS_INBOXES": "Eiti į Gautų Laiškų Aplanko Nustatymus",
+      "GO_TO_SETTINGS_AGENTS": "Eiti Ä¯ Agento Nustatymus",
+      "GO_TO_SETTINGS_TEAMS": "Eiti Ä¯ Komandos Nustatymus",
+      "GO_TO_SETTINGS_INBOXES": "Eiti Ä¯ GautÅ³ LaiÅ¡kÅ³ Aplanko Nustatymus",
       "GO_TO_SETTINGS_TEMPLATES": "Go to Templates",
-      "GO_TO_SETTINGS_LABELS": "Eiti į Etiketės Nustatymus",
+      "GO_TO_SETTINGS_LABELS": "Eiti Ä¯ EtiketÄ—s Nustatymus",
       "GO_TO_SETTINGS_CUSTOM_ATTRIBUTES": "Go to Custom Attributes",
       "GO_TO_SETTINGS_AUTOMATION": "Go to Automation",
       "GO_TO_SETTINGS_MACROS": "Go to Macros",
-      "GO_TO_SETTINGS_CANNED_RESPONSES": "Eiti į Atsakymų Ruošinių Nustatymus",
+      "GO_TO_SETTINGS_CANNED_RESPONSES": "Eiti Ä¯ AtsakymÅ³ RuoÅ¡iniÅ³ Nustatymus",
       "GO_TO_SETTINGS_SLA": "Go to SLA Settings",
-      "GO_TO_SETTINGS_APPLICATIONS": "Eiti į Programos Nustatymus",
+      "GO_TO_SETTINGS_APPLICATIONS": "Eiti Ä¯ Programos Nustatymus",
       "GO_TO_SETTINGS_DATA": "Go to Data",
       "GO_TO_SETTINGS_AUDIT_LOGS": "Go to Audit Logs",
       "GO_TO_SETTINGS_BILLING": "Go to Billing",
-      "GO_TO_SETTINGS_ACCOUNT": "Eiti į Paskyros Nustatymus",
-      "GO_TO_SETTINGS_PROFILE": "Eiti į Profilio Nustatymus",
-      "GO_TO_NOTIFICATIONS": "Eikite į Perspėjimus",
-      "ADD_LABELS_TO_CONVERSATION": "Pridėti etiketę pokalbiui",
-      "ASSIGN_AN_AGENT": "Priskirti Agentą",
+      "GO_TO_SETTINGS_ACCOUNT": "Eiti Ä¯ Paskyros Nustatymus",
+      "GO_TO_SETTINGS_PROFILE": "Eiti Ä¯ Profilio Nustatymus",
+      "GO_TO_NOTIFICATIONS": "Eikite Ä¯ PerspÄ—jimus",
+      "ADD_LABELS_TO_CONVERSATION": "PridÄ—ti etiketÄ™ pokalbiui",
+      "ASSIGN_AN_AGENT": "Priskirti AgentÄ…",
       "AI_ASSIST": "AI pagalba",
-      "ASSIGN_PRIORITY": "Nustatyti prioritetą",
-      "ASSIGN_A_TEAM": "Priskirti komandą",
-      "MUTE_CONVERSATION": "Tildyti pokalbį",
-      "UNMUTE_CONVERSATION": "Įjungti pokalbio garsą",
-      "REMOVE_LABEL_FROM_CONVERSATION": "Pašalinti pokalbio etiketę",
-      "REOPEN_CONVERSATION": "Atidaryti pokalbį",
-      "RESOLVE_CONVERSATION": "Išspręsti pokalbį",
-      "SEND_TRANSCRIPT": "Siųsti stenogramą el. laišku",
-      "SNOOZE_CONVERSATION": "Atidėti Pokalbį",
+      "ASSIGN_PRIORITY": "Nustatyti prioritetÄ…",
+      "ASSIGN_A_TEAM": "Priskirti komandÄ…",
+      "MUTE_CONVERSATION": "Tildyti pokalbÄ¯",
+      "UNMUTE_CONVERSATION": "Ä®jungti pokalbio garsÄ…",
+      "REMOVE_LABEL_FROM_CONVERSATION": "PaÅ¡alinti pokalbio etiketÄ™",
+      "REOPEN_CONVERSATION": "Atidaryti pokalbÄ¯",
+      "RESOLVE_CONVERSATION": "IÅ¡sprÄ™sti pokalbÄ¯",
+      "SEND_TRANSCRIPT": "SiÅ³sti stenogramÄ… el. laiÅ¡ku",
+      "SNOOZE_CONVERSATION": "AtidÄ—ti PokalbÄ¯",
       "UNTIL_NEXT_REPLY": "Iki kito atsakymo",
-      "UNTIL_NEXT_WEEK": "Iki kitos savaitės",
+      "UNTIL_NEXT_WEEK": "Iki kitos savaitÄ—s",
       "UNTIL_TOMORROW": "Iki rytojaus",
-      "UNTIL_NEXT_MONTH": "Iki kito mėnesio",
+      "UNTIL_NEXT_MONTH": "Iki kito mÄ—nesio",
       "AN_HOUR_FROM_NOW": "Iki valandos nuo dabar",
       "UNTIL_CUSTOM_TIME": "Personalizuotas...",
-      "CHANGE_APPEARANCE": "Keisti išvaizdą",
-      "LIGHT_MODE": "Šviesus",
+      "CHANGE_APPEARANCE": "Keisti iÅ¡vaizdÄ…",
+      "LIGHT_MODE": "Å viesus",
       "DARK_MODE": "Tamsus",
       "SYSTEM_MODE": "Sistema",
-      "SNOOZE_NOTIFICATION": "Atidėti pranešimą"
+      "SNOOZE_NOTIFICATION": "AtidÄ—ti praneÅ¡imÄ…"
     }
   },
   "DASHBOARD_APPS": {
-    "LOADING_MESSAGE": "Paleidžiama informacijos suvestinės programa..."
+    "LOADING_MESSAGE": "PaleidÅ¾iama informacijos suvestinÄ—s programa..."
   },
   "COMMON": {
     "OR": "Ar",
-    "CLICK_HERE": "paspausti čia"
+    "CLICK_HERE": "paspausti Äia"
   }
 }

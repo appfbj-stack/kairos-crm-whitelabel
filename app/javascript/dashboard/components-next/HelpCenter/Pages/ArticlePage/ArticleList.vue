@@ -9,7 +9,7 @@ import {
   getArticleStatus,
   ARTICLE_STATUSES,
 } from 'dashboard/helper/portalHelper.js';
-import wootConstants from 'dashboard/constants/globals';
+import kairosConstants from 'dashboard/constants/globals';
 import { hasPendingChanges } from 'dashboard/helper/articleDiffHelper';
 
 import ArticleCard from 'dashboard/components-next/HelpCenter/ArticleCard/ArticleCard.vue';
@@ -49,7 +49,7 @@ const emit = defineEmits([
   'dragging',
 ]);
 
-const { ARTICLE_STATUS_TYPES } = wootConstants;
+const { ARTICLE_STATUS_TYPES } = kairosConstants;
 
 const router = useRouter();
 const route = useRoute();

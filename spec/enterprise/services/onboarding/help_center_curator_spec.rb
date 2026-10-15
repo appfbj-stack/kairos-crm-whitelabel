@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Onboarding::HelpCenterCurator do
-  let(:account) { create(:account, custom_attributes: { 'website' => 'chatwoot.com' }) }
+  let(:account) { create(:account, custom_attributes: { 'website' => 'kairos-crm.com' }) }
   let(:links) do
     [
       { 'url' => 'https://chatwoot.com/docs/a', 'title' => 'A' },

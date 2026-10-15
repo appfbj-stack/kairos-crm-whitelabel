@@ -1,6 +1,6 @@
 <script>
-import WootDropdownItem from 'shared/components/ui/dropdown/DropdownItem.vue';
-import WootDropdownMenu from 'shared/components/ui/dropdown/DropdownMenu.vue';
+import KairosDropdownItem from 'shared/components/ui/dropdown/DropdownItem.vue';
+import KairosDropdownMenu from 'shared/components/ui/dropdown/DropdownMenu.vue';
 import Avatar from 'next/avatar/Avatar.vue';
 import Icon from 'dashboard/components-next/icon/Icon.vue';
 import EmojiIcon from 'dashboard/components-next/emoji-icon-picker/EmojiIcon.vue';
@@ -8,8 +8,8 @@ import NextButton from 'dashboard/components-next/button/Button.vue';
 
 export default {
   components: {
-    WootDropdownItem,
-    WootDropdownMenu,
+    KairosDropdownItem,
+    KairosDropdownMenu,
     Avatar,
     Icon,
     EmojiIcon,
@@ -101,8 +101,8 @@ export default {
     </div>
     <div class="flex items-start justify-start flex-auto overflow-auto mt-2">
       <div class="w-full max-h-[10rem]">
-        <WootDropdownMenu>
-          <WootDropdownItem
+        <KairosDropdownMenu>
+          <KairosDropdownItem
             v-for="option in filteredOptions"
             :key="`${option.assignee_type || 'User'}-${option.id}`"
           >
@@ -171,8 +171,8 @@ export default {
                 class="size-5 text-n-slate-11"
               />
             </NextButton>
-          </WootDropdownItem>
-        </WootDropdownMenu>
+          </KairosDropdownItem>
+        </KairosDropdownMenu>
         <h4
           v-if="noResult"
           class="w-full justify-center items-center flex text-n-slate-10 py-2 px-2.5 overflow-hidden whitespace-nowrap text-ellipsis text-sm"

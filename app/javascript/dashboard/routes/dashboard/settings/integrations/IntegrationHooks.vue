@@ -145,11 +145,11 @@ export default {
         </div>
       </div>
     </template>
-    <woot-modal v-model:show="showAddHookModal" :on-close="hideAddHookModal">
+    <kairos-modal v-model:show="showAddHookModal" :on-close="hideAddHookModal">
       <NewHook :integration-id="integrationId" @close="hideAddHookModal" />
-    </woot-modal>
+    </kairos-modal>
 
-    <woot-delete-modal
+    <kairos-delete-modal
       v-model:show="showDeleteConfirmationPopup"
       :on-close="closeDeletePopup"
       :on-confirm="confirmDeletion"

@@ -143,7 +143,7 @@ const launchEmbeddedSignup = async () => {
           <div
             class="flex size-11 items-center justify-center rounded-full bg-n-alpha-2"
           >
-            <Icon icon="i-woot-whatsapp" class="text-n-slate-10 size-6" />
+            <Icon icon="i-kairos-whatsapp" class="text-n-slate-10 size-6" />
           </div>
         </div>
 

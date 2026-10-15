@@ -98,7 +98,7 @@ const editTooltip = computed(() =>
           >
             <Button
               v-tooltip.top="editTooltip"
-              icon="i-woot-edit-pen"
+              icon="i-kairos-edit-pen"
               slate
               sm
             />
@@ -106,7 +106,7 @@ const editTooltip = computed(() =>
           <Button
             v-if="canManageMacro"
             v-tooltip.top="$t('MACROS.DELETE.TOOLTIP')"
-            icon="i-woot-bin"
+            icon="i-kairos-bin"
             slate
             sm
             class="hover:enabled:text-n-ruby-11 hover:enabled:bg-n-ruby-2"

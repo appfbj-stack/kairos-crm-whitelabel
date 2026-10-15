@@ -102,7 +102,7 @@ describe('Dashboard', () => {
           CopilotContainer: true,
           FloatingCallWidget: true,
           AddAccountModal: true,
-          WootKeyShortcutModal: true,
+          KairosKeyShortcutModal: true,
         },
       },
     });

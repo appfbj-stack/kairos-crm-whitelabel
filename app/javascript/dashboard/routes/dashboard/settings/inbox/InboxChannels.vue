@@ -64,7 +64,7 @@ const items = computed(() => {
     <div
       class="grid grid-cols-1 lg:grid-cols-8 lg:divide-x lg:divide-n-weak rounded-xl border border-n-weak h-full min-h-[50dvh]"
     >
-      <woot-wizard
+      <kairos-wizard
         class="hidden lg:block col-span-2 h-fit py-8 px-6"
         :global-config="globalConfig"
         :items="items"

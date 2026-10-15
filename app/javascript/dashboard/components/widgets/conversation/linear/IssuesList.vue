@@ -116,7 +116,7 @@ onMounted(() => {
       />
     </div>
 
-    <woot-modal
+    <kairos-modal
       v-model:show="shouldShowCreateModal"
       :on-close="closeCreateModal"
       :close-on-backdrop-click="false"
@@ -127,6 +127,6 @@ onMounted(() => {
         :account-id="currentAccountId"
         @close="closeCreateModal"
       />
-    </woot-modal>
+    </kairos-modal>
   </div>
 </template>

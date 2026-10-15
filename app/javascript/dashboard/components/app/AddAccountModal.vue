@@ -63,9 +63,9 @@ export default {
 </script>
 
 <template>
-  <woot-modal :show="show" :on-close="() => $emit('closeAccountCreateModal')">
+  <kairos-modal :show="show" :on-close="() => $emit('closeAccountCreateModal')">
     <div class="flex flex-col h-auto overflow-auto">
-      <woot-modal-header
+      <kairos-modal-header
         :header-title="$t('CREATE_ACCOUNT.NEW_ACCOUNT')"
         :header-content="$t('CREATE_ACCOUNT.SELECTOR_SUBTITLE')"
       />
@@ -111,5 +111,5 @@ export default {
         </div>
       </form>
     </div>
-  </woot-modal>
+  </kairos-modal>
 </template>

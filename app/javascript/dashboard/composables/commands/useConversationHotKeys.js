@@ -7,9 +7,9 @@ import { useConversationLabels } from 'dashboard/composables/useConversationLabe
 import { useCaptain } from 'dashboard/composables/useCaptain';
 import { useAgentsList } from 'dashboard/composables/useAgentsList';
 import { CMD_AI_ASSIST } from 'dashboard/helper/commandbar/events';
-import { REPLY_EDITOR_MODES } from 'dashboard/components/widgets/WootWriter/constants';
+import { REPLY_EDITOR_MODES } from 'dashboard/components/widgets/KairosWriter/constants';
 
-import wootConstants from 'dashboard/constants/globals';
+import kairosConstants from 'dashboard/constants/globals';
 
 import {
   ICON_ADD_LABEL,
@@ -193,11 +193,11 @@ export function useConversationHotKeys() {
   };
 
   const statusActions = computed(() => {
-    const isOpen = currentChat.value?.status === wootConstants.STATUS_TYPE.OPEN;
+    const isOpen = currentChat.value?.status === kairosConstants.STATUS_TYPE.OPEN;
     const isSnoozed =
-      currentChat.value?.status === wootConstants.STATUS_TYPE.SNOOZED;
+      currentChat.value?.status === kairosConstants.STATUS_TYPE.SNOOZED;
     const isResolved =
-      currentChat.value?.status === wootConstants.STATUS_TYPE.RESOLVED;
+      currentChat.value?.status === kairosConstants.STATUS_TYPE.RESOLVED;
 
     let actions = [];
     if (isOpen) {

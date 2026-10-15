@@ -1,5 +1,5 @@
-# Contributing to Chatwoot
+# Contributing to Kairos CRM
 
 Thanks for taking the time to contribute! :tada::+1:
 
-Please refer to our [Contributing Guide](https://www.chatwoot.com/docs/contributing-guide) for detailed instructions on how to contribute.
+Please refer to our [Contributing Guide](https://www.kairos-crm.com/docs/contributing-guide) for detailed instructions on how to contribute.

@@ -16,13 +16,13 @@ const props = defineProps({
 });
 
 const emit = defineEmits(['change']);
-const { isOnChatwootCloud } = useAccount();
+const { isOnKairos CRMCloud } = useAccount();
 
 const PROVIDER_ICONS = {
   openai: 'i-ri-openai-fill',
   anthropic: 'i-ri-anthropic-line',
   mistral: 'i-logos-mistral-icon',
-  gemini: 'i-woot-gemini',
+  gemini: 'i-kairos-gemini',
 };
 
 const iconForModel = model => {
@@ -142,7 +142,7 @@ const selectModel = model => {
             <span v-if="model.coming_soon" class="text-xs text-n-slate-11">
               {{ t('CAPTAIN_SETTINGS.MODEL_CONFIG.COMING_SOON') }}
             </span>
-            <span v-else-if="isOnChatwootCloud" class="text-xs text-n-slate-11">
+            <span v-else-if="isOnKairos CRMCloud" class="text-xs text-n-slate-11">
               {{ getCreditLabel(model) }}
             </span>
           </div>

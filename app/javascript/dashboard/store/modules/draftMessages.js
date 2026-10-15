@@ -1,6 +1,6 @@
 import types from '../mutation-types';
 
-import { REPLY_EDITOR_MODES } from 'dashboard/components/widgets/WootWriter/constants';
+import { REPLY_EDITOR_MODES } from 'dashboard/components/widgets/KairosWriter/constants';
 import { LocalStorage } from 'shared/helpers/localStorage';
 import { LOCAL_STORAGE_KEYS } from 'dashboard/constants/localStorage';
 

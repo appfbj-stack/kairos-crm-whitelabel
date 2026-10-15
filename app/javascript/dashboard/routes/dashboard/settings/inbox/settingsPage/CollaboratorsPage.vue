@@ -639,7 +639,7 @@ onMounted(() => {
           <!-- Old UI for non-assignment_v2 -->
           <template v-else-if="isEnterprise">
             <div class="p-4">
-              <woot-input
+              <kairos-input
                 v-model="maxAssignmentLimit"
                 type="number"
                 :class="{ error: v$.maxAssignmentLimit.$error }"
@@ -668,7 +668,7 @@ onMounted(() => {
       </SettingsToggleSection>
     </SettingsAccordion>
 
-    <woot-modal
+    <kairos-modal
       v-if="showDeleteConfirmModal"
       :show="showDeleteConfirmModal"
       :on-close="cancelDeletePolicy"
@@ -694,6 +694,6 @@ onMounted(() => {
           />
         </div>
       </div>
-    </woot-modal>
+    </kairos-modal>
   </div>
 </template>

@@ -257,7 +257,7 @@ const confirmDeletion = () => {
             <Button
               v-if="showEditAction(agent)"
               v-tooltip.top="$t('AGENT_MGMT.EDIT.BUTTON_TEXT')"
-              icon="i-woot-edit-pen"
+              icon="i-kairos-edit-pen"
               slate
               sm
               @click="openEditPopup(agent)"
@@ -265,7 +265,7 @@ const confirmDeletion = () => {
             <Button
               v-if="showDeleteAction(agent)"
               v-tooltip.top="$t('AGENT_MGMT.DELETE.BUTTON_TEXT')"
-              icon="i-woot-bin"
+              icon="i-kairos-bin"
               slate
               sm
               class="hover:enabled:text-n-ruby-11 hover:enabled:bg-n-ruby-2"
@@ -277,11 +277,11 @@ const confirmDeletion = () => {
       </div>
     </template>
 
-    <woot-modal v-model:show="showAddPopup" :on-close="hideAddPopup">
+    <kairos-modal v-model:show="showAddPopup" :on-close="hideAddPopup">
       <AddAgent @close="hideAddPopup" />
-    </woot-modal>
+    </kairos-modal>
 
-    <woot-modal v-model:show="showEditPopup" :on-close="hideEditPopup">
+    <kairos-modal v-model:show="showEditPopup" :on-close="hideEditPopup">
       <EditAgent
         v-if="showEditPopup"
         :id="currentAgent.id"
@@ -293,9 +293,9 @@ const confirmDeletion = () => {
         :custom-role-id="currentAgent.custom_role_id"
         @close="hideEditPopup"
       />
-    </woot-modal>
+    </kairos-modal>
 
-    <woot-delete-modal
+    <kairos-delete-modal
       v-model:show="showDeletePopup"
       :on-close="closeDeletePopup"
       :on-confirm="confirmDeletion"

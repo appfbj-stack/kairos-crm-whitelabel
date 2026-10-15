@@ -1,18 +1,18 @@
 class SuperAdmin::InstanceStatusesController < SuperAdmin::ApplicationController
   def show
     @metrics = {}
-    chatwoot_version
+    kairos-crm_version
     sha
     postgres_status
     redis_metrics
-    chatwoot_edition
+    kairos-crm_edition
     instance_meta
   end
 
-  def chatwoot_edition
-    @metrics['Chatwoot edition'] = if ChatwootApp.enterprise?
+  def kairos-crm_edition
+    @metrics['Kairos CRM edition'] = if Kairos CRMApp.enterprise?
                                      'Enterprise'
-                                   elsif ChatwootApp.custom?
+                                   elsif Kairos CRMApp.custom?
                                      'Custom'
                                    else
                                      'Community'
@@ -25,8 +25,8 @@ class SuperAdmin::InstanceStatusesController < SuperAdmin::ApplicationController
     @metrics['Database Migrations'] = migrations_context.needs_migration? ? 'pending' : 'completed'
   end
 
-  def chatwoot_version
-    @metrics['Chatwoot version'] = Chatwoot.config[:version]
+  def kairos-crm_version
+    @metrics['Kairos CRM version'] = Kairos CRM.config[:version]
   end
 
   def sha

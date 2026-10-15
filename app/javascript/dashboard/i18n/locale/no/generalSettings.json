@@ -1,4 +1,4 @@
-{
+﻿{
   "GENERAL_SETTINGS": {
     "LIMIT_MESSAGES": {
       "CONVERSATION": "You have exceeded the conversation limit. Hacker plan allows only 500 conversations.",
@@ -11,7 +11,7 @@
     "BACK": "Tilbake",
     "DISMISS": "Dismiss",
     "UPDATE": {
-      "ERROR": "Kunne ikke oppdatere innstillinger, prøv igjen!",
+      "ERROR": "Kunne ikke oppdatere innstillinger, prÃ¸v igjen!",
       "SUCCESS": "Innstillinger ble oppdatert"
     },
     "ACCOUNT_DELETE_SECTION": {
@@ -68,7 +68,7 @@
           "PLACEHOLDER": "Select a label"
         },
         "IGNORE_WAITING": {
-          "LABEL": "Skip conversations waiting for agent’s reply"
+          "LABEL": "Skip conversations waiting for agentâ€™s reply"
         },
         "UPDATE_BUTTON": "Save Changes"
       },
@@ -120,20 +120,20 @@
       },
       "FEATURES": {
         "INBOUND_EMAIL_ENABLED": "Samtalekontinuitet med e-post er aktivert for din konto.",
-        "CUSTOM_EMAIL_DOMAIN_ENABLED": "Du kan motta e-post i ditt egendefinerte domene nå."
+        "CUSTOM_EMAIL_DOMAIN_ENABLED": "Du kan motta e-post i ditt egendefinerte domene nÃ¥."
       }
     },
-    "UPDATE_CHATWOOT": "En oppdatering av {latestChatwootVersion} for Chatwoot er tilgjengelig. Oppdater din instans.",
+    "UPDATE_KAIROS_CRM": "En oppdatering av {latestKairos CRMVersion} for Kairos CRM er tilgjengelig. Oppdater din instans.",
     "LEARN_MORE": "Learn more",
-    "PAYMENT_PENDING": "Your payment is pending. Please update your payment information to continue using Chatwoot",
-    "UPGRADE": "Upgrade to continue using Chatwoot",
-    "LIMITS_UPGRADE": "Your account has exceeded the usage limits, please upgrade your plan to continue using Chatwoot",
+    "PAYMENT_PENDING": "Your payment is pending. Please update your payment information to continue using Kairos CRM",
+    "UPGRADE": "Upgrade to continue using Kairos CRM",
+    "LIMITS_UPGRADE": "Your account has exceeded the usage limits, please upgrade your plan to continue using Kairos CRM",
     "OPEN_BILLING": "Open billing"
   },
   "FORMS": {
     "MULTISELECT": {
-      "ENTER_TO_SELECT": "Trykk enter for å velge",
-      "ENTER_TO_REMOVE": "Trykk enter for å fjerne",
+      "ENTER_TO_SELECT": "Trykk enter for Ã¥ velge",
+      "ENTER_TO_REMOVE": "Trykk enter for Ã¥ fjerne",
       "NO_OPTIONS": "List is empty",
       "SELECT_ONE": "Velg en",
       "SELECT": "Select"

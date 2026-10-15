@@ -172,7 +172,7 @@ onMounted(() => {
 
 <template>
   <TeleportWithDirection to="body">
-    <woot-modal
+    <kairos-modal
       v-model:show="show"
       full-width
       :show-close-button="false"
@@ -359,6 +359,6 @@ onMounted(() => {
           </div>
         </footer>
       </div>
-    </woot-modal>
+    </kairos-modal>
   </TeleportWithDirection>
 </template>

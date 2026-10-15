@@ -9,33 +9,33 @@ vi.mock('../sdk/IFrameHelper', () => ({
   },
 }));
 
-describe('$chatwoot.setUser', () => {
+describe('$kairos-crm.setUser', () => {
   beforeEach(() => {
-    delete window.$chatwoot;
-    window.chatwootSettings = {};
+    delete window.$kairos-crm;
+    window.kairos-crmSettings = {};
     vi.spyOn(Cookies, 'get').mockReturnValue(undefined);
     vi.spyOn(Cookies, 'set').mockImplementation(() => {});
 
-    window.chatwootSDK.run({
-      baseUrl: 'https://app.chatwoot.com',
+    window.kairos-crmSDK.run({
+      baseUrl: 'https://app.kairos-crm.com',
       websiteToken: 'website-token',
     });
   });
 
   afterEach(() => {
-    delete window.$chatwoot;
-    delete window.chatwootSettings;
+    delete window.$kairos-crm;
+    delete window.kairos-crmSettings;
     vi.restoreAllMocks();
   });
 
   it('updates the SDK identity synchronously', () => {
     const user = { name: 'Pranav' };
 
-    const result = window.$chatwoot.setUser('first-user', user);
+    const result = window.$kairos-crm.setUser('first-user', user);
 
     expect(result).toBeUndefined();
-    expect(window.$chatwoot.identifier).toBe('first-user');
-    expect(window.$chatwoot.user).toBe(user);
+    expect(window.$kairos-crm.identifier).toBe('first-user');
+    expect(window.$kairos-crm.user).toBe(user);
     expect(IFrameHelper.sendMessage).toHaveBeenCalledWith('set-user', {
       identifier: 'first-user',
       user,
@@ -46,11 +46,11 @@ describe('$chatwoot.setUser', () => {
     const firstUser = { name: 'First user' };
     const secondUser = { name: 'Second user' };
 
-    window.$chatwoot.setUser('first-user', firstUser);
-    window.$chatwoot.setUser('second-user', secondUser);
+    window.$kairos-crm.setUser('first-user', firstUser);
+    window.$kairos-crm.setUser('second-user', secondUser);
 
-    expect(window.$chatwoot.identifier).toBe('second-user');
-    expect(window.$chatwoot.user).toBe(secondUser);
+    expect(window.$kairos-crm.identifier).toBe('second-user');
+    expect(window.$kairos-crm.user).toBe(secondUser);
     expect(IFrameHelper.sendMessage).toHaveBeenLastCalledWith('set-user', {
       identifier: 'second-user',
       user: secondUser,

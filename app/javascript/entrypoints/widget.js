@@ -46,9 +46,9 @@ app.use(
 // Vue.config.productionTip = false;
 
 window.onload = () => {
-  window.WOOT_WIDGET = app.mount('#app');
+  window.KAIROS_WIDGET = app.mount('#app');
   window.actionCable = new ActionCableConnector(
-    window.WOOT_WIDGET,
-    window.chatwootPubsubToken
+    window.KAIROS_WIDGET,
+    window.kairos-crmPubsubToken
   );
 };

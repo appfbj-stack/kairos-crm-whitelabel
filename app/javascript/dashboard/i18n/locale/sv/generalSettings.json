@@ -1,4 +1,4 @@
-{
+﻿{
   "GENERAL_SETTINGS": {
     "LIMIT_MESSAGES": {
       "CONVERSATION": "You have exceeded the conversation limit. Hacker plan allows only 500 conversations.",
@@ -6,13 +6,13 @@
       "AGENTS": "You have exceeded the agent limit. Your plan only allows {allowedAgents} agents.",
       "NON_ADMIN": "Please contact your administrator to upgrade the plan and continue using all features."
     },
-    "TITLE": "Kontoinställningar",
-    "SUBMIT": "Uppdatera inställningar",
+    "TITLE": "KontoinstÃ¤llningar",
+    "SUBMIT": "Uppdatera instÃ¤llningar",
     "BACK": "Tillbaka",
     "DISMISS": "Dismiss",
     "UPDATE": {
-      "ERROR": "Kunde inte uppdatera inställningar, försök igen!",
-      "SUCCESS": "Uppdaterade kontoinställningar"
+      "ERROR": "Kunde inte uppdatera instÃ¤llningar, fÃ¶rsÃ¶k igen!",
+      "SUCCESS": "Uppdaterade kontoinstÃ¤llningar"
     },
     "ACCOUNT_DELETE_SECTION": {
       "TITLE": "Delete your Account",
@@ -35,9 +35,9 @@
       }
     },
     "FORM": {
-      "ERROR": "Vänligen åtgärda formulärfel",
+      "ERROR": "VÃ¤nligen Ã¥tgÃ¤rda formulÃ¤rfel",
       "GENERAL_SECTION": {
-        "TITLE": "Allmänna inställningar",
+        "TITLE": "AllmÃ¤nna instÃ¤llningar",
         "NOTE": ""
       },
       "ACCOUNT_ID": {
@@ -68,7 +68,7 @@
           "PLACEHOLDER": "Select a label"
         },
         "IGNORE_WAITING": {
-          "LABEL": "Skip conversations waiting for agent’s reply"
+          "LABEL": "Skip conversations waiting for agentâ€™s reply"
         },
         "UPDATE_BUTTON": "Save Changes"
       },
@@ -83,13 +83,13 @@
         "ERROR": ""
       },
       "DOMAIN": {
-        "LABEL": "Inkommande e-postdomän",
-        "PLACEHOLDER": "Domänen du tar emot e-post på",
+        "LABEL": "Inkommande e-postdomÃ¤n",
+        "PLACEHOLDER": "DomÃ¤nen du tar emot e-post pÃ¥",
         "ERROR": ""
       },
       "SUPPORT_EMAIL": {
         "LABEL": "Supportmejl",
-        "PLACEHOLDER": "Ditt företags supportmejl",
+        "PLACEHOLDER": "Ditt fÃ¶retags supportmejl",
         "ERROR": ""
       },
       "AUTO_RESOLVE_IGNORE_WAITING": {
@@ -119,21 +119,21 @@
         "MESSAGE_HELP": "This message is sent to the customer when a conversation is automatically resolved by the system due to inactivity."
       },
       "FEATURES": {
-        "INBOUND_EMAIL_ENABLED": "Konversationskontinuitet med e-post är aktiverat för ditt konto.",
-        "CUSTOM_EMAIL_DOMAIN_ENABLED": "Du kan nu ta emot e-postmeddelanden i din egna domän."
+        "INBOUND_EMAIL_ENABLED": "Konversationskontinuitet med e-post Ã¤r aktiverat fÃ¶r ditt konto.",
+        "CUSTOM_EMAIL_DOMAIN_ENABLED": "Du kan nu ta emot e-postmeddelanden i din egna domÃ¤n."
       }
     },
-    "UPDATE_CHATWOOT": "En uppdatering {latestChatwootVersion} för Chatwoot är tillgänglig. Vänligen uppdatera din instans.",
-    "LEARN_MORE": "Läs mer",
-    "PAYMENT_PENDING": "Your payment is pending. Please update your payment information to continue using Chatwoot",
-    "UPGRADE": "Upgrade to continue using Chatwoot",
-    "LIMITS_UPGRADE": "Your account has exceeded the usage limits, please upgrade your plan to continue using Chatwoot",
+    "UPDATE_KAIROS_CRM": "En uppdatering {latestKairos CRMVersion} fÃ¶r Kairos CRM Ã¤r tillgÃ¤nglig. VÃ¤nligen uppdatera din instans.",
+    "LEARN_MORE": "LÃ¤s mer",
+    "PAYMENT_PENDING": "Your payment is pending. Please update your payment information to continue using Kairos CRM",
+    "UPGRADE": "Upgrade to continue using Kairos CRM",
+    "LIMITS_UPGRADE": "Your account has exceeded the usage limits, please upgrade your plan to continue using Kairos CRM",
     "OPEN_BILLING": "Open billing"
   },
   "FORMS": {
     "MULTISELECT": {
-      "ENTER_TO_SELECT": "Tryck Enter för att välja",
-      "ENTER_TO_REMOVE": "Tryck Enter för att ta bort",
+      "ENTER_TO_SELECT": "Tryck Enter fÃ¶r att vÃ¤lja",
+      "ENTER_TO_REMOVE": "Tryck Enter fÃ¶r att ta bort",
       "NO_OPTIONS": "List is empty",
       "SELECT_ONE": "Markera en/ett",
       "SELECT": "Select"
@@ -164,7 +164,7 @@
       "conversation_assignment": "Konversationen tilldelad",
       "assigned_conversation_new_message": "Nytt meddelande",
       "participating_conversation_new_message": "Nytt meddelande",
-      "conversation_mention": "Omnämning",
+      "conversation_mention": "OmnÃ¤mning",
       "sla_missed_first_response": "SLA Missed",
       "sla_missed_next_response": "SLA Missed",
       "sla_missed_resolution": "SLA Missed"
@@ -194,7 +194,7 @@
       "SNOOZE_CONVERSATION": "Snooze Conversation",
       "ADD_LABEL": "Add label to the conversation",
       "REMOVE_LABEL": "Remove label from the conversation",
-      "SETTINGS": "Inställningar",
+      "SETTINGS": "InstÃ¤llningar",
       "AI_ASSIST": "AI Assist",
       "APPEARANCE": "Appearance",
       "SNOOZE_NOTIFICATION": "Snooze Notification"
@@ -226,7 +226,7 @@
       "GO_TO_SETTINGS_MACROS": "Go to Macros",
       "GO_TO_SETTINGS_CANNED_RESPONSES": "Go to Canned Response Settings",
       "GO_TO_SETTINGS_SLA": "Go to SLA Settings",
-      "GO_TO_SETTINGS_APPLICATIONS": "Gå till applikationsinställningar",
+      "GO_TO_SETTINGS_APPLICATIONS": "GÃ¥ till applikationsinstÃ¤llningar",
       "GO_TO_SETTINGS_DATA": "Go to Data",
       "GO_TO_SETTINGS_AUDIT_LOGS": "Go to Audit Logs",
       "GO_TO_SETTINGS_BILLING": "Go to Billing",
@@ -241,8 +241,8 @@
       "MUTE_CONVERSATION": "Mute conversation",
       "UNMUTE_CONVERSATION": "Unmute conversation",
       "REMOVE_LABEL_FROM_CONVERSATION": "Remove label from the conversation",
-      "REOPEN_CONVERSATION": "Återöppna konversationen",
-      "RESOLVE_CONVERSATION": "Lös konversationen",
+      "REOPEN_CONVERSATION": "Ã…terÃ¶ppna konversationen",
+      "RESOLVE_CONVERSATION": "LÃ¶s konversationen",
       "SEND_TRANSCRIPT": "Send an email transcript",
       "SNOOZE_CONVERSATION": "Snooze Conversation",
       "UNTIL_NEXT_REPLY": "Until next reply",
@@ -263,6 +263,6 @@
   },
   "COMMON": {
     "OR": "Or",
-    "CLICK_HERE": "klicka här"
+    "CLICK_HERE": "klicka hÃ¤r"
   }
 }

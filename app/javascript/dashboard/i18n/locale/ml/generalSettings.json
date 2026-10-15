@@ -1,4 +1,4 @@
-{
+﻿{
   "GENERAL_SETTINGS": {
     "LIMIT_MESSAGES": {
       "CONVERSATION": "You have exceeded the conversation limit. Hacker plan allows only 500 conversations.",
@@ -6,13 +6,13 @@
       "AGENTS": "You have exceeded the agent limit. Your plan only allows {allowedAgents} agents.",
       "NON_ADMIN": "Please contact your administrator to upgrade the plan and continue using all features."
     },
-    "TITLE": "അക്കൗണ്ട് ക്രമീകരണങ്ങൾ",
-    "SUBMIT": "ക്രമീകരണങ്ങൾ അപ്‌ഡേറ്റു ചെയ്യുക",
-    "BACK": "മടങ്ങിപ്പോവുക",
+    "TITLE": "à´…à´•àµà´•àµ—à´£àµà´Ÿàµ à´•àµà´°à´®àµ€à´•à´°à´£à´™àµà´™àµ¾",
+    "SUBMIT": "à´•àµà´°à´®àµ€à´•à´°à´£à´™àµà´™àµ¾ à´…à´ªàµâ€Œà´¡àµ‡à´±àµà´±àµ à´šàµ†à´¯àµà´¯àµà´•",
+    "BACK": "à´®à´Ÿà´™àµà´™à´¿à´ªàµà´ªàµ‡à´¾à´µàµà´•",
     "DISMISS": "Dismiss",
     "UPDATE": {
-      "ERROR": "ക്രമീകരണങ്ങൾ അപ്‌ഡേറ്റു ചെയ്യാനായില്ല, വീണ്ടും ശ്രമിക്കുക!",
-      "SUCCESS": "അക്കൗണ്ട് ക്രമീകരണങ്ങൾ വിജയകരമായി അപ്‌ഡേറ്റു ചെയ്‌തു"
+      "ERROR": "à´•àµà´°à´®àµ€à´•à´°à´£à´™àµà´™àµ¾ à´…à´ªàµâ€Œà´¡àµ‡à´±àµà´±àµ à´šàµ†à´¯àµà´¯à´¾à´¨à´¾à´¯à´¿à´²àµà´², à´µàµ€à´£àµà´Ÿàµà´‚ à´¶àµà´°à´®à´¿à´•àµà´•àµà´•!",
+      "SUCCESS": "à´…à´•àµà´•àµ—à´£àµà´Ÿàµ à´•àµà´°à´®àµ€à´•à´°à´£à´™àµà´™àµ¾ à´µà´¿à´œà´¯à´•à´°à´®à´¾à´¯à´¿ à´…à´ªàµâ€Œà´¡àµ‡à´±àµà´±àµ à´šàµ†à´¯àµâ€Œà´¤àµ"
     },
     "ACCOUNT_DELETE_SECTION": {
       "TITLE": "Delete your Account",
@@ -21,8 +21,8 @@
       "CONFIRM": {
         "TITLE": "Delete Account",
         "MESSAGE": "Deleting your Account is irreversible. Enter your account name below to confirm you want to permanently delete it.",
-        "BUTTON_TEXT": "ഇല്ലാതാക്കുക",
-        "DISMISS": "റദ്ദാക്കുക",
+        "BUTTON_TEXT": "à´‡à´²àµà´²à´¾à´¤à´¾à´•àµà´•àµà´•",
+        "DISMISS": "à´±à´¦àµà´¦à´¾à´•àµà´•àµà´•",
         "PLACE_HOLDER": "Please type {accountName} to confirm"
       },
       "SUCCESS": "Account marked for deletion",
@@ -35,9 +35,9 @@
       }
     },
     "FORM": {
-      "ERROR": "ദയവായി ഫോമിലെ പിശകുകൾ പരിഹരിക്കുക",
+      "ERROR": "à´¦à´¯à´µà´¾à´¯à´¿ à´«àµ‹à´®à´¿à´²àµ† à´ªà´¿à´¶à´•àµà´•àµ¾ à´ªà´°à´¿à´¹à´°à´¿à´•àµà´•àµà´•",
       "GENERAL_SECTION": {
-        "TITLE": "പൊതുവായ ക്രമീകരണങ്ങൾ",
+        "TITLE": "à´ªàµŠà´¤àµà´µà´¾à´¯ à´•àµà´°à´®àµ€à´•à´°à´£à´™àµà´™àµ¾",
         "NOTE": ""
       },
       "ACCOUNT_ID": {
@@ -68,28 +68,28 @@
           "PLACEHOLDER": "Select a label"
         },
         "IGNORE_WAITING": {
-          "LABEL": "Skip conversations waiting for agent’s reply"
+          "LABEL": "Skip conversations waiting for agentâ€™s reply"
         },
         "UPDATE_BUTTON": "Save Changes"
       },
       "NAME": {
-        "LABEL": "അക്കൗണ്ടിന്റെ പേര്",
-        "PLACEHOLDER": "നിങ്ങളുടെ അക്കൗണ്ടിന്റെ പേര്",
-        "ERROR": "ദയവായി സാധുവായ ഒരു അക്കൗണ്ട് പേര് നൽകുക"
+        "LABEL": "à´…à´•àµà´•àµ—à´£àµà´Ÿà´¿à´¨àµà´±àµ† à´ªàµ‡à´°àµ",
+        "PLACEHOLDER": "à´¨à´¿à´™àµà´™à´³àµà´Ÿàµ† à´…à´•àµà´•àµ—à´£àµà´Ÿà´¿à´¨àµà´±àµ† à´ªàµ‡à´°àµ",
+        "ERROR": "à´¦à´¯à´µà´¾à´¯à´¿ à´¸à´¾à´§àµà´µà´¾à´¯ à´’à´°àµ à´…à´•àµà´•àµ—à´£àµà´Ÿàµ à´ªàµ‡à´°àµ à´¨àµ½à´•àµà´•"
       },
       "LANGUAGE": {
         "LABEL": "Site language",
-        "PLACEHOLDER": "നിങ്ങളുടെ അക്കൗണ്ടിന്റെ പേര്",
+        "PLACEHOLDER": "à´¨à´¿à´™àµà´™à´³àµà´Ÿàµ† à´…à´•àµà´•àµ—à´£àµà´Ÿà´¿à´¨àµà´±àµ† à´ªàµ‡à´°àµ",
         "ERROR": ""
       },
       "DOMAIN": {
-        "LABEL": "ഇൻകമിംഗ് ഇമെയിൽ ഡൊമെയ്ൻ",
-        "PLACEHOLDER": "നിങ്ങൾക്ക് ഇമെയിലുകൾ ലഭിക്കുന്ന ഡൊമെയ്ൻ",
+        "LABEL": "à´‡àµ»à´•à´®à´¿à´‚à´—àµ à´‡à´®àµ†à´¯à´¿àµ½ à´¡àµŠà´®àµ†à´¯àµàµ»",
+        "PLACEHOLDER": "à´¨à´¿à´™àµà´™àµ¾à´•àµà´•àµ à´‡à´®àµ†à´¯à´¿à´²àµà´•àµ¾ à´²à´­à´¿à´•àµà´•àµà´¨àµà´¨ à´¡àµŠà´®àµ†à´¯àµàµ»",
         "ERROR": ""
       },
       "SUPPORT_EMAIL": {
-        "LABEL": "ഇമെയിൽ",
-        "PLACEHOLDER": "നിങ്ങളുടെ കമ്പനിയുടെ പിന്തുണാ ഇമെയിൽ",
+        "LABEL": "à´‡à´®àµ†à´¯à´¿àµ½",
+        "PLACEHOLDER": "à´¨à´¿à´™àµà´™à´³àµà´Ÿàµ† à´•à´®àµà´ªà´¨à´¿à´¯àµà´Ÿàµ† à´ªà´¿à´¨àµà´¤àµà´£à´¾ à´‡à´®àµ†à´¯à´¿àµ½",
         "ERROR": ""
       },
       "AUTO_RESOLVE_IGNORE_WAITING": {
@@ -113,21 +113,21 @@
           "SUCCESS": "Auto resolve settings updated successfully",
           "ERROR": "Failed to update auto resolve settings"
         },
-        "UPDATE_BUTTON": "അപ്‌ഡേറ്റ്",
+        "UPDATE_BUTTON": "à´…à´ªàµâ€Œà´¡àµ‡à´±àµà´±àµ",
         "MESSAGE_LABEL": "Custom resolution message",
         "MESSAGE_PLACEHOLDER": "Conversation was marked resolved by system due to 15 days of inactivity",
         "MESSAGE_HELP": "This message is sent to the customer when a conversation is automatically resolved by the system due to inactivity."
       },
       "FEATURES": {
-        "INBOUND_EMAIL_ENABLED": "നിങ്ങളുടെ അക്കൗണ്ടിനായി ഇമെയിലുകളുമായുള്ള സംഭാഷണ തുടർച്ച പ്രവർത്തനക്ഷമമാക്കി.",
-        "CUSTOM_EMAIL_DOMAIN_ENABLED": "നിങ്ങളുടെ ഇഷ്‌ടാനുസൃത ഡൊമെയ്‌നിൽ നിങ്ങൾക്ക് ഇപ്പോൾ ഇമെയിലുകൾ സ്വീകരിക്കാൻ കഴിയും."
+        "INBOUND_EMAIL_ENABLED": "à´¨à´¿à´™àµà´™à´³àµà´Ÿàµ† à´…à´•àµà´•àµ—à´£àµà´Ÿà´¿à´¨à´¾à´¯à´¿ à´‡à´®àµ†à´¯à´¿à´²àµà´•à´³àµà´®à´¾à´¯àµà´³àµà´³ à´¸à´‚à´­à´¾à´·à´£ à´¤àµà´Ÿàµ¼à´šàµà´š à´ªàµà´°à´µàµ¼à´¤àµà´¤à´¨à´•àµà´·à´®à´®à´¾à´•àµà´•à´¿.",
+        "CUSTOM_EMAIL_DOMAIN_ENABLED": "à´¨à´¿à´™àµà´™à´³àµà´Ÿàµ† à´‡à´·àµâ€Œà´Ÿà´¾à´¨àµà´¸àµƒà´¤ à´¡àµŠà´®àµ†à´¯àµâ€Œà´¨à´¿àµ½ à´¨à´¿à´™àµà´™àµ¾à´•àµà´•àµ à´‡à´ªàµà´ªàµ‹àµ¾ à´‡à´®àµ†à´¯à´¿à´²àµà´•àµ¾ à´¸àµà´µàµ€à´•à´°à´¿à´•àµà´•à´¾àµ» à´•à´´à´¿à´¯àµà´‚."
       }
     },
-    "UPDATE_CHATWOOT": "An update {latestChatwootVersion} for Chatwoot is available. Please update your instance.",
+    "UPDATE_KAIROS_CRM": "An update {latestKairos CRMVersion} for Kairos CRM is available. Please update your instance.",
     "LEARN_MORE": "Learn more",
-    "PAYMENT_PENDING": "Your payment is pending. Please update your payment information to continue using Chatwoot",
-    "UPGRADE": "Upgrade to continue using Chatwoot",
-    "LIMITS_UPGRADE": "Your account has exceeded the usage limits, please upgrade your plan to continue using Chatwoot",
+    "PAYMENT_PENDING": "Your payment is pending. Please update your payment information to continue using Kairos CRM",
+    "UPGRADE": "Upgrade to continue using Kairos CRM",
+    "LIMITS_UPGRADE": "Your account has exceeded the usage limits, please upgrade your plan to continue using Kairos CRM",
     "OPEN_BILLING": "Open billing"
   },
   "FORMS": {
@@ -153,10 +153,10 @@
       "LOADING_MESSAGE": "Loading notifications...",
       "404": "No Notifications",
       "TABLE_HEADER": [
-        "പേര്",
-        "ഫോൺ നമ്പർ",
-        "സംഭാഷണങ്ങൾ",
-        "അവസാനം കോൺടാക്റ്റുചെയ്തത്"
+        "à´ªàµ‡à´°àµ",
+        "à´«àµ‡à´¾àµº à´¨à´®àµà´ªàµ¼",
+        "à´¸à´‚à´­à´¾à´·à´£à´™àµà´™àµ¾",
+        "à´…à´µà´¸à´¾à´¨à´‚ à´•àµ‡à´¾àµºà´Ÿà´¾à´•àµà´±àµà´±àµà´šàµ†à´¯àµà´¤à´¤àµ"
       ]
     },
     "TYPE_LABEL": {
@@ -172,7 +172,7 @@
   },
   "NETWORK": {
     "NOTIFICATION": {
-      "OFFLINE": "ഓഫ്‌ലൈൻ",
+      "OFFLINE": "à´“à´«àµâ€Œà´²àµˆàµ»",
       "RECONNECTING": "Reconnecting...",
       "RECONNECT_SUCCESS": "Reconnected"
     },
@@ -185,8 +185,8 @@
     "SNOOZE_PLACEHOLDER": "Type a time e.g. tomorrow, 2 hours, next friday, jan 15...",
     "SECTIONS": {
       "GENERAL": "General",
-      "REPORTS": "റിപ്പോർട്ടുകൾ",
-      "CONVERSATION": "സംഭാഷണം",
+      "REPORTS": "à´±à´¿à´ªàµà´ªàµ‹àµ¼à´Ÿàµà´Ÿàµà´•àµ¾",
+      "CONVERSATION": "à´¸à´‚à´­à´¾à´·à´£à´‚",
       "BULK_ACTIONS": "Bulk Actions",
       "CHANGE_ASSIGNEE": "Change Assignee",
       "CHANGE_PRIORITY": "Change Priority",
@@ -194,7 +194,7 @@
       "SNOOZE_CONVERSATION": "Snooze Conversation",
       "ADD_LABEL": "Add label to the conversation",
       "REMOVE_LABEL": "Remove label from the conversation",
-      "SETTINGS": "ക്രമീകരണങ്ങൾ",
+      "SETTINGS": "à´•àµà´°à´®àµ€à´•à´°à´£à´™àµà´™àµ¾",
       "AI_ASSIST": "AI Assist",
       "APPEARANCE": "Appearance",
       "SNOOZE_NOTIFICATION": "Snooze Notification"
@@ -263,6 +263,6 @@
   },
   "COMMON": {
     "OR": "Or",
-    "CLICK_HERE": "ഇവിടെ ക്ലിക്കു ചെയ്യുക"
+    "CLICK_HERE": "à´‡à´µà´¿à´Ÿàµ† à´•àµà´²à´¿à´•àµà´•àµ à´šàµ†à´¯àµà´¯àµà´•"
   }
 }

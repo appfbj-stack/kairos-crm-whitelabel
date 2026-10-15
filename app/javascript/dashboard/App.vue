@@ -10,7 +10,7 @@ import LowBackupCodesBanner from './components/app/LowBackupCodesBanner.vue';
 import vueActionCable from './helper/actionCable';
 import { useRouter } from 'vue-router';
 import { useStore } from 'dashboard/composables/store';
-import WootSnackbarBox from './components/SnackbarContainer.vue';
+import KairosSnackbarBox from './components/SnackbarContainer.vue';
 import { setColorTheme } from './helper/themeHelper';
 import { isOnOnboardingView } from 'v3/helpers/RouteHelper';
 import { useAccount } from 'dashboard/composables/useAccount';
@@ -31,7 +31,7 @@ export default {
     UpdateBanner,
     StatusBanner,
     PaymentPendingBanner,
-    WootSnackbarBox,
+    KairosSnackbarBox,
     PendingEmailVerificationBanner,
     LowBackupCodesBanner,
   },
@@ -53,7 +53,7 @@ export default {
   },
   data() {
     return {
-      latestChatwootVersion: null,
+      latestKairos CRMVersion: null,
       reconnectService: null,
     };
   },
@@ -84,7 +84,7 @@ export default {
     this.listenToThemeChanges();
     // If user locale is set, use it; otherwise use account locale
     this.setLocale(
-      this.uiSettings?.locale || window.chatwootConfig.selectedLocale
+      this.uiSettings?.locale || window.kairos-crmConfig.selectedLocale
     );
   },
   unmounted() {
@@ -111,12 +111,12 @@ export default {
         accountId: this.currentAccountId,
       });
       const account = this.getAccount(this.currentAccountId);
-      const { locale, latest_chatwoot_version: latestChatwootVersion } =
+      const { locale, latest_kairos-crm_version: latestKairos CRMVersion } =
         account;
       const { pubsub_token: pubsubToken } = this.currentUser || {};
       // If user locale is set, use it; otherwise use account locale
       this.setLocale(this.uiSettings?.locale || locale);
-      this.latestChatwootVersion = latestChatwootVersion;
+      this.latestKairos CRMVersion = latestKairos CRMVersion;
       vueActionCable.init(this.store, pubsubToken);
       this.reconnectService = new ReconnectService(this.store, this.router);
       window.reconnectService = this.reconnectService;
@@ -140,7 +140,7 @@ export default {
     class="flex flex-col w-full h-screen min-h-0 bg-n-background"
     :dir="isRTL ? 'rtl' : 'ltr'"
   >
-    <UpdateBanner :latest-chatwoot-version="latestChatwootVersion" />
+    <UpdateBanner :latest-kairos-crm-version="latestKairos CRMVersion" />
     <StatusBanner />
     <template v-if="currentAccountId">
       <PendingEmailVerificationBanner v-if="hideOnOnboardingView" />
@@ -152,7 +152,7 @@ export default {
         <component :is="Component" />
       </transition>
     </router-view>
-    <WootSnackbarBox />
+    <KairosSnackbarBox />
     <NetworkNotification />
   </div>
   <LoadingState v-else />

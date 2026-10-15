@@ -124,7 +124,7 @@ export default {
 
 <template>
   <div class="flex flex-col h-auto overflow-auto integration-hooks">
-    <woot-modal-header
+    <kairos-modal-header
       :header-title="integration.name"
       :header-content="replaceInstallationName(integration.short_description)"
     />

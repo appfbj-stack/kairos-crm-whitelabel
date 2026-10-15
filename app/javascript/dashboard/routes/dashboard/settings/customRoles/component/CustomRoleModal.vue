@@ -154,7 +154,7 @@ const isSubmitDisabled = computed(
 
 <template>
   <div class="flex flex-col h-auto overflow-auto">
-    <woot-modal-header
+    <kairos-modal-header
       :header-title="modalTitle"
       :header-content="modalDescription"
     />

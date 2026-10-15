@@ -5,14 +5,14 @@ import { useAlert } from 'dashboard/composables';
 
 import NextButton from 'dashboard/components-next/button/Button.vue';
 import Modal from '../../../../components/Modal.vue';
-import WootMessageEditor from 'dashboard/components/widgets/WootWriter/Editor.vue';
+import KairosMessageEditor from 'dashboard/components/widgets/KairosWriter/Editor.vue';
 
 export default {
   name: 'AddCanned',
   components: {
     NextButton,
     Modal,
-    WootMessageEditor,
+    KairosMessageEditor,
   },
   props: {
     responseContent: {
@@ -84,7 +84,7 @@ export default {
 <template>
   <Modal v-model:show="show" :on-close="onClose">
     <div class="flex flex-col h-auto overflow-auto">
-      <woot-modal-header
+      <kairos-modal-header
         :header-title="$t('CANNED_MGMT.ADD.TITLE')"
         :header-content="$t('CANNED_MGMT.ADD.DESC')"
       />
@@ -106,7 +106,7 @@ export default {
             {{ $t('CANNED_MGMT.ADD.FORM.CONTENT.LABEL') }}
           </label>
           <div class="editor-wrap">
-            <WootMessageEditor
+            <KairosMessageEditor
               v-model="content"
               class="message-editor [&>div]:px-1"
               :class="{ editor_warning: v$.content.$error }"
@@ -147,7 +147,7 @@ export default {
   @apply hidden;
 }
 
-:deep(.ProseMirror-woot-style) {
+:deep(.ProseMirror-kairos-style) {
   @apply min-h-[12.5rem];
 }
 </style>

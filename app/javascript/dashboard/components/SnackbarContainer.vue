@@ -1,6 +1,6 @@
 <script setup>
 import { ref, onMounted, onUnmounted, nextTick } from 'vue';
-import WootSnackbar from './Snackbar.vue';
+import KairosSnackbar from './Snackbar.vue';
 import { emitter } from 'shared/helpers/mitt';
 import { useI18n } from 'vue-i18n';
 
@@ -61,7 +61,7 @@ onUnmounted(() => {
     class="fixed top-4 left-1/2 -translate-x-1/2 max-w-[25rem] w-[calc(100%-2rem)] text-center bg-transparent border-0 p-0 m-0 outline-none overflow-visible"
   >
     <transition-group name="toast-fade" tag="div">
-      <WootSnackbar
+      <KairosSnackbar
         v-for="snackMessage in snackMessages"
         :key="snackMessage.key"
         :message="snackMessage.message"

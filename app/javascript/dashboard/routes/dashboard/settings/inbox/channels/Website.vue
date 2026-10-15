@@ -81,7 +81,7 @@ export default {
       :header-title="$t('INBOX_MGMT.ADD.WEBSITE_CHANNEL.TITLE')"
       :header-content="$t('INBOX_MGMT.ADD.WEBSITE_CHANNEL.DESC')"
     />
-    <woot-loading-state
+    <kairos-loading-state
       v-if="uiFlags.isCreating"
       :message="$t('INBOX_MGMT.ADD.WEBSITE_CHANNEL.LOADING_MESSAGE')"
     />
@@ -116,7 +116,7 @@ export default {
       <div class="w-full">
         <label>
           {{ $t('INBOX_MGMT.ADD.WEBSITE_CHANNEL.WIDGET_COLOR.LABEL') }}
-          <woot-color-picker v-model="channelWidgetColor" />
+          <kairos-color-picker v-model="channelWidgetColor" />
         </label>
       </div>
 

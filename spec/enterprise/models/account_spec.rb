@@ -36,14 +36,14 @@ RSpec.describe Account, type: :model do
     let(:account) { create(:account) }
 
     it 'is always enabled for self-hosted enterprise accounts' do
-      allow(ChatwootApp).to receive(:chatwoot_cloud?).and_return(false)
+      allow(Kairos CRMApp).to receive(:kairos-crm_cloud?).and_return(false)
       account.disable_features!('api_and_webhooks')
 
       expect(account.api_and_webhooks_enabled?).to be true
     end
 
-    it 'uses the account feature flag on Chatwoot Cloud' do
-      allow(ChatwootApp).to receive(:chatwoot_cloud?).and_return(true)
+    it 'uses the account feature flag on Kairos CRM Cloud' do
+      allow(Kairos CRMApp).to receive(:kairos-crm_cloud?).and_return(true)
       account.disable_features!('api_and_webhooks')
 
       expect(account.api_and_webhooks_enabled?).to be false
@@ -82,7 +82,7 @@ RSpec.describe Account, type: :model do
     let(:assistant) { create(:captain_assistant, account: account) }
 
     before do
-      allow(ChatwootApp).to receive(:chatwoot_cloud?).and_return(true)
+      allow(Kairos CRMApp).to receive(:kairos-crm_cloud?).and_return(true)
       create(:installation_config, name: 'ACCOUNT_AGENTS_LIMIT', value: 20)
     end
 
@@ -168,7 +168,7 @@ RSpec.describe Account, type: :model do
       it 'returns default values' do
         account.custom_attributes = { 'plan_name': 'unknown' }
         expect(account.captain_monthly_limit).to eq(
-          { documents: ChatwootApp.max_limit, responses: ChatwootApp.max_limit }.with_indifferent_access
+          { documents: Kairos CRMApp.max_limit, responses: Kairos CRMApp.max_limit }.with_indifferent_access
         )
       end
     end
@@ -221,7 +221,7 @@ RSpec.describe Account, type: :model do
       account.update(limits: { agents: '' })
       InstallationConfig.where(name: 'ACCOUNT_AGENTS_LIMIT').update(value: '')
 
-      expect(account.usage_limits[:agents]).to eq(ChatwootApp.max_limit)
+      expect(account.usage_limits[:agents]).to eq(Kairos CRMApp.max_limit)
     end
   end
 
@@ -235,7 +235,7 @@ RSpec.describe Account, type: :model do
     end
 
     before do
-      InstallationConfig.where(name: 'CHATWOOT_CLOUD_PLAN_FEATURES').first_or_create(value: plan_features)
+      InstallationConfig.where(name: 'KAIROS CRM_CLOUD_PLAN_FEATURES').first_or_create(value: plan_features)
     end
 
     context 'when plan_name is hacker' do
@@ -275,7 +275,7 @@ RSpec.describe Account, type: :model do
     end
 
     it 'enables Captain V2 for new self-hosted enterprise accounts' do
-      allow(ChatwootApp).to receive(:self_hosted_enterprise?).and_return(true)
+      allow(Kairos CRMApp).to receive(:self_hosted_enterprise?).and_return(true)
 
       account = create(:account)
 
@@ -286,8 +286,8 @@ RSpec.describe Account, type: :model do
     end
 
     it 'marks new cloud accounts as eligible for the Captain V2 paid-plan default' do
-      allow(ChatwootApp).to receive(:self_hosted_enterprise?).and_return(false)
-      allow(ChatwootApp).to receive(:chatwoot_cloud?).and_return(true)
+      allow(Kairos CRMApp).to receive(:self_hosted_enterprise?).and_return(false)
+      allow(Kairos CRMApp).to receive(:kairos-crm_cloud?).and_return(true)
 
       account = create(:account)
 
@@ -324,7 +324,7 @@ RSpec.describe Account, type: :model do
     end
 
     it 'uses the enterprise cadence for self-hosted enterprise installs without a plan_name' do
-      allow(ChatwootApp).to receive(:self_hosted_enterprise?).and_return(true)
+      allow(Kairos CRMApp).to receive(:self_hosted_enterprise?).and_return(true)
       create(:installation_config, name: 'CAPTAIN_DOCUMENT_AUTO_SYNC_INTERVALS', value: { enterprise: 6 }.to_json)
       account.update!(custom_attributes: {})
 

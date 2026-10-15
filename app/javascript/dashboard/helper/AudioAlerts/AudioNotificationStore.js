@@ -3,7 +3,7 @@ import {
   CONVERSATION_PERMISSIONS,
 } from 'dashboard/constants/permissions';
 import { getUserPermissions } from 'dashboard/helper/permissionsHelper';
-import wootConstants from 'dashboard/constants/globals';
+import kairosConstants from 'dashboard/constants/globals';
 
 class AudioNotificationStore {
   constructor(store) {
@@ -25,7 +25,7 @@ class AudioNotificationStore {
 
     const activeConversation =
       this.store.getters.getConversationById(conversationId);
-    return activeConversation?.status === wootConstants.STATUS_TYPE.PENDING;
+    return activeConversation?.status === kairosConstants.STATUS_TYPE.PENDING;
   };
 
   isMessageFromCurrentConversation = message => {

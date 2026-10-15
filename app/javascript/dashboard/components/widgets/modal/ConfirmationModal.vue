@@ -55,7 +55,7 @@ export default {
 <template>
   <Modal v-model:show="show" :on-close="cancel">
     <div class="h-auto overflow-auto flex flex-col">
-      <woot-modal-header :header-title="title" :header-content="description" />
+      <kairos-modal-header :header-title="title" :header-content="description" />
       <div class="flex flex-row justify-end gap-2 py-4 px-6 w-full">
         <NextButton faded type="reset" :label="cancelLabel" @click="cancel" />
         <NextButton type="submit" :label="confirmLabel" @click="confirm" />

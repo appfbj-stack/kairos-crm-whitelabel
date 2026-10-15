@@ -56,14 +56,14 @@ const getFormattedPermissions = role => {
         <div class="flex gap-3 justify-end flex-shrink-0">
           <Button
             v-tooltip.top="$t('CUSTOM_ROLE.EDIT.BUTTON_TEXT')"
-            icon="i-woot-edit-pen"
+            icon="i-kairos-edit-pen"
             slate
             sm
             @click="emit('edit', customRole)"
           />
           <Button
             v-tooltip.top="$t('CUSTOM_ROLE.DELETE.BUTTON_TEXT')"
-            icon="i-woot-bin"
+            icon="i-kairos-bin"
             slate
             sm
             class="hover:enabled:text-n-ruby-11 hover:enabled:bg-n-ruby-2"

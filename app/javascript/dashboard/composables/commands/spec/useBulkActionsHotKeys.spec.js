@@ -1,7 +1,7 @@
 import { useBulkActionsHotKeys } from '../useBulkActionsHotKeys';
 import { useStore, useMapGetter } from 'dashboard/composables/store';
 import { useI18n } from 'vue-i18n';
-import wootConstants from 'dashboard/constants/globals';
+import kairosConstants from 'dashboard/constants/globals';
 import { emitter } from 'shared/helpers/mitt';
 
 vi.mock('dashboard/composables/store');
@@ -64,7 +64,7 @@ describe('useBulkActionsHotKeys', () => {
     );
     expect(snoozeAction).toBeDefined();
     expect(snoozeAction.children).toEqual(
-      Object.values(wootConstants.SNOOZE_OPTIONS)
+      Object.values(kairosConstants.SNOOZE_OPTIONS)
     );
   });
 

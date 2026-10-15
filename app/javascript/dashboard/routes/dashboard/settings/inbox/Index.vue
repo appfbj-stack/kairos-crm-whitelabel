@@ -164,7 +164,7 @@ const openDelete = inbox => {
               <Button
                 v-if="isAdmin"
                 v-tooltip.top="$t('INBOX_MGMT.SETTINGS')"
-                icon="i-woot-settings"
+                icon="i-kairos-settings"
                 slate
                 sm
               />
@@ -172,7 +172,7 @@ const openDelete = inbox => {
             <Button
               v-if="isAdmin"
               v-tooltip.top="$t('INBOX_MGMT.DELETE.BUTTON_TEXT')"
-              icon="i-woot-bin"
+              icon="i-kairos-bin"
               slate
               sm
               class="hover:enabled:text-n-ruby-11 hover:enabled:bg-n-ruby-2"
@@ -183,7 +183,7 @@ const openDelete = inbox => {
       </div>
     </template>
 
-    <woot-confirm-delete-modal
+    <kairos-confirm-delete-modal
       v-if="showDeletePopup"
       v-model:show="showDeletePopup"
       :title="$t('INBOX_MGMT.DELETE.CONFIRM.TITLE')"

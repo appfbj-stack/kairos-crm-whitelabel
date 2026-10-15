@@ -20,11 +20,11 @@ const props = defineProps({
 
 defineEmits(['toggleMode']);
 
-const wootEditorReplyMode = useTemplateRef('wootEditorReplyMode');
-const wootEditorPrivateMode = useTemplateRef('wootEditorPrivateMode');
+const kairosEditorReplyMode = useTemplateRef('kairosEditorReplyMode');
+const kairosEditorPrivateMode = useTemplateRef('kairosEditorPrivateMode');
 
-const replyModeSize = useElementSize(wootEditorReplyMode);
-const privateModeSize = useElementSize(wootEditorPrivateMode);
+const replyModeSize = useElementSize(kairosEditorReplyMode);
+const privateModeSize = useElementSize(kairosEditorPrivateMode);
 
 /**
  * Computed boolean indicating if the editor is in private note mode
@@ -76,10 +76,10 @@ const translateValue = computed(() => {
     }"
     @click="$emit('toggleMode')"
   >
-    <div ref="wootEditorReplyMode" class="flex items-center gap-1 px-2 z-20">
+    <div ref="kairosEditorReplyMode" class="flex items-center gap-1 px-2 z-20">
       {{ $t('CONVERSATION.REPLYBOX.REPLY') }}
     </div>
-    <div ref="wootEditorPrivateMode" class="flex items-center gap-1 px-2 z-20">
+    <div ref="kairosEditorPrivateMode" class="flex items-center gap-1 px-2 z-20">
       {{ $t('CONVERSATION.REPLYBOX.PRIVATE_NOTE') }}
     </div>
     <div

@@ -38,7 +38,7 @@ const titleCase = computed(() => props.title.toLowerCase());
       <h3 class="text-sm text-n-slate-11">{{ title }}</h3>
     </div>
     <slot />
-    <woot-loading-state
+    <kairos-loading-state
       v-if="isFetching"
       :message="empty ? $t('SEARCH.SEARCHING_DATA') : $t('SEARCH.LOADING_DATA')"
     />

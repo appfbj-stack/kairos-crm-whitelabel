@@ -34,7 +34,7 @@ const actions = computed(() => props.message.actions || []);
         class="hover:!no-underline"
       >
         <template #icon>
-          <Icon icon="i-woot-quick-reply" class="size-[15px]" />
+          <Icon icon="i-kairos-quick-reply" class="size-[15px]" />
         </template>
       </Button>
     </div>

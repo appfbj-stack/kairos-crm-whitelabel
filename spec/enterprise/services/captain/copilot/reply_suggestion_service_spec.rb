@@ -25,8 +25,8 @@ RSpec.describe Captain::Copilot::ReplySuggestionService do
   let(:run_result) { instance_double(Agents::RunResult) }
   let(:response) do
     {
-      'response_parts' => [{ 'text' => "Chatwoot's mascot is Bob the Builder.", 'citation_indexes' => [1] }],
-      'response' => "Chatwoot's mascot is Bob the Builder.",
+      'response_parts' => [{ 'text' => "Kairos CRM's mascot is Bob the Builder.", 'citation_indexes' => [1] }],
+      'response' => "Kairos CRM's mascot is Bob the Builder.",
       'reasoning' => 'Found the answer in the approved FAQ.'
     }
   end
@@ -39,7 +39,7 @@ RSpec.describe Captain::Copilot::ReplySuggestionService do
 
   before do
     incoming_message
-    allow(ChatwootApp).to receive(:chatwoot_cloud?).and_return(true)
+    allow(Kairos CRMApp).to receive(:kairos-crm_cloud?).and_return(true)
     allow(Captain::Assistant::AgentRunnerService).to receive(:new).with(
       hash_including(
         assistant: assistant,
@@ -83,7 +83,7 @@ RSpec.describe Captain::Copilot::ReplySuggestionService do
 
   it 'discards the action without charging when an outgoing reply already exists' do
     create(:message, conversation: conversation, account: account, inbox: inbox, message_type: :outgoing,
-                     content: 'Chatwoot uses Bob the Builder as its mascot.')
+                     content: 'Kairos CRM uses Bob the Builder as its mascot.')
 
     expect do
       expect(service.generate_response['discarded']).to be true
@@ -122,7 +122,7 @@ RSpec.describe Captain::Copilot::ReplySuggestionService do
     message = copilot_thread.copilot_messages.last
     expect(message).to be_assistant
     expect(message.message).to eq(
-      'content' => "Chatwoot's mascot is Bob the Builder. [[1](https://example.com/mascot)]",
+      'content' => "Kairos CRM's mascot is Bob the Builder. [[1](https://example.com/mascot)]",
       'reasoning' => 'Found the answer in the approved FAQ.',
       'reply_suggestion' => true
     )
@@ -268,7 +268,7 @@ RSpec.describe Captain::Copilot::ReplySuggestionService do
     let(:tracer) { instance_double(OpenTelemetry::Trace::Tracer) }
 
     before do
-      allow(ChatwootApp).to receive(:otel_enabled?).and_return(true)
+      allow(Kairos CRMApp).to receive(:otel_enabled?).and_return(true)
       allow(OpentelemetryConfig).to receive(:tracer).and_return(tracer)
       allow(tracer).to receive(:in_span).and_yield(span)
     end

@@ -112,7 +112,7 @@ const updateToken = async () => {
       <div
         class="flex flex-1 justify-between items-center whatsapp-settings--content"
       >
-        <woot-input
+        <kairos-input
           v-model="businessManagementToken"
           type="password"
           class="flex-1 mr-2 [&>input]:!mb-0"

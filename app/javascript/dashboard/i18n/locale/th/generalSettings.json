@@ -1,4 +1,4 @@
-{
+﻿{
   "GENERAL_SETTINGS": {
     "LIMIT_MESSAGES": {
       "CONVERSATION": "You have exceeded the conversation limit. Hacker plan allows only 500 conversations.",
@@ -6,13 +6,13 @@
       "AGENTS": "You have exceeded the agent limit. Your plan only allows {allowedAgents} agents.",
       "NON_ADMIN": "Please contact your administrator to upgrade the plan and continue using all features."
     },
-    "TITLE": "ตั้งค่าบัญชี",
-    "SUBMIT": "อัพเดทการตั้งค่า",
-    "BACK": "ย้อนกลับ",
+    "TITLE": "à¸•à¸±à¹‰à¸‡à¸„à¹ˆà¸²à¸šà¸±à¸à¸Šà¸µ",
+    "SUBMIT": "à¸­à¸±à¸žà¹€à¸”à¸—à¸à¸²à¸£à¸•à¸±à¹‰à¸‡à¸„à¹ˆà¸²",
+    "BACK": "à¸¢à¹‰à¸­à¸™à¸à¸¥à¸±à¸š",
     "DISMISS": "Dismiss",
     "UPDATE": {
-      "ERROR": "ไม่สามารถอัพเดทการตั้งค่าได้ ลองอีกครั้งสิ",
-      "SUCCESS": "อัพเดทการตั้งค่าบัญชีเเล้ว"
+      "ERROR": "à¹„à¸¡à¹ˆà¸ªà¸²à¸¡à¸²à¸£à¸–à¸­à¸±à¸žà¹€à¸”à¸—à¸à¸²à¸£à¸•à¸±à¹‰à¸‡à¸„à¹ˆà¸²à¹„à¸”à¹‰ à¸¥à¸­à¸‡à¸­à¸µà¸à¸„à¸£à¸±à¹‰à¸‡à¸ªà¸´",
+      "SUCCESS": "à¸­à¸±à¸žà¹€à¸”à¸—à¸à¸²à¸£à¸•à¸±à¹‰à¸‡à¸„à¹ˆà¸²à¸šà¸±à¸à¸Šà¸µà¹€à¹€à¸¥à¹‰à¸§"
     },
     "ACCOUNT_DELETE_SECTION": {
       "TITLE": "Delete your Account",
@@ -21,9 +21,9 @@
       "CONFIRM": {
         "TITLE": "Delete Account",
         "MESSAGE": "Deleting your Account is irreversible. Enter your account name below to confirm you want to permanently delete it.",
-        "BUTTON_TEXT": "ลบ",
-        "DISMISS": "ยกเลิก",
-        "PLACE_HOLDER": "โปรดพิมพ์ {accountName} เพื่อยืนยัน"
+        "BUTTON_TEXT": "à¸¥à¸š",
+        "DISMISS": "à¸¢à¸à¹€à¸¥à¸´à¸",
+        "PLACE_HOLDER": "à¹‚à¸›à¸£à¸”à¸žà¸´à¸¡à¸žà¹Œ {accountName} à¹€à¸žà¸·à¹ˆà¸­à¸¢à¸·à¸™à¸¢à¸±à¸™"
       },
       "SUCCESS": "Account marked for deletion",
       "FAILURE": "Could not delete account, try again!",
@@ -35,14 +35,14 @@
       }
     },
     "FORM": {
-      "ERROR": "กรุณาเเก้ไขข้อผิดพลาดในเเบบฟอร์ม",
+      "ERROR": "à¸à¸£à¸¸à¸“à¸²à¹€à¹€à¸à¹‰à¹„à¸‚à¸‚à¹‰à¸­à¸œà¸´à¸”à¸žà¸¥à¸²à¸”à¹ƒà¸™à¹€à¹€à¸šà¸šà¸Ÿà¸­à¸£à¹Œà¸¡",
       "GENERAL_SECTION": {
-        "TITLE": "ตั้งค่าทั่วไป",
+        "TITLE": "à¸•à¸±à¹‰à¸‡à¸„à¹ˆà¸²à¸—à¸±à¹ˆà¸§à¹„à¸›",
         "NOTE": ""
       },
       "ACCOUNT_ID": {
-        "TITLE": "หมายเลขบัญชี",
-        "NOTE": "โปรดระบุหมายเลขบัญชีหากคุณต้องการเชื่อมต่อกับ API"
+        "TITLE": "à¸«à¸¡à¸²à¸¢à¹€à¸¥à¸‚à¸šà¸±à¸à¸Šà¸µ",
+        "NOTE": "à¹‚à¸›à¸£à¸”à¸£à¸°à¸šà¸¸à¸«à¸¡à¸²à¸¢à¹€à¸¥à¸‚à¸šà¸±à¸à¸Šà¸µà¸«à¸²à¸à¸„à¸¸à¸“à¸•à¹‰à¸­à¸‡à¸à¸²à¸£à¹€à¸Šà¸·à¹ˆà¸­à¸¡à¸•à¹ˆà¸­à¸à¸±à¸š API"
       },
       "AUTO_RESOLVE": {
         "TITLE": "Auto-resolve conversations",
@@ -68,28 +68,28 @@
           "PLACEHOLDER": "Select a label"
         },
         "IGNORE_WAITING": {
-          "LABEL": "Skip conversations waiting for agent’s reply"
+          "LABEL": "Skip conversations waiting for agentâ€™s reply"
         },
         "UPDATE_BUTTON": "Save Changes"
       },
       "NAME": {
-        "LABEL": "ชื่อบัญชี",
-        "PLACEHOLDER": "ชื่อบัญชีของคุณ",
-        "ERROR": "กรุณากรอกชื่อบัญชีให้ถูกต้อง"
+        "LABEL": "à¸Šà¸·à¹ˆà¸­à¸šà¸±à¸à¸Šà¸µ",
+        "PLACEHOLDER": "à¸Šà¸·à¹ˆà¸­à¸šà¸±à¸à¸Šà¸µà¸‚à¸­à¸‡à¸„à¸¸à¸“",
+        "ERROR": "à¸à¸£à¸¸à¸“à¸²à¸à¸£à¸­à¸à¸Šà¸·à¹ˆà¸­à¸šà¸±à¸à¸Šà¸µà¹ƒà¸«à¹‰à¸–à¸¹à¸à¸•à¹‰à¸­à¸‡"
       },
       "LANGUAGE": {
-        "LABEL": "ภาษา",
-        "PLACEHOLDER": "ชื่อบัญชีของคุณ",
+        "LABEL": "à¸ à¸²à¸©à¸²",
+        "PLACEHOLDER": "à¸Šà¸·à¹ˆà¸­à¸šà¸±à¸à¸Šà¸µà¸‚à¸­à¸‡à¸„à¸¸à¸“",
         "ERROR": ""
       },
       "DOMAIN": {
         "LABEL": "Incoming Email Domain",
-        "PLACEHOLDER": "โดเมนที่คุณจะรับอีเมล์",
+        "PLACEHOLDER": "à¹‚à¸”à¹€à¸¡à¸™à¸—à¸µà¹ˆà¸„à¸¸à¸“à¸ˆà¸°à¸£à¸±à¸šà¸­à¸µà¹€à¸¡à¸¥à¹Œ",
         "ERROR": ""
       },
       "SUPPORT_EMAIL": {
-        "LABEL": "อีเมล์ช่วยเหลือ",
-        "PLACEHOLDER": "อีเมล์ช่วยเหลือในบริษัทของคุณ",
+        "LABEL": "à¸­à¸µà¹€à¸¡à¸¥à¹Œà¸Šà¹ˆà¸§à¸¢à¹€à¸«à¸¥à¸·à¸­",
+        "PLACEHOLDER": "à¸­à¸µà¹€à¸¡à¸¥à¹Œà¸Šà¹ˆà¸§à¸¢à¹€à¸«à¸¥à¸·à¸­à¹ƒà¸™à¸šà¸£à¸´à¸©à¸±à¸—à¸‚à¸­à¸‡à¸„à¸¸à¸“",
         "ERROR": ""
       },
       "AUTO_RESOLVE_IGNORE_WAITING": {
@@ -113,58 +113,58 @@
           "SUCCESS": "Auto resolve settings updated successfully",
           "ERROR": "Failed to update auto resolve settings"
         },
-        "UPDATE_BUTTON": "อัพเดท",
+        "UPDATE_BUTTON": "à¸­à¸±à¸žà¹€à¸”à¸—",
         "MESSAGE_LABEL": "Custom resolution message",
         "MESSAGE_PLACEHOLDER": "Conversation was marked resolved by system due to 15 days of inactivity",
         "MESSAGE_HELP": "This message is sent to the customer when a conversation is automatically resolved by the system due to inactivity."
       },
       "FEATURES": {
-        "INBOUND_EMAIL_ENABLED": "การสนทนาด้วยอีเมล์ถูกเปิดสำหรับบัญชีของคุณ",
-        "CUSTOM_EMAIL_DOMAIN_ENABLED": "คุณสามารถรับอีเมล์ในโดเมนเเบบกำหนดเองได้เเล้ว"
+        "INBOUND_EMAIL_ENABLED": "à¸à¸²à¸£à¸ªà¸™à¸—à¸™à¸²à¸”à¹‰à¸§à¸¢à¸­à¸µà¹€à¸¡à¸¥à¹Œà¸–à¸¹à¸à¹€à¸›à¸´à¸”à¸ªà¸³à¸«à¸£à¸±à¸šà¸šà¸±à¸à¸Šà¸µà¸‚à¸­à¸‡à¸„à¸¸à¸“",
+        "CUSTOM_EMAIL_DOMAIN_ENABLED": "à¸„à¸¸à¸“à¸ªà¸²à¸¡à¸²à¸£à¸–à¸£à¸±à¸šà¸­à¸µà¹€à¸¡à¸¥à¹Œà¹ƒà¸™à¹‚à¸”à¹€à¸¡à¸™à¹€à¹€à¸šà¸šà¸à¸³à¸«à¸™à¸”à¹€à¸­à¸‡à¹„à¸”à¹‰à¹€à¹€à¸¥à¹‰à¸§"
       }
     },
-    "UPDATE_CHATWOOT": "Chatwoot เวอร์ชั่น {latestChatwootVersion} พร้อมสำหรับการอัปเดต กรุณาอัปเดตเวอร์ชั่นของคุณ",
-    "LEARN_MORE": "เรียนรู้เพิ่มเติม",
-    "PAYMENT_PENDING": "Your payment is pending. Please update your payment information to continue using Chatwoot",
-    "UPGRADE": "Upgrade to continue using Chatwoot",
-    "LIMITS_UPGRADE": "Your account has exceeded the usage limits, please upgrade your plan to continue using Chatwoot",
+    "UPDATE_KAIROS_CRM": "Kairos CRM à¹€à¸§à¸­à¸£à¹Œà¸Šà¸±à¹ˆà¸™ {latestKairos CRMVersion} à¸žà¸£à¹‰à¸­à¸¡à¸ªà¸³à¸«à¸£à¸±à¸šà¸à¸²à¸£à¸­à¸±à¸›à¹€à¸”à¸• à¸à¸£à¸¸à¸“à¸²à¸­à¸±à¸›à¹€à¸”à¸•à¹€à¸§à¸­à¸£à¹Œà¸Šà¸±à¹ˆà¸™à¸‚à¸­à¸‡à¸„à¸¸à¸“",
+    "LEARN_MORE": "à¹€à¸£à¸µà¸¢à¸™à¸£à¸¹à¹‰à¹€à¸žà¸´à¹ˆà¸¡à¹€à¸•à¸´à¸¡",
+    "PAYMENT_PENDING": "Your payment is pending. Please update your payment information to continue using Kairos CRM",
+    "UPGRADE": "Upgrade to continue using Kairos CRM",
+    "LIMITS_UPGRADE": "Your account has exceeded the usage limits, please upgrade your plan to continue using Kairos CRM",
     "OPEN_BILLING": "Open billing"
   },
   "FORMS": {
     "MULTISELECT": {
-      "ENTER_TO_SELECT": "กด enter เพื่อเลือก",
-      "ENTER_TO_REMOVE": "กด enter เพื่อลบ",
+      "ENTER_TO_SELECT": "à¸à¸” enter à¹€à¸žà¸·à¹ˆà¸­à¹€à¸¥à¸·à¸­à¸",
+      "ENTER_TO_REMOVE": "à¸à¸” enter à¹€à¸žà¸·à¹ˆà¸­à¸¥à¸š",
       "NO_OPTIONS": "List is empty",
-      "SELECT_ONE": "เลือก",
-      "SELECT": "เลือก"
+      "SELECT_ONE": "à¹€à¸¥à¸·à¸­à¸",
+      "SELECT": "à¹€à¸¥à¸·à¸­à¸"
     }
   },
   "NOTIFICATIONS_PAGE": {
-    "HEADER": "การแจ้งเตือน",
-    "MARK_ALL_DONE": "ทำเครื่องหมายว่าเสร็จแล้วทั้งหมด",
-    "DELETE_TITLE": "ลบ",
+    "HEADER": "à¸à¸²à¸£à¹à¸ˆà¹‰à¸‡à¹€à¸•à¸·à¸­à¸™",
+    "MARK_ALL_DONE": "à¸—à¸³à¹€à¸„à¸£à¸·à¹ˆà¸­à¸‡à¸«à¸¡à¸²à¸¢à¸§à¹ˆà¸²à¹€à¸ªà¸£à¹‡à¸ˆà¹à¸¥à¹‰à¸§à¸—à¸±à¹‰à¸‡à¸«à¸¡à¸”",
+    "DELETE_TITLE": "à¸¥à¸š",
     "UNREAD_NOTIFICATION": {
-      "TITLE": "การแจ้งเตือนที่ยังไม่ได้อ่าน",
-      "ALL_NOTIFICATIONS": "ดูการแจ้งเตือนทั้งหมด",
-      "LOADING_UNREAD_MESSAGE": "กำลังโหลดการแจ้งเตือนที่ยังไม่ได้อ่าน",
-      "EMPTY_MESSAGE": "ไม่มีการแจ้งเตือนที่ยังไม่ได้อ่าน"
+      "TITLE": "à¸à¸²à¸£à¹à¸ˆà¹‰à¸‡à¹€à¸•à¸·à¸­à¸™à¸—à¸µà¹ˆà¸¢à¸±à¸‡à¹„à¸¡à¹ˆà¹„à¸”à¹‰à¸­à¹ˆà¸²à¸™",
+      "ALL_NOTIFICATIONS": "à¸”à¸¹à¸à¸²à¸£à¹à¸ˆà¹‰à¸‡à¹€à¸•à¸·à¸­à¸™à¸—à¸±à¹‰à¸‡à¸«à¸¡à¸”",
+      "LOADING_UNREAD_MESSAGE": "à¸à¸³à¸¥à¸±à¸‡à¹‚à¸«à¸¥à¸”à¸à¸²à¸£à¹à¸ˆà¹‰à¸‡à¹€à¸•à¸·à¸­à¸™à¸—à¸µà¹ˆà¸¢à¸±à¸‡à¹„à¸¡à¹ˆà¹„à¸”à¹‰à¸­à¹ˆà¸²à¸™",
+      "EMPTY_MESSAGE": "à¹„à¸¡à¹ˆà¸¡à¸µà¸à¸²à¸£à¹à¸ˆà¹‰à¸‡à¹€à¸•à¸·à¸­à¸™à¸—à¸µà¹ˆà¸¢à¸±à¸‡à¹„à¸¡à¹ˆà¹„à¸”à¹‰à¸­à¹ˆà¸²à¸™"
     },
     "LIST": {
-      "LOADING_MESSAGE": "กำลังโหลดการแจ้งเตือน",
-      "404": "ไม่มีการแจ้งเตือน",
+      "LOADING_MESSAGE": "à¸à¸³à¸¥à¸±à¸‡à¹‚à¸«à¸¥à¸”à¸à¸²à¸£à¹à¸ˆà¹‰à¸‡à¹€à¸•à¸·à¸­à¸™",
+      "404": "à¹„à¸¡à¹ˆà¸¡à¸µà¸à¸²à¸£à¹à¸ˆà¹‰à¸‡à¹€à¸•à¸·à¸­à¸™",
       "TABLE_HEADER": [
-        "ชื่อ",
-        "หมายเลขโทรศัพท์",
-        "การสนทนา",
-        "ติดต่อครั้งสุดท้าย"
+        "à¸Šà¸·à¹ˆà¸­",
+        "à¸«à¸¡à¸²à¸¢à¹€à¸¥à¸‚à¹‚à¸—à¸£à¸¨à¸±à¸žà¸—à¹Œ",
+        "à¸à¸²à¸£à¸ªà¸™à¸—à¸™à¸²",
+        "à¸•à¸´à¸”à¸•à¹ˆà¸­à¸„à¸£à¸±à¹‰à¸‡à¸ªà¸¸à¸”à¸—à¹‰à¸²à¸¢"
       ]
     },
     "TYPE_LABEL": {
-      "conversation_creation": "สร้างการสนทนาใหม่",
-      "conversation_assignment": "การสนทนาที่ถูกมอบหมาย",
-      "assigned_conversation_new_message": "ข้อความใหม่",
-      "participating_conversation_new_message": "ข้อความใหม่",
-      "conversation_mention": "กล่าวถึง",
+      "conversation_creation": "à¸ªà¸£à¹‰à¸²à¸‡à¸à¸²à¸£à¸ªà¸™à¸—à¸™à¸²à¹ƒà¸«à¸¡à¹ˆ",
+      "conversation_assignment": "à¸à¸²à¸£à¸ªà¸™à¸—à¸™à¸²à¸—à¸µà¹ˆà¸–à¸¹à¸à¸¡à¸­à¸šà¸«à¸¡à¸²à¸¢",
+      "assigned_conversation_new_message": "à¸‚à¹‰à¸­à¸„à¸§à¸²à¸¡à¹ƒà¸«à¸¡à¹ˆ",
+      "participating_conversation_new_message": "à¸‚à¹‰à¸­à¸„à¸§à¸²à¸¡à¹ƒà¸«à¸¡à¹ˆ",
+      "conversation_mention": "à¸à¸¥à¹ˆà¸²à¸§à¸–à¸¶à¸‡",
       "sla_missed_first_response": "SLA Missed",
       "sla_missed_next_response": "SLA Missed",
       "sla_missed_resolution": "SLA Missed"
@@ -172,82 +172,82 @@
   },
   "NETWORK": {
     "NOTIFICATION": {
-      "OFFLINE": "ออฟไลน์",
+      "OFFLINE": "à¸­à¸­à¸Ÿà¹„à¸¥à¸™à¹Œ",
       "RECONNECTING": "Reconnecting...",
       "RECONNECT_SUCCESS": "Reconnected"
     },
     "BUTTON": {
-      "REFRESH": "โหลดใหม่"
+      "REFRESH": "à¹‚à¸«à¸¥à¸”à¹ƒà¸«à¸¡à¹ˆ"
     }
   },
   "COMMAND_BAR": {
-    "SEARCH_PLACEHOLDER": "ค้นหาหรือไปยัง",
+    "SEARCH_PLACEHOLDER": "à¸„à¹‰à¸™à¸«à¸²à¸«à¸£à¸·à¸­à¹„à¸›à¸¢à¸±à¸‡",
     "SNOOZE_PLACEHOLDER": "Type a time e.g. tomorrow, 2 hours, next friday, jan 15...",
     "SECTIONS": {
-      "GENERAL": "ทั่วไป",
-      "REPORTS": "รายงาน",
-      "CONVERSATION": "การสนทนา",
+      "GENERAL": "à¸—à¸±à¹ˆà¸§à¹„à¸›",
+      "REPORTS": "à¸£à¸²à¸¢à¸‡à¸²à¸™",
+      "CONVERSATION": "à¸à¸²à¸£à¸ªà¸™à¸—à¸™à¸²",
       "BULK_ACTIONS": "Bulk Actions",
-      "CHANGE_ASSIGNEE": "เปลี่ยนผู้รับมอบหมาย",
+      "CHANGE_ASSIGNEE": "à¹€à¸›à¸¥à¸µà¹ˆà¸¢à¸™à¸œà¸¹à¹‰à¸£à¸±à¸šà¸¡à¸­à¸šà¸«à¸¡à¸²à¸¢",
       "CHANGE_PRIORITY": "Change Priority",
-      "CHANGE_TEAM": "เปลี่ยนทีม",
-      "SNOOZE_CONVERSATION": "พักการสนทนา",
-      "ADD_LABEL": "เพิ่มป้ายกำกับให้การสนทนา",
-      "REMOVE_LABEL": "ลบป้ายกำกับออกจากการสนทนา",
-      "SETTINGS": "ตั้งค่า",
+      "CHANGE_TEAM": "à¹€à¸›à¸¥à¸µà¹ˆà¸¢à¸™à¸—à¸µà¸¡",
+      "SNOOZE_CONVERSATION": "à¸žà¸±à¸à¸à¸²à¸£à¸ªà¸™à¸—à¸™à¸²",
+      "ADD_LABEL": "à¹€à¸žà¸´à¹ˆà¸¡à¸›à¹‰à¸²à¸¢à¸à¸³à¸à¸±à¸šà¹ƒà¸«à¹‰à¸à¸²à¸£à¸ªà¸™à¸—à¸™à¸²",
+      "REMOVE_LABEL": "à¸¥à¸šà¸›à¹‰à¸²à¸¢à¸à¸³à¸à¸±à¸šà¸­à¸­à¸à¸ˆà¸²à¸à¸à¸²à¸£à¸ªà¸™à¸—à¸™à¸²",
+      "SETTINGS": "à¸•à¸±à¹‰à¸‡à¸„à¹ˆà¸²",
       "AI_ASSIST": "AI Assist",
       "APPEARANCE": "Appearance",
       "SNOOZE_NOTIFICATION": "Snooze Notification"
     },
     "COMMANDS": {
       "GO_TO_MY_INBOX": "Go to My Inbox",
-      "GO_TO_CONVERSATION_DASHBOARD": "ไปยังแดชบอร์ดการสนทนา",
-      "GO_TO_CONTACTS_DASHBOARD": "ไปยังแดชบอร์ดรายชื่อผู้ติดต่อ",
+      "GO_TO_CONVERSATION_DASHBOARD": "à¹„à¸›à¸¢à¸±à¸‡à¹à¸”à¸Šà¸šà¸­à¸£à¹Œà¸”à¸à¸²à¸£à¸ªà¸™à¸—à¸™à¸²",
+      "GO_TO_CONTACTS_DASHBOARD": "à¹„à¸›à¸¢à¸±à¸‡à¹à¸”à¸Šà¸šà¸­à¸£à¹Œà¸”à¸£à¸²à¸¢à¸Šà¸·à¹ˆà¸­à¸œà¸¹à¹‰à¸•à¸´à¸”à¸•à¹ˆà¸­",
       "GO_TO_CAPTAIN": "Go to Captain",
       "GO_TO_CALLS_DASHBOARD": "Go to Calls Dashboard",
       "GO_TO_CAMPAIGNS": "Go to Campaigns",
       "GO_TO_HELP_CENTER": "Go to Help Center",
-      "GO_TO_REPORTS_OVERVIEW": "ไปยังภาพรวมรายงาน",
-      "GO_TO_CONVERSATION_REPORTS": "ไปที่หน้ารายงานการสนทนา",
-      "GO_TO_AGENT_REPORTS": "ไปที่หน้ารายงานพนักงาน",
-      "GO_TO_LABEL_REPORTS": "ไปที่หน้ารายงานป้ายกำกับ",
-      "GO_TO_INBOX_REPORTS": "ไปที่หน้ารายงานกล่องข้อความ",
-      "GO_TO_TEAM_REPORTS": "ไปที่หน้ารายงานทีม",
+      "GO_TO_REPORTS_OVERVIEW": "à¹„à¸›à¸¢à¸±à¸‡à¸ à¸²à¸žà¸£à¸§à¸¡à¸£à¸²à¸¢à¸‡à¸²à¸™",
+      "GO_TO_CONVERSATION_REPORTS": "à¹„à¸›à¸—à¸µà¹ˆà¸«à¸™à¹‰à¸²à¸£à¸²à¸¢à¸‡à¸²à¸™à¸à¸²à¸£à¸ªà¸™à¸—à¸™à¸²",
+      "GO_TO_AGENT_REPORTS": "à¹„à¸›à¸—à¸µà¹ˆà¸«à¸™à¹‰à¸²à¸£à¸²à¸¢à¸‡à¸²à¸™à¸žà¸™à¸±à¸à¸‡à¸²à¸™",
+      "GO_TO_LABEL_REPORTS": "à¹„à¸›à¸—à¸µà¹ˆà¸«à¸™à¹‰à¸²à¸£à¸²à¸¢à¸‡à¸²à¸™à¸›à¹‰à¸²à¸¢à¸à¸³à¸à¸±à¸š",
+      "GO_TO_INBOX_REPORTS": "à¹„à¸›à¸—à¸µà¹ˆà¸«à¸™à¹‰à¸²à¸£à¸²à¸¢à¸‡à¸²à¸™à¸à¸¥à¹ˆà¸­à¸‡à¸‚à¹‰à¸­à¸„à¸§à¸²à¸¡",
+      "GO_TO_TEAM_REPORTS": "à¹„à¸›à¸—à¸µà¹ˆà¸«à¸™à¹‰à¸²à¸£à¸²à¸¢à¸‡à¸²à¸™à¸—à¸µà¸¡",
       "GO_TO_CSAT_REPORTS": "Go to CSAT Reports",
       "GO_TO_BOT_REPORTS": "Go to Bot Reports",
       "GO_TO_SLA_REPORTS": "Go to SLA Reports",
-      "GO_TO_SETTINGS_AGENTS": "ไปที่หน้าจัดการพนักงาน",
-      "GO_TO_SETTINGS_TEAMS": "ไปที่หน้าจัดการทีม",
-      "GO_TO_SETTINGS_INBOXES": "ไปที่หน้าจัดการกล่องข้อความ",
+      "GO_TO_SETTINGS_AGENTS": "à¹„à¸›à¸—à¸µà¹ˆà¸«à¸™à¹‰à¸²à¸ˆà¸±à¸”à¸à¸²à¸£à¸žà¸™à¸±à¸à¸‡à¸²à¸™",
+      "GO_TO_SETTINGS_TEAMS": "à¹„à¸›à¸—à¸µà¹ˆà¸«à¸™à¹‰à¸²à¸ˆà¸±à¸”à¸à¸²à¸£à¸—à¸µà¸¡",
+      "GO_TO_SETTINGS_INBOXES": "à¹„à¸›à¸—à¸µà¹ˆà¸«à¸™à¹‰à¸²à¸ˆà¸±à¸”à¸à¸²à¸£à¸à¸¥à¹ˆà¸­à¸‡à¸‚à¹‰à¸­à¸„à¸§à¸²à¸¡",
       "GO_TO_SETTINGS_TEMPLATES": "Go to Templates",
-      "GO_TO_SETTINGS_LABELS": "ไปที่หน้าจัดการป้ายกำกับ",
+      "GO_TO_SETTINGS_LABELS": "à¹„à¸›à¸—à¸µà¹ˆà¸«à¸™à¹‰à¸²à¸ˆà¸±à¸”à¸à¸²à¸£à¸›à¹‰à¸²à¸¢à¸à¸³à¸à¸±à¸š",
       "GO_TO_SETTINGS_CUSTOM_ATTRIBUTES": "Go to Custom Attributes",
       "GO_TO_SETTINGS_AUTOMATION": "Go to Automation",
       "GO_TO_SETTINGS_MACROS": "Go to Macros",
-      "GO_TO_SETTINGS_CANNED_RESPONSES": "ไปที่หน้าจัดการข้อความลัด",
+      "GO_TO_SETTINGS_CANNED_RESPONSES": "à¹„à¸›à¸—à¸µà¹ˆà¸«à¸™à¹‰à¸²à¸ˆà¸±à¸”à¸à¸²à¸£à¸‚à¹‰à¸­à¸„à¸§à¸²à¸¡à¸¥à¸±à¸”",
       "GO_TO_SETTINGS_SLA": "Go to SLA Settings",
-      "GO_TO_SETTINGS_APPLICATIONS": "ไปที่หน้าตั้งค่าโปรแกรม",
+      "GO_TO_SETTINGS_APPLICATIONS": "à¹„à¸›à¸—à¸µà¹ˆà¸«à¸™à¹‰à¸²à¸•à¸±à¹‰à¸‡à¸„à¹ˆà¸²à¹‚à¸›à¸£à¹à¸à¸£à¸¡",
       "GO_TO_SETTINGS_DATA": "Go to Data",
       "GO_TO_SETTINGS_AUDIT_LOGS": "Go to Audit Logs",
       "GO_TO_SETTINGS_BILLING": "Go to Billing",
-      "GO_TO_SETTINGS_ACCOUNT": "ไปที่หน้าตั้งค่าบัญชี",
-      "GO_TO_SETTINGS_PROFILE": "ไปที่หน้าตั้งค่าข้อมูลส่วนตัว",
-      "GO_TO_NOTIFICATIONS": "ไปที่หน้าการแจ้งเตือน",
-      "ADD_LABELS_TO_CONVERSATION": "เพิ่มป้ายกำกับให้บทสนทนา",
-      "ASSIGN_AN_AGENT": "กำหนดพนักงาน",
+      "GO_TO_SETTINGS_ACCOUNT": "à¹„à¸›à¸—à¸µà¹ˆà¸«à¸™à¹‰à¸²à¸•à¸±à¹‰à¸‡à¸„à¹ˆà¸²à¸šà¸±à¸à¸Šà¸µ",
+      "GO_TO_SETTINGS_PROFILE": "à¹„à¸›à¸—à¸µà¹ˆà¸«à¸™à¹‰à¸²à¸•à¸±à¹‰à¸‡à¸„à¹ˆà¸²à¸‚à¹‰à¸­à¸¡à¸¹à¸¥à¸ªà¹ˆà¸§à¸™à¸•à¸±à¸§",
+      "GO_TO_NOTIFICATIONS": "à¹„à¸›à¸—à¸µà¹ˆà¸«à¸™à¹‰à¸²à¸à¸²à¸£à¹à¸ˆà¹‰à¸‡à¹€à¸•à¸·à¸­à¸™",
+      "ADD_LABELS_TO_CONVERSATION": "à¹€à¸žà¸´à¹ˆà¸¡à¸›à¹‰à¸²à¸¢à¸à¸³à¸à¸±à¸šà¹ƒà¸«à¹‰à¸šà¸—à¸ªà¸™à¸—à¸™à¸²",
+      "ASSIGN_AN_AGENT": "à¸à¸³à¸«à¸™à¸”à¸žà¸™à¸±à¸à¸‡à¸²à¸™",
       "AI_ASSIST": "AI Assist",
       "ASSIGN_PRIORITY": "Assign priority",
-      "ASSIGN_A_TEAM": "กำหนดทีม",
-      "MUTE_CONVERSATION": "ปิดการแจ้งเตือน",
-      "UNMUTE_CONVERSATION": "เปิดการแจ้งเตือน",
-      "REMOVE_LABEL_FROM_CONVERSATION": "ลบป้ายกำกับออกจากการสนทนา",
-      "REOPEN_CONVERSATION": "เปิดการสนทนาอีกครั้ง",
-      "RESOLVE_CONVERSATION": "เสร็จสิ้นการสนทนา",
-      "SEND_TRANSCRIPT": "ส่งรายละเอียดทางอีเมล",
-      "SNOOZE_CONVERSATION": "พักการสนทนา",
-      "UNTIL_NEXT_REPLY": "จนกว่าการตอบกลับถัดไป",
-      "UNTIL_NEXT_WEEK": "จนกว่าสัปดาห์หน้า",
-      "UNTIL_TOMORROW": "จนกว่าพรุ่งนี้",
+      "ASSIGN_A_TEAM": "à¸à¸³à¸«à¸™à¸”à¸—à¸µà¸¡",
+      "MUTE_CONVERSATION": "à¸›à¸´à¸”à¸à¸²à¸£à¹à¸ˆà¹‰à¸‡à¹€à¸•à¸·à¸­à¸™",
+      "UNMUTE_CONVERSATION": "à¹€à¸›à¸´à¸”à¸à¸²à¸£à¹à¸ˆà¹‰à¸‡à¹€à¸•à¸·à¸­à¸™",
+      "REMOVE_LABEL_FROM_CONVERSATION": "à¸¥à¸šà¸›à¹‰à¸²à¸¢à¸à¸³à¸à¸±à¸šà¸­à¸­à¸à¸ˆà¸²à¸à¸à¸²à¸£à¸ªà¸™à¸—à¸™à¸²",
+      "REOPEN_CONVERSATION": "à¹€à¸›à¸´à¸”à¸à¸²à¸£à¸ªà¸™à¸—à¸™à¸²à¸­à¸µà¸à¸„à¸£à¸±à¹‰à¸‡",
+      "RESOLVE_CONVERSATION": "à¹€à¸ªà¸£à¹‡à¸ˆà¸ªà¸´à¹‰à¸™à¸à¸²à¸£à¸ªà¸™à¸—à¸™à¸²",
+      "SEND_TRANSCRIPT": "à¸ªà¹ˆà¸‡à¸£à¸²à¸¢à¸¥à¸°à¹€à¸­à¸µà¸¢à¸”à¸—à¸²à¸‡à¸­à¸µà¹€à¸¡à¸¥",
+      "SNOOZE_CONVERSATION": "à¸žà¸±à¸à¸à¸²à¸£à¸ªà¸™à¸—à¸™à¸²",
+      "UNTIL_NEXT_REPLY": "à¸ˆà¸™à¸à¸§à¹ˆà¸²à¸à¸²à¸£à¸•à¸­à¸šà¸à¸¥à¸±à¸šà¸–à¸±à¸”à¹„à¸›",
+      "UNTIL_NEXT_WEEK": "à¸ˆà¸™à¸à¸§à¹ˆà¸²à¸ªà¸±à¸›à¸”à¸²à¸«à¹Œà¸«à¸™à¹‰à¸²",
+      "UNTIL_TOMORROW": "à¸ˆà¸™à¸à¸§à¹ˆà¸²à¸žà¸£à¸¸à¹ˆà¸‡à¸™à¸µà¹‰",
       "UNTIL_NEXT_MONTH": "Until next month",
       "AN_HOUR_FROM_NOW": "Until an hour from now",
       "UNTIL_CUSTOM_TIME": "Custom...",
@@ -263,6 +263,6 @@
   },
   "COMMON": {
     "OR": "Or",
-    "CLICK_HERE": "กดที่นี้"
+    "CLICK_HERE": "à¸à¸”à¸—à¸µà¹ˆà¸™à¸µà¹‰"
   }
 }

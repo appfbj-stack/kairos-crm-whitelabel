@@ -66,7 +66,7 @@ const onShowLabels = e => {
       :class="{ 'h-auto overflow-visible flex-row flex-wrap': showAllLabels }"
     >
       <slot name="before" />
-      <woot-label
+      <kairos-label
         v-for="(label, index) in activeLabels"
         :key="label ? label.id : index"
         :title="label.title"

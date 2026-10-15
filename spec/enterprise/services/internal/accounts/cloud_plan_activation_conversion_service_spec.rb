@@ -6,8 +6,8 @@ RSpec.describe Internal::Accounts::CloudPlanActivationConversionService do
   let(:account) { create(:account) }
 
   before do
-    allow(ChatwootApp).to receive(:chatwoot_cloud?).and_return(true)
-    create(:installation_config, name: 'CHATWOOT_CLOUD_PLANS', value: [
+    allow(Kairos CRMApp).to receive(:kairos-crm_cloud?).and_return(true)
+    create(:installation_config, name: 'KAIROS CRM_CLOUD_PLANS', value: [
              { 'name' => 'Hacker' },
              { 'name' => 'Startups' }
            ])

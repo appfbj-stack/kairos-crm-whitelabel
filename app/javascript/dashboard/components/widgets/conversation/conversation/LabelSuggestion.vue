@@ -179,7 +179,7 @@ export default {
             class="label-suggestion--option !px-0"
             @click="pushOrAddLabel(label.title)"
           >
-            <woot-label
+            <kairos-label
               variant="dashed"
               v-bind="label"
               :bg-color="selectedLabels.includes(label.title) ? '#2781F6' : ''"
@@ -237,7 +237,7 @@ export default {
             hideOnClick: true,
           }"
           :size="16"
-          name="chatwoot-ai"
+          name="kairos-crm-ai"
           icon-name="i-lucide-sparkles"
         />
       </div>

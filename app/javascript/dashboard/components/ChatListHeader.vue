@@ -2,7 +2,7 @@
 import { computed } from 'vue';
 import { useUISettings } from 'dashboard/composables/useUISettings';
 import { formatNumber } from '@chatwoot/utils';
-import wootConstants from 'dashboard/constants/globals';
+import kairosConstants from 'dashboard/constants/globals';
 
 import ConversationBasicFilter from './widgets/conversation/ConversationBasicFilter.vue';
 import SwitchLayout from 'dashboard/routes/dashboard/conversation/search/SwitchLayout.vue';
@@ -40,7 +40,7 @@ const allCount = computed(() => props.conversationStats?.allCount || 0);
 const formattedAllCount = computed(() => formatNumber(allCount.value));
 
 const toggleConversationLayout = () => {
-  const { LAYOUT_TYPES } = wootConstants;
+  const { LAYOUT_TYPES } = kairosConstants;
   const {
     conversation_display_type: conversationDisplayType = LAYOUT_TYPES.CONDENSED,
   } = uiSettings.value;

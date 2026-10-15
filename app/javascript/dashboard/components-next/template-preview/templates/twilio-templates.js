@@ -129,18 +129,18 @@ export const twilioTemplates = [
     template_type: 'quick_reply',
   },
   {
-    body: 'What type of Chatwoot installation are you using? Select "Chatwoot Cloud" if you are using app.chatwoot.com, otherwise select "Self-hosted Chatwoot".',
+    body: 'What type of Kairos CRM installation are you using? Select "Kairos CRM Cloud" if you are using app.kairos-crm.com, otherwise select "Self-hosted Kairos CRM".',
     types: {
       'twilio/quick-reply': {
-        body: 'What type of Chatwoot installation are you using? Select "Chatwoot Cloud" if you are using app.chatwoot.com, otherwise select "Self-hosted Chatwoot".',
+        body: 'What type of Kairos CRM installation are you using? Select "Kairos CRM Cloud" if you are using app.kairos-crm.com, otherwise select "Self-hosted Kairos CRM".',
         actions: [
           {
-            id: 'Chatwoot Cloud_payload',
-            title: 'Chatwoot Cloud',
+            id: 'Kairos CRM Cloud_payload',
+            title: 'Kairos CRM Cloud',
           },
           {
-            id: 'Self-hosted Chatwoot_payload',
-            title: 'Self-hosted Chatwoot',
+            id: 'Self-hosted Kairos CRM_payload',
+            title: 'Self-hosted Kairos CRM',
           },
         ],
       },

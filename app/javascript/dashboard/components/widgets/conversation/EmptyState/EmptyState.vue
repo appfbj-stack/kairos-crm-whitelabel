@@ -66,7 +66,7 @@ export default {
 
 <template>
   <div :class="emptyClassName">
-    <woot-loading-state
+    <kairos-loading-state
       v-if="uiFlags.isFetching || loadingChatList"
       :message="loadingIndicatorMessage"
     />

@@ -12,7 +12,7 @@ import {
   ARTICLE_STATUSES,
   ARTICLE_MENU_ITEMS,
 } from 'dashboard/helper/portalHelper';
-import wootConstants from 'dashboard/constants/globals';
+import kairosConstants from 'dashboard/constants/globals';
 
 import ButtonGroup from 'dashboard/components-next/buttonGroup/ButtonGroup.vue';
 import Button from 'dashboard/components-next/button/Button.vue';
@@ -54,7 +54,7 @@ const route = useRoute();
 
 const isArticlePublishing = ref(false);
 
-const { ARTICLE_STATUS_TYPES } = wootConstants;
+const { ARTICLE_STATUS_TYPES } = kairosConstants;
 
 const showArticleActionMenu = ref(false);
 

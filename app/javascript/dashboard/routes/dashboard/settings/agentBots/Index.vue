@@ -170,7 +170,7 @@ onMounted(() => {
                   <Button
                     v-if="!bot.system_bot"
                     v-tooltip.top="t('AGENT_BOTS.EDIT.BUTTON_TEXT')"
-                    icon="i-woot-edit-pen"
+                    icon="i-kairos-edit-pen"
                     slate
                     sm
                     :is-loading="loading[bot.id]"
@@ -179,7 +179,7 @@ onMounted(() => {
                   <Button
                     v-if="!bot.system_bot"
                     v-tooltip.top="t('AGENT_BOTS.DELETE.BUTTON_TEXT')"
-                    icon="i-woot-bin"
+                    icon="i-kairos-bin"
                     slate
                     sm
                     class="hover:enabled:text-n-ruby-11 hover:enabled:bg-n-ruby-2"

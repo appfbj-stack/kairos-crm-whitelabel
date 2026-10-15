@@ -35,7 +35,7 @@ module SwitchLocale
     return if params[:locale]
 
     domain = request.host
-    return if DomainHelper.chatwoot_domain?(domain)
+    return if DomainHelper.kairos-crm_domain?(domain)
 
     @portal = Portal.find_by(custom_domain: domain)
     return unless @portal

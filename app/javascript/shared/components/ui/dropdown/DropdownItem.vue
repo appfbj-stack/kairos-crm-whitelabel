@@ -1,7 +1,7 @@
 <script>
 export default {
-  name: 'WootDropdownItem',
-  componentName: 'WootDropdownMenu',
+  name: 'KairosDropdownItem',
+  componentName: 'KairosDropdownMenu',
   props: {
     disabled: {
       type: Boolean,

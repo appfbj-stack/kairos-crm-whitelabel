@@ -20,7 +20,7 @@ describe('#actions', () => {
 
       let windowSpy = vi.spyOn(window, 'window', 'get');
       windowSpy.mockImplementation(() => ({
-        WOOT_WIDGET: {
+        KAIROS_WIDGET: {
           $root: {
             $i18n: {
               locale: 'el',
@@ -100,7 +100,7 @@ describe('#actions', () => {
       const spy = vi.spyOn(global, 'Date').mockImplementation(() => mockDate);
       const windowSpy = vi.spyOn(window, 'window', 'get');
       windowSpy.mockImplementation(() => ({
-        WOOT_WIDGET: {
+        KAIROS_WIDGET: {
           $root: {
             $i18n: {
               locale: 'ar',

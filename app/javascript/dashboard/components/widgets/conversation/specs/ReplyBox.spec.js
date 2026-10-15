@@ -1,5 +1,5 @@
 import { shallowMount } from '@vue/test-utils';
-import { REPLY_EDITOR_MODES } from 'dashboard/components/widgets/WootWriter/constants';
+import { REPLY_EDITOR_MODES } from 'dashboard/components/widgets/KairosWriter/constants';
 import { nextTick } from 'vue';
 import { createStore } from 'vuex';
 import ReplyBox from '../ReplyBox.vue';
@@ -121,7 +121,7 @@ const topPanel = wrapper =>
 const bottomPanel = wrapper =>
   wrapper.findComponent({ name: 'ReplyBottomPanel' }).props();
 const editor = wrapper =>
-  wrapper.findComponent({ name: 'WootMessageEditor' }).props();
+  wrapper.findComponent({ name: 'KairosMessageEditor' }).props();
 
 describe('ReplyBox', () => {
   describe('Instagram incident restriction', () => {

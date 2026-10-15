@@ -33,7 +33,7 @@ import { useConversationRequiredAttributes } from 'dashboard/composables/useConv
 
 import { emitter } from 'shared/helpers/mitt';
 
-import wootConstants from 'dashboard/constants/globals';
+import kairosConstants from 'dashboard/constants/globals';
 import advancedFilterOptions from './widgets/conversation/advancedFilterItems';
 import filterQueryGenerator from '../helper/filterQueryGenerator.js';
 import languages from 'dashboard/components/widgets/conversation/advancedFilterItems/languages';
@@ -72,9 +72,9 @@ const store = useStore();
 
 const resolveAttributesModalRef = ref(null);
 
-const activeAssigneeTab = ref(wootConstants.ASSIGNEE_TYPE.ME);
-const activeStatus = ref(wootConstants.STATUS_TYPE.OPEN);
-const activeSortBy = ref(wootConstants.SORT_BY_TYPE.LAST_ACTIVITY_AT_DESC);
+const activeAssigneeTab = ref(kairosConstants.ASSIGNEE_TYPE.ME);
+const activeStatus = ref(kairosConstants.STATUS_TYPE.OPEN);
+const activeSortBy = ref(kairosConstants.SORT_BY_TYPE.LAST_ACTIVITY_AT_DESC);
 const showAdvancedFilters = ref(false);
 // chatsOnView is to store the chats that are currently visible on the screen,
 // which mirrors the conversationList.
@@ -190,7 +190,7 @@ const assigneeTabItems = computed(() => {
 const showAssigneeInConversationCard = computed(() => {
   return (
     hasAppliedFiltersOrActiveFolders.value ||
-    activeAssigneeTab.value === wootConstants.ASSIGNEE_TYPE.ALL
+    activeAssigneeTab.value === kairosConstants.ASSIGNEE_TYPE.ALL
   );
 });
 
@@ -279,15 +279,15 @@ const pageTitle = computed(() => {
   if (props.label) {
     return `#${props.label}`;
   }
-  if (props.conversationType === wootConstants.CONVERSATION_TYPE.MENTION) {
+  if (props.conversationType === kairosConstants.CONVERSATION_TYPE.MENTION) {
     return t('CHAT_LIST.MENTION_HEADING');
   }
   if (
-    props.conversationType === wootConstants.CONVERSATION_TYPE.PARTICIPATING
+    props.conversationType === kairosConstants.CONVERSATION_TYPE.PARTICIPATING
   ) {
     return t('CONVERSATION_PARTICIPANTS.SIDEBAR_MENU_TITLE');
   }
-  if (props.conversationType === wootConstants.CONVERSATION_TYPE.UNATTENDED) {
+  if (props.conversationType === kairosConstants.CONVERSATION_TYPE.UNATTENDED) {
     return t('CHAT_LIST.UNATTENDED_HEADING');
   }
   if (hasActiveFolders.value) {
@@ -297,12 +297,12 @@ const pageTitle = computed(() => {
 });
 
 function filterByAssigneeTab(conversations) {
-  if (activeAssigneeTab.value === wootConstants.ASSIGNEE_TYPE.ME) {
+  if (activeAssigneeTab.value === kairosConstants.ASSIGNEE_TYPE.ME) {
     return conversations.filter(
       c => c.meta?.assignee?.id === currentUser.value?.id
     );
   }
-  if (activeAssigneeTab.value === wootConstants.ASSIGNEE_TYPE.UNASSIGNED) {
+  if (activeAssigneeTab.value === kairosConstants.ASSIGNEE_TYPE.UNASSIGNED) {
     return conversations.filter(c => !c.meta?.assignee);
   }
   return [...conversations];
@@ -323,7 +323,7 @@ const conversationList = computed(() => {
   if (!hasAppliedFiltersOrActiveFolders.value) {
     const filters = conversationFilters.value;
     if (
-      props.conversationType === wootConstants.CONVERSATION_TYPE.PARTICIPATING
+      props.conversationType === kairosConstants.CONVERSATION_TYPE.PARTICIPATING
     ) {
       localConversationList = filterByAssigneeTab(
         participatingChatsList.value(filters)
@@ -348,7 +348,7 @@ const conversationList = computed(() => {
 
   if (
     !hasAppliedFiltersOrActiveFolders.value &&
-    activeSortBy.value === wootConstants.SORT_BY_TYPE.UNREAD
+    activeSortBy.value === kairosConstants.SORT_BY_TYPE.UNREAD
   ) {
     localConversationList = sortByUnreadStatus(localConversationList);
   }
@@ -381,12 +381,12 @@ const uniqueInboxes = computed(() => {
 function setFiltersFromUISettings() {
   const { conversations_filter_by: filterBy = {} } = uiSettings.value;
   const { status, order_by: orderBy } = filterBy;
-  activeStatus.value = status || wootConstants.STATUS_TYPE.OPEN;
-  activeSortBy.value = Object.values(wootConstants.SORT_BY_TYPE).includes(
+  activeStatus.value = status || kairosConstants.STATUS_TYPE.OPEN;
+  activeSortBy.value = Object.values(kairosConstants.SORT_BY_TYPE).includes(
     orderBy
   )
     ? orderBy
-    : wootConstants.SORT_BY_TYPE.LAST_ACTIVITY_AT_DESC;
+    : kairosConstants.SORT_BY_TYPE.LAST_ACTIVITY_AT_DESC;
 }
 
 function emitConversationLoaded() {
@@ -653,11 +653,11 @@ function redirectToConversationList() {
 
   let conversationType = '';
   if (isOnMentionsView({ route: { name } })) {
-    conversationType = wootConstants.CONVERSATION_TYPE.MENTION;
+    conversationType = kairosConstants.CONVERSATION_TYPE.MENTION;
   } else if (isOnParticipatingView({ route: { name } })) {
-    conversationType = wootConstants.CONVERSATION_TYPE.PARTICIPATING;
+    conversationType = kairosConstants.CONVERSATION_TYPE.PARTICIPATING;
   } else if (isOnUnattendedView({ route: { name } })) {
-    conversationType = wootConstants.CONVERSATION_TYPE.UNATTENDED;
+    conversationType = kairosConstants.CONVERSATION_TYPE.UNATTENDED;
   }
   router.push(
     conversationListPageURL({
@@ -749,7 +749,7 @@ function toggleConversationStatus(
 }
 
 function handleResolveConversation(conversationId, status, snoozedUntil) {
-  if (status !== wootConstants.STATUS_TYPE.RESOLVED) {
+  if (status !== kairosConstants.STATUS_TYPE.RESOLVED) {
     toggleConversationStatus(conversationId, status, snoozedUntil);
     return;
   }
@@ -786,7 +786,7 @@ function handleResolveWithAttributes({ attributes, context }) {
 
     toggleConversationStatus(
       context.id,
-      wootConstants.STATUS_TYPE.RESOLVED,
+      kairosConstants.STATUS_TYPE.RESOLVED,
       context.snoozedUntil,
       mergedAttributes
     );

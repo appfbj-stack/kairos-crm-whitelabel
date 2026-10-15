@@ -1,4 +1,4 @@
-{
+﻿{
   "GENERAL_SETTINGS": {
     "LIMIT_MESSAGES": {
       "CONVERSATION": "You have exceeded the conversation limit. Hacker plan allows only 500 conversations.",
@@ -6,13 +6,13 @@
       "AGENTS": "You have exceeded the agent limit. Your plan only allows {allowedAgents} agents.",
       "NON_ADMIN": "Please contact your administrator to upgrade the plan and continue using all features."
     },
-    "TITLE": "Fiókbeállítások",
-    "SUBMIT": "Beállítások frissítése",
+    "TITLE": "FiÃ³kbeÃ¡llÃ­tÃ¡sok",
+    "SUBMIT": "BeÃ¡llÃ­tÃ¡sok frissÃ­tÃ©se",
     "BACK": "Vissza",
-    "DISMISS": "Elutasítás",
+    "DISMISS": "ElutasÃ­tÃ¡s",
     "UPDATE": {
-      "ERROR": "Beállítás frissítés sikertelen, kérjük próbáld később!",
-      "SUCCESS": "Fiókbeállítások frissítve"
+      "ERROR": "BeÃ¡llÃ­tÃ¡s frissÃ­tÃ©s sikertelen, kÃ©rjÃ¼k prÃ³bÃ¡ld kÃ©sÅ‘bb!",
+      "SUCCESS": "FiÃ³kbeÃ¡llÃ­tÃ¡sok frissÃ­tve"
     },
     "ACCOUNT_DELETE_SECTION": {
       "TITLE": "Delete your Account",
@@ -21,9 +21,9 @@
       "CONFIRM": {
         "TITLE": "Delete Account",
         "MESSAGE": "Deleting your Account is irreversible. Enter your account name below to confirm you want to permanently delete it.",
-        "BUTTON_TEXT": "Törlés",
-        "DISMISS": "Mégse",
-        "PLACE_HOLDER": "Kérlek gépeld be, hogy {accountName} a megerősítéshez"
+        "BUTTON_TEXT": "TÃ¶rlÃ©s",
+        "DISMISS": "MÃ©gse",
+        "PLACE_HOLDER": "KÃ©rlek gÃ©peld be, hogy {accountName} a megerÅ‘sÃ­tÃ©shez"
       },
       "SUCCESS": "Account marked for deletion",
       "FAILURE": "Could not delete account, try again!",
@@ -35,14 +35,14 @@
       }
     },
     "FORM": {
-      "ERROR": "Kérjük javítsd ki az űrlaphibákat",
+      "ERROR": "KÃ©rjÃ¼k javÃ­tsd ki az Å±rlaphibÃ¡kat",
       "GENERAL_SECTION": {
-        "TITLE": "Általános beállítások",
+        "TITLE": "ÃltalÃ¡nos beÃ¡llÃ­tÃ¡sok",
         "NOTE": ""
       },
       "ACCOUNT_ID": {
-        "TITLE": "Fiók Azonosító",
-        "NOTE": "Ez a személyazonosság akkor használható, ha API-alapú integrációt építesz"
+        "TITLE": "FiÃ³k AzonosÃ­tÃ³",
+        "NOTE": "Ez a szemÃ©lyazonossÃ¡g akkor hasznÃ¡lhatÃ³, ha API-alapÃº integrÃ¡ciÃ³t Ã©pÃ­tesz"
       },
       "AUTO_RESOLVE": {
         "TITLE": "Auto-resolve conversations",
@@ -68,28 +68,28 @@
           "PLACEHOLDER": "Select a label"
         },
         "IGNORE_WAITING": {
-          "LABEL": "Skip conversations waiting for agent’s reply"
+          "LABEL": "Skip conversations waiting for agentâ€™s reply"
         },
         "UPDATE_BUTTON": "Save Changes"
       },
       "NAME": {
-        "LABEL": "Fióknév",
-        "PLACEHOLDER": "A fiókneved",
-        "ERROR": "Kérjük helyes fióknevet adj meg"
+        "LABEL": "FiÃ³knÃ©v",
+        "PLACEHOLDER": "A fiÃ³kneved",
+        "ERROR": "KÃ©rjÃ¼k helyes fiÃ³knevet adj meg"
       },
       "LANGUAGE": {
         "LABEL": "Oldal nyelve",
-        "PLACEHOLDER": "A fiókneved",
+        "PLACEHOLDER": "A fiÃ³kneved",
         "ERROR": ""
       },
       "DOMAIN": {
-        "LABEL": "Beérkező e-mail domain",
+        "LABEL": "BeÃ©rkezÅ‘ e-mail domain",
         "PLACEHOLDER": "A domain melyen az e-maileket fogadod",
         "ERROR": ""
       },
       "SUPPORT_EMAIL": {
-        "LABEL": "Támogatási e-mail",
-        "PLACEHOLDER": "A vállalati támogatási e-mailcímed",
+        "LABEL": "TÃ¡mogatÃ¡si e-mail",
+        "PLACEHOLDER": "A vÃ¡llalati tÃ¡mogatÃ¡si e-mailcÃ­med",
         "ERROR": ""
       },
       "AUTO_RESOLVE_IGNORE_WAITING": {
@@ -113,58 +113,58 @@
           "SUCCESS": "Auto resolve settings updated successfully",
           "ERROR": "Failed to update auto resolve settings"
         },
-        "UPDATE_BUTTON": "Frissítés",
+        "UPDATE_BUTTON": "FrissÃ­tÃ©s",
         "MESSAGE_LABEL": "Custom resolution message",
         "MESSAGE_PLACEHOLDER": "Conversation was marked resolved by system due to 15 days of inactivity",
         "MESSAGE_HELP": "This message is sent to the customer when a conversation is automatically resolved by the system due to inactivity."
       },
       "FEATURES": {
-        "INBOUND_EMAIL_ENABLED": "A beszélgetésfolytonosság e-maillel már elérhető a fiókodban.",
-        "CUSTOM_EMAIL_DOMAIN_ENABLED": "Most már goadhatsz e-maileket az egyedi domaineden."
+        "INBOUND_EMAIL_ENABLED": "A beszÃ©lgetÃ©sfolytonossÃ¡g e-maillel mÃ¡r elÃ©rhetÅ‘ a fiÃ³kodban.",
+        "CUSTOM_EMAIL_DOMAIN_ENABLED": "Most mÃ¡r goadhatsz e-maileket az egyedi domaineden."
       }
     },
-    "UPDATE_CHATWOOT": "Egy frissítés elérhető a Chatwoothoz {latestChatwootVersion}. Kérjük frissítsd a telepítésed.",
-    "LEARN_MORE": "Tudj meg többet",
-    "PAYMENT_PENDING": "A fizetésed folyamatban van. Kérlek, frissítsd fizetési adataitat a Chatwoot használatának folytatásához",
-    "UPGRADE": "Upgrade to continue using Chatwoot",
-    "LIMITS_UPGRADE": "A fiókod túllépte a használati korlátokat. Kérjük, frissítsd tervedet a Chatwoot használatának folytatásához",
-    "OPEN_BILLING": "Számlázási beállítások megnyitása"
+    "UPDATE_KAIROS_CRM": "Egy frissÃ­tÃ©s elÃ©rhetÅ‘ a Kairos CRMhoz {latestKairos CRMVersion}. KÃ©rjÃ¼k frissÃ­tsd a telepÃ­tÃ©sed.",
+    "LEARN_MORE": "Tudj meg tÃ¶bbet",
+    "PAYMENT_PENDING": "A fizetÃ©sed folyamatban van. KÃ©rlek, frissÃ­tsd fizetÃ©si adataitat a Kairos CRM hasznÃ¡latÃ¡nak folytatÃ¡sÃ¡hoz",
+    "UPGRADE": "Upgrade to continue using Kairos CRM",
+    "LIMITS_UPGRADE": "A fiÃ³kod tÃºllÃ©pte a hasznÃ¡lati korlÃ¡tokat. KÃ©rjÃ¼k, frissÃ­tsd tervedet a Kairos CRM hasznÃ¡latÃ¡nak folytatÃ¡sÃ¡hoz",
+    "OPEN_BILLING": "SzÃ¡mlÃ¡zÃ¡si beÃ¡llÃ­tÃ¡sok megnyitÃ¡sa"
   },
   "FORMS": {
     "MULTISELECT": {
-      "ENTER_TO_SELECT": "Enter-rel válaszd ki",
-      "ENTER_TO_REMOVE": "Enter-rel távolítsd el",
+      "ENTER_TO_SELECT": "Enter-rel vÃ¡laszd ki",
+      "ENTER_TO_REMOVE": "Enter-rel tÃ¡volÃ­tsd el",
       "NO_OPTIONS": "List is empty",
-      "SELECT_ONE": "Válassz egyet",
-      "SELECT": "Kiválasztás"
+      "SELECT_ONE": "VÃ¡lassz egyet",
+      "SELECT": "KivÃ¡lasztÃ¡s"
     }
   },
   "NOTIFICATIONS_PAGE": {
-    "HEADER": "Értesítések",
-    "MARK_ALL_DONE": "Mind kész",
-    "DELETE_TITLE": "törölve",
+    "HEADER": "Ã‰rtesÃ­tÃ©sek",
+    "MARK_ALL_DONE": "Mind kÃ©sz",
+    "DELETE_TITLE": "tÃ¶rÃ¶lve",
     "UNREAD_NOTIFICATION": {
-      "TITLE": "Olvasatlan értesítések",
-      "ALL_NOTIFICATIONS": "Összes értesítés nézete",
-      "LOADING_UNREAD_MESSAGE": "Olvasatlan értesítések betöltése...",
-      "EMPTY_MESSAGE": "Nincs olvasatlan értesítésed"
+      "TITLE": "Olvasatlan Ã©rtesÃ­tÃ©sek",
+      "ALL_NOTIFICATIONS": "Ã–sszes Ã©rtesÃ­tÃ©s nÃ©zete",
+      "LOADING_UNREAD_MESSAGE": "Olvasatlan Ã©rtesÃ­tÃ©sek betÃ¶ltÃ©se...",
+      "EMPTY_MESSAGE": "Nincs olvasatlan Ã©rtesÃ­tÃ©sed"
     },
     "LIST": {
-      "LOADING_MESSAGE": "Értesítések betöltése...",
-      "404": "Nincs értesítés",
+      "LOADING_MESSAGE": "Ã‰rtesÃ­tÃ©sek betÃ¶ltÃ©se...",
+      "404": "Nincs Ã©rtesÃ­tÃ©s",
       "TABLE_HEADER": [
-        "Név",
-        "Telefonszám",
-        "Beszélgetések",
-        "Utoljára kapcsolatban"
+        "NÃ©v",
+        "TelefonszÃ¡m",
+        "BeszÃ©lgetÃ©sek",
+        "UtoljÃ¡ra kapcsolatban"
       ]
     },
     "TYPE_LABEL": {
-      "conversation_creation": "Új beszélgetés",
-      "conversation_assignment": "Beszélgetés hozzárendelve",
-      "assigned_conversation_new_message": "Új üzenet",
-      "participating_conversation_new_message": "Új üzenet",
-      "conversation_mention": "Megemlítés",
+      "conversation_creation": "Ãšj beszÃ©lgetÃ©s",
+      "conversation_assignment": "BeszÃ©lgetÃ©s hozzÃ¡rendelve",
+      "assigned_conversation_new_message": "Ãšj Ã¼zenet",
+      "participating_conversation_new_message": "Ãšj Ã¼zenet",
+      "conversation_mention": "MegemlÃ­tÃ©s",
       "sla_missed_first_response": "SLA Missed",
       "sla_missed_next_response": "SLA Missed",
       "sla_missed_resolution": "SLA Missed"
@@ -177,89 +177,89 @@
       "RECONNECT_SUCCESS": "Reconnected"
     },
     "BUTTON": {
-      "REFRESH": "Frissítés"
+      "REFRESH": "FrissÃ­tÃ©s"
     }
   },
   "COMMAND_BAR": {
-    "SEARCH_PLACEHOLDER": "Keresés vagy ugrás ide:",
+    "SEARCH_PLACEHOLDER": "KeresÃ©s vagy ugrÃ¡s ide:",
     "SNOOZE_PLACEHOLDER": "Type a time e.g. tomorrow, 2 hours, next friday, jan 15...",
     "SECTIONS": {
-      "GENERAL": "Általános",
-      "REPORTS": "Jelentések",
-      "CONVERSATION": "Beszélgetés",
+      "GENERAL": "ÃltalÃ¡nos",
+      "REPORTS": "JelentÃ©sek",
+      "CONVERSATION": "BeszÃ©lgetÃ©s",
       "BULK_ACTIONS": "Bulk Actions",
-      "CHANGE_ASSIGNEE": "Felelős megváltoztatása",
-      "CHANGE_PRIORITY": "Prioritás megváltoztatása",
-      "CHANGE_TEAM": "Csapat megváltoztatása",
-      "SNOOZE_CONVERSATION": "Beszélgetés alvómódba",
-      "ADD_LABEL": "Címke hozzáadása a beszélgetéshez",
-      "REMOVE_LABEL": "Címke eltávolítása a beszélgetésről",
-      "SETTINGS": "Beállítások",
-      "AI_ASSIST": "AI segítség",
-      "APPEARANCE": "Megjelenés",
+      "CHANGE_ASSIGNEE": "FelelÅ‘s megvÃ¡ltoztatÃ¡sa",
+      "CHANGE_PRIORITY": "PrioritÃ¡s megvÃ¡ltoztatÃ¡sa",
+      "CHANGE_TEAM": "Csapat megvÃ¡ltoztatÃ¡sa",
+      "SNOOZE_CONVERSATION": "BeszÃ©lgetÃ©s alvÃ³mÃ³dba",
+      "ADD_LABEL": "CÃ­mke hozzÃ¡adÃ¡sa a beszÃ©lgetÃ©shez",
+      "REMOVE_LABEL": "CÃ­mke eltÃ¡volÃ­tÃ¡sa a beszÃ©lgetÃ©srÅ‘l",
+      "SETTINGS": "BeÃ¡llÃ­tÃ¡sok",
+      "AI_ASSIST": "AI segÃ­tsÃ©g",
+      "APPEARANCE": "MegjelenÃ©s",
       "SNOOZE_NOTIFICATION": "Snooze Notification"
     },
     "COMMANDS": {
       "GO_TO_MY_INBOX": "Go to My Inbox",
-      "GO_TO_CONVERSATION_DASHBOARD": "Ugrás a beszélgetések kezdőoldalára",
-      "GO_TO_CONTACTS_DASHBOARD": "Ugrás a kapcsolatok kezdőoldalára",
+      "GO_TO_CONVERSATION_DASHBOARD": "UgrÃ¡s a beszÃ©lgetÃ©sek kezdÅ‘oldalÃ¡ra",
+      "GO_TO_CONTACTS_DASHBOARD": "UgrÃ¡s a kapcsolatok kezdÅ‘oldalÃ¡ra",
       "GO_TO_CAPTAIN": "Go to Captain",
       "GO_TO_CALLS_DASHBOARD": "Go to Calls Dashboard",
       "GO_TO_CAMPAIGNS": "Go to Campaigns",
       "GO_TO_HELP_CENTER": "Go to Help Center",
-      "GO_TO_REPORTS_OVERVIEW": "Ugrás a jelentések áttekintésére",
-      "GO_TO_CONVERSATION_REPORTS": "Ugrás a beszélgetések kezdőoldalára",
-      "GO_TO_AGENT_REPORTS": "Ugrás ügynök jelentésére",
-      "GO_TO_LABEL_REPORTS": "Ugrás címke jelentésére",
-      "GO_TO_INBOX_REPORTS": "Ugrás beérkező levelek jelentésére",
-      "GO_TO_TEAM_REPORTS": "Ugrás csapat jelentésére",
+      "GO_TO_REPORTS_OVERVIEW": "UgrÃ¡s a jelentÃ©sek Ã¡ttekintÃ©sÃ©re",
+      "GO_TO_CONVERSATION_REPORTS": "UgrÃ¡s a beszÃ©lgetÃ©sek kezdÅ‘oldalÃ¡ra",
+      "GO_TO_AGENT_REPORTS": "UgrÃ¡s Ã¼gynÃ¶k jelentÃ©sÃ©re",
+      "GO_TO_LABEL_REPORTS": "UgrÃ¡s cÃ­mke jelentÃ©sÃ©re",
+      "GO_TO_INBOX_REPORTS": "UgrÃ¡s beÃ©rkezÅ‘ levelek jelentÃ©sÃ©re",
+      "GO_TO_TEAM_REPORTS": "UgrÃ¡s csapat jelentÃ©sÃ©re",
       "GO_TO_CSAT_REPORTS": "Go to CSAT Reports",
       "GO_TO_BOT_REPORTS": "Go to Bot Reports",
       "GO_TO_SLA_REPORTS": "Go to SLA Reports",
-      "GO_TO_SETTINGS_AGENTS": "Ugrás az ügynük beállításaira",
-      "GO_TO_SETTINGS_TEAMS": "Csapat beállítások megnyitása",
-      "GO_TO_SETTINGS_INBOXES": "Fiók beállítások megnyitása",
+      "GO_TO_SETTINGS_AGENTS": "UgrÃ¡s az Ã¼gynÃ¼k beÃ¡llÃ­tÃ¡saira",
+      "GO_TO_SETTINGS_TEAMS": "Csapat beÃ¡llÃ­tÃ¡sok megnyitÃ¡sa",
+      "GO_TO_SETTINGS_INBOXES": "FiÃ³k beÃ¡llÃ­tÃ¡sok megnyitÃ¡sa",
       "GO_TO_SETTINGS_TEMPLATES": "Go to Templates",
-      "GO_TO_SETTINGS_LABELS": "Cimke beállítások megnyitása",
+      "GO_TO_SETTINGS_LABELS": "Cimke beÃ¡llÃ­tÃ¡sok megnyitÃ¡sa",
       "GO_TO_SETTINGS_CUSTOM_ATTRIBUTES": "Go to Custom Attributes",
       "GO_TO_SETTINGS_AUTOMATION": "Go to Automation",
       "GO_TO_SETTINGS_MACROS": "Go to Macros",
-      "GO_TO_SETTINGS_CANNED_RESPONSES": "Sablonválasz beállítások megnyitása",
+      "GO_TO_SETTINGS_CANNED_RESPONSES": "SablonvÃ¡lasz beÃ¡llÃ­tÃ¡sok megnyitÃ¡sa",
       "GO_TO_SETTINGS_SLA": "Go to SLA Settings",
-      "GO_TO_SETTINGS_APPLICATIONS": "Alkalmazás beállítások megnyitása",
+      "GO_TO_SETTINGS_APPLICATIONS": "AlkalmazÃ¡s beÃ¡llÃ­tÃ¡sok megnyitÃ¡sa",
       "GO_TO_SETTINGS_DATA": "Go to Data",
       "GO_TO_SETTINGS_AUDIT_LOGS": "Go to Audit Logs",
       "GO_TO_SETTINGS_BILLING": "Go to Billing",
-      "GO_TO_SETTINGS_ACCOUNT": "Fiók szintű beállítások megnyitása",
-      "GO_TO_SETTINGS_PROFILE": "Profil beállítások megnyitása",
-      "GO_TO_NOTIFICATIONS": "Értesítések megnyitása",
-      "ADD_LABELS_TO_CONVERSATION": "Cimke hozzáadása a beszélgetéshez",
-      "ASSIGN_AN_AGENT": "Ügynök hozzárendelése",
-      "AI_ASSIST": "AI segítség",
-      "ASSIGN_PRIORITY": "Prioritás beállítása",
-      "ASSIGN_A_TEAM": "Csapat hozzárendelése",
-      "MUTE_CONVERSATION": "Beszélgetés némítása",
-      "UNMUTE_CONVERSATION": "Beszélgetés némításának feloldása",
-      "REMOVE_LABEL_FROM_CONVERSATION": "Cimke eltávolítása a beszélgetésről",
-      "REOPEN_CONVERSATION": "Beszélgetés újranyitása",
-      "RESOLVE_CONVERSATION": "Beszélgetés megoldása",
-      "SEND_TRANSCRIPT": "E-mail átirat küldése",
-      "SNOOZE_CONVERSATION": "Beszélgetés alvómódba",
-      "UNTIL_NEXT_REPLY": "Következő válaszig",
-      "UNTIL_NEXT_WEEK": "Jövő hétig",
+      "GO_TO_SETTINGS_ACCOUNT": "FiÃ³k szintÅ± beÃ¡llÃ­tÃ¡sok megnyitÃ¡sa",
+      "GO_TO_SETTINGS_PROFILE": "Profil beÃ¡llÃ­tÃ¡sok megnyitÃ¡sa",
+      "GO_TO_NOTIFICATIONS": "Ã‰rtesÃ­tÃ©sek megnyitÃ¡sa",
+      "ADD_LABELS_TO_CONVERSATION": "Cimke hozzÃ¡adÃ¡sa a beszÃ©lgetÃ©shez",
+      "ASSIGN_AN_AGENT": "ÃœgynÃ¶k hozzÃ¡rendelÃ©se",
+      "AI_ASSIST": "AI segÃ­tsÃ©g",
+      "ASSIGN_PRIORITY": "PrioritÃ¡s beÃ¡llÃ­tÃ¡sa",
+      "ASSIGN_A_TEAM": "Csapat hozzÃ¡rendelÃ©se",
+      "MUTE_CONVERSATION": "BeszÃ©lgetÃ©s nÃ©mÃ­tÃ¡sa",
+      "UNMUTE_CONVERSATION": "BeszÃ©lgetÃ©s nÃ©mÃ­tÃ¡sÃ¡nak feloldÃ¡sa",
+      "REMOVE_LABEL_FROM_CONVERSATION": "Cimke eltÃ¡volÃ­tÃ¡sa a beszÃ©lgetÃ©srÅ‘l",
+      "REOPEN_CONVERSATION": "BeszÃ©lgetÃ©s ÃºjranyitÃ¡sa",
+      "RESOLVE_CONVERSATION": "BeszÃ©lgetÃ©s megoldÃ¡sa",
+      "SEND_TRANSCRIPT": "E-mail Ã¡tirat kÃ¼ldÃ©se",
+      "SNOOZE_CONVERSATION": "BeszÃ©lgetÃ©s alvÃ³mÃ³dba",
+      "UNTIL_NEXT_REPLY": "KÃ¶vetkezÅ‘ vÃ¡laszig",
+      "UNTIL_NEXT_WEEK": "JÃ¶vÅ‘ hÃ©tig",
       "UNTIL_TOMORROW": "Holnapig",
-      "UNTIL_NEXT_MONTH": "Következő hónapig",
-      "AN_HOUR_FROM_NOW": "Mostantól egy óráig",
-      "UNTIL_CUSTOM_TIME": "Speciális...",
-      "CHANGE_APPEARANCE": "Megjelenés módosítása",
-      "LIGHT_MODE": "Világos mód",
-      "DARK_MODE": "Sötét mód",
+      "UNTIL_NEXT_MONTH": "KÃ¶vetkezÅ‘ hÃ³napig",
+      "AN_HOUR_FROM_NOW": "MostantÃ³l egy Ã³rÃ¡ig",
+      "UNTIL_CUSTOM_TIME": "SpeciÃ¡lis...",
+      "CHANGE_APPEARANCE": "MegjelenÃ©s mÃ³dosÃ­tÃ¡sa",
+      "LIGHT_MODE": "VilÃ¡gos mÃ³d",
+      "DARK_MODE": "SÃ¶tÃ©t mÃ³d",
       "SYSTEM_MODE": "Rendszer",
       "SNOOZE_NOTIFICATION": "Snooze Notification"
     }
   },
   "DASHBOARD_APPS": {
-    "LOADING_MESSAGE": "Kezelőoldal App betöltése..."
+    "LOADING_MESSAGE": "KezelÅ‘oldal App betÃ¶ltÃ©se..."
   },
   "COMMON": {
     "OR": "Vagy",

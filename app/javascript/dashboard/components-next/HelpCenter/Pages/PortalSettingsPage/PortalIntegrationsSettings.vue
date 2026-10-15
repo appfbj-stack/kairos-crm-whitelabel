@@ -47,7 +47,7 @@ const ANALYTICS_PROVIDERS = [
   {
     key: 'plausible_domain',
     i18nKey: 'PLAUSIBLE',
-    icon: 'i-woot-plausible',
+    icon: 'i-kairos-plausible',
     format: /^[a-z0-9]([a-z0-9.-]*[a-z0-9])?$/i,
   },
   {
@@ -59,7 +59,7 @@ const ANALYTICS_PROVIDERS = [
   {
     key: 'clarity_project_id',
     i18nKey: 'CLARITY',
-    icon: 'i-woot-microsoft-clarity',
+    icon: 'i-kairos-microsoft-clarity',
     format: /^[a-z0-9]+$/i,
   },
   {

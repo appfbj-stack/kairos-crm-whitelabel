@@ -61,8 +61,8 @@ export default {
 </script>
 
 <template>
-  <woot-modal v-model:show="localShow" :on-close="onClose" size="modal-big">
-    <woot-modal-header
+  <kairos-modal v-model:show="localShow" :on-close="onClose" size="modal-big">
+    <kairos-modal-header
       :header-title="$t('WHATSAPP_TEMPLATES.MODAL.TITLE')"
       :header-content="modalHeaderContent"
     />
@@ -80,7 +80,7 @@ export default {
         @send-message="onSendMessage"
       />
     </div>
-  </woot-modal>
+  </kairos-modal>
 </template>
 
 <style scoped>

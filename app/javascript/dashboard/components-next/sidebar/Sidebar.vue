@@ -43,14 +43,14 @@ const emit = defineEmits([
   'closeMobileSidebar',
 ]);
 
-const { accountScopedRoute, isOnChatwootCloud } = useAccount();
+const { accountScopedRoute, isOnKairos CRMCloud } = useAccount();
 const { isEnterprise } = useConfig();
 const store = useStore();
 
 // Calls run on the enterprise-only API (cloud runs enterprise); hide the entry
 // on community so it doesn't lead to a dashboard/CTA the backend can't serve.
 const isCallsAvailable = computed(
-  () => isOnChatwootCloud.value || isEnterprise
+  () => isOnKairos CRMCloud.value || isEnterprise
 );
 const searchShortcut = useKbd([`$mod`, 'k']);
 const { t } = useI18n();
@@ -494,7 +494,7 @@ const menuItems = computed(() => {
     },
     {
       name: 'Captain',
-      icon: 'i-woot-captain',
+      icon: 'i-kairos-captain',
       label: t('SIDEBAR.CAPTAIN'),
       activeOn: ['captain_assistants_create_index'],
       children: [
@@ -785,7 +785,7 @@ const menuItems = computed(() => {
         // {
         //   name: 'Settings Captain',
         //   label: t('SIDEBAR.CAPTAIN_AI'),
-        //   icon: 'i-woot-captain',
+        //   icon: 'i-kairos-captain',
         //   to: accountScopedRoute('captain_settings_index'),
         // },
         {
@@ -1062,14 +1062,14 @@ const menuItems = computed(() => {
       />
       <SidebarChangelogCard
         v-if="
-          isOnChatwootCloud &&
+          isOnKairos CRMCloud &&
           !isACustomBrandedInstance &&
           !isEffectivelyCollapsed
         "
       />
       <SidebarChangelogButton
         v-if="
-          isOnChatwootCloud &&
+          isOnKairos CRMCloud &&
           !isACustomBrandedInstance &&
           isEffectivelyCollapsed
         "

@@ -1,7 +1,7 @@
 import { mount, shallowMount } from '@vue/test-utils';
 import Button from 'dashboard/components-next/button/Button.vue';
 import DropdownMenu from 'dashboard/components-next/dropdown-menu/DropdownMenu.vue';
-import WootDatePicker from 'dashboard/components/ui/DatePicker/DatePicker.vue';
+import KairosDatePicker from 'dashboard/components/ui/DatePicker/DatePicker.vue';
 import AuditLogFilters from '../AuditLogFilters.vue';
 
 vi.mock('vue-i18n', () => ({
@@ -80,14 +80,14 @@ describe('AuditLogFilters', () => {
     await openMenu(wrapper, 1);
     await wrapper.findAllComponents(Button).at(0).trigger('click');
 
-    expect(wrapper.findComponent(WootDatePicker).exists()).toBe(true);
+    expect(wrapper.findComponent(KairosDatePicker).exists()).toBe(true);
     expect(wrapper.findComponent(DropdownMenu).exists()).toBe(false);
   });
 
   it('closes an open menu when the calendar is reopened', async () => {
     const wrapper = mountComponent({ since: 100, until: 200 });
     await openMenu(wrapper, 1);
-    await wrapper.findComponent(WootDatePicker).trigger('click');
+    await wrapper.findComponent(KairosDatePicker).trigger('click');
 
     expect(wrapper.findComponent(DropdownMenu).exists()).toBe(false);
   });
@@ -103,20 +103,20 @@ describe('AuditLogFilters', () => {
   it('opens the calendar without applying a window', async () => {
     const wrapper = mountComponent();
     await wrapper.findAllComponents(Button).at(0).trigger('click');
-    const picker = wrapper.findComponent(WootDatePicker);
+    const picker = wrapper.findComponent(KairosDatePicker);
 
     expect(picker.props('hasAppliedRange')).toBe(false);
     expect(wrapper.emitted('update')).toBeUndefined();
   });
 
   it('swaps the date button for the calendar once a window is applied', () => {
-    expect(mountComponent().findComponent(WootDatePicker).exists()).toBe(false);
+    expect(mountComponent().findComponent(KairosDatePicker).exists()).toBe(false);
 
     const wrapper = mountComponent(
       { range: 'last30days', since: 100, until: 200 },
       mount
     );
-    const picker = wrapper.findComponent(WootDatePicker);
+    const picker = wrapper.findComponent(KairosDatePicker);
 
     expect(picker.props('rangeType')).toBe('last30days');
     expect(picker.props('dateRange')).toEqual([
@@ -131,7 +131,7 @@ describe('AuditLogFilters', () => {
   it('widens the window picked in the calendar to whole days', () => {
     const wrapper = mountComponent({ since: 100, until: 200 });
     wrapper
-      .findComponent(WootDatePicker)
+      .findComponent(KairosDatePicker)
       .vm.$emit('dateRangeChanged', [
         new Date(2026, 7, 3, 13, 4, 5),
         new Date(2026, 7, 12),

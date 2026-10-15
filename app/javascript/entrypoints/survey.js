@@ -17,5 +17,5 @@ app.use(store);
 app.use(VueDOMPurifyHTML, domPurifyConfig);
 
 window.onload = () => {
-  window.WOOT_SURVEY = app.mount('#app');
+  window.KAIROS_SURVEY = app.mount('#app');
 };

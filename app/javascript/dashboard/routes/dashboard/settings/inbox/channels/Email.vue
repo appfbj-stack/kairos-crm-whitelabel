@@ -15,7 +15,7 @@ const getters = useStoreGetters();
 const { t } = useI18n();
 
 const globalConfig = getters['globalConfig/get'];
-const isAChatwootInstance = getters['globalConfig/isAChatwootInstance'];
+const isAKairos CRMInstance = getters['globalConfig/isAKairos CRMInstance'];
 
 const emailProviderList = computed(() => {
   return [
@@ -24,24 +24,24 @@ const emailProviderList = computed(() => {
       description: t('INBOX_MGMT.EMAIL_PROVIDERS.MICROSOFT.DESCRIPTION'),
       isEnabled: !!globalConfig.value.azureAppId,
       key: 'microsoft',
-      icon: 'i-woot-outlook',
+      icon: 'i-kairos-outlook',
     },
     {
       title: t('INBOX_MGMT.EMAIL_PROVIDERS.GOOGLE.TITLE'),
       description: t('INBOX_MGMT.EMAIL_PROVIDERS.GOOGLE.DESCRIPTION'),
-      isEnabled: !!window.chatwootConfig.googleOAuthClientId,
+      isEnabled: !!window.kairos-crmConfig.googleOAuthClientId,
       key: 'google',
-      icon: 'i-woot-gmail',
+      icon: 'i-kairos-gmail',
     },
     {
       title: t('INBOX_MGMT.EMAIL_PROVIDERS.OTHER_PROVIDERS.TITLE'),
       description: t('INBOX_MGMT.EMAIL_PROVIDERS.OTHER_PROVIDERS.DESCRIPTION'),
       isEnabled: true,
       key: 'other_provider',
-      icon: 'i-woot-mail',
+      icon: 'i-kairos-mail',
     },
   ].filter(providerConfig => {
-    if (isAChatwootInstance.value) {
+    if (isAKairos CRMInstance.value) {
       return true;
     }
     return providerConfig.isEnabled;

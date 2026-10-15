@@ -8,18 +8,18 @@ import keyboardEventListenerMixins from 'shared/mixins/keyboardEventListenerMixi
 
 import ReplyToMessage from './ReplyToMessage.vue';
 import AttachmentPreview from 'dashboard/components/widgets/AttachmentsPreview.vue';
-import ReplyTopPanel from 'dashboard/components/widgets/WootWriter/ReplyTopPanel.vue';
+import ReplyTopPanel from 'dashboard/components/widgets/KairosWriter/ReplyTopPanel.vue';
 import ReplyEmailHead from './ReplyEmailHead.vue';
-import ReplyBottomPanel from 'dashboard/components/widgets/WootWriter/ReplyBottomPanel.vue';
-import CopilotReplyBottomPanel from 'dashboard/components/widgets/WootWriter/CopilotReplyBottomPanel.vue';
+import ReplyBottomPanel from 'dashboard/components/widgets/KairosWriter/ReplyBottomPanel.vue';
+import CopilotReplyBottomPanel from 'dashboard/components/widgets/KairosWriter/CopilotReplyBottomPanel.vue';
 import ArticleSearchPopover from 'dashboard/routes/dashboard/helpcenter/components/ArticleSearch/SearchPopover.vue';
 import CopilotEditorSection from './CopilotEditorSection.vue';
 import MessageSignatureMissingAlert from './MessageSignatureMissingAlert.vue';
 import ReplyBoxBanner from './ReplyBoxBanner.vue';
 import QuotedEmailPreview from './QuotedEmailPreview.vue';
-import { REPLY_EDITOR_MODES } from 'dashboard/components/widgets/WootWriter/constants';
-import WootMessageEditor from 'dashboard/components/widgets/WootWriter/Editor.vue';
-import AudioRecorder from 'dashboard/components/widgets/WootWriter/AudioRecorder.vue';
+import { REPLY_EDITOR_MODES } from 'dashboard/components/widgets/KairosWriter/constants';
+import KairosMessageEditor from 'dashboard/components/widgets/KairosWriter/Editor.vue';
+import AudioRecorder from 'dashboard/components/widgets/KairosWriter/AudioRecorder.vue';
 import { AUDIO_FORMATS } from 'shared/constants/messages';
 import { BUS_EVENTS } from 'shared/constants/busEvents';
 import { CMD_AI_ASSIST } from 'dashboard/helper/commandbar/events';
@@ -32,7 +32,7 @@ import ContentTemplates from './ContentTemplates/ContentTemplatesModal.vue';
 import { MESSAGE_MAX_LENGTH } from 'shared/helpers/MessageTypeHelper';
 import inboxMixin, { INBOX_FEATURES } from 'shared/mixins/inboxMixin';
 import { trimContent, debounce, getRecipients } from '@chatwoot/utils';
-import wootConstants from 'dashboard/constants/globals';
+import kairosConstants from 'dashboard/constants/globals';
 import {
   extractQuotedEmailText,
   buildQuotedEmailHeader,
@@ -80,7 +80,7 @@ export default {
     ReplyTopPanel,
     ContentTemplates,
     WhatsappTemplates,
-    WootMessageEditor,
+    KairosMessageEditor,
     QuotedEmailPreview,
     CopilotEditorSection,
     CopilotReplyBottomPanel,
@@ -243,7 +243,7 @@ export default {
     },
     isBotOwnedPendingConversation() {
       return (
-        this.currentChat?.status === wootConstants.STATUS_TYPE.PENDING &&
+        this.currentChat?.status === kairosConstants.STATUS_TYPE.PENDING &&
         this.currentChat?.meta?.assignee_type === 'AgentBot'
       );
     },
@@ -377,7 +377,7 @@ export default {
     isOnExpandedLayout() {
       const {
         LAYOUT_TYPES: { CONDENSED },
-      } = wootConstants;
+      } = kairosConstants;
       const { conversation_display_type: conversationDisplayType = CONDENSED } =
         this.uiSettings;
       return conversationDisplayType !== CONDENSED;
@@ -1417,7 +1417,7 @@ export default {
           @content-ready="copilot.setContentReady"
           @send="copilot.sendFollowUp"
         />
-        <WootMessageEditor
+        <KairosMessageEditor
           v-else-if="!showAudioRecorderEditor"
           ref="messageEditor"
           v-model="message"
@@ -1555,7 +1555,7 @@ export default {
       @close="macroExecution.dismissPendingAttributes"
     />
 
-    <woot-confirm-modal
+    <kairos-confirm-modal
       ref="confirmDialog"
       :title="$t('CONVERSATION.REPLYBOX.UNDEFINED_VARIABLES.TITLE')"
       :description="undefinedVariableMessage"

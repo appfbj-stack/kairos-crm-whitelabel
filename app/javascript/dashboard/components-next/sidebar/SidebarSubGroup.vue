@@ -172,7 +172,7 @@ watch([hasActiveChild, storageKey], expandSubGroupOnActiveChild, {
           class="absolute bg-gradient-to-t from-n-background w-full h-12 to-transparent -bottom-1 pointer-events-none flex items-end justify-end px-2 animate-fade-in-up"
         >
           <Icon
-            icon="i-woot-chevrons-down"
+            icon="i-kairos-chevrons-down"
             class="w-4 h-6 text-n-slate-9 opacity-50 group-hover:opacity-100"
           />
         </div>

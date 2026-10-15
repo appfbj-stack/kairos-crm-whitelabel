@@ -1,4 +1,4 @@
-{
+﻿{
   "GENERAL_SETTINGS": {
     "LIMIT_MESSAGES": {
       "CONVERSATION": "You have exceeded the conversation limit. Hacker plan allows only 500 conversations.",
@@ -6,27 +6,27 @@
       "AGENTS": "You have exceeded the agent limit. Your plan only allows {allowedAgents} agents.",
       "NON_ADMIN": "Please contact your administrator to upgrade the plan and continue using all features."
     },
-    "TITLE": "Nastavení účtu",
-    "SUBMIT": "Aktualizovat nastavení",
-    "BACK": "Zpět",
+    "TITLE": "NastavenÃ­ ÃºÄtu",
+    "SUBMIT": "Aktualizovat nastavenÃ­",
+    "BACK": "ZpÄ›t",
     "DISMISS": "Dismiss",
     "UPDATE": {
-      "ERROR": "Nelze aktualizovat nastavení, zkuste to znovu!",
-      "SUCCESS": "Nastavení účtu bylo úspěšně aktualizováno"
+      "ERROR": "Nelze aktualizovat nastavenÃ­, zkuste to znovu!",
+      "SUCCESS": "NastavenÃ­ ÃºÄtu bylo ÃºspÄ›Å¡nÄ› aktualizovÃ¡no"
     },
     "ACCOUNT_DELETE_SECTION": {
-      "TITLE": "Odstranit účet",
+      "TITLE": "Odstranit ÃºÄet",
       "NOTE": "Once you delete your account, all your data will be deleted.",
-      "BUTTON_TEXT": "Odstranit účet",
+      "BUTTON_TEXT": "Odstranit ÃºÄet",
       "CONFIRM": {
-        "TITLE": "Odstranit účet",
+        "TITLE": "Odstranit ÃºÄet",
         "MESSAGE": "Deleting your Account is irreversible. Enter your account name below to confirm you want to permanently delete it.",
         "BUTTON_TEXT": "Vymazat",
-        "DISMISS": "Zrušit",
+        "DISMISS": "ZruÅ¡it",
         "PLACE_HOLDER": "Please type {accountName} to confirm"
       },
       "SUCCESS": "Account marked for deletion",
-      "FAILURE": "Účet nelze odstranit, zkuste to znovu!",
+      "FAILURE": "ÃšÄet nelze odstranit, zkuste to znovu!",
       "SCHEDULED_DELETION": {
         "TITLE": "Account Scheduled for Deletion",
         "MESSAGE_MANUAL": "This account is scheduled for deletion on {deletionDate}. This was requested by an administrator. You can cancel the deletion before this date.",
@@ -35,9 +35,9 @@
       }
     },
     "FORM": {
-      "ERROR": "Opravte chyby formuláře",
+      "ERROR": "Opravte chyby formulÃ¡Å™e",
       "GENERAL_SECTION": {
-        "TITLE": "Obecná nastavení",
+        "TITLE": "ObecnÃ¡ nastavenÃ­",
         "NOTE": ""
       },
       "ACCOUNT_ID": {
@@ -68,28 +68,28 @@
           "PLACEHOLDER": "Select a label"
         },
         "IGNORE_WAITING": {
-          "LABEL": "Skip conversations waiting for agent’s reply"
+          "LABEL": "Skip conversations waiting for agentâ€™s reply"
         },
         "UPDATE_BUTTON": "Save Changes"
       },
       "NAME": {
-        "LABEL": "Název účtu",
-        "PLACEHOLDER": "Název vašeho účtu",
-        "ERROR": "Zadejte prosím platný název účtu"
+        "LABEL": "NÃ¡zev ÃºÄtu",
+        "PLACEHOLDER": "NÃ¡zev vaÅ¡eho ÃºÄtu",
+        "ERROR": "Zadejte prosÃ­m platnÃ½ nÃ¡zev ÃºÄtu"
       },
       "LANGUAGE": {
         "LABEL": "Site language",
-        "PLACEHOLDER": "Název vašeho účtu",
+        "PLACEHOLDER": "NÃ¡zev vaÅ¡eho ÃºÄtu",
         "ERROR": ""
       },
       "DOMAIN": {
-        "LABEL": "Doména příchozích e-mailů",
-        "PLACEHOLDER": "Doména, na které přijímáte e-maily",
+        "LABEL": "DomÃ©na pÅ™Ã­chozÃ­ch e-mailÅ¯",
+        "PLACEHOLDER": "DomÃ©na, na kterÃ© pÅ™ijÃ­mÃ¡te e-maily",
         "ERROR": ""
       },
       "SUPPORT_EMAIL": {
         "LABEL": "E-mail podpory",
-        "PLACEHOLDER": "E-mail podpory vaší společnosti",
+        "PLACEHOLDER": "E-mail podpory vaÅ¡Ã­ spoleÄnosti",
         "ERROR": ""
       },
       "AUTO_RESOLVE_IGNORE_WAITING": {
@@ -119,29 +119,29 @@
         "MESSAGE_HELP": "This message is sent to the customer when a conversation is automatically resolved by the system due to inactivity."
       },
       "FEATURES": {
-        "INBOUND_EMAIL_ENABLED": "E-mailová konverzace je u vašeho účtu povolena.",
-        "CUSTOM_EMAIL_DOMAIN_ENABLED": "Nyní můžete přijímat e-maily na vaši vlastní doménu."
+        "INBOUND_EMAIL_ENABLED": "E-mailovÃ¡ konverzace je u vaÅ¡eho ÃºÄtu povolena.",
+        "CUSTOM_EMAIL_DOMAIN_ENABLED": "NynÃ­ mÅ¯Å¾ete pÅ™ijÃ­mat e-maily na vaÅ¡i vlastnÃ­ domÃ©nu."
       }
     },
-    "UPDATE_CHATWOOT": "Je dostupná aktualizace {latestChatwootVersion} pro Chatwoot. Aktualizujte prosím svou instanci.",
+    "UPDATE_KAIROS_CRM": "Je dostupnÃ¡ aktualizace {latestKairos CRMVersion} pro Kairos CRM. Aktualizujte prosÃ­m svou instanci.",
     "LEARN_MORE": "Learn more",
-    "PAYMENT_PENDING": "Your payment is pending. Please update your payment information to continue using Chatwoot",
-    "UPGRADE": "Upgrade to continue using Chatwoot",
-    "LIMITS_UPGRADE": "Your account has exceeded the usage limits, please upgrade your plan to continue using Chatwoot",
+    "PAYMENT_PENDING": "Your payment is pending. Please update your payment information to continue using Kairos CRM",
+    "UPGRADE": "Upgrade to continue using Kairos CRM",
+    "LIMITS_UPGRADE": "Your account has exceeded the usage limits, please upgrade your plan to continue using Kairos CRM",
     "OPEN_BILLING": "Open billing"
   },
   "FORMS": {
     "MULTISELECT": {
-      "ENTER_TO_SELECT": "Stiskněte Enter pro vybrání",
-      "ENTER_TO_REMOVE": "Stiskněte Enter pro odebrání",
+      "ENTER_TO_SELECT": "StisknÄ›te Enter pro vybrÃ¡nÃ­",
+      "ENTER_TO_REMOVE": "StisknÄ›te Enter pro odebrÃ¡nÃ­",
       "NO_OPTIONS": "List is empty",
       "SELECT_ONE": "Vyberte jeden",
       "SELECT": "Select"
     }
   },
   "NOTIFICATIONS_PAGE": {
-    "HEADER": "Oznámení",
-    "MARK_ALL_DONE": "Označit vše dokončeno",
+    "HEADER": "OznÃ¡menÃ­",
+    "MARK_ALL_DONE": "OznaÄit vÅ¡e dokonÄeno",
     "DELETE_TITLE": "deleted",
     "UNREAD_NOTIFICATION": {
       "TITLE": "Unread Notifications",
@@ -150,21 +150,21 @@
       "EMPTY_MESSAGE": "You have no unread notifications"
     },
     "LIST": {
-      "LOADING_MESSAGE": "Načítání upozornění...",
-      "404": "Žádná upozornění",
+      "LOADING_MESSAGE": "NaÄÃ­tÃ¡nÃ­ upozornÄ›nÃ­...",
+      "404": "Å½Ã¡dnÃ¡ upozornÄ›nÃ­",
       "TABLE_HEADER": [
-        "Název",
-        "Telefonní číslo",
+        "NÃ¡zev",
+        "TelefonnÃ­ ÄÃ­slo",
         "Konverzace",
-        "Naposledy kontaktováno"
+        "Naposledy kontaktovÃ¡no"
       ]
     },
     "TYPE_LABEL": {
-      "conversation_creation": "Nová konverzace",
-      "conversation_assignment": "Přiřazená konverzace",
-      "assigned_conversation_new_message": "Nová zpráva",
-      "participating_conversation_new_message": "Nová zpráva",
-      "conversation_mention": "Zmínka",
+      "conversation_creation": "NovÃ¡ konverzace",
+      "conversation_assignment": "PÅ™iÅ™azenÃ¡ konverzace",
+      "assigned_conversation_new_message": "NovÃ¡ zprÃ¡va",
+      "participating_conversation_new_message": "NovÃ¡ zprÃ¡va",
+      "conversation_mention": "ZmÃ­nka",
       "sla_missed_first_response": "SLA Missed",
       "sla_missed_next_response": "SLA Missed",
       "sla_missed_resolution": "SLA Missed"
@@ -185,7 +185,7 @@
     "SNOOZE_PLACEHOLDER": "Type a time e.g. tomorrow, 2 hours, next friday, jan 15...",
     "SECTIONS": {
       "GENERAL": "General",
-      "REPORTS": "Zprávy",
+      "REPORTS": "ZprÃ¡vy",
       "CONVERSATION": "Conversation",
       "BULK_ACTIONS": "Bulk Actions",
       "CHANGE_ASSIGNEE": "Change Assignee",
@@ -194,7 +194,7 @@
       "SNOOZE_CONVERSATION": "Snooze Conversation",
       "ADD_LABEL": "Add label to the conversation",
       "REMOVE_LABEL": "Remove label from the conversation",
-      "SETTINGS": "Nastavení",
+      "SETTINGS": "NastavenÃ­",
       "AI_ASSIST": "AI Assist",
       "APPEARANCE": "Appearance",
       "SNOOZE_NOTIFICATION": "Snooze Notification"
@@ -263,6 +263,6 @@
   },
   "COMMON": {
     "OR": "Or",
-    "CLICK_HERE": "klikněte zde"
+    "CLICK_HERE": "kliknÄ›te zde"
   }
 }

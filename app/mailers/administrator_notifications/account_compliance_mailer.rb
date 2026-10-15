@@ -43,7 +43,7 @@ class AdministratorNotifications::AccountComplianceMailer < AdministratorNotific
   end
 
   def instance_admin_email
-    GlobalConfig.get('CHATWOOT_INSTANCE_ADMIN_EMAIL')['CHATWOOT_INSTANCE_ADMIN_EMAIL']
+    GlobalConfig.get('KAIROS CRM_INSTANCE_ADMIN_EMAIL')['KAIROS CRM_INSTANCE_ADMIN_EMAIL']
   end
 
   def instance_url

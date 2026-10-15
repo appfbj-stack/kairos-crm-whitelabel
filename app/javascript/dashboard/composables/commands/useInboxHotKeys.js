@@ -1,7 +1,7 @@
 import { computed } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { useRoute } from 'vue-router';
-import wootConstants from 'dashboard/constants/globals';
+import kairosConstants from 'dashboard/constants/globals';
 
 import { CMD_SNOOZE_NOTIFICATION } from 'dashboard/helper/commandbar/events';
 import { ICON_SNOOZE_NOTIFICATION } from 'dashboard/helper/commandbar/icons';
@@ -9,7 +9,7 @@ import { emitter } from 'shared/helpers/mitt';
 
 import { isAInboxViewRoute } from 'dashboard/helper/routeHelpers';
 
-const SNOOZE_OPTIONS = wootConstants.SNOOZE_OPTIONS;
+const SNOOZE_OPTIONS = kairosConstants.SNOOZE_OPTIONS;
 
 const createSnoozeHandler = option => () =>
   emitter.emit(CMD_SNOOZE_NOTIFICATION, option);

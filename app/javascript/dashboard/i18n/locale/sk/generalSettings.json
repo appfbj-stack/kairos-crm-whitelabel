@@ -1,4 +1,4 @@
-{
+﻿{
   "GENERAL_SETTINGS": {
     "LIMIT_MESSAGES": {
       "CONVERSATION": "You have exceeded the conversation limit. Hacker plan allows only 500 conversations.",
@@ -6,13 +6,13 @@
       "AGENTS": "You have exceeded the agent limit. Your plan only allows {allowedAgents} agents.",
       "NON_ADMIN": "Please contact your administrator to upgrade the plan and continue using all features."
     },
-    "TITLE": "Nastavenia účtu",
-    "SUBMIT": "Aktualizovať nastavenia",
-    "BACK": "Späť",
+    "TITLE": "Nastavenia ÃºÄtu",
+    "SUBMIT": "AktualizovaÅ¥ nastavenia",
+    "BACK": "SpÃ¤Å¥",
     "DISMISS": "Dismiss",
     "UPDATE": {
-      "ERROR": "Nastavenia sa nepodarilo aktualizovať, skúste to znova!",
-      "SUCCESS": "Úspešne aktualizované nastavenia účtu"
+      "ERROR": "Nastavenia sa nepodarilo aktualizovaÅ¥, skÃºste to znova!",
+      "SUCCESS": "ÃšspeÅ¡ne aktualizovanÃ© nastavenia ÃºÄtu"
     },
     "ACCOUNT_DELETE_SECTION": {
       "TITLE": "Delete your Account",
@@ -21,8 +21,8 @@
       "CONFIRM": {
         "TITLE": "Delete Account",
         "MESSAGE": "Deleting your Account is irreversible. Enter your account name below to confirm you want to permanently delete it.",
-        "BUTTON_TEXT": "Vymazať",
-        "DISMISS": "Zrušiť",
+        "BUTTON_TEXT": "VymazaÅ¥",
+        "DISMISS": "ZruÅ¡iÅ¥",
         "PLACE_HOLDER": "Please type {accountName} to confirm"
       },
       "SUCCESS": "Account marked for deletion",
@@ -35,14 +35,14 @@
       }
     },
     "FORM": {
-      "ERROR": "Prosím, opravte chyby vo formulári",
+      "ERROR": "ProsÃ­m, opravte chyby vo formulÃ¡ri",
       "GENERAL_SECTION": {
-        "TITLE": "Všeobecné nastavenia",
+        "TITLE": "VÅ¡eobecnÃ© nastavenia",
         "NOTE": ""
       },
       "ACCOUNT_ID": {
-        "TITLE": "ID účtu",
-        "NOTE": "Toto ID je potrebné, ak vytvárate integráciu založenú na rozhraní API"
+        "TITLE": "ID ÃºÄtu",
+        "NOTE": "Toto ID je potrebnÃ©, ak vytvÃ¡rate integrÃ¡ciu zaloÅ¾enÃº na rozhranÃ­ API"
       },
       "AUTO_RESOLVE": {
         "TITLE": "Auto-resolve conversations",
@@ -68,28 +68,28 @@
           "PLACEHOLDER": "Select a label"
         },
         "IGNORE_WAITING": {
-          "LABEL": "Skip conversations waiting for agent’s reply"
+          "LABEL": "Skip conversations waiting for agentâ€™s reply"
         },
         "UPDATE_BUTTON": "Save Changes"
       },
       "NAME": {
-        "LABEL": "Názov účtu",
-        "PLACEHOLDER": "Názov vášho účtu",
-        "ERROR": "Zadajte platný názov účtu"
+        "LABEL": "NÃ¡zov ÃºÄtu",
+        "PLACEHOLDER": "NÃ¡zov vÃ¡Å¡ho ÃºÄtu",
+        "ERROR": "Zadajte platnÃ½ nÃ¡zov ÃºÄtu"
       },
       "LANGUAGE": {
         "LABEL": "Site language",
-        "PLACEHOLDER": "Názov vášho účtu",
+        "PLACEHOLDER": "NÃ¡zov vÃ¡Å¡ho ÃºÄtu",
         "ERROR": ""
       },
       "DOMAIN": {
-        "LABEL": "Doména prichádzajúceho e-mailu",
-        "PLACEHOLDER": "Doména, na ktorú budete dostávať e-maily",
+        "LABEL": "DomÃ©na prichÃ¡dzajÃºceho e-mailu",
+        "PLACEHOLDER": "DomÃ©na, na ktorÃº budete dostÃ¡vaÅ¥ e-maily",
         "ERROR": ""
       },
       "SUPPORT_EMAIL": {
-        "LABEL": "E-mailová podpora",
-        "PLACEHOLDER": "E-mailová podpora vašej spoločnosti",
+        "LABEL": "E-mailovÃ¡ podpora",
+        "PLACEHOLDER": "E-mailovÃ¡ podpora vaÅ¡ej spoloÄnosti",
         "ERROR": ""
       },
       "AUTO_RESOLVE_IGNORE_WAITING": {
@@ -119,21 +119,21 @@
         "MESSAGE_HELP": "This message is sent to the customer when a conversation is automatically resolved by the system due to inactivity."
       },
       "FEATURES": {
-        "INBOUND_EMAIL_ENABLED": "Pre vaše konto je povolená kontinuita konverzácie s e-mailami.",
-        "CUSTOM_EMAIL_DOMAIN_ENABLED": "Teraz môžete prijímať e-maily vo vlastnej doméne."
+        "INBOUND_EMAIL_ENABLED": "Pre vaÅ¡e konto je povolenÃ¡ kontinuita konverzÃ¡cie s e-mailami.",
+        "CUSTOM_EMAIL_DOMAIN_ENABLED": "Teraz mÃ´Å¾ete prijÃ­maÅ¥ e-maily vo vlastnej domÃ©ne."
       }
     },
-    "UPDATE_CHATWOOT": "K dispozícii je aktualizácia {latestChatwootVersion} pre Chatwoot. Prosím, aktualizujte svoju inštanciu.",
+    "UPDATE_KAIROS_CRM": "K dispozÃ­cii je aktualizÃ¡cia {latestKairos CRMVersion} pre Kairos CRM. ProsÃ­m, aktualizujte svoju inÅ¡tanciu.",
     "LEARN_MORE": "Learn more",
-    "PAYMENT_PENDING": "Your payment is pending. Please update your payment information to continue using Chatwoot",
-    "UPGRADE": "Upgrade to continue using Chatwoot",
-    "LIMITS_UPGRADE": "Your account has exceeded the usage limits, please upgrade your plan to continue using Chatwoot",
+    "PAYMENT_PENDING": "Your payment is pending. Please update your payment information to continue using Kairos CRM",
+    "UPGRADE": "Upgrade to continue using Kairos CRM",
+    "LIMITS_UPGRADE": "Your account has exceeded the usage limits, please upgrade your plan to continue using Kairos CRM",
     "OPEN_BILLING": "Open billing"
   },
   "FORMS": {
     "MULTISELECT": {
-      "ENTER_TO_SELECT": "Stlačením tlačidla enter vyberte",
-      "ENTER_TO_REMOVE": "Stlačením tlačidla enter vymažte",
+      "ENTER_TO_SELECT": "StlaÄenÃ­m tlaÄidla enter vyberte",
+      "ENTER_TO_REMOVE": "StlaÄenÃ­m tlaÄidla enter vymaÅ¾te",
       "NO_OPTIONS": "List is empty",
       "SELECT_ONE": "Vyberte jeden",
       "SELECT": "Select"
@@ -141,7 +141,7 @@
   },
   "NOTIFICATIONS_PAGE": {
     "HEADER": "Upozornenia",
-    "MARK_ALL_DONE": "Označiť všetky ako hotové",
+    "MARK_ALL_DONE": "OznaÄiÅ¥ vÅ¡etky ako hotovÃ©",
     "DELETE_TITLE": "deleted",
     "UNREAD_NOTIFICATION": {
       "TITLE": "Unread Notifications",
@@ -150,20 +150,20 @@
       "EMPTY_MESSAGE": "You have no unread notifications"
     },
     "LIST": {
-      "LOADING_MESSAGE": "Načítavajú sa notifikácie...",
-      "404": "Žiadne notifikácie",
+      "LOADING_MESSAGE": "NaÄÃ­tavajÃº sa notifikÃ¡cie...",
+      "404": "Å½iadne notifikÃ¡cie",
       "TABLE_HEADER": [
         "Meno",
-        "Telefónne číslo",
-        "Konverzácie",
-        "Naposledy kontaktovaný"
+        "TelefÃ³nne ÄÃ­slo",
+        "KonverzÃ¡cie",
+        "Naposledy kontaktovanÃ½"
       ]
     },
     "TYPE_LABEL": {
-      "conversation_creation": "Nová konverzácia",
-      "conversation_assignment": "Konverzácia pridelená",
-      "assigned_conversation_new_message": "Nová správa",
-      "participating_conversation_new_message": "Nová správa",
+      "conversation_creation": "NovÃ¡ konverzÃ¡cia",
+      "conversation_assignment": "KonverzÃ¡cia pridelenÃ¡",
+      "assigned_conversation_new_message": "NovÃ¡ sprÃ¡va",
+      "participating_conversation_new_message": "NovÃ¡ sprÃ¡va",
       "conversation_mention": "Zmienka",
       "sla_missed_first_response": "SLA Missed",
       "sla_missed_next_response": "SLA Missed",
@@ -177,23 +177,23 @@
       "RECONNECT_SUCCESS": "Reconnected"
     },
     "BUTTON": {
-      "REFRESH": "Obnoviť"
+      "REFRESH": "ObnoviÅ¥"
     }
   },
   "COMMAND_BAR": {
-    "SEARCH_PLACEHOLDER": "Hľadať alebo ísť na",
+    "SEARCH_PLACEHOLDER": "HÄ¾adaÅ¥ alebo Ã­sÅ¥ na",
     "SNOOZE_PLACEHOLDER": "Type a time e.g. tomorrow, 2 hours, next friday, jan 15...",
     "SECTIONS": {
-      "GENERAL": "Všeobecné",
+      "GENERAL": "VÅ¡eobecnÃ©",
       "REPORTS": "Reporty",
-      "CONVERSATION": "Konverzácia",
+      "CONVERSATION": "KonverzÃ¡cia",
       "BULK_ACTIONS": "Bulk Actions",
-      "CHANGE_ASSIGNEE": "Zmeniť prideleného agenta",
+      "CHANGE_ASSIGNEE": "ZmeniÅ¥ pridelenÃ©ho agenta",
       "CHANGE_PRIORITY": "Change Priority",
-      "CHANGE_TEAM": "Zmeniť tím",
+      "CHANGE_TEAM": "ZmeniÅ¥ tÃ­m",
       "SNOOZE_CONVERSATION": "Snooze Conversation",
-      "ADD_LABEL": "Pridať štítok do konverzácie",
-      "REMOVE_LABEL": "Odstrániť štítok z konverzácie",
+      "ADD_LABEL": "PridaÅ¥ Å¡tÃ­tok do konverzÃ¡cie",
+      "REMOVE_LABEL": "OdstrÃ¡niÅ¥ Å¡tÃ­tok z konverzÃ¡cie",
       "SETTINGS": "Nastavenia",
       "AI_ASSIST": "AI Assist",
       "APPEARANCE": "Appearance",
@@ -201,30 +201,30 @@
     },
     "COMMANDS": {
       "GO_TO_MY_INBOX": "Go to My Inbox",
-      "GO_TO_CONVERSATION_DASHBOARD": "Prejsť na ovládací panel konverzácie",
-      "GO_TO_CONTACTS_DASHBOARD": "Prejsť na ovládací panel kontaktov",
+      "GO_TO_CONVERSATION_DASHBOARD": "PrejsÅ¥ na ovlÃ¡dacÃ­ panel konverzÃ¡cie",
+      "GO_TO_CONTACTS_DASHBOARD": "PrejsÅ¥ na ovlÃ¡dacÃ­ panel kontaktov",
       "GO_TO_CAPTAIN": "Go to Captain",
       "GO_TO_CALLS_DASHBOARD": "Go to Calls Dashboard",
       "GO_TO_CAMPAIGNS": "Go to Campaigns",
       "GO_TO_HELP_CENTER": "Go to Help Center",
-      "GO_TO_REPORTS_OVERVIEW": "Prejsť na prehľad reportov",
+      "GO_TO_REPORTS_OVERVIEW": "PrejsÅ¥ na prehÄ¾ad reportov",
       "GO_TO_CONVERSATION_REPORTS": "Go to Conversation Reports",
-      "GO_TO_AGENT_REPORTS": "Prejsť na reporty o agentoch",
-      "GO_TO_LABEL_REPORTS": "Prejsť na reporty o štítkoch",
-      "GO_TO_INBOX_REPORTS": "Prejsť na reporty o schránkach",
-      "GO_TO_TEAM_REPORTS": "Prejsť na reporty o tímoch",
+      "GO_TO_AGENT_REPORTS": "PrejsÅ¥ na reporty o agentoch",
+      "GO_TO_LABEL_REPORTS": "PrejsÅ¥ na reporty o Å¡tÃ­tkoch",
+      "GO_TO_INBOX_REPORTS": "PrejsÅ¥ na reporty o schrÃ¡nkach",
+      "GO_TO_TEAM_REPORTS": "PrejsÅ¥ na reporty o tÃ­moch",
       "GO_TO_CSAT_REPORTS": "Go to CSAT Reports",
       "GO_TO_BOT_REPORTS": "Go to Bot Reports",
       "GO_TO_SLA_REPORTS": "Go to SLA Reports",
-      "GO_TO_SETTINGS_AGENTS": "Prejsť na nastavenia agentov",
-      "GO_TO_SETTINGS_TEAMS": "Prejsť na nastavenia tímov",
-      "GO_TO_SETTINGS_INBOXES": "Prejsť na nastavenia chránok",
+      "GO_TO_SETTINGS_AGENTS": "PrejsÅ¥ na nastavenia agentov",
+      "GO_TO_SETTINGS_TEAMS": "PrejsÅ¥ na nastavenia tÃ­mov",
+      "GO_TO_SETTINGS_INBOXES": "PrejsÅ¥ na nastavenia chrÃ¡nok",
       "GO_TO_SETTINGS_TEMPLATES": "Go to Templates",
-      "GO_TO_SETTINGS_LABELS": "Prejsť na nastavenia štítkov",
+      "GO_TO_SETTINGS_LABELS": "PrejsÅ¥ na nastavenia Å¡tÃ­tkov",
       "GO_TO_SETTINGS_CUSTOM_ATTRIBUTES": "Go to Custom Attributes",
       "GO_TO_SETTINGS_AUTOMATION": "Go to Automation",
       "GO_TO_SETTINGS_MACROS": "Go to Macros",
-      "GO_TO_SETTINGS_CANNED_RESPONSES": "Prejsť na nastavenia uložených odpovedí",
+      "GO_TO_SETTINGS_CANNED_RESPONSES": "PrejsÅ¥ na nastavenia uloÅ¾enÃ½ch odpovedÃ­",
       "GO_TO_SETTINGS_SLA": "Go to SLA Settings",
       "GO_TO_SETTINGS_APPLICATIONS": "Go to Application Settings",
       "GO_TO_SETTINGS_DATA": "Go to Data",
@@ -233,14 +233,14 @@
       "GO_TO_SETTINGS_ACCOUNT": "Go to Account Settings",
       "GO_TO_SETTINGS_PROFILE": "Go to Profile Settings",
       "GO_TO_NOTIFICATIONS": "Go to Notifications",
-      "ADD_LABELS_TO_CONVERSATION": "Pridať štítok do konverzácie",
+      "ADD_LABELS_TO_CONVERSATION": "PridaÅ¥ Å¡tÃ­tok do konverzÃ¡cie",
       "ASSIGN_AN_AGENT": "Assign an agent",
       "AI_ASSIST": "AI Assist",
       "ASSIGN_PRIORITY": "Assign priority",
       "ASSIGN_A_TEAM": "Assign a team",
       "MUTE_CONVERSATION": "Mute conversation",
       "UNMUTE_CONVERSATION": "Unmute conversation",
-      "REMOVE_LABEL_FROM_CONVERSATION": "Odstrániť štítok z konverzácie",
+      "REMOVE_LABEL_FROM_CONVERSATION": "OdstrÃ¡niÅ¥ Å¡tÃ­tok z konverzÃ¡cie",
       "REOPEN_CONVERSATION": "Reopen conversation",
       "RESOLVE_CONVERSATION": "Resolve conversation",
       "SEND_TRANSCRIPT": "Send an email transcript",

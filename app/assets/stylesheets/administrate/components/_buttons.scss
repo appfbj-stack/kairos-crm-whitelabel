@@ -4,7 +4,7 @@ input[type='reset']:not(.reset-base),
 input[type='submit']:not(.reset-base),
 .button:not(.reset-base) {
   appearance: none;
-  background-color: $color-woot;
+  background-color: $color-kairos;
   border: 0;
   border-radius: $base-border-radius;
   color: $white;
@@ -22,7 +22,7 @@ input[type='submit']:not(.reset-base),
   white-space: nowrap;
 
   &:hover {
-    background-color: mix($black, $color-woot, 20%);
+    background-color: mix($black, $color-kairos, 20%);
     color: $white;
   }
 
@@ -36,7 +36,7 @@ input[type='submit']:not(.reset-base),
     opacity: 0.5;
 
     &:hover {
-      background-color: $color-woot;
+      background-color: $color-kairos;
     }
   }
 }

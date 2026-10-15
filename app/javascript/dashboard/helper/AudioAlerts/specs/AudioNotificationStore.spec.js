@@ -4,7 +4,7 @@ import {
   CONVERSATION_PERMISSIONS,
 } from 'dashboard/constants/permissions';
 import { getUserPermissions } from 'dashboard/helper/permissionsHelper';
-import wootConstants from 'dashboard/constants/globals';
+import kairosConstants from 'dashboard/constants/globals';
 
 vi.mock('dashboard/helper/permissionsHelper', () => ({
   getUserPermissions: vi.fn(),
@@ -66,7 +66,7 @@ describe('AudioNotificationStore', () => {
     it('should return true when conversation status is pending', () => {
       store.getters.getConversationById.mockReturnValue({
         id: 123,
-        status: wootConstants.STATUS_TYPE.PENDING,
+        status: kairosConstants.STATUS_TYPE.PENDING,
       });
       const message = { conversation_id: 123 };
 
@@ -79,7 +79,7 @@ describe('AudioNotificationStore', () => {
     it('should return false when conversation status is not pending', () => {
       store.getters.getConversationById.mockReturnValue({
         id: 123,
-        status: wootConstants.STATUS_TYPE.OPEN,
+        status: kairosConstants.STATUS_TYPE.OPEN,
       });
       const message = { conversation_id: 123 };
 

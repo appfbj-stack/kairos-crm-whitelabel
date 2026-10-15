@@ -4,7 +4,7 @@ import {
   clearLocalStorageOnLogout,
   parseAPIErrorResponse,
 } from 'dashboard/store/utils/api';
-import wootAPI from './apiClient';
+import kairosAPI from './apiClient';
 import {
   getLoginRedirectURL,
   getCredentialsFromEmail,
@@ -16,7 +16,7 @@ export const login = async ({
   ...credentials
 }) => {
   try {
-    const response = await wootAPI.post('auth/sign_in', credentials);
+    const response = await kairosAPI.post('auth/sign_in', credentials);
 
     // Check if MFA is required
     if (response.status === 206 && response.data.mfa_required) {
@@ -61,7 +61,7 @@ export const login = async ({
 export const register = async creds => {
   try {
     const { fullName, accountName } = getCredentialsFromEmail(creds.email);
-    const response = await wootAPI.post('api/v1/accounts.json', {
+    const response = await kairosAPI.post('api/v1/accounts.json', {
       account_name: accountName,
       user_full_name: fullName,
       email: creds.email,
@@ -76,7 +76,7 @@ export const register = async creds => {
 };
 
 export const resendConfirmation = async ({ email, hCaptchaClientResponse }) => {
-  return wootAPI.post('resend_confirmation', {
+  return kairosAPI.post('resend_confirmation', {
     email,
     h_captcha_client_response: hCaptchaClientResponse,
   });
@@ -84,7 +84,7 @@ export const resendConfirmation = async ({ email, hCaptchaClientResponse }) => {
 
 export const verifyPasswordToken = async ({ confirmationToken }) => {
   try {
-    const response = await wootAPI.post('auth/confirmation', {
+    const response = await kairosAPI.post('auth/confirmation', {
       confirmation_token: confirmationToken,
     });
     setAuthCredentials(response);
@@ -99,7 +99,7 @@ export const setNewPassword = async ({
   confirmPassword,
 }) => {
   try {
-    const response = await wootAPI.put('auth/password', {
+    const response = await kairosAPI.put('auth/password', {
       reset_password_token: resetPasswordToken,
       password_confirmation: confirmPassword,
       password,
@@ -111,4 +111,4 @@ export const setNewPassword = async ({
 };
 
 export const resetPassword = async ({ email }) =>
-  wootAPI.post('auth/password', { email });
+  kairosAPI.post('auth/password', { email });

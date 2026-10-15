@@ -6,26 +6,26 @@ import { useAdmin } from 'dashboard/composables/useAdmin';
 import { useMapGetter } from 'dashboard/composables/store';
 
 const { isAdmin } = useAdmin();
-const isOnChatwootCloud = useMapGetter('globalConfig/isOnChatwootCloud');
+const isOnKairos CRMCloud = useMapGetter('globalConfig/isOnKairos CRMCloud');
 
 const showBillingLink = computed(
-  () => isAdmin.value && isOnChatwootCloud.value
+  () => isAdmin.value && isOnKairos CRMCloud.value
 );
 
 const toggleSupportWidgetVisibility = () => {
-  if (window.$chatwoot) {
-    window.$chatwoot.toggleBubbleVisibility('show');
+  if (window.$kairos-crm) {
+    window.$kairos-crm.toggleBubbleVisibility('show');
   }
 };
 
 const toggleSupportWidget = () => {
-  if (window.$chatwoot) {
-    window.$chatwoot.toggle();
+  if (window.$kairos-crm) {
+    window.$kairos-crm.toggle();
   }
 };
 
 const setupListenerForWidgetEvent = () => {
-  window.addEventListener('chatwoot:on-message', () => {
+  window.addEventListener('kairos-crm:on-message', () => {
     toggleSupportWidgetVisibility();
   });
 };

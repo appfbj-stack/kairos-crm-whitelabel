@@ -44,7 +44,7 @@ const handleCopySecret = async () => {
 <template>
   <div class="h-auto overflow-auto flex flex-col">
     <template v-if="createdWebhook">
-      <woot-modal-header
+      <kairos-modal-header
         :header-title="
           t('INTEGRATION_SETTINGS.WEBHOOK.ADD.API.SUCCESS_MESSAGE')
         "
@@ -81,7 +81,7 @@ const handleCopySecret = async () => {
       </div>
     </template>
     <template v-else>
-      <woot-modal-header
+      <kairos-modal-header
         :header-title="t('INTEGRATION_SETTINGS.WEBHOOK.ADD.TITLE')"
         :header-content="
           replaceInstallationName(t('INTEGRATION_SETTINGS.WEBHOOK.FORM.DESC'))

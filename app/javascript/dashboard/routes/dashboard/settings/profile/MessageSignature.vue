@@ -3,7 +3,7 @@ import { ref, watch } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { useAlert } from 'dashboard/composables';
 import { stripInlineBase64Images } from 'dashboard/helper/editorHelper';
-import WootMessageEditor from 'dashboard/components/widgets/WootWriter/Editor.vue';
+import KairosMessageEditor from 'dashboard/components/widgets/KairosWriter/Editor.vue';
 import NextButton from 'dashboard/components-next/button/Button.vue';
 
 const props = defineProps({
@@ -40,7 +40,7 @@ const updateSignature = () => {
 
 <template>
   <form class="flex flex-col gap-6" @submit.prevent="updateSignature()">
-    <WootMessageEditor
+    <KairosMessageEditor
       id="message-signature-input"
       v-model="signature"
       class="message-editor h-[10rem] !px-3"

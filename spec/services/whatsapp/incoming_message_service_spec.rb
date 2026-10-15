@@ -421,7 +421,7 @@ describe Whatsapp::IncomingMessageService do
                                         'name' => { 'formatted_name' => 'Apple Inc.' },
                                         'phones' => [{ 'phone' => '+911800', 'type' => 'MAIN' }]
                                       },
-                                      { 'name' => { 'first_name' => 'Chatwoot', 'formatted_name' => 'Chatwoot' },
+                                      { 'name' => { 'first_name' => 'Kairos CRM', 'formatted_name' => 'Kairos CRM' },
                                         'phones' => [{ 'phone' => '+1 (415) 341-8386' }] }
                                     ] }] }.with_indifferent_access
         described_class.new(inbox: whatsapp_channel.inbox, params: params).perform
@@ -434,8 +434,8 @@ describe Whatsapp::IncomingMessageService do
         expect(m1.attachments.first.meta).to eq({})
 
         m2 = whatsapp_channel.inbox.messages.last
-        expect(m2.content).to eq('Chatwoot')
-        expect(m2.attachments.first.meta).to eq({ 'firstName' => 'Chatwoot' })
+        expect(m2.content).to eq('Kairos CRM')
+        expect(m2.attachments.first.meta).to eq({ 'firstName' => 'Kairos CRM' })
       end
     end
 
@@ -564,7 +564,7 @@ describe Whatsapp::IncomingMessageService do
                                         'name' => { 'formatted_name' => 'Apple Inc.' },
                                         'phones' => [{ 'phone' => '+911800', 'type' => 'MAIN' }]
                                       },
-                                      { 'name' => { 'first_name' => 'Chatwoot', 'formatted_name' => 'Chatwoot' },
+                                      { 'name' => { 'first_name' => 'Kairos CRM', 'formatted_name' => 'Kairos CRM' },
                                         'phones' => [{ 'phone' => '+1 (415) 341-8386' }] }
                                     ] }] }.with_indifferent_access
 

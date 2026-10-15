@@ -61,7 +61,7 @@ const subscribedEvents = computed(() => {
         <div class="flex justify-end gap-3 flex-shrink-0">
           <Button
             v-tooltip.top="$t('INTEGRATION_SETTINGS.WEBHOOK.EDIT.BUTTON_TEXT')"
-            icon="i-woot-edit-pen"
+            icon="i-kairos-edit-pen"
             slate
             sm
             @click="emit('edit', webhook)"
@@ -70,7 +70,7 @@ const subscribedEvents = computed(() => {
             v-tooltip.top="
               $t('INTEGRATION_SETTINGS.WEBHOOK.DELETE.BUTTON_TEXT')
             "
-            icon="i-woot-bin"
+            icon="i-kairos-bin"
             slate
             sm
             class="hover:enabled:text-n-ruby-11 hover:enabled:bg-n-ruby-2"

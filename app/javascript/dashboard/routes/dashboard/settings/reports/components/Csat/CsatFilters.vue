@@ -14,7 +14,7 @@ import {
 import FilterButton from 'dashboard/components/ui/Dropdown/DropdownButton.vue';
 import ActiveFilterChip from '../Filters/v3/ActiveFilterChip.vue';
 import AddFilterChip from '../Filters/v3/AddFilterChip.vue';
-import WootDatePicker from 'dashboard/components/ui/DatePicker/DatePicker.vue';
+import KairosDatePicker from 'dashboard/components/ui/DatePicker/DatePicker.vue';
 import {
   parseReportURLParams,
   parseFilterURLParams,
@@ -254,7 +254,7 @@ onMounted(() => {
 
 <template>
   <div class="flex flex-col flex-wrap w-full gap-3 md:flex-row">
-    <WootDatePicker
+    <KairosDatePicker
       v-model:date-range="customDateRange"
       v-model:range-type="selectedDateRange"
       @date-range-changed="onDateRangeChange"

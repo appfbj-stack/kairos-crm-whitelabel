@@ -1080,11 +1080,11 @@ useEmitter(BUS_EVENTS.INSERT_INTO_RICH_EDITOR, insertContentIntoEditor);
   }
 }
 
-.ProseMirror-woot-style {
+.ProseMirror-kairos-style {
   @apply overflow-auto;
 }
 
-.ProseMirror-woot-style:not(
+.ProseMirror-kairos-style:not(
     :where(.resizable-editor-wrapper .resizable-editor-body)
   ) {
   @apply min-h-[5rem] max-h-[7.5rem];

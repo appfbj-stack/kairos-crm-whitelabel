@@ -77,7 +77,7 @@ const actionURL = computed(() =>
         <router-link :to="actionURL">
           <Button
             :label="$t('INTEGRATION_APPS.CONFIGURE')"
-            icon="i-woot-settings"
+            icon="i-kairos-settings"
             link
             xs
           />

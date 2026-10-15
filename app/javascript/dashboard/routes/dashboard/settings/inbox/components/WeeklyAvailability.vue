@@ -4,7 +4,7 @@ import { useAlert } from 'dashboard/composables';
 import inboxMixin from 'shared/mixins/inboxMixin';
 import SettingsToggleSection from 'dashboard/components-next/Settings/SettingsToggleSection.vue';
 import SettingsFieldSection from 'dashboard/components-next/Settings/SettingsFieldSection.vue';
-import WootMessageEditor from 'dashboard/components/widgets/WootWriter/Editor.vue';
+import KairosMessageEditor from 'dashboard/components/widgets/KairosWriter/Editor.vue';
 import BusinessDay from './BusinessDay.vue';
 import {
   timeSlotParse,
@@ -26,7 +26,7 @@ export default {
     SettingsFieldSection,
     BusinessDay,
     NextButton,
-    WootMessageEditor,
+    KairosMessageEditor,
     ComboBox,
   },
   mixins: [inboxMixin],
@@ -142,7 +142,7 @@ export default {
     >
       <template v-if="isBusinessHoursEnabled" #editor>
         <div class="mb-4">
-          <WootMessageEditor
+          <KairosMessageEditor
             v-if="isRichEditorEnabled"
             v-model="unavailableMessage"
             enable-variables

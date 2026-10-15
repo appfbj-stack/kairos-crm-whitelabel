@@ -19,7 +19,7 @@ const router = useRouter();
 const { t } = useI18n();
 const {
   isCloudFeatureEnabled,
-  isOnChatwootCloud,
+  isOnKairos CRMCloud,
   isMetaInboxCreationDisabled,
 } = useAccount();
 
@@ -34,8 +34,8 @@ const PROVIDER_TYPES = {
 
 const hasWhatsappAppId = computed(() => {
   return (
-    window.chatwootConfig?.whatsappAppId &&
-    window.chatwootConfig.whatsappAppId !== 'none'
+    window.kairos-crmConfig?.whatsappAppId &&
+    window.kairos-crmConfig.whatsappAppId !== 'none'
   );
 });
 
@@ -50,7 +50,7 @@ const isWhatsappEmbeddedSignupDisabled = computed(
 
 const isWhatsappEmbeddedSignupFeatureEnabled = computed(
   () =>
-    !isOnChatwootCloud.value ||
+    !isOnKairos CRMCloud.value ||
     isCloudFeatureEnabled(FEATURE_FLAGS.WHATSAPP_EMBEDDED_SIGNUP_FLOW)
 );
 
@@ -65,7 +65,7 @@ const shouldShowWhatsappEmbeddedSignup = computed(() => {
 const shouldShowEmbeddedSignupAccessRequest = computed(() => {
   return (
     selectedProvider.value === PROVIDER_TYPES.WHATSAPP &&
-    isOnChatwootCloud.value &&
+    isOnKairos CRMCloud.value &&
     hasWhatsappAppId.value &&
     !isWhatsappEmbeddedSignupFeatureEnabled.value &&
     !isWhatsappEmbeddedSignupDisabled.value
@@ -79,13 +79,13 @@ const availableProviders = computed(() => [
     description: isWhatsappEmbeddedSignupDisabled.value
       ? t('INBOX_MGMT.ADD.WHATSAPP.PROVIDERS.WHATSAPP_CLOUD_MANUAL_SETUP_DESC')
       : t('INBOX_MGMT.ADD.WHATSAPP.PROVIDERS.WHATSAPP_CLOUD_DESC'),
-    icon: 'i-woot-whatsapp',
+    icon: 'i-kairos-whatsapp',
   },
   {
     key: PROVIDER_TYPES.TWILIO,
     title: t('INBOX_MGMT.ADD.WHATSAPP.PROVIDERS.TWILIO'),
     description: t('INBOX_MGMT.ADD.WHATSAPP.PROVIDERS.TWILIO_DESC'),
-    icon: 'i-woot-twilio',
+    icon: 'i-kairos-twilio',
   },
 ]);
 
@@ -122,7 +122,7 @@ const handleManualLinkClick = () => {
 };
 
 const requestEmbeddedSignupAccess = () => {
-  window.$chatwoot?.toggle();
+  window.$kairos-crm?.toggle();
 };
 </script>
 
@@ -193,7 +193,7 @@ const requestEmbeddedSignupAccess = () => {
               <div
                 class="flex items-center justify-center flex-shrink-0 rounded-lg size-9 bg-n-blue-3"
               >
-                <Icon icon="i-woot-whatsapp" class="size-5 text-n-slate-10" />
+                <Icon icon="i-kairos-whatsapp" class="size-5 text-n-slate-10" />
               </div>
               <div class="flex-1 min-w-0 text-start">
                 <div class="font-medium text-n-slate-12">

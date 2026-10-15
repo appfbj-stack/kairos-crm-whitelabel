@@ -193,8 +193,8 @@ const tableHeaders = computed(() => {
               class="size-5 text-n-slate-11 flex-shrink-0"
               :icon="
                 sortOrder === 'desc'
-                  ? 'i-woot-sort-descending'
-                  : 'i-woot-sort-ascending'
+                  ? 'i-kairos-sort-descending'
+                  : 'i-kairos-sort-ascending'
               "
             />
           </button>
@@ -225,14 +225,14 @@ const tableHeaders = computed(() => {
                 <div class="flex gap-3 justify-end flex-shrink-0">
                   <Button
                     v-tooltip.top="$t('CANNED_MGMT.EDIT.BUTTON_TEXT')"
-                    icon="i-woot-edit-pen"
+                    icon="i-kairos-edit-pen"
                     slate
                     sm
                     @click="openEditPopup(cannedItem)"
                   />
                   <Button
                     v-tooltip.top="$t('CANNED_MGMT.DELETE.BUTTON_TEXT')"
-                    icon="i-woot-bin"
+                    icon="i-kairos-bin"
                     slate
                     sm
                     class="hover:enabled:text-n-ruby-11 hover:enabled:bg-n-ruby-2"
@@ -246,11 +246,11 @@ const tableHeaders = computed(() => {
         </template>
       </BaseTable>
     </template>
-    <woot-modal v-model:show="showAddPopup" :on-close="hideAddPopup">
+    <kairos-modal v-model:show="showAddPopup" :on-close="hideAddPopup">
       <AddCanned :on-close="hideAddPopup" />
-    </woot-modal>
+    </kairos-modal>
 
-    <woot-modal v-model:show="showEditPopup" :on-close="hideEditPopup">
+    <kairos-modal v-model:show="showEditPopup" :on-close="hideEditPopup">
       <EditCanned
         v-if="showEditPopup"
         :id="activeResponse.id"
@@ -258,9 +258,9 @@ const tableHeaders = computed(() => {
         :edcontent="activeResponse.content"
         :on-close="hideEditPopup"
       />
-    </woot-modal>
+    </kairos-modal>
 
-    <woot-delete-modal
+    <kairos-delete-modal
       v-model:show="showDeleteConfirmationPopup"
       :on-close="closeDeletePopup"
       :on-confirm="confirmDeletion"

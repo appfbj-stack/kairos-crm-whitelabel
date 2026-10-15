@@ -3,7 +3,7 @@ import { onMounted } from 'vue';
 import { useRoute } from 'vue-router';
 import { useFunctionGetter, useStore } from 'dashboard/composables/store';
 
-import WootReports from './components/WootReports.vue';
+import KairosReports from './components/KairosReports.vue';
 import Spinner from 'dashboard/components-next/spinner/Spinner.vue';
 
 const route = useRoute();
@@ -14,7 +14,7 @@ onMounted(() => store.dispatch('labels/get'));
 </script>
 
 <template>
-  <WootReports
+  <KairosReports
     v-if="label.id"
     :key="label.id"
     type="label"

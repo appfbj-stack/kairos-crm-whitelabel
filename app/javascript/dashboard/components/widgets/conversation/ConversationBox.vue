@@ -107,13 +107,13 @@ export default {
         'border-b border-b-n-weak !pt-2': !dashboardApps.length,
       }"
     />
-    <woot-tabs
+    <kairos-tabs
       v-if="dashboardApps.length && currentChat.id"
       :index="activeIndex"
       class="h-10"
       @change="onDashboardAppTabChange"
     >
-      <woot-tabs-item
+      <kairos-tabs-item
         v-for="tab in dashboardAppTabs"
         :key="tab.key"
         :index="tab.index"
@@ -121,7 +121,7 @@ export default {
         :show-badge="false"
         is-compact
       />
-    </woot-tabs>
+    </kairos-tabs>
     <div v-show="!activeIndex" class="flex h-full min-h-0 m-0">
       <MessagesView
         v-if="currentChat.id"

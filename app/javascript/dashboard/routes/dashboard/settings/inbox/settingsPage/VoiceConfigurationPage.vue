@@ -172,7 +172,7 @@ export default {
           $t('INBOX_MGMT.ADD.VOICE.CONFIGURATION.TWILIO_VOICE_URL_SUBTITLE')
         "
       >
-        <woot-code :script="inbox.voice_call_webhook_url" lang="html" />
+        <kairos-code :script="inbox.voice_call_webhook_url" lang="html" />
       </SettingsFieldSection>
       <SettingsFieldSection
         :label="
@@ -182,7 +182,7 @@ export default {
           $t('INBOX_MGMT.ADD.VOICE.CONFIGURATION.TWILIO_STATUS_URL_SUBTITLE')
         "
       >
-        <woot-code :script="inbox.voice_status_webhook_url" lang="html" />
+        <kairos-code :script="inbox.voice_status_webhook_url" lang="html" />
       </SettingsFieldSection>
     </div>
 

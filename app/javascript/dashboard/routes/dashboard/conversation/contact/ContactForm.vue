@@ -349,7 +349,7 @@ export default {
           }"
         >
           {{ $t('CONTACT_FORM.FORM.PHONE_NUMBER.LABEL') }}
-          <woot-phone-input
+          <kairos-phone-input
             v-model="phoneNumber"
             :value="phoneNumber"
             :error="isPhoneNumberNotValid"
@@ -369,7 +369,7 @@ export default {
         </div>
       </div>
     </div>
-    <woot-input
+    <kairos-input
       v-model="companyName"
       class="w-full"
       :label="$t('CONTACT_FORM.FORM.COMPANY_NAME.LABEL')"
@@ -393,7 +393,7 @@ export default {
         @update:model-value="onCountryChange"
       />
     </div>
-    <woot-input
+    <kairos-input
       v-model="city"
       class="w-full"
       :label="$t('CONTACT_FORM.FORM.CITY.LABEL')"

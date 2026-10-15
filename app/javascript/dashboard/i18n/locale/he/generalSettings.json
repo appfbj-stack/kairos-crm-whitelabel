@@ -1,268 +1,268 @@
-{
+﻿{
   "GENERAL_SETTINGS": {
     "LIMIT_MESSAGES": {
-      "CONVERSATION": "חרגת ממגבלת השיחות. תוכנית Hacker מאפשרת רק 500 שיחות.",
+      "CONVERSATION": "×—×¨×’×ª ×ž×ž×’×‘×œ×ª ×”×©×™×—×•×ª. ×ª×•×›× ×™×ª Hacker ×ž××¤×©×¨×ª ×¨×§ 500 ×©×™×—×•×ª.",
       "INBOXES": "You have exceeded the inbox limit. Hacker plan only supports website live-chat. Additional inboxes like email, WhatsApp etc. require a paid plan.",
-      "AGENTS": "חרגת ממגבלת הסוכנים. התוכנית שלך מאפשרת רק {allowedAgents} סוכנים.",
-      "NON_ADMIN": "אנא פנה למנהל המערכת שלך כדי לשדרג את התוכנית ולהמשיך להשתמש בכל התכונות."
+      "AGENTS": "×—×¨×’×ª ×ž×ž×’×‘×œ×ª ×”×¡×•×›× ×™×. ×”×ª×•×›× ×™×ª ×©×œ×š ×ž××¤×©×¨×ª ×¨×§ {allowedAgents} ×¡×•×›× ×™×.",
+      "NON_ADMIN": "×× × ×¤× ×” ×œ×ž× ×”×œ ×”×ž×¢×¨×›×ª ×©×œ×š ×›×“×™ ×œ×©×“×¨×’ ××ª ×”×ª×•×›× ×™×ª ×•×œ×”×ž×©×™×š ×œ×”×©×ª×ž×© ×‘×›×œ ×”×ª×›×•× ×•×ª."
     },
-    "TITLE": "הגדרות חשבון",
-    "SUBMIT": "עדכן הגדרות",
-    "BACK": "חזור",
-    "DISMISS": "סגור",
+    "TITLE": "×”×’×“×¨×•×ª ×—×©×‘×•×Ÿ",
+    "SUBMIT": "×¢×“×›×Ÿ ×”×’×“×¨×•×ª",
+    "BACK": "×—×–×•×¨",
+    "DISMISS": "×¡×’×•×¨",
     "UPDATE": {
-      "ERROR": "לא ניתן היה לעדכן את ההגדרות, נסה שוב!",
-      "SUCCESS": "הגדרות החשבון עודכנו בהצלחה"
+      "ERROR": "×œ× × ×™×ª×Ÿ ×”×™×” ×œ×¢×“×›×Ÿ ××ª ×”×”×’×“×¨×•×ª, × ×¡×” ×©×•×‘!",
+      "SUCCESS": "×”×’×“×¨×•×ª ×”×—×©×‘×•×Ÿ ×¢×•×“×›× ×• ×‘×”×¦×œ×—×”"
     },
     "ACCOUNT_DELETE_SECTION": {
-      "TITLE": "מחק את חשבונך",
-      "NOTE": "לאחר שתמחק את חשבונך, כל הנתונים שלך יימחקו.",
-      "BUTTON_TEXT": "מחק את חשבונך",
+      "TITLE": "×ž×—×§ ××ª ×—×©×‘×•× ×š",
+      "NOTE": "×œ××—×¨ ×©×ª×ž×—×§ ××ª ×—×©×‘×•× ×š, ×›×œ ×”× ×ª×•× ×™× ×©×œ×š ×™×™×ž×—×§×•.",
+      "BUTTON_TEXT": "×ž×—×§ ××ª ×—×©×‘×•× ×š",
       "CONFIRM": {
-        "TITLE": "מחק חשבון",
-        "MESSAGE": "מחיקת חשבונך היא בלתי הפיכה. הזן את שם חשבונך למטה כדי לאשר שברצונך למחוק אותו לצמיתות.",
-        "BUTTON_TEXT": "מחק",
-        "DISMISS": "ביטול",
-        "PLACE_HOLDER": "אנא הקלד {accountName} כדי לאשר"
+        "TITLE": "×ž×—×§ ×—×©×‘×•×Ÿ",
+        "MESSAGE": "×ž×—×™×§×ª ×—×©×‘×•× ×š ×”×™× ×‘×œ×ª×™ ×”×¤×™×›×”. ×”×–×Ÿ ××ª ×©× ×—×©×‘×•× ×š ×œ×ž×˜×” ×›×“×™ ×œ××©×¨ ×©×‘×¨×¦×•× ×š ×œ×ž×—×•×§ ××•×ª×• ×œ×¦×ž×™×ª×•×ª.",
+        "BUTTON_TEXT": "×ž×—×§",
+        "DISMISS": "×‘×™×˜×•×œ",
+        "PLACE_HOLDER": "×× × ×”×§×œ×“ {accountName} ×›×“×™ ×œ××©×¨"
       },
-      "SUCCESS": "החשבון סומן למחיקה",
-      "FAILURE": "לא ניתן למחוק חשבון, נסה שוב!",
+      "SUCCESS": "×”×—×©×‘×•×Ÿ ×¡×•×ž×Ÿ ×œ×ž×—×™×§×”",
+      "FAILURE": "×œ× × ×™×ª×Ÿ ×œ×ž×—×•×§ ×—×©×‘×•×Ÿ, × ×¡×” ×©×•×‘!",
       "SCHEDULED_DELETION": {
-        "TITLE": "החשבון מתוזמן למחיקה",
-        "MESSAGE_MANUAL": "חשבון זה מתוזמן למחיקה ב- {deletionDate}. הדבר התבקש על ידי מנהל מערכת. תוכל לבטל את המחיקה לפני תאריך זה.",
-        "MESSAGE_INACTIVITY": "חשבון זה מתוזמן למחיקה ב- {deletionDate} עקב חוסר פעילות בחשבון. תוכל לבטל את המחיקה לפני תאריך זה.",
-        "CLEAR_BUTTON": "בטל מחיקה מתוזמנת"
+        "TITLE": "×”×—×©×‘×•×Ÿ ×ž×ª×•×–×ž×Ÿ ×œ×ž×—×™×§×”",
+        "MESSAGE_MANUAL": "×—×©×‘×•×Ÿ ×–×” ×ž×ª×•×–×ž×Ÿ ×œ×ž×—×™×§×” ×‘- {deletionDate}. ×”×“×‘×¨ ×”×ª×‘×§×© ×¢×œ ×™×“×™ ×ž× ×”×œ ×ž×¢×¨×›×ª. ×ª×•×›×œ ×œ×‘×˜×œ ××ª ×”×ž×—×™×§×” ×œ×¤× ×™ ×ª××¨×™×š ×–×”.",
+        "MESSAGE_INACTIVITY": "×—×©×‘×•×Ÿ ×–×” ×ž×ª×•×–×ž×Ÿ ×œ×ž×—×™×§×” ×‘- {deletionDate} ×¢×§×‘ ×—×•×¡×¨ ×¤×¢×™×œ×•×ª ×‘×—×©×‘×•×Ÿ. ×ª×•×›×œ ×œ×‘×˜×œ ××ª ×”×ž×—×™×§×” ×œ×¤× ×™ ×ª××¨×™×š ×–×”.",
+        "CLEAR_BUTTON": "×‘×˜×œ ×ž×—×™×§×” ×ž×ª×•×–×ž× ×ª"
       }
     },
     "FORM": {
-      "ERROR": "אנא תקן שגיאות בטופס",
+      "ERROR": "×× × ×ª×§×Ÿ ×©×’×™××•×ª ×‘×˜×•×¤×¡",
       "GENERAL_SECTION": {
-        "TITLE": "הגדרות כלליות",
+        "TITLE": "×”×’×“×¨×•×ª ×›×œ×œ×™×•×ª",
         "NOTE": ""
       },
       "ACCOUNT_ID": {
-        "TITLE": "מזהה חשבון",
-        "NOTE": "מזהה זה נדרש אם אתה בונה אינטגרציה מבוססת API"
+        "TITLE": "×ž×–×”×” ×—×©×‘×•×Ÿ",
+        "NOTE": "×ž×–×”×” ×–×” × ×“×¨×© ×× ××ª×” ×‘×•× ×” ××™× ×˜×’×¨×¦×™×” ×ž×‘×•×¡×¡×ª API"
       },
       "AUTO_RESOLVE": {
         "TITLE": "Auto-resolve conversations",
-        "NOTE": "הגדרה זו תאפשר לך לסגור אוטומטית את השיחה לאחר תקופה מסוימת של חוסר פעילות.",
+        "NOTE": "×”×’×“×¨×” ×–×• ×ª××¤×©×¨ ×œ×š ×œ×¡×’×•×¨ ××•×˜×•×ž×˜×™×ª ××ª ×”×©×™×—×” ×œ××—×¨ ×ª×§×•×¤×” ×ž×¡×•×™×ž×ª ×©×œ ×—×•×¡×¨ ×¤×¢×™×œ×•×ª.",
         "DURATION": {
-          "LABEL": "משך חוסר פעילות",
+          "LABEL": "×ž×©×š ×—×•×¡×¨ ×¤×¢×™×œ×•×ª",
           "HELP": "Time period of inactivity after which conversation is auto-resolved",
           "PLACEHOLDER": "30",
-          "ERROR": "משך הסגירה האוטומטית צריך להיות בין 10 דקות ל-999 ימים",
+          "ERROR": "×ž×©×š ×”×¡×’×™×¨×” ×”××•×˜×•×ž×˜×™×ª ×¦×¨×™×š ×œ×”×™×•×ª ×‘×™×Ÿ 10 ×“×§×•×ª ×œ-999 ×™×ž×™×",
           "API": {
-            "SUCCESS": "הגדרות הסגירה האוטומטית עודכנו בהצלחה",
-            "ERROR": "העדכון של הגדרות הסגירה האוטומטית נכשל"
+            "SUCCESS": "×”×’×“×¨×•×ª ×”×¡×’×™×¨×” ×”××•×˜×•×ž×˜×™×ª ×¢×•×“×›× ×• ×‘×”×¦×œ×—×”",
+            "ERROR": "×”×¢×“×›×•×Ÿ ×©×œ ×”×’×“×¨×•×ª ×”×¡×’×™×¨×” ×”××•×˜×•×ž×˜×™×ª × ×›×©×œ"
           }
         },
         "MESSAGE": {
           "LABEL": "Custom auto-resolution message",
-          "PLACEHOLDER": "השיחה סומנה כסגורה על ידי המערכת עקב 15 ימים של חוסר פעילות",
+          "PLACEHOLDER": "×”×©×™×—×” ×¡×•×ž× ×” ×›×¡×’×•×¨×” ×¢×œ ×™×“×™ ×”×ž×¢×¨×›×ª ×¢×§×‘ 15 ×™×ž×™× ×©×œ ×—×•×¡×¨ ×¤×¢×™×œ×•×ª",
           "HELP": "Message sent to the customer after conversation is auto-resolved"
         },
-        "PREFERENCES": "העדפות",
+        "PREFERENCES": "×”×¢×“×¤×•×ª",
         "LABEL": {
           "LABEL": "Add label after auto-resolution",
-          "PLACEHOLDER": "בחר תווית"
+          "PLACEHOLDER": "×‘×—×¨ ×ª×•×•×™×ª"
         },
         "IGNORE_WAITING": {
-          "LABEL": "Skip conversations waiting for agent’s reply"
+          "LABEL": "Skip conversations waiting for agentâ€™s reply"
         },
-        "UPDATE_BUTTON": "שמור שינויים"
+        "UPDATE_BUTTON": "×©×ž×•×¨ ×©×™× ×•×™×™×"
       },
       "NAME": {
-        "LABEL": "שם החשבון",
-        "PLACEHOLDER": "שם החשבון שלך",
-        "ERROR": "נא להזין שם חשבון חוקי"
+        "LABEL": "×©× ×”×—×©×‘×•×Ÿ",
+        "PLACEHOLDER": "×©× ×”×—×©×‘×•×Ÿ ×©×œ×š",
+        "ERROR": "× × ×œ×”×–×™×Ÿ ×©× ×—×©×‘×•×Ÿ ×—×•×§×™"
       },
       "LANGUAGE": {
-        "LABEL": "שפת האתר",
-        "PLACEHOLDER": "שם החשבון שלך",
+        "LABEL": "×©×¤×ª ×”××ª×¨",
+        "PLACEHOLDER": "×©× ×”×—×©×‘×•×Ÿ ×©×œ×š",
         "ERROR": ""
       },
       "DOMAIN": {
-        "LABEL": "דומיין דואר נכנס",
-        "PLACEHOLDER": "הדומיין שבו תקבלו את המיילים",
+        "LABEL": "×“×•×ž×™×™×Ÿ ×“×•××¨ × ×›× ×¡",
+        "PLACEHOLDER": "×”×“×•×ž×™×™×Ÿ ×©×‘×• ×ª×§×‘×œ×• ××ª ×”×ž×™×™×œ×™×",
         "ERROR": ""
       },
       "SUPPORT_EMAIL": {
-        "LABEL": "אימייל לתמיכה",
-        "PLACEHOLDER": "דוא\"ל התמיכה של החברה שלך",
+        "LABEL": "××™×ž×™×™×œ ×œ×ª×ž×™×›×”",
+        "PLACEHOLDER": "×“×•×\"×œ ×”×ª×ž×™×›×” ×©×œ ×”×—×‘×¨×” ×©×œ×š",
         "ERROR": ""
       },
       "AUTO_RESOLVE_IGNORE_WAITING": {
-        "LABEL": "אל תכלול שיחות ללא מענה",
-        "HELP": "כאשר מופעל, המערכת תדלג על סגירת שיחות שעדיין ממתינות לתגובת סוכן."
+        "LABEL": "××œ ×ª×›×œ×•×œ ×©×™×—×•×ª ×œ×œ× ×ž×¢× ×”",
+        "HELP": "×›××©×¨ ×ž×•×¤×¢×œ, ×”×ž×¢×¨×›×ª ×ª×“×œ×’ ×¢×œ ×¡×’×™×¨×ª ×©×™×—×•×ª ×©×¢×“×™×™×Ÿ ×ž×ž×ª×™× ×•×ª ×œ×ª×’×•×‘×ª ×¡×•×›×Ÿ."
       },
       "AUDIO_TRANSCRIPTION": {
-        "TITLE": "תמלל הודעות קוליות",
-        "NOTE": "תמלל אוטומטית הודעות קוליות בשיחות. צור תמלול טקסט בכל פעם שנשלחת או מתקבלת הודעה קולית, והצג אותה לצד ההודעה.",
+        "TITLE": "×ª×ž×œ×œ ×”×•×“×¢×•×ª ×§×•×œ×™×•×ª",
+        "NOTE": "×ª×ž×œ×œ ××•×˜×•×ž×˜×™×ª ×”×•×“×¢×•×ª ×§×•×œ×™×•×ª ×‘×©×™×—×•×ª. ×¦×•×¨ ×ª×ž×œ×•×œ ×˜×§×¡×˜ ×‘×›×œ ×¤×¢× ×©× ×©×œ×—×ª ××• ×ž×ª×§×‘×œ×ª ×”×•×“×¢×” ×§×•×œ×™×ª, ×•×”×¦×’ ××•×ª×” ×œ×¦×“ ×”×”×•×“×¢×”.",
         "API": {
-          "SUCCESS": "הגדרת תמלול שמע עודכנה בהצלחה",
-          "ERROR": "העדכון של הגדרת תמלול שמע נכשל"
+          "SUCCESS": "×”×’×“×¨×ª ×ª×ž×œ×•×œ ×©×ž×¢ ×¢×•×“×›× ×” ×‘×”×¦×œ×—×”",
+          "ERROR": "×”×¢×“×›×•×Ÿ ×©×œ ×”×’×“×¨×ª ×ª×ž×œ×•×œ ×©×ž×¢ × ×›×©×œ"
         }
       },
       "AUTO_RESOLVE_DURATION": {
-        "LABEL": "משך חוסר פעילות לסגירה",
-        "HELP": "משך הזמן שלאחריו שיחה תיסגר אוטומטית אם אין פעילות",
+        "LABEL": "×ž×©×š ×—×•×¡×¨ ×¤×¢×™×œ×•×ª ×œ×¡×’×™×¨×”",
+        "HELP": "×ž×©×š ×”×–×ž×Ÿ ×©×œ××—×¨×™×• ×©×™×—×” ×ª×™×¡×’×¨ ××•×˜×•×ž×˜×™×ª ×× ××™×Ÿ ×¤×¢×™×œ×•×ª",
         "PLACEHOLDER": "30",
-        "ERROR": "משך הסגירה האוטומטית צריך להיות בין 10 דקות ל-999 ימים",
+        "ERROR": "×ž×©×š ×”×¡×’×™×¨×” ×”××•×˜×•×ž×˜×™×ª ×¦×¨×™×š ×œ×”×™×•×ª ×‘×™×Ÿ 10 ×“×§×•×ª ×œ-999 ×™×ž×™×",
         "API": {
-          "SUCCESS": "הגדרות הסגירה האוטומטית עודכנו בהצלחה",
-          "ERROR": "העדכון של הגדרות הסגירה האוטומטית נכשל"
+          "SUCCESS": "×”×’×“×¨×•×ª ×”×¡×’×™×¨×” ×”××•×˜×•×ž×˜×™×ª ×¢×•×“×›× ×• ×‘×”×¦×œ×—×”",
+          "ERROR": "×”×¢×“×›×•×Ÿ ×©×œ ×”×’×“×¨×•×ª ×”×¡×’×™×¨×” ×”××•×˜×•×ž×˜×™×ª × ×›×©×œ"
         },
-        "UPDATE_BUTTON": "עדכן",
-        "MESSAGE_LABEL": "הודעת סגירה מותאמת אישית",
-        "MESSAGE_PLACEHOLDER": "השיחה סומנה כסגורה על ידי המערכת עקב 15 ימים של חוסר פעילות",
-        "MESSAGE_HELP": "הודעה זו נשלחת ללקוח כאשר שיחה נסגרת אוטומטית על ידי המערכת עקב חוסר פעילות."
+        "UPDATE_BUTTON": "×¢×“×›×Ÿ",
+        "MESSAGE_LABEL": "×”×•×“×¢×ª ×¡×’×™×¨×” ×ž×•×ª××ž×ª ××™×©×™×ª",
+        "MESSAGE_PLACEHOLDER": "×”×©×™×—×” ×¡×•×ž× ×” ×›×¡×’×•×¨×” ×¢×œ ×™×“×™ ×”×ž×¢×¨×›×ª ×¢×§×‘ 15 ×™×ž×™× ×©×œ ×—×•×¡×¨ ×¤×¢×™×œ×•×ª",
+        "MESSAGE_HELP": "×”×•×“×¢×” ×–×• × ×©×œ×—×ª ×œ×œ×§×•×— ×›××©×¨ ×©×™×—×” × ×¡×’×¨×ª ××•×˜×•×ž×˜×™×ª ×¢×œ ×™×“×™ ×”×ž×¢×¨×›×ª ×¢×§×‘ ×—×•×¡×¨ ×¤×¢×™×œ×•×ª."
       },
       "FEATURES": {
-        "INBOUND_EMAIL_ENABLED": "רציפות השיחה עם הודעות אימייל מופעלת עבור החשבון שלך.",
-        "CUSTOM_EMAIL_DOMAIN_ENABLED": "אתה יכול לקבל אימיילים בדומיין המותאם אישית שלך עכשיו."
+        "INBOUND_EMAIL_ENABLED": "×¨×¦×™×¤×•×ª ×”×©×™×—×” ×¢× ×”×•×“×¢×•×ª ××™×ž×™×™×œ ×ž×•×¤×¢×œ×ª ×¢×‘×•×¨ ×”×—×©×‘×•×Ÿ ×©×œ×š.",
+        "CUSTOM_EMAIL_DOMAIN_ENABLED": "××ª×” ×™×›×•×œ ×œ×§×‘×œ ××™×ž×™×™×œ×™× ×‘×“×•×ž×™×™×Ÿ ×”×ž×•×ª×× ××™×©×™×ª ×©×œ×š ×¢×›×©×™×•."
       }
     },
-    "UPDATE_CHATWOOT": "עדכון {latestChatwootVersion} עבור Chatwoot זמין. אנא עדכן את המופע שלך.",
-    "LEARN_MORE": "למד עוד",
-    "PAYMENT_PENDING": "התשלום שלך ממתין. אנא עדכן את פרטי התשלום שלך כדי להמשיך להשתמש ב-Chatwoot",
-    "UPGRADE": "שדרג כדי להמשיך להשתמש ב-Chatwoot",
-    "LIMITS_UPGRADE": "החשבון שלך חרג ממגבלות השימוש. אנא שדרג את המינוי שלך כדי להמשיך להשתמש ב-צ'אטווט",
-    "OPEN_BILLING": "פתח חיוב"
+    "UPDATE_KAIROS_CRM": "×¢×“×›×•×Ÿ {latestKairos CRMVersion} ×¢×‘×•×¨ Kairos CRM ×–×ž×™×Ÿ. ×× × ×¢×“×›×Ÿ ××ª ×”×ž×•×¤×¢ ×©×œ×š.",
+    "LEARN_MORE": "×œ×ž×“ ×¢×•×“",
+    "PAYMENT_PENDING": "×”×ª×©×œ×•× ×©×œ×š ×ž×ž×ª×™×Ÿ. ×× × ×¢×“×›×Ÿ ××ª ×¤×¨×˜×™ ×”×ª×©×œ×•× ×©×œ×š ×›×“×™ ×œ×”×ž×©×™×š ×œ×”×©×ª×ž×© ×‘-Kairos CRM",
+    "UPGRADE": "×©×“×¨×’ ×›×“×™ ×œ×”×ž×©×™×š ×œ×”×©×ª×ž×© ×‘-Kairos CRM",
+    "LIMITS_UPGRADE": "×”×—×©×‘×•×Ÿ ×©×œ×š ×—×¨×’ ×ž×ž×’×‘×œ×•×ª ×”×©×™×ž×•×©. ×× × ×©×“×¨×’ ××ª ×”×ž×™× ×•×™ ×©×œ×š ×›×“×™ ×œ×”×ž×©×™×š ×œ×”×©×ª×ž×© ×‘-×¦'××˜×•×•×˜",
+    "OPEN_BILLING": "×¤×ª×— ×—×™×•×‘"
   },
   "FORMS": {
     "MULTISELECT": {
-      "ENTER_TO_SELECT": "הקש אנטר כדי לבחור",
-      "ENTER_TO_REMOVE": "הקש אנטר כדי להסיר",
-      "NO_OPTIONS": "הרשימה ריקה",
-      "SELECT_ONE": "תבחר אחד",
-      "SELECT": "בחר"
+      "ENTER_TO_SELECT": "×”×§×© ×× ×˜×¨ ×›×“×™ ×œ×‘×—×•×¨",
+      "ENTER_TO_REMOVE": "×”×§×© ×× ×˜×¨ ×›×“×™ ×œ×”×¡×™×¨",
+      "NO_OPTIONS": "×”×¨×©×™×ž×” ×¨×™×§×”",
+      "SELECT_ONE": "×ª×‘×—×¨ ××—×“",
+      "SELECT": "×‘×—×¨"
     }
   },
   "NOTIFICATIONS_PAGE": {
-    "HEADER": "התראות",
-    "MARK_ALL_DONE": "סמן הכל כבוצע",
-    "DELETE_TITLE": "נמחק",
+    "HEADER": "×”×ª×¨××•×ª",
+    "MARK_ALL_DONE": "×¡×ž×Ÿ ×”×›×œ ×›×‘×•×¦×¢",
+    "DELETE_TITLE": "× ×ž×—×§",
     "UNREAD_NOTIFICATION": {
-      "TITLE": "התראות שלא נקראו",
-      "ALL_NOTIFICATIONS": "הצג את כל ההתראות",
-      "LOADING_UNREAD_MESSAGE": "טוען התראות שלא נקראו...",
-      "EMPTY_MESSAGE": "אין לך התראות שלא נקראו"
+      "TITLE": "×”×ª×¨××•×ª ×©×œ× × ×§×¨××•",
+      "ALL_NOTIFICATIONS": "×”×¦×’ ××ª ×›×œ ×”×”×ª×¨××•×ª",
+      "LOADING_UNREAD_MESSAGE": "×˜×•×¢×Ÿ ×”×ª×¨××•×ª ×©×œ× × ×§×¨××•...",
+      "EMPTY_MESSAGE": "××™×Ÿ ×œ×š ×”×ª×¨××•×ª ×©×œ× × ×§×¨××•"
     },
     "LIST": {
-      "LOADING_MESSAGE": "טוען הודעות...",
-      "404": "אין התראות",
+      "LOADING_MESSAGE": "×˜×•×¢×Ÿ ×”×•×“×¢×•×ª...",
+      "404": "××™×Ÿ ×”×ª×¨××•×ª",
       "TABLE_HEADER": [
-        "שם",
-        "מספר טלפון",
-        "שיחות",
-        "פניה אחרונה"
+        "×©×",
+        "×ž×¡×¤×¨ ×˜×œ×¤×•×Ÿ",
+        "×©×™×—×•×ª",
+        "×¤× ×™×” ××—×¨×•× ×”"
       ]
     },
     "TYPE_LABEL": {
-      "conversation_creation": "שיחה חדשה",
-      "conversation_assignment": "שיחה הוקצתה",
-      "assigned_conversation_new_message": "הודעה חדשה",
-      "participating_conversation_new_message": "הודעה חדשה",
-      "conversation_mention": "אִזְכּוּר",
-      "sla_missed_first_response": "החמצת SLA",
-      "sla_missed_next_response": "החמצת SLA",
-      "sla_missed_resolution": "הסכם רמת שירות פוספס"
+      "conversation_creation": "×©×™×—×” ×—×“×©×”",
+      "conversation_assignment": "×©×™×—×” ×”×•×§×¦×ª×”",
+      "assigned_conversation_new_message": "×”×•×“×¢×” ×—×“×©×”",
+      "participating_conversation_new_message": "×”×•×“×¢×” ×—×“×©×”",
+      "conversation_mention": "×Ö´×–Ö°×›Ö¼×•Ö¼×¨",
+      "sla_missed_first_response": "×”×—×ž×¦×ª SLA",
+      "sla_missed_next_response": "×”×—×ž×¦×ª SLA",
+      "sla_missed_resolution": "×”×¡×›× ×¨×ž×ª ×©×™×¨×•×ª ×¤×•×¡×¤×¡"
     }
   },
   "NETWORK": {
     "NOTIFICATION": {
-      "OFFLINE": "לא מחובר",
-      "RECONNECTING": "מתחבר מחדש...",
-      "RECONNECT_SUCCESS": "חובר מחדש"
+      "OFFLINE": "×œ× ×ž×—×•×‘×¨",
+      "RECONNECTING": "×ž×ª×—×‘×¨ ×ž×—×“×©...",
+      "RECONNECT_SUCCESS": "×—×•×‘×¨ ×ž×—×“×©"
     },
     "BUTTON": {
-      "REFRESH": "רענן"
+      "REFRESH": "×¨×¢× ×Ÿ"
     }
   },
   "COMMAND_BAR": {
-    "SEARCH_PLACEHOLDER": "חפש או קפוץ ל",
+    "SEARCH_PLACEHOLDER": "×—×¤×© ××• ×§×¤×•×¥ ×œ",
     "SNOOZE_PLACEHOLDER": "Type a time e.g. tomorrow, 2 hours, next friday, jan 15...",
     "SECTIONS": {
-      "GENERAL": "כללי",
-      "REPORTS": "דוחות",
-      "CONVERSATION": "שיחה",
-      "BULK_ACTIONS": "פעולות בכמות גדולה",
-      "CHANGE_ASSIGNEE": "שנה מוקצה",
-      "CHANGE_PRIORITY": "שנה עדיפות",
-      "CHANGE_TEAM": "להחליף קבוצה",
-      "SNOOZE_CONVERSATION": "נודניק שיחה",
-      "ADD_LABEL": "הוסף תווית לשיחה",
-      "REMOVE_LABEL": "הסר תווית מהשיחה",
-      "SETTINGS": "הגדרות",
-      "AI_ASSIST": "סיוע AI",
-      "APPEARANCE": "מראה",
-      "SNOOZE_NOTIFICATION": "השבת התראה זמנית"
+      "GENERAL": "×›×œ×œ×™",
+      "REPORTS": "×“×•×—×•×ª",
+      "CONVERSATION": "×©×™×—×”",
+      "BULK_ACTIONS": "×¤×¢×•×œ×•×ª ×‘×›×ž×•×ª ×’×“×•×œ×”",
+      "CHANGE_ASSIGNEE": "×©× ×” ×ž×•×§×¦×”",
+      "CHANGE_PRIORITY": "×©× ×” ×¢×“×™×¤×•×ª",
+      "CHANGE_TEAM": "×œ×”×—×œ×™×£ ×§×‘×•×¦×”",
+      "SNOOZE_CONVERSATION": "× ×•×“× ×™×§ ×©×™×—×”",
+      "ADD_LABEL": "×”×•×¡×£ ×ª×•×•×™×ª ×œ×©×™×—×”",
+      "REMOVE_LABEL": "×”×¡×¨ ×ª×•×•×™×ª ×ž×”×©×™×—×”",
+      "SETTINGS": "×”×’×“×¨×•×ª",
+      "AI_ASSIST": "×¡×™×•×¢ AI",
+      "APPEARANCE": "×ž×¨××”",
+      "SNOOZE_NOTIFICATION": "×”×©×‘×ª ×”×ª×¨××” ×–×ž× ×™×ª"
     },
     "COMMANDS": {
       "GO_TO_MY_INBOX": "Go to My Inbox",
-      "GO_TO_CONVERSATION_DASHBOARD": "עבור ללוח המחוונים לשיחה",
-      "GO_TO_CONTACTS_DASHBOARD": "עבור ללוח המחוונים של אנשי קשר",
+      "GO_TO_CONVERSATION_DASHBOARD": "×¢×‘×•×¨ ×œ×œ×•×— ×”×ž×—×•×•× ×™× ×œ×©×™×—×”",
+      "GO_TO_CONTACTS_DASHBOARD": "×¢×‘×•×¨ ×œ×œ×•×— ×”×ž×—×•×•× ×™× ×©×œ ×× ×©×™ ×§×©×¨",
       "GO_TO_CAPTAIN": "Go to Captain",
       "GO_TO_CALLS_DASHBOARD": "Go to Calls Dashboard",
       "GO_TO_CAMPAIGNS": "Go to Campaigns",
       "GO_TO_HELP_CENTER": "Go to Help Center",
-      "GO_TO_REPORTS_OVERVIEW": "עבור לסקירת דוחות",
-      "GO_TO_CONVERSATION_REPORTS": "עבור לדוחות שיחות",
-      "GO_TO_AGENT_REPORTS": "עבור לדוחות סוכן",
-      "GO_TO_LABEL_REPORTS": "עבור לדוחות תווית",
-      "GO_TO_INBOX_REPORTS": "עבור לדוחות תיבת הדואר הנכנס",
-      "GO_TO_TEAM_REPORTS": "עבור לדוחות צוותים",
+      "GO_TO_REPORTS_OVERVIEW": "×¢×‘×•×¨ ×œ×¡×§×™×¨×ª ×“×•×—×•×ª",
+      "GO_TO_CONVERSATION_REPORTS": "×¢×‘×•×¨ ×œ×“×•×—×•×ª ×©×™×—×•×ª",
+      "GO_TO_AGENT_REPORTS": "×¢×‘×•×¨ ×œ×“×•×—×•×ª ×¡×•×›×Ÿ",
+      "GO_TO_LABEL_REPORTS": "×¢×‘×•×¨ ×œ×“×•×—×•×ª ×ª×•×•×™×ª",
+      "GO_TO_INBOX_REPORTS": "×¢×‘×•×¨ ×œ×“×•×—×•×ª ×ª×™×‘×ª ×”×“×•××¨ ×”× ×›× ×¡",
+      "GO_TO_TEAM_REPORTS": "×¢×‘×•×¨ ×œ×“×•×—×•×ª ×¦×•×•×ª×™×",
       "GO_TO_CSAT_REPORTS": "Go to CSAT Reports",
       "GO_TO_BOT_REPORTS": "Go to Bot Reports",
       "GO_TO_SLA_REPORTS": "Go to SLA Reports",
-      "GO_TO_SETTINGS_AGENTS": "עבור להגדרות סוכן",
-      "GO_TO_SETTINGS_TEAMS": "עבור להגדרות צוות",
-      "GO_TO_SETTINGS_INBOXES": "עבור להגדרות תיבת הדואר הנכנס",
+      "GO_TO_SETTINGS_AGENTS": "×¢×‘×•×¨ ×œ×”×’×“×¨×•×ª ×¡×•×›×Ÿ",
+      "GO_TO_SETTINGS_TEAMS": "×¢×‘×•×¨ ×œ×”×’×“×¨×•×ª ×¦×•×•×ª",
+      "GO_TO_SETTINGS_INBOXES": "×¢×‘×•×¨ ×œ×”×’×“×¨×•×ª ×ª×™×‘×ª ×”×“×•××¨ ×”× ×›× ×¡",
       "GO_TO_SETTINGS_TEMPLATES": "Go to Templates",
-      "GO_TO_SETTINGS_LABELS": "עבור להגדרות תווית",
+      "GO_TO_SETTINGS_LABELS": "×¢×‘×•×¨ ×œ×”×’×“×¨×•×ª ×ª×•×•×™×ª",
       "GO_TO_SETTINGS_CUSTOM_ATTRIBUTES": "Go to Custom Attributes",
       "GO_TO_SETTINGS_AUTOMATION": "Go to Automation",
       "GO_TO_SETTINGS_MACROS": "Go to Macros",
-      "GO_TO_SETTINGS_CANNED_RESPONSES": "עבור להגדרות תגובה מוכנות",
+      "GO_TO_SETTINGS_CANNED_RESPONSES": "×¢×‘×•×¨ ×œ×”×’×“×¨×•×ª ×ª×’×•×‘×” ×ž×•×›× ×•×ª",
       "GO_TO_SETTINGS_SLA": "Go to SLA Settings",
-      "GO_TO_SETTINGS_APPLICATIONS": "עבור להגדרות אפליקציה",
+      "GO_TO_SETTINGS_APPLICATIONS": "×¢×‘×•×¨ ×œ×”×’×“×¨×•×ª ××¤×œ×™×§×¦×™×”",
       "GO_TO_SETTINGS_DATA": "Go to Data",
       "GO_TO_SETTINGS_AUDIT_LOGS": "Go to Audit Logs",
       "GO_TO_SETTINGS_BILLING": "Go to Billing",
-      "GO_TO_SETTINGS_ACCOUNT": "עבור להגדרות חשבון",
-      "GO_TO_SETTINGS_PROFILE": "עבור להגדרות פרופיל",
-      "GO_TO_NOTIFICATIONS": "עבור להודעות",
-      "ADD_LABELS_TO_CONVERSATION": "הוסף תווית לשיחה",
-      "ASSIGN_AN_AGENT": "הקצה סוכן",
-      "AI_ASSIST": "סיוע AI",
-      "ASSIGN_PRIORITY": "הקצה עדיפות",
-      "ASSIGN_A_TEAM": "הקצה צוות",
-      "MUTE_CONVERSATION": "שיחה אילמת",
-      "UNMUTE_CONVERSATION": "בטל השתקת שיחה",
-      "REMOVE_LABEL_FROM_CONVERSATION": "הסר תווית מהשיחה",
-      "REOPEN_CONVERSATION": "פתח מחדש את השיחה",
-      "RESOLVE_CONVERSATION": "פתור את השיחה",
-      "SEND_TRANSCRIPT": "שלח תמליל דוא\"ל",
-      "SNOOZE_CONVERSATION": "נודניק שיחה",
-      "UNTIL_NEXT_REPLY": "עד לתשובה הבאה",
-      "UNTIL_NEXT_WEEK": "עד שבוע הבא",
-      "UNTIL_TOMORROW": "עד מחר",
-      "UNTIL_NEXT_MONTH": "עד החודש הבא",
-      "AN_HOUR_FROM_NOW": "עד שעה מעכשיו",
-      "UNTIL_CUSTOM_TIME": "מותאם אישית...",
-      "CHANGE_APPEARANCE": "שנה מראה",
-      "LIGHT_MODE": "בהיר",
-      "DARK_MODE": "כהה",
-      "SYSTEM_MODE": "מערכת",
-      "SNOOZE_NOTIFICATION": "השבת התראה זמנית"
+      "GO_TO_SETTINGS_ACCOUNT": "×¢×‘×•×¨ ×œ×”×’×“×¨×•×ª ×—×©×‘×•×Ÿ",
+      "GO_TO_SETTINGS_PROFILE": "×¢×‘×•×¨ ×œ×”×’×“×¨×•×ª ×¤×¨×•×¤×™×œ",
+      "GO_TO_NOTIFICATIONS": "×¢×‘×•×¨ ×œ×”×•×“×¢×•×ª",
+      "ADD_LABELS_TO_CONVERSATION": "×”×•×¡×£ ×ª×•×•×™×ª ×œ×©×™×—×”",
+      "ASSIGN_AN_AGENT": "×”×§×¦×” ×¡×•×›×Ÿ",
+      "AI_ASSIST": "×¡×™×•×¢ AI",
+      "ASSIGN_PRIORITY": "×”×§×¦×” ×¢×“×™×¤×•×ª",
+      "ASSIGN_A_TEAM": "×”×§×¦×” ×¦×•×•×ª",
+      "MUTE_CONVERSATION": "×©×™×—×” ××™×œ×ž×ª",
+      "UNMUTE_CONVERSATION": "×‘×˜×œ ×”×©×ª×§×ª ×©×™×—×”",
+      "REMOVE_LABEL_FROM_CONVERSATION": "×”×¡×¨ ×ª×•×•×™×ª ×ž×”×©×™×—×”",
+      "REOPEN_CONVERSATION": "×¤×ª×— ×ž×—×“×© ××ª ×”×©×™×—×”",
+      "RESOLVE_CONVERSATION": "×¤×ª×•×¨ ××ª ×”×©×™×—×”",
+      "SEND_TRANSCRIPT": "×©×œ×— ×ª×ž×œ×™×œ ×“×•×\"×œ",
+      "SNOOZE_CONVERSATION": "× ×•×“× ×™×§ ×©×™×—×”",
+      "UNTIL_NEXT_REPLY": "×¢×“ ×œ×ª×©×•×‘×” ×”×‘××”",
+      "UNTIL_NEXT_WEEK": "×¢×“ ×©×‘×•×¢ ×”×‘×",
+      "UNTIL_TOMORROW": "×¢×“ ×ž×—×¨",
+      "UNTIL_NEXT_MONTH": "×¢×“ ×”×—×•×“×© ×”×‘×",
+      "AN_HOUR_FROM_NOW": "×¢×“ ×©×¢×” ×ž×¢×›×©×™×•",
+      "UNTIL_CUSTOM_TIME": "×ž×•×ª×× ××™×©×™×ª...",
+      "CHANGE_APPEARANCE": "×©× ×” ×ž×¨××”",
+      "LIGHT_MODE": "×‘×”×™×¨",
+      "DARK_MODE": "×›×”×”",
+      "SYSTEM_MODE": "×ž×¢×¨×›×ª",
+      "SNOOZE_NOTIFICATION": "×”×©×‘×ª ×”×ª×¨××” ×–×ž× ×™×ª"
     }
   },
   "DASHBOARD_APPS": {
-    "LOADING_MESSAGE": "טוען אפליקציית Dashboard..."
+    "LOADING_MESSAGE": "×˜×•×¢×Ÿ ××¤×œ×™×§×¦×™×™×ª Dashboard..."
   },
   "COMMON": {
-    "OR": "או",
-    "CLICK_HERE": "לחץ כאן"
+    "OR": "××•",
+    "CLICK_HERE": "×œ×—×¥ ×›××Ÿ"
   }
 }

@@ -272,7 +272,7 @@ onBeforeUnmount(() => {
 .editor--copilot {
   @apply bg-n-iris-5 rounded;
 
-  .ProseMirror-woot-style {
+  .ProseMirror-kairos-style {
     min-height: 5rem;
     max-height: 7.5rem;
     overflow: auto;
@@ -286,7 +286,7 @@ onBeforeUnmount(() => {
   }
 }
 
-.resizable-editor-wrapper .editor--copilot .ProseMirror-woot-style {
+.resizable-editor-wrapper .editor--copilot .ProseMirror-kairos-style {
   min-height: min(5rem, calc(var(--editor-height) - 2.5rem));
   max-height: min(7.5rem, calc(var(--editor-height) - 2.5rem));
 }

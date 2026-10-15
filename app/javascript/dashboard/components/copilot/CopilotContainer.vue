@@ -9,7 +9,7 @@ import { useConfig } from 'dashboard/composables/useConfig';
 import { useWindowSize } from '@vueuse/core';
 import { vOnClickOutside } from '@vueuse/components';
 import { FEATURE_FLAGS } from 'dashboard/featureFlags';
-import wootConstants from 'dashboard/constants/globals';
+import kairosConstants from 'dashboard/constants/globals';
 import { MESSAGE_TYPE } from 'shared/constants/messages';
 
 defineProps({
@@ -36,7 +36,7 @@ const canSuggestReply = computed(
 );
 
 const isSmallScreen = computed(
-  () => windowWidth.value < wootConstants.SMALL_SCREEN_BREAKPOINT
+  () => windowWidth.value < kairosConstants.SMALL_SCREEN_BREAKPOINT
 );
 
 const selectedCopilotThreadId = ref(null);

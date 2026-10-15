@@ -1,4 +1,4 @@
-<script setup>
+﻿<script setup>
 import { computed } from 'vue';
 import { useAccount } from 'dashboard/composables/useAccount';
 import { useMapGetter } from 'dashboard/composables/store';
@@ -10,18 +10,18 @@ import semver from 'semver';
 const { t } = useI18n();
 const { currentAccount } = useAccount();
 
-const latestChatwootVersion = computed(() => {
-  return currentAccount.value.latest_chatwoot_version;
+const latestKairos CRMVersion = computed(() => {
+  return currentAccount.value.latest_kairos-crm_version;
 });
 
 const globalConfig = useMapGetter('globalConfig/get');
 
 const hasAnUpdateAvailable = computed(() => {
-  if (!semver.valid(latestChatwootVersion.value)) {
+  if (!semver.valid(latestKairos CRMVersion.value)) {
     return false;
   }
 
-  return semver.lt(globalConfig.value.appVersion, latestChatwootVersion.value);
+  return semver.lt(globalConfig.value.appVersion, latestKairos CRMVersion.value);
 });
 
 const gitSha = computed(() => {
@@ -37,8 +37,8 @@ const copyGitSha = () => {
   <div class="p-4 text-sm text-center">
     <div v-if="hasAnUpdateAvailable && globalConfig.displayManifest">
       {{
-        t('GENERAL_SETTINGS.UPDATE_CHATWOOT', {
-          latestChatwootVersion: latestChatwootVersion,
+        t('GENERAL_SETTINGS.UPDATE_KAIROS_CRM', {
+          latestKairos CRMVersion: latestKairos CRMVersion,
         })
       }}
     </div>

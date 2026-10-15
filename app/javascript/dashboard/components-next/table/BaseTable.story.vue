@@ -99,9 +99,9 @@ const agentHeaders = ['Agent', 'Role', 'Verification', 'Actions'];
 
                 <BaseTableCell align="end" class="w-24">
                   <div class="flex gap-3 justify-end flex-shrink-0">
-                    <Button icon="i-woot-edit-pen" slate sm />
-                    <Button icon="i-woot-bin" slate sm />
-                    <Button icon="i-woot-clone" slate sm />
+                    <Button icon="i-kairos-edit-pen" slate sm />
+                    <Button icon="i-kairos-bin" slate sm />
+                    <Button icon="i-kairos-clone" slate sm />
                   </div>
                 </BaseTableCell>
               </template>
@@ -150,8 +150,8 @@ const agentHeaders = ['Agent', 'Role', 'Verification', 'Actions'];
 
                 <BaseTableCell align="end" class="w-24">
                   <div class="flex gap-3 justify-end flex-shrink-0">
-                    <Button icon="i-woot-edit-pen" slate sm />
-                    <Button icon="i-woot-bin" slate sm />
+                    <Button icon="i-kairos-edit-pen" slate sm />
+                    <Button icon="i-kairos-bin" slate sm />
                   </div>
                 </BaseTableCell>
               </template>

@@ -7,7 +7,7 @@ import ConversationItem from './ConversationItem.vue';
 import Spinner from 'dashboard/components-next/spinner/Spinner.vue';
 import IntersectionObserver from 'dashboard/components/IntersectionObserver.vue';
 
-import wootConstants from 'dashboard/constants/globals';
+import kairosConstants from 'dashboard/constants/globals';
 
 const props = defineProps({
   conversationList: { type: Array, default: () => [] },
@@ -30,7 +30,7 @@ const isContextMenuOpen = ref(false);
 provide('contextMenuElementTarget', virtualListRef);
 
 const breakpoints = useBreakpoints({
-  lg: wootConstants.LARGE_SCREEN_BREAKPOINT,
+  lg: kairosConstants.LARGE_SCREEN_BREAKPOINT,
 });
 const isLgScreen = breakpoints.greaterOrEqual('lg');
 const showExpandedCards = computed(

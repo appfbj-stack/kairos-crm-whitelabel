@@ -1,7 +1,7 @@
 <script setup>
 import { computed } from 'vue';
 import { useKeyboardEvents } from 'dashboard/composables/useKeyboardEvents';
-import wootConstants from 'dashboard/constants/globals';
+import kairosConstants from 'dashboard/constants/globals';
 
 const props = defineProps({
   items: {
@@ -10,7 +10,7 @@ const props = defineProps({
   },
   activeTab: {
     type: String,
-    default: wootConstants.ASSIGNEE_TYPE.ME,
+    default: kairosConstants.ASSIGNEE_TYPE.ME,
   },
 });
 
@@ -32,7 +32,7 @@ const onTabChange = selectedTabIndex => {
 const keyboardEvents = {
   'Alt+KeyN': {
     action: () => {
-      if (props.activeTab === wootConstants.ASSIGNEE_TYPE.ALL) {
+      if (props.activeTab === kairosConstants.ASSIGNEE_TYPE.ALL) {
         onTabChange(0);
       } else {
         const nextIndex = (activeTabIndex.value + 1) % props.items.length;
@@ -46,12 +46,12 @@ useKeyboardEvents(keyboardEvents);
 </script>
 
 <template>
-  <woot-tabs
+  <kairos-tabs
     :index="activeTabIndex"
     class="w-full px-3 -mt-1 py-0 [&_ul]:p-0 h-10"
     @change="onTabChange"
   >
-    <woot-tabs-item
+    <kairos-tabs-item
       v-for="(item, index) in items"
       :key="item.key"
       class="text-sm [&_a]:font-medium"
@@ -60,5 +60,5 @@ useKeyboardEvents(keyboardEvents);
       :count="item.count"
       is-compact
     />
-  </woot-tabs>
+  </kairos-tabs>
 </template>

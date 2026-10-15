@@ -69,12 +69,12 @@ export default {
 
 <template>
   <div class="flex flex-col h-auto overflow-auto">
-    <woot-modal-header
+    <kairos-modal-header
       :header-title="$t('LABEL_MGMT.ADD.TITLE')"
       :header-content="$t('LABEL_MGMT.ADD.DESC')"
     />
     <form class="flex flex-wrap mx-0" @submit.prevent="addLabel">
-      <woot-input
+      <kairos-input
         v-model="title"
         :class="{ error: v$.title.$error }"
         class="w-full label-name--input"
@@ -86,7 +86,7 @@ export default {
         @blur="v$.title.$touch"
       />
 
-      <woot-input
+      <kairos-input
         v-model="description"
         :class="{ error: v$.description.$error }"
         class="w-full"
@@ -100,7 +100,7 @@ export default {
       <div class="w-full">
         <label>
           {{ $t('LABEL_MGMT.FORM.COLOR.LABEL') }}
-          <woot-color-picker v-model="color" />
+          <kairos-color-picker v-model="color" />
         </label>
       </div>
       <div class="flex items-center w-full gap-2">

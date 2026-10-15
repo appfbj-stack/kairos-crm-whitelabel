@@ -12,7 +12,7 @@ describe Twilio::IncomingMessageService do
 
   before do
     allow(Resolv).to receive(:getaddresses).and_call_original
-    allow(Resolv).to receive(:getaddresses).with('chatwoot-assets.local').and_return(['93.184.216.34'])
+    allow(Resolv).to receive(:getaddresses).with('kairos-crm-assets.local').and_return(['93.184.216.34'])
   end
 
   describe '#perform' do

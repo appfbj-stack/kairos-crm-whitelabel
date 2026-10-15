@@ -316,7 +316,7 @@ const tableHeaders = computed(() => {
 
     <AddAutomationRule ref="addDialogRef" @save-automation="submitAutomation" />
 
-    <woot-delete-modal
+    <kairos-delete-modal
       v-model:show="showDeleteConfirmationPopup"
       :on-close="closeDeletePopup"
       :on-confirm="confirmDeletion"
@@ -332,7 +332,7 @@ const tableHeaders = computed(() => {
       :selected-response="selectedAutomation"
       @save-automation="submitAutomation"
     />
-    <woot-confirm-modal
+    <kairos-confirm-modal
       ref="confirmDialog"
       :title="toggleModalTitle"
       :description="toggleModalDescription"

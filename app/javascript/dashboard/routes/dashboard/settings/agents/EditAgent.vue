@@ -7,7 +7,7 @@ import { useI18n } from 'vue-i18n';
 import { useAlert } from 'dashboard/composables';
 import Button from 'dashboard/components-next/button/Button.vue';
 import Auth from '../../../../api/auth';
-import wootConstants from 'dashboard/constants/globals';
+import kairosConstants from 'dashboard/constants/globals';
 
 const props = defineProps({
   id: {
@@ -42,7 +42,7 @@ const props = defineProps({
 
 const emit = defineEmits(['close']);
 
-const { AVAILABILITY_STATUS_KEYS } = wootConstants;
+const { AVAILABILITY_STATUS_KEYS } = kairosConstants;
 
 const store = useStore();
 const { t } = useI18n();
@@ -155,7 +155,7 @@ const resetPassword = async () => {
 
 <template>
   <div class="flex flex-col h-auto overflow-auto">
-    <woot-modal-header :header-title="pageTitle" />
+    <kairos-modal-header :header-title="pageTitle" />
     <form class="w-full" @submit.prevent="editAgent">
       <div class="w-full">
         <label :class="{ error: v$.agentName.$error }">

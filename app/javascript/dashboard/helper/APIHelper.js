@@ -3,8 +3,8 @@ import Auth from '../api/auth';
 const parseErrorCode = error => Promise.reject(error);
 
 export default axios => {
-  const { apiHost = '' } = window.chatwootConfig || {};
-  const wootApi = axios.create({ baseURL: `${apiHost}/` });
+  const { apiHost = '' } = window.kairos-crmConfig || {};
+  const kairosApi = axios.create({ baseURL: `${apiHost}/` });
   // Add Auth Headers to requests if logged in
   if (Auth.hasAuthCookie()) {
     const {
@@ -14,7 +14,7 @@ export default axios => {
       expiry,
       uid,
     } = Auth.getAuthData();
-    Object.assign(wootApi.defaults.headers.common, {
+    Object.assign(kairosApi.defaults.headers.common, {
       'access-token': accessToken,
       'token-type': tokenType,
       client,
@@ -23,9 +23,9 @@ export default axios => {
     });
   }
   // Response parsing interceptor
-  wootApi.interceptors.response.use(
+  kairosApi.interceptors.response.use(
     response => response,
     error => parseErrorCode(error)
   );
-  return wootApi;
+  return kairosApi;
 };

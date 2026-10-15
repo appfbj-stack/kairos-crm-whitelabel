@@ -1,7 +1,7 @@
 <script setup>
 import { computed, h } from 'vue';
 import { useMapGetter, useStore } from 'dashboard/composables/store';
-import wootConstants from 'dashboard/constants/globals';
+import kairosConstants from 'dashboard/constants/globals';
 import { useAlert } from 'dashboard/composables';
 import { useI18n } from 'vue-i18n';
 import { useImpersonation } from 'dashboard/composables/useImpersonation';
@@ -24,7 +24,7 @@ const currentUserAutoOffline = useMapGetter('getCurrentUserAutoOffline');
 
 const { isImpersonating } = useImpersonation();
 
-const { AVAILABILITY_STATUS_KEYS } = wootConstants;
+const { AVAILABILITY_STATUS_KEYS } = kairosConstants;
 const statusList = computed(() => {
   return [
     t('PROFILE_SETTINGS.FORM.AVAILABILITY.STATUS.ONLINE'),

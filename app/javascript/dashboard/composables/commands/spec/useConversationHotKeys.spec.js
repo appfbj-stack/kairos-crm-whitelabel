@@ -5,7 +5,7 @@ import { useRoute } from 'vue-router';
 import { useConversationLabels } from 'dashboard/composables/useConversationLabels';
 import { useCaptain } from 'dashboard/composables/useCaptain';
 import { useAgentsList } from 'dashboard/composables/useAgentsList';
-import { REPLY_EDITOR_MODES } from 'dashboard/components/widgets/WootWriter/constants';
+import { REPLY_EDITOR_MODES } from 'dashboard/components/widgets/KairosWriter/constants';
 import {
   mockAssignableAgents,
   mockCurrentChat,

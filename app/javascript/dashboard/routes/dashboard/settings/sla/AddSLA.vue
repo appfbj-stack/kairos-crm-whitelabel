@@ -28,7 +28,7 @@ export default {
 
 <template>
   <div class="flex flex-col h-auto overflow-auto">
-    <woot-modal-header
+    <kairos-modal-header
       :header-title="$t('SLA.ADD.TITLE')"
       :header-content="$t('SLA.ADD.DESC')"
     />

@@ -2,7 +2,7 @@
 import { defineAsyncComponent, ref, computed } from 'vue';
 
 import NextSidebar from 'next/sidebar/Sidebar.vue';
-import WootKeyShortcutModal from 'dashboard/components/widgets/modal/WootKeyShortcutModal.vue';
+import KairosKeyShortcutModal from 'dashboard/components/widgets/modal/KairosKeyShortcutModal.vue';
 import AddAccountModal from 'dashboard/components/app/AddAccountModal.vue';
 import UpgradePage from 'dashboard/routes/dashboard/upgrade/UpgradePage.vue';
 
@@ -10,7 +10,7 @@ import { useUISettings } from 'dashboard/composables/useUISettings';
 import { useAccount } from 'dashboard/composables/useAccount';
 import { useWindowSize } from '@vueuse/core';
 
-import wootConstants from 'dashboard/constants/globals';
+import kairosConstants from 'dashboard/constants/globals';
 import { isUpgradePageBypassRoute } from 'dashboard/helper/routeHelpers';
 
 const CommandBar = defineAsyncComponent(
@@ -31,7 +31,7 @@ export default {
   components: {
     NextSidebar,
     CommandBar,
-    WootKeyShortcutModal,
+    KairosKeyShortcutModal,
     AddAccountModal,
     UpgradePage,
     CopilotLauncher,
@@ -66,7 +66,7 @@ export default {
   },
   computed: {
     isSmallScreen() {
-      return this.windowWidth < wootConstants.SMALL_SCREEN_BREAKPOINT;
+      return this.windowWidth < kairosConstants.SMALL_SCREEN_BREAKPOINT;
     },
     showUpgradePage() {
       return this.upgradePageRef?.shouldShowUpgradePage;
@@ -87,8 +87,8 @@ export default {
   watch: {
     isSmallScreen: {
       handler() {
-        const { LAYOUT_TYPES } = wootConstants;
-        if (window.innerWidth <= wootConstants.SMALL_SCREEN_BREAKPOINT) {
+        const { LAYOUT_TYPES } = kairosConstants;
+        if (window.innerWidth <= kairosConstants.SMALL_SCREEN_BREAKPOINT) {
           this.updateUISettings({
             conversation_display_type: LAYOUT_TYPES.EXPANDED,
           });
@@ -167,7 +167,7 @@ export default {
         :show="showCreateAccountModal"
         @close-account-create-modal="closeCreateAccountModal"
       />
-      <WootKeyShortcutModal
+      <KairosKeyShortcutModal
         v-model:show="showShortcutModal"
         @close="closeKeyShortcutModal"
         @clickaway="closeKeyShortcutModal"

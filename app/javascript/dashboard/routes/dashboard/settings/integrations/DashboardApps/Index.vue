@@ -162,7 +162,7 @@ export default {
       @close="toggleDashboardAppPopup"
     />
 
-    <woot-delete-modal
+    <kairos-delete-modal
       v-model:show="showDeleteConfirmationPopup"
       :on-close="closeDeletePopup"
       :on-confirm="confirmDeletion"

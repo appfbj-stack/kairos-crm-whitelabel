@@ -1,12 +1,12 @@
 <script>
-import WootDropdownHeader from 'shared/components/ui/dropdown/DropdownHeader.vue';
+import KairosDropdownHeader from 'shared/components/ui/dropdown/DropdownHeader.vue';
 
 export default {
-  name: 'WootDropdownMenu',
-  componentName: 'WootDropdownMenu',
+  name: 'KairosDropdownMenu',
+  componentName: 'KairosDropdownMenu',
 
   components: {
-    WootDropdownHeader,
+    KairosDropdownHeader,
   },
   props: {
     title: {
@@ -20,7 +20,7 @@ export default {
 <template>
   <li class="!mt-0.5">
     <ul class="!m-0">
-      <WootDropdownHeader v-if="title" :title="title" />
+      <KairosDropdownHeader v-if="title" :title="title" />
       <slot />
     </ul>
   </li>

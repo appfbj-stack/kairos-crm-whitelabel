@@ -39,7 +39,7 @@ defineEmits(['edit', 'delete']);
             v-tooltip.top="
               $t('INTEGRATION_SETTINGS.DASHBOARD_APPS.LIST.EDIT_TOOLTIP')
             "
-            icon="i-woot-edit-pen"
+            icon="i-kairos-edit-pen"
             slate
             sm
             @click="$emit('edit', app)"
@@ -48,7 +48,7 @@ defineEmits(['edit', 'delete']);
             v-tooltip.top="
               $t('INTEGRATION_SETTINGS.DASHBOARD_APPS.LIST.DELETE_TOOLTIP')
             "
-            icon="i-woot-bin"
+            icon="i-kairos-bin"
             slate
             sm
             class="hover:enabled:text-n-ruby-11 hover:enabled:bg-n-ruby-2"

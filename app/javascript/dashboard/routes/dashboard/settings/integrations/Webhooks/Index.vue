@@ -44,11 +44,11 @@ export default {
       uiFlags: 'webhooks/getUIFlags',
       accountId: 'getCurrentAccountId',
       isFeatureEnabledonAccount: 'accounts/isFeatureEnabledonAccount',
-      isOnChatwootCloud: 'globalConfig/isOnChatwootCloud',
+      isOnKairos CRMCloud: 'globalConfig/isOnKairos CRMCloud',
     }),
     apiAndWebhooksEnabled() {
       return (
-        !this.isOnChatwootCloud ||
+        !this.isOnKairos CRMCloud ||
         this.isFeatureEnabledonAccount(
           this.accountId,
           FEATURE_FLAGS.API_AND_WEBHOOKS
@@ -186,15 +186,15 @@ export default {
         </template>
       </BaseTable>
     </template>
-    <woot-modal
+    <kairos-modal
       v-if="apiAndWebhooksEnabled"
       v-model:show="showAddPopup"
       :on-close="hideAddPopup"
     >
       <NewWebhook v-if="showAddPopup" :on-close="hideAddPopup" />
-    </woot-modal>
+    </kairos-modal>
 
-    <woot-modal
+    <kairos-modal
       v-if="apiAndWebhooksEnabled"
       v-model:show="showEditPopup"
       :on-close="hideEditPopup"
@@ -205,8 +205,8 @@ export default {
         :value="selectedWebHook"
         :on-close="hideEditPopup"
       />
-    </woot-modal>
-    <woot-delete-modal
+    </kairos-modal>
+    <kairos-delete-modal
       v-if="apiAndWebhooksEnabled"
       v-model:show="showDeleteConfirmationPopup"
       :on-close="closeDeletePopup"

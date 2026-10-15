@@ -1,6 +1,6 @@
 <script>
 export default {
-  componentName: 'WootDropdownMenu',
+  componentName: 'KairosDropdownMenu',
   props: {
     title: {
       type: String,

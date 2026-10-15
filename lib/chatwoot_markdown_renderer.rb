@@ -1,4 +1,4 @@
-class ChatwootMarkdownRenderer
+class Kairos CRMMarkdownRenderer
   def initialize(content)
     @content = content
   end

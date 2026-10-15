@@ -5,7 +5,7 @@ import { useRoute, useRouter } from 'vue-router';
 import { useStore, useMapGetter } from 'dashboard/composables/store';
 import { useAlert, useTrack } from 'dashboard/composables';
 import { useUISettings } from 'dashboard/composables/useUISettings';
-import wootConstants from 'dashboard/constants/globals';
+import kairosConstants from 'dashboard/constants/globals';
 import { INBOX_EVENTS } from 'dashboard/helper/AnalyticsHelper/events';
 
 import InboxCard from 'dashboard/components-next/Inbox/InboxCard.vue';
@@ -24,7 +24,7 @@ const notificationList = ref(null);
 const page = ref(1);
 const status = ref('');
 const type = ref('');
-const sortOrder = ref(wootConstants.INBOX_SORT_BY.NEWEST);
+const sortOrder = ref(kairosConstants.INBOX_SORT_BY.NEWEST);
 const isInboxContextMenuOpen = ref(false);
 
 const infiniteLoaderOptions = computed(() => ({
@@ -143,7 +143,7 @@ const deleteNotification = async notificationItem => {
 };
 
 const onFilterChange = option => {
-  const { STATUS, TYPE, SORT_ORDER } = wootConstants.INBOX_FILTER_TYPE;
+  const { STATUS, TYPE, SORT_ORDER } = kairosConstants.INBOX_FILTER_TYPE;
   if (option.type === STATUS) {
     status.value = option.selected ? option.key : '';
   }
@@ -161,7 +161,7 @@ const setSavedFilter = () => {
   const { status: savedStatus, type: savedType, sort_by: sortBy } = filterBy;
   status.value = savedStatus;
   type.value = savedType;
-  sortOrder.value = sortBy || wootConstants.INBOX_SORT_BY.NEWEST;
+  sortOrder.value = sortBy || kairosConstants.INBOX_SORT_BY.NEWEST;
   store.dispatch('notifications/setNotificationFilters', inboxFilters.value);
 };
 

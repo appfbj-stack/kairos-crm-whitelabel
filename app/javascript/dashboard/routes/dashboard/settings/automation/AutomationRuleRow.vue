@@ -75,7 +75,7 @@ const automationActive = computed({
         <div class="flex gap-3 justify-end flex-shrink-0">
           <Button
             v-tooltip.top="$t('AUTOMATION.FORM.EDIT')"
-            icon="i-woot-edit-pen"
+            icon="i-kairos-edit-pen"
             slate
             sm
             :is-loading="loading"
@@ -83,7 +83,7 @@ const automationActive = computed({
           />
           <Button
             v-tooltip.top="$t('AUTOMATION.CLONE.TOOLTIP')"
-            icon="i-woot-clone"
+            icon="i-kairos-clone"
             sm
             slate
             :is-loading="loading"
@@ -92,7 +92,7 @@ const automationActive = computed({
           <Button
             v-tooltip.top="$t('AUTOMATION.FORM.DELETE')"
             :is-loading="loading"
-            icon="i-woot-bin"
+            icon="i-kairos-bin"
             slate
             sm
             class="hover:enabled:text-n-ruby-11 hover:enabled:bg-n-ruby-2"

@@ -1,4 +1,4 @@
-{
+﻿{
   "GENERAL_SETTINGS": {
     "LIMIT_MESSAGES": {
       "CONVERSATION": "You have exceeded the conversation limit. Hacker plan allows only 500 conversations.",
@@ -6,13 +6,13 @@
       "AGENTS": "You have exceeded the agent limit. Your plan only allows {allowedAgents} agents.",
       "NON_ADMIN": "Please contact your administrator to upgrade the plan and continue using all features."
     },
-    "TITLE": "Configuració del compte",
-    "SUBMIT": "Actualització de la configuració",
+    "TITLE": "ConfiguraciÃ³ del compte",
+    "SUBMIT": "ActualitzaciÃ³ de la configuraciÃ³",
     "BACK": "Enrere",
     "DISMISS": "Descartar",
     "UPDATE": {
-      "ERROR": "No s'ha pogut actualitzar la configuració, torna-ho a provar!",
-      "SUCCESS": "La configuració del compte s'ha actualitzat correctament"
+      "ERROR": "No s'ha pogut actualitzar la configuraciÃ³, torna-ho a provar!",
+      "SUCCESS": "La configuraciÃ³ del compte s'ha actualitzat correctament"
     },
     "ACCOUNT_DELETE_SECTION": {
       "TITLE": "Delete your Account",
@@ -22,7 +22,7 @@
         "TITLE": "Delete Account",
         "MESSAGE": "Deleting your Account is irreversible. Enter your account name below to confirm you want to permanently delete it.",
         "BUTTON_TEXT": "Esborrar",
-        "DISMISS": "Cancel·la",
+        "DISMISS": "CancelÂ·la",
         "PLACE_HOLDER": "Escriu {accountName} per confirmar"
       },
       "SUCCESS": "Account marked for deletion",
@@ -37,12 +37,12 @@
     "FORM": {
       "ERROR": "Corregiu els errors del formulari",
       "GENERAL_SECTION": {
-        "TITLE": "Configuració general",
+        "TITLE": "ConfiguraciÃ³ general",
         "NOTE": ""
       },
       "ACCOUNT_ID": {
         "TITLE": "ID del compte",
-        "NOTE": "Aquest identificador és necessari si esteu creant una integració basada en API"
+        "NOTE": "Aquest identificador Ã©s necessari si esteu creant una integraciÃ³ basada en API"
       },
       "AUTO_RESOLVE": {
         "TITLE": "Auto-resolve conversations",
@@ -68,14 +68,14 @@
           "PLACEHOLDER": "Select a label"
         },
         "IGNORE_WAITING": {
-          "LABEL": "Skip conversations waiting for agent’s reply"
+          "LABEL": "Skip conversations waiting for agentâ€™s reply"
         },
         "UPDATE_BUTTON": "Save Changes"
       },
       "NAME": {
         "LABEL": "Nom del compte",
         "PLACEHOLDER": "El nom del vostre compte",
-        "ERROR": "Introduïu un nom de compte vàlid"
+        "ERROR": "IntroduÃ¯u un nom de compte vÃ lid"
       },
       "LANGUAGE": {
         "LABEL": "Idioma del lloc",
@@ -83,13 +83,13 @@
         "ERROR": ""
       },
       "DOMAIN": {
-        "LABEL": "Domini de correu electrònic entrant",
-        "PLACEHOLDER": "El domini on rebràs els correus electrònics",
+        "LABEL": "Domini de correu electrÃ²nic entrant",
+        "PLACEHOLDER": "El domini on rebrÃ s els correus electrÃ²nics",
         "ERROR": ""
       },
       "SUPPORT_EMAIL": {
-        "LABEL": "Correu electrònic d'assistència",
-        "PLACEHOLDER": "Correu electrònic d'assistència de la vostra companya",
+        "LABEL": "Correu electrÃ²nic d'assistÃ¨ncia",
+        "PLACEHOLDER": "Correu electrÃ²nic d'assistÃ¨ncia de la vostra companya",
         "ERROR": ""
       },
       "AUTO_RESOLVE_IGNORE_WAITING": {
@@ -119,16 +119,16 @@
         "MESSAGE_HELP": "This message is sent to the customer when a conversation is automatically resolved by the system due to inactivity."
       },
       "FEATURES": {
-        "INBOUND_EMAIL_ENABLED": "La continuïtat de converses amb correus electrònics està habilitada per al vostre compte.",
-        "CUSTOM_EMAIL_DOMAIN_ENABLED": "Ara podeu rebre correus electrònics al vostre domini personalitzat."
+        "INBOUND_EMAIL_ENABLED": "La continuÃ¯tat de converses amb correus electrÃ²nics estÃ  habilitada per al vostre compte.",
+        "CUSTOM_EMAIL_DOMAIN_ENABLED": "Ara podeu rebre correus electrÃ²nics al vostre domini personalitzat."
       }
     },
-    "UPDATE_CHATWOOT": "L'actualització {latestChatwootVersion} per Chatwoot està disponible. Si us plau, actualitza l'instancia.",
-    "LEARN_MORE": "Aprèn més",
-    "PAYMENT_PENDING": "El teu pagament està pendent. Actualitzeu la vostra informació de pagament per continuar utilitzant Chatwoot",
-    "UPGRADE": "Upgrade to continue using Chatwoot",
-    "LIMITS_UPGRADE": "El teu compte ha superat els límits d'ús, actualitza el pla per continuar utilitzant Chatwoot",
-    "OPEN_BILLING": "Obrir facturació"
+    "UPDATE_KAIROS_CRM": "L'actualitzaciÃ³ {latestKairos CRMVersion} per Kairos CRM estÃ  disponible. Si us plau, actualitza l'instancia.",
+    "LEARN_MORE": "AprÃ¨n mÃ©s",
+    "PAYMENT_PENDING": "El teu pagament estÃ  pendent. Actualitzeu la vostra informaciÃ³ de pagament per continuar utilitzant Kairos CRM",
+    "UPGRADE": "Upgrade to continue using Kairos CRM",
+    "LIMITS_UPGRADE": "El teu compte ha superat els lÃ­mits d'Ãºs, actualitza el pla per continuar utilitzant Kairos CRM",
+    "OPEN_BILLING": "Obrir facturaciÃ³"
   },
   "FORMS": {
     "MULTISELECT": {
@@ -151,20 +151,20 @@
     },
     "LIST": {
       "LOADING_MESSAGE": "Carregant notificacions...",
-      "404": "Cap Notificació",
+      "404": "Cap NotificaciÃ³",
       "TABLE_HEADER": [
         "Nom",
-        "Número de telèfon",
+        "NÃºmero de telÃ¨fon",
         "Converses",
         "Darrer contacte"
       ]
     },
     "TYPE_LABEL": {
-      "conversation_creation": "Nova conversació",
-      "conversation_assignment": "Conversació Assignada",
+      "conversation_creation": "Nova conversaciÃ³",
+      "conversation_assignment": "ConversaciÃ³ Assignada",
       "assigned_conversation_new_message": "Missatge Nou",
       "participating_conversation_new_message": "Missatge Nou",
-      "conversation_mention": "Menció",
+      "conversation_mention": "MenciÃ³",
       "sla_missed_first_response": "SLA perdut",
       "sla_missed_next_response": "SLA perdut",
       "sla_missed_resolution": "SLA perdut"
@@ -172,7 +172,7 @@
   },
   "NETWORK": {
     "NOTIFICATION": {
-      "OFFLINE": "Fora de línia",
+      "OFFLINE": "Fora de lÃ­nia",
       "RECONNECTING": "Reconnectant...",
       "RECONNECT_SUCCESS": "Reconnectat"
     },
@@ -195,20 +195,20 @@
       "ADD_LABEL": "Afegeix una etiqueta a la conversa",
       "REMOVE_LABEL": "Elimina l'etiqueta de la conversa",
       "SETTINGS": "Configuracions",
-      "AI_ASSIST": "Assistència IA",
-      "APPEARANCE": "Aparença",
-      "SNOOZE_NOTIFICATION": "Posposa la notificació"
+      "AI_ASSIST": "AssistÃ¨ncia IA",
+      "APPEARANCE": "AparenÃ§a",
+      "SNOOZE_NOTIFICATION": "Posposa la notificaciÃ³"
     },
     "COMMANDS": {
       "GO_TO_MY_INBOX": "Go to My Inbox",
-      "GO_TO_CONVERSATION_DASHBOARD": "Vés al Tauler de converses",
+      "GO_TO_CONVERSATION_DASHBOARD": "VÃ©s al Tauler de converses",
       "GO_TO_CONTACTS_DASHBOARD": "Ves al Tauler de contactes",
       "GO_TO_CAPTAIN": "Go to Captain",
       "GO_TO_CALLS_DASHBOARD": "Go to Calls Dashboard",
       "GO_TO_CAMPAIGNS": "Go to Campaigns",
       "GO_TO_HELP_CENTER": "Go to Help Center",
-      "GO_TO_REPORTS_OVERVIEW": "Ves a Visió general dels informes",
-      "GO_TO_CONVERSATION_REPORTS": "Vés a Informes de converses",
+      "GO_TO_REPORTS_OVERVIEW": "Ves a VisiÃ³ general dels informes",
+      "GO_TO_CONVERSATION_REPORTS": "VÃ©s a Informes de converses",
       "GO_TO_AGENT_REPORTS": "Ves a Informes d'agents",
       "GO_TO_LABEL_REPORTS": "Ves a Informes d'etiquetes",
       "GO_TO_INBOX_REPORTS": "Ves a Informes de la safata d'entrada",
@@ -216,53 +216,53 @@
       "GO_TO_CSAT_REPORTS": "Go to CSAT Reports",
       "GO_TO_BOT_REPORTS": "Go to Bot Reports",
       "GO_TO_SLA_REPORTS": "Go to SLA Reports",
-      "GO_TO_SETTINGS_AGENTS": "Ves a Configuració de l'agent",
-      "GO_TO_SETTINGS_TEAMS": "Ves a Configuració de l'equip",
-      "GO_TO_SETTINGS_INBOXES": "Ves a Configuració de la safata d'entrada",
+      "GO_TO_SETTINGS_AGENTS": "Ves a ConfiguraciÃ³ de l'agent",
+      "GO_TO_SETTINGS_TEAMS": "Ves a ConfiguraciÃ³ de l'equip",
+      "GO_TO_SETTINGS_INBOXES": "Ves a ConfiguraciÃ³ de la safata d'entrada",
       "GO_TO_SETTINGS_TEMPLATES": "Go to Templates",
-      "GO_TO_SETTINGS_LABELS": "Ves a Configuració de l'etiqueta",
+      "GO_TO_SETTINGS_LABELS": "Ves a ConfiguraciÃ³ de l'etiqueta",
       "GO_TO_SETTINGS_CUSTOM_ATTRIBUTES": "Go to Custom Attributes",
       "GO_TO_SETTINGS_AUTOMATION": "Go to Automation",
       "GO_TO_SETTINGS_MACROS": "Go to Macros",
-      "GO_TO_SETTINGS_CANNED_RESPONSES": "Ves a Configuració de resposta enllaunada",
+      "GO_TO_SETTINGS_CANNED_RESPONSES": "Ves a ConfiguraciÃ³ de resposta enllaunada",
       "GO_TO_SETTINGS_SLA": "Go to SLA Settings",
-      "GO_TO_SETTINGS_APPLICATIONS": "Ves a Configuració de l'aplicació",
+      "GO_TO_SETTINGS_APPLICATIONS": "Ves a ConfiguraciÃ³ de l'aplicaciÃ³",
       "GO_TO_SETTINGS_DATA": "Go to Data",
       "GO_TO_SETTINGS_AUDIT_LOGS": "Go to Audit Logs",
       "GO_TO_SETTINGS_BILLING": "Go to Billing",
-      "GO_TO_SETTINGS_ACCOUNT": "Ves a Configuració del compte",
-      "GO_TO_SETTINGS_PROFILE": "Ves a Configuració del perfil",
+      "GO_TO_SETTINGS_ACCOUNT": "Ves a ConfiguraciÃ³ del compte",
+      "GO_TO_SETTINGS_PROFILE": "Ves a ConfiguraciÃ³ del perfil",
       "GO_TO_NOTIFICATIONS": "Ves a Notificacions",
       "ADD_LABELS_TO_CONVERSATION": "Afegeix una etiqueta a la conversa",
       "ASSIGN_AN_AGENT": "Assigna un agent",
-      "AI_ASSIST": "Assistència IA",
+      "AI_ASSIST": "AssistÃ¨ncia IA",
       "ASSIGN_PRIORITY": "Assigna prioritat",
       "ASSIGN_A_TEAM": "Assigna un equip",
       "MUTE_CONVERSATION": "Silencia la conversa",
-      "UNMUTE_CONVERSATION": "No silenciïs la conversa",
+      "UNMUTE_CONVERSATION": "No silenciÃ¯s la conversa",
       "REMOVE_LABEL_FROM_CONVERSATION": "Elimina l'etiqueta de la conversa",
       "REOPEN_CONVERSATION": "Torna a obrir la conversa",
       "RESOLVE_CONVERSATION": "Resol la conversa",
-      "SEND_TRANSCRIPT": "Envia la transcripció per correu electrònic",
+      "SEND_TRANSCRIPT": "Envia la transcripciÃ³ per correu electrÃ²nic",
       "SNOOZE_CONVERSATION": "Posposa la conversa",
       "UNTIL_NEXT_REPLY": "Fins a la propera resposta",
       "UNTIL_NEXT_WEEK": "Fins a la setmana vinent",
-      "UNTIL_TOMORROW": "Fins demà",
+      "UNTIL_TOMORROW": "Fins demÃ ",
       "UNTIL_NEXT_MONTH": "Fins al mes vinent",
-      "AN_HOUR_FROM_NOW": "Fins d'aquí una hora",
+      "AN_HOUR_FROM_NOW": "Fins d'aquÃ­ una hora",
       "UNTIL_CUSTOM_TIME": "Personalitzat...",
-      "CHANGE_APPEARANCE": "Canvia l'aparença",
+      "CHANGE_APPEARANCE": "Canvia l'aparenÃ§a",
       "LIGHT_MODE": "Clar",
       "DARK_MODE": "Fosc",
       "SYSTEM_MODE": "Sistema",
-      "SNOOZE_NOTIFICATION": "Posposa la notificació"
+      "SNOOZE_NOTIFICATION": "Posposa la notificaciÃ³"
     }
   },
   "DASHBOARD_APPS": {
-    "LOADING_MESSAGE": "S'està carregant l'aplicació Tauler..."
+    "LOADING_MESSAGE": "S'estÃ  carregant l'aplicaciÃ³ Tauler..."
   },
   "COMMON": {
     "OR": "O",
-    "CLICK_HERE": "clica aquí"
+    "CLICK_HERE": "clica aquÃ­"
   }
 }

@@ -46,7 +46,7 @@ watch(
       <tr>
         <td class="py-4 ltr:pl-4 ltr:pr-3 rtl:pl-3 rtl:pr-4 text-body-main">
           <Icon
-            icon="i-woot-drag-indicator"
+            icon="i-kairos-drag-indicator"
             class="size-4 text-n-slate-11 mt-1 cursor-move"
           />
         </td>

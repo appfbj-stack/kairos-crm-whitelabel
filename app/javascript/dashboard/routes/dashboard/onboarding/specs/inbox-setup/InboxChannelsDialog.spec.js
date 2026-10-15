@@ -2,22 +2,22 @@ import { mount } from '@vue/test-utils';
 import { nextTick } from 'vue';
 import InboxChannelsDialog from '../../inbox-setup/InboxChannelsDialog.vue';
 
-const { isOnChatwootCloud, isMetaInboxCreationDisabled } = vi.hoisted(() => ({
-  isOnChatwootCloud: { value: false },
+const { isOnKairos CRMCloud, isMetaInboxCreationDisabled } = vi.hoisted(() => ({
+  isOnKairos CRMCloud: { value: false },
   isMetaInboxCreationDisabled: { value: false },
 }));
 
 vi.mock('vue-i18n', () => ({ useI18n: () => ({ t: key => key }) }));
 vi.mock('dashboard/composables/store', () => ({
   useMapGetter: getter =>
-    getter === 'globalConfig/isOnChatwootCloud'
-      ? isOnChatwootCloud
+    getter === 'globalConfig/isOnKairos CRMCloud'
+      ? isOnKairos CRMCloud
       : { value: {} },
 }));
 vi.mock('dashboard/composables/useAccount', () => ({
   useAccount: () => ({
     isCloudFeatureEnabled: () => true,
-    isOnChatwootCloud,
+    isOnKairos CRMCloud,
     isMetaInboxCreationDisabled,
   }),
 }));
@@ -47,13 +47,13 @@ const mountDialog = () =>
 
 describe('InboxChannelsDialog Facebook gating', () => {
   afterEach(() => {
-    delete window.chatwootConfig;
-    isOnChatwootCloud.value = false;
+    delete window.kairos-crmConfig;
+    isOnKairos CRMCloud.value = false;
     isMetaInboxCreationDisabled.value = false;
   });
 
   it('opens the Facebook page picker when fbAppId is configured', async () => {
-    window.chatwootConfig = { fbAppId: 'fb-app' };
+    window.kairos-crmConfig = { fbAppId: 'fb-app' };
     const wrapper = mountDialog();
 
     wrapper.vm.open('facebook');
@@ -63,7 +63,7 @@ describe('InboxChannelsDialog Facebook gating', () => {
   });
 
   it('shows the grid (not the picker) when fbAppId is missing', async () => {
-    window.chatwootConfig = {};
+    window.kairos-crmConfig = {};
     const wrapper = mountDialog();
 
     wrapper.vm.open('facebook');
@@ -74,10 +74,10 @@ describe('InboxChannelsDialog Facebook gating', () => {
     expect(wrapper.find('button').exists()).toBe(true);
   });
 
-  it('shows the grid when Meta inbox creation is disabled on Chatwoot Cloud', async () => {
-    isOnChatwootCloud.value = true;
+  it('shows the grid when Meta inbox creation is disabled on Kairos CRM Cloud', async () => {
+    isOnKairos CRMCloud.value = true;
     isMetaInboxCreationDisabled.value = true;
-    window.chatwootConfig = { fbAppId: 'fb-app' };
+    window.kairos-crmConfig = { fbAppId: 'fb-app' };
     const wrapper = mountDialog();
 
     wrapper.vm.open('facebook');

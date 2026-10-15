@@ -36,9 +36,9 @@ onMounted(async () => {
 </script>
 
 <template>
-  <woot-modal :show="show" size="medium" :on-close="() => $emit('close')">
+  <kairos-modal :show="show" size="medium" :on-close="() => $emit('close')">
     <div class="flex flex-col h-auto overflow-auto">
-      <woot-modal-header
+      <kairos-modal-header
         :header-title="$t('SIDEBAR_ITEMS.KEYBOARD_SHORTCUTS')"
       />
       <div class="grid grid-cols-2 px-8 pt-0 pb-4 mt-6 gap-x-5 gap-y-3">
@@ -92,7 +92,7 @@ onMounted(async () => {
         </div>
       </div>
     </div>
-  </woot-modal>
+  </kairos-modal>
 </template>
 
 <style scoped>

@@ -58,7 +58,7 @@ export default {
     ...mapGetters({
       accountId: 'getCurrentAccountId',
       isFeatureEnabledonAccount: 'accounts/isFeatureEnabledonAccount',
-      isOnChatwootCloud: 'globalConfig/isOnChatwootCloud',
+      isOnKairos CRMCloud: 'globalConfig/isOnKairos CRMCloud',
     }),
     isEmbeddedSignupWhatsApp() {
       return this.inbox.provider_config?.source === 'embedded_signup';
@@ -68,7 +68,7 @@ export default {
         this.isEmbeddedSignupWhatsApp &&
         this.isFeatureEnabledonAccount(
           this.accountId,
-          this.isOnChatwootCloud
+          this.isOnKairos CRMCloud
             ? FEATURE_FLAGS.WHATSAPP_EMBEDDED_SIGNUP_FLOW
             : FEATURE_FLAGS.WHATSAPP_RECONFIGURE
         )
@@ -229,7 +229,7 @@ export default {
       :label="$t('INBOX_MGMT.ADD.TWILIO.API_CALLBACK.TITLE')"
       :help-text="$t('INBOX_MGMT.ADD.TWILIO.API_CALLBACK.SUBTITLE')"
     >
-      <woot-code :script="inbox.callback_webhook_url" lang="html" />
+      <kairos-code :script="inbox.callback_webhook_url" lang="html" />
     </SettingsFieldSection>
     <SettingsFieldSection
       v-if="isATwilioWhatsAppChannel"
@@ -249,7 +249,7 @@ export default {
       :label="$t('INBOX_MGMT.ADD.LINE_CHANNEL.API_CALLBACK.TITLE')"
       :help-text="$t('INBOX_MGMT.ADD.LINE_CHANNEL.API_CALLBACK.SUBTITLE')"
     >
-      <woot-code :script="inbox.callback_webhook_url" lang="html" />
+      <kairos-code :script="inbox.callback_webhook_url" lang="html" />
     </SettingsFieldSection>
   </div>
   <div v-else-if="isAWebWidgetInbox">
@@ -304,13 +304,13 @@ export default {
           <p class="mb-1 text-sm font-medium text-n-slate-12">
             {{ $t('INBOX_MGMT.SETTINGS_POPUP.IDENTITY_VALIDATION.SECRET_KEY') }}
           </p>
-          <woot-code :script="inbox.hmac_token" />
+          <kairos-code :script="inbox.hmac_token" />
           <p class="mt-1.5 text-label-small text-n-slate-11">
             {{ $t('INBOX_MGMT.SETTINGS_POPUP.HMAC_DESCRIPTION') }}
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://www.chatwoot.com/docs/product/channels/live-chat/sdk/identity-validation/"
+              href="https://www.kairos-crm.com/docs/product/channels/live-chat/sdk/identity-validation/"
               class="text-n-blue-11 hover:underline text-label-small"
             >
               {{
@@ -339,14 +339,14 @@ export default {
       :label="$t('INBOX_MGMT.SETTINGS_POPUP.INBOX_IDENTIFIER')"
       :help-text="$t('INBOX_MGMT.SETTINGS_POPUP.INBOX_IDENTIFIER_SUB_TEXT')"
     >
-      <woot-code :script="inbox.inbox_identifier" />
+      <kairos-code :script="inbox.inbox_identifier" />
     </SettingsFieldSection>
 
     <SettingsFieldSection
       :label="$t('INBOX_MGMT.SETTINGS_POPUP.HMAC_VERIFICATION')"
       :help-text="$t('INBOX_MGMT.SETTINGS_POPUP.HMAC_DESCRIPTION')"
     >
-      <woot-code :script="inbox.hmac_token" />
+      <kairos-code :script="inbox.hmac_token" />
     </SettingsFieldSection>
     <SettingsFieldSection
       :label="$t('INBOX_MGMT.SETTINGS_POPUP.HMAC_MANDATORY_VERIFICATION')"
@@ -375,7 +375,7 @@ export default {
             : ''
         "
       >
-        <woot-code
+        <kairos-code
           v-if="isForwardingEnabled"
           :script="inbox.forward_to_email"
         />
@@ -402,7 +402,7 @@ export default {
             $t('INBOX_MGMT.SETTINGS_POPUP.WHATSAPP_WEBHOOK_SUBHEADER')
           "
         >
-          <woot-code :script="inbox.provider_config.webhook_verify_token" />
+          <kairos-code :script="inbox.provider_config.webhook_verify_token" />
         </SettingsFieldSection>
         <SettingsFieldSection
           v-if="showWhatsAppReconfigure"
@@ -431,7 +431,7 @@ export default {
             $t('INBOX_MGMT.SETTINGS_POPUP.WHATSAPP_WEBHOOK_SUBHEADER')
           "
         >
-          <woot-code :script="inbox.provider_config.webhook_verify_token" />
+          <kairos-code :script="inbox.provider_config.webhook_verify_token" />
         </SettingsFieldSection>
         <SettingsFieldSection
           :label="$t('INBOX_MGMT.SETTINGS_POPUP.WHATSAPP_SECTION_TITLE')"
@@ -439,7 +439,7 @@ export default {
             $t('INBOX_MGMT.SETTINGS_POPUP.WHATSAPP_SECTION_SUBHEADER')
           "
         >
-          <woot-code :script="inbox.provider_config.api_key" />
+          <kairos-code :script="inbox.provider_config.api_key" />
         </SettingsFieldSection>
         <SettingsFieldSection
           :label="$t('INBOX_MGMT.SETTINGS_POPUP.WHATSAPP_SECTION_UPDATE_TITLE')"
@@ -450,7 +450,7 @@ export default {
           <div
             class="flex flex-1 justify-between items-center whatsapp-settings--content"
           >
-            <woot-input
+            <kairos-input
               v-model="whatsAppInboxAPIKey"
               type="text"
               class="flex-1 mr-2 [&>input]:!mb-0"
@@ -473,7 +473,7 @@ export default {
       </template>
       <WhatsappBusinessManagementToken
         v-if="
-          isOnChatwootCloud &&
+          isOnKairos CRMCloud &&
           inbox.provider === 'whatsapp_cloud' &&
           isEmbeddedSignupWhatsApp
         "

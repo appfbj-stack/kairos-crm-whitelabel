@@ -17,7 +17,7 @@ const show = defineModel('show', { type: Boolean, default: false });
 
 <template>
   <Modal v-model:show="show" :on-close="onClose">
-    <woot-modal-header
+    <kairos-modal-header
       :header-title="title"
       :header-content="message"
       :header-content-value="messageValue"

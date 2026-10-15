@@ -14,7 +14,7 @@ const {
 } = require('@radix-ui/colors');
 
 export const colors = {
-  woot: {
+  kairos: {
     25: blue.blue2,
     50: blue.blue3,
     75: blue.blue4,
@@ -101,6 +101,38 @@ export const colors = {
     700: violetDark.violet7,
     800: violetDark.violet6,
     900: violet.violet12,
+  },
+
+  // Kairos CRM — verde neon moderno (fundo brilhante)
+  kairos: {
+    25: '#0A1410', // fundo brilhante (black-esverdeado)
+    50: '#0F1F18', // surface escuro
+    75: '#14302A', // surface elevado
+    100: '#1A4030', // border hover
+    200: green.green3, // tint glow leve
+    300: green.green5, // glow médio
+    400: green.green7, // glow forte
+    500: '#10E070', // ★ VERDE NEON principal (CTA, links, focus)
+    600: '#00C260', // hover neon
+    700: '#00A050', // active neon
+    800: '#008040', // border neon
+    900: '#003820', // sombra neon
+  },
+
+  // Kairos CRM — azul neon moderno (fundo brilhante)
+  kairosBlue: {
+    25: '#08101F', // fundo brilhante (black-azulado)
+    50: '#0A1525', // surface escuro
+    75: '#0F1E3A', // surface elevado
+    100: '#143050', // border hover
+    200: blue.blue3, // tint glow leve
+    300: blue.blue5, // glow médio
+    400: blue.blue7, // glow forte
+    500: '#3B82F6', // ★ AZUL NEON principal (CTA, links, focus)
+    600: '#1D70F0', // hover neon
+    700: '#0C5DD8', // active neon
+    800: '#0848B8', // border neon
+    900: '#052E70', // sombra neon
   },
 
   // next design system color
@@ -226,7 +258,7 @@ export const colors = {
     },
 
     black: '#000000',
-    brand: '#2781F6',
+    brand: '#10E070', // Kairos CRM — verde neon brilhante
     portal: 'var(--dynamic-portal-color)',
     'portal-soft': 'var(--dynamic-portal-color-soft)',
     'portal-faint': 'var(--dynamic-portal-color-faint)',

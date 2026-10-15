@@ -92,7 +92,7 @@ export default {
 
 <template>
   <form class="flex flex-col gap-4" @submit.prevent="updateUser('profile')">
-    <woot-input
+    <kairos-input
       v-model="userName"
       :styles="inputStyles"
       :class="{ error: v$.userName.$error }"
@@ -104,7 +104,7 @@ export default {
       @input="v$.userName.$touch"
       @blur="v$.userName.$touch"
     />
-    <woot-input
+    <kairos-input
       v-model="userDisplayName"
       :styles="inputStyles"
       :class="{ error: v$.userDisplayName.$error }"
@@ -118,7 +118,7 @@ export default {
       @input="v$.userDisplayName.$touch"
       @blur="v$.userDisplayName.$touch"
     />
-    <woot-input
+    <kairos-input
       v-if="emailEnabled"
       v-model="userEmail"
       :styles="inputStyles"

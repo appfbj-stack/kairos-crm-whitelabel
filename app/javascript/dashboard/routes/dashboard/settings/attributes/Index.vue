@@ -230,14 +230,14 @@ const filteredAttributes = computed(() => {
       :on-close="hideAddPopup"
       :selected-attribute-model-tab="selectedTabIndex"
     />
-    <woot-modal v-model:show="showEditPopup" :on-close="hideEditPopup">
+    <kairos-modal v-model:show="showEditPopup" :on-close="hideEditPopup">
       <EditAttribute
         :selected-attribute="selectedAttribute"
         :is-updating="uiFlags.isUpdating"
         @on-close="hideEditPopup"
       />
-    </woot-modal>
-    <woot-confirm-delete-modal
+    </kairos-modal>
+    <kairos-confirm-delete-modal
       v-if="showDeletePopup"
       v-model:show="showDeletePopup"
       :title="

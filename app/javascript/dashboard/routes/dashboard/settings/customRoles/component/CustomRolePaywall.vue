@@ -42,7 +42,7 @@ const dummyCustomRolesData = [
 
 const router = useRouter();
 
-const isOnChatwootCloud = useMapGetter('globalConfig/isOnChatwootCloud');
+const isOnKairos CRMCloud = useMapGetter('globalConfig/isOnKairos CRMCloud');
 
 const currentUser = useMapGetter('getCurrentUser');
 const currentAccountId = useMapGetter('getCurrentAccountId');
@@ -51,7 +51,7 @@ const isSuperAdmin = computed(() => {
   return currentUser.value.type === 'SuperAdmin';
 });
 const i18nKey = computed(() =>
-  isOnChatwootCloud.value ? 'PAYWALL' : 'ENTERPRISE_PAYWALL'
+  isOnKairos CRMCloud.value ? 'PAYWALL' : 'ENTERPRISE_PAYWALL'
 );
 
 const goToBillingSettings = () => {
@@ -100,7 +100,7 @@ const tableHeaders = computed(() => {
       <BasePaywallModal
         feature-prefix="CUSTOM_ROLE"
         :i18n-key="i18nKey"
-        :is-on-chatwoot-cloud="isOnChatwootCloud"
+        :is-on-kairos-crm-cloud="isOnKairos CRMCloud"
         :is-super-admin="isSuperAdmin"
         @upgrade="goToBillingSettings"
       />

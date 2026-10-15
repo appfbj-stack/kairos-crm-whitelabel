@@ -1,48 +1,48 @@
-{
+﻿{
   "GENERAL_SETTINGS": {
     "LIMIT_MESSAGES": {
-      "CONVERSATION": "Jūs esat pārsniedzis sarunu ierobežojumu. Hacker plāns pieļauj tikai 500 sarunas.",
-      "INBOXES": "Jūs esat pārsniedzis iesūtnes ierobežojumu. Hacker plāns atbalsta tikai vietnes tiešraides tērzēšanu. Papildu iesūtnēm, piemēram, e-pastam, WhatsApp utt., ir nepieciešams maksas plāns.",
+      "CONVERSATION": "JÅ«s esat pÄrsniedzis sarunu ierobeÅ¾ojumu. Hacker plÄns pieÄ¼auj tikai 500 sarunas.",
+      "INBOXES": "JÅ«s esat pÄrsniedzis iesÅ«tnes ierobeÅ¾ojumu. Hacker plÄns atbalsta tikai vietnes tieÅ¡raides tÄ“rzÄ“Å¡anu. Papildu iesÅ«tnÄ“m, piemÄ“ram, e-pastam, WhatsApp utt., ir nepiecieÅ¡ams maksas plÄns.",
       "AGENTS": "You have exceeded the agent limit. Your plan only allows {allowedAgents} agents.",
-      "NON_ADMIN": "Lūdzu, sazinieties ar savu administratoru, lai modernizētu plānu un turpinātu izmantot visas funkcijas."
+      "NON_ADMIN": "LÅ«dzu, sazinieties ar savu administratoru, lai modernizÄ“tu plÄnu un turpinÄtu izmantot visas funkcijas."
     },
-    "TITLE": "Konta iestatījumi",
-    "SUBMIT": "Atjaunināt iestatījumus",
-    "BACK": "Atpakaļ",
+    "TITLE": "Konta iestatÄ«jumi",
+    "SUBMIT": "AtjauninÄt iestatÄ«jumus",
+    "BACK": "AtpakaÄ¼",
     "DISMISS": "Atcelt",
     "UPDATE": {
-      "ERROR": "Nevarēja atjaunināt iestatījumus, mēģiniet vēlreiz!",
-      "SUCCESS": "Konta iestatījumi ir veiksmīgi atjaunināti"
+      "ERROR": "NevarÄ“ja atjauninÄt iestatÄ«jumus, mÄ“Ä£iniet vÄ“lreiz!",
+      "SUCCESS": "Konta iestatÄ«jumi ir veiksmÄ«gi atjauninÄti"
     },
     "ACCOUNT_DELETE_SECTION": {
-      "TITLE": "Dzēsiet savu Kontu",
-      "NOTE": "Tiklīdz izdzēsīsiet savu kontu, visi Jūsu dati tiks dzēsti.",
-      "BUTTON_TEXT": "Izdzēst Savu Kontu",
+      "TITLE": "DzÄ“siet savu Kontu",
+      "NOTE": "TiklÄ«dz izdzÄ“sÄ«siet savu kontu, visi JÅ«su dati tiks dzÄ“sti.",
+      "BUTTON_TEXT": "IzdzÄ“st Savu Kontu",
       "CONFIRM": {
-        "TITLE": "Dzēst Kontu",
-        "MESSAGE": "Konta dzēšana ir neatgriezeniska. Ievadiet sava konta nosaukumu, lai apstiprinātu, ka vēlaties to neatgriezeniski dzēst.",
-        "BUTTON_TEXT": "Dzēst",
+        "TITLE": "DzÄ“st Kontu",
+        "MESSAGE": "Konta dzÄ“Å¡ana ir neatgriezeniska. Ievadiet sava konta nosaukumu, lai apstiprinÄtu, ka vÄ“laties to neatgriezeniski dzÄ“st.",
+        "BUTTON_TEXT": "DzÄ“st",
         "DISMISS": "Atcelt",
-        "PLACE_HOLDER": "Lai apstiprinātu, lūdzu, uzrakstiet {accountName}"
+        "PLACE_HOLDER": "Lai apstiprinÄtu, lÅ«dzu, uzrakstiet {accountName}"
       },
-      "SUCCESS": "Konts atzīmēts dzēšanai",
-      "FAILURE": "Nevarēja izdzēst kontu, mēģiniet vēlreiz!",
+      "SUCCESS": "Konts atzÄ«mÄ“ts dzÄ“Å¡anai",
+      "FAILURE": "NevarÄ“ja izdzÄ“st kontu, mÄ“Ä£iniet vÄ“lreiz!",
       "SCHEDULED_DELETION": {
-        "TITLE": "Kontu ir Ieplānots Dzēst",
-        "MESSAGE_MANUAL": "Šo kontu ir ieplānots dzēst šādā datumā: {deletionDate}. To pieprasīja administrators. Jūs varat atcelt dzēšanu pirms šī datuma.",
-        "MESSAGE_INACTIVITY": "Šo kontu ir plānots dzēst šādā datumā: {deletionDate} konta neaktivitātes dēļ. Jūs varat atcelt dzēšanu pirms šī datuma.",
-        "CLEAR_BUTTON": "Atcelt Ieplānoto Dzēšanu"
+        "TITLE": "Kontu ir IeplÄnots DzÄ“st",
+        "MESSAGE_MANUAL": "Å o kontu ir ieplÄnots dzÄ“st Å¡ÄdÄ datumÄ: {deletionDate}. To pieprasÄ«ja administrators. JÅ«s varat atcelt dzÄ“Å¡anu pirms Å¡Ä« datuma.",
+        "MESSAGE_INACTIVITY": "Å o kontu ir plÄnots dzÄ“st Å¡ÄdÄ datumÄ: {deletionDate} konta neaktivitÄtes dÄ“Ä¼. JÅ«s varat atcelt dzÄ“Å¡anu pirms Å¡Ä« datuma.",
+        "CLEAR_BUTTON": "Atcelt IeplÄnoto DzÄ“Å¡anu"
       }
     },
     "FORM": {
-      "ERROR": "Lūdzu, izlabojiet veidlapas kļūdas",
+      "ERROR": "LÅ«dzu, izlabojiet veidlapas kÄ¼Å«das",
       "GENERAL_SECTION": {
-        "TITLE": "Vispārīgie iestatījumi",
+        "TITLE": "VispÄrÄ«gie iestatÄ«jumi",
         "NOTE": ""
       },
       "ACCOUNT_ID": {
         "TITLE": "Konta ID",
-        "NOTE": "Šis ID ir nepieciešams, ja veidojat uz API balstītu integrāciju"
+        "NOTE": "Å is ID ir nepiecieÅ¡ams, ja veidojat uz API balstÄ«tu integrÄciju"
       },
       "AUTO_RESOLVE": {
         "TITLE": "Auto-resolve conversations",
@@ -68,28 +68,28 @@
           "PLACEHOLDER": "Select a label"
         },
         "IGNORE_WAITING": {
-          "LABEL": "Skip conversations waiting for agent’s reply"
+          "LABEL": "Skip conversations waiting for agentâ€™s reply"
         },
         "UPDATE_BUTTON": "Save Changes"
       },
       "NAME": {
         "LABEL": "Konta nosaukums",
-        "PLACEHOLDER": "Jūsu konta nosaukums",
-        "ERROR": "Lūdzu, ievadiet derīgu konta nosaukumu"
+        "PLACEHOLDER": "JÅ«su konta nosaukums",
+        "ERROR": "LÅ«dzu, ievadiet derÄ«gu konta nosaukumu"
       },
       "LANGUAGE": {
         "LABEL": "Vietnes valoda",
-        "PLACEHOLDER": "Jūsu konta nosaukums",
+        "PLACEHOLDER": "JÅ«su konta nosaukums",
         "ERROR": ""
       },
       "DOMAIN": {
-        "LABEL": "Ienākošā e-pasta domēns",
-        "PLACEHOLDER": "Domēns, kurā saņemsiet e-pastus",
+        "LABEL": "IenÄkoÅ¡Ä e-pasta domÄ“ns",
+        "PLACEHOLDER": "DomÄ“ns, kurÄ saÅ†emsiet e-pastus",
         "ERROR": ""
       },
       "SUPPORT_EMAIL": {
         "LABEL": "Atbalsta e-pasts",
-        "PLACEHOLDER": "Jūsu uzņēmuma atbalsta e-pasts",
+        "PLACEHOLDER": "JÅ«su uzÅ†Ä“muma atbalsta e-pasts",
         "ERROR": ""
       },
       "AUTO_RESOLVE_IGNORE_WAITING": {
@@ -113,156 +113,156 @@
           "SUCCESS": "Auto resolve settings updated successfully",
           "ERROR": "Failed to update auto resolve settings"
         },
-        "UPDATE_BUTTON": "Atjaunināt",
+        "UPDATE_BUTTON": "AtjauninÄt",
         "MESSAGE_LABEL": "Custom resolution message",
         "MESSAGE_PLACEHOLDER": "Conversation was marked resolved by system due to 15 days of inactivity",
         "MESSAGE_HELP": "This message is sent to the customer when a conversation is automatically resolved by the system due to inactivity."
       },
       "FEATURES": {
-        "INBOUND_EMAIL_ENABLED": "Jūsu kontam ir iespējota sarunu nepārtrauktība ar e-pastiem.",
-        "CUSTOM_EMAIL_DOMAIN_ENABLED": "Tagad Jūs varat saņemt e-pasta ziņojumus savā pielāgotajā domēnā."
+        "INBOUND_EMAIL_ENABLED": "JÅ«su kontam ir iespÄ“jota sarunu nepÄrtrauktÄ«ba ar e-pastiem.",
+        "CUSTOM_EMAIL_DOMAIN_ENABLED": "Tagad JÅ«s varat saÅ†emt e-pasta ziÅ†ojumus savÄ pielÄgotajÄ domÄ“nÄ."
       }
     },
-    "UPDATE_CHATWOOT": "Ir pieejams Chatwoot {latestChatwootVersion} jauninājums. Lūdzu, atjauniniet savu programmatūru.",
-    "LEARN_MORE": "Uzzināt vairāk",
-    "PAYMENT_PENDING": "Jūsu maksājums tiek gaidīts. Lūdzu, atjauniniet savu maksājumu informāciju, lai turpinātu lietot Chatwoot",
-    "UPGRADE": "Modernizējieties, lai turpinātu lietot Chatwoot",
-    "LIMITS_UPGRADE": "Jūsu konts ir pārsniedzis lietošanas ierobežojumus. Lūdzu, uzlabojiet savu abonementu, lai turpinātu izmantot Chatwoot",
-    "OPEN_BILLING": "Atvērt norēķinus"
+    "UPDATE_KAIROS_CRM": "Ir pieejams Kairos CRM {latestKairos CRMVersion} jauninÄjums. LÅ«dzu, atjauniniet savu programmatÅ«ru.",
+    "LEARN_MORE": "UzzinÄt vairÄk",
+    "PAYMENT_PENDING": "JÅ«su maksÄjums tiek gaidÄ«ts. LÅ«dzu, atjauniniet savu maksÄjumu informÄciju, lai turpinÄtu lietot Kairos CRM",
+    "UPGRADE": "ModernizÄ“jieties, lai turpinÄtu lietot Kairos CRM",
+    "LIMITS_UPGRADE": "JÅ«su konts ir pÄrsniedzis lietoÅ¡anas ierobeÅ¾ojumus. LÅ«dzu, uzlabojiet savu abonementu, lai turpinÄtu izmantot Kairos CRM",
+    "OPEN_BILLING": "AtvÄ“rt norÄ“Ä·inus"
   },
   "FORMS": {
     "MULTISELECT": {
-      "ENTER_TO_SELECT": "Nospiediet enter, lai izvēlētos",
-      "ENTER_TO_REMOVE": "Nospiediet enter, lai noņemtu",
+      "ENTER_TO_SELECT": "Nospiediet enter, lai izvÄ“lÄ“tos",
+      "ENTER_TO_REMOVE": "Nospiediet enter, lai noÅ†emtu",
       "NO_OPTIONS": "List is empty",
-      "SELECT_ONE": "Izvēlieties vienu",
-      "SELECT": "Izvēlieties"
+      "SELECT_ONE": "IzvÄ“lieties vienu",
+      "SELECT": "IzvÄ“lieties"
     }
   },
   "NOTIFICATIONS_PAGE": {
-    "HEADER": "Paziņojumi",
-    "MARK_ALL_DONE": "Atzīmēt visu kā pabeigtu",
-    "DELETE_TITLE": "dzēsts",
+    "HEADER": "PaziÅ†ojumi",
+    "MARK_ALL_DONE": "AtzÄ«mÄ“t visu kÄ pabeigtu",
+    "DELETE_TITLE": "dzÄ“sts",
     "UNREAD_NOTIFICATION": {
-      "TITLE": "Nelasīti paziņojumi",
-      "ALL_NOTIFICATIONS": "Skatīt visus paziņojumus",
-      "LOADING_UNREAD_MESSAGE": "Notiek nelasītu paziņojumu ielāde...",
-      "EMPTY_MESSAGE": "Jums nav nelasītu paziņojumu"
+      "TITLE": "NelasÄ«ti paziÅ†ojumi",
+      "ALL_NOTIFICATIONS": "SkatÄ«t visus paziÅ†ojumus",
+      "LOADING_UNREAD_MESSAGE": "Notiek nelasÄ«tu paziÅ†ojumu ielÄde...",
+      "EMPTY_MESSAGE": "Jums nav nelasÄ«tu paziÅ†ojumu"
     },
     "LIST": {
-      "LOADING_MESSAGE": "Notiek paziņojumu ielāde...",
-      "404": "Nav paziņojumu",
+      "LOADING_MESSAGE": "Notiek paziÅ†ojumu ielÄde...",
+      "404": "Nav paziÅ†ojumu",
       "TABLE_HEADER": [
         "Nosaukums",
         "Telefona numurs",
         "Sarunas",
-        "Pēdējā Sazināšanās"
+        "PÄ“dÄ“jÄ SazinÄÅ¡anÄs"
       ]
     },
     "TYPE_LABEL": {
       "conversation_creation": "Jauna saruna",
-      "conversation_assignment": "Saruna Piešķirta",
-      "assigned_conversation_new_message": "Jauns ziņojums",
-      "participating_conversation_new_message": "Jauns ziņojums",
-      "conversation_mention": "Pieminēt",
-      "sla_missed_first_response": "SLA Nokavēts",
-      "sla_missed_next_response": "SLA Nokavēts",
-      "sla_missed_resolution": "SLA Nokavēts"
+      "conversation_assignment": "Saruna PieÅ¡Ä·irta",
+      "assigned_conversation_new_message": "Jauns ziÅ†ojums",
+      "participating_conversation_new_message": "Jauns ziÅ†ojums",
+      "conversation_mention": "PieminÄ“t",
+      "sla_missed_first_response": "SLA NokavÄ“ts",
+      "sla_missed_next_response": "SLA NokavÄ“ts",
+      "sla_missed_resolution": "SLA NokavÄ“ts"
     }
   },
   "NETWORK": {
     "NOTIFICATION": {
-      "OFFLINE": "Bezsaistē",
-      "RECONNECTING": "Notiek savienojuma atjaunošana...",
-      "RECONNECT_SUCCESS": "Atkārtoti izveidots savienojums"
+      "OFFLINE": "BezsaistÄ“",
+      "RECONNECTING": "Notiek savienojuma atjaunoÅ¡ana...",
+      "RECONNECT_SUCCESS": "AtkÄrtoti izveidots savienojums"
     },
     "BUTTON": {
       "REFRESH": "Atjaunot"
     }
   },
   "COMMAND_BAR": {
-    "SEARCH_PLACEHOLDER": "Meklēt vai pāriet uz",
+    "SEARCH_PLACEHOLDER": "MeklÄ“t vai pÄriet uz",
     "SNOOZE_PLACEHOLDER": "Type a time e.g. tomorrow, 2 hours, next friday, jan 15...",
     "SECTIONS": {
-      "GENERAL": "Vispārēji",
-      "REPORTS": "Pārskati",
+      "GENERAL": "VispÄrÄ“ji",
+      "REPORTS": "PÄrskati",
       "CONVERSATION": "Saruna",
-      "BULK_ACTIONS": "Lielapjoma Darbības",
-      "CHANGE_ASSIGNEE": "Mainīt Pilnvaroto",
-      "CHANGE_PRIORITY": "Mainīt prioritāti",
-      "CHANGE_TEAM": "Mainīt Komandu",
+      "BULK_ACTIONS": "Lielapjoma DarbÄ«bas",
+      "CHANGE_ASSIGNEE": "MainÄ«t Pilnvaroto",
+      "CHANGE_PRIORITY": "MainÄ«t prioritÄti",
+      "CHANGE_TEAM": "MainÄ«t Komandu",
       "SNOOZE_CONVERSATION": "Atlikt Sarunu",
-      "ADD_LABEL": "Pievienot sarunai etiķeti",
-      "REMOVE_LABEL": "Noņemt etiķeti no sarunas",
-      "SETTINGS": "Iestatījumi",
-      "AI_ASSIST": "AI Palīgs",
+      "ADD_LABEL": "Pievienot sarunai etiÄ·eti",
+      "REMOVE_LABEL": "NoÅ†emt etiÄ·eti no sarunas",
+      "SETTINGS": "IestatÄ«jumi",
+      "AI_ASSIST": "AI PalÄ«gs",
       "APPEARANCE": "Izskats",
-      "SNOOZE_NOTIFICATION": "Atlikt Paziņojumu"
+      "SNOOZE_NOTIFICATION": "Atlikt PaziÅ†ojumu"
     },
     "COMMANDS": {
       "GO_TO_MY_INBOX": "Go to My Inbox",
-      "GO_TO_CONVERSATION_DASHBOARD": "Doties uz Sarunu Informācijas Paneli",
-      "GO_TO_CONTACTS_DASHBOARD": "Doties uz Kontaktpersonu Informācijas Paneli",
+      "GO_TO_CONVERSATION_DASHBOARD": "Doties uz Sarunu InformÄcijas Paneli",
+      "GO_TO_CONTACTS_DASHBOARD": "Doties uz Kontaktpersonu InformÄcijas Paneli",
       "GO_TO_CAPTAIN": "Go to Captain",
       "GO_TO_CALLS_DASHBOARD": "Go to Calls Dashboard",
       "GO_TO_CAMPAIGNS": "Go to Campaigns",
       "GO_TO_HELP_CENTER": "Go to Help Center",
-      "GO_TO_REPORTS_OVERVIEW": "Doties uz Pārskatu Kopsavilkumu",
-      "GO_TO_CONVERSATION_REPORTS": "Doties uz Sarunu Pārskatiem",
-      "GO_TO_AGENT_REPORTS": "Doties uz Aģentu Pārskatiem",
-      "GO_TO_LABEL_REPORTS": "Doties uz Etiķešu Pārskatiem",
-      "GO_TO_INBOX_REPORTS": "Doties uz Iesūtnes Pārskatiem",
-      "GO_TO_TEAM_REPORTS": "Doties uz Komandas Pārskatiem",
+      "GO_TO_REPORTS_OVERVIEW": "Doties uz PÄrskatu Kopsavilkumu",
+      "GO_TO_CONVERSATION_REPORTS": "Doties uz Sarunu PÄrskatiem",
+      "GO_TO_AGENT_REPORTS": "Doties uz AÄ£entu PÄrskatiem",
+      "GO_TO_LABEL_REPORTS": "Doties uz EtiÄ·eÅ¡u PÄrskatiem",
+      "GO_TO_INBOX_REPORTS": "Doties uz IesÅ«tnes PÄrskatiem",
+      "GO_TO_TEAM_REPORTS": "Doties uz Komandas PÄrskatiem",
       "GO_TO_CSAT_REPORTS": "Go to CSAT Reports",
       "GO_TO_BOT_REPORTS": "Go to Bot Reports",
       "GO_TO_SLA_REPORTS": "Go to SLA Reports",
-      "GO_TO_SETTINGS_AGENTS": "Doties uz Aģentu Iestatījumiem",
-      "GO_TO_SETTINGS_TEAMS": "Doties uz Komandas Iestatījumiem",
-      "GO_TO_SETTINGS_INBOXES": "Doties uz Iesūtnes Iestatījumiem",
+      "GO_TO_SETTINGS_AGENTS": "Doties uz AÄ£entu IestatÄ«jumiem",
+      "GO_TO_SETTINGS_TEAMS": "Doties uz Komandas IestatÄ«jumiem",
+      "GO_TO_SETTINGS_INBOXES": "Doties uz IesÅ«tnes IestatÄ«jumiem",
       "GO_TO_SETTINGS_TEMPLATES": "Go to Templates",
-      "GO_TO_SETTINGS_LABELS": "Doties uz Etiķešu Iestatījumiem",
+      "GO_TO_SETTINGS_LABELS": "Doties uz EtiÄ·eÅ¡u IestatÄ«jumiem",
       "GO_TO_SETTINGS_CUSTOM_ATTRIBUTES": "Go to Custom Attributes",
       "GO_TO_SETTINGS_AUTOMATION": "Go to Automation",
       "GO_TO_SETTINGS_MACROS": "Go to Macros",
-      "GO_TO_SETTINGS_CANNED_RESPONSES": "Doties uz Sagatavoto Atbilžu Iestatījumiem",
+      "GO_TO_SETTINGS_CANNED_RESPONSES": "Doties uz Sagatavoto AtbilÅ¾u IestatÄ«jumiem",
       "GO_TO_SETTINGS_SLA": "Go to SLA Settings",
-      "GO_TO_SETTINGS_APPLICATIONS": "Doties uz Lietojumprogrammas Iestatījumiem",
+      "GO_TO_SETTINGS_APPLICATIONS": "Doties uz Lietojumprogrammas IestatÄ«jumiem",
       "GO_TO_SETTINGS_DATA": "Go to Data",
       "GO_TO_SETTINGS_AUDIT_LOGS": "Go to Audit Logs",
       "GO_TO_SETTINGS_BILLING": "Go to Billing",
-      "GO_TO_SETTINGS_ACCOUNT": "Doties uz Konta Iestatījumiem",
-      "GO_TO_SETTINGS_PROFILE": "Doties uz Profila Iestatījumiem",
-      "GO_TO_NOTIFICATIONS": "Doties uz Paziņojumiem",
-      "ADD_LABELS_TO_CONVERSATION": "Pievienot sarunai etiķeti",
-      "ASSIGN_AN_AGENT": "Piešķirt aģentu",
-      "AI_ASSIST": "AI Palīgs",
-      "ASSIGN_PRIORITY": "Piešķirt prioritāti",
-      "ASSIGN_A_TEAM": "Piešķirt komandu",
-      "MUTE_CONVERSATION": "Izslēgt sarunu",
-      "UNMUTE_CONVERSATION": "Ieslēgt sarunu",
-      "REMOVE_LABEL_FROM_CONVERSATION": "Noņemt etiķeti no sarunas",
-      "REOPEN_CONVERSATION": "Atkārtoti atvērt sarunu",
-      "RESOLVE_CONVERSATION": "Atrisināt sarunu",
-      "SEND_TRANSCRIPT": "Nosūtīt uz e-pastu transkriptu",
+      "GO_TO_SETTINGS_ACCOUNT": "Doties uz Konta IestatÄ«jumiem",
+      "GO_TO_SETTINGS_PROFILE": "Doties uz Profila IestatÄ«jumiem",
+      "GO_TO_NOTIFICATIONS": "Doties uz PaziÅ†ojumiem",
+      "ADD_LABELS_TO_CONVERSATION": "Pievienot sarunai etiÄ·eti",
+      "ASSIGN_AN_AGENT": "PieÅ¡Ä·irt aÄ£entu",
+      "AI_ASSIST": "AI PalÄ«gs",
+      "ASSIGN_PRIORITY": "PieÅ¡Ä·irt prioritÄti",
+      "ASSIGN_A_TEAM": "PieÅ¡Ä·irt komandu",
+      "MUTE_CONVERSATION": "IzslÄ“gt sarunu",
+      "UNMUTE_CONVERSATION": "IeslÄ“gt sarunu",
+      "REMOVE_LABEL_FROM_CONVERSATION": "NoÅ†emt etiÄ·eti no sarunas",
+      "REOPEN_CONVERSATION": "AtkÄrtoti atvÄ“rt sarunu",
+      "RESOLVE_CONVERSATION": "AtrisinÄt sarunu",
+      "SEND_TRANSCRIPT": "NosÅ«tÄ«t uz e-pastu transkriptu",
       "SNOOZE_CONVERSATION": "Atlikt Sarunu",
-      "UNTIL_NEXT_REPLY": "Līdz nākamajai atbildei",
-      "UNTIL_NEXT_WEEK": "Līdz nākamajai nedēļai",
-      "UNTIL_TOMORROW": "Līdz rītdienai",
-      "UNTIL_NEXT_MONTH": "Līdz nākamajam mēnesim",
-      "AN_HOUR_FROM_NOW": "Līdz stundai, no šī brīža",
-      "UNTIL_CUSTOM_TIME": "Pielāgot...",
-      "CHANGE_APPEARANCE": "Mainīt Izskatu",
-      "LIGHT_MODE": "Gaišs",
-      "DARK_MODE": "Tumšs",
-      "SYSTEM_MODE": "Sistēma",
-      "SNOOZE_NOTIFICATION": "Atlikt Paziņojumu"
+      "UNTIL_NEXT_REPLY": "LÄ«dz nÄkamajai atbildei",
+      "UNTIL_NEXT_WEEK": "LÄ«dz nÄkamajai nedÄ“Ä¼ai",
+      "UNTIL_TOMORROW": "LÄ«dz rÄ«tdienai",
+      "UNTIL_NEXT_MONTH": "LÄ«dz nÄkamajam mÄ“nesim",
+      "AN_HOUR_FROM_NOW": "LÄ«dz stundai, no Å¡Ä« brÄ«Å¾a",
+      "UNTIL_CUSTOM_TIME": "PielÄgot...",
+      "CHANGE_APPEARANCE": "MainÄ«t Izskatu",
+      "LIGHT_MODE": "GaiÅ¡s",
+      "DARK_MODE": "TumÅ¡s",
+      "SYSTEM_MODE": "SistÄ“ma",
+      "SNOOZE_NOTIFICATION": "Atlikt PaziÅ†ojumu"
     }
   },
   "DASHBOARD_APPS": {
-    "LOADING_MESSAGE": "Notiek informācijas paneļa lietotnes ielāde..."
+    "LOADING_MESSAGE": "Notiek informÄcijas paneÄ¼a lietotnes ielÄde..."
   },
   "COMMON": {
     "OR": "Vai",
-    "CLICK_HERE": "noklikšķiniet šeit"
+    "CLICK_HERE": "noklikÅ¡Ä·iniet Å¡eit"
   }
 }

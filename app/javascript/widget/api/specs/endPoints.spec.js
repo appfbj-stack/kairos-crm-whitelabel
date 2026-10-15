@@ -10,7 +10,7 @@ describe('#sendMessage', () => {
       search: '?param=1',
     });
 
-    window.WOOT_WIDGET = {
+    window.KAIROS_WIDGET = {
       $root: {
         $i18n: {
           locale: 'ar',
@@ -42,7 +42,7 @@ describe('#createConversation', () => {
       search: '?param=1',
     });
 
-    window.WOOT_WIDGET = {
+    window.KAIROS_WIDGET = {
       $root: { $i18n: { locale: 'ar' } },
     };
 
@@ -86,7 +86,7 @@ describe('#sendMessage with pending metadata', () => {
       search: '?param=1',
     });
 
-    window.WOOT_WIDGET = {
+    window.KAIROS_WIDGET = {
       $root: { $i18n: { locale: 'ar' } },
     };
 
@@ -109,7 +109,7 @@ describe('#sendMessage with pending metadata', () => {
       search: '?param=1',
     });
 
-    window.WOOT_WIDGET = {
+    window.KAIROS_WIDGET = {
       $root: { $i18n: { locale: 'ar' } },
     };
 

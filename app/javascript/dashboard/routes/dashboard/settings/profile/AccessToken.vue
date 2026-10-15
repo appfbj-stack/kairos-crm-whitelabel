@@ -32,7 +32,7 @@ const onReset = () => {
 
 <template>
   <div class="flex flex-row justify-between gap-4">
-    <woot-input
+    <kairos-input
       name="access_token"
       class="flex-1 [&>input]:!py-1.5 ltr:[&>input]:!pr-9 ltr:[&>input]:!pl-3 rtl:[&>input]:!pl-9 rtl:[&>input]:!pr-3 focus:[&>input]:!border-n-weak [&>input]:cursor-not-allowed relative"
       :styles="{
@@ -55,7 +55,7 @@ const onReset = () => {
           <fluent-icon :icon="maskIcon" :size="16" />
         </button>
       </template>
-    </woot-input>
+    </kairos-input>
     <div class="flex flex-row gap-2">
       <NextButton
         :label="$t('PROFILE_SETTINGS.FORM.ACCESS_TOKEN.COPY')"

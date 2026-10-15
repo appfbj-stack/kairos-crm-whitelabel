@@ -25,7 +25,7 @@ import MessageEditor from './MessageEditor.vue';
 import ActionButtons from './ActionButtons.vue';
 import InboxEmptyState from './InboxEmptyState.vue';
 import AttachmentPreviews from './AttachmentPreviews.vue';
-import CopilotReplyBottomPanel from 'dashboard/components/widgets/WootWriter/CopilotReplyBottomPanel.vue';
+import CopilotReplyBottomPanel from 'dashboard/components/widgets/KairosWriter/CopilotReplyBottomPanel.vue';
 
 const props = defineProps({
   contacts: { type: Array, default: () => [] },

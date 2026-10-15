@@ -60,7 +60,7 @@ export default {
       getAccount: 'accounts/getAccount',
       uiFlags: 'accounts/getUIFlags',
       isFeatureEnabledonAccount: 'accounts/isFeatureEnabledonAccount',
-      isOnChatwootCloud: 'globalConfig/isOnChatwootCloud',
+      isOnKairos CRMCloud: 'globalConfig/isOnKairos CRMCloud',
     }),
     showAudioTranscriptionConfig() {
       return this.isFeatureEnabledonAccount(
@@ -245,11 +245,11 @@ export default {
         </form>
       </SectionLayout>
 
-      <woot-loading-state v-if="uiFlags.isFetchingItem" />
+      <kairos-loading-state v-if="uiFlags.isFetchingItem" />
     </div>
     <AudioTranscription v-if="showAudioTranscriptionConfig" />
     <AccountId />
-    <div v-if="!uiFlags.isFetchingItem && isOnChatwootCloud">
+    <div v-if="!uiFlags.isFetchingItem && isOnKairos CRMCloud">
       <AccountDelete />
     </div>
     <BuildInfo />

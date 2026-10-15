@@ -3,7 +3,7 @@
 import { useVuelidate } from '@vuelidate/core';
 import { required, minLength } from '@vuelidate/validators';
 import { useAlert } from 'dashboard/composables';
-import WootMessageEditor from 'dashboard/components/widgets/WootWriter/Editor.vue';
+import KairosMessageEditor from 'dashboard/components/widgets/KairosWriter/Editor.vue';
 import NextButton from 'dashboard/components-next/button/Button.vue';
 import Modal from '../../../../components/Modal.vue';
 
@@ -11,7 +11,7 @@ export default {
   components: {
     NextButton,
     Modal,
-    WootMessageEditor,
+    KairosMessageEditor,
   },
   props: {
     id: { type: Number, default: null },
@@ -91,7 +91,7 @@ export default {
 <template>
   <Modal v-model:show="show" :on-close="onClose">
     <div class="flex flex-col h-auto overflow-auto">
-      <woot-modal-header :header-title="pageTitle" />
+      <kairos-modal-header :header-title="pageTitle" />
       <form class="flex flex-col w-full" @submit.prevent="editCannedResponse()">
         <div class="w-full">
           <label :class="{ error: v$.shortCode.$error }">
@@ -110,7 +110,7 @@ export default {
             {{ $t('CANNED_MGMT.EDIT.FORM.CONTENT.LABEL') }}
           </label>
           <div class="editor-wrap">
-            <WootMessageEditor
+            <KairosMessageEditor
               v-model="content"
               class="message-editor [&>div]:px-1"
               :class="{ editor_warning: v$.content.$error }"
@@ -151,7 +151,7 @@ export default {
   @apply hidden;
 }
 
-:deep(.ProseMirror-woot-style) {
+:deep(.ProseMirror-kairos-style) {
   @apply min-h-[12.5rem];
 }
 </style>

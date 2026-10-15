@@ -159,10 +159,10 @@ export default {
 
 <template>
   <div class="flex flex-col h-auto overflow-auto">
-    <woot-modal-header :header-title="pageTitle" />
+    <kairos-modal-header :header-title="pageTitle" />
     <form class="flex flex-col w-full" @submit.prevent="editAttributes">
       <div class="w-full">
-        <woot-input
+        <kairos-input
           v-model="displayName"
           :label="$t('ATTRIBUTES_MGMT.ADD.FORM.NAME.LABEL')"
           type="text"
@@ -175,7 +175,7 @@ export default {
           :placeholder="$t('ATTRIBUTES_MGMT.ADD.FORM.NAME.PLACEHOLDER')"
           @blur="v$.displayName.$touch"
         />
-        <woot-input
+        <kairos-input
           v-model="attributeKey"
           :label="$t('ATTRIBUTES_MGMT.ADD.FORM.KEY.LABEL')"
           type="text"
@@ -241,7 +241,7 @@ export default {
           />
           {{ $t('ATTRIBUTES_MGMT.ADD.FORM.ENABLE_REGEX.LABEL') }}
         </div>
-        <woot-input
+        <kairos-input
           v-if="isAttributeTypeText && isRegexEnabled"
           v-model="regexPattern"
           :label="$t('ATTRIBUTES_MGMT.ADD.FORM.REGEX_PATTERN.LABEL')"
@@ -250,7 +250,7 @@ export default {
             $t('ATTRIBUTES_MGMT.ADD.FORM.REGEX_PATTERN.PLACEHOLDER')
           "
         />
-        <woot-input
+        <kairos-input
           v-if="isAttributeTypeText && isRegexEnabled"
           v-model="regexCue"
           :label="$t('ATTRIBUTES_MGMT.ADD.FORM.REGEX_CUE.LABEL')"

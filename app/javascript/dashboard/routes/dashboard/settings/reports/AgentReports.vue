@@ -1,9 +1,9 @@
 <script setup>
-import WootReports from './components/WootReports.vue';
+import KairosReports from './components/KairosReports.vue';
 </script>
 
 <template>
-  <WootReports
+  <KairosReports
     key="agent-reports"
     type="agent"
     getter-key="agents/getAgents"

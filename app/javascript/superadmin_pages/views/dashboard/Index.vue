@@ -60,7 +60,7 @@ const chartData = computed(() => {
           <div class="metric">
             <span
               v-if="loading"
-              class="inline-block w-20 h-8 rounded bg-woot-100 animate-pulse"
+              class="inline-block w-20 h-8 rounded bg-kairos-100 animate-pulse"
             />
             <template v-else>{{ item.value || 'N/A' }}</template>
           </div>
@@ -70,7 +70,7 @@ const chartData = computed(() => {
     </section>
     <div
       v-if="loading"
-      class="p-8 mx-8 h-64 rounded bg-woot-100 animate-pulse"
+      class="p-8 mx-8 h-64 rounded bg-kairos-100 animate-pulse"
     />
     <div v-else-if="!failed" class="p-8 w-full min-w-0">
       <BarChart

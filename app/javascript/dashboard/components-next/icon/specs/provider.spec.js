@@ -4,19 +4,19 @@ describe('useChannelIcon', () => {
   it('returns correct icon for API channel', () => {
     const inbox = { channel_type: 'Channel::Api' };
     const { value: icon } = useChannelIcon(inbox);
-    expect(icon).toBe('i-woot-api');
+    expect(icon).toBe('i-kairos-api');
   });
 
   it('returns correct icon for Facebook channel', () => {
     const inbox = { channel_type: 'Channel::FacebookPage' };
     const { value: icon } = useChannelIcon(inbox);
-    expect(icon).toBe('i-woot-messenger');
+    expect(icon).toBe('i-kairos-messenger');
   });
 
   it('returns correct icon for WhatsApp channel', () => {
     const inbox = { channel_type: 'Channel::Whatsapp' };
     const { value: icon } = useChannelIcon(inbox);
-    expect(icon).toBe('i-woot-whatsapp');
+    expect(icon).toBe('i-kairos-whatsapp');
   });
 
   it('returns the voice-call glyph for a voice-enabled Twilio channel', () => {
@@ -25,7 +25,7 @@ describe('useChannelIcon', () => {
       voice_enabled: true,
     };
     const { value: icon } = useChannelIcon(inbox);
-    expect(icon).toBe('i-woot-voice-call');
+    expect(icon).toBe('i-kairos-voice-call');
   });
 
   it('returns the WhatsApp voice glyph for a voice-enabled WhatsApp channel', () => {
@@ -34,7 +34,7 @@ describe('useChannelIcon', () => {
       voice_enabled: true,
     };
     const { value: icon } = useChannelIcon(inbox);
-    expect(icon).toBe('i-woot-whatsapp-voice');
+    expect(icon).toBe('i-kairos-whatsapp-voice');
   });
 
   it('returns the WhatsApp voice glyph for a voice-enabled Twilio WhatsApp channel', () => {
@@ -44,56 +44,56 @@ describe('useChannelIcon', () => {
       voice_enabled: true,
     };
     const { value: icon } = useChannelIcon(inbox);
-    expect(icon).toBe('i-woot-whatsapp-voice');
+    expect(icon).toBe('i-kairos-whatsapp-voice');
   });
 
   it('returns correct icon for Line channel', () => {
     const inbox = { channel_type: 'Channel::Line' };
     const { value: icon } = useChannelIcon(inbox);
-    expect(icon).toBe('i-woot-line');
+    expect(icon).toBe('i-kairos-line');
   });
 
   it('returns correct icon for SMS channel', () => {
     const inbox = { channel_type: 'Channel::Sms' };
     const { value: icon } = useChannelIcon(inbox);
-    expect(icon).toBe('i-woot-sms');
+    expect(icon).toBe('i-kairos-sms');
   });
 
   it('returns correct icon for Telegram channel', () => {
     const inbox = { channel_type: 'Channel::Telegram' };
     const { value: icon } = useChannelIcon(inbox);
-    expect(icon).toBe('i-woot-telegram');
+    expect(icon).toBe('i-kairos-telegram');
   });
 
   it('returns correct icon for Twitter channel', () => {
     const inbox = { channel_type: 'Channel::TwitterProfile' };
     const { value: icon } = useChannelIcon(inbox);
-    expect(icon).toBe('i-woot-x');
+    expect(icon).toBe('i-kairos-x');
   });
 
   it('returns correct icon for WebWidget channel', () => {
     const inbox = { channel_type: 'Channel::WebWidget' };
     const { value: icon } = useChannelIcon(inbox);
-    expect(icon).toBe('i-woot-website');
+    expect(icon).toBe('i-kairos-website');
   });
 
   it('returns correct icon for Instagram channel', () => {
     const inbox = { channel_type: 'Channel::Instagram' };
     const { value: icon } = useChannelIcon(inbox);
-    expect(icon).toBe('i-woot-instagram');
+    expect(icon).toBe('i-kairos-instagram');
   });
 
   it('returns correct icon for TikTok channel', () => {
     const inbox = { channel_type: 'Channel::Tiktok' };
     const { value: icon } = useChannelIcon(inbox);
-    expect(icon).toBe('i-woot-tiktok');
+    expect(icon).toBe('i-kairos-tiktok');
   });
 
   describe('TwilioSms channel', () => {
     it('returns chat icon for regular Twilio SMS channel', () => {
       const inbox = { channel_type: 'Channel::TwilioSms' };
       const { value: icon } = useChannelIcon(inbox);
-      expect(icon).toBe('i-woot-sms');
+      expect(icon).toBe('i-kairos-sms');
     });
 
     it('returns WhatsApp icon for Twilio SMS with WhatsApp medium', () => {
@@ -102,7 +102,7 @@ describe('useChannelIcon', () => {
         medium: 'whatsapp',
       };
       const { value: icon } = useChannelIcon(inbox);
-      expect(icon).toBe('i-woot-whatsapp');
+      expect(icon).toBe('i-kairos-whatsapp');
     });
 
     it('returns chat icon for Twilio SMS with non-WhatsApp medium', () => {
@@ -111,7 +111,7 @@ describe('useChannelIcon', () => {
         medium: 'sms',
       };
       const { value: icon } = useChannelIcon(inbox);
-      expect(icon).toBe('i-woot-sms');
+      expect(icon).toBe('i-kairos-sms');
     });
 
     it('returns chat icon for Twilio SMS with undefined medium', () => {
@@ -120,7 +120,7 @@ describe('useChannelIcon', () => {
         medium: undefined,
       };
       const { value: icon } = useChannelIcon(inbox);
-      expect(icon).toBe('i-woot-sms');
+      expect(icon).toBe('i-kairos-sms');
     });
   });
 
@@ -128,7 +128,7 @@ describe('useChannelIcon', () => {
     it('returns mail icon for generic email channel', () => {
       const inbox = { channel_type: 'Channel::Email' };
       const { value: icon } = useChannelIcon(inbox);
-      expect(icon).toBe('i-woot-mail');
+      expect(icon).toBe('i-kairos-mail');
     });
 
     it('returns Microsoft icon for Microsoft email provider', () => {
@@ -137,7 +137,7 @@ describe('useChannelIcon', () => {
         provider: 'microsoft',
       };
       const { value: icon } = useChannelIcon(inbox);
-      expect(icon).toBe('i-woot-outlook');
+      expect(icon).toBe('i-kairos-outlook');
     });
 
     it('returns Google icon for Google email provider', () => {
@@ -146,7 +146,7 @@ describe('useChannelIcon', () => {
         provider: 'google',
       };
       const { value: icon } = useChannelIcon(inbox);
-      expect(icon).toBe('i-woot-gmail');
+      expect(icon).toBe('i-kairos-gmail');
     });
   });
 

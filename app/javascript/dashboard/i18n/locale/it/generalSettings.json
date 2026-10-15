@@ -1,10 +1,10 @@
-{
+﻿{
   "GENERAL_SETTINGS": {
     "LIMIT_MESSAGES": {
       "CONVERSATION": "Hai superato il limite di conversazioni. Il piano Hacker consente fino a 500 conversazioni.",
       "INBOXES": "Hai superato il limite di Inbox. Il piano Hacker supporta solo la live-chat sul sito web. Ulteriori Inbox come e-mail, WhatsApp ecc. richiedono un piano a pagamento.",
       "AGENTS": "Hai superato il limite di operatori. Il tuo piano consente solo {allowedAgents} operatori.",
-      "NON_ADMIN": "Contatta l'amministratore per aggiornare il piano e continuare a utilizzare tutte le funzionalità."
+      "NON_ADMIN": "Contatta l'amministratore per aggiornare il piano e continuare a utilizzare tutte le funzionalitÃ ."
     },
     "TITLE": "Impostazioni account",
     "SUBMIT": "Aggiorna impostazioni",
@@ -20,7 +20,7 @@
       "BUTTON_TEXT": "Elimina il tuo Account",
       "CONFIRM": {
         "TITLE": "Elimina Account",
-        "MESSAGE": "L'eliminazione del tuo account è irreversibile. Inserisci il nome del tuo account qui sotto per confermare che vuoi eliminarlo in modo permanente.",
+        "MESSAGE": "L'eliminazione del tuo account Ã¨ irreversibile. Inserisci il nome del tuo account qui sotto per confermare che vuoi eliminarlo in modo permanente.",
         "BUTTON_TEXT": "Elimina",
         "DISMISS": "Annulla",
         "PLACE_HOLDER": "Digita {accountName} per confermare"
@@ -29,8 +29,8 @@
       "FAILURE": "Impossibile eliminare l'account, riprova!",
       "SCHEDULED_DELETION": {
         "TITLE": "Account pianificato per l'eliminazione",
-        "MESSAGE_MANUAL": "Questo account è pianificato per la cancellazione il {deletionDate}. Questo è stato richiesto da un amministratore. Puoi annullare la cancellazione prima di questa data.",
-        "MESSAGE_INACTIVITY": "Questo account è programmato per la cancellazione il {deletionDate} a causa dell'inattività dell'account. Puoi annullare la cancellazione prima di questa data.",
+        "MESSAGE_MANUAL": "Questo account Ã¨ pianificato per la cancellazione il {deletionDate}. Questo Ã¨ stato richiesto da un amministratore. Puoi annullare la cancellazione prima di questa data.",
+        "MESSAGE_INACTIVITY": "Questo account Ã¨ programmato per la cancellazione il {deletionDate} a causa dell'inattivitÃ  dell'account. Puoi annullare la cancellazione prima di questa data.",
         "CLEAR_BUTTON": "Annulla Eliminazione Pianificata"
       }
     },
@@ -42,14 +42,14 @@
       },
       "ACCOUNT_ID": {
         "TITLE": "ID Account",
-        "NOTE": "Questo ID è utile per costruire integrazioni basate su API"
+        "NOTE": "Questo ID Ã¨ utile per costruire integrazioni basate su API"
       },
       "AUTO_RESOLVE": {
         "TITLE": "Risoluzione automatica delle conversazioni",
-        "NOTE": "Questa configurazione consente di risolvere automaticamente la conversazione dopo un certo periodo d'inattività.",
+        "NOTE": "Questa configurazione consente di risolvere automaticamente la conversazione dopo un certo periodo d'inattivitÃ .",
         "DURATION": {
-          "LABEL": "Durata inattività",
-          "HELP": "Periodo d'inattività dopo il quale la conversazione è risolta automaticamente",
+          "LABEL": "Durata inattivitÃ ",
+          "HELP": "Periodo d'inattivitÃ  dopo il quale la conversazione Ã¨ risolta automaticamente",
           "PLACEHOLDER": "30",
           "ERROR": "La durata della risoluzione automatica deve essere compresa tra 10 minuti e 999 giorni",
           "API": {
@@ -59,8 +59,8 @@
         },
         "MESSAGE": {
           "LABEL": "Messaggio di risoluzione automatica personalizzato",
-          "PLACEHOLDER": "La conversazione è stata contrassegnata come risolta dal sistema a causa di 15 giorni d'inattività",
-          "HELP": "Messaggio inviato al cliente dopo che la conversazione è stata risolta automaticamente"
+          "PLACEHOLDER": "La conversazione Ã¨ stata contrassegnata come risolta dal sistema a causa di 15 giorni d'inattivitÃ ",
+          "HELP": "Messaggio inviato al cliente dopo che la conversazione Ã¨ stata risolta automaticamente"
         },
         "PREFERENCES": "Preferenze",
         "LABEL": {
@@ -94,7 +94,7 @@
       },
       "AUTO_RESOLVE_IGNORE_WAITING": {
         "LABEL": "Escludi conversazioni senza risposta",
-        "HELP": "Se abilitato, il sistema salterà la risoluzione delle conversazioni che sono ancora in attesa della risposta di un operatore."
+        "HELP": "Se abilitato, il sistema salterÃ  la risoluzione delle conversazioni che sono ancora in attesa della risposta di un operatore."
       },
       "AUDIO_TRANSCRIPTION": {
         "TITLE": "Trascrizione Messaggi Audio",
@@ -105,8 +105,8 @@
         }
       },
       "AUTO_RESOLVE_DURATION": {
-        "LABEL": "Durata dell'inattività per la risoluzione",
-        "HELP": "Durata dopo la quale una conversazione si risolve automaticamente se non c'è attività",
+        "LABEL": "Durata dell'inattivitÃ  per la risoluzione",
+        "HELP": "Durata dopo la quale una conversazione si risolve automaticamente se non c'Ã¨ attivitÃ ",
         "PLACEHOLDER": "30",
         "ERROR": "La durata della risoluzione automatica deve essere compresa tra 10 minuti e 999 giorni",
         "API": {
@@ -115,26 +115,26 @@
         },
         "UPDATE_BUTTON": "Aggiorna",
         "MESSAGE_LABEL": "Messaggio di risoluzione personalizzato",
-        "MESSAGE_PLACEHOLDER": "La conversazione è stata contrassegnata come risolta dal sistema a causa di 15 giorni d'inattività",
-        "MESSAGE_HELP": "Questo messaggio viene inviato al cliente quando una conversazione viene risolta automaticamente dal sistema a causa di inattività."
+        "MESSAGE_PLACEHOLDER": "La conversazione Ã¨ stata contrassegnata come risolta dal sistema a causa di 15 giorni d'inattivitÃ ",
+        "MESSAGE_HELP": "Questo messaggio viene inviato al cliente quando una conversazione viene risolta automaticamente dal sistema a causa di inattivitÃ ."
       },
       "FEATURES": {
-        "INBOUND_EMAIL_ENABLED": "La continuità della conversazione via email è abilitata per il tuo account.",
+        "INBOUND_EMAIL_ENABLED": "La continuitÃ  della conversazione via email Ã¨ abilitata per il tuo account.",
         "CUSTOM_EMAIL_DOMAIN_ENABLED": "Puoi ricevere email nel tuo dominio personalizzato ora."
       }
     },
-    "UPDATE_CHATWOOT": "È disponibile un aggiornamento {latestChatwootVersion} per Chatwoot. Aggiorna la tua istanza.",
-    "LEARN_MORE": "Scopri di più",
-    "PAYMENT_PENDING": "Il tuo pagamento è in sospeso. Aggiorna le informazioni di pagamento per continuare a utilizzare Chatwoot",
-    "UPGRADE": "Aggiorna per continuare a usare Chatwoot",
-    "LIMITS_UPGRADE": "Il tuo account ha superato i limiti di utilizzo, aggiorna il tuo piano per continuare a utilizzare Chatwoot",
+    "UPDATE_KAIROS_CRM": "Ãˆ disponibile un aggiornamento {latestKairos CRMVersion} per Kairos CRM. Aggiorna la tua istanza.",
+    "LEARN_MORE": "Scopri di piÃ¹",
+    "PAYMENT_PENDING": "Il tuo pagamento Ã¨ in sospeso. Aggiorna le informazioni di pagamento per continuare a utilizzare Kairos CRM",
+    "UPGRADE": "Aggiorna per continuare a usare Kairos CRM",
+    "LIMITS_UPGRADE": "Il tuo account ha superato i limiti di utilizzo, aggiorna il tuo piano per continuare a utilizzare Kairos CRM",
     "OPEN_BILLING": "Apri fatturazione"
   },
   "FORMS": {
     "MULTISELECT": {
       "ENTER_TO_SELECT": "Premi Invio per selezionare",
       "ENTER_TO_REMOVE": "Premi Invio per rimuovere",
-      "NO_OPTIONS": "L'elenco è vuoto",
+      "NO_OPTIONS": "L'elenco Ã¨ vuoto",
       "SELECT_ONE": "Selezionane uno",
       "SELECT": "Seleziona"
     }
@@ -182,14 +182,14 @@
   },
   "COMMAND_BAR": {
     "SEARCH_PLACEHOLDER": "Cerca o vai a",
-    "SNOOZE_PLACEHOLDER": "Digita un momento, ad esempio domani, tra 2 ore, venerdì prossimo, il 15 gennaio, ecc...",
+    "SNOOZE_PLACEHOLDER": "Digita un momento, ad esempio domani, tra 2 ore, venerdÃ¬ prossimo, il 15 gennaio, ecc...",
     "SECTIONS": {
       "GENERAL": "Generale",
       "REPORTS": "Report",
       "CONVERSATION": "Conversazione",
       "BULK_ACTIONS": "Azioni Bulk",
       "CHANGE_ASSIGNEE": "Cambia assegnatario",
-      "CHANGE_PRIORITY": "Cambia Priorità",
+      "CHANGE_PRIORITY": "Cambia PrioritÃ ",
       "CHANGE_TEAM": "Cambia Team",
       "SNOOZE_CONVERSATION": "Posticipa Conversazione",
       "ADD_LABEL": "Aggiungi etichetta alla conversazione",
@@ -236,7 +236,7 @@
       "ADD_LABELS_TO_CONVERSATION": "Aggiungi etichetta alla conversazione",
       "ASSIGN_AN_AGENT": "Assegna un operatore",
       "AI_ASSIST": "AI Assist",
-      "ASSIGN_PRIORITY": "Assegna priorità",
+      "ASSIGN_PRIORITY": "Assegna prioritÃ ",
       "ASSIGN_A_TEAM": "Assegna un team",
       "MUTE_CONVERSATION": "Silenzia conversazione",
       "UNMUTE_CONVERSATION": "Riattiva conversazione",

@@ -8,7 +8,7 @@ import {
   BaseTableRow,
   BaseTableCell,
 } from 'dashboard/components-next/table';
-import WootLabel from 'dashboard/components-next/label/Label.vue';
+import KairosLabel from 'dashboard/components-next/label/Label.vue';
 import Icon from 'dashboard/components-next/icon/Icon.vue';
 import NextButton from 'dashboard/components-next/button/Button.vue';
 
@@ -26,7 +26,7 @@ export default {
     BaseTable,
     BaseTableRow,
     BaseTableCell,
-    WootLabel,
+    KairosLabel,
     Icon,
     NextButton,
   },
@@ -41,7 +41,7 @@ export default {
   },
   computed: {
     ...mapGetters({
-      isOnChatwootCloud: 'globalConfig/isOnChatwootCloud',
+      isOnKairos CRMCloud: 'globalConfig/isOnKairos CRMCloud',
       isFeatureEnabledonAccount: 'accounts/isFeatureEnabledonAccount',
       records: 'sla/getSLA',
       currentUser: 'getCurrentUser',
@@ -170,7 +170,7 @@ export default {
       <SLAPaywallEnterprise
         v-if="isBehindAPaywall"
         :is-super-admin="isSuperAdmin"
-        :is-on-chatwoot-cloud="isOnChatwootCloud"
+        :is-on-kairos-crm-cloud="isOnKairos CRMCloud"
         @upgrade="onClickCTA"
       />
       <BaseTable
@@ -236,7 +236,7 @@ export default {
               </BaseTableCell>
 
               <BaseTableCell class="w-40">
-                <WootLabel
+                <KairosLabel
                   :label="
                     sla.only_during_business_hours
                       ? $t('SLA.LIST.BUSINESS_HOURS_ON')
@@ -260,7 +260,7 @@ export default {
                       "
                     />
                   </template>
-                </WootLabel>
+                </KairosLabel>
               </BaseTableCell>
 
               <BaseTableCell align="start" class="w-24">
@@ -285,7 +285,7 @@ export default {
                 <div class="flex justify-end">
                   <NextButton
                     v-tooltip.top="$t('SLA.FORM.DELETE')"
-                    icon="i-woot-bin"
+                    icon="i-kairos-bin"
                     slate
                     sm
                     class="hover:enabled:text-n-ruby-11 hover:enabled:bg-n-ruby-2"
@@ -299,11 +299,11 @@ export default {
         </template>
       </BaseTable>
 
-      <woot-modal v-model:show="showAddPopup" :on-close="hideAddPopup">
+      <kairos-modal v-model:show="showAddPopup" :on-close="hideAddPopup">
         <AddSLA @close="hideAddPopup" />
-      </woot-modal>
+      </kairos-modal>
 
-      <woot-delete-modal
+      <kairos-delete-modal
         v-model:show="showDeleteConfirmationPopup"
         :on-close="closeDeletePopup"
         :on-confirm="confirmDeletion"

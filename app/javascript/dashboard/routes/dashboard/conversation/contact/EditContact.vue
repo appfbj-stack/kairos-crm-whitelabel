@@ -22,7 +22,7 @@ const onSubmit = async contactItem => {
   await store.dispatch('contacts/fetchContactableInbox', props.contact.id);
 };
 
-// Restore Escape-to-close behavior that was provided by woot-modal before
+// Restore Escape-to-close behavior that was provided by kairos-modal before
 // this drawer was reimplemented as a plain fixed panel.
 useKeyboardEvents({
   Escape: {

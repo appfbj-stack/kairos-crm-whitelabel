@@ -178,13 +178,13 @@ onMounted(() => {
     >
       <div class="w-full text-center">
         <div class="my-4 mx-auto max-w-[70%]">
-          <woot-code
+          <kairos-code
             v-if="currentInbox.web_widget_script"
             :script="currentInbox.web_widget_script"
           />
         </div>
         <div class="w-[50%] max-w-[50%] ml-[25%]">
-          <woot-code
+          <kairos-code
             v-if="isATwilioWhatsAppChannel"
             lang="html"
             :script="currentInbox.callback_webhook_url"
@@ -197,7 +197,7 @@ onMounted(() => {
           <p class="mt-8 font-medium text-n-slate-11">
             {{ $t('INBOX_MGMT.ADD.WHATSAPP.API_CALLBACK.WEBHOOK_URL') }}
           </p>
-          <woot-code lang="html" :script="currentInbox.callback_webhook_url" />
+          <kairos-code lang="html" :script="currentInbox.callback_webhook_url" />
           <p class="mt-8 font-medium text-n-slate-11">
             {{
               $t(
@@ -205,20 +205,20 @@ onMounted(() => {
               )
             }}
           </p>
-          <woot-code
+          <kairos-code
             lang="html"
             :script="currentInbox.provider_config.webhook_verify_token"
           />
         </div>
         <div class="w-[50%] max-w-[50%] ml-[25%]">
-          <woot-code
+          <kairos-code
             v-if="isALineChannel"
             lang="html"
             :script="currentInbox.callback_webhook_url"
           />
         </div>
         <div class="w-[50%] max-w-[50%] ml-[25%]">
-          <woot-code
+          <kairos-code
             v-if="isASmsInbox"
             lang="html"
             :script="currentInbox.callback_webhook_url"

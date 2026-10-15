@@ -301,15 +301,15 @@ RSpec.describe Captain::Tools::HttpTool, type: :model do
       it 'includes metadata headers in GET request' do
         stub_request(:get, 'https://example.com/api/data')
           .with(headers: {
-                  'X-Chatwoot-Account-Id' => account.id.to_s,
-                  'X-Chatwoot-Assistant-Id' => assistant.id.to_s,
-                  'X-Chatwoot-Tool-Slug' => custom_tool.slug,
-                  'X-Chatwoot-Conversation-Id' => conversation.id.to_s,
-                  'X-Chatwoot-Conversation-Display-Id' => conversation.display_id.to_s,
-                  'X-Chatwoot-Contact-Inbox-Id' => conversation.contact_inbox.id.to_s,
-                  'X-Chatwoot-Contact-Inbox-Verified' => conversation.contact_inbox.hmac_verified.to_s,
-                  'X-Chatwoot-Contact-Id' => contact.id.to_s,
-                  'X-Chatwoot-Contact-Email' => contact.email
+                  'X-Kairos CRM-Account-Id' => account.id.to_s,
+                  'X-Kairos CRM-Assistant-Id' => assistant.id.to_s,
+                  'X-Kairos CRM-Tool-Slug' => custom_tool.slug,
+                  'X-Kairos CRM-Conversation-Id' => conversation.id.to_s,
+                  'X-Kairos CRM-Conversation-Display-Id' => conversation.display_id.to_s,
+                  'X-Kairos CRM-Contact-Inbox-Id' => conversation.contact_inbox.id.to_s,
+                  'X-Kairos CRM-Contact-Inbox-Verified' => conversation.contact_inbox.hmac_verified.to_s,
+                  'X-Kairos CRM-Contact-Id' => contact.id.to_s,
+                  'X-Kairos CRM-Contact-Email' => contact.email
                 })
           .to_return(status: 200, body: '{"success": true}')
 
@@ -317,9 +317,9 @@ RSpec.describe Captain::Tools::HttpTool, type: :model do
 
         expect(WebMock).to have_requested(:get, 'https://example.com/api/data')
           .with(headers: {
-                  'X-Chatwoot-Account-Id' => account.id.to_s,
-                  'X-Chatwoot-Contact-Inbox-Verified' => conversation.contact_inbox.hmac_verified.to_s,
-                  'X-Chatwoot-Contact-Email' => contact.email
+                  'X-Kairos CRM-Account-Id' => account.id.to_s,
+                  'X-Kairos CRM-Contact-Inbox-Verified' => conversation.contact_inbox.hmac_verified.to_s,
+                  'X-Kairos CRM-Contact-Email' => contact.email
                 })
       end
 
@@ -331,10 +331,10 @@ RSpec.describe Captain::Tools::HttpTool, type: :model do
             body: '{"data": "test"}',
             headers: {
               'Content-Type' => 'application/json',
-              'X-Chatwoot-Account-Id' => account.id.to_s,
-              'X-Chatwoot-Tool-Slug' => custom_tool.slug,
-              'X-Chatwoot-Contact-Inbox-Verified' => conversation.contact_inbox.hmac_verified.to_s,
-              'X-Chatwoot-Contact-Email' => contact.email
+              'X-Kairos CRM-Account-Id' => account.id.to_s,
+              'X-Kairos CRM-Tool-Slug' => custom_tool.slug,
+              'X-Kairos CRM-Contact-Inbox-Verified' => conversation.contact_inbox.hmac_verified.to_s,
+              'X-Kairos CRM-Contact-Email' => contact.email
             }
           )
           .to_return(status: 200, body: '{"success": true}')
@@ -353,9 +353,9 @@ RSpec.describe Captain::Tools::HttpTool, type: :model do
         stub_request(:get, 'https://example.com/api/data')
           .with(headers: {
                   'Authorization' => 'Bearer test_token',
-                  'X-Chatwoot-Account-Id' => account.id.to_s,
-                  'X-Chatwoot-Contact-Inbox-Verified' => conversation.contact_inbox.hmac_verified.to_s,
-                  'X-Chatwoot-Contact-Id' => contact.id.to_s
+                  'X-Kairos CRM-Account-Id' => account.id.to_s,
+                  'X-Kairos CRM-Contact-Inbox-Verified' => conversation.contact_inbox.hmac_verified.to_s,
+                  'X-Kairos CRM-Contact-Id' => contact.id.to_s
                 })
           .to_return(status: 200, body: '{"success": true}')
 
@@ -364,7 +364,7 @@ RSpec.describe Captain::Tools::HttpTool, type: :model do
         expect(WebMock).to have_requested(:get, 'https://example.com/api/data')
           .with(headers: {
                   'Authorization' => 'Bearer test_token',
-                  'X-Chatwoot-Contact-Id' => contact.id.to_s
+                  'X-Kairos CRM-Contact-Id' => contact.id.to_s
                 })
       end
 
@@ -384,9 +384,9 @@ RSpec.describe Captain::Tools::HttpTool, type: :model do
 
         stub_request(:get, 'https://example.com/api/data')
           .with(headers: {
-                  'X-Chatwoot-Account-Id' => account.id.to_s,
-                  'X-Chatwoot-Conversation-Id' => conversation.id.to_s,
-                  'X-Chatwoot-Contact-Inbox-Verified' => conversation.contact_inbox.hmac_verified.to_s
+                  'X-Kairos CRM-Account-Id' => account.id.to_s,
+                  'X-Kairos CRM-Conversation-Id' => conversation.id.to_s,
+                  'X-Kairos CRM-Contact-Inbox-Verified' => conversation.contact_inbox.hmac_verified.to_s
                 })
           .to_return(status: 200, body: '{"success": true}')
 
@@ -411,14 +411,14 @@ RSpec.describe Captain::Tools::HttpTool, type: :model do
 
         stub_request(:get, 'https://example.com/api/data')
           .with(headers: {
-                  'X-Chatwoot-Contact-Inbox-Verified' => 'false'
+                  'X-Kairos CRM-Contact-Inbox-Verified' => 'false'
                 })
           .to_return(status: 200, body: '{"success": true}')
 
         tool.perform(tool_context_without_contact_inbox)
 
         expect(WebMock).to have_requested(:get, 'https://example.com/api/data')
-          .with(headers: { 'X-Chatwoot-Contact-Inbox-Verified' => 'false' })
+          .with(headers: { 'X-Kairos CRM-Contact-Inbox-Verified' => 'false' })
       end
 
       it 'includes contact phone when present' do
@@ -427,14 +427,14 @@ RSpec.describe Captain::Tools::HttpTool, type: :model do
 
         stub_request(:get, 'https://example.com/api/data')
           .with(headers: {
-                  'X-Chatwoot-Contact-Phone' => '+1234567890'
+                  'X-Kairos CRM-Contact-Phone' => '+1234567890'
                 })
           .to_return(status: 200, body: '{"success": true}')
 
         tool.perform(tool_context_with_state)
 
         expect(WebMock).to have_requested(:get, 'https://example.com/api/data')
-          .with(headers: { 'X-Chatwoot-Contact-Phone' => '+1234567890' })
+          .with(headers: { 'X-Kairos CRM-Contact-Phone' => '+1234567890' })
       end
 
       it 'includes unverified contact inbox status explicitly as false' do
@@ -443,14 +443,14 @@ RSpec.describe Captain::Tools::HttpTool, type: :model do
 
         stub_request(:get, 'https://example.com/api/data')
           .with(headers: {
-                  'X-Chatwoot-Contact-Inbox-Verified' => 'false'
+                  'X-Kairos CRM-Contact-Inbox-Verified' => 'false'
                 })
           .to_return(status: 200, body: '{"success": true}')
 
         tool.perform(tool_context_with_state)
 
         expect(WebMock).to have_requested(:get, 'https://example.com/api/data')
-          .with(headers: { 'X-Chatwoot-Contact-Inbox-Verified' => 'false' })
+          .with(headers: { 'X-Kairos CRM-Contact-Inbox-Verified' => 'false' })
       end
     end
   end

@@ -22,7 +22,7 @@ const mountComponent = props =>
         },
       },
       stubs: {
-        WootInput: true,
+        KairosInput: true,
         NextButton: true,
         Icon: true,
       },

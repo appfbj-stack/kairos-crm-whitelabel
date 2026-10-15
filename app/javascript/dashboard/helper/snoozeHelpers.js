@@ -12,14 +12,14 @@ import {
   setMinutes,
   setSeconds,
 } from 'date-fns';
-import wootConstants from 'dashboard/constants/globals';
+import kairosConstants from 'dashboard/constants/globals';
 import {
   generateDateSuggestions,
   parseDateFromText,
 } from 'dashboard/helper/snoozeDateParser';
 import { UNIT_MAP } from 'dashboard/helper/snoozeDateParser/tokenMaps';
 
-const SNOOZE_OPTIONS = wootConstants.SNOOZE_OPTIONS;
+const SNOOZE_OPTIONS = kairosConstants.SNOOZE_OPTIONS;
 
 export const findStartOfNextWeek = currentDate => {
   const startOfNextWeek = startOfWeek(addWeeks(currentDate, 1));

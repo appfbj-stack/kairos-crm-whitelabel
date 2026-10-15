@@ -90,7 +90,7 @@ export default {
         @keyup.esc="closeDropdownLabel"
       >
         <AddLabel @add="toggleLabels" />
-        <woot-label
+        <kairos-label
           v-for="label in activeLabels"
           :key="label.id"
           :title="label.title"

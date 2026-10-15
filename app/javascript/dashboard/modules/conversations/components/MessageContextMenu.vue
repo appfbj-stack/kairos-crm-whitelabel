@@ -88,7 +88,7 @@ export default {
   methods: {
     async copyLinkToMessage() {
       const fullConversationURL =
-        window.chatwootConfig.hostURL +
+        window.kairos-crmConfig.hostURL +
         frontendURL(
           conversationUrl({
             id: this.conversationId,
@@ -170,7 +170,7 @@ export default {
 <template>
   <div class="context-menu">
     <!-- Add To Canned Responses -->
-    <woot-modal
+    <kairos-modal
       v-if="isCannedResponseModalOpen && enabledOptions['cannedResponse']"
       v-model:show="isCannedResponseModalOpen"
       :on-close="hideCannedResponseModal"
@@ -179,9 +179,9 @@ export default {
         :response-content="plainTextContent"
         :on-close="hideCannedResponseModal"
       />
-    </woot-modal>
+    </kairos-modal>
     <!-- Confirm Deletion -->
-    <woot-delete-modal
+    <kairos-delete-modal
       v-if="showDeleteModal && enabledOptions['delete']"
       v-model:show="showDeleteModal"
       class="context-menu--delete-modal"

@@ -99,7 +99,7 @@ export default {
 
 <template>
   <div>
-    <woot-delete-modal
+    <kairos-delete-modal
       v-if="localShow"
       v-model:show="localShow"
       :on-close="closeDeletePopup"

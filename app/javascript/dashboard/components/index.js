@@ -19,7 +19,7 @@ import Tabs from './ui/Tabs/Tabs.vue';
 import TabsItem from './ui/Tabs/TabsItem.vue';
 import DatePicker from './ui/DatePicker/DatePicker.vue';
 
-const WootUIKit = {
+const KairosUIKit = {
   Code,
   ColorPicker,
   ConfirmDeleteModal,
@@ -43,13 +43,13 @@ const WootUIKit = {
     keys.pop(); // remove 'install' from keys
     let i = keys.length;
     while (i--) {
-      Vue.component(`woot${keys[i]}`, this[keys[i]]);
+      Vue.component(`kairos${keys[i]}`, this[keys[i]]);
     }
   },
 };
 
 if (typeof window !== 'undefined' && window.Vue) {
-  window.Vue.use(WootUIKit);
+  window.Vue.use(KairosUIKit);
 }
 
-export default WootUIKit;
+export default KairosUIKit;

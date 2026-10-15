@@ -1,4 +1,4 @@
-{
+﻿{
   "GENERAL_SETTINGS": {
     "LIMIT_MESSAGES": {
       "CONVERSATION": "You have exceeded the conversation limit. Hacker plan allows only 500 conversations.",
@@ -6,13 +6,13 @@
       "AGENTS": "You have exceeded the agent limit. Your plan only allows {allowedAgents} agents.",
       "NON_ADMIN": "Please contact your administrator to upgrade the plan and continue using all features."
     },
-    "TITLE": "Setări cont",
-    "SUBMIT": "Actualizați setările",
-    "BACK": "Înapoi",
+    "TITLE": "SetÄƒri cont",
+    "SUBMIT": "ActualizaÈ›i setÄƒrile",
+    "BACK": "ÃŽnapoi",
     "DISMISS": "Dismiss",
     "UPDATE": {
-      "ERROR": "Nu s-au putut actualiza setările, încercați din nou!",
-      "SUCCESS": "Setările contului actualizate cu succes"
+      "ERROR": "Nu s-au putut actualiza setÄƒrile, Ã®ncercaÈ›i din nou!",
+      "SUCCESS": "SetÄƒrile contului actualizate cu succes"
     },
     "ACCOUNT_DELETE_SECTION": {
       "TITLE": "Delete your Account",
@@ -21,9 +21,9 @@
       "CONFIRM": {
         "TITLE": "Delete Account",
         "MESSAGE": "Deleting your Account is irreversible. Enter your account name below to confirm you want to permanently delete it.",
-        "BUTTON_TEXT": "Şterge",
-        "DISMISS": "Renunță",
-        "PLACE_HOLDER": "Vă rugăm să tastați {accountName} pentru a confirma"
+        "BUTTON_TEXT": "Åžterge",
+        "DISMISS": "RenunÈ›Äƒ",
+        "PLACE_HOLDER": "VÄƒ rugÄƒm sÄƒ tastaÈ›i {accountName} pentru a confirma"
       },
       "SUCCESS": "Account marked for deletion",
       "FAILURE": "Could not delete account, try again!",
@@ -35,14 +35,14 @@
       }
     },
     "FORM": {
-      "ERROR": "Vă rugăm să remediați erorile din formular",
+      "ERROR": "VÄƒ rugÄƒm sÄƒ remediaÈ›i erorile din formular",
       "GENERAL_SECTION": {
-        "TITLE": "Setări generale",
+        "TITLE": "SetÄƒri generale",
         "NOTE": ""
       },
       "ACCOUNT_ID": {
         "TITLE": "ID cont",
-        "NOTE": "Acest ID este necesar dacă construiți o integrare bazată pe API"
+        "NOTE": "Acest ID este necesar dacÄƒ construiÈ›i o integrare bazatÄƒ pe API"
       },
       "AUTO_RESOLVE": {
         "TITLE": "Auto-resolve conversations",
@@ -62,34 +62,34 @@
           "PLACEHOLDER": "Conversation was marked resolved by system due to 15 days of inactivity",
           "HELP": "Message sent to the customer after conversation is auto-resolved"
         },
-        "PREFERENCES": "Preferințe",
+        "PREFERENCES": "PreferinÈ›e",
         "LABEL": {
           "LABEL": "Add label after auto-resolution",
           "PLACEHOLDER": "Select a label"
         },
         "IGNORE_WAITING": {
-          "LABEL": "Skip conversations waiting for agent’s reply"
+          "LABEL": "Skip conversations waiting for agentâ€™s reply"
         },
         "UPDATE_BUTTON": "Save Changes"
       },
       "NAME": {
         "LABEL": "Nume cont",
-        "PLACEHOLDER": "Numele contului tău",
-        "ERROR": "Te rugăm să introduci un nume de cont valid"
+        "PLACEHOLDER": "Numele contului tÄƒu",
+        "ERROR": "Te rugÄƒm sÄƒ introduci un nume de cont valid"
       },
       "LANGUAGE": {
         "LABEL": "Limba site-ului",
-        "PLACEHOLDER": "Numele contului tău",
+        "PLACEHOLDER": "Numele contului tÄƒu",
         "ERROR": ""
       },
       "DOMAIN": {
         "LABEL": "Domeniu e-mail de intrare",
-        "PLACEHOLDER": "Domeniul în care veți primi e-mailurile",
+        "PLACEHOLDER": "Domeniul Ã®n care veÈ›i primi e-mailurile",
         "ERROR": ""
       },
       "SUPPORT_EMAIL": {
         "LABEL": "E-mail de suport",
-        "PLACEHOLDER": "E-mailul de asistență al companiei dumneavoastră",
+        "PLACEHOLDER": "E-mailul de asistenÈ›Äƒ al companiei dumneavoastrÄƒ",
         "ERROR": ""
       },
       "AUTO_RESOLVE_IGNORE_WAITING": {
@@ -119,52 +119,52 @@
         "MESSAGE_HELP": "This message is sent to the customer when a conversation is automatically resolved by the system due to inactivity."
       },
       "FEATURES": {
-        "INBOUND_EMAIL_ENABLED": "Continuitatea conversației cu e-mailurile este activată pentru contul dvs.",
-        "CUSTOM_EMAIL_DOMAIN_ENABLED": "Puteți primi e-mailuri în domeniul dvs. personalizat acum."
+        "INBOUND_EMAIL_ENABLED": "Continuitatea conversaÈ›iei cu e-mailurile este activatÄƒ pentru contul dvs.",
+        "CUSTOM_EMAIL_DOMAIN_ENABLED": "PuteÈ›i primi e-mailuri Ã®n domeniul dvs. personalizat acum."
       }
     },
-    "UPDATE_CHATWOOT": "Este disponibilă o actualizare {latestChatwootVersion} pentru Chatwoot. Vă rugăm să actualizați instanța.",
-    "LEARN_MORE": "Află mai mult",
-    "PAYMENT_PENDING": "Plata dvs. este în așteptare. Vă rugăm să actualizați informațiile de plată pentru a continua să utilizați Chatwoot",
-    "UPGRADE": "Upgrade to continue using Chatwoot",
-    "LIMITS_UPGRADE": "Contul dvs. a depășit limitele de utilizare, vă rugăm să vă actualizați planul pentru a continua să utilizați Chatwoot",
+    "UPDATE_KAIROS_CRM": "Este disponibilÄƒ o actualizare {latestKairos CRMVersion} pentru Kairos CRM. VÄƒ rugÄƒm sÄƒ actualizaÈ›i instanÈ›a.",
+    "LEARN_MORE": "AflÄƒ mai mult",
+    "PAYMENT_PENDING": "Plata dvs. este Ã®n aÈ™teptare. VÄƒ rugÄƒm sÄƒ actualizaÈ›i informaÈ›iile de platÄƒ pentru a continua sÄƒ utilizaÈ›i Kairos CRM",
+    "UPGRADE": "Upgrade to continue using Kairos CRM",
+    "LIMITS_UPGRADE": "Contul dvs. a depÄƒÈ™it limitele de utilizare, vÄƒ rugÄƒm sÄƒ vÄƒ actualizaÈ›i planul pentru a continua sÄƒ utilizaÈ›i Kairos CRM",
     "OPEN_BILLING": "Deschide facturarea"
   },
   "FORMS": {
     "MULTISELECT": {
-      "ENTER_TO_SELECT": "Apăsați enter pentru a selecta",
-      "ENTER_TO_REMOVE": "Introduceți numele complet al persoanei de contact",
+      "ENTER_TO_SELECT": "ApÄƒsaÈ›i enter pentru a selecta",
+      "ENTER_TO_REMOVE": "IntroduceÈ›i numele complet al persoanei de contact",
       "NO_OPTIONS": "List is empty",
       "SELECT_ONE": "Alege una",
-      "SELECT": "Selectați"
+      "SELECT": "SelectaÈ›i"
     }
   },
   "NOTIFICATIONS_PAGE": {
-    "HEADER": "Notificări",
-    "MARK_ALL_DONE": "Marcați toate gata",
-    "DELETE_TITLE": "șterse",
+    "HEADER": "NotificÄƒri",
+    "MARK_ALL_DONE": "MarcaÈ›i toate gata",
+    "DELETE_TITLE": "È™terse",
     "UNREAD_NOTIFICATION": {
-      "TITLE": "Notificări necitite",
-      "ALL_NOTIFICATIONS": "Vizualizarea tuturor notificărilor",
-      "LOADING_UNREAD_MESSAGE": "Încărcarea notificărilor necitite...",
-      "EMPTY_MESSAGE": "Nu aveți notificări necitite"
+      "TITLE": "NotificÄƒri necitite",
+      "ALL_NOTIFICATIONS": "Vizualizarea tuturor notificÄƒrilor",
+      "LOADING_UNREAD_MESSAGE": "ÃŽncÄƒrcarea notificÄƒrilor necitite...",
+      "EMPTY_MESSAGE": "Nu aveÈ›i notificÄƒri necitite"
     },
     "LIST": {
-      "LOADING_MESSAGE": "Se încarcă contactele...",
-      "404": "Notificări prin e-mail",
+      "LOADING_MESSAGE": "Se Ã®ncarcÄƒ contactele...",
+      "404": "NotificÄƒri prin e-mail",
       "TABLE_HEADER": [
         "Nume",
-        "Număr de telefon",
-        "Conversații",
+        "NumÄƒr de telefon",
+        "ConversaÈ›ii",
         "Ultimul contactat"
       ]
     },
     "TYPE_LABEL": {
-      "conversation_creation": "Conversație nouă",
-      "conversation_assignment": "Conversație atribuită",
+      "conversation_creation": "ConversaÈ›ie nouÄƒ",
+      "conversation_assignment": "ConversaÈ›ie atribuitÄƒ",
       "assigned_conversation_new_message": "Trimite mesaj nou",
       "participating_conversation_new_message": "Trimite mesaj nou",
-      "conversation_mention": "Menţiune",
+      "conversation_mention": "MenÅ£iune",
       "sla_missed_first_response": "SLA Missed",
       "sla_missed_next_response": "SLA Missed",
       "sla_missed_resolution": "SLA Missed"
@@ -177,77 +177,77 @@
       "RECONNECT_SUCCESS": "Reconnected"
     },
     "BUTTON": {
-      "REFRESH": "Reîmprospătare"
+      "REFRESH": "ReÃ®mprospÄƒtare"
     }
   },
   "COMMAND_BAR": {
-    "SEARCH_PLACEHOLDER": "Căutarea sau saltul la",
+    "SEARCH_PLACEHOLDER": "CÄƒutarea sau saltul la",
     "SNOOZE_PLACEHOLDER": "Type a time e.g. tomorrow, 2 hours, next friday, jan 15...",
     "SECTIONS": {
       "GENERAL": "General",
       "REPORTS": "Rapoarte",
-      "CONVERSATION": "Conversație",
+      "CONVERSATION": "ConversaÈ›ie",
       "BULK_ACTIONS": "Bulk Actions",
       "CHANGE_ASSIGNEE": "Modificarea cesionarului",
-      "CHANGE_PRIORITY": "Modificarea priorității",
+      "CHANGE_PRIORITY": "Modificarea prioritÄƒÈ›ii",
       "CHANGE_TEAM": "Schimbarea echipei",
-      "SNOOZE_CONVERSATION": "Snooze conversație",
-      "ADD_LABEL": "Adăugarea etichetei la conversație",
-      "REMOVE_LABEL": "Eliminarea etichetei din conversație",
-      "SETTINGS": "Setări",
+      "SNOOZE_CONVERSATION": "Snooze conversaÈ›ie",
+      "ADD_LABEL": "AdÄƒugarea etichetei la conversaÈ›ie",
+      "REMOVE_LABEL": "Eliminarea etichetei din conversaÈ›ie",
+      "SETTINGS": "SetÄƒri",
       "AI_ASSIST": "AI Assist",
       "APPEARANCE": "Appearance",
       "SNOOZE_NOTIFICATION": "Snooze Notification"
     },
     "COMMANDS": {
       "GO_TO_MY_INBOX": "Go to My Inbox",
-      "GO_TO_CONVERSATION_DASHBOARD": "Accesați Tabloul de bord conversație",
-      "GO_TO_CONTACTS_DASHBOARD": "Accesați Tabloul de bord persoane de contact",
+      "GO_TO_CONVERSATION_DASHBOARD": "AccesaÈ›i Tabloul de bord conversaÈ›ie",
+      "GO_TO_CONTACTS_DASHBOARD": "AccesaÈ›i Tabloul de bord persoane de contact",
       "GO_TO_CAPTAIN": "Go to Captain",
       "GO_TO_CALLS_DASHBOARD": "Go to Calls Dashboard",
       "GO_TO_CAMPAIGNS": "Go to Campaigns",
       "GO_TO_HELP_CENTER": "Go to Help Center",
-      "GO_TO_REPORTS_OVERVIEW": "Accesați Prezentare generală a rapoartelor",
-      "GO_TO_CONVERSATION_REPORTS": "Accesați Rapoartele conversațiilor",
-      "GO_TO_AGENT_REPORTS": "Accesați povestea Instagram",
-      "GO_TO_LABEL_REPORTS": "Accesați Etichetarea rapoartelor",
-      "GO_TO_INBOX_REPORTS": "Accesați Rapoarte Inbox",
-      "GO_TO_TEAM_REPORTS": "Accesați Rapoarte de echipă",
+      "GO_TO_REPORTS_OVERVIEW": "AccesaÈ›i Prezentare generalÄƒ a rapoartelor",
+      "GO_TO_CONVERSATION_REPORTS": "AccesaÈ›i Rapoartele conversaÈ›iilor",
+      "GO_TO_AGENT_REPORTS": "AccesaÈ›i povestea Instagram",
+      "GO_TO_LABEL_REPORTS": "AccesaÈ›i Etichetarea rapoartelor",
+      "GO_TO_INBOX_REPORTS": "AccesaÈ›i Rapoarte Inbox",
+      "GO_TO_TEAM_REPORTS": "AccesaÈ›i Rapoarte de echipÄƒ",
       "GO_TO_CSAT_REPORTS": "Go to CSAT Reports",
       "GO_TO_BOT_REPORTS": "Go to Bot Reports",
       "GO_TO_SLA_REPORTS": "Go to SLA Reports",
-      "GO_TO_SETTINGS_AGENTS": "Accesați Setări agent",
-      "GO_TO_SETTINGS_TEAMS": "Accesați Setările echipei",
-      "GO_TO_SETTINGS_INBOXES": "Accesați Setări Inbox",
+      "GO_TO_SETTINGS_AGENTS": "AccesaÈ›i SetÄƒri agent",
+      "GO_TO_SETTINGS_TEAMS": "AccesaÈ›i SetÄƒrile echipei",
+      "GO_TO_SETTINGS_INBOXES": "AccesaÈ›i SetÄƒri Inbox",
       "GO_TO_SETTINGS_TEMPLATES": "Go to Templates",
-      "GO_TO_SETTINGS_LABELS": "Accesați Setări etichetă",
+      "GO_TO_SETTINGS_LABELS": "AccesaÈ›i SetÄƒri etichetÄƒ",
       "GO_TO_SETTINGS_CUSTOM_ATTRIBUTES": "Go to Custom Attributes",
       "GO_TO_SETTINGS_AUTOMATION": "Go to Automation",
       "GO_TO_SETTINGS_MACROS": "Go to Macros",
-      "GO_TO_SETTINGS_CANNED_RESPONSES": "Accesați Setări răspuns conservat",
+      "GO_TO_SETTINGS_CANNED_RESPONSES": "AccesaÈ›i SetÄƒri rÄƒspuns conservat",
       "GO_TO_SETTINGS_SLA": "Go to SLA Settings",
-      "GO_TO_SETTINGS_APPLICATIONS": "Accesați Setări aplicație",
+      "GO_TO_SETTINGS_APPLICATIONS": "AccesaÈ›i SetÄƒri aplicaÈ›ie",
       "GO_TO_SETTINGS_DATA": "Go to Data",
       "GO_TO_SETTINGS_AUDIT_LOGS": "Go to Audit Logs",
       "GO_TO_SETTINGS_BILLING": "Go to Billing",
-      "GO_TO_SETTINGS_ACCOUNT": "Accesați Setări cont",
-      "GO_TO_SETTINGS_PROFILE": "Accesați Setări profil",
-      "GO_TO_NOTIFICATIONS": "Accesați Notificări",
-      "ADD_LABELS_TO_CONVERSATION": "Adăugarea etichetei la conversație",
+      "GO_TO_SETTINGS_ACCOUNT": "AccesaÈ›i SetÄƒri cont",
+      "GO_TO_SETTINGS_PROFILE": "AccesaÈ›i SetÄƒri profil",
+      "GO_TO_NOTIFICATIONS": "AccesaÈ›i NotificÄƒri",
+      "ADD_LABELS_TO_CONVERSATION": "AdÄƒugarea etichetei la conversaÈ›ie",
       "ASSIGN_AN_AGENT": "Atribuirea unui agent",
       "AI_ASSIST": "AI Assist",
-      "ASSIGN_PRIORITY": "Atribuirea priorității",
+      "ASSIGN_PRIORITY": "Atribuirea prioritÄƒÈ›ii",
       "ASSIGN_A_TEAM": "Atribuirea unei echipe",
-      "MUTE_CONVERSATION": "Silențios conversația",
-      "UNMUTE_CONVERSATION": "Sunet conversația",
-      "REMOVE_LABEL_FROM_CONVERSATION": "Eliminarea etichetei din conversație",
-      "REOPEN_CONVERSATION": "Redeschiderea conversației",
-      "RESOLVE_CONVERSATION": "Rezolvarea conversației",
+      "MUTE_CONVERSATION": "SilenÈ›ios conversaÈ›ia",
+      "UNMUTE_CONVERSATION": "Sunet conversaÈ›ia",
+      "REMOVE_LABEL_FROM_CONVERSATION": "Eliminarea etichetei din conversaÈ›ie",
+      "REOPEN_CONVERSATION": "Redeschiderea conversaÈ›iei",
+      "RESOLVE_CONVERSATION": "Rezolvarea conversaÈ›iei",
       "SEND_TRANSCRIPT": "Trimiterea unei transcrieri a e-mailului",
-      "SNOOZE_CONVERSATION": "Snooze conversație",
-      "UNTIL_NEXT_REPLY": "Până la următorul răspuns",
-      "UNTIL_NEXT_WEEK": "Până săptămâna viitoare",
-      "UNTIL_TOMORROW": "Până mâine",
+      "SNOOZE_CONVERSATION": "Snooze conversaÈ›ie",
+      "UNTIL_NEXT_REPLY": "PÃ¢nÄƒ la urmÄƒtorul rÄƒspuns",
+      "UNTIL_NEXT_WEEK": "PÃ¢nÄƒ sÄƒptÄƒmÃ¢na viitoare",
+      "UNTIL_TOMORROW": "PÃ¢nÄƒ mÃ¢ine",
       "UNTIL_NEXT_MONTH": "Until next month",
       "AN_HOUR_FROM_NOW": "Until an hour from now",
       "UNTIL_CUSTOM_TIME": "Custom...",
@@ -259,7 +259,7 @@
     }
   },
   "DASHBOARD_APPS": {
-    "LOADING_MESSAGE": "Se încarcă aplicația Dashboard..."
+    "LOADING_MESSAGE": "Se Ã®ncarcÄƒ aplicaÈ›ia Dashboard..."
   },
   "COMMON": {
     "OR": "Or",

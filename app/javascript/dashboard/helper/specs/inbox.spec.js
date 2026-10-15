@@ -102,19 +102,19 @@ describe('#Inbox Helpers', () => {
     describe('line variant', () => {
       it('returns correct line icon for web widget', () => {
         expect(getInboxIconByType(INBOX_TYPES.WEB, null, 'line')).toBe(
-          'i-woot-website'
+          'i-kairos-website'
         );
       });
 
       it('returns correct line icon for Facebook', () => {
         expect(getInboxIconByType(INBOX_TYPES.FB, null, 'line')).toBe(
-          'i-woot-messenger'
+          'i-kairos-messenger'
         );
       });
 
       it('returns correct line icon for TikTok', () => {
         expect(getInboxIconByType(INBOX_TYPES.TIKTOK, null, 'line')).toBe(
-          'i-woot-tiktok'
+          'i-kairos-tiktok'
         );
       });
 
@@ -150,7 +150,7 @@ describe('#Inbox Helpers', () => {
         it('returns WhatsApp line icon for Twilio WhatsApp number', () => {
           expect(
             getInboxIconByType(INBOX_TYPES.TWILIO, 'whatsapp', 'line')
-          ).toBe('i-woot-whatsapp');
+          ).toBe('i-kairos-whatsapp');
         });
 
         it('returns SMS line icon for regular Twilio number', () => {
@@ -173,38 +173,38 @@ describe('#Inbox Helpers', () => {
   describe('getVoiceCallIcon', () => {
     it('returns the WhatsApp voice glyph for the whatsapp provider', () => {
       expect(getVoiceCallIcon(VOICE_CALL_PROVIDERS.WHATSAPP)).toBe(
-        'i-woot-whatsapp-voice'
+        'i-kairos-whatsapp-voice'
       );
     });
 
     it('returns the generic voice-call glyph for the twilio provider', () => {
       expect(getVoiceCallIcon(VOICE_CALL_PROVIDERS.TWILIO)).toBe(
-        'i-woot-voice-call'
+        'i-kairos-voice-call'
       );
     });
 
     it('falls back to the generic voice-call glyph for an unknown provider', () => {
-      expect(getVoiceCallIcon('unknown')).toBe('i-woot-voice-call');
-      expect(getVoiceCallIcon(undefined)).toBe('i-woot-voice-call');
+      expect(getVoiceCallIcon('unknown')).toBe('i-kairos-voice-call');
+      expect(getVoiceCallIcon(undefined)).toBe('i-kairos-voice-call');
     });
   });
 
   describe('getInboxVoiceIcon', () => {
     it('returns the WhatsApp voice glyph for a WhatsApp inbox', () => {
       expect(getInboxVoiceIcon(INBOX_TYPES.WHATSAPP)).toBe(
-        'i-woot-whatsapp-voice'
+        'i-kairos-whatsapp-voice'
       );
     });
 
     it('returns the WhatsApp voice glyph for a Twilio WhatsApp inbox', () => {
       expect(getInboxVoiceIcon(INBOX_TYPES.TWILIO, 'whatsapp')).toBe(
-        'i-woot-whatsapp-voice'
+        'i-kairos-whatsapp-voice'
       );
     });
 
     it('returns the generic voice-call glyph for a Twilio voice inbox', () => {
       expect(getInboxVoiceIcon(INBOX_TYPES.TWILIO, 'sms')).toBe(
-        'i-woot-voice-call'
+        'i-kairos-voice-call'
       );
     });
   });
@@ -213,19 +213,19 @@ describe('#Inbox Helpers', () => {
     it('returns the WhatsApp voice glyph for a voice-enabled WhatsApp inbox', () => {
       expect(
         getInboxIconByType(INBOX_TYPES.WHATSAPP, undefined, 'line', true)
-      ).toBe('i-woot-whatsapp-voice');
+      ).toBe('i-kairos-whatsapp-voice');
     });
 
     it('returns the generic voice-call glyph for a voice-enabled Twilio inbox', () => {
       expect(getInboxIconByType(INBOX_TYPES.TWILIO, 'sms', 'line', true)).toBe(
-        'i-woot-voice-call'
+        'i-kairos-voice-call'
       );
     });
 
     it('returns the normal channel icon when voice is not enabled', () => {
       expect(
         getInboxIconByType(INBOX_TYPES.WHATSAPP, undefined, 'line', false)
-      ).toBe('i-woot-whatsapp');
+      ).toBe('i-kairos-whatsapp');
     });
   });
 });

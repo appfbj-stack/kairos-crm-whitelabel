@@ -8,9 +8,9 @@ import { useEmitter } from 'dashboard/composables/emitter';
 import { useKeyboardEvents } from 'dashboard/composables/useKeyboardEvents';
 import { useConversationRequiredAttributes } from 'dashboard/composables/useConversationRequiredAttributes';
 
-import WootDropdownItem from 'shared/components/ui/dropdown/DropdownItem.vue';
-import WootDropdownMenu from 'shared/components/ui/dropdown/DropdownMenu.vue';
-import wootConstants from 'dashboard/constants/globals';
+import KairosDropdownItem from 'shared/components/ui/dropdown/DropdownItem.vue';
+import KairosDropdownMenu from 'shared/components/ui/dropdown/DropdownMenu.vue';
+import kairosConstants from 'dashboard/constants/globals';
 import {
   CMD_REOPEN_CONVERSATION,
   CMD_RESOLVE_CONVERSATION,
@@ -36,16 +36,16 @@ const openDropdown = () => toggleDropdown(true);
 const currentChat = computed(() => getters.getSelectedChat.value);
 
 const isOpen = computed(
-  () => currentChat.value.status === wootConstants.STATUS_TYPE.OPEN
+  () => currentChat.value.status === kairosConstants.STATUS_TYPE.OPEN
 );
 const isPending = computed(
-  () => currentChat.value.status === wootConstants.STATUS_TYPE.PENDING
+  () => currentChat.value.status === kairosConstants.STATUS_TYPE.PENDING
 );
 const isResolved = computed(
-  () => currentChat.value.status === wootConstants.STATUS_TYPE.RESOLVED
+  () => currentChat.value.status === kairosConstants.STATUS_TYPE.RESOLVED
 );
 const isSnoozed = computed(
-  () => currentChat.value.status === wootConstants.STATUS_TYPE.SNOOZED
+  () => currentChat.value.status === kairosConstants.STATUS_TYPE.SNOOZED
 );
 
 const showAdditionalActions = computed(
@@ -106,7 +106,7 @@ const handleResolveWithAttributes = ({ attributes, context }) => {
     const currentCustomAttributes = currentChat.value.custom_attributes || {};
     const mergedAttributes = { ...currentCustomAttributes, ...attributes };
     toggleStatus(
-      wootConstants.STATUS_TYPE.RESOLVED,
+      kairosConstants.STATUS_TYPE.RESOLVED,
       context.snoozedUntil,
       mergedAttributes
     );
@@ -114,7 +114,7 @@ const handleResolveWithAttributes = ({ attributes, context }) => {
 };
 
 const onCmdOpenConversation = () => {
-  toggleStatus(wootConstants.STATUS_TYPE.OPEN);
+  toggleStatus(kairosConstants.STATUS_TYPE.OPEN);
 };
 
 const onCmdResolveConversation = () => {
@@ -134,7 +134,7 @@ const onCmdResolveConversation = () => {
       conversationContext
     );
   } else {
-    toggleStatus(wootConstants.STATUS_TYPE.RESOLVED);
+    toggleStatus(kairosConstants.STATUS_TYPE.RESOLVED);
   }
 };
 
@@ -228,8 +228,8 @@ useEmitter(CMD_RESOLVE_CONVERSATION, onCmdResolveConversation);
       v-on-clickaway="closeDropdown"
       class="border rounded-lg shadow-lg border-n-strong dark:border-n-strong box-content p-2 w-fit z-10 bg-n-alpha-3 backdrop-blur-[100px] absolute block left-auto top-full mt-0.5 start-0 xl:start-auto xl:end-0 max-w-[12.5rem] min-w-[9.75rem] [&_ul>li]:mb-0"
     >
-      <WootDropdownMenu class="mb-0">
-        <WootDropdownItem v-if="!isPending">
+      <KairosDropdownMenu class="mb-0">
+        <KairosDropdownItem v-if="!isPending">
           <Button
             :label="t('CONVERSATION.RESOLVE_DROPDOWN.SNOOZE_UNTIL')"
             ghost
@@ -240,8 +240,8 @@ useEmitter(CMD_RESOLVE_CONVERSATION, onCmdResolveConversation);
             class="w-full"
             @click="() => openSnoozeModal()"
           />
-        </WootDropdownItem>
-        <WootDropdownItem v-if="!isPending">
+        </KairosDropdownItem>
+        <KairosDropdownItem v-if="!isPending">
           <Button
             :label="t('CONVERSATION.RESOLVE_DROPDOWN.MARK_PENDING')"
             ghost
@@ -250,10 +250,10 @@ useEmitter(CMD_RESOLVE_CONVERSATION, onCmdResolveConversation);
             start
             icon="i-lucide-circle-dot-dashed"
             class="w-full"
-            @click="() => toggleStatus(wootConstants.STATUS_TYPE.PENDING)"
+            @click="() => toggleStatus(kairosConstants.STATUS_TYPE.PENDING)"
           />
-        </WootDropdownItem>
-      </WootDropdownMenu>
+        </KairosDropdownItem>
+      </KairosDropdownMenu>
     </div>
     <ConversationResolveAttributesModal
       ref="resolveAttributesModalRef"

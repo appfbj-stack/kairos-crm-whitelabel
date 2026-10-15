@@ -1,9 +1,9 @@
 <script setup>
-import WootReports from './components/WootReports.vue';
+import KairosReports from './components/KairosReports.vue';
 </script>
 
 <template>
-  <WootReports
+  <KairosReports
     key="inbox-reports"
     type="inbox"
     getter-key="inboxes/getInboxes"

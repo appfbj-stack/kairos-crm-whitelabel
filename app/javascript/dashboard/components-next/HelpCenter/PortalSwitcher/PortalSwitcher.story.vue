@@ -4,23 +4,23 @@ import PortalSwitcher from './PortalSwitcher.vue';
 const portals = [
   {
     id: 1,
-    name: 'Chatwoot Help Center',
+    name: 'Kairos CRM Help Center',
     articles: 67,
-    domain: 'chatwoot.help',
+    domain: 'kairos-crm.help',
     slug: 'help-center',
   },
   {
     id: 2,
-    name: 'Chatwoot Handbook',
+    name: 'Kairos CRM Handbook',
     articles: 42,
-    domain: 'chatwoot.help',
+    domain: 'kairos-crm.help',
     slug: 'handbook',
   },
   {
     id: 3,
     name: 'Developer Documentation',
     articles: 89,
-    domain: 'dev.chatwoot.com',
+    domain: 'dev.kairos-crm.com',
     slug: 'docs',
   },
 ];

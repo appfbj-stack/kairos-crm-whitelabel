@@ -184,7 +184,7 @@ const confirmDeletion = () => {
       </BaseTable>
     </template>
 
-    <woot-modal
+    <kairos-modal
       v-model:show="showCustomRoleModal"
       :on-close="hideCustomRoleModal"
     >
@@ -193,9 +193,9 @@ const confirmDeletion = () => {
         :selected-role="selectedRole"
         @close="hideCustomRoleModal"
       />
-    </woot-modal>
+    </kairos-modal>
 
-    <woot-delete-modal
+    <kairos-delete-modal
       v-model:show="showDeleteConfirmationPopup"
       :on-close="closeDeletePopup"
       :on-confirm="confirmDeletion"

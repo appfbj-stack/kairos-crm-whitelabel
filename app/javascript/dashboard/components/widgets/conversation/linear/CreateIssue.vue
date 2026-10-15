@@ -214,7 +214,7 @@ onMounted(getTeams);
 
 <template>
   <div>
-    <woot-input
+    <kairos-input
       v-model="formState.title"
       :class="{ error: v$.title.$error }"
       class="w-full"

@@ -1,7 +1,7 @@
 import { computed } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { useMapGetter } from 'dashboard/composables/store';
-import wootConstants from 'dashboard/constants/globals';
+import kairosConstants from 'dashboard/constants/globals';
 
 import {
   CMD_BULK_ACTION_SNOOZE_CONVERSATION,
@@ -17,7 +17,7 @@ import { emitter } from 'shared/helpers/mitt';
 
 import { createSnoozeHandlers } from 'dashboard/helper/commandbar/actions';
 
-const SNOOZE_OPTIONS = wootConstants.SNOOZE_OPTIONS;
+const SNOOZE_OPTIONS = kairosConstants.SNOOZE_OPTIONS;
 
 const createEmitHandler = event => () => emitter.emit(event);
 

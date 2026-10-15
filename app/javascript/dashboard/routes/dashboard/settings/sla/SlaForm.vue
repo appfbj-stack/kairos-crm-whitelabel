@@ -160,7 +160,7 @@ export default {
 <template>
   <div class="flex flex-col h-auto overflow-auto">
     <form class="flex flex-wrap mx-0" @submit.prevent="onSubmit">
-      <woot-input
+      <kairos-input
         v-model="name"
         :class="{ error: v$.name.$error }"
         class="w-full"
@@ -175,7 +175,7 @@ export default {
         @input="v$.name.$touch"
         @blur="v$.name.$touch"
       />
-      <woot-input
+      <kairos-input
         v-model="description"
         class="w-full"
         :styles="{

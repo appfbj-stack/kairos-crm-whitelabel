@@ -126,7 +126,7 @@ export default {
     ...mapGetters({
       accountId: 'getCurrentAccountId',
       isFeatureEnabledonAccount: 'accounts/isFeatureEnabledonAccount',
-      isOnChatwootCloud: 'globalConfig/isOnChatwootCloud',
+      isOnKairos CRMCloud: 'globalConfig/isOnKairos CRMCloud',
       isMetaMessageSendingDisabled: 'globalConfig/isMetaMessageSendingDisabled',
       uiFlags: 'inboxes/getUIFlags',
       portals: 'portals/allPortals',
@@ -139,10 +139,10 @@ export default {
     },
     showContinuityToggle() {
       if (this.isInboundEmailEnabled) return true;
-      return this.isOnChatwootCloud;
+      return this.isOnKairos CRMCloud;
     },
     isContinuityDisabled() {
-      return this.isOnChatwootCloud && !this.isInboundEmailEnabled;
+      return this.isOnKairos CRMCloud && !this.isInboundEmailEnabled;
     },
     continuityDescription() {
       if (this.isContinuityDisabled) {
@@ -395,7 +395,7 @@ export default {
       return (
         this.isAWhatsAppCloudChannel &&
         this.isEmbeddedSignupWhatsApp &&
-        (!this.isOnChatwootCloud ||
+        (!this.isOnKairos CRMCloud ||
           this.isFeatureEnabledonAccount(
             this.accountId,
             FEATURE_FLAGS.WHATSAPP_EMBEDDED_SIGNUP_FLOW
@@ -776,13 +776,13 @@ export default {
       :header-image="inbox.avatarUrl"
       :header-title="inboxName"
     >
-      <woot-tabs
+      <kairos-tabs
         class="[&_ul]:p-0 top-px relative"
         :index="selectedTabIndex"
         :border="false"
         @change="onTabChange"
       >
-        <woot-tabs-item
+        <kairos-tabs-item
           v-for="(tab, index) in tabs"
           :key="tab.key"
           :index="index"
@@ -790,7 +790,7 @@ export default {
           :show-badge="false"
           is-compact
         />
-      </woot-tabs>
+      </kairos-tabs>
     </SettingIntroBanner>
     <section class="w-full overflow-auto py-8">
       <div class="max-w-7xl mx-auto w-full">
@@ -894,7 +894,7 @@ export default {
               />
             </div>
             <SettingsFieldSection :label="inboxNameLabel">
-              <woot-input
+              <kairos-input
                 v-model="selectedInboxName"
                 class="[&>input]:!mb-0"
                 :class="{ error: v$.selectedInboxName.$error }"
@@ -913,7 +913,7 @@ export default {
                 $t('INBOX_MGMT.ADD.WEBSITE_CHANNEL.CHANNEL_WEBHOOK_URL.LABEL')
               "
             >
-              <woot-input
+              <kairos-input
                 v-model="webhookUrl"
                 class="[&>input]:!mb-0"
                 :class="{ error: v$.webhookUrl.$error }"
@@ -952,7 +952,7 @@ export default {
               v-if="isAWebWidgetInbox"
               :label="$t('INBOX_MGMT.ADD.WEBSITE_CHANNEL.CHANNEL_DOMAIN.LABEL')"
             >
-              <woot-input
+              <kairos-input
                 v-model="channelWebsiteUrl"
                 class="[&>input]:!mb-0"
                 :placeholder="
@@ -1071,7 +1071,7 @@ export default {
                   )
                 "
               >
-                <woot-input
+                <kairos-input
                   v-model="channelWelcomeTitle"
                   class="[&>input]:!mb-0"
                   :placeholder="
@@ -1180,7 +1180,7 @@ export default {
                   )
                 "
               >
-                <woot-input
+                <kairos-input
                   v-model="widgetBubbleLauncherTitle"
                   :placeholder="
                     $t(

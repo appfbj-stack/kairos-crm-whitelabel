@@ -166,7 +166,7 @@ onBeforeMount(() => {
                 <div class="flex gap-3 justify-end flex-shrink-0">
                   <Button
                     v-tooltip.top="$t('LABEL_MGMT.FORM.EDIT')"
-                    icon="i-woot-edit-pen"
+                    icon="i-kairos-edit-pen"
                     slate
                     sm
                     :is-loading="loading[label.id]"
@@ -174,7 +174,7 @@ onBeforeMount(() => {
                   />
                   <Button
                     v-tooltip.top="$t('LABEL_MGMT.FORM.DELETE')"
-                    icon="i-woot-bin"
+                    icon="i-kairos-bin"
                     slate
                     sm
                     class="hover:enabled:text-n-ruby-11 hover:enabled:bg-n-ruby-2"
@@ -189,15 +189,15 @@ onBeforeMount(() => {
       </BaseTable>
     </template>
 
-    <woot-modal v-model:show="showAddPopup" :on-close="hideAddPopup">
+    <kairos-modal v-model:show="showAddPopup" :on-close="hideAddPopup">
       <AddLabel @close="hideAddPopup" />
-    </woot-modal>
+    </kairos-modal>
 
-    <woot-modal v-model:show="showEditPopup" :on-close="hideEditPopup">
+    <kairos-modal v-model:show="showEditPopup" :on-close="hideEditPopup">
       <EditLabel :selected-response="selectedLabel" @close="hideEditPopup" />
-    </woot-modal>
+    </kairos-modal>
 
-    <woot-delete-modal
+    <kairos-delete-modal
       v-model:show="showDeleteConfirmationPopup"
       :on-close="closeDeletePopup"
       :on-confirm="confirmDeletion"

@@ -958,10 +958,10 @@ describe('stripUnsupportedFormatting', () => {
       // Underscores in URLs should not be stripped as italic formatting
       expect(
         stripUnsupportedFormatting(
-          'https://www.chatwoot.com/new_first_second-third/ssd',
+          'https://www.kairos-crm.com/new_first_second-third/ssd',
           emptySchema
         )
-      ).toBe('https://www.chatwoot.com/new_first_second-third/ssd');
+      ).toBe('https://www.kairos-crm.com/new_first_second-third/ssd');
 
       // Underscores in variable names should not be stripped
       expect(

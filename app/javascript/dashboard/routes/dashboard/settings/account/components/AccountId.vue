@@ -17,6 +17,6 @@ const getAccountId = computed(() => currentAccount.value?.id?.toString());
     :description="t('GENERAL_SETTINGS.FORM.ACCOUNT_ID.NOTE')"
     with-border
   >
-    <woot-code :script="getAccountId" />
+    <kairos-code :script="getAccountId" />
   </SectionLayout>
 </template>

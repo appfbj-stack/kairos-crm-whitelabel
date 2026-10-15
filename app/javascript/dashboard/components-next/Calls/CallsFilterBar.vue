@@ -218,7 +218,7 @@ const applyMoreFilter = ({ action, value }) => {
           variant="outline"
           color="slate"
           size="sm"
-          icon="i-woot-empty-assignee"
+          icon="i-kairos-empty-assignee"
           class="max-w-52 !h-7 !px-2"
           :class="assigneeId ? 'text-n-slate-12' : 'text-n-slate-11'"
           @click="toggleMenu('assignee')"

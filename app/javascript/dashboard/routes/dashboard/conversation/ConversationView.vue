@@ -4,7 +4,7 @@ import { useUISettings } from 'dashboard/composables/useUISettings';
 import { useAccount } from 'dashboard/composables/useAccount';
 import ChatList from '../../../components/ChatList.vue';
 import ConversationBox from '../../../components/widgets/conversation/ConversationBox.vue';
-import wootConstants from 'dashboard/constants/globals';
+import kairosConstants from 'dashboard/constants/globals';
 import { BUS_EVENTS } from 'shared/constants/busEvents';
 import CmdBarConversationSnooze from 'dashboard/routes/dashboard/commands/CmdBarConversationSnooze.vue';
 import { emitter } from 'shared/helpers/mitt';
@@ -82,7 +82,7 @@ export default {
     isOnExpandedLayout() {
       const {
         LAYOUT_TYPES: { CONDENSED },
-      } = wootConstants;
+      } = kairosConstants;
       const { conversation_display_type: conversationDisplayType = CONDENSED } =
         this.uiSettings;
       return conversationDisplayType !== CONDENSED;
@@ -132,7 +132,7 @@ export default {
       this.setActiveChat();
     },
     toggleConversationLayout() {
-      const { LAYOUT_TYPES } = wootConstants;
+      const { LAYOUT_TYPES } = kairosConstants;
       const {
         conversation_display_type:
           conversationDisplayType = LAYOUT_TYPES.CONDENSED,

@@ -3,7 +3,7 @@
 ## Nome oficial
 
 - `Kairos CRM`
-  - este repositorio e o fork do Chatwoot
+  - este repositorio e o fork do Kairos CRM
   - atendimento
   - inbox
   - agentes
@@ -12,8 +12,8 @@
 
 ## Regra principal
 
-- `chatwoot` (este repo) = `Kairos CRM`
-- tudo abaixo vira `Kairos CRM`, nada de manter `Chatwoot` / `NEXUS IA`
+- `kairos-crm` (este repo) = `Kairos CRM`
+- tudo abaixo vira `Kairos CRM`, nada de manter `Kairos CRM` / `NEXUS IA`
 
 ## Marca
 
@@ -29,7 +29,7 @@
 ## Stack
 
 - 100% VPS Dokploy (187.77.229.227)
-- Postgres + pgvector: `kairos-shared-pg` (database `chatwoot_db`)
+- Postgres + pgvector: `kairos-shared-pg` (database `kairos-crm_db`)
 - Redis: container proprio no Dokploy
 - App Rails + Sidekiq: container proprio
 - Caddy reverse proxy com wildcard SSL ja existente
@@ -42,7 +42,7 @@
 
 Este repositorio deve manter:
 
-- stack docker do fork Chatwoot rebrandado pra Kairos CRM
+- stack docker do fork Kairos CRM rebrandado pra Kairos CRM
 - wordmark `Kairos CRM` em todos os assets
 - overrides do Super Admin
 - `.env.example` do atendimento

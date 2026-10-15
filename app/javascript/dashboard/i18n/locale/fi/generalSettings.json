@@ -1,4 +1,4 @@
-{
+﻿{
   "GENERAL_SETTINGS": {
     "LIMIT_MESSAGES": {
       "CONVERSATION": "You have exceeded the conversation limit. Hacker plan allows only 500 conversations.",
@@ -7,12 +7,12 @@
       "NON_ADMIN": "Please contact your administrator to upgrade the plan and continue using all features."
     },
     "TITLE": "Tilin asetukset",
-    "SUBMIT": "Päivitä asetukset",
+    "SUBMIT": "PÃ¤ivitÃ¤ asetukset",
     "BACK": "Takaisin",
     "DISMISS": "Dismiss",
     "UPDATE": {
-      "ERROR": "Asetuksia ei voitu päivittää, yritä uudelleen",
-      "SUCCESS": "Tilin asetukset päivitetty onnistuneesti"
+      "ERROR": "Asetuksia ei voitu pÃ¤ivittÃ¤Ã¤, yritÃ¤ uudelleen",
+      "SUCCESS": "Tilin asetukset pÃ¤ivitetty onnistuneesti"
     },
     "ACCOUNT_DELETE_SECTION": {
       "TITLE": "Delete your Account",
@@ -68,7 +68,7 @@
           "PLACEHOLDER": "Select a label"
         },
         "IGNORE_WAITING": {
-          "LABEL": "Skip conversations waiting for agent’s reply"
+          "LABEL": "Skip conversations waiting for agentâ€™s reply"
         },
         "UPDATE_BUTTON": "Save Changes"
       },
@@ -83,13 +83,13 @@
         "ERROR": ""
       },
       "DOMAIN": {
-        "LABEL": "Saapuvan sähköpostin verkkotunnus",
-        "PLACEHOLDER": "Verkkotunnus, jonne saat sähköpostit",
+        "LABEL": "Saapuvan sÃ¤hkÃ¶postin verkkotunnus",
+        "PLACEHOLDER": "Verkkotunnus, jonne saat sÃ¤hkÃ¶postit",
         "ERROR": ""
       },
       "SUPPORT_EMAIL": {
-        "LABEL": "Tukisähköposti",
-        "PLACEHOLDER": "Yrityksesi tukisähköposti",
+        "LABEL": "TukisÃ¤hkÃ¶posti",
+        "PLACEHOLDER": "Yrityksesi tukisÃ¤hkÃ¶posti",
         "ERROR": ""
       },
       "AUTO_RESOLVE_IGNORE_WAITING": {
@@ -113,21 +113,21 @@
           "SUCCESS": "Auto resolve settings updated successfully",
           "ERROR": "Failed to update auto resolve settings"
         },
-        "UPDATE_BUTTON": "Päivitä",
+        "UPDATE_BUTTON": "PÃ¤ivitÃ¤",
         "MESSAGE_LABEL": "Custom resolution message",
         "MESSAGE_PLACEHOLDER": "Conversation was marked resolved by system due to 15 days of inactivity",
         "MESSAGE_HELP": "This message is sent to the customer when a conversation is automatically resolved by the system due to inactivity."
       },
       "FEATURES": {
-        "INBOUND_EMAIL_ENABLED": "Keskustelun jatkuvuus sähköpostin kautta on käytössä tililläsi.",
-        "CUSTOM_EMAIL_DOMAIN_ENABLED": "Voit nyt vastaanottaa sähköposteja mukautetulla verkkotunnuksellasi."
+        "INBOUND_EMAIL_ENABLED": "Keskustelun jatkuvuus sÃ¤hkÃ¶postin kautta on kÃ¤ytÃ¶ssÃ¤ tilillÃ¤si.",
+        "CUSTOM_EMAIL_DOMAIN_ENABLED": "Voit nyt vastaanottaa sÃ¤hkÃ¶posteja mukautetulla verkkotunnuksellasi."
       }
     },
-    "UPDATE_CHATWOOT": "An update {latestChatwootVersion} for Chatwoot is available. Please update your instance.",
+    "UPDATE_KAIROS_CRM": "An update {latestKairos CRMVersion} for Kairos CRM is available. Please update your instance.",
     "LEARN_MORE": "Learn more",
-    "PAYMENT_PENDING": "Your payment is pending. Please update your payment information to continue using Chatwoot",
-    "UPGRADE": "Upgrade to continue using Chatwoot",
-    "LIMITS_UPGRADE": "Your account has exceeded the usage limits, please upgrade your plan to continue using Chatwoot",
+    "PAYMENT_PENDING": "Your payment is pending. Please update your payment information to continue using Kairos CRM",
+    "UPGRADE": "Upgrade to continue using Kairos CRM",
+    "LIMITS_UPGRADE": "Your account has exceeded the usage limits, please upgrade your plan to continue using Kairos CRM",
     "OPEN_BILLING": "Open billing"
   },
   "FORMS": {
@@ -156,7 +156,7 @@
         "Nimi",
         "Puhelinnumero",
         "Keskustelut",
-        "Viimeksi otettu yhteyttä"
+        "Viimeksi otettu yhteyttÃ¤"
       ]
     },
     "TYPE_LABEL": {
@@ -242,7 +242,7 @@
       "UNMUTE_CONVERSATION": "Unmute conversation",
       "REMOVE_LABEL_FROM_CONVERSATION": "Remove label from the conversation",
       "REOPEN_CONVERSATION": "Avaa keskustelu uudelleen",
-      "RESOLVE_CONVERSATION": "Selvitä keskustelu",
+      "RESOLVE_CONVERSATION": "SelvitÃ¤ keskustelu",
       "SEND_TRANSCRIPT": "Send an email transcript",
       "SNOOZE_CONVERSATION": "Snooze Conversation",
       "UNTIL_NEXT_REPLY": "Until next reply",
@@ -263,6 +263,6 @@
   },
   "COMMON": {
     "OR": "Or",
-    "CLICK_HERE": "klikkaa tästä"
+    "CLICK_HERE": "klikkaa tÃ¤stÃ¤"
   }
 }

@@ -1,4 +1,4 @@
-{
+﻿{
   "GENERAL_SETTINGS": {
     "LIMIT_MESSAGES": {
       "CONVERSATION": "You have exceeded the conversation limit. Hacker plan allows only 500 conversations.",
@@ -11,7 +11,7 @@
     "BACK": "Tilbage",
     "DISMISS": "Dismiss",
     "UPDATE": {
-      "ERROR": "Kunne ikke opdatere indstillinger, prøv igen!",
+      "ERROR": "Kunne ikke opdatere indstillinger, prÃ¸v igen!",
       "SUCCESS": "Kontoindstillinger blev opdateret"
     },
     "ACCOUNT_DELETE_SECTION": {
@@ -23,7 +23,7 @@
         "MESSAGE": "Deleting your Account is irreversible. Enter your account name below to confirm you want to permanently delete it.",
         "BUTTON_TEXT": "Slet",
         "DISMISS": "Annuller",
-        "PLACE_HOLDER": "Skriv venligst {accountName} for at bekræfte"
+        "PLACE_HOLDER": "Skriv venligst {accountName} for at bekrÃ¦fte"
       },
       "SUCCESS": "Account marked for deletion",
       "FAILURE": "Could not delete account, try again!",
@@ -42,7 +42,7 @@
       },
       "ACCOUNT_ID": {
         "TITLE": "Konto SID",
-        "NOTE": "Dette ID er påkrævet, hvis du bygger en API-baseret integration"
+        "NOTE": "Dette ID er pÃ¥krÃ¦vet, hvis du bygger en API-baseret integration"
       },
       "AUTO_RESOLVE": {
         "TITLE": "Auto-resolve conversations",
@@ -68,7 +68,7 @@
           "PLACEHOLDER": "Select a label"
         },
         "IGNORE_WAITING": {
-          "LABEL": "Skip conversations waiting for agent’s reply"
+          "LABEL": "Skip conversations waiting for agentâ€™s reply"
         },
         "UPDATE_BUTTON": "Save Changes"
       },
@@ -83,8 +83,8 @@
         "ERROR": ""
       },
       "DOMAIN": {
-        "LABEL": "Indkommende E-Mail Domæne",
-        "PLACEHOLDER": "Domænet, hvor du vil modtage e-mails",
+        "LABEL": "Indkommende E-Mail DomÃ¦ne",
+        "PLACEHOLDER": "DomÃ¦net, hvor du vil modtage e-mails",
         "ERROR": ""
       },
       "SUPPORT_EMAIL": {
@@ -120,37 +120,37 @@
       },
       "FEATURES": {
         "INBOUND_EMAIL_ENABLED": "Samtale kontinuitet med e-mails er aktiveret for din konto.",
-        "CUSTOM_EMAIL_DOMAIN_ENABLED": "Du kan modtage e-mails på dit brugerdefinerede domæne nu."
+        "CUSTOM_EMAIL_DOMAIN_ENABLED": "Du kan modtage e-mails pÃ¥ dit brugerdefinerede domÃ¦ne nu."
       }
     },
-    "UPDATE_CHATWOOT": "En opdatering {latestChatwootVersion} til Chatwoot er tilgængelig. Opdater venligst din instans.",
-    "LEARN_MORE": "Lær mere",
-    "PAYMENT_PENDING": "Your payment is pending. Please update your payment information to continue using Chatwoot",
-    "UPGRADE": "Upgrade to continue using Chatwoot",
-    "LIMITS_UPGRADE": "Your account has exceeded the usage limits, please upgrade your plan to continue using Chatwoot",
+    "UPDATE_KAIROS_CRM": "En opdatering {latestKairos CRMVersion} til Kairos CRM er tilgÃ¦ngelig. Opdater venligst din instans.",
+    "LEARN_MORE": "LÃ¦r mere",
+    "PAYMENT_PENDING": "Your payment is pending. Please update your payment information to continue using Kairos CRM",
+    "UPGRADE": "Upgrade to continue using Kairos CRM",
+    "LIMITS_UPGRADE": "Your account has exceeded the usage limits, please upgrade your plan to continue using Kairos CRM",
     "OPEN_BILLING": "Open billing"
   },
   "FORMS": {
     "MULTISELECT": {
-      "ENTER_TO_SELECT": "Tryk enter for at vælge",
+      "ENTER_TO_SELECT": "Tryk enter for at vÃ¦lge",
       "ENTER_TO_REMOVE": "Tryk enter for at fjerne",
       "NO_OPTIONS": "List is empty",
-      "SELECT_ONE": "Vælg en",
-      "SELECT": "Vælg"
+      "SELECT_ONE": "VÃ¦lg en",
+      "SELECT": "VÃ¦lg"
     }
   },
   "NOTIFICATIONS_PAGE": {
     "HEADER": "Notifikationer",
-    "MARK_ALL_DONE": "Markér Alle Udførte",
+    "MARK_ALL_DONE": "MarkÃ©r Alle UdfÃ¸rte",
     "DELETE_TITLE": "slettet",
     "UNREAD_NOTIFICATION": {
-      "TITLE": "Ulæste Notifikationer",
+      "TITLE": "UlÃ¦ste Notifikationer",
       "ALL_NOTIFICATIONS": "Se alle notifikationer",
-      "LOADING_UNREAD_MESSAGE": "Indlæser ulæste notifikationer...",
-      "EMPTY_MESSAGE": "Du har ingen ulæste notifikationer"
+      "LOADING_UNREAD_MESSAGE": "IndlÃ¦ser ulÃ¦ste notifikationer...",
+      "EMPTY_MESSAGE": "Du har ingen ulÃ¦ste notifikationer"
     },
     "LIST": {
-      "LOADING_MESSAGE": "Indlæser notifikationer...",
+      "LOADING_MESSAGE": "IndlÃ¦ser notifikationer...",
       "404": "Ingen Notifikationer",
       "TABLE_HEADER": [
         "Navn",
@@ -181,7 +181,7 @@
     }
   },
   "COMMAND_BAR": {
-    "SEARCH_PLACEHOLDER": "Søg eller hop til",
+    "SEARCH_PLACEHOLDER": "SÃ¸g eller hop til",
     "SNOOZE_PLACEHOLDER": "Type a time e.g. tomorrow, 2 hours, next friday, jan 15...",
     "SECTIONS": {
       "GENERAL": "Generelt",
@@ -191,8 +191,8 @@
       "CHANGE_ASSIGNEE": "Skift Modtager",
       "CHANGE_PRIORITY": "Change Priority",
       "CHANGE_TEAM": "Skift Team",
-      "SNOOZE_CONVERSATION": "Udsæt Samtale",
-      "ADD_LABEL": "Tilføj etiket til samtalen",
+      "SNOOZE_CONVERSATION": "UdsÃ¦t Samtale",
+      "ADD_LABEL": "TilfÃ¸j etiket til samtalen",
       "REMOVE_LABEL": "Fjern etiket fra samtalen",
       "SETTINGS": "Indstillinger",
       "AI_ASSIST": "AI Assist",
@@ -201,52 +201,52 @@
     },
     "COMMANDS": {
       "GO_TO_MY_INBOX": "Go to My Inbox",
-      "GO_TO_CONVERSATION_DASHBOARD": "Gå til Konversationspanel",
-      "GO_TO_CONTACTS_DASHBOARD": "Gå til Contacts Dashboard",
+      "GO_TO_CONVERSATION_DASHBOARD": "GÃ¥ til Konversationspanel",
+      "GO_TO_CONTACTS_DASHBOARD": "GÃ¥ til Contacts Dashboard",
       "GO_TO_CAPTAIN": "Go to Captain",
       "GO_TO_CALLS_DASHBOARD": "Go to Calls Dashboard",
       "GO_TO_CAMPAIGNS": "Go to Campaigns",
       "GO_TO_HELP_CENTER": "Go to Help Center",
-      "GO_TO_REPORTS_OVERVIEW": "Gå til Oversigt over rapporter",
-      "GO_TO_CONVERSATION_REPORTS": "Gå til Konversationsrapporter",
-      "GO_TO_AGENT_REPORTS": "Gå til Agent rapporter",
-      "GO_TO_LABEL_REPORTS": "Gå til Label rapporter",
-      "GO_TO_INBOX_REPORTS": "Gå til Indbakke Rapporter",
-      "GO_TO_TEAM_REPORTS": "Gå til holdrapporter",
+      "GO_TO_REPORTS_OVERVIEW": "GÃ¥ til Oversigt over rapporter",
+      "GO_TO_CONVERSATION_REPORTS": "GÃ¥ til Konversationsrapporter",
+      "GO_TO_AGENT_REPORTS": "GÃ¥ til Agent rapporter",
+      "GO_TO_LABEL_REPORTS": "GÃ¥ til Label rapporter",
+      "GO_TO_INBOX_REPORTS": "GÃ¥ til Indbakke Rapporter",
+      "GO_TO_TEAM_REPORTS": "GÃ¥ til holdrapporter",
       "GO_TO_CSAT_REPORTS": "Go to CSAT Reports",
       "GO_TO_BOT_REPORTS": "Go to Bot Reports",
       "GO_TO_SLA_REPORTS": "Go to SLA Reports",
-      "GO_TO_SETTINGS_AGENTS": "Gå til Agent indstillinger",
-      "GO_TO_SETTINGS_TEAMS": "Gå til teamindstillinger",
-      "GO_TO_SETTINGS_INBOXES": "Gå til Indbakkeindstillinger",
+      "GO_TO_SETTINGS_AGENTS": "GÃ¥ til Agent indstillinger",
+      "GO_TO_SETTINGS_TEAMS": "GÃ¥ til teamindstillinger",
+      "GO_TO_SETTINGS_INBOXES": "GÃ¥ til Indbakkeindstillinger",
       "GO_TO_SETTINGS_TEMPLATES": "Go to Templates",
-      "GO_TO_SETTINGS_LABELS": "Gå til Label indstillinger",
+      "GO_TO_SETTINGS_LABELS": "GÃ¥ til Label indstillinger",
       "GO_TO_SETTINGS_CUSTOM_ATTRIBUTES": "Go to Custom Attributes",
       "GO_TO_SETTINGS_AUTOMATION": "Go to Automation",
       "GO_TO_SETTINGS_MACROS": "Go to Macros",
-      "GO_TO_SETTINGS_CANNED_RESPONSES": "Gå til Indstillinger for scannede svar",
+      "GO_TO_SETTINGS_CANNED_RESPONSES": "GÃ¥ til Indstillinger for scannede svar",
       "GO_TO_SETTINGS_SLA": "Go to SLA Settings",
-      "GO_TO_SETTINGS_APPLICATIONS": "Gå til programindstillinger",
+      "GO_TO_SETTINGS_APPLICATIONS": "GÃ¥ til programindstillinger",
       "GO_TO_SETTINGS_DATA": "Go to Data",
       "GO_TO_SETTINGS_AUDIT_LOGS": "Go to Audit Logs",
       "GO_TO_SETTINGS_BILLING": "Go to Billing",
-      "GO_TO_SETTINGS_ACCOUNT": "Gå til kontoindstillinger",
-      "GO_TO_SETTINGS_PROFILE": "Gå til profilindstillinger",
-      "GO_TO_NOTIFICATIONS": "Gå til Notifikationer",
-      "ADD_LABELS_TO_CONVERSATION": "Tilføj etiket til samtalen",
+      "GO_TO_SETTINGS_ACCOUNT": "GÃ¥ til kontoindstillinger",
+      "GO_TO_SETTINGS_PROFILE": "GÃ¥ til profilindstillinger",
+      "GO_TO_NOTIFICATIONS": "GÃ¥ til Notifikationer",
+      "ADD_LABELS_TO_CONVERSATION": "TilfÃ¸j etiket til samtalen",
       "ASSIGN_AN_AGENT": "Tildel en agent",
       "AI_ASSIST": "AI Assist",
       "ASSIGN_PRIORITY": "Assign priority",
       "ASSIGN_A_TEAM": "Tildel et team",
-      "MUTE_CONVERSATION": "Gør samtale lydløs",
+      "MUTE_CONVERSATION": "GÃ¸r samtale lydlÃ¸s",
       "UNMUTE_CONVERSATION": "Fjern samtale",
       "REMOVE_LABEL_FROM_CONVERSATION": "Fjern etiket fra samtalen",
-      "REOPEN_CONVERSATION": "Genåbn samtale",
-      "RESOLVE_CONVERSATION": "Løs samtale",
+      "REOPEN_CONVERSATION": "GenÃ¥bn samtale",
+      "RESOLVE_CONVERSATION": "LÃ¸s samtale",
       "SEND_TRANSCRIPT": "Send en e-mail udskrift",
-      "SNOOZE_CONVERSATION": "Udsæt Samtale",
-      "UNTIL_NEXT_REPLY": "Indtil næste svar",
-      "UNTIL_NEXT_WEEK": "Indtil næste uge",
+      "SNOOZE_CONVERSATION": "UdsÃ¦t Samtale",
+      "UNTIL_NEXT_REPLY": "Indtil nÃ¦ste svar",
+      "UNTIL_NEXT_WEEK": "Indtil nÃ¦ste uge",
       "UNTIL_TOMORROW": "Indtil i morgen",
       "UNTIL_NEXT_MONTH": "Until next month",
       "AN_HOUR_FROM_NOW": "Until an hour from now",
@@ -259,7 +259,7 @@
     }
   },
   "DASHBOARD_APPS": {
-    "LOADING_MESSAGE": "Indlæser Dashboard App..."
+    "LOADING_MESSAGE": "IndlÃ¦ser Dashboard App..."
   },
   "COMMON": {
     "OR": "Or",

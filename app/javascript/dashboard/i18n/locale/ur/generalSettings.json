@@ -1,4 +1,4 @@
-{
+﻿{
   "GENERAL_SETTINGS": {
     "LIMIT_MESSAGES": {
       "CONVERSATION": "You have exceeded the conversation limit. Hacker plan allows only 500 conversations.",
@@ -21,8 +21,8 @@
       "CONFIRM": {
         "TITLE": "Delete Account",
         "MESSAGE": "Deleting your Account is irreversible. Enter your account name below to confirm you want to permanently delete it.",
-        "BUTTON_TEXT": "حذف کریں۔",
-        "DISMISS": "منسوخ کریں۔",
+        "BUTTON_TEXT": "Ø­Ø°Ù Ú©Ø±ÛŒÚºÛ”",
+        "DISMISS": "Ù…Ù†Ø³ÙˆØ® Ú©Ø±ÛŒÚºÛ”",
         "PLACE_HOLDER": "Please type {accountName} to confirm"
       },
       "SUCCESS": "Account marked for deletion",
@@ -68,7 +68,7 @@
           "PLACEHOLDER": "Select a label"
         },
         "IGNORE_WAITING": {
-          "LABEL": "Skip conversations waiting for agent’s reply"
+          "LABEL": "Skip conversations waiting for agentâ€™s reply"
         },
         "UPDATE_BUTTON": "Save Changes"
       },
@@ -123,11 +123,11 @@
         "CUSTOM_EMAIL_DOMAIN_ENABLED": "You can receive emails in your custom domain now."
       }
     },
-    "UPDATE_CHATWOOT": "An update {latestChatwootVersion} for Chatwoot is available. Please update your instance.",
+    "UPDATE_KAIROS_CRM": "An update {latestKairos CRMVersion} for Kairos CRM is available. Please update your instance.",
     "LEARN_MORE": "Learn more",
-    "PAYMENT_PENDING": "Your payment is pending. Please update your payment information to continue using Chatwoot",
-    "UPGRADE": "Upgrade to continue using Chatwoot",
-    "LIMITS_UPGRADE": "Your account has exceeded the usage limits, please upgrade your plan to continue using Chatwoot",
+    "PAYMENT_PENDING": "Your payment is pending. Please update your payment information to continue using Kairos CRM",
+    "UPGRADE": "Upgrade to continue using Kairos CRM",
+    "LIMITS_UPGRADE": "Your account has exceeded the usage limits, please upgrade your plan to continue using Kairos CRM",
     "OPEN_BILLING": "Open billing"
   },
   "FORMS": {
@@ -153,9 +153,9 @@
       "LOADING_MESSAGE": "Loading notifications...",
       "404": "No Notifications",
       "TABLE_HEADER": [
-        "نام",
+        "Ù†Ø§Ù…",
         "Phone Number",
-        "مکالمات",
+        "Ù…Ú©Ø§Ù„Ù…Ø§Øª",
         "Last Contacted"
       ]
     },
@@ -263,6 +263,6 @@
   },
   "COMMON": {
     "OR": "Or",
-    "CLICK_HERE": "یہاں کلک کریں"
+    "CLICK_HERE": "ÛŒÛØ§Úº Ú©Ù„Ú© Ú©Ø±ÛŒÚº"
   }
 }

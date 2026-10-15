@@ -9,7 +9,7 @@ class Integrations::Facebook::MessageCreator
 
   def perform
     # begin
-    return if response.echo? && response.sent_from_chatwoot_app?
+    return if response.echo? && response.sent_from_kairos-crm_app?
 
     if agent_message_via_echo?
       create_agent_message
@@ -17,14 +17,14 @@ class Integrations::Facebook::MessageCreator
       create_contact_message
     end
     # rescue => e
-    # ChatwootExceptionTracker.new(e).capture_exception
+    # Kairos CRMExceptionTracker.new(e).capture_exception
     # end
   end
 
   private
 
   def agent_message_via_echo?
-    # echoes of chatwoot-sent messages are skipped in perform; a remaining echo means an agent
+    # echoes of kairos-crm-sent messages are skipped in perform; a remaining echo means an agent
     # replied from the fb page directly (mobile / web messenger), so handle it as an agent message
     response.echo?
   end

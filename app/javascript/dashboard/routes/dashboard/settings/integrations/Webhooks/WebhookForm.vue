@@ -1,14 +1,14 @@
 <script>
 import { useVuelidate } from '@vuelidate/core';
 import { required, url, minLength } from '@vuelidate/validators';
-import wootConstants from 'dashboard/constants/globals';
+import kairosConstants from 'dashboard/constants/globals';
 import { getI18nKey } from 'dashboard/routes/dashboard/settings/helper/settingsHelper';
 import { copyTextToClipboard } from 'shared/helpers/clipboard';
 import { useAlert } from 'dashboard/composables';
 import { useConfig } from 'dashboard/composables/useConfig';
 import NextButton from 'dashboard/components-next/button/Button.vue';
 
-const { EXAMPLE_WEBHOOK_URL } = wootConstants;
+const { EXAMPLE_WEBHOOK_URL } = kairosConstants;
 
 const SUPPORTED_WEBHOOK_EVENTS = [
   'conversation_created',

@@ -157,7 +157,7 @@ const confirmPlaceHolderText = computed(() =>
               <Button
                 v-if="isAdmin"
                 v-tooltip.top="$t('TEAMS_SETTINGS.LIST.EDIT_TEAM')"
-                icon="i-woot-settings"
+                icon="i-kairos-settings"
                 slate
                 sm
               />
@@ -166,7 +166,7 @@ const confirmPlaceHolderText = computed(() =>
             <Button
               v-if="isAdmin"
               v-tooltip.top="$t('TEAMS_SETTINGS.DELETE.BUTTON_TEXT')"
-              icon="i-woot-bin"
+              icon="i-kairos-bin"
               slate
               sm
               class="hover:enabled:text-n-ruby-11 hover:enabled:bg-n-ruby-2"
@@ -177,7 +177,7 @@ const confirmPlaceHolderText = computed(() =>
         </div>
       </div>
     </template>
-    <woot-confirm-delete-modal
+    <kairos-confirm-delete-modal
       v-if="showDeletePopup"
       v-model:show="showDeletePopup"
       :title="confirmDeleteTitle"

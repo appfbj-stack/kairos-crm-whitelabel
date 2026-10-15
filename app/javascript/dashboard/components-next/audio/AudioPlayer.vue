@@ -117,7 +117,7 @@ const downloadRecording = () => {
     >
       <template #icon>
         <Icon
-          :icon="isPlaying ? 'i-woot-audio-pause' : 'i-woot-audio-play'"
+          :icon="isPlaying ? 'i-kairos-audio-pause' : 'i-kairos-audio-play'"
           class="size-4 flex-shrink-0 text-n-slate-11"
         />
       </template>

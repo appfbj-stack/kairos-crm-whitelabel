@@ -47,7 +47,7 @@ defineEmits(['continue', 'skip']);
             class="flex items-center justify-center w-8 h-8 z-10 flex-shrink-0"
           >
             <slot name="greeting-icon">
-              <span class="i-woot-onboarding-greeting size-4 text-n-slate-7" />
+              <span class="i-kairos-onboarding-greeting size-4 text-n-slate-7" />
             </slot>
           </div>
           <div>

@@ -5,7 +5,7 @@ import { removeEmoji } from 'shared/helpers/emoji';
 
 import Icon from 'dashboard/components-next/icon/Icon.vue';
 import ChannelIcon from 'dashboard/components-next/icon/ChannelIcon.vue';
-import wootConstants from 'dashboard/constants/globals';
+import kairosConstants from 'dashboard/constants/globals';
 
 const props = defineProps({
   src: {
@@ -32,7 +32,7 @@ const props = defineProps({
     type: String,
     default: null,
     validator: value =>
-      !value || wootConstants.AVAILABILITY_STATUS_KEYS.includes(value),
+      !value || kairosConstants.AVAILABILITY_STATUS_KEYS.includes(value),
   },
   inbox: {
     type: Object,

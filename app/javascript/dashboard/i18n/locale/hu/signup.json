@@ -1,11 +1,11 @@
 {
   "REGISTER": {
     "TRY_WOOT": "Fiók létrehozása",
-    "GET_STARTED": "Get started with Chatwoot",
+    "GET_STARTED": "Get started with Kairos CRM",
     "TITLE": "Regisztrálás",
     "TESTIMONIAL_HEADER": "Már csak egy lépés van hátra",
     "TESTIMONIAL_CONTENT": "Már csak egy lépésre vagy!",
-    "TERMS_ACCEPT": "A fiók létrehozásával elfogadod az <a href=\"https://www.chatwoot.com/terms\">ÁSZF</a> és az <a href=\"https://www.chatwoot.com/privacy-policy\">Adatkezelési nyilatkozat</a> tartalmát",
+    "TERMS_ACCEPT": "A fiók létrehozásával elfogadod az <a href=\"https://www.kairos-crm.com/terms\">ÁSZF</a> és az <a href=\"https://www.kairos-crm.com/privacy-policy\">Adatkezelési nyilatkozat</a> tartalmát",
     "OAUTH": {
       "GOOGLE_SIGNUP": "Regisztráció Google-el"
     },
@@ -42,7 +42,7 @@
     },
     "API": {
       "SUCCESS_MESSAGE": "Registration Successful",
-      "ERROR_MESSAGE": "Nem sikerült csatlakozni a Woot szerverhez, kérjük próbáld később"
+      "ERROR_MESSAGE": "Nem sikerült csatlakozni a Kairos szerverhez, kérjük próbáld később"
     },
     "SUBMIT": "Fiók létrehozása",
     "HAVE_AN_ACCOUNT": "Már van fiókod?",

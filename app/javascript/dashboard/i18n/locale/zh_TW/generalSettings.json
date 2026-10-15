@@ -1,268 +1,268 @@
-{
+﻿{
   "GENERAL_SETTINGS": {
     "LIMIT_MESSAGES": {
-      "CONVERSATION": "您已超過對話數量上限。Hacker 方案僅允許 500 則對話。",
-      "INBOXES": "您已超過收件匣數量上限。Hacker 方案僅支援網站即時聊天。如需使用電子郵件、WhatsApp 等額外收件匣，請升級至付費方案。",
-      "AGENTS": "您已超過客服人員數量上限。您的方案僅允許 {allowedAgents} 位客服人員。",
-      "NON_ADMIN": "請聯絡您的管理員升級方案，以繼續使用所有功能。"
+      "CONVERSATION": "æ‚¨å·²è¶…éŽå°è©±æ•¸é‡ä¸Šé™ã€‚Hacker æ–¹æ¡ˆåƒ…å…è¨± 500 å‰‡å°è©±ã€‚",
+      "INBOXES": "æ‚¨å·²è¶…éŽæ”¶ä»¶åŒ£æ•¸é‡ä¸Šé™ã€‚Hacker æ–¹æ¡ˆåƒ…æ”¯æ´ç¶²ç«™å³æ™‚èŠå¤©ã€‚å¦‚éœ€ä½¿ç”¨é›»å­éƒµä»¶ã€WhatsApp ç­‰é¡å¤–æ”¶ä»¶åŒ£ï¼Œè«‹å‡ç´šè‡³ä»˜è²»æ–¹æ¡ˆã€‚",
+      "AGENTS": "æ‚¨å·²è¶…éŽå®¢æœäººå“¡æ•¸é‡ä¸Šé™ã€‚æ‚¨çš„æ–¹æ¡ˆåƒ…å…è¨± {allowedAgents} ä½å®¢æœäººå“¡ã€‚",
+      "NON_ADMIN": "è«‹è¯çµ¡æ‚¨çš„ç®¡ç†å“¡å‡ç´šæ–¹æ¡ˆï¼Œä»¥ç¹¼çºŒä½¿ç”¨æ‰€æœ‰åŠŸèƒ½ã€‚"
     },
-    "TITLE": "帳戶設定",
-    "SUBMIT": "更新設定",
-    "BACK": "返回",
-    "DISMISS": "關閉",
+    "TITLE": "å¸³æˆ¶è¨­å®š",
+    "SUBMIT": "æ›´æ–°è¨­å®š",
+    "BACK": "è¿”å›ž",
+    "DISMISS": "é—œé–‰",
     "UPDATE": {
-      "ERROR": "無法更新設定，請重試！",
-      "SUCCESS": "已成功更新帳戶設定"
+      "ERROR": "ç„¡æ³•æ›´æ–°è¨­å®šï¼Œè«‹é‡è©¦ï¼",
+      "SUCCESS": "å·²æˆåŠŸæ›´æ–°å¸³æˆ¶è¨­å®š"
     },
     "ACCOUNT_DELETE_SECTION": {
-      "TITLE": "刪除您的帳戶",
-      "NOTE": "一旦刪除帳戶，您的所有資料將被永久刪除。",
-      "BUTTON_TEXT": "刪除您的帳戶",
+      "TITLE": "åˆªé™¤æ‚¨çš„å¸³æˆ¶",
+      "NOTE": "ä¸€æ—¦åˆªé™¤å¸³æˆ¶ï¼Œæ‚¨çš„æ‰€æœ‰è³‡æ–™å°‡è¢«æ°¸ä¹…åˆªé™¤ã€‚",
+      "BUTTON_TEXT": "åˆªé™¤æ‚¨çš„å¸³æˆ¶",
       "CONFIRM": {
-        "TITLE": "刪除帳戶",
-        "MESSAGE": "刪除帳戶後將無法復原。請在下方輸入您的帳戶名稱以確認永久刪除。",
-        "BUTTON_TEXT": "刪除",
-        "DISMISS": "取消",
-        "PLACE_HOLDER": "請輸入 {accountName} 以確認"
+        "TITLE": "åˆªé™¤å¸³æˆ¶",
+        "MESSAGE": "åˆªé™¤å¸³æˆ¶å¾Œå°‡ç„¡æ³•å¾©åŽŸã€‚è«‹åœ¨ä¸‹æ–¹è¼¸å…¥æ‚¨çš„å¸³æˆ¶åç¨±ä»¥ç¢ºèªæ°¸ä¹…åˆªé™¤ã€‚",
+        "BUTTON_TEXT": "åˆªé™¤",
+        "DISMISS": "å–æ¶ˆ",
+        "PLACE_HOLDER": "è«‹è¼¸å…¥ {accountName} ä»¥ç¢ºèª"
       },
-      "SUCCESS": "帳戶已標記為待刪除",
-      "FAILURE": "無法刪除帳戶，請重試！",
+      "SUCCESS": "å¸³æˆ¶å·²æ¨™è¨˜ç‚ºå¾…åˆªé™¤",
+      "FAILURE": "ç„¡æ³•åˆªé™¤å¸³æˆ¶ï¼Œè«‹é‡è©¦ï¼",
       "SCHEDULED_DELETION": {
-        "TITLE": "帳戶已排定刪除",
-        "MESSAGE_MANUAL": "此帳戶已排定於 {deletionDate} 刪除。此操作由管理員發起，您可以在該日期之前取消刪除。",
-        "MESSAGE_INACTIVITY": "此帳戶因長期未使用，已排定於 {deletionDate} 刪除。您可以在該日期之前取消刪除。",
-        "CLEAR_BUTTON": "取消排定刪除"
+        "TITLE": "å¸³æˆ¶å·²æŽ’å®šåˆªé™¤",
+        "MESSAGE_MANUAL": "æ­¤å¸³æˆ¶å·²æŽ’å®šæ–¼ {deletionDate} åˆªé™¤ã€‚æ­¤æ“ä½œç”±ç®¡ç†å“¡ç™¼èµ·ï¼Œæ‚¨å¯ä»¥åœ¨è©²æ—¥æœŸä¹‹å‰å–æ¶ˆåˆªé™¤ã€‚",
+        "MESSAGE_INACTIVITY": "æ­¤å¸³æˆ¶å› é•·æœŸæœªä½¿ç”¨ï¼Œå·²æŽ’å®šæ–¼ {deletionDate} åˆªé™¤ã€‚æ‚¨å¯ä»¥åœ¨è©²æ—¥æœŸä¹‹å‰å–æ¶ˆåˆªé™¤ã€‚",
+        "CLEAR_BUTTON": "å–æ¶ˆæŽ’å®šåˆªé™¤"
       }
     },
     "FORM": {
-      "ERROR": "請修正表單錯誤",
+      "ERROR": "è«‹ä¿®æ­£è¡¨å–®éŒ¯èª¤",
       "GENERAL_SECTION": {
-        "TITLE": "一般設定",
+        "TITLE": "ä¸€èˆ¬è¨­å®š",
         "NOTE": ""
       },
       "ACCOUNT_ID": {
-        "TITLE": "帳戶 ID",
-        "NOTE": "如果您正在建立基於 API 的整合，將需要此 ID"
+        "TITLE": "å¸³æˆ¶ ID",
+        "NOTE": "å¦‚æžœæ‚¨æ­£åœ¨å»ºç«‹åŸºæ–¼ API çš„æ•´åˆï¼Œå°‡éœ€è¦æ­¤ ID"
       },
       "AUTO_RESOLVE": {
-        "TITLE": "自動解決對話",
-        "NOTE": "此設定可讓您在一段時間無活動後自動解決對話。",
+        "TITLE": "è‡ªå‹•è§£æ±ºå°è©±",
+        "NOTE": "æ­¤è¨­å®šå¯è®“æ‚¨åœ¨ä¸€æ®µæ™‚é–“ç„¡æ´»å‹•å¾Œè‡ªå‹•è§£æ±ºå°è©±ã€‚",
         "DURATION": {
-          "LABEL": "無活動持續時間",
-          "HELP": "對話在無活動多久後自動解決",
+          "LABEL": "ç„¡æ´»å‹•æŒçºŒæ™‚é–“",
+          "HELP": "å°è©±åœ¨ç„¡æ´»å‹•å¤šä¹…å¾Œè‡ªå‹•è§£æ±º",
           "PLACEHOLDER": "30",
-          "ERROR": "自動解決時間應介於 10 分鐘至 999 天之間",
+          "ERROR": "è‡ªå‹•è§£æ±ºæ™‚é–“æ‡‰ä»‹æ–¼ 10 åˆ†é˜è‡³ 999 å¤©ä¹‹é–“",
           "API": {
-            "SUCCESS": "已成功更新自動解決設定",
-            "ERROR": "無法更新自動解決設定"
+            "SUCCESS": "å·²æˆåŠŸæ›´æ–°è‡ªå‹•è§£æ±ºè¨­å®š",
+            "ERROR": "ç„¡æ³•æ›´æ–°è‡ªå‹•è§£æ±ºè¨­å®š"
           }
         },
         "MESSAGE": {
-          "LABEL": "自訂自動解決訊息",
-          "PLACEHOLDER": "由於 15 天無活動，此對話已被系統標記為已解決",
-          "HELP": "對話自動解決後傳送給客戶的訊息"
+          "LABEL": "è‡ªè¨‚è‡ªå‹•è§£æ±ºè¨Šæ¯",
+          "PLACEHOLDER": "ç”±æ–¼ 15 å¤©ç„¡æ´»å‹•ï¼Œæ­¤å°è©±å·²è¢«ç³»çµ±æ¨™è¨˜ç‚ºå·²è§£æ±º",
+          "HELP": "å°è©±è‡ªå‹•è§£æ±ºå¾Œå‚³é€çµ¦å®¢æˆ¶çš„è¨Šæ¯"
         },
-        "PREFERENCES": "偏好設定",
+        "PREFERENCES": "åå¥½è¨­å®š",
         "LABEL": {
-          "LABEL": "自動解決後新增標籤",
-          "PLACEHOLDER": "選擇標籤"
+          "LABEL": "è‡ªå‹•è§£æ±ºå¾Œæ–°å¢žæ¨™ç±¤",
+          "PLACEHOLDER": "é¸æ“‡æ¨™ç±¤"
         },
         "IGNORE_WAITING": {
-          "LABEL": "跳過等待客服回覆的對話"
+          "LABEL": "è·³éŽç­‰å¾…å®¢æœå›žè¦†çš„å°è©±"
         },
-        "UPDATE_BUTTON": "儲存變更"
+        "UPDATE_BUTTON": "å„²å­˜è®Šæ›´"
       },
       "NAME": {
-        "LABEL": "帳戶名稱",
-        "PLACEHOLDER": "您的帳戶名稱",
-        "ERROR": "請輸入有效的帳戶名稱"
+        "LABEL": "å¸³æˆ¶åç¨±",
+        "PLACEHOLDER": "æ‚¨çš„å¸³æˆ¶åç¨±",
+        "ERROR": "è«‹è¼¸å…¥æœ‰æ•ˆçš„å¸³æˆ¶åç¨±"
       },
       "LANGUAGE": {
-        "LABEL": "網站語言",
-        "PLACEHOLDER": "您的帳戶名稱",
+        "LABEL": "ç¶²ç«™èªžè¨€",
+        "PLACEHOLDER": "æ‚¨çš„å¸³æˆ¶åç¨±",
         "ERROR": ""
       },
       "DOMAIN": {
-        "LABEL": "接收電子郵件的網域",
-        "PLACEHOLDER": "用於接收郵件的網域",
+        "LABEL": "æŽ¥æ”¶é›»å­éƒµä»¶çš„ç¶²åŸŸ",
+        "PLACEHOLDER": "ç”¨æ–¼æŽ¥æ”¶éƒµä»¶çš„ç¶²åŸŸ",
         "ERROR": ""
       },
       "SUPPORT_EMAIL": {
-        "LABEL": "客服信箱",
-        "PLACEHOLDER": "您公司的客服信箱",
+        "LABEL": "å®¢æœä¿¡ç®±",
+        "PLACEHOLDER": "æ‚¨å…¬å¸çš„å®¢æœä¿¡ç®±",
         "ERROR": ""
       },
       "AUTO_RESOLVE_IGNORE_WAITING": {
-        "LABEL": "排除未回覆的對話",
-        "HELP": "啟用後，系統將跳過仍在等待客服回覆的對話，不會自動解決。"
+        "LABEL": "æŽ’é™¤æœªå›žè¦†çš„å°è©±",
+        "HELP": "å•Ÿç”¨å¾Œï¼Œç³»çµ±å°‡è·³éŽä»åœ¨ç­‰å¾…å®¢æœå›žè¦†çš„å°è©±ï¼Œä¸æœƒè‡ªå‹•è§£æ±ºã€‚"
       },
       "AUDIO_TRANSCRIPTION": {
-        "TITLE": "語音訊息轉文字",
-        "NOTE": "自動將對話中的語音訊息轉為文字。每當傳送或接收語音訊息時，系統會自動產生文字稿並顯示在訊息旁。",
+        "TITLE": "èªžéŸ³è¨Šæ¯è½‰æ–‡å­—",
+        "NOTE": "è‡ªå‹•å°‡å°è©±ä¸­çš„èªžéŸ³è¨Šæ¯è½‰ç‚ºæ–‡å­—ã€‚æ¯ç•¶å‚³é€æˆ–æŽ¥æ”¶èªžéŸ³è¨Šæ¯æ™‚ï¼Œç³»çµ±æœƒè‡ªå‹•ç”¢ç”Ÿæ–‡å­—ç¨¿ä¸¦é¡¯ç¤ºåœ¨è¨Šæ¯æ—ã€‚",
         "API": {
-          "SUCCESS": "已成功更新語音轉文字設定",
-          "ERROR": "無法更新語音轉文字設定"
+          "SUCCESS": "å·²æˆåŠŸæ›´æ–°èªžéŸ³è½‰æ–‡å­—è¨­å®š",
+          "ERROR": "ç„¡æ³•æ›´æ–°èªžéŸ³è½‰æ–‡å­—è¨­å®š"
         }
       },
       "AUTO_RESOLVE_DURATION": {
-        "LABEL": "無活動自動解決時間",
-        "HELP": "對話在無活動多久後應自動解決",
+        "LABEL": "ç„¡æ´»å‹•è‡ªå‹•è§£æ±ºæ™‚é–“",
+        "HELP": "å°è©±åœ¨ç„¡æ´»å‹•å¤šä¹…å¾Œæ‡‰è‡ªå‹•è§£æ±º",
         "PLACEHOLDER": "30",
-        "ERROR": "自動解決時間應介於 10 分鐘至 999 天之間",
+        "ERROR": "è‡ªå‹•è§£æ±ºæ™‚é–“æ‡‰ä»‹æ–¼ 10 åˆ†é˜è‡³ 999 å¤©ä¹‹é–“",
         "API": {
-          "SUCCESS": "已成功更新自動解決設定",
-          "ERROR": "無法更新自動解決設定"
+          "SUCCESS": "å·²æˆåŠŸæ›´æ–°è‡ªå‹•è§£æ±ºè¨­å®š",
+          "ERROR": "ç„¡æ³•æ›´æ–°è‡ªå‹•è§£æ±ºè¨­å®š"
         },
-        "UPDATE_BUTTON": "更新",
-        "MESSAGE_LABEL": "自訂解決訊息",
-        "MESSAGE_PLACEHOLDER": "由於 15 天無活動，此對話已被系統標記為已解決",
-        "MESSAGE_HELP": "當對話因無活動而被系統自動解決時，此訊息將傳送給客戶。"
+        "UPDATE_BUTTON": "æ›´æ–°",
+        "MESSAGE_LABEL": "è‡ªè¨‚è§£æ±ºè¨Šæ¯",
+        "MESSAGE_PLACEHOLDER": "ç”±æ–¼ 15 å¤©ç„¡æ´»å‹•ï¼Œæ­¤å°è©±å·²è¢«ç³»çµ±æ¨™è¨˜ç‚ºå·²è§£æ±º",
+        "MESSAGE_HELP": "ç•¶å°è©±å› ç„¡æ´»å‹•è€Œè¢«ç³»çµ±è‡ªå‹•è§£æ±ºæ™‚ï¼Œæ­¤è¨Šæ¯å°‡å‚³é€çµ¦å®¢æˆ¶ã€‚"
       },
       "FEATURES": {
-        "INBOUND_EMAIL_ENABLED": "您的帳戶已啟用電子郵件對話延續功能。",
-        "CUSTOM_EMAIL_DOMAIN_ENABLED": "您現在可以在自訂網域的信箱中接收郵件。"
+        "INBOUND_EMAIL_ENABLED": "æ‚¨çš„å¸³æˆ¶å·²å•Ÿç”¨é›»å­éƒµä»¶å°è©±å»¶çºŒåŠŸèƒ½ã€‚",
+        "CUSTOM_EMAIL_DOMAIN_ENABLED": "æ‚¨ç¾åœ¨å¯ä»¥åœ¨è‡ªè¨‚ç¶²åŸŸçš„ä¿¡ç®±ä¸­æŽ¥æ”¶éƒµä»¶ã€‚"
       }
     },
-    "UPDATE_CHATWOOT": "Chatwoot 有新版本 {latestChatwootVersion} 可供更新，請更新您的執行個體。",
-    "LEARN_MORE": "瞭解更多",
-    "PAYMENT_PENDING": "您的付款尚未完成，請更新付款資訊以繼續使用 Chatwoot",
-    "UPGRADE": "升級以繼續使用 Chatwoot",
-    "LIMITS_UPGRADE": "您的帳戶已超過使用量上限，請升級方案以繼續使用 Chatwoot",
-    "OPEN_BILLING": "開啟帳單"
+    "UPDATE_KAIROS_CRM": "Kairos CRM æœ‰æ–°ç‰ˆæœ¬ {latestKairos CRMVersion} å¯ä¾›æ›´æ–°ï¼Œè«‹æ›´æ–°æ‚¨çš„åŸ·è¡Œå€‹é«”ã€‚",
+    "LEARN_MORE": "çž­è§£æ›´å¤š",
+    "PAYMENT_PENDING": "æ‚¨çš„ä»˜æ¬¾å°šæœªå®Œæˆï¼Œè«‹æ›´æ–°ä»˜æ¬¾è³‡è¨Šä»¥ç¹¼çºŒä½¿ç”¨ Kairos CRM",
+    "UPGRADE": "å‡ç´šä»¥ç¹¼çºŒä½¿ç”¨ Kairos CRM",
+    "LIMITS_UPGRADE": "æ‚¨çš„å¸³æˆ¶å·²è¶…éŽä½¿ç”¨é‡ä¸Šé™ï¼Œè«‹å‡ç´šæ–¹æ¡ˆä»¥ç¹¼çºŒä½¿ç”¨ Kairos CRM",
+    "OPEN_BILLING": "é–‹å•Ÿå¸³å–®"
   },
   "FORMS": {
     "MULTISELECT": {
-      "ENTER_TO_SELECT": "按下 Enter 以選擇",
-      "ENTER_TO_REMOVE": "按下 Enter 以移除",
-      "NO_OPTIONS": "清單為空",
-      "SELECT_ONE": "選擇其中一項",
-      "SELECT": "選擇"
+      "ENTER_TO_SELECT": "æŒ‰ä¸‹ Enter ä»¥é¸æ“‡",
+      "ENTER_TO_REMOVE": "æŒ‰ä¸‹ Enter ä»¥ç§»é™¤",
+      "NO_OPTIONS": "æ¸…å–®ç‚ºç©º",
+      "SELECT_ONE": "é¸æ“‡å…¶ä¸­ä¸€é …",
+      "SELECT": "é¸æ“‡"
     }
   },
   "NOTIFICATIONS_PAGE": {
-    "HEADER": "通知",
-    "MARK_ALL_DONE": "全部標記完成",
-    "DELETE_TITLE": "已刪除",
+    "HEADER": "é€šçŸ¥",
+    "MARK_ALL_DONE": "å…¨éƒ¨æ¨™è¨˜å®Œæˆ",
+    "DELETE_TITLE": "å·²åˆªé™¤",
     "UNREAD_NOTIFICATION": {
-      "TITLE": "未讀通知",
-      "ALL_NOTIFICATIONS": "查看所有通知",
-      "LOADING_UNREAD_MESSAGE": "正在載入未讀通知...",
-      "EMPTY_MESSAGE": "您沒有未讀通知"
+      "TITLE": "æœªè®€é€šçŸ¥",
+      "ALL_NOTIFICATIONS": "æŸ¥çœ‹æ‰€æœ‰é€šçŸ¥",
+      "LOADING_UNREAD_MESSAGE": "æ­£åœ¨è¼‰å…¥æœªè®€é€šçŸ¥...",
+      "EMPTY_MESSAGE": "æ‚¨æ²’æœ‰æœªè®€é€šçŸ¥"
     },
     "LIST": {
-      "LOADING_MESSAGE": "正在載入通知...",
-      "404": "沒有通知",
+      "LOADING_MESSAGE": "æ­£åœ¨è¼‰å…¥é€šçŸ¥...",
+      "404": "æ²’æœ‰é€šçŸ¥",
       "TABLE_HEADER": [
-        "姓名",
-        "電話號碼",
-        "對話",
-        "最後聯絡"
+        "å§“å",
+        "é›»è©±è™Ÿç¢¼",
+        "å°è©±",
+        "æœ€å¾Œè¯çµ¡"
       ]
     },
     "TYPE_LABEL": {
-      "conversation_creation": "新對話",
-      "conversation_assignment": "對話已指派",
-      "assigned_conversation_new_message": "新訊息",
-      "participating_conversation_new_message": "新訊息",
-      "conversation_mention": "被提及",
-      "sla_missed_first_response": "SLA 未達標",
-      "sla_missed_next_response": "SLA 未達標",
-      "sla_missed_resolution": "SLA 未達標"
+      "conversation_creation": "æ–°å°è©±",
+      "conversation_assignment": "å°è©±å·²æŒ‡æ´¾",
+      "assigned_conversation_new_message": "æ–°è¨Šæ¯",
+      "participating_conversation_new_message": "æ–°è¨Šæ¯",
+      "conversation_mention": "è¢«æåŠ",
+      "sla_missed_first_response": "SLA æœªé”æ¨™",
+      "sla_missed_next_response": "SLA æœªé”æ¨™",
+      "sla_missed_resolution": "SLA æœªé”æ¨™"
     }
   },
   "NETWORK": {
     "NOTIFICATION": {
-      "OFFLINE": "離線",
-      "RECONNECTING": "重新連線中...",
-      "RECONNECT_SUCCESS": "已重新連線"
+      "OFFLINE": "é›¢ç·š",
+      "RECONNECTING": "é‡æ–°é€£ç·šä¸­...",
+      "RECONNECT_SUCCESS": "å·²é‡æ–°é€£ç·š"
     },
     "BUTTON": {
-      "REFRESH": "重新整理"
+      "REFRESH": "é‡æ–°æ•´ç†"
     }
   },
   "COMMAND_BAR": {
-    "SEARCH_PLACEHOLDER": "搜尋或快速跳轉",
-    "SNOOZE_PLACEHOLDER": "輸入時間，例如：明天、2 小時後、下週五、1月15日...",
+    "SEARCH_PLACEHOLDER": "æœå°‹æˆ–å¿«é€Ÿè·³è½‰",
+    "SNOOZE_PLACEHOLDER": "è¼¸å…¥æ™‚é–“ï¼Œä¾‹å¦‚ï¼šæ˜Žå¤©ã€2 å°æ™‚å¾Œã€ä¸‹é€±äº”ã€1æœˆ15æ—¥...",
     "SECTIONS": {
-      "GENERAL": "一般",
-      "REPORTS": "報表",
-      "CONVERSATION": "對話",
-      "BULK_ACTIONS": "批次操作",
-      "CHANGE_ASSIGNEE": "變更負責人",
-      "CHANGE_PRIORITY": "變更優先順序",
-      "CHANGE_TEAM": "變更團隊",
-      "SNOOZE_CONVERSATION": "延後對話",
-      "ADD_LABEL": "為對話新增標籤",
-      "REMOVE_LABEL": "從對話移除標籤",
-      "SETTINGS": "設定",
-      "AI_ASSIST": "AI 助手",
-      "APPEARANCE": "外觀",
-      "SNOOZE_NOTIFICATION": "延後通知"
+      "GENERAL": "ä¸€èˆ¬",
+      "REPORTS": "å ±è¡¨",
+      "CONVERSATION": "å°è©±",
+      "BULK_ACTIONS": "æ‰¹æ¬¡æ“ä½œ",
+      "CHANGE_ASSIGNEE": "è®Šæ›´è² è²¬äºº",
+      "CHANGE_PRIORITY": "è®Šæ›´å„ªå…ˆé †åº",
+      "CHANGE_TEAM": "è®Šæ›´åœ˜éšŠ",
+      "SNOOZE_CONVERSATION": "å»¶å¾Œå°è©±",
+      "ADD_LABEL": "ç‚ºå°è©±æ–°å¢žæ¨™ç±¤",
+      "REMOVE_LABEL": "å¾žå°è©±ç§»é™¤æ¨™ç±¤",
+      "SETTINGS": "è¨­å®š",
+      "AI_ASSIST": "AI åŠ©æ‰‹",
+      "APPEARANCE": "å¤–è§€",
+      "SNOOZE_NOTIFICATION": "å»¶å¾Œé€šçŸ¥"
     },
     "COMMANDS": {
       "GO_TO_MY_INBOX": "Go to My Inbox",
-      "GO_TO_CONVERSATION_DASHBOARD": "前往對話儀表板",
-      "GO_TO_CONTACTS_DASHBOARD": "前往聯絡人儀表板",
+      "GO_TO_CONVERSATION_DASHBOARD": "å‰å¾€å°è©±å„€è¡¨æ¿",
+      "GO_TO_CONTACTS_DASHBOARD": "å‰å¾€è¯çµ¡äººå„€è¡¨æ¿",
       "GO_TO_CAPTAIN": "Go to Captain",
       "GO_TO_CALLS_DASHBOARD": "Go to Calls Dashboard",
       "GO_TO_CAMPAIGNS": "Go to Campaigns",
       "GO_TO_HELP_CENTER": "Go to Help Center",
-      "GO_TO_REPORTS_OVERVIEW": "前往報表總覽",
-      "GO_TO_CONVERSATION_REPORTS": "前往對話報表",
-      "GO_TO_AGENT_REPORTS": "前往客服人員報表",
-      "GO_TO_LABEL_REPORTS": "前往標籤報表",
-      "GO_TO_INBOX_REPORTS": "前往收件匣報表",
-      "GO_TO_TEAM_REPORTS": "前往團隊報表",
+      "GO_TO_REPORTS_OVERVIEW": "å‰å¾€å ±è¡¨ç¸½è¦½",
+      "GO_TO_CONVERSATION_REPORTS": "å‰å¾€å°è©±å ±è¡¨",
+      "GO_TO_AGENT_REPORTS": "å‰å¾€å®¢æœäººå“¡å ±è¡¨",
+      "GO_TO_LABEL_REPORTS": "å‰å¾€æ¨™ç±¤å ±è¡¨",
+      "GO_TO_INBOX_REPORTS": "å‰å¾€æ”¶ä»¶åŒ£å ±è¡¨",
+      "GO_TO_TEAM_REPORTS": "å‰å¾€åœ˜éšŠå ±è¡¨",
       "GO_TO_CSAT_REPORTS": "Go to CSAT Reports",
       "GO_TO_BOT_REPORTS": "Go to Bot Reports",
       "GO_TO_SLA_REPORTS": "Go to SLA Reports",
-      "GO_TO_SETTINGS_AGENTS": "前往客服人員設定",
-      "GO_TO_SETTINGS_TEAMS": "前往團隊設定",
-      "GO_TO_SETTINGS_INBOXES": "前往收件匣設定",
+      "GO_TO_SETTINGS_AGENTS": "å‰å¾€å®¢æœäººå“¡è¨­å®š",
+      "GO_TO_SETTINGS_TEAMS": "å‰å¾€åœ˜éšŠè¨­å®š",
+      "GO_TO_SETTINGS_INBOXES": "å‰å¾€æ”¶ä»¶åŒ£è¨­å®š",
       "GO_TO_SETTINGS_TEMPLATES": "Go to Templates",
-      "GO_TO_SETTINGS_LABELS": "前往標籤設定",
+      "GO_TO_SETTINGS_LABELS": "å‰å¾€æ¨™ç±¤è¨­å®š",
       "GO_TO_SETTINGS_CUSTOM_ATTRIBUTES": "Go to Custom Attributes",
       "GO_TO_SETTINGS_AUTOMATION": "Go to Automation",
       "GO_TO_SETTINGS_MACROS": "Go to Macros",
-      "GO_TO_SETTINGS_CANNED_RESPONSES": "前往預設回覆設定",
+      "GO_TO_SETTINGS_CANNED_RESPONSES": "å‰å¾€é è¨­å›žè¦†è¨­å®š",
       "GO_TO_SETTINGS_SLA": "Go to SLA Settings",
-      "GO_TO_SETTINGS_APPLICATIONS": "前往應用程式設定",
+      "GO_TO_SETTINGS_APPLICATIONS": "å‰å¾€æ‡‰ç”¨ç¨‹å¼è¨­å®š",
       "GO_TO_SETTINGS_DATA": "Go to Data",
       "GO_TO_SETTINGS_AUDIT_LOGS": "Go to Audit Logs",
       "GO_TO_SETTINGS_BILLING": "Go to Billing",
-      "GO_TO_SETTINGS_ACCOUNT": "前往帳戶設定",
-      "GO_TO_SETTINGS_PROFILE": "前往個人資料設定",
-      "GO_TO_NOTIFICATIONS": "前往通知",
-      "ADD_LABELS_TO_CONVERSATION": "為對話新增標籤",
-      "ASSIGN_AN_AGENT": "指派客服人員",
-      "AI_ASSIST": "AI 助手",
-      "ASSIGN_PRIORITY": "指派優先順序",
-      "ASSIGN_A_TEAM": "指派團隊",
-      "MUTE_CONVERSATION": "將對話靜音",
-      "UNMUTE_CONVERSATION": "取消對話靜音",
-      "REMOVE_LABEL_FROM_CONVERSATION": "從對話移除標籤",
-      "REOPEN_CONVERSATION": "重新開啟對話",
-      "RESOLVE_CONVERSATION": "解決對話",
-      "SEND_TRANSCRIPT": "傳送對話記錄電子郵件",
-      "SNOOZE_CONVERSATION": "延後對話",
-      "UNTIL_NEXT_REPLY": "直到下次回覆",
-      "UNTIL_NEXT_WEEK": "直到下週",
-      "UNTIL_TOMORROW": "直到明天",
-      "UNTIL_NEXT_MONTH": "直到下個月",
-      "AN_HOUR_FROM_NOW": "一小時後",
-      "UNTIL_CUSTOM_TIME": "自訂時間...",
-      "CHANGE_APPEARANCE": "變更外觀",
-      "LIGHT_MODE": "淺色",
-      "DARK_MODE": "深色",
-      "SYSTEM_MODE": "跟隨系統",
-      "SNOOZE_NOTIFICATION": "延後通知"
+      "GO_TO_SETTINGS_ACCOUNT": "å‰å¾€å¸³æˆ¶è¨­å®š",
+      "GO_TO_SETTINGS_PROFILE": "å‰å¾€å€‹äººè³‡æ–™è¨­å®š",
+      "GO_TO_NOTIFICATIONS": "å‰å¾€é€šçŸ¥",
+      "ADD_LABELS_TO_CONVERSATION": "ç‚ºå°è©±æ–°å¢žæ¨™ç±¤",
+      "ASSIGN_AN_AGENT": "æŒ‡æ´¾å®¢æœäººå“¡",
+      "AI_ASSIST": "AI åŠ©æ‰‹",
+      "ASSIGN_PRIORITY": "æŒ‡æ´¾å„ªå…ˆé †åº",
+      "ASSIGN_A_TEAM": "æŒ‡æ´¾åœ˜éšŠ",
+      "MUTE_CONVERSATION": "å°‡å°è©±éœéŸ³",
+      "UNMUTE_CONVERSATION": "å–æ¶ˆå°è©±éœéŸ³",
+      "REMOVE_LABEL_FROM_CONVERSATION": "å¾žå°è©±ç§»é™¤æ¨™ç±¤",
+      "REOPEN_CONVERSATION": "é‡æ–°é–‹å•Ÿå°è©±",
+      "RESOLVE_CONVERSATION": "è§£æ±ºå°è©±",
+      "SEND_TRANSCRIPT": "å‚³é€å°è©±è¨˜éŒ„é›»å­éƒµä»¶",
+      "SNOOZE_CONVERSATION": "å»¶å¾Œå°è©±",
+      "UNTIL_NEXT_REPLY": "ç›´åˆ°ä¸‹æ¬¡å›žè¦†",
+      "UNTIL_NEXT_WEEK": "ç›´åˆ°ä¸‹é€±",
+      "UNTIL_TOMORROW": "ç›´åˆ°æ˜Žå¤©",
+      "UNTIL_NEXT_MONTH": "ç›´åˆ°ä¸‹å€‹æœˆ",
+      "AN_HOUR_FROM_NOW": "ä¸€å°æ™‚å¾Œ",
+      "UNTIL_CUSTOM_TIME": "è‡ªè¨‚æ™‚é–“...",
+      "CHANGE_APPEARANCE": "è®Šæ›´å¤–è§€",
+      "LIGHT_MODE": "æ·ºè‰²",
+      "DARK_MODE": "æ·±è‰²",
+      "SYSTEM_MODE": "è·Ÿéš¨ç³»çµ±",
+      "SNOOZE_NOTIFICATION": "å»¶å¾Œé€šçŸ¥"
     }
   },
   "DASHBOARD_APPS": {
-    "LOADING_MESSAGE": "正在載入儀表板應用程式..."
+    "LOADING_MESSAGE": "æ­£åœ¨è¼‰å…¥å„€è¡¨æ¿æ‡‰ç”¨ç¨‹å¼..."
   },
   "COMMON": {
-    "OR": "或",
-    "CLICK_HERE": "點擊這裡"
+    "OR": "æˆ–",
+    "CLICK_HERE": "é»žæ“Šé€™è£¡"
   }
 }

@@ -1,4 +1,4 @@
-{
+﻿{
   "GENERAL_SETTINGS": {
     "LIMIT_MESSAGES": {
       "CONVERSATION": "You have exceeded the conversation limit. Hacker plan allows only 500 conversations.",
@@ -8,11 +8,11 @@
     },
     "TITLE": "Ustawienia konta",
     "SUBMIT": "Zaktualizuj ustawienia",
-    "BACK": "Powrót",
-    "DISMISS": "Odrzuć",
+    "BACK": "PowrÃ³t",
+    "DISMISS": "OdrzuÄ‡",
     "UPDATE": {
-      "ERROR": "Nie udało się zaktualizować ustawień, spróbuj ponownie!",
-      "SUCCESS": "Ustawienia konta zostały pomyślnie zaktualizowane"
+      "ERROR": "Nie udaÅ‚o siÄ™ zaktualizowaÄ‡ ustawieÅ„, sprÃ³buj ponownie!",
+      "SUCCESS": "Ustawienia konta zostaÅ‚y pomyÅ›lnie zaktualizowane"
     },
     "ACCOUNT_DELETE_SECTION": {
       "TITLE": "Delete your Account",
@@ -21,9 +21,9 @@
       "CONFIRM": {
         "TITLE": "Delete Account",
         "MESSAGE": "Deleting your Account is irreversible. Enter your account name below to confirm you want to permanently delete it.",
-        "BUTTON_TEXT": "Usuń",
+        "BUTTON_TEXT": "UsuÅ„",
         "DISMISS": "Anuluj",
-        "PLACE_HOLDER": "Proszę wpisać {accountName}, aby potwierdzić"
+        "PLACE_HOLDER": "ProszÄ™ wpisaÄ‡ {accountName}, aby potwierdziÄ‡"
       },
       "SUCCESS": "Account marked for deletion",
       "FAILURE": "Could not delete account, try again!",
@@ -35,14 +35,14 @@
       }
     },
     "FORM": {
-      "ERROR": "Proszę poprawić błędy formularza",
+      "ERROR": "ProszÄ™ poprawiÄ‡ bÅ‚Ä™dy formularza",
       "GENERAL_SECTION": {
-        "TITLE": "Ustawienia ogólne",
+        "TITLE": "Ustawienia ogÃ³lne",
         "NOTE": ""
       },
       "ACCOUNT_ID": {
         "TITLE": "ID konta",
-        "NOTE": "To ID jest wymagane, jeśli tworzysz integrację opartą na API"
+        "NOTE": "To ID jest wymagane, jeÅ›li tworzysz integracjÄ™ opartÄ… na API"
       },
       "AUTO_RESOLVE": {
         "TITLE": "Auto-resolve conversations",
@@ -68,28 +68,28 @@
           "PLACEHOLDER": "Select a label"
         },
         "IGNORE_WAITING": {
-          "LABEL": "Skip conversations waiting for agent’s reply"
+          "LABEL": "Skip conversations waiting for agentâ€™s reply"
         },
         "UPDATE_BUTTON": "Save Changes"
       },
       "NAME": {
         "LABEL": "Nazwa konta",
         "PLACEHOLDER": "Nazwa konta",
-        "ERROR": "Wprowadź poprawną nazwę konta"
+        "ERROR": "WprowadÅº poprawnÄ… nazwÄ™ konta"
       },
       "LANGUAGE": {
-        "LABEL": "Język strony",
-        "PLACEHOLDER": "Język konta",
+        "LABEL": "JÄ™zyk strony",
+        "PLACEHOLDER": "JÄ™zyk konta",
         "ERROR": ""
       },
       "DOMAIN": {
-        "LABEL": "Domena przychodzących wiadomości e-mail",
-        "PLACEHOLDER": "Domena, na której otrzymujesz wiadomości e-mail",
+        "LABEL": "Domena przychodzÄ…cych wiadomoÅ›ci e-mail",
+        "PLACEHOLDER": "Domena, na ktÃ³rej otrzymujesz wiadomoÅ›ci e-mail",
         "ERROR": ""
       },
       "SUPPORT_EMAIL": {
-        "LABEL": "E-mail obsługi",
-        "PLACEHOLDER": "E-mail obsługi klienta Twojej firmy",
+        "LABEL": "E-mail obsÅ‚ugi",
+        "PLACEHOLDER": "E-mail obsÅ‚ugi klienta Twojej firmy",
         "ERROR": ""
       },
       "AUTO_RESOLVE_IGNORE_WAITING": {
@@ -119,21 +119,21 @@
         "MESSAGE_HELP": "This message is sent to the customer when a conversation is automatically resolved by the system due to inactivity."
       },
       "FEATURES": {
-        "INBOUND_EMAIL_ENABLED": "Kontynuacja rozmów za pomocą wiadomości e-mail jest włączona dla Twojego konta.",
-        "CUSTOM_EMAIL_DOMAIN_ENABLED": "Możesz teraz odbierać wiadomości e-mail na swojej własnej domenie."
+        "INBOUND_EMAIL_ENABLED": "Kontynuacja rozmÃ³w za pomocÄ… wiadomoÅ›ci e-mail jest wÅ‚Ä…czona dla Twojego konta.",
+        "CUSTOM_EMAIL_DOMAIN_ENABLED": "MoÅ¼esz teraz odbieraÄ‡ wiadomoÅ›ci e-mail na swojej wÅ‚asnej domenie."
       }
     },
-    "UPDATE_CHATWOOT": "Dostępna jest aktualizacja do wersji {latestChatwootVersion} Chatwoot. Proszę zaktualizować swoją instancję.",
-    "LEARN_MORE": "Dowiedz się więcej",
-    "PAYMENT_PENDING": "Twoja płatność jest w toku. Zaktualizuj informacje o płatności, aby kontynuować korzystanie z Chatwoot.",
-    "UPGRADE": "Upgrade to continue using Chatwoot",
-    "LIMITS_UPGRADE": "Twoje konto przekroczyło limit użytkowania. Zaktualizuj swój plan, aby kontynuować korzystanie z Chatwoot.",
-    "OPEN_BILLING": "Otwórz fakturę"
+    "UPDATE_KAIROS_CRM": "DostÄ™pna jest aktualizacja do wersji {latestKairos CRMVersion} Kairos CRM. ProszÄ™ zaktualizowaÄ‡ swojÄ… instancjÄ™.",
+    "LEARN_MORE": "Dowiedz siÄ™ wiÄ™cej",
+    "PAYMENT_PENDING": "Twoja pÅ‚atnoÅ›Ä‡ jest w toku. Zaktualizuj informacje o pÅ‚atnoÅ›ci, aby kontynuowaÄ‡ korzystanie z Kairos CRM.",
+    "UPGRADE": "Upgrade to continue using Kairos CRM",
+    "LIMITS_UPGRADE": "Twoje konto przekroczyÅ‚o limit uÅ¼ytkowania. Zaktualizuj swÃ³j plan, aby kontynuowaÄ‡ korzystanie z Kairos CRM.",
+    "OPEN_BILLING": "OtwÃ³rz fakturÄ™"
   },
   "FORMS": {
     "MULTISELECT": {
-      "ENTER_TO_SELECT": "Naciśnij Enter, aby wybrać",
-      "ENTER_TO_REMOVE": "Naciśnij Enter, aby usunąć",
+      "ENTER_TO_SELECT": "NaciÅ›nij Enter, aby wybraÄ‡",
+      "ENTER_TO_REMOVE": "NaciÅ›nij Enter, aby usunÄ…Ä‡",
       "NO_OPTIONS": "List is empty",
       "SELECT_ONE": "Wybierz jeden",
       "SELECT": "Wybierz"
@@ -142,16 +142,16 @@
   "NOTIFICATIONS_PAGE": {
     "HEADER": "Powiadomienia",
     "MARK_ALL_DONE": "Oznacz wszystkie jako zrobione",
-    "DELETE_TITLE": "usunięto",
+    "DELETE_TITLE": "usuniÄ™to",
     "UNREAD_NOTIFICATION": {
       "TITLE": "Nieprzeczytane powiadomienia",
-      "ALL_NOTIFICATIONS": "Wyświetl wszystkie powiadomienia",
-      "LOADING_UNREAD_MESSAGE": "Ładowanie nieprzeczytanych powiadomień...",
-      "EMPTY_MESSAGE": "Nie masz żadnych nieprzeczytanych powiadomień"
+      "ALL_NOTIFICATIONS": "WyÅ›wietl wszystkie powiadomienia",
+      "LOADING_UNREAD_MESSAGE": "Åadowanie nieprzeczytanych powiadomieÅ„...",
+      "EMPTY_MESSAGE": "Nie masz Å¼adnych nieprzeczytanych powiadomieÅ„"
     },
     "LIST": {
-      "LOADING_MESSAGE": "Ładowanie powiadomień...",
-      "404": "Nie znaleziono powiadomień",
+      "LOADING_MESSAGE": "Åadowanie powiadomieÅ„...",
+      "404": "Nie znaleziono powiadomieÅ„",
       "TABLE_HEADER": [
         "Nazwisko",
         "Numer telefonu",
@@ -162,8 +162,8 @@
     "TYPE_LABEL": {
       "conversation_creation": "Nowa rozmowa",
       "conversation_assignment": "Przypisanie rozmowy",
-      "assigned_conversation_new_message": "Nowa wiadomość",
-      "participating_conversation_new_message": "Nowa wiadomość",
+      "assigned_conversation_new_message": "Nowa wiadomoÅ›Ä‡",
+      "participating_conversation_new_message": "Nowa wiadomoÅ›Ä‡",
       "conversation_mention": "Wzmianka",
       "sla_missed_first_response": "SLA Missed",
       "sla_missed_next_response": "SLA Missed",
@@ -172,28 +172,28 @@
   },
   "NETWORK": {
     "NOTIFICATION": {
-      "OFFLINE": "Niedostępny",
+      "OFFLINE": "NiedostÄ™pny",
       "RECONNECTING": "Reconnecting...",
       "RECONNECT_SUCCESS": "Reconnected"
     },
     "BUTTON": {
-      "REFRESH": "Odśwież"
+      "REFRESH": "OdÅ›wieÅ¼"
     }
   },
   "COMMAND_BAR": {
-    "SEARCH_PLACEHOLDER": "Szukaj lub przejdź do",
+    "SEARCH_PLACEHOLDER": "Szukaj lub przejdÅº do",
     "SNOOZE_PLACEHOLDER": "Type a time e.g. tomorrow, 2 hours, next friday, jan 15...",
     "SECTIONS": {
-      "GENERAL": "Ogólne",
+      "GENERAL": "OgÃ³lne",
       "REPORTS": "Raporty",
       "CONVERSATION": "Rozmowa",
       "BULK_ACTIONS": "Bulk Actions",
-      "CHANGE_ASSIGNEE": "Zmień przypisanego",
-      "CHANGE_PRIORITY": "Zmień priorytet",
-      "CHANGE_TEAM": "Zmień zespół",
-      "SNOOZE_CONVERSATION": "Zatrzymaj rozmowę",
-      "ADD_LABEL": "Dodaj etykietę do rozmowy",
-      "REMOVE_LABEL": "Usuń etykietę z rozmowy",
+      "CHANGE_ASSIGNEE": "ZmieÅ„ przypisanego",
+      "CHANGE_PRIORITY": "ZmieÅ„ priorytet",
+      "CHANGE_TEAM": "ZmieÅ„ zespÃ³Å‚",
+      "SNOOZE_CONVERSATION": "Zatrzymaj rozmowÄ™",
+      "ADD_LABEL": "Dodaj etykietÄ™ do rozmowy",
+      "REMOVE_LABEL": "UsuÅ„ etykietÄ™ z rozmowy",
       "SETTINGS": "Ustawienia",
       "AI_ASSIST": "AI Assist",
       "APPEARANCE": "Appearance",
@@ -201,54 +201,54 @@
     },
     "COMMANDS": {
       "GO_TO_MY_INBOX": "Go to My Inbox",
-      "GO_TO_CONVERSATION_DASHBOARD": "Przejdź do pulpitu rozmów",
-      "GO_TO_CONTACTS_DASHBOARD": "Przejdź do pulpitu kontaktów",
+      "GO_TO_CONVERSATION_DASHBOARD": "PrzejdÅº do pulpitu rozmÃ³w",
+      "GO_TO_CONTACTS_DASHBOARD": "PrzejdÅº do pulpitu kontaktÃ³w",
       "GO_TO_CAPTAIN": "Go to Captain",
       "GO_TO_CALLS_DASHBOARD": "Go to Calls Dashboard",
       "GO_TO_CAMPAIGNS": "Go to Campaigns",
       "GO_TO_HELP_CENTER": "Go to Help Center",
-      "GO_TO_REPORTS_OVERVIEW": "Przejdź do przeglądu raportów",
-      "GO_TO_CONVERSATION_REPORTS": "Przejdź do raportów rozmów",
-      "GO_TO_AGENT_REPORTS": "Przejdź do raportów agentów",
-      "GO_TO_LABEL_REPORTS": "Przejdź do raportów etykiet",
-      "GO_TO_INBOX_REPORTS": "Przejdź do raportów skrzynek odbiorczych",
-      "GO_TO_TEAM_REPORTS": "Przejdź do raportów zespołów",
+      "GO_TO_REPORTS_OVERVIEW": "PrzejdÅº do przeglÄ…du raportÃ³w",
+      "GO_TO_CONVERSATION_REPORTS": "PrzejdÅº do raportÃ³w rozmÃ³w",
+      "GO_TO_AGENT_REPORTS": "PrzejdÅº do raportÃ³w agentÃ³w",
+      "GO_TO_LABEL_REPORTS": "PrzejdÅº do raportÃ³w etykiet",
+      "GO_TO_INBOX_REPORTS": "PrzejdÅº do raportÃ³w skrzynek odbiorczych",
+      "GO_TO_TEAM_REPORTS": "PrzejdÅº do raportÃ³w zespoÅ‚Ã³w",
       "GO_TO_CSAT_REPORTS": "Go to CSAT Reports",
       "GO_TO_BOT_REPORTS": "Go to Bot Reports",
       "GO_TO_SLA_REPORTS": "Go to SLA Reports",
-      "GO_TO_SETTINGS_AGENTS": "Przejdź do ustawień agentów",
-      "GO_TO_SETTINGS_TEAMS": "Przejdź do ustawień zespołów",
-      "GO_TO_SETTINGS_INBOXES": "Przejdź do ustawień skrzynek odbiorczych",
+      "GO_TO_SETTINGS_AGENTS": "PrzejdÅº do ustawieÅ„ agentÃ³w",
+      "GO_TO_SETTINGS_TEAMS": "PrzejdÅº do ustawieÅ„ zespoÅ‚Ã³w",
+      "GO_TO_SETTINGS_INBOXES": "PrzejdÅº do ustawieÅ„ skrzynek odbiorczych",
       "GO_TO_SETTINGS_TEMPLATES": "Go to Templates",
-      "GO_TO_SETTINGS_LABELS": "Przejdź do ustawień etykiet",
+      "GO_TO_SETTINGS_LABELS": "PrzejdÅº do ustawieÅ„ etykiet",
       "GO_TO_SETTINGS_CUSTOM_ATTRIBUTES": "Go to Custom Attributes",
       "GO_TO_SETTINGS_AUTOMATION": "Go to Automation",
       "GO_TO_SETTINGS_MACROS": "Go to Macros",
-      "GO_TO_SETTINGS_CANNED_RESPONSES": "Przejdź do ustawień gotowych odpowiedzi",
+      "GO_TO_SETTINGS_CANNED_RESPONSES": "PrzejdÅº do ustawieÅ„ gotowych odpowiedzi",
       "GO_TO_SETTINGS_SLA": "Go to SLA Settings",
-      "GO_TO_SETTINGS_APPLICATIONS": "Przejdź do ustawień aplikacji",
+      "GO_TO_SETTINGS_APPLICATIONS": "PrzejdÅº do ustawieÅ„ aplikacji",
       "GO_TO_SETTINGS_DATA": "Go to Data",
       "GO_TO_SETTINGS_AUDIT_LOGS": "Go to Audit Logs",
       "GO_TO_SETTINGS_BILLING": "Go to Billing",
-      "GO_TO_SETTINGS_ACCOUNT": "Przejdź do ustawień konta",
-      "GO_TO_SETTINGS_PROFILE": "Przejdź do ustawień profilu",
-      "GO_TO_NOTIFICATIONS": "Przejdź do powiadomień",
-      "ADD_LABELS_TO_CONVERSATION": "Dodaj etykietę do rozmowy",
+      "GO_TO_SETTINGS_ACCOUNT": "PrzejdÅº do ustawieÅ„ konta",
+      "GO_TO_SETTINGS_PROFILE": "PrzejdÅº do ustawieÅ„ profilu",
+      "GO_TO_NOTIFICATIONS": "PrzejdÅº do powiadomieÅ„",
+      "ADD_LABELS_TO_CONVERSATION": "Dodaj etykietÄ™ do rozmowy",
       "ASSIGN_AN_AGENT": "Przypisz agenta",
       "AI_ASSIST": "AI Assist",
       "ASSIGN_PRIORITY": "Przypisz priorytet",
-      "ASSIGN_A_TEAM": "Przypisz zespół",
-      "MUTE_CONVERSATION": "Wycisz rozmowę",
-      "UNMUTE_CONVERSATION": "Wyłącz wyciszenie rozmowy",
-      "REMOVE_LABEL_FROM_CONVERSATION": "Usuń etykietę z rozmowy",
-      "REOPEN_CONVERSATION": "Ponownie otwórz rozmowę",
-      "RESOLVE_CONVERSATION": "Zamknij rozmowę",
-      "SEND_TRANSCRIPT": "Wyślij transkrypt rozmowy",
-      "SNOOZE_CONVERSATION": "Zatrzymaj rozmowę",
-      "UNTIL_NEXT_REPLY": "Do następnej odpowiedzi",
-      "UNTIL_NEXT_WEEK": "Do następnego tygodnia",
+      "ASSIGN_A_TEAM": "Przypisz zespÃ³Å‚",
+      "MUTE_CONVERSATION": "Wycisz rozmowÄ™",
+      "UNMUTE_CONVERSATION": "WyÅ‚Ä…cz wyciszenie rozmowy",
+      "REMOVE_LABEL_FROM_CONVERSATION": "UsuÅ„ etykietÄ™ z rozmowy",
+      "REOPEN_CONVERSATION": "Ponownie otwÃ³rz rozmowÄ™",
+      "RESOLVE_CONVERSATION": "Zamknij rozmowÄ™",
+      "SEND_TRANSCRIPT": "WyÅ›lij transkrypt rozmowy",
+      "SNOOZE_CONVERSATION": "Zatrzymaj rozmowÄ™",
+      "UNTIL_NEXT_REPLY": "Do nastÄ™pnej odpowiedzi",
+      "UNTIL_NEXT_WEEK": "Do nastÄ™pnego tygodnia",
       "UNTIL_TOMORROW": "Do jutra",
-      "UNTIL_NEXT_MONTH": "Do następnego miesiąca",
+      "UNTIL_NEXT_MONTH": "Do nastÄ™pnego miesiÄ…ca",
       "AN_HOUR_FROM_NOW": "Do godziny od teraz",
       "UNTIL_CUSTOM_TIME": "Niestandardowe...",
       "CHANGE_APPEARANCE": "Change Appearance",
@@ -259,7 +259,7 @@
     }
   },
   "DASHBOARD_APPS": {
-    "LOADING_MESSAGE": "Ładowanie aplikacji pulpitu..."
+    "LOADING_MESSAGE": "Åadowanie aplikacji pulpitu..."
   },
   "COMMON": {
     "OR": "Or",

@@ -22,7 +22,7 @@ const globalConfig = useMapGetter('globalConfig/get');
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g clip-path="url(#woot-logo-clip-2342424e23u32098)">
+    <g clip-path="url(#kairos-logo-clip-2342424e23u32098)">
       <path
         d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16Z"
         fill="#2781F6"
@@ -35,7 +35,7 @@ const globalConfig = useMapGetter('globalConfig/get');
       />
     </g>
     <defs>
-      <clipPath id="woot-logo-clip-2342424e23u32098">
+      <clipPath id="kairos-logo-clip-2342424e23u32098">
         <rect width="16" height="16" fill="white" />
       </clipPath>
     </defs>

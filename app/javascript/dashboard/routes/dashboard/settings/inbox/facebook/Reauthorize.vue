@@ -33,9 +33,9 @@ export default {
   methods: {
     runFBInit() {
       FB.init({
-        appId: window.chatwootConfig.fbAppId,
+        appId: window.kairos-crmConfig.fbAppId,
         xfbml: true,
-        version: window.chatwootConfig.fbApiVersion,
+        version: window.kairos-crmConfig.fbApiVersion,
         status: true,
       });
       window.fbSDKLoaded = true;

@@ -1,4 +1,4 @@
-import { WOOT_PREFIX } from './constants';
+import { KAIROS_PREFIX } from './constants';
 
 export const isEmptyObject = obj => {
   if (!obj) return true;
@@ -7,7 +7,7 @@ export const isEmptyObject = obj => {
 
 export const sendMessage = msg => {
   window.parent.postMessage(
-    `chatwoot-widget:${JSON.stringify({ ...msg })}`,
+    `kairos-crm-widget:${JSON.stringify({ ...msg })}`,
     '*'
   );
 };
@@ -17,15 +17,15 @@ export const IFrameHelper = {
   sendMessage,
   isAValidEvent: e => {
     const isDataAString = typeof e.data === 'string';
-    return isDataAString && e.data.indexOf(WOOT_PREFIX) === 0;
+    return isDataAString && e.data.indexOf(KAIROS_PREFIX) === 0;
   },
-  getMessage: e => JSON.parse(e.data.replace(WOOT_PREFIX, '')),
+  getMessage: e => JSON.parse(e.data.replace(KAIROS_PREFIX, '')),
 };
 export const RNHelper = {
   isRNWebView: () => window.ReactNativeWebView,
   sendMessage: msg => {
     window.ReactNativeWebView.postMessage(
-      `chatwoot-widget:${JSON.stringify({ ...msg })}`
+      `kairos-crm-widget:${JSON.stringify({ ...msg })}`
     );
   },
 };

@@ -8,7 +8,7 @@ describe('#buildSearchParamsWithLocale', () => {
   it('returns correct search params', () => {
     let windowSpy = vi.spyOn(window, 'window', 'get');
     windowSpy.mockImplementation(() => ({
-      WOOT_WIDGET: {
+      KAIROS_WIDGET: {
         $root: {
           $i18n: {
             locale: 'el',

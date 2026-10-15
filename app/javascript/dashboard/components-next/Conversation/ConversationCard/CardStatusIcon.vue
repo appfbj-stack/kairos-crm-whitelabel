@@ -16,17 +16,17 @@ const props = defineProps({
 });
 
 const icons = {
-  [CONVERSATION_STATUS.OPEN]: 'i-woot-status-open',
-  [CONVERSATION_STATUS.RESOLVED]: 'i-woot-status-resolved',
-  [CONVERSATION_STATUS.PENDING]: 'i-woot-status-pending',
-  [CONVERSATION_STATUS.SNOOZED]: 'i-woot-status-snoozed',
+  [CONVERSATION_STATUS.OPEN]: 'i-kairos-status-open',
+  [CONVERSATION_STATUS.RESOLVED]: 'i-kairos-status-resolved',
+  [CONVERSATION_STATUS.PENDING]: 'i-kairos-status-pending',
+  [CONVERSATION_STATUS.SNOOZED]: 'i-kairos-status-snoozed',
 };
 
 const iconName = computed(() => {
   if (props.status && icons[props.status]) {
     return icons[props.status];
   }
-  return props.showEmpty ? 'i-woot-status-empty' : '';
+  return props.showEmpty ? 'i-kairos-status-empty' : '';
 });
 </script>
 

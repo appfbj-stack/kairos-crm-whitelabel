@@ -70,7 +70,7 @@ describe('composeConversationHelper', () => {
       const result = helpers.buildContactableInboxesList(inboxes);
       expect(result[0]).toMatchObject({
         id: 1,
-        icon: 'i-woot-mail',
+        icon: 'i-kairos-mail',
         label: 'Email Inbox (support@example.com)',
         action: 'inbox',
         value: 1,
@@ -91,7 +91,7 @@ describe('composeConversationHelper', () => {
       ];
 
       const result = helpers.buildContactableInboxesList(inboxes);
-      expect(result[0].icon).toBe('i-woot-whatsapp-voice');
+      expect(result[0].icon).toBe('i-kairos-whatsapp-voice');
     });
   });
 

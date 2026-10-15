@@ -100,9 +100,9 @@ export default {
 </script>
 
 <template>
-  <woot-modal v-model:show="localShow" :on-close="onCancel">
+  <kairos-modal v-model:show="localShow" :on-close="onCancel">
     <div class="flex flex-col h-auto overflow-auto">
-      <woot-modal-header
+      <kairos-modal-header
         :header-title="$t('EMAIL_TRANSCRIPT.TITLE')"
         :header-content="$t('EMAIL_TRANSCRIPT.DESC')"
       />
@@ -183,5 +183,5 @@ export default {
         </div>
       </form>
     </div>
-  </woot-modal>
+  </kairos-modal>
 </template>

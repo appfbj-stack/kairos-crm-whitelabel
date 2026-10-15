@@ -5,7 +5,7 @@ import { useAccount } from 'dashboard/composables/useAccount';
 import { useI18n } from 'vue-i18n';
 import { useToggle } from '@vueuse/core';
 import { useAlert } from 'dashboard/composables';
-import WootConfirmDeleteModal from 'dashboard/components/widgets/modal/ConfirmDeleteModal.vue';
+import KairosConfirmDeleteModal from 'dashboard/components/widgets/modal/ConfirmDeleteModal.vue';
 import NextButton from 'dashboard/components-next/button/Button.vue';
 import SectionLayout from './SectionLayout.vue';
 
@@ -130,7 +130,7 @@ async function clearDeletionMark() {
       />
     </div>
   </SectionLayout>
-  <WootConfirmDeleteModal
+  <KairosConfirmDeleteModal
     v-if="showDeletePopup"
     v-model:show="showDeletePopup"
     :title="$t('GENERAL_SETTINGS.ACCOUNT_DELETE_SECTION.CONFIRM.TITLE')"

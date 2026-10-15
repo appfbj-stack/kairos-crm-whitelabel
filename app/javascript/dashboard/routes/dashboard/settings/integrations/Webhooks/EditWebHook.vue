@@ -46,7 +46,7 @@ export default {
 
 <template>
   <div class="flex flex-col h-auto overflow-auto">
-    <woot-modal-header
+    <kairos-modal-header
       :header-title="$t('INTEGRATION_SETTINGS.WEBHOOK.EDIT.TITLE')"
     />
     <WebhookForm

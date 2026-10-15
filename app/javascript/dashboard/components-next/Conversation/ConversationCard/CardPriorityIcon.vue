@@ -18,10 +18,10 @@ const props = defineProps({
 const { t } = useI18n();
 
 const icons = {
-  [CONVERSATION_PRIORITY.URGENT]: 'i-woot-priority-urgent',
-  [CONVERSATION_PRIORITY.HIGH]: 'i-woot-priority-high',
-  [CONVERSATION_PRIORITY.MEDIUM]: 'i-woot-priority-medium',
-  [CONVERSATION_PRIORITY.LOW]: 'i-woot-priority-low',
+  [CONVERSATION_PRIORITY.URGENT]: 'i-kairos-priority-urgent',
+  [CONVERSATION_PRIORITY.HIGH]: 'i-kairos-priority-high',
+  [CONVERSATION_PRIORITY.MEDIUM]: 'i-kairos-priority-medium',
+  [CONVERSATION_PRIORITY.LOW]: 'i-kairos-priority-low',
 };
 
 const priorityLabels = {
@@ -35,7 +35,7 @@ const iconName = computed(() => {
   if (props.priority && icons[props.priority]) {
     return icons[props.priority];
   }
-  return props.showEmpty ? 'i-woot-priority-empty' : '';
+  return props.showEmpty ? 'i-kairos-priority-empty' : '';
 });
 
 const tooltipContent = computed(() => {

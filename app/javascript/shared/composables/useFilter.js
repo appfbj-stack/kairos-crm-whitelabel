@@ -1,4 +1,4 @@
-import wootConstants from 'dashboard/constants/globals';
+import kairosConstants from 'dashboard/constants/globals';
 import { useStore } from 'dashboard/composables/store';
 import { useI18n } from 'vue-i18n';
 import { filterAttributeGroups as conversationFilterAttributeGroups } from 'dashboard/components/widgets/conversation/advancedFilterItems';
@@ -110,7 +110,7 @@ export const useFilter = ({ filteri18nKey, attributeModel }) => {
         custom_attribute_type: '',
       };
     }
-    if (activeAssigneeTab === wootConstants.ASSIGNEE_TYPE.ME) {
+    if (activeAssigneeTab === kairosConstants.ASSIGNEE_TYPE.ME) {
       return {
         attribute_key: 'assignee_id',
         filter_operator: 'equal_to',

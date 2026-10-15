@@ -82,7 +82,7 @@ export default {
 <template>
   <form @submit.prevent="changePassword()">
     <div class="flex flex-col w-full gap-4">
-      <woot-input
+      <kairos-input
         v-model="currentPassword"
         type="password"
         :styles="inputStyles"
@@ -98,7 +98,7 @@ export default {
         @blur="v$.currentPassword.$touch"
       />
 
-      <woot-input
+      <kairos-input
         v-model="password"
         type="password"
         :styles="inputStyles"
@@ -112,7 +112,7 @@ export default {
         @blur="v$.password.$touch"
       />
 
-      <woot-input
+      <kairos-input
         v-model="passwordConfirmation"
         type="password"
         :styles="inputStyles"

@@ -94,7 +94,7 @@ export default {
           {{ $t('CONVERSATION.REPLYBOX.EMAIL_HEAD.TO') }}
         </label>
         <div class="flex-1 min-w-0 m-0 rounded-none whitespace-nowrap">
-          <woot-input
+          <kairos-input
             v-model="v$.toEmailsVal.$model"
             type="text"
             class="[&>input]:!mb-0 [&>input]:border-transparent [&>input]:!outline-none [&>input]:h-8 [&>input]:!text-sm [&>input]:!border-0 [&>input]:border-none [&>input]:!bg-transparent dark:[&>input]:!bg-transparent"
@@ -111,7 +111,7 @@ export default {
           {{ $t('CONVERSATION.REPLYBOX.EMAIL_HEAD.CC.LABEL') }}
         </label>
         <div class="flex-1 min-w-0 m-0 rounded-none whitespace-nowrap">
-          <woot-input
+          <kairos-input
             v-model="v$.ccEmailsVal.$model"
             class="[&>input]:!mb-0 [&>input]:border-transparent [&>input]:!outline-none [&>input]:h-8 [&>input]:!text-sm [&>input]:!border-0 [&>input]:border-none [&>input]:!bg-transparent dark:[&>input]:!bg-transparent"
             type="text"
@@ -139,7 +139,7 @@ export default {
           {{ $t('CONVERSATION.REPLYBOX.EMAIL_HEAD.BCC.LABEL') }}
         </label>
         <div class="flex-1 min-w-0 m-0 rounded-none whitespace-nowrap">
-          <woot-input
+          <kairos-input
             v-model="v$.bccEmailsVal.$model"
             type="text"
             class="[&>input]:!mb-0 [&>input]:border-transparent [&>input]:!outline-none [&>input]:h-8 [&>input]:!text-sm [&>input]:!border-0 [&>input]:border-none [&>input]:!bg-transparent dark:[&>input]:!bg-transparent"

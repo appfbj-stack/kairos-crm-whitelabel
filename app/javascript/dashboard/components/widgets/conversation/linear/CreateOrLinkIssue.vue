@@ -50,7 +50,7 @@ const onClickTabChange = index => {
 
 <template>
   <div class="flex flex-col h-auto overflow-auto">
-    <woot-modal-header
+    <kairos-modal-header
       :header-title="$t('INTEGRATION_SETTINGS.LINEAR.ADD_OR_LINK.TITLE')"
       :header-content="
         $t('INTEGRATION_SETTINGS.LINEAR.ADD_OR_LINK.DESCRIPTION')
@@ -59,12 +59,12 @@ const onClickTabChange = index => {
 
     <div class="flex flex-col h-auto overflow-auto">
       <div class="flex flex-col px-8 pb-4 mt-1">
-        <woot-tabs
+        <kairos-tabs
           class="ltr:[&>ul]:pl-0 rtl:[&>ul]:pr-0 h-10"
           :index="selectedTabIndex"
           @change="onClickTabChange"
         >
-          <woot-tabs-item
+          <kairos-tabs-item
             v-for="(tab, index) in tabs"
             :key="tab.key"
             :index="index"
@@ -72,7 +72,7 @@ const onClickTabChange = index => {
             :show-badge="false"
             is-compact
           />
-        </woot-tabs>
+        </kairos-tabs>
       </div>
       <div v-if="selectedTabIndex === 0" class="flex flex-col px-8 pb-4">
         <CreateIssue

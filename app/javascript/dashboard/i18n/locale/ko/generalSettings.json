@@ -1,268 +1,268 @@
-{
+﻿{
   "GENERAL_SETTINGS": {
     "LIMIT_MESSAGES": {
-      "CONVERSATION": "대화 제한을 초과했습니다. Hacker 플랜은 500개의 대화만 허용합니다.",
-      "INBOXES": "받은 메시지함 제한을 초과했습니다. Hacker 플랜은 웹사이트 실시간 채팅만 지원합니다. 이메일, WhatsApp 등의 추가 받은 메시지함은 유료 플랜이 필요합니다.",
-      "AGENTS": "에이전트 제한을 초과했습니다. 현재 플랜은 {allowedAgents}명의 에이전트만 허용합니다.",
-      "NON_ADMIN": "플랜을 업그레이드하고 모든 기능을 계속 사용하려면 관리자에게 문의하십시오."
+      "CONVERSATION": "ëŒ€í™” ì œí•œì„ ì´ˆê³¼í–ˆìŠµë‹ˆë‹¤. Hacker í”Œëžœì€ 500ê°œì˜ ëŒ€í™”ë§Œ í—ˆìš©í•©ë‹ˆë‹¤.",
+      "INBOXES": "ë°›ì€ ë©”ì‹œì§€í•¨ ì œí•œì„ ì´ˆê³¼í–ˆìŠµë‹ˆë‹¤. Hacker í”Œëžœì€ ì›¹ì‚¬ì´íŠ¸ ì‹¤ì‹œê°„ ì±„íŒ…ë§Œ ì§€ì›í•©ë‹ˆë‹¤. ì´ë©”ì¼, WhatsApp ë“±ì˜ ì¶”ê°€ ë°›ì€ ë©”ì‹œì§€í•¨ì€ ìœ ë£Œ í”Œëžœì´ í•„ìš”í•©ë‹ˆë‹¤.",
+      "AGENTS": "ì—ì´ì „íŠ¸ ì œí•œì„ ì´ˆê³¼í–ˆìŠµë‹ˆë‹¤. í˜„ìž¬ í”Œëžœì€ {allowedAgents}ëª…ì˜ ì—ì´ì „íŠ¸ë§Œ í—ˆìš©í•©ë‹ˆë‹¤.",
+      "NON_ADMIN": "í”Œëžœì„ ì—…ê·¸ë ˆì´ë“œí•˜ê³  ëª¨ë“  ê¸°ëŠ¥ì„ ê³„ì† ì‚¬ìš©í•˜ë ¤ë©´ ê´€ë¦¬ìžì—ê²Œ ë¬¸ì˜í•˜ì‹­ì‹œì˜¤."
     },
-    "TITLE": "계정 설정",
-    "SUBMIT": "설정 업데이트",
-    "BACK": "뒤로",
-    "DISMISS": "닫기",
+    "TITLE": "ê³„ì • ì„¤ì •",
+    "SUBMIT": "ì„¤ì • ì—…ë°ì´íŠ¸",
+    "BACK": "ë’¤ë¡œ",
+    "DISMISS": "ë‹«ê¸°",
     "UPDATE": {
-      "ERROR": "설정을 업데이트할 수 없습니다, 다시 시도하십시오!",
-      "SUCCESS": "계정 설정이 성공적으로 업데이트됨"
+      "ERROR": "ì„¤ì •ì„ ì—…ë°ì´íŠ¸í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤, ë‹¤ì‹œ ì‹œë„í•˜ì‹­ì‹œì˜¤!",
+      "SUCCESS": "ê³„ì • ì„¤ì •ì´ ì„±ê³µì ìœ¼ë¡œ ì—…ë°ì´íŠ¸ë¨"
     },
     "ACCOUNT_DELETE_SECTION": {
-      "TITLE": "계정 삭제",
-      "NOTE": "계정을 삭제하면 모든 데이터가 삭제됩니다.",
-      "BUTTON_TEXT": "계정 삭제",
+      "TITLE": "ê³„ì • ì‚­ì œ",
+      "NOTE": "ê³„ì •ì„ ì‚­ì œí•˜ë©´ ëª¨ë“  ë°ì´í„°ê°€ ì‚­ì œë©ë‹ˆë‹¤.",
+      "BUTTON_TEXT": "ê³„ì • ì‚­ì œ",
       "CONFIRM": {
-        "TITLE": "계정 삭제",
-        "MESSAGE": "계정 삭제는 되돌릴 수 없습니다. 영구적으로 삭제하려면 아래에 계정 이름을 입력하십시오.",
-        "BUTTON_TEXT": "삭제",
-        "DISMISS": "취소",
-        "PLACE_HOLDER": "확인하려면 {accountName}을(를) 입력하십시오"
+        "TITLE": "ê³„ì • ì‚­ì œ",
+        "MESSAGE": "ê³„ì • ì‚­ì œëŠ” ë˜ëŒë¦´ ìˆ˜ ì—†ìŠµë‹ˆë‹¤. ì˜êµ¬ì ìœ¼ë¡œ ì‚­ì œí•˜ë ¤ë©´ ì•„ëž˜ì— ê³„ì • ì´ë¦„ì„ ìž…ë ¥í•˜ì‹­ì‹œì˜¤.",
+        "BUTTON_TEXT": "ì‚­ì œ",
+        "DISMISS": "ì·¨ì†Œ",
+        "PLACE_HOLDER": "í™•ì¸í•˜ë ¤ë©´ {accountName}ì„(ë¥¼) ìž…ë ¥í•˜ì‹­ì‹œì˜¤"
       },
-      "SUCCESS": "계정이 삭제 예정으로 표시되었습니다",
-      "FAILURE": "계정을 삭제할 수 없습니다. 다시 시도하십시오!",
+      "SUCCESS": "ê³„ì •ì´ ì‚­ì œ ì˜ˆì •ìœ¼ë¡œ í‘œì‹œë˜ì—ˆìŠµë‹ˆë‹¤",
+      "FAILURE": "ê³„ì •ì„ ì‚­ì œí•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤. ë‹¤ì‹œ ì‹œë„í•˜ì‹­ì‹œì˜¤!",
       "SCHEDULED_DELETION": {
-        "TITLE": "계정 삭제 예약됨",
-        "MESSAGE_MANUAL": "이 계정은 {deletionDate}에 삭제될 예정입니다. 관리자가 요청했습니다. 해당 날짜 이전에 삭제를 취소할 수 있습니다.",
-        "MESSAGE_INACTIVITY": "이 계정은 비활성으로 인해 {deletionDate}에 삭제될 예정입니다. 해당 날짜 이전에 삭제를 취소할 수 있습니다.",
-        "CLEAR_BUTTON": "예약된 삭제 취소"
+        "TITLE": "ê³„ì • ì‚­ì œ ì˜ˆì•½ë¨",
+        "MESSAGE_MANUAL": "ì´ ê³„ì •ì€ {deletionDate}ì— ì‚­ì œë  ì˜ˆì •ìž…ë‹ˆë‹¤. ê´€ë¦¬ìžê°€ ìš”ì²­í–ˆìŠµë‹ˆë‹¤. í•´ë‹¹ ë‚ ì§œ ì´ì „ì— ì‚­ì œë¥¼ ì·¨ì†Œí•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.",
+        "MESSAGE_INACTIVITY": "ì´ ê³„ì •ì€ ë¹„í™œì„±ìœ¼ë¡œ ì¸í•´ {deletionDate}ì— ì‚­ì œë  ì˜ˆì •ìž…ë‹ˆë‹¤. í•´ë‹¹ ë‚ ì§œ ì´ì „ì— ì‚­ì œë¥¼ ì·¨ì†Œí•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.",
+        "CLEAR_BUTTON": "ì˜ˆì•½ëœ ì‚­ì œ ì·¨ì†Œ"
       }
     },
     "FORM": {
-      "ERROR": "양식 오류를 수정하십시오.",
+      "ERROR": "ì–‘ì‹ ì˜¤ë¥˜ë¥¼ ìˆ˜ì •í•˜ì‹­ì‹œì˜¤.",
       "GENERAL_SECTION": {
-        "TITLE": "일반 설정",
+        "TITLE": "ì¼ë°˜ ì„¤ì •",
         "NOTE": ""
       },
       "ACCOUNT_ID": {
-        "TITLE": "계정 ID",
-        "NOTE": "API 기반 통합을 구축하는 경우 이 ID가 필요합니다"
+        "TITLE": "ê³„ì • ID",
+        "NOTE": "API ê¸°ë°˜ í†µí•©ì„ êµ¬ì¶•í•˜ëŠ” ê²½ìš° ì´ IDê°€ í•„ìš”í•©ë‹ˆë‹¤"
       },
       "AUTO_RESOLVE": {
-        "TITLE": "대화 자동 해결",
-        "NOTE": "이 설정을 사용하면 일정 기간 비활성 후 대화를 자동으로 해결할 수 있습니다.",
+        "TITLE": "ëŒ€í™” ìžë™ í•´ê²°",
+        "NOTE": "ì´ ì„¤ì •ì„ ì‚¬ìš©í•˜ë©´ ì¼ì • ê¸°ê°„ ë¹„í™œì„± í›„ ëŒ€í™”ë¥¼ ìžë™ìœ¼ë¡œ í•´ê²°í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.",
         "DURATION": {
-          "LABEL": "비활성 기간",
-          "HELP": "대화가 자동 해결되기까지의 비활성 기간",
+          "LABEL": "ë¹„í™œì„± ê¸°ê°„",
+          "HELP": "ëŒ€í™”ê°€ ìžë™ í•´ê²°ë˜ê¸°ê¹Œì§€ì˜ ë¹„í™œì„± ê¸°ê°„",
           "PLACEHOLDER": "30",
-          "ERROR": "자동 해결 기간은 10분에서 999일 사이여야 합니다",
+          "ERROR": "ìžë™ í•´ê²° ê¸°ê°„ì€ 10ë¶„ì—ì„œ 999ì¼ ì‚¬ì´ì—¬ì•¼ í•©ë‹ˆë‹¤",
           "API": {
-            "SUCCESS": "자동 해결 설정이 성공적으로 업데이트되었습니다",
-            "ERROR": "자동 해결 설정을 업데이트하지 못했습니다"
+            "SUCCESS": "ìžë™ í•´ê²° ì„¤ì •ì´ ì„±ê³µì ìœ¼ë¡œ ì—…ë°ì´íŠ¸ë˜ì—ˆìŠµë‹ˆë‹¤",
+            "ERROR": "ìžë™ í•´ê²° ì„¤ì •ì„ ì—…ë°ì´íŠ¸í•˜ì§€ ëª»í–ˆìŠµë‹ˆë‹¤"
           }
         },
         "MESSAGE": {
-          "LABEL": "사용자 지정 자동 해결 메시지",
-          "PLACEHOLDER": "15일간 비활성으로 인해 시스템이 대화를 해결됨으로 표시했습니다",
-          "HELP": "대화가 자동 해결된 후 고객에게 전송되는 메시지"
+          "LABEL": "ì‚¬ìš©ìž ì§€ì • ìžë™ í•´ê²° ë©”ì‹œì§€",
+          "PLACEHOLDER": "15ì¼ê°„ ë¹„í™œì„±ìœ¼ë¡œ ì¸í•´ ì‹œìŠ¤í…œì´ ëŒ€í™”ë¥¼ í•´ê²°ë¨ìœ¼ë¡œ í‘œì‹œí–ˆìŠµë‹ˆë‹¤",
+          "HELP": "ëŒ€í™”ê°€ ìžë™ í•´ê²°ëœ í›„ ê³ ê°ì—ê²Œ ì „ì†¡ë˜ëŠ” ë©”ì‹œì§€"
         },
-        "PREFERENCES": "환경설정",
+        "PREFERENCES": "í™˜ê²½ì„¤ì •",
         "LABEL": {
-          "LABEL": "자동 해결 후 라벨 추가",
-          "PLACEHOLDER": "라벨 선택"
+          "LABEL": "ìžë™ í•´ê²° í›„ ë¼ë²¨ ì¶”ê°€",
+          "PLACEHOLDER": "ë¼ë²¨ ì„ íƒ"
         },
         "IGNORE_WAITING": {
-          "LABEL": "에이전트 응답 대기 중인 대화 건너뛰기"
+          "LABEL": "ì—ì´ì „íŠ¸ ì‘ë‹µ ëŒ€ê¸° ì¤‘ì¸ ëŒ€í™” ê±´ë„ˆë›°ê¸°"
         },
-        "UPDATE_BUTTON": "변경사항 저장"
+        "UPDATE_BUTTON": "ë³€ê²½ì‚¬í•­ ì €ìž¥"
       },
       "NAME": {
-        "LABEL": "계정 이름",
-        "PLACEHOLDER": "당신의 계정 이름",
-        "ERROR": "올바른 계정 이름을 입력하십시오."
+        "LABEL": "ê³„ì • ì´ë¦„",
+        "PLACEHOLDER": "ë‹¹ì‹ ì˜ ê³„ì • ì´ë¦„",
+        "ERROR": "ì˜¬ë°”ë¥¸ ê³„ì • ì´ë¦„ì„ ìž…ë ¥í•˜ì‹­ì‹œì˜¤."
       },
       "LANGUAGE": {
-        "LABEL": "사이트 언어",
-        "PLACEHOLDER": "당신의 계정 이름",
+        "LABEL": "ì‚¬ì´íŠ¸ ì–¸ì–´",
+        "PLACEHOLDER": "ë‹¹ì‹ ì˜ ê³„ì • ì´ë¦„",
         "ERROR": ""
       },
       "DOMAIN": {
-        "LABEL": "수신 이메일 도메인",
-        "PLACEHOLDER": "이메일을 수신할 도메인",
+        "LABEL": "ìˆ˜ì‹  ì´ë©”ì¼ ë„ë©”ì¸",
+        "PLACEHOLDER": "ì´ë©”ì¼ì„ ìˆ˜ì‹ í•  ë„ë©”ì¸",
         "ERROR": ""
       },
       "SUPPORT_EMAIL": {
-        "LABEL": "이메일 지원",
-        "PLACEHOLDER": "회사 지원 이메일",
+        "LABEL": "ì´ë©”ì¼ ì§€ì›",
+        "PLACEHOLDER": "íšŒì‚¬ ì§€ì› ì´ë©”ì¼",
         "ERROR": ""
       },
       "AUTO_RESOLVE_IGNORE_WAITING": {
-        "LABEL": "미응답 대화 제외",
-        "HELP": "활성화하면 시스템이 아직 에이전트 응답을 기다리고 있는 대화의 해결을 건너뜁니다."
+        "LABEL": "ë¯¸ì‘ë‹µ ëŒ€í™” ì œì™¸",
+        "HELP": "í™œì„±í™”í•˜ë©´ ì‹œìŠ¤í…œì´ ì•„ì§ ì—ì´ì „íŠ¸ ì‘ë‹µì„ ê¸°ë‹¤ë¦¬ê³  ìžˆëŠ” ëŒ€í™”ì˜ í•´ê²°ì„ ê±´ë„ˆëœë‹ˆë‹¤."
       },
       "AUDIO_TRANSCRIPTION": {
-        "TITLE": "음성 메시지 변환",
-        "NOTE": "대화에서 음성 메시지를 자동으로 텍스트로 변환합니다. 음성 메시지가 전송되거나 수신될 때마다 텍스트 변환본을 생성하여 메시지와 함께 표시합니다.",
+        "TITLE": "ìŒì„± ë©”ì‹œì§€ ë³€í™˜",
+        "NOTE": "ëŒ€í™”ì—ì„œ ìŒì„± ë©”ì‹œì§€ë¥¼ ìžë™ìœ¼ë¡œ í…ìŠ¤íŠ¸ë¡œ ë³€í™˜í•©ë‹ˆë‹¤. ìŒì„± ë©”ì‹œì§€ê°€ ì „ì†¡ë˜ê±°ë‚˜ ìˆ˜ì‹ ë  ë•Œë§ˆë‹¤ í…ìŠ¤íŠ¸ ë³€í™˜ë³¸ì„ ìƒì„±í•˜ì—¬ ë©”ì‹œì§€ì™€ í•¨ê»˜ í‘œì‹œí•©ë‹ˆë‹¤.",
         "API": {
-          "SUCCESS": "음성 변환 설정이 성공적으로 업데이트되었습니다",
-          "ERROR": "음성 변환 설정을 업데이트하지 못했습니다"
+          "SUCCESS": "ìŒì„± ë³€í™˜ ì„¤ì •ì´ ì„±ê³µì ìœ¼ë¡œ ì—…ë°ì´íŠ¸ë˜ì—ˆìŠµë‹ˆë‹¤",
+          "ERROR": "ìŒì„± ë³€í™˜ ì„¤ì •ì„ ì—…ë°ì´íŠ¸í•˜ì§€ ëª»í–ˆìŠµë‹ˆë‹¤"
         }
       },
       "AUTO_RESOLVE_DURATION": {
-        "LABEL": "해결을 위한 비활성 기간",
-        "HELP": "활동이 없을 경우 대화를 자동 해결하는 기간",
+        "LABEL": "í•´ê²°ì„ ìœ„í•œ ë¹„í™œì„± ê¸°ê°„",
+        "HELP": "í™œë™ì´ ì—†ì„ ê²½ìš° ëŒ€í™”ë¥¼ ìžë™ í•´ê²°í•˜ëŠ” ê¸°ê°„",
         "PLACEHOLDER": "30",
-        "ERROR": "자동 해결 기간은 10분에서 999일 사이여야 합니다",
+        "ERROR": "ìžë™ í•´ê²° ê¸°ê°„ì€ 10ë¶„ì—ì„œ 999ì¼ ì‚¬ì´ì—¬ì•¼ í•©ë‹ˆë‹¤",
         "API": {
-          "SUCCESS": "자동 해결 설정이 성공적으로 업데이트되었습니다",
-          "ERROR": "자동 해결 설정을 업데이트하지 못했습니다"
+          "SUCCESS": "ìžë™ í•´ê²° ì„¤ì •ì´ ì„±ê³µì ìœ¼ë¡œ ì—…ë°ì´íŠ¸ë˜ì—ˆìŠµë‹ˆë‹¤",
+          "ERROR": "ìžë™ í•´ê²° ì„¤ì •ì„ ì—…ë°ì´íŠ¸í•˜ì§€ ëª»í–ˆìŠµë‹ˆë‹¤"
         },
-        "UPDATE_BUTTON": "업데이트",
-        "MESSAGE_LABEL": "사용자 지정 해결 메시지",
-        "MESSAGE_PLACEHOLDER": "15일간 비활성으로 인해 시스템이 대화를 해결됨으로 표시했습니다",
-        "MESSAGE_HELP": "비활성으로 인해 시스템이 자동으로 대화를 해결할 때 고객에게 전송되는 메시지입니다."
+        "UPDATE_BUTTON": "ì—…ë°ì´íŠ¸",
+        "MESSAGE_LABEL": "ì‚¬ìš©ìž ì§€ì • í•´ê²° ë©”ì‹œì§€",
+        "MESSAGE_PLACEHOLDER": "15ì¼ê°„ ë¹„í™œì„±ìœ¼ë¡œ ì¸í•´ ì‹œìŠ¤í…œì´ ëŒ€í™”ë¥¼ í•´ê²°ë¨ìœ¼ë¡œ í‘œì‹œí–ˆìŠµë‹ˆë‹¤",
+        "MESSAGE_HELP": "ë¹„í™œì„±ìœ¼ë¡œ ì¸í•´ ì‹œìŠ¤í…œì´ ìžë™ìœ¼ë¡œ ëŒ€í™”ë¥¼ í•´ê²°í•  ë•Œ ê³ ê°ì—ê²Œ ì „ì†¡ë˜ëŠ” ë©”ì‹œì§€ìž…ë‹ˆë‹¤."
       },
       "FEATURES": {
-        "INBOUND_EMAIL_ENABLED": "계정에 대해 이메일을 통한 대화 연속성이 활성화되었습니다.",
-        "CUSTOM_EMAIL_DOMAIN_ENABLED": "지금 사용자 지정 도메인에서 이메일을 받을 수 있습니다."
+        "INBOUND_EMAIL_ENABLED": "ê³„ì •ì— ëŒ€í•´ ì´ë©”ì¼ì„ í†µí•œ ëŒ€í™” ì—°ì†ì„±ì´ í™œì„±í™”ë˜ì—ˆìŠµë‹ˆë‹¤.",
+        "CUSTOM_EMAIL_DOMAIN_ENABLED": "ì§€ê¸ˆ ì‚¬ìš©ìž ì§€ì • ë„ë©”ì¸ì—ì„œ ì´ë©”ì¼ì„ ë°›ì„ ìˆ˜ ìžˆìŠµë‹ˆë‹¤."
       }
     },
-    "UPDATE_CHATWOOT": "Chatwoot에 대한 {latestChatwootVersion} 업데이트를 사용할 수 있습니다. 인스턴스를 업데이트하십시오.",
-    "LEARN_MORE": "자세히 알아보기",
-    "PAYMENT_PENDING": "결제가 보류 중입니다. Chatwoot을 계속 사용하려면 결제 정보를 업데이트하십시오",
-    "UPGRADE": "Chatwoot을 계속 사용하려면 업그레이드하십시오",
-    "LIMITS_UPGRADE": "계정이 사용 제한을 초과했습니다. Chatwoot을 계속 사용하려면 플랜을 업그레이드하십시오",
-    "OPEN_BILLING": "청구서 열기"
+    "UPDATE_KAIROS_CRM": "Kairos CRMì— ëŒ€í•œ {latestKairos CRMVersion} ì—…ë°ì´íŠ¸ë¥¼ ì‚¬ìš©í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤. ì¸ìŠ¤í„´ìŠ¤ë¥¼ ì—…ë°ì´íŠ¸í•˜ì‹­ì‹œì˜¤.",
+    "LEARN_MORE": "ìžì„¸ížˆ ì•Œì•„ë³´ê¸°",
+    "PAYMENT_PENDING": "ê²°ì œê°€ ë³´ë¥˜ ì¤‘ìž…ë‹ˆë‹¤. Kairos CRMì„ ê³„ì† ì‚¬ìš©í•˜ë ¤ë©´ ê²°ì œ ì •ë³´ë¥¼ ì—…ë°ì´íŠ¸í•˜ì‹­ì‹œì˜¤",
+    "UPGRADE": "Kairos CRMì„ ê³„ì† ì‚¬ìš©í•˜ë ¤ë©´ ì—…ê·¸ë ˆì´ë“œí•˜ì‹­ì‹œì˜¤",
+    "LIMITS_UPGRADE": "ê³„ì •ì´ ì‚¬ìš© ì œí•œì„ ì´ˆê³¼í–ˆìŠµë‹ˆë‹¤. Kairos CRMì„ ê³„ì† ì‚¬ìš©í•˜ë ¤ë©´ í”Œëžœì„ ì—…ê·¸ë ˆì´ë“œí•˜ì‹­ì‹œì˜¤",
+    "OPEN_BILLING": "ì²­êµ¬ì„œ ì—´ê¸°"
   },
   "FORMS": {
     "MULTISELECT": {
-      "ENTER_TO_SELECT": "선택하려면 Enter 키를 누르십시오.",
-      "ENTER_TO_REMOVE": "제거하려면 Enter 키를 누르십시오.",
-      "NO_OPTIONS": "목록이 비어 있습니다",
-      "SELECT_ONE": "하나 선택",
-      "SELECT": "선택"
+      "ENTER_TO_SELECT": "ì„ íƒí•˜ë ¤ë©´ Enter í‚¤ë¥¼ ëˆ„ë¥´ì‹­ì‹œì˜¤.",
+      "ENTER_TO_REMOVE": "ì œê±°í•˜ë ¤ë©´ Enter í‚¤ë¥¼ ëˆ„ë¥´ì‹­ì‹œì˜¤.",
+      "NO_OPTIONS": "ëª©ë¡ì´ ë¹„ì–´ ìžˆìŠµë‹ˆë‹¤",
+      "SELECT_ONE": "í•˜ë‚˜ ì„ íƒ",
+      "SELECT": "ì„ íƒ"
     }
   },
   "NOTIFICATIONS_PAGE": {
-    "HEADER": "알림",
-    "MARK_ALL_DONE": "모두 완료 표시",
-    "DELETE_TITLE": "삭제됨",
+    "HEADER": "ì•Œë¦¼",
+    "MARK_ALL_DONE": "ëª¨ë‘ ì™„ë£Œ í‘œì‹œ",
+    "DELETE_TITLE": "ì‚­ì œë¨",
     "UNREAD_NOTIFICATION": {
-      "TITLE": "읽지 않은 알림",
-      "ALL_NOTIFICATIONS": "모든 알림 보기",
-      "LOADING_UNREAD_MESSAGE": "읽지 않은 알림을 불러오는 중...",
-      "EMPTY_MESSAGE": "읽지 않은 알림이 없습니다"
+      "TITLE": "ì½ì§€ ì•Šì€ ì•Œë¦¼",
+      "ALL_NOTIFICATIONS": "ëª¨ë“  ì•Œë¦¼ ë³´ê¸°",
+      "LOADING_UNREAD_MESSAGE": "ì½ì§€ ì•Šì€ ì•Œë¦¼ì„ ë¶ˆëŸ¬ì˜¤ëŠ” ì¤‘...",
+      "EMPTY_MESSAGE": "ì½ì§€ ì•Šì€ ì•Œë¦¼ì´ ì—†ìŠµë‹ˆë‹¤"
     },
     "LIST": {
-      "LOADING_MESSAGE": "알림을 불러오는 중...",
-      "404": "알림 없음",
+      "LOADING_MESSAGE": "ì•Œë¦¼ì„ ë¶ˆëŸ¬ì˜¤ëŠ” ì¤‘...",
+      "404": "ì•Œë¦¼ ì—†ìŒ",
       "TABLE_HEADER": [
-        "이름",
-        "전화 번호",
-        "대화",
-        "마지막으로 연락한 사람"
+        "ì´ë¦„",
+        "ì „í™” ë²ˆí˜¸",
+        "ëŒ€í™”",
+        "ë§ˆì§€ë§‰ìœ¼ë¡œ ì—°ë½í•œ ì‚¬ëžŒ"
       ]
     },
     "TYPE_LABEL": {
-      "conversation_creation": "새 대화",
-      "conversation_assignment": "대화 할당됨",
-      "assigned_conversation_new_message": "새 메시지",
-      "participating_conversation_new_message": "새 메시지",
-      "conversation_mention": "멘션",
-      "sla_missed_first_response": "SLA 위반",
-      "sla_missed_next_response": "SLA 위반",
-      "sla_missed_resolution": "SLA 위반"
+      "conversation_creation": "ìƒˆ ëŒ€í™”",
+      "conversation_assignment": "ëŒ€í™” í• ë‹¹ë¨",
+      "assigned_conversation_new_message": "ìƒˆ ë©”ì‹œì§€",
+      "participating_conversation_new_message": "ìƒˆ ë©”ì‹œì§€",
+      "conversation_mention": "ë©˜ì…˜",
+      "sla_missed_first_response": "SLA ìœ„ë°˜",
+      "sla_missed_next_response": "SLA ìœ„ë°˜",
+      "sla_missed_resolution": "SLA ìœ„ë°˜"
     }
   },
   "NETWORK": {
     "NOTIFICATION": {
-      "OFFLINE": "오프라인",
-      "RECONNECTING": "재연결 중...",
-      "RECONNECT_SUCCESS": "재연결됨"
+      "OFFLINE": "ì˜¤í”„ë¼ì¸",
+      "RECONNECTING": "ìž¬ì—°ê²° ì¤‘...",
+      "RECONNECT_SUCCESS": "ìž¬ì—°ê²°ë¨"
     },
     "BUTTON": {
-      "REFRESH": "새로고침"
+      "REFRESH": "ìƒˆë¡œê³ ì¹¨"
     }
   },
   "COMMAND_BAR": {
-    "SEARCH_PLACEHOLDER": "검색 또는 바로가기",
-    "SNOOZE_PLACEHOLDER": "시간을 입력하세요. 예: 내일, 2시간 후, 다음 금요일, 1월 15일...",
+    "SEARCH_PLACEHOLDER": "ê²€ìƒ‰ ë˜ëŠ” ë°”ë¡œê°€ê¸°",
+    "SNOOZE_PLACEHOLDER": "ì‹œê°„ì„ ìž…ë ¥í•˜ì„¸ìš”. ì˜ˆ: ë‚´ì¼, 2ì‹œê°„ í›„, ë‹¤ìŒ ê¸ˆìš”ì¼, 1ì›” 15ì¼...",
     "SECTIONS": {
-      "GENERAL": "일반",
-      "REPORTS": "보고서",
-      "CONVERSATION": "대화",
-      "BULK_ACTIONS": "일괄 작업",
-      "CHANGE_ASSIGNEE": "담당자 변경",
-      "CHANGE_PRIORITY": "우선순위 변경",
-      "CHANGE_TEAM": "팀 변경",
-      "SNOOZE_CONVERSATION": "대화 일시 중지",
-      "ADD_LABEL": "대화에 라벨 추가",
-      "REMOVE_LABEL": "대화에서 라벨 제거",
-      "SETTINGS": "설정",
-      "AI_ASSIST": "AI 어시스트",
-      "APPEARANCE": "외관",
-      "SNOOZE_NOTIFICATION": "알림 일시 중지"
+      "GENERAL": "ì¼ë°˜",
+      "REPORTS": "ë³´ê³ ì„œ",
+      "CONVERSATION": "ëŒ€í™”",
+      "BULK_ACTIONS": "ì¼ê´„ ìž‘ì—…",
+      "CHANGE_ASSIGNEE": "ë‹´ë‹¹ìž ë³€ê²½",
+      "CHANGE_PRIORITY": "ìš°ì„ ìˆœìœ„ ë³€ê²½",
+      "CHANGE_TEAM": "íŒ€ ë³€ê²½",
+      "SNOOZE_CONVERSATION": "ëŒ€í™” ì¼ì‹œ ì¤‘ì§€",
+      "ADD_LABEL": "ëŒ€í™”ì— ë¼ë²¨ ì¶”ê°€",
+      "REMOVE_LABEL": "ëŒ€í™”ì—ì„œ ë¼ë²¨ ì œê±°",
+      "SETTINGS": "ì„¤ì •",
+      "AI_ASSIST": "AI ì–´ì‹œìŠ¤íŠ¸",
+      "APPEARANCE": "ì™¸ê´€",
+      "SNOOZE_NOTIFICATION": "ì•Œë¦¼ ì¼ì‹œ ì¤‘ì§€"
     },
     "COMMANDS": {
       "GO_TO_MY_INBOX": "Go to My Inbox",
-      "GO_TO_CONVERSATION_DASHBOARD": "대화 대시보드로 이동",
-      "GO_TO_CONTACTS_DASHBOARD": "연락처 대시보드로 이동",
+      "GO_TO_CONVERSATION_DASHBOARD": "ëŒ€í™” ëŒ€ì‹œë³´ë“œë¡œ ì´ë™",
+      "GO_TO_CONTACTS_DASHBOARD": "ì—°ë½ì²˜ ëŒ€ì‹œë³´ë“œë¡œ ì´ë™",
       "GO_TO_CAPTAIN": "Go to Captain",
       "GO_TO_CALLS_DASHBOARD": "Go to Calls Dashboard",
       "GO_TO_CAMPAIGNS": "Go to Campaigns",
       "GO_TO_HELP_CENTER": "Go to Help Center",
-      "GO_TO_REPORTS_OVERVIEW": "보고서 개요로 이동",
-      "GO_TO_CONVERSATION_REPORTS": "대화 보고서로 이동",
-      "GO_TO_AGENT_REPORTS": "에이전트 보고서로 이동",
-      "GO_TO_LABEL_REPORTS": "라벨 보고서로 이동",
-      "GO_TO_INBOX_REPORTS": "받은 메시지함 보고서로 이동",
-      "GO_TO_TEAM_REPORTS": "팀 보고서로 이동",
+      "GO_TO_REPORTS_OVERVIEW": "ë³´ê³ ì„œ ê°œìš”ë¡œ ì´ë™",
+      "GO_TO_CONVERSATION_REPORTS": "ëŒ€í™” ë³´ê³ ì„œë¡œ ì´ë™",
+      "GO_TO_AGENT_REPORTS": "ì—ì´ì „íŠ¸ ë³´ê³ ì„œë¡œ ì´ë™",
+      "GO_TO_LABEL_REPORTS": "ë¼ë²¨ ë³´ê³ ì„œë¡œ ì´ë™",
+      "GO_TO_INBOX_REPORTS": "ë°›ì€ ë©”ì‹œì§€í•¨ ë³´ê³ ì„œë¡œ ì´ë™",
+      "GO_TO_TEAM_REPORTS": "íŒ€ ë³´ê³ ì„œë¡œ ì´ë™",
       "GO_TO_CSAT_REPORTS": "Go to CSAT Reports",
       "GO_TO_BOT_REPORTS": "Go to Bot Reports",
       "GO_TO_SLA_REPORTS": "Go to SLA Reports",
-      "GO_TO_SETTINGS_AGENTS": "에이전트 설정으로 이동",
-      "GO_TO_SETTINGS_TEAMS": "팀 설정으로 이동",
-      "GO_TO_SETTINGS_INBOXES": "받은 메시지함 설정으로 이동",
+      "GO_TO_SETTINGS_AGENTS": "ì—ì´ì „íŠ¸ ì„¤ì •ìœ¼ë¡œ ì´ë™",
+      "GO_TO_SETTINGS_TEAMS": "íŒ€ ì„¤ì •ìœ¼ë¡œ ì´ë™",
+      "GO_TO_SETTINGS_INBOXES": "ë°›ì€ ë©”ì‹œì§€í•¨ ì„¤ì •ìœ¼ë¡œ ì´ë™",
       "GO_TO_SETTINGS_TEMPLATES": "Go to Templates",
-      "GO_TO_SETTINGS_LABELS": "라벨 설정으로 이동",
+      "GO_TO_SETTINGS_LABELS": "ë¼ë²¨ ì„¤ì •ìœ¼ë¡œ ì´ë™",
       "GO_TO_SETTINGS_CUSTOM_ATTRIBUTES": "Go to Custom Attributes",
       "GO_TO_SETTINGS_AUTOMATION": "Go to Automation",
       "GO_TO_SETTINGS_MACROS": "Go to Macros",
-      "GO_TO_SETTINGS_CANNED_RESPONSES": "미리 준비된 응답 설정으로 이동",
+      "GO_TO_SETTINGS_CANNED_RESPONSES": "ë¯¸ë¦¬ ì¤€ë¹„ëœ ì‘ë‹µ ì„¤ì •ìœ¼ë¡œ ì´ë™",
       "GO_TO_SETTINGS_SLA": "Go to SLA Settings",
-      "GO_TO_SETTINGS_APPLICATIONS": "애플리케이션 설정으로 이동",
+      "GO_TO_SETTINGS_APPLICATIONS": "ì• í”Œë¦¬ì¼€ì´ì…˜ ì„¤ì •ìœ¼ë¡œ ì´ë™",
       "GO_TO_SETTINGS_DATA": "Go to Data",
       "GO_TO_SETTINGS_AUDIT_LOGS": "Go to Audit Logs",
       "GO_TO_SETTINGS_BILLING": "Go to Billing",
-      "GO_TO_SETTINGS_ACCOUNT": "계정 설정으로 이동",
-      "GO_TO_SETTINGS_PROFILE": "프로필 설정으로 이동",
-      "GO_TO_NOTIFICATIONS": "알림으로 이동",
-      "ADD_LABELS_TO_CONVERSATION": "대화에 라벨 추가",
-      "ASSIGN_AN_AGENT": "에이전트 배정",
-      "AI_ASSIST": "AI 어시스트",
-      "ASSIGN_PRIORITY": "우선순위 배정",
-      "ASSIGN_A_TEAM": "팀 배정",
-      "MUTE_CONVERSATION": "대화 음소거",
-      "UNMUTE_CONVERSATION": "대화 음소거 해제",
-      "REMOVE_LABEL_FROM_CONVERSATION": "대화에서 라벨 제거",
-      "REOPEN_CONVERSATION": "대화 다시 열기",
-      "RESOLVE_CONVERSATION": "대화 해결",
-      "SEND_TRANSCRIPT": "이메일 대화록 전송",
-      "SNOOZE_CONVERSATION": "대화 일시 중지",
-      "UNTIL_NEXT_REPLY": "다음 답장까지",
-      "UNTIL_NEXT_WEEK": "다음 주까지",
-      "UNTIL_TOMORROW": "내일까지",
-      "UNTIL_NEXT_MONTH": "다음 달까지",
-      "AN_HOUR_FROM_NOW": "1시간 후까지",
-      "UNTIL_CUSTOM_TIME": "사용자 지정...",
-      "CHANGE_APPEARANCE": "외관 변경",
-      "LIGHT_MODE": "라이트",
-      "DARK_MODE": "다크",
-      "SYSTEM_MODE": "시스템",
-      "SNOOZE_NOTIFICATION": "알림 일시 중지"
+      "GO_TO_SETTINGS_ACCOUNT": "ê³„ì • ì„¤ì •ìœ¼ë¡œ ì´ë™",
+      "GO_TO_SETTINGS_PROFILE": "í”„ë¡œí•„ ì„¤ì •ìœ¼ë¡œ ì´ë™",
+      "GO_TO_NOTIFICATIONS": "ì•Œë¦¼ìœ¼ë¡œ ì´ë™",
+      "ADD_LABELS_TO_CONVERSATION": "ëŒ€í™”ì— ë¼ë²¨ ì¶”ê°€",
+      "ASSIGN_AN_AGENT": "ì—ì´ì „íŠ¸ ë°°ì •",
+      "AI_ASSIST": "AI ì–´ì‹œìŠ¤íŠ¸",
+      "ASSIGN_PRIORITY": "ìš°ì„ ìˆœìœ„ ë°°ì •",
+      "ASSIGN_A_TEAM": "íŒ€ ë°°ì •",
+      "MUTE_CONVERSATION": "ëŒ€í™” ìŒì†Œê±°",
+      "UNMUTE_CONVERSATION": "ëŒ€í™” ìŒì†Œê±° í•´ì œ",
+      "REMOVE_LABEL_FROM_CONVERSATION": "ëŒ€í™”ì—ì„œ ë¼ë²¨ ì œê±°",
+      "REOPEN_CONVERSATION": "ëŒ€í™” ë‹¤ì‹œ ì—´ê¸°",
+      "RESOLVE_CONVERSATION": "ëŒ€í™” í•´ê²°",
+      "SEND_TRANSCRIPT": "ì´ë©”ì¼ ëŒ€í™”ë¡ ì „ì†¡",
+      "SNOOZE_CONVERSATION": "ëŒ€í™” ì¼ì‹œ ì¤‘ì§€",
+      "UNTIL_NEXT_REPLY": "ë‹¤ìŒ ë‹µìž¥ê¹Œì§€",
+      "UNTIL_NEXT_WEEK": "ë‹¤ìŒ ì£¼ê¹Œì§€",
+      "UNTIL_TOMORROW": "ë‚´ì¼ê¹Œì§€",
+      "UNTIL_NEXT_MONTH": "ë‹¤ìŒ ë‹¬ê¹Œì§€",
+      "AN_HOUR_FROM_NOW": "1ì‹œê°„ í›„ê¹Œì§€",
+      "UNTIL_CUSTOM_TIME": "ì‚¬ìš©ìž ì§€ì •...",
+      "CHANGE_APPEARANCE": "ì™¸ê´€ ë³€ê²½",
+      "LIGHT_MODE": "ë¼ì´íŠ¸",
+      "DARK_MODE": "ë‹¤í¬",
+      "SYSTEM_MODE": "ì‹œìŠ¤í…œ",
+      "SNOOZE_NOTIFICATION": "ì•Œë¦¼ ì¼ì‹œ ì¤‘ì§€"
     }
   },
   "DASHBOARD_APPS": {
-    "LOADING_MESSAGE": "대시보드 앱을 불러오는 중..."
+    "LOADING_MESSAGE": "ëŒ€ì‹œë³´ë“œ ì•±ì„ ë¶ˆëŸ¬ì˜¤ëŠ” ì¤‘..."
   },
   "COMMON": {
-    "OR": "또는",
-    "CLICK_HERE": "여기를 클릭하세요"
+    "OR": "ë˜ëŠ”",
+    "CLICK_HERE": "ì—¬ê¸°ë¥¼ í´ë¦­í•˜ì„¸ìš”"
   }
 }

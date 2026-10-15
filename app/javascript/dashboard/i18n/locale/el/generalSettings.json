@@ -1,4 +1,4 @@
-{
+﻿{
   "GENERAL_SETTINGS": {
     "LIMIT_MESSAGES": {
       "CONVERSATION": "You have exceeded the conversation limit. Hacker plan allows only 500 conversations.",
@@ -6,13 +6,13 @@
       "AGENTS": "You have exceeded the agent limit. Your plan only allows {allowedAgents} agents.",
       "NON_ADMIN": "Please contact your administrator to upgrade the plan and continue using all features."
     },
-    "TITLE": "Ρυθμίσεις",
-    "SUBMIT": "Ενημέρωση Ρυθμίσεων",
-    "BACK": "Πίσω",
+    "TITLE": "Î¡Ï…Î¸Î¼Î¯ÏƒÎµÎ¹Ï‚",
+    "SUBMIT": "Î•Î½Î·Î¼Î­ÏÏ‰ÏƒÎ· Î¡Ï…Î¸Î¼Î¯ÏƒÎµÏ‰Î½",
+    "BACK": "Î Î¯ÏƒÏ‰",
     "DISMISS": "Dismiss",
     "UPDATE": {
-      "ERROR": "Δεν μπορεί να ενημερωθεί η ρύθμιση προσπαθήστε ξανά!",
-      "SUCCESS": "Επιτυχής Ενημέρωση Ρυθμίσεων"
+      "ERROR": "Î”ÎµÎ½ Î¼Ï€Î¿ÏÎµÎ¯ Î½Î± ÎµÎ½Î·Î¼ÎµÏÏ‰Î¸ÎµÎ¯ Î· ÏÏÎ¸Î¼Î¹ÏƒÎ· Ï€ÏÎ¿ÏƒÏ€Î±Î¸Î®ÏƒÏ„Îµ Î¾Î±Î½Î¬!",
+      "SUCCESS": "Î•Ï€Î¹Ï„Ï…Ï‡Î®Ï‚ Î•Î½Î·Î¼Î­ÏÏ‰ÏƒÎ· Î¡Ï…Î¸Î¼Î¯ÏƒÎµÏ‰Î½"
     },
     "ACCOUNT_DELETE_SECTION": {
       "TITLE": "Delete your Account",
@@ -21,9 +21,9 @@
       "CONFIRM": {
         "TITLE": "Delete Account",
         "MESSAGE": "Deleting your Account is irreversible. Enter your account name below to confirm you want to permanently delete it.",
-        "BUTTON_TEXT": "Διαγραφή",
-        "DISMISS": "Άκυρο",
-        "PLACE_HOLDER": "Παρακαλώ πληκτρολογήστε {accountName} για επιβεβαίωση"
+        "BUTTON_TEXT": "Î”Î¹Î±Î³ÏÎ±Ï†Î®",
+        "DISMISS": "Î†ÎºÏ…ÏÎ¿",
+        "PLACE_HOLDER": "Î Î±ÏÎ±ÎºÎ±Î»ÏŽ Ï€Î»Î·ÎºÏ„ÏÎ¿Î»Î¿Î³Î®ÏƒÏ„Îµ {accountName} Î³Î¹Î± ÎµÏ€Î¹Î²ÎµÎ²Î±Î¯Ï‰ÏƒÎ·"
       },
       "SUCCESS": "Account marked for deletion",
       "FAILURE": "Could not delete account, try again!",
@@ -35,14 +35,14 @@
       }
     },
     "FORM": {
-      "ERROR": "Παρακαλώ διορθώστε τα λάθη της Φόρμας",
+      "ERROR": "Î Î±ÏÎ±ÎºÎ±Î»ÏŽ Î´Î¹Î¿ÏÎ¸ÏŽÏƒÏ„Îµ Ï„Î± Î»Î¬Î¸Î· Ï„Î·Ï‚ Î¦ÏŒÏÎ¼Î±Ï‚",
       "GENERAL_SECTION": {
-        "TITLE": "Γενικές Ρυθμίσεις",
+        "TITLE": "Î“ÎµÎ½Î¹ÎºÎ­Ï‚ Î¡Ï…Î¸Î¼Î¯ÏƒÎµÎ¹Ï‚",
         "NOTE": ""
       },
       "ACCOUNT_ID": {
-        "TITLE": "ID Λογαριασμού",
-        "NOTE": "Αυτό το ID απαιτείται αν δημιουργείτε μια ενσωμάτωση βασισμένη στο API"
+        "TITLE": "ID Î›Î¿Î³Î±ÏÎ¹Î±ÏƒÎ¼Î¿Ï",
+        "NOTE": "Î‘Ï…Ï„ÏŒ Ï„Î¿ ID Î±Ï€Î±Î¹Ï„ÎµÎ¯Ï„Î±Î¹ Î±Î½ Î´Î·Î¼Î¹Î¿Ï…ÏÎ³ÎµÎ¯Ï„Îµ Î¼Î¹Î± ÎµÎ½ÏƒÏ‰Î¼Î¬Ï„Ï‰ÏƒÎ· Î²Î±ÏƒÎ¹ÏƒÎ¼Î­Î½Î· ÏƒÏ„Î¿ API"
       },
       "AUTO_RESOLVE": {
         "TITLE": "Auto-resolve conversations",
@@ -68,28 +68,28 @@
           "PLACEHOLDER": "Select a label"
         },
         "IGNORE_WAITING": {
-          "LABEL": "Skip conversations waiting for agent’s reply"
+          "LABEL": "Skip conversations waiting for agentâ€™s reply"
         },
         "UPDATE_BUTTON": "Save Changes"
       },
       "NAME": {
-        "LABEL": "Ονομασία Λογαριασμού",
-        "PLACEHOLDER": "Η ονομασία του Λογαριασμού σας",
-        "ERROR": "Παρακαλώ συμπληρώστε ένα έγκυρο όνομα λογαριασμού"
+        "LABEL": "ÎŸÎ½Î¿Î¼Î±ÏƒÎ¯Î± Î›Î¿Î³Î±ÏÎ¹Î±ÏƒÎ¼Î¿Ï",
+        "PLACEHOLDER": "Î— Î¿Î½Î¿Î¼Î±ÏƒÎ¯Î± Ï„Î¿Ï… Î›Î¿Î³Î±ÏÎ¹Î±ÏƒÎ¼Î¿Ï ÏƒÎ±Ï‚",
+        "ERROR": "Î Î±ÏÎ±ÎºÎ±Î»ÏŽ ÏƒÏ…Î¼Ï€Î»Î·ÏÏŽÏƒÏ„Îµ Î­Î½Î± Î­Î³ÎºÏ…ÏÎ¿ ÏŒÎ½Î¿Î¼Î± Î»Î¿Î³Î±ÏÎ¹Î±ÏƒÎ¼Î¿Ï"
       },
       "LANGUAGE": {
-        "LABEL": "Γλώσσα ιστοσελίδας",
-        "PLACEHOLDER": "Το όνομα του Λογαριασμού",
+        "LABEL": "Î“Î»ÏŽÏƒÏƒÎ± Î¹ÏƒÏ„Î¿ÏƒÎµÎ»Î¯Î´Î±Ï‚",
+        "PLACEHOLDER": "Î¤Î¿ ÏŒÎ½Î¿Î¼Î± Ï„Î¿Ï… Î›Î¿Î³Î±ÏÎ¹Î±ÏƒÎ¼Î¿Ï",
         "ERROR": ""
       },
       "DOMAIN": {
-        "LABEL": "Τομέας (domain) του εισερχόμενου email",
-        "PLACEHOLDER": "Ο τομέας στον οποίο θα λαμβάνετε τα emails",
+        "LABEL": "Î¤Î¿Î¼Î­Î±Ï‚ (domain) Ï„Î¿Ï… ÎµÎ¹ÏƒÎµÏÏ‡ÏŒÎ¼ÎµÎ½Î¿Ï… email",
+        "PLACEHOLDER": "ÎŸ Ï„Î¿Î¼Î­Î±Ï‚ ÏƒÏ„Î¿Î½ Î¿Ï€Î¿Î¯Î¿ Î¸Î± Î»Î±Î¼Î²Î¬Î½ÎµÏ„Îµ Ï„Î± emails",
         "ERROR": ""
       },
       "SUPPORT_EMAIL": {
-        "LABEL": "Email Υποστήριξης",
-        "PLACEHOLDER": "To email υποστήριξης της εταιρίας σας",
+        "LABEL": "Email Î¥Ï€Î¿ÏƒÏ„Î®ÏÎ¹Î¾Î·Ï‚",
+        "PLACEHOLDER": "To email Ï…Ï€Î¿ÏƒÏ„Î®ÏÎ¹Î¾Î·Ï‚ Ï„Î·Ï‚ ÎµÏ„Î±Î¹ÏÎ¯Î±Ï‚ ÏƒÎ±Ï‚",
         "ERROR": ""
       },
       "AUTO_RESOLVE_IGNORE_WAITING": {
@@ -113,58 +113,58 @@
           "SUCCESS": "Auto resolve settings updated successfully",
           "ERROR": "Failed to update auto resolve settings"
         },
-        "UPDATE_BUTTON": "Ενημέρωση",
+        "UPDATE_BUTTON": "Î•Î½Î·Î¼Î­ÏÏ‰ÏƒÎ·",
         "MESSAGE_LABEL": "Custom resolution message",
         "MESSAGE_PLACEHOLDER": "Conversation was marked resolved by system due to 15 days of inactivity",
         "MESSAGE_HELP": "This message is sent to the customer when a conversation is automatically resolved by the system due to inactivity."
       },
       "FEATURES": {
-        "INBOUND_EMAIL_ENABLED": "Η συνέχεια της συνομιλίας με emails έχει ενεργοποιηθεί για τον λογαριασμό.",
-        "CUSTOM_EMAIL_DOMAIN_ENABLED": "Τώρα μπορείτε να λαμβάνετε emails στον τομέα (domain) σας."
+        "INBOUND_EMAIL_ENABLED": "Î— ÏƒÏ…Î½Î­Ï‡ÎµÎ¹Î± Ï„Î·Ï‚ ÏƒÏ…Î½Î¿Î¼Î¹Î»Î¯Î±Ï‚ Î¼Îµ emails Î­Ï‡ÎµÎ¹ ÎµÎ½ÎµÏÎ³Î¿Ï€Î¿Î¹Î·Î¸ÎµÎ¯ Î³Î¹Î± Ï„Î¿Î½ Î»Î¿Î³Î±ÏÎ¹Î±ÏƒÎ¼ÏŒ.",
+        "CUSTOM_EMAIL_DOMAIN_ENABLED": "Î¤ÏŽÏÎ± Î¼Ï€Î¿ÏÎµÎ¯Ï„Îµ Î½Î± Î»Î±Î¼Î²Î¬Î½ÎµÏ„Îµ emails ÏƒÏ„Î¿Î½ Ï„Î¿Î¼Î­Î± (domain) ÏƒÎ±Ï‚."
       }
     },
-    "UPDATE_CHATWOOT": "Μια ενημέρωση {latestChatwootVersion} για το Chatwoot είναι διαθέσιμη. Ενημερώστε την εφαρμογή σας.",
-    "LEARN_MORE": "Μάθετε περισσότερα",
-    "PAYMENT_PENDING": "Your payment is pending. Please update your payment information to continue using Chatwoot",
-    "UPGRADE": "Upgrade to continue using Chatwoot",
-    "LIMITS_UPGRADE": "Your account has exceeded the usage limits, please upgrade your plan to continue using Chatwoot",
+    "UPDATE_KAIROS_CRM": "ÎœÎ¹Î± ÎµÎ½Î·Î¼Î­ÏÏ‰ÏƒÎ· {latestKairos CRMVersion} Î³Î¹Î± Ï„Î¿ Kairos CRM ÎµÎ¯Î½Î±Î¹ Î´Î¹Î±Î¸Î­ÏƒÎ¹Î¼Î·. Î•Î½Î·Î¼ÎµÏÏŽÏƒÏ„Îµ Ï„Î·Î½ ÎµÏ†Î±ÏÎ¼Î¿Î³Î® ÏƒÎ±Ï‚.",
+    "LEARN_MORE": "ÎœÎ¬Î¸ÎµÏ„Îµ Ï€ÎµÏÎ¹ÏƒÏƒÏŒÏ„ÎµÏÎ±",
+    "PAYMENT_PENDING": "Your payment is pending. Please update your payment information to continue using Kairos CRM",
+    "UPGRADE": "Upgrade to continue using Kairos CRM",
+    "LIMITS_UPGRADE": "Your account has exceeded the usage limits, please upgrade your plan to continue using Kairos CRM",
     "OPEN_BILLING": "Open billing"
   },
   "FORMS": {
     "MULTISELECT": {
-      "ENTER_TO_SELECT": "Πάτησε enter για επιλογή",
-      "ENTER_TO_REMOVE": "Πάτησε enter για αφαίρεση",
+      "ENTER_TO_SELECT": "Î Î¬Ï„Î·ÏƒÎµ enter Î³Î¹Î± ÎµÏ€Î¹Î»Î¿Î³Î®",
+      "ENTER_TO_REMOVE": "Î Î¬Ï„Î·ÏƒÎµ enter Î³Î¹Î± Î±Ï†Î±Î¯ÏÎµÏƒÎ·",
       "NO_OPTIONS": "List is empty",
-      "SELECT_ONE": "Επιλέξτε ένα",
-      "SELECT": "Επιλογή"
+      "SELECT_ONE": "Î•Ï€Î¹Î»Î­Î¾Ï„Îµ Î­Î½Î±",
+      "SELECT": "Î•Ï€Î¹Î»Î¿Î³Î®"
     }
   },
   "NOTIFICATIONS_PAGE": {
-    "HEADER": "Ειδοποιήσεις",
-    "MARK_ALL_DONE": "Όλες ολοκληρωμένες",
-    "DELETE_TITLE": "διαγράφηκε",
+    "HEADER": "Î•Î¹Î´Î¿Ï€Î¿Î¹Î®ÏƒÎµÎ¹Ï‚",
+    "MARK_ALL_DONE": "ÎŒÎ»ÎµÏ‚ Î¿Î»Î¿ÎºÎ»Î·ÏÏ‰Î¼Î­Î½ÎµÏ‚",
+    "DELETE_TITLE": "Î´Î¹Î±Î³ÏÎ¬Ï†Î·ÎºÎµ",
     "UNREAD_NOTIFICATION": {
-      "TITLE": "Μη Αναγνωσμένες Ειδοποιήσεις",
-      "ALL_NOTIFICATIONS": "Προβολή όλων των ειδοποιήσεων",
-      "LOADING_UNREAD_MESSAGE": "Φόρτωση μη αναγνωσμένων ειδοποιήσεων...",
-      "EMPTY_MESSAGE": "Δεν έχετε μη αναγνωσμένες ειδοποιήσεις"
+      "TITLE": "ÎœÎ· Î‘Î½Î±Î³Î½Ï‰ÏƒÎ¼Î­Î½ÎµÏ‚ Î•Î¹Î´Î¿Ï€Î¿Î¹Î®ÏƒÎµÎ¹Ï‚",
+      "ALL_NOTIFICATIONS": "Î ÏÎ¿Î²Î¿Î»Î® ÏŒÎ»Ï‰Î½ Ï„Ï‰Î½ ÎµÎ¹Î´Î¿Ï€Î¿Î¹Î®ÏƒÎµÏ‰Î½",
+      "LOADING_UNREAD_MESSAGE": "Î¦ÏŒÏÏ„Ï‰ÏƒÎ· Î¼Î· Î±Î½Î±Î³Î½Ï‰ÏƒÎ¼Î­Î½Ï‰Î½ ÎµÎ¹Î´Î¿Ï€Î¿Î¹Î®ÏƒÎµÏ‰Î½...",
+      "EMPTY_MESSAGE": "Î”ÎµÎ½ Î­Ï‡ÎµÏ„Îµ Î¼Î· Î±Î½Î±Î³Î½Ï‰ÏƒÎ¼Î­Î½ÎµÏ‚ ÎµÎ¹Î´Î¿Ï€Î¿Î¹Î®ÏƒÎµÎ¹Ï‚"
     },
     "LIST": {
-      "LOADING_MESSAGE": "Φόρτωση ειδοποιήσεων...",
-      "404": "Καμία Ειδοποίηση",
+      "LOADING_MESSAGE": "Î¦ÏŒÏÏ„Ï‰ÏƒÎ· ÎµÎ¹Î´Î¿Ï€Î¿Î¹Î®ÏƒÎµÏ‰Î½...",
+      "404": "ÎšÎ±Î¼Î¯Î± Î•Î¹Î´Î¿Ï€Î¿Î¯Î·ÏƒÎ·",
       "TABLE_HEADER": [
-        "Όνομα",
-        "Αριθμός Τηλεφώνου",
-        "Συζητήσεις",
-        "Τελευταία επικοινωνία"
+        "ÎŒÎ½Î¿Î¼Î±",
+        "Î‘ÏÎ¹Î¸Î¼ÏŒÏ‚ Î¤Î·Î»ÎµÏ†ÏŽÎ½Î¿Ï…",
+        "Î£Ï…Î¶Î·Ï„Î®ÏƒÎµÎ¹Ï‚",
+        "Î¤ÎµÎ»ÎµÏ…Ï„Î±Î¯Î± ÎµÏ€Î¹ÎºÎ¿Î¹Î½Ï‰Î½Î¯Î±"
       ]
     },
     "TYPE_LABEL": {
-      "conversation_creation": "Νέα συνομιλία",
-      "conversation_assignment": "Η Συνομιλία Ανατέθηκε",
-      "assigned_conversation_new_message": "Νέο Μήνυμα",
-      "participating_conversation_new_message": "Νέο Μήνυμα",
-      "conversation_mention": "Αναφορά",
+      "conversation_creation": "ÎÎ­Î± ÏƒÏ…Î½Î¿Î¼Î¹Î»Î¯Î±",
+      "conversation_assignment": "Î— Î£Ï…Î½Î¿Î¼Î¹Î»Î¯Î± Î‘Î½Î±Ï„Î­Î¸Î·ÎºÎµ",
+      "assigned_conversation_new_message": "ÎÎ­Î¿ ÎœÎ®Î½Ï…Î¼Î±",
+      "participating_conversation_new_message": "ÎÎ­Î¿ ÎœÎ®Î½Ï…Î¼Î±",
+      "conversation_mention": "Î‘Î½Î±Ï†Î¿ÏÎ¬",
       "sla_missed_first_response": "SLA Missed",
       "sla_missed_next_response": "SLA Missed",
       "sla_missed_resolution": "SLA Missed"
@@ -172,82 +172,82 @@
   },
   "NETWORK": {
     "NOTIFICATION": {
-      "OFFLINE": "Εκτός",
+      "OFFLINE": "Î•ÎºÏ„ÏŒÏ‚",
       "RECONNECTING": "Reconnecting...",
       "RECONNECT_SUCCESS": "Reconnected"
     },
     "BUTTON": {
-      "REFRESH": "Ανανέωση"
+      "REFRESH": "Î‘Î½Î±Î½Î­Ï‰ÏƒÎ·"
     }
   },
   "COMMAND_BAR": {
-    "SEARCH_PLACEHOLDER": "Αναζήτηση ή μετάβαση σε",
+    "SEARCH_PLACEHOLDER": "Î‘Î½Î±Î¶Î®Ï„Î·ÏƒÎ· Î® Î¼ÎµÏ„Î¬Î²Î±ÏƒÎ· ÏƒÎµ",
     "SNOOZE_PLACEHOLDER": "Type a time e.g. tomorrow, 2 hours, next friday, jan 15...",
     "SECTIONS": {
-      "GENERAL": "Γενικά",
-      "REPORTS": "Αναφορές",
-      "CONVERSATION": "Συνομιλία",
+      "GENERAL": "Î“ÎµÎ½Î¹ÎºÎ¬",
+      "REPORTS": "Î‘Î½Î±Ï†Î¿ÏÎ­Ï‚",
+      "CONVERSATION": "Î£Ï…Î½Î¿Î¼Î¹Î»Î¯Î±",
       "BULK_ACTIONS": "Bulk Actions",
-      "CHANGE_ASSIGNEE": "Αλλαγή Αναδόχου",
+      "CHANGE_ASSIGNEE": "Î‘Î»Î»Î±Î³Î® Î‘Î½Î±Î´ÏŒÏ‡Î¿Ï…",
       "CHANGE_PRIORITY": "Change Priority",
-      "CHANGE_TEAM": "Αλλαγή Ομάδας",
-      "SNOOZE_CONVERSATION": "Αναβολή Συνομιλίας",
-      "ADD_LABEL": "Προσθήκη ετικέτας στη συνομιλία",
-      "REMOVE_LABEL": "Αφαίρεση ετικέτας από την συνομιλία",
-      "SETTINGS": "Ρυθμίσεις",
+      "CHANGE_TEAM": "Î‘Î»Î»Î±Î³Î® ÎŸÎ¼Î¬Î´Î±Ï‚",
+      "SNOOZE_CONVERSATION": "Î‘Î½Î±Î²Î¿Î»Î® Î£Ï…Î½Î¿Î¼Î¹Î»Î¯Î±Ï‚",
+      "ADD_LABEL": "Î ÏÎ¿ÏƒÎ¸Î®ÎºÎ· ÎµÏ„Î¹ÎºÎ­Ï„Î±Ï‚ ÏƒÏ„Î· ÏƒÏ…Î½Î¿Î¼Î¹Î»Î¯Î±",
+      "REMOVE_LABEL": "Î‘Ï†Î±Î¯ÏÎµÏƒÎ· ÎµÏ„Î¹ÎºÎ­Ï„Î±Ï‚ Î±Ï€ÏŒ Ï„Î·Î½ ÏƒÏ…Î½Î¿Î¼Î¹Î»Î¯Î±",
+      "SETTINGS": "Î¡Ï…Î¸Î¼Î¯ÏƒÎµÎ¹Ï‚",
       "AI_ASSIST": "AI Assist",
       "APPEARANCE": "Appearance",
       "SNOOZE_NOTIFICATION": "Snooze Notification"
     },
     "COMMANDS": {
       "GO_TO_MY_INBOX": "Go to My Inbox",
-      "GO_TO_CONVERSATION_DASHBOARD": "Μεταβείτε στον Πίνακα Συνομιλίων",
-      "GO_TO_CONTACTS_DASHBOARD": "Μετάβαση στον Πίνακα Επαφών",
+      "GO_TO_CONVERSATION_DASHBOARD": "ÎœÎµÏ„Î±Î²ÎµÎ¯Ï„Îµ ÏƒÏ„Î¿Î½ Î Î¯Î½Î±ÎºÎ± Î£Ï…Î½Î¿Î¼Î¹Î»Î¯Ï‰Î½",
+      "GO_TO_CONTACTS_DASHBOARD": "ÎœÎµÏ„Î¬Î²Î±ÏƒÎ· ÏƒÏ„Î¿Î½ Î Î¯Î½Î±ÎºÎ± Î•Ï€Î±Ï†ÏŽÎ½",
       "GO_TO_CAPTAIN": "Go to Captain",
       "GO_TO_CALLS_DASHBOARD": "Go to Calls Dashboard",
       "GO_TO_CAMPAIGNS": "Go to Campaigns",
       "GO_TO_HELP_CENTER": "Go to Help Center",
-      "GO_TO_REPORTS_OVERVIEW": "Μετάβαση στις Αναφορές",
-      "GO_TO_CONVERSATION_REPORTS": "Μετάβαση στις Αναφορές Συνομιλίας",
-      "GO_TO_AGENT_REPORTS": "Μεταβείτε στις Αναφορές Πράκτορα",
-      "GO_TO_LABEL_REPORTS": "Μεταβείτε στις Αναφορές Ετικετών",
-      "GO_TO_INBOX_REPORTS": "Μεταβείτε στις Αναφορές Εισερχομένων",
-      "GO_TO_TEAM_REPORTS": "Μεταβείτε Αναφορές Ομάδας",
+      "GO_TO_REPORTS_OVERVIEW": "ÎœÎµÏ„Î¬Î²Î±ÏƒÎ· ÏƒÏ„Î¹Ï‚ Î‘Î½Î±Ï†Î¿ÏÎ­Ï‚",
+      "GO_TO_CONVERSATION_REPORTS": "ÎœÎµÏ„Î¬Î²Î±ÏƒÎ· ÏƒÏ„Î¹Ï‚ Î‘Î½Î±Ï†Î¿ÏÎ­Ï‚ Î£Ï…Î½Î¿Î¼Î¹Î»Î¯Î±Ï‚",
+      "GO_TO_AGENT_REPORTS": "ÎœÎµÏ„Î±Î²ÎµÎ¯Ï„Îµ ÏƒÏ„Î¹Ï‚ Î‘Î½Î±Ï†Î¿ÏÎ­Ï‚ Î ÏÎ¬ÎºÏ„Î¿ÏÎ±",
+      "GO_TO_LABEL_REPORTS": "ÎœÎµÏ„Î±Î²ÎµÎ¯Ï„Îµ ÏƒÏ„Î¹Ï‚ Î‘Î½Î±Ï†Î¿ÏÎ­Ï‚ Î•Ï„Î¹ÎºÎµÏ„ÏŽÎ½",
+      "GO_TO_INBOX_REPORTS": "ÎœÎµÏ„Î±Î²ÎµÎ¯Ï„Îµ ÏƒÏ„Î¹Ï‚ Î‘Î½Î±Ï†Î¿ÏÎ­Ï‚ Î•Î¹ÏƒÎµÏÏ‡Î¿Î¼Î­Î½Ï‰Î½",
+      "GO_TO_TEAM_REPORTS": "ÎœÎµÏ„Î±Î²ÎµÎ¯Ï„Îµ Î‘Î½Î±Ï†Î¿ÏÎ­Ï‚ ÎŸÎ¼Î¬Î´Î±Ï‚",
       "GO_TO_CSAT_REPORTS": "Go to CSAT Reports",
       "GO_TO_BOT_REPORTS": "Go to Bot Reports",
       "GO_TO_SLA_REPORTS": "Go to SLA Reports",
-      "GO_TO_SETTINGS_AGENTS": "Μεταβείτε στις Ρυθμίσεις Πράκτορα",
-      "GO_TO_SETTINGS_TEAMS": "Μεταβείτε στις ρυθμίσεις ομάδας",
-      "GO_TO_SETTINGS_INBOXES": "Μετάβαση στις Ρυθμίσεις Εισερχομένων",
+      "GO_TO_SETTINGS_AGENTS": "ÎœÎµÏ„Î±Î²ÎµÎ¯Ï„Îµ ÏƒÏ„Î¹Ï‚ Î¡Ï…Î¸Î¼Î¯ÏƒÎµÎ¹Ï‚ Î ÏÎ¬ÎºÏ„Î¿ÏÎ±",
+      "GO_TO_SETTINGS_TEAMS": "ÎœÎµÏ„Î±Î²ÎµÎ¯Ï„Îµ ÏƒÏ„Î¹Ï‚ ÏÏ…Î¸Î¼Î¯ÏƒÎµÎ¹Ï‚ Î¿Î¼Î¬Î´Î±Ï‚",
+      "GO_TO_SETTINGS_INBOXES": "ÎœÎµÏ„Î¬Î²Î±ÏƒÎ· ÏƒÏ„Î¹Ï‚ Î¡Ï…Î¸Î¼Î¯ÏƒÎµÎ¹Ï‚ Î•Î¹ÏƒÎµÏÏ‡Î¿Î¼Î­Î½Ï‰Î½",
       "GO_TO_SETTINGS_TEMPLATES": "Go to Templates",
-      "GO_TO_SETTINGS_LABELS": "Μεταβείτε στις Ρυθμίσεις Ετικετών",
+      "GO_TO_SETTINGS_LABELS": "ÎœÎµÏ„Î±Î²ÎµÎ¯Ï„Îµ ÏƒÏ„Î¹Ï‚ Î¡Ï…Î¸Î¼Î¯ÏƒÎµÎ¹Ï‚ Î•Ï„Î¹ÎºÎµÏ„ÏŽÎ½",
       "GO_TO_SETTINGS_CUSTOM_ATTRIBUTES": "Go to Custom Attributes",
       "GO_TO_SETTINGS_AUTOMATION": "Go to Automation",
       "GO_TO_SETTINGS_MACROS": "Go to Macros",
-      "GO_TO_SETTINGS_CANNED_RESPONSES": "Μεταβείτε στις ρυθμίσεις τυποποιημένων απαντήσεων",
+      "GO_TO_SETTINGS_CANNED_RESPONSES": "ÎœÎµÏ„Î±Î²ÎµÎ¯Ï„Îµ ÏƒÏ„Î¹Ï‚ ÏÏ…Î¸Î¼Î¯ÏƒÎµÎ¹Ï‚ Ï„Ï…Ï€Î¿Ï€Î¿Î¹Î·Î¼Î­Î½Ï‰Î½ Î±Ï€Î±Î½Ï„Î®ÏƒÎµÏ‰Î½",
       "GO_TO_SETTINGS_SLA": "Go to SLA Settings",
-      "GO_TO_SETTINGS_APPLICATIONS": "Μετάβαση στις ρυθμίσεις εφαρμογής",
+      "GO_TO_SETTINGS_APPLICATIONS": "ÎœÎµÏ„Î¬Î²Î±ÏƒÎ· ÏƒÏ„Î¹Ï‚ ÏÏ…Î¸Î¼Î¯ÏƒÎµÎ¹Ï‚ ÎµÏ†Î±ÏÎ¼Î¿Î³Î®Ï‚",
       "GO_TO_SETTINGS_DATA": "Go to Data",
       "GO_TO_SETTINGS_AUDIT_LOGS": "Go to Audit Logs",
       "GO_TO_SETTINGS_BILLING": "Go to Billing",
-      "GO_TO_SETTINGS_ACCOUNT": "Μεταβείτε στις ρυθμίσεις λογαριασμού",
-      "GO_TO_SETTINGS_PROFILE": "Μετάβαση στις ρυθμίσεις προφίλ",
-      "GO_TO_NOTIFICATIONS": "Μετάβαση στις ειδοποιήσεις",
-      "ADD_LABELS_TO_CONVERSATION": "Προσθήκη ετικέτας στη συνομιλία",
-      "ASSIGN_AN_AGENT": "Εκχώρηση πράκτορα",
+      "GO_TO_SETTINGS_ACCOUNT": "ÎœÎµÏ„Î±Î²ÎµÎ¯Ï„Îµ ÏƒÏ„Î¹Ï‚ ÏÏ…Î¸Î¼Î¯ÏƒÎµÎ¹Ï‚ Î»Î¿Î³Î±ÏÎ¹Î±ÏƒÎ¼Î¿Ï",
+      "GO_TO_SETTINGS_PROFILE": "ÎœÎµÏ„Î¬Î²Î±ÏƒÎ· ÏƒÏ„Î¹Ï‚ ÏÏ…Î¸Î¼Î¯ÏƒÎµÎ¹Ï‚ Ï€ÏÎ¿Ï†Î¯Î»",
+      "GO_TO_NOTIFICATIONS": "ÎœÎµÏ„Î¬Î²Î±ÏƒÎ· ÏƒÏ„Î¹Ï‚ ÎµÎ¹Î´Î¿Ï€Î¿Î¹Î®ÏƒÎµÎ¹Ï‚",
+      "ADD_LABELS_TO_CONVERSATION": "Î ÏÎ¿ÏƒÎ¸Î®ÎºÎ· ÎµÏ„Î¹ÎºÎ­Ï„Î±Ï‚ ÏƒÏ„Î· ÏƒÏ…Î½Î¿Î¼Î¹Î»Î¯Î±",
+      "ASSIGN_AN_AGENT": "Î•ÎºÏ‡ÏŽÏÎ·ÏƒÎ· Ï€ÏÎ¬ÎºÏ„Î¿ÏÎ±",
       "AI_ASSIST": "AI Assist",
       "ASSIGN_PRIORITY": "Assign priority",
-      "ASSIGN_A_TEAM": "Εκχώρηση ομάδας",
-      "MUTE_CONVERSATION": "Σίγαση Συνομιλίας",
-      "UNMUTE_CONVERSATION": "Επαναφορά Συνομιλίας",
-      "REMOVE_LABEL_FROM_CONVERSATION": "Αφαίρεση ετικέτας από την συνομιλία",
-      "REOPEN_CONVERSATION": "Άνοιγμα συνομιλίας",
-      "RESOLVE_CONVERSATION": "Επίλυση Συνομιλίας",
-      "SEND_TRANSCRIPT": "Στείλτε μεταγραφή της συνομιλίας",
-      "SNOOZE_CONVERSATION": "Αναβολή Συνομιλίας",
-      "UNTIL_NEXT_REPLY": "Μέχρι την επόμενη απάντηση",
-      "UNTIL_NEXT_WEEK": "Έως την επόμενη εβδομάδα",
-      "UNTIL_TOMORROW": "Μέχρι αύριο",
+      "ASSIGN_A_TEAM": "Î•ÎºÏ‡ÏŽÏÎ·ÏƒÎ· Î¿Î¼Î¬Î´Î±Ï‚",
+      "MUTE_CONVERSATION": "Î£Î¯Î³Î±ÏƒÎ· Î£Ï…Î½Î¿Î¼Î¹Î»Î¯Î±Ï‚",
+      "UNMUTE_CONVERSATION": "Î•Ï€Î±Î½Î±Ï†Î¿ÏÎ¬ Î£Ï…Î½Î¿Î¼Î¹Î»Î¯Î±Ï‚",
+      "REMOVE_LABEL_FROM_CONVERSATION": "Î‘Ï†Î±Î¯ÏÎµÏƒÎ· ÎµÏ„Î¹ÎºÎ­Ï„Î±Ï‚ Î±Ï€ÏŒ Ï„Î·Î½ ÏƒÏ…Î½Î¿Î¼Î¹Î»Î¯Î±",
+      "REOPEN_CONVERSATION": "Î†Î½Î¿Î¹Î³Î¼Î± ÏƒÏ…Î½Î¿Î¼Î¹Î»Î¯Î±Ï‚",
+      "RESOLVE_CONVERSATION": "Î•Ï€Î¯Î»Ï…ÏƒÎ· Î£Ï…Î½Î¿Î¼Î¹Î»Î¯Î±Ï‚",
+      "SEND_TRANSCRIPT": "Î£Ï„ÎµÎ¯Î»Ï„Îµ Î¼ÎµÏ„Î±Î³ÏÎ±Ï†Î® Ï„Î·Ï‚ ÏƒÏ…Î½Î¿Î¼Î¹Î»Î¯Î±Ï‚",
+      "SNOOZE_CONVERSATION": "Î‘Î½Î±Î²Î¿Î»Î® Î£Ï…Î½Î¿Î¼Î¹Î»Î¯Î±Ï‚",
+      "UNTIL_NEXT_REPLY": "ÎœÎ­Ï‡ÏÎ¹ Ï„Î·Î½ ÎµÏ€ÏŒÎ¼ÎµÎ½Î· Î±Ï€Î¬Î½Ï„Î·ÏƒÎ·",
+      "UNTIL_NEXT_WEEK": "ÎˆÏ‰Ï‚ Ï„Î·Î½ ÎµÏ€ÏŒÎ¼ÎµÎ½Î· ÎµÎ²Î´Î¿Î¼Î¬Î´Î±",
+      "UNTIL_TOMORROW": "ÎœÎ­Ï‡ÏÎ¹ Î±ÏÏÎ¹Î¿",
       "UNTIL_NEXT_MONTH": "Until next month",
       "AN_HOUR_FROM_NOW": "Until an hour from now",
       "UNTIL_CUSTOM_TIME": "Custom...",
@@ -259,10 +259,10 @@
     }
   },
   "DASHBOARD_APPS": {
-    "LOADING_MESSAGE": "Φόρτωση Εφαρμογής Dashboard..."
+    "LOADING_MESSAGE": "Î¦ÏŒÏÏ„Ï‰ÏƒÎ· Î•Ï†Î±ÏÎ¼Î¿Î³Î®Ï‚ Dashboard..."
   },
   "COMMON": {
     "OR": "Or",
-    "CLICK_HERE": "πατήστε εδώ"
+    "CLICK_HERE": "Ï€Î±Ï„Î®ÏƒÏ„Îµ ÎµÎ´ÏŽ"
   }
 }

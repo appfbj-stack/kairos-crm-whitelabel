@@ -304,7 +304,7 @@ defineExpose({ open, close });
   <SidePanel ref="panelRef" width="3xl" :title="$t(titleKey)">
     <div v-if="automation" class="flex flex-col w-full gap-6">
       <div class="flex flex-col">
-        <woot-input
+        <kairos-input
           v-model="automation.name"
           :label="$t('AUTOMATION.ADD.FORM.NAME.LABEL')"
           type="text"
@@ -312,7 +312,7 @@ defineExpose({ open, close });
           :error="errors.name ? $t('AUTOMATION.ADD.FORM.NAME.ERROR') : ''"
           :placeholder="$t('AUTOMATION.ADD.FORM.NAME.PLACEHOLDER')"
         />
-        <woot-input
+        <kairos-input
           v-model="automation.description"
           :label="$t('AUTOMATION.ADD.FORM.DESC.LABEL')"
           type="text"

@@ -1,5 +1,5 @@
 <script>
-import wootConstants from 'dashboard/constants/globals';
+import kairosConstants from 'dashboard/constants/globals';
 import { useUISettings } from 'dashboard/composables/useUISettings';
 
 import NextButton from 'dashboard/components-next/button/Button.vue';
@@ -24,30 +24,30 @@ export default {
       displayOptions: [
         {
           name: this.$t('INBOX.DISPLAY_MENU.DISPLAY_OPTIONS.SNOOZED'),
-          key: wootConstants.INBOX_DISPLAY_BY.SNOOZED,
+          key: kairosConstants.INBOX_DISPLAY_BY.SNOOZED,
           selected: false,
-          type: wootConstants.INBOX_FILTER_TYPE.STATUS,
+          type: kairosConstants.INBOX_FILTER_TYPE.STATUS,
         },
         {
           name: this.$t('INBOX.DISPLAY_MENU.DISPLAY_OPTIONS.READ'),
-          key: wootConstants.INBOX_DISPLAY_BY.READ,
+          key: kairosConstants.INBOX_DISPLAY_BY.READ,
           selected: false,
-          type: wootConstants.INBOX_FILTER_TYPE.TYPE,
+          type: kairosConstants.INBOX_FILTER_TYPE.TYPE,
         },
       ],
       sortOptions: [
         {
           name: this.$t('INBOX.DISPLAY_MENU.SORT_OPTIONS.NEWEST'),
-          key: wootConstants.INBOX_SORT_BY.NEWEST,
-          type: wootConstants.INBOX_FILTER_TYPE.SORT_ORDER,
+          key: kairosConstants.INBOX_SORT_BY.NEWEST,
+          type: kairosConstants.INBOX_FILTER_TYPE.SORT_ORDER,
         },
         {
           name: this.$t('INBOX.DISPLAY_MENU.SORT_OPTIONS.OLDEST'),
-          key: wootConstants.INBOX_SORT_BY.OLDEST,
-          type: wootConstants.INBOX_FILTER_TYPE.SORT_ORDER,
+          key: kairosConstants.INBOX_SORT_BY.OLDEST,
+          type: kairosConstants.INBOX_FILTER_TYPE.SORT_ORDER,
         },
       ],
-      activeSort: wootConstants.INBOX_SORT_BY.NEWEST,
+      activeSort: kairosConstants.INBOX_SORT_BY.NEWEST,
       activeDisplayFilter: {
         status: '',
         type: '',
@@ -91,17 +91,17 @@ export default {
       this.updateUISettings({
         inbox_filter_by: {
           ...this.activeDisplayFilter,
-          sort_by: this.activeSort || wootConstants.INBOX_SORT_BY.NEWEST,
+          sort_by: this.activeSort || kairosConstants.INBOX_SORT_BY.NEWEST,
         },
       });
     },
     setSavedFilter() {
       const { inbox_filter_by: filterBy = {} } = this.uiSettings;
       const { status, type, sort_by: sortBy } = filterBy;
-      this.activeSort = sortBy || wootConstants.INBOX_SORT_BY.NEWEST;
+      this.activeSort = sortBy || kairosConstants.INBOX_SORT_BY.NEWEST;
       this.displayOptions.forEach(option => {
         option.selected =
-          option.type === wootConstants.INBOX_FILTER_TYPE.STATUS
+          option.type === kairosConstants.INBOX_FILTER_TYPE.STATUS
             ? option.key === status
             : option.key === type;
         this.activeDisplayFilter[option.type] = option.selected

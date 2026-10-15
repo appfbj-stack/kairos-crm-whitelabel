@@ -85,7 +85,7 @@ export default {
 
 <template>
   <div class="flex items-center w-full gap-3">
-    <woot-input
+    <kairos-input
       v-model="thresholdTime"
       type="number"
       :class="{ error: v$.thresholdTime.$error }"

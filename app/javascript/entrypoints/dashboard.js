@@ -6,9 +6,9 @@ import axios from 'axios';
 import hljsVuePlugin from '@highlightjs/vue-plugin';
 
 import { plugin, defaultConfig } from '@formkit/vue';
-import WootWizard from 'components/ui/Wizard.vue';
+import KairosWizard from 'components/ui/Wizard.vue';
 import FloatingVue from 'floating-vue';
-import WootUiKit from 'dashboard/components';
+import KairosUiKit from 'dashboard/components';
 import App from 'dashboard/App.vue';
 import i18nMessages from 'dashboard/i18n';
 import createAxios from 'dashboard/helper/APIHelper';
@@ -22,7 +22,7 @@ import constants from 'dashboard/constants/globals';
 import * as Sentry from '@sentry/vue';
 import {
   initializeAnalyticsEvents,
-  initializeChatwootEvents,
+  initializeKairos CRMEvents,
 } from 'dashboard/helper/scriptHelpers.js';
 import FluentIcon from 'shared/components/FluentIcon/DashboardIcon.vue';
 import VueDOMPurifyHTML from 'vue-dompurify-html';
@@ -76,7 +76,7 @@ if (window.errorLoggingConfig) {
 }
 
 app.use(VueDOMPurifyHTML, domPurifyConfig);
-app.use(WootUiKit);
+app.use(KairosUiKit);
 app.use(
   plugin,
   defaultConfig({
@@ -101,7 +101,7 @@ app.use(FloatingVue, {
 });
 app.use(hljsVuePlugin);
 
-app.component('woot-wizard', WootWizard);
+app.component('kairos-wizard', KairosWizard);
 app.component('fluent-icon', FluentIcon);
 
 app.directive('resize', vResizeObserver);
@@ -109,12 +109,12 @@ app.directive('on-clickaway', onClickaway);
 
 // load common helpers into js
 commonHelpers();
-window.WootConstants = constants;
+window.KairosConstants = constants;
 window.axios = createAxios(axios);
 // [VITE] Disabled this we don't need it, we can use `useEmitter` directly
 // app.prototype.$emitter = emitter;
 
-initializeChatwootEvents();
+initializeKairos CRMEvents();
 initializeAnalyticsEvents();
 initalizeRouter();
 

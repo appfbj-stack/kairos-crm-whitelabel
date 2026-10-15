@@ -10,7 +10,7 @@ import {
 import { picoSearch } from '@chatwoot/pico-search';
 import MenuItem from './menuItem.vue';
 import MenuItemWithSubmenu from './menuItemWithSubmenu.vue';
-import wootConstants from 'dashboard/constants/globals';
+import kairosConstants from 'dashboard/constants/globals';
 import AgentLoadingPlaceholder from './agentLoadingPlaceholder.vue';
 import NextInput from 'dashboard/components-next/input/Input.vue';
 import Icon from 'dashboard/components-next/icon/Icon.vue';
@@ -93,7 +93,7 @@ export default {
     return {
       MENU,
       labelSearchQuery: '',
-      STATUS_TYPE: wootConstants.STATUS_TYPE,
+      STATUS_TYPE: kairosConstants.STATUS_TYPE,
       readOption: {
         label: this.$t('CONVERSATION.CARD_CONTEXT_MENU.MARK_AS_READ'),
         icon: 'mail',
@@ -104,23 +104,23 @@ export default {
       },
       statusMenuConfig: [
         {
-          key: wootConstants.STATUS_TYPE.RESOLVED,
+          key: kairosConstants.STATUS_TYPE.RESOLVED,
           label: this.$t('CONVERSATION.CARD_CONTEXT_MENU.RESOLVED'),
           icon: 'checkmark',
         },
         {
-          key: wootConstants.STATUS_TYPE.OPEN,
+          key: kairosConstants.STATUS_TYPE.OPEN,
           label: this.$t('CONVERSATION.CARD_CONTEXT_MENU.REOPEN'),
           icon: 'arrow-redo',
         },
         {
-          key: wootConstants.STATUS_TYPE.PENDING,
+          key: kairosConstants.STATUS_TYPE.PENDING,
           label: this.$t('CONVERSATION.CARD_CONTEXT_MENU.PENDING'),
           icon: 'book-clock',
         },
       ],
       snoozeOption: {
-        key: wootConstants.STATUS_TYPE.SNOOZED,
+        key: kairosConstants.STATUS_TYPE.SNOOZED,
         label: this.$t('CONVERSATION.CARD_CONTEXT_MENU.SNOOZE.TITLE'),
         icon: 'snooze',
       },
@@ -220,7 +220,7 @@ export default {
     },
     showSnooze() {
       // Don't show snooze if the conversation is already snoozed/resolved/pending
-      return this.status === wootConstants.STATUS_TYPE.OPEN;
+      return this.status === kairosConstants.STATUS_TYPE.OPEN;
     },
     filteredLabels() {
       const labels = this.labelSearchQuery
@@ -256,14 +256,14 @@ export default {
     openInNewTab() {
       if (!this.conversationUrl) return;
 
-      const url = `${window.chatwootConfig.hostURL}${this.conversationUrl}`;
+      const url = `${window.kairos-crmConfig.hostURL}${this.conversationUrl}`;
       window.open(url, '_blank', 'noopener,noreferrer');
       this.$emit('close');
     },
     async copyConversationLink() {
       if (!this.conversationUrl) return;
       try {
-        const url = `${window.chatwootConfig.hostURL}${this.conversationUrl}`;
+        const url = `${window.kairos-crmConfig.hostURL}${this.conversationUrl}`;
         await copyTextToClipboard(url);
         useAlert(this.$t('CONVERSATION.CARD_CONTEXT_MENU.COPY_LINK_SUCCESS'));
         this.$emit('close');

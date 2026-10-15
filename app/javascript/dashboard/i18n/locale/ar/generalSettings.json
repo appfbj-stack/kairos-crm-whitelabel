@@ -1,4 +1,4 @@
-{
+﻿{
   "GENERAL_SETTINGS": {
     "LIMIT_MESSAGES": {
       "CONVERSATION": "You have exceeded the conversation limit. Hacker plan allows only 500 conversations.",
@@ -6,13 +6,13 @@
       "AGENTS": "You have exceeded the agent limit. Your plan only allows {allowedAgents} agents.",
       "NON_ADMIN": "Please contact your administrator to upgrade the plan and continue using all features."
     },
-    "TITLE": "إعدادات الحساب",
-    "SUBMIT": "تحديث الإعدادات",
-    "BACK": "العودة",
-    "DISMISS": "تجاهل",
+    "TITLE": "Ø¥Ø¹Ø¯Ø§Ø¯Ø§Øª Ø§Ù„Ø­Ø³Ø§Ø¨",
+    "SUBMIT": "ØªØ­Ø¯ÙŠØ« Ø§Ù„Ø¥Ø¹Ø¯Ø§Ø¯Ø§Øª",
+    "BACK": "Ø§Ù„Ø¹ÙˆØ¯Ø©",
+    "DISMISS": "ØªØ¬Ø§Ù‡Ù„",
     "UPDATE": {
-      "ERROR": "تعذر تحديث الإعدادات، الرجاء المحاولة مرة أخرى!",
-      "SUCCESS": "تم تحديث إعدادات الحساب بنجاح"
+      "ERROR": "ØªØ¹Ø°Ø± ØªØ­Ø¯ÙŠØ« Ø§Ù„Ø¥Ø¹Ø¯Ø§Ø¯Ø§ØªØŒ Ø§Ù„Ø±Ø¬Ø§Ø¡ Ø§Ù„Ù…Ø­Ø§ÙˆÙ„Ø© Ù…Ø±Ø© Ø£Ø®Ø±Ù‰!",
+      "SUCCESS": "ØªÙ… ØªØ­Ø¯ÙŠØ« Ø¥Ø¹Ø¯Ø§Ø¯Ø§Øª Ø§Ù„Ø­Ø³Ø§Ø¨ Ø¨Ù†Ø¬Ø§Ø­"
     },
     "ACCOUNT_DELETE_SECTION": {
       "TITLE": "Delete your Account",
@@ -21,28 +21,28 @@
       "CONFIRM": {
         "TITLE": "Delete Account",
         "MESSAGE": "Deleting your Account is irreversible. Enter your account name below to confirm you want to permanently delete it.",
-        "BUTTON_TEXT": "حذف",
-        "DISMISS": "إلغاء",
-        "PLACE_HOLDER": "الرجاء كتابة {accountName} للتأكيد"
+        "BUTTON_TEXT": "Ø­Ø°Ù",
+        "DISMISS": "Ø¥Ù„ØºØ§Ø¡",
+        "PLACE_HOLDER": "Ø§Ù„Ø±Ø¬Ø§Ø¡ ÙƒØªØ§Ø¨Ø© {accountName} Ù„Ù„ØªØ£ÙƒÙŠØ¯"
       },
       "SUCCESS": "Account marked for deletion",
       "FAILURE": "Could not delete account, try again!",
       "SCHEDULED_DELETION": {
         "TITLE": "Account Scheduled for Deletion",
-        "MESSAGE_MANUAL": "هذا الحساب مجدول للحذف بتاريخ {deletionDate}. تم طلبه من قبل المسؤول. يمكنك إلغاء الحذف قبل هذا التاريخ.",
+        "MESSAGE_MANUAL": "Ù‡Ø°Ø§ Ø§Ù„Ø­Ø³Ø§Ø¨ Ù…Ø¬Ø¯ÙˆÙ„ Ù„Ù„Ø­Ø°Ù Ø¨ØªØ§Ø±ÙŠØ® {deletionDate}. ØªÙ… Ø·Ù„Ø¨Ù‡ Ù…Ù† Ù‚Ø¨Ù„ Ø§Ù„Ù…Ø³Ø¤ÙˆÙ„. ÙŠÙ…ÙƒÙ†Ùƒ Ø¥Ù„ØºØ§Ø¡ Ø§Ù„Ø­Ø°Ù Ù‚Ø¨Ù„ Ù‡Ø°Ø§ Ø§Ù„ØªØ§Ø±ÙŠØ®.",
         "MESSAGE_INACTIVITY": "This account is scheduled for deletion on {deletionDate} due to account inactivity. You can cancel the deletion before this date.",
         "CLEAR_BUTTON": "Cancel Scheduled Deletion"
       }
     },
     "FORM": {
-      "ERROR": "الرجاء إصلاح الأخطاء في النموذج",
+      "ERROR": "Ø§Ù„Ø±Ø¬Ø§Ø¡ Ø¥ØµÙ„Ø§Ø­ Ø§Ù„Ø£Ø®Ø·Ø§Ø¡ ÙÙŠ Ø§Ù„Ù†Ù…ÙˆØ°Ø¬",
       "GENERAL_SECTION": {
-        "TITLE": "الإعدادات العامة",
+        "TITLE": "Ø§Ù„Ø¥Ø¹Ø¯Ø§Ø¯Ø§Øª Ø§Ù„Ø¹Ø§Ù…Ø©",
         "NOTE": ""
       },
       "ACCOUNT_ID": {
-        "TITLE": "معرف الحساب",
-        "NOTE": "هذا المعرف مطلوب إذا كنت بصدد بناء تكامل على API"
+        "TITLE": "Ù…Ø¹Ø±Ù Ø§Ù„Ø­Ø³Ø§Ø¨",
+        "NOTE": "Ù‡Ø°Ø§ Ø§Ù„Ù…Ø¹Ø±Ù Ù…Ø·Ù„ÙˆØ¨ Ø¥Ø°Ø§ ÙƒÙ†Øª Ø¨ØµØ¯Ø¯ Ø¨Ù†Ø§Ø¡ ØªÙƒØ§Ù…Ù„ Ø¹Ù„Ù‰ API"
       },
       "AUTO_RESOLVE": {
         "TITLE": "Auto-resolve conversations",
@@ -62,34 +62,34 @@
           "PLACEHOLDER": "Conversation was marked resolved by system due to 15 days of inactivity",
           "HELP": "Message sent to the customer after conversation is auto-resolved"
         },
-        "PREFERENCES": "التفضيلات",
+        "PREFERENCES": "Ø§Ù„ØªÙØ¶ÙŠÙ„Ø§Øª",
         "LABEL": {
           "LABEL": "Add label after auto-resolution",
           "PLACEHOLDER": "Select a label"
         },
         "IGNORE_WAITING": {
-          "LABEL": "Skip conversations waiting for agent’s reply"
+          "LABEL": "Skip conversations waiting for agentâ€™s reply"
         },
         "UPDATE_BUTTON": "Save Changes"
       },
       "NAME": {
-        "LABEL": "اسم الحساب",
-        "PLACEHOLDER": "اسم الحساب الخاص بك",
-        "ERROR": "الرجاء إدخال اسم حساب صحيح"
+        "LABEL": "Ø§Ø³Ù… Ø§Ù„Ø­Ø³Ø§Ø¨",
+        "PLACEHOLDER": "Ø§Ø³Ù… Ø§Ù„Ø­Ø³Ø§Ø¨ Ø§Ù„Ø®Ø§Øµ Ø¨Ùƒ",
+        "ERROR": "Ø§Ù„Ø±Ø¬Ø§Ø¡ Ø¥Ø¯Ø®Ø§Ù„ Ø§Ø³Ù… Ø­Ø³Ø§Ø¨ ØµØ­ÙŠØ­"
       },
       "LANGUAGE": {
-        "LABEL": "لغة الموقع",
-        "PLACEHOLDER": "اسم الحساب الخاص بك",
+        "LABEL": "Ù„ØºØ© Ø§Ù„Ù…ÙˆÙ‚Ø¹",
+        "PLACEHOLDER": "Ø§Ø³Ù… Ø§Ù„Ø­Ø³Ø§Ø¨ Ø§Ù„Ø®Ø§Øµ Ø¨Ùƒ",
         "ERROR": ""
       },
       "DOMAIN": {
-        "LABEL": "نطاق البريد الإلكتروني الوارد",
-        "PLACEHOLDER": "النطاق الذي ستتلقى عليه رسائل البريد الإلكتروني",
+        "LABEL": "Ù†Ø·Ø§Ù‚ Ø§Ù„Ø¨Ø±ÙŠØ¯ Ø§Ù„Ø¥Ù„ÙƒØªØ±ÙˆÙ†ÙŠ Ø§Ù„ÙˆØ§Ø±Ø¯",
+        "PLACEHOLDER": "Ø§Ù„Ù†Ø·Ø§Ù‚ Ø§Ù„Ø°ÙŠ Ø³ØªØªÙ„Ù‚Ù‰ Ø¹Ù„ÙŠÙ‡ Ø±Ø³Ø§Ø¦Ù„ Ø§Ù„Ø¨Ø±ÙŠØ¯ Ø§Ù„Ø¥Ù„ÙƒØªØ±ÙˆÙ†ÙŠ",
         "ERROR": ""
       },
       "SUPPORT_EMAIL": {
-        "LABEL": "البريد الإلكتروني للدعم الفني",
-        "PLACEHOLDER": "عنوان البريد الإلكتروني الخاص باستقبال رسائل الدعم الفني",
+        "LABEL": "Ø§Ù„Ø¨Ø±ÙŠØ¯ Ø§Ù„Ø¥Ù„ÙƒØªØ±ÙˆÙ†ÙŠ Ù„Ù„Ø¯Ø¹Ù… Ø§Ù„ÙÙ†ÙŠ",
+        "PLACEHOLDER": "Ø¹Ù†ÙˆØ§Ù† Ø§Ù„Ø¨Ø±ÙŠØ¯ Ø§Ù„Ø¥Ù„ÙƒØªØ±ÙˆÙ†ÙŠ Ø§Ù„Ø®Ø§Øµ Ø¨Ø§Ø³ØªÙ‚Ø¨Ø§Ù„ Ø±Ø³Ø§Ø¦Ù„ Ø§Ù„Ø¯Ø¹Ù… Ø§Ù„ÙÙ†ÙŠ",
         "ERROR": ""
       },
       "AUTO_RESOLVE_IGNORE_WAITING": {
@@ -113,156 +113,156 @@
           "SUCCESS": "Auto resolve settings updated successfully",
           "ERROR": "Failed to update auto resolve settings"
         },
-        "UPDATE_BUTTON": "تحديث",
+        "UPDATE_BUTTON": "ØªØ­Ø¯ÙŠØ«",
         "MESSAGE_LABEL": "Custom resolution message",
         "MESSAGE_PLACEHOLDER": "Conversation was marked resolved by system due to 15 days of inactivity",
         "MESSAGE_HELP": "This message is sent to the customer when a conversation is automatically resolved by the system due to inactivity."
       },
       "FEATURES": {
-        "INBOUND_EMAIL_ENABLED": "الاستمرار في المحادثة عبر رسائل البريد الإلكتروني مفعّل لحسابك.",
-        "CUSTOM_EMAIL_DOMAIN_ENABLED": "يمكنك تلقي رسائل البريد الإلكتروني في النطاق المخصص الخاص بك الآن."
+        "INBOUND_EMAIL_ENABLED": "Ø§Ù„Ø§Ø³ØªÙ…Ø±Ø§Ø± ÙÙŠ Ø§Ù„Ù…Ø­Ø§Ø¯Ø«Ø© Ø¹Ø¨Ø± Ø±Ø³Ø§Ø¦Ù„ Ø§Ù„Ø¨Ø±ÙŠØ¯ Ø§Ù„Ø¥Ù„ÙƒØªØ±ÙˆÙ†ÙŠ Ù…ÙØ¹Ù‘Ù„ Ù„Ø­Ø³Ø§Ø¨Ùƒ.",
+        "CUSTOM_EMAIL_DOMAIN_ENABLED": "ÙŠÙ…ÙƒÙ†Ùƒ ØªÙ„Ù‚ÙŠ Ø±Ø³Ø§Ø¦Ù„ Ø§Ù„Ø¨Ø±ÙŠØ¯ Ø§Ù„Ø¥Ù„ÙƒØªØ±ÙˆÙ†ÙŠ ÙÙŠ Ø§Ù„Ù†Ø·Ø§Ù‚ Ø§Ù„Ù…Ø®ØµØµ Ø§Ù„Ø®Ø§Øµ Ø¨Ùƒ Ø§Ù„Ø¢Ù†."
       }
     },
-    "UPDATE_CHATWOOT": "يتوفر تحديث {latestChatwootVersion} لـ Chatwoot. الرجاء التحديث.",
-    "LEARN_MORE": "اعرف المزيد",
-    "PAYMENT_PENDING": "الدفعة الخاصة بك معلقة. الرجاء تحديث معلومات الدفع الخاصة بك للاستمرار في استخدام Chatwoot",
-    "UPGRADE": "Upgrade to continue using Chatwoot",
-    "LIMITS_UPGRADE": "لقد تجاوز حسابك حدود الاستخدام، يرجى ترقية خطتك للاستمرار في استخدام Chatwoot",
-    "OPEN_BILLING": "فتح الفواتير"
+    "UPDATE_KAIROS_CRM": "ÙŠØªÙˆÙØ± ØªØ­Ø¯ÙŠØ« {latestKairos CRMVersion} Ù„Ù€ Kairos CRM. Ø§Ù„Ø±Ø¬Ø§Ø¡ Ø§Ù„ØªØ­Ø¯ÙŠØ«.",
+    "LEARN_MORE": "Ø§Ø¹Ø±Ù Ø§Ù„Ù…Ø²ÙŠØ¯",
+    "PAYMENT_PENDING": "Ø§Ù„Ø¯ÙØ¹Ø© Ø§Ù„Ø®Ø§ØµØ© Ø¨Ùƒ Ù…Ø¹Ù„Ù‚Ø©. Ø§Ù„Ø±Ø¬Ø§Ø¡ ØªØ­Ø¯ÙŠØ« Ù…Ø¹Ù„ÙˆÙ…Ø§Øª Ø§Ù„Ø¯ÙØ¹ Ø§Ù„Ø®Ø§ØµØ© Ø¨Ùƒ Ù„Ù„Ø§Ø³ØªÙ…Ø±Ø§Ø± ÙÙŠ Ø§Ø³ØªØ®Ø¯Ø§Ù… Kairos CRM",
+    "UPGRADE": "Upgrade to continue using Kairos CRM",
+    "LIMITS_UPGRADE": "Ù„Ù‚Ø¯ ØªØ¬Ø§ÙˆØ² Ø­Ø³Ø§Ø¨Ùƒ Ø­Ø¯ÙˆØ¯ Ø§Ù„Ø§Ø³ØªØ®Ø¯Ø§Ù…ØŒ ÙŠØ±Ø¬Ù‰ ØªØ±Ù‚ÙŠØ© Ø®Ø·ØªÙƒ Ù„Ù„Ø§Ø³ØªÙ…Ø±Ø§Ø± ÙÙŠ Ø§Ø³ØªØ®Ø¯Ø§Ù… Kairos CRM",
+    "OPEN_BILLING": "ÙØªØ­ Ø§Ù„ÙÙˆØ§ØªÙŠØ±"
   },
   "FORMS": {
     "MULTISELECT": {
-      "ENTER_TO_SELECT": "اضغط على زر الإدخال للاختيار",
-      "ENTER_TO_REMOVE": "اضغط على زر الإدخال للحذف",
+      "ENTER_TO_SELECT": "Ø§Ø¶ØºØ· Ø¹Ù„Ù‰ Ø²Ø± Ø§Ù„Ø¥Ø¯Ø®Ø§Ù„ Ù„Ù„Ø§Ø®ØªÙŠØ§Ø±",
+      "ENTER_TO_REMOVE": "Ø§Ø¶ØºØ· Ø¹Ù„Ù‰ Ø²Ø± Ø§Ù„Ø¥Ø¯Ø®Ø§Ù„ Ù„Ù„Ø­Ø°Ù",
       "NO_OPTIONS": "List is empty",
-      "SELECT_ONE": "اختر واحدا",
-      "SELECT": "اختر"
+      "SELECT_ONE": "Ø§Ø®ØªØ± ÙˆØ§Ø­Ø¯Ø§",
+      "SELECT": "Ø§Ø®ØªØ±"
     }
   },
   "NOTIFICATIONS_PAGE": {
-    "HEADER": "الإشعارات",
-    "MARK_ALL_DONE": "وضع علامة منجز على الجميع",
-    "DELETE_TITLE": "تم الحذف",
+    "HEADER": "Ø§Ù„Ø¥Ø´Ø¹Ø§Ø±Ø§Øª",
+    "MARK_ALL_DONE": "ÙˆØ¶Ø¹ Ø¹Ù„Ø§Ù…Ø© Ù…Ù†Ø¬Ø² Ø¹Ù„Ù‰ Ø§Ù„Ø¬Ù…ÙŠØ¹",
+    "DELETE_TITLE": "ØªÙ… Ø§Ù„Ø­Ø°Ù",
     "UNREAD_NOTIFICATION": {
-      "TITLE": "إشعارات غير مقروءة",
-      "ALL_NOTIFICATIONS": "عرض جميع الإشعارات",
-      "LOADING_UNREAD_MESSAGE": "جار جلب الإشعارات الغير مقروءة...",
-      "EMPTY_MESSAGE": "ليس لديك إشعارات غير مقروءة"
+      "TITLE": "Ø¥Ø´Ø¹Ø§Ø±Ø§Øª ØºÙŠØ± Ù…Ù‚Ø±ÙˆØ¡Ø©",
+      "ALL_NOTIFICATIONS": "Ø¹Ø±Ø¶ Ø¬Ù…ÙŠØ¹ Ø§Ù„Ø¥Ø´Ø¹Ø§Ø±Ø§Øª",
+      "LOADING_UNREAD_MESSAGE": "Ø¬Ø§Ø± Ø¬Ù„Ø¨ Ø§Ù„Ø¥Ø´Ø¹Ø§Ø±Ø§Øª Ø§Ù„ØºÙŠØ± Ù…Ù‚Ø±ÙˆØ¡Ø©...",
+      "EMPTY_MESSAGE": "Ù„ÙŠØ³ Ù„Ø¯ÙŠÙƒ Ø¥Ø´Ø¹Ø§Ø±Ø§Øª ØºÙŠØ± Ù…Ù‚Ø±ÙˆØ¡Ø©"
     },
     "LIST": {
-      "LOADING_MESSAGE": "جاري جلب الإشعارات...",
-      "404": "لا يوجد إشعارات",
+      "LOADING_MESSAGE": "Ø¬Ø§Ø±ÙŠ Ø¬Ù„Ø¨ Ø§Ù„Ø¥Ø´Ø¹Ø§Ø±Ø§Øª...",
+      "404": "Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ø¥Ø´Ø¹Ø§Ø±Ø§Øª",
       "TABLE_HEADER": [
-        "الاسم",
-        "رقم الهاتف",
-        "المحادثات",
-        "آخر تواصل"
+        "Ø§Ù„Ø§Ø³Ù…",
+        "Ø±Ù‚Ù… Ø§Ù„Ù‡Ø§ØªÙ",
+        "Ø§Ù„Ù…Ø­Ø§Ø¯Ø«Ø§Øª",
+        "Ø¢Ø®Ø± ØªÙˆØ§ØµÙ„"
       ]
     },
     "TYPE_LABEL": {
-      "conversation_creation": "محادثة جديدة",
-      "conversation_assignment": "تم تعيين المحادثة",
-      "assigned_conversation_new_message": "رسالة جديدة",
-      "participating_conversation_new_message": "رسالة جديدة",
-      "conversation_mention": "إشارة",
-      "sla_missed_first_response": "فشل اتفاقية مستوى الخدمة",
-      "sla_missed_next_response": "فشل اتفاقية مستوى الخدمة",
-      "sla_missed_resolution": "فشل اتفاقية مستوى الخدمة"
+      "conversation_creation": "Ù…Ø­Ø§Ø¯Ø«Ø© Ø¬Ø¯ÙŠØ¯Ø©",
+      "conversation_assignment": "ØªÙ… ØªØ¹ÙŠÙŠÙ† Ø§Ù„Ù…Ø­Ø§Ø¯Ø«Ø©",
+      "assigned_conversation_new_message": "Ø±Ø³Ø§Ù„Ø© Ø¬Ø¯ÙŠØ¯Ø©",
+      "participating_conversation_new_message": "Ø±Ø³Ø§Ù„Ø© Ø¬Ø¯ÙŠØ¯Ø©",
+      "conversation_mention": "Ø¥Ø´Ø§Ø±Ø©",
+      "sla_missed_first_response": "ÙØ´Ù„ Ø§ØªÙØ§Ù‚ÙŠØ© Ù…Ø³ØªÙˆÙ‰ Ø§Ù„Ø®Ø¯Ù…Ø©",
+      "sla_missed_next_response": "ÙØ´Ù„ Ø§ØªÙØ§Ù‚ÙŠØ© Ù…Ø³ØªÙˆÙ‰ Ø§Ù„Ø®Ø¯Ù…Ø©",
+      "sla_missed_resolution": "ÙØ´Ù„ Ø§ØªÙØ§Ù‚ÙŠØ© Ù…Ø³ØªÙˆÙ‰ Ø§Ù„Ø®Ø¯Ù…Ø©"
     }
   },
   "NETWORK": {
     "NOTIFICATION": {
-      "OFFLINE": "غير متصل",
-      "RECONNECTING": "جاري إعادة الاتصال...",
-      "RECONNECT_SUCCESS": "تمت إعادة الاتصال"
+      "OFFLINE": "ØºÙŠØ± Ù…ØªØµÙ„",
+      "RECONNECTING": "Ø¬Ø§Ø±ÙŠ Ø¥Ø¹Ø§Ø¯Ø© Ø§Ù„Ø§ØªØµØ§Ù„...",
+      "RECONNECT_SUCCESS": "ØªÙ…Øª Ø¥Ø¹Ø§Ø¯Ø© Ø§Ù„Ø§ØªØµØ§Ù„"
     },
     "BUTTON": {
-      "REFRESH": "تحديث"
+      "REFRESH": "ØªØ­Ø¯ÙŠØ«"
     }
   },
   "COMMAND_BAR": {
-    "SEARCH_PLACEHOLDER": "البحث أو القفز إلى",
+    "SEARCH_PLACEHOLDER": "Ø§Ù„Ø¨Ø­Ø« Ø£Ùˆ Ø§Ù„Ù‚ÙØ² Ø¥Ù„Ù‰",
     "SNOOZE_PLACEHOLDER": "Type a time e.g. tomorrow, 2 hours, next friday, jan 15...",
     "SECTIONS": {
-      "GENERAL": "عام",
-      "REPORTS": "التقارير",
-      "CONVERSATION": "المحادثات",
-      "BULK_ACTIONS": "الإجراءات الشاملة",
-      "CHANGE_ASSIGNEE": "تغيير المحال إليه",
-      "CHANGE_PRIORITY": "تغيير الأولوية",
-      "CHANGE_TEAM": "تغيير الفريق",
-      "SNOOZE_CONVERSATION": "تأجيل المحادثة",
-      "ADD_LABEL": "إضافة وسم إلى المحادثة",
-      "REMOVE_LABEL": "إزالة الوسم من المحادثة",
-      "SETTINGS": "الإعدادات",
-      "AI_ASSIST": "مساعدة AI",
-      "APPEARANCE": "المظهر",
-      "SNOOZE_NOTIFICATION": "تأجيل الإشعارات"
+      "GENERAL": "Ø¹Ø§Ù…",
+      "REPORTS": "Ø§Ù„ØªÙ‚Ø§Ø±ÙŠØ±",
+      "CONVERSATION": "Ø§Ù„Ù…Ø­Ø§Ø¯Ø«Ø§Øª",
+      "BULK_ACTIONS": "Ø§Ù„Ø¥Ø¬Ø±Ø§Ø¡Ø§Øª Ø§Ù„Ø´Ø§Ù…Ù„Ø©",
+      "CHANGE_ASSIGNEE": "ØªØºÙŠÙŠØ± Ø§Ù„Ù…Ø­Ø§Ù„ Ø¥Ù„ÙŠÙ‡",
+      "CHANGE_PRIORITY": "ØªØºÙŠÙŠØ± Ø§Ù„Ø£ÙˆÙ„ÙˆÙŠØ©",
+      "CHANGE_TEAM": "ØªØºÙŠÙŠØ± Ø§Ù„ÙØ±ÙŠÙ‚",
+      "SNOOZE_CONVERSATION": "ØªØ£Ø¬ÙŠÙ„ Ø§Ù„Ù…Ø­Ø§Ø¯Ø«Ø©",
+      "ADD_LABEL": "Ø¥Ø¶Ø§ÙØ© ÙˆØ³Ù… Ø¥Ù„Ù‰ Ø§Ù„Ù…Ø­Ø§Ø¯Ø«Ø©",
+      "REMOVE_LABEL": "Ø¥Ø²Ø§Ù„Ø© Ø§Ù„ÙˆØ³Ù… Ù…Ù† Ø§Ù„Ù…Ø­Ø§Ø¯Ø«Ø©",
+      "SETTINGS": "Ø§Ù„Ø¥Ø¹Ø¯Ø§Ø¯Ø§Øª",
+      "AI_ASSIST": "Ù…Ø³Ø§Ø¹Ø¯Ø© AI",
+      "APPEARANCE": "Ø§Ù„Ù…Ø¸Ù‡Ø±",
+      "SNOOZE_NOTIFICATION": "ØªØ£Ø¬ÙŠÙ„ Ø§Ù„Ø¥Ø´Ø¹Ø§Ø±Ø§Øª"
     },
     "COMMANDS": {
       "GO_TO_MY_INBOX": "Go to My Inbox",
-      "GO_TO_CONVERSATION_DASHBOARD": "الذهاب إلى لوحة المحادثة",
-      "GO_TO_CONTACTS_DASHBOARD": "الذهاب إلى لوحة جهات الاتصال",
+      "GO_TO_CONVERSATION_DASHBOARD": "Ø§Ù„Ø°Ù‡Ø§Ø¨ Ø¥Ù„Ù‰ Ù„ÙˆØ­Ø© Ø§Ù„Ù…Ø­Ø§Ø¯Ø«Ø©",
+      "GO_TO_CONTACTS_DASHBOARD": "Ø§Ù„Ø°Ù‡Ø§Ø¨ Ø¥Ù„Ù‰ Ù„ÙˆØ­Ø© Ø¬Ù‡Ø§Øª Ø§Ù„Ø§ØªØµØ§Ù„",
       "GO_TO_CAPTAIN": "Go to Captain",
       "GO_TO_CALLS_DASHBOARD": "Go to Calls Dashboard",
       "GO_TO_CAMPAIGNS": "Go to Campaigns",
       "GO_TO_HELP_CENTER": "Go to Help Center",
-      "GO_TO_REPORTS_OVERVIEW": "الذهاب إلى نظرة التقارير العامة",
-      "GO_TO_CONVERSATION_REPORTS": "الذهاب إلى تقارير المحادثات",
-      "GO_TO_AGENT_REPORTS": "الذهاب إلى تقارير الوكيل",
-      "GO_TO_LABEL_REPORTS": "انتقل إلى تقارير الوسم",
-      "GO_TO_INBOX_REPORTS": "الذهاب إلى تقارير صندوق الوارد",
-      "GO_TO_TEAM_REPORTS": "الذهاب إلى تقارير الفريق",
+      "GO_TO_REPORTS_OVERVIEW": "Ø§Ù„Ø°Ù‡Ø§Ø¨ Ø¥Ù„Ù‰ Ù†Ø¸Ø±Ø© Ø§Ù„ØªÙ‚Ø§Ø±ÙŠØ± Ø§Ù„Ø¹Ø§Ù…Ø©",
+      "GO_TO_CONVERSATION_REPORTS": "Ø§Ù„Ø°Ù‡Ø§Ø¨ Ø¥Ù„Ù‰ ØªÙ‚Ø§Ø±ÙŠØ± Ø§Ù„Ù…Ø­Ø§Ø¯Ø«Ø§Øª",
+      "GO_TO_AGENT_REPORTS": "Ø§Ù„Ø°Ù‡Ø§Ø¨ Ø¥Ù„Ù‰ ØªÙ‚Ø§Ø±ÙŠØ± Ø§Ù„ÙˆÙƒÙŠÙ„",
+      "GO_TO_LABEL_REPORTS": "Ø§Ù†ØªÙ‚Ù„ Ø¥Ù„Ù‰ ØªÙ‚Ø§Ø±ÙŠØ± Ø§Ù„ÙˆØ³Ù…",
+      "GO_TO_INBOX_REPORTS": "Ø§Ù„Ø°Ù‡Ø§Ø¨ Ø¥Ù„Ù‰ ØªÙ‚Ø§Ø±ÙŠØ± ØµÙ†Ø¯ÙˆÙ‚ Ø§Ù„ÙˆØ§Ø±Ø¯",
+      "GO_TO_TEAM_REPORTS": "Ø§Ù„Ø°Ù‡Ø§Ø¨ Ø¥Ù„Ù‰ ØªÙ‚Ø§Ø±ÙŠØ± Ø§Ù„ÙØ±ÙŠÙ‚",
       "GO_TO_CSAT_REPORTS": "Go to CSAT Reports",
       "GO_TO_BOT_REPORTS": "Go to Bot Reports",
       "GO_TO_SLA_REPORTS": "Go to SLA Reports",
-      "GO_TO_SETTINGS_AGENTS": "الذهاب إلى إعدادات الوكيل",
-      "GO_TO_SETTINGS_TEAMS": "الذهاب إلى إعدادات الفريق",
-      "GO_TO_SETTINGS_INBOXES": "الذهاب إلى إعدادات الصندوق الوارد",
+      "GO_TO_SETTINGS_AGENTS": "Ø§Ù„Ø°Ù‡Ø§Ø¨ Ø¥Ù„Ù‰ Ø¥Ø¹Ø¯Ø§Ø¯Ø§Øª Ø§Ù„ÙˆÙƒÙŠÙ„",
+      "GO_TO_SETTINGS_TEAMS": "Ø§Ù„Ø°Ù‡Ø§Ø¨ Ø¥Ù„Ù‰ Ø¥Ø¹Ø¯Ø§Ø¯Ø§Øª Ø§Ù„ÙØ±ÙŠÙ‚",
+      "GO_TO_SETTINGS_INBOXES": "Ø§Ù„Ø°Ù‡Ø§Ø¨ Ø¥Ù„Ù‰ Ø¥Ø¹Ø¯Ø§Ø¯Ø§Øª Ø§Ù„ØµÙ†Ø¯ÙˆÙ‚ Ø§Ù„ÙˆØ§Ø±Ø¯",
       "GO_TO_SETTINGS_TEMPLATES": "Go to Templates",
-      "GO_TO_SETTINGS_LABELS": "الذهاب إلى إعدادات الوسم",
+      "GO_TO_SETTINGS_LABELS": "Ø§Ù„Ø°Ù‡Ø§Ø¨ Ø¥Ù„Ù‰ Ø¥Ø¹Ø¯Ø§Ø¯Ø§Øª Ø§Ù„ÙˆØ³Ù…",
       "GO_TO_SETTINGS_CUSTOM_ATTRIBUTES": "Go to Custom Attributes",
       "GO_TO_SETTINGS_AUTOMATION": "Go to Automation",
       "GO_TO_SETTINGS_MACROS": "Go to Macros",
-      "GO_TO_SETTINGS_CANNED_RESPONSES": "انتقل إلى إعدادات الردود الجاهزة",
+      "GO_TO_SETTINGS_CANNED_RESPONSES": "Ø§Ù†ØªÙ‚Ù„ Ø¥Ù„Ù‰ Ø¥Ø¹Ø¯Ø§Ø¯Ø§Øª Ø§Ù„Ø±Ø¯ÙˆØ¯ Ø§Ù„Ø¬Ø§Ù‡Ø²Ø©",
       "GO_TO_SETTINGS_SLA": "Go to SLA Settings",
-      "GO_TO_SETTINGS_APPLICATIONS": "الذهاب إلى إعدادات التطبيق",
+      "GO_TO_SETTINGS_APPLICATIONS": "Ø§Ù„Ø°Ù‡Ø§Ø¨ Ø¥Ù„Ù‰ Ø¥Ø¹Ø¯Ø§Ø¯Ø§Øª Ø§Ù„ØªØ·Ø¨ÙŠÙ‚",
       "GO_TO_SETTINGS_DATA": "Go to Data",
       "GO_TO_SETTINGS_AUDIT_LOGS": "Go to Audit Logs",
       "GO_TO_SETTINGS_BILLING": "Go to Billing",
-      "GO_TO_SETTINGS_ACCOUNT": "الذهاب إلى إعدادات الحساب",
-      "GO_TO_SETTINGS_PROFILE": "الذهاب إلى إعدادات الملف الشخصي",
-      "GO_TO_NOTIFICATIONS": "الذهاب إلى الإشعارات",
-      "ADD_LABELS_TO_CONVERSATION": "إضافة وسم إلى المحادثة",
-      "ASSIGN_AN_AGENT": "تعيين وكيل",
-      "AI_ASSIST": "مساعدة AI",
-      "ASSIGN_PRIORITY": "تعيين الأولوية",
-      "ASSIGN_A_TEAM": "تعيين فريق",
-      "MUTE_CONVERSATION": "كتم المحادثة",
-      "UNMUTE_CONVERSATION": "إلغاء كتم المحادثة",
-      "REMOVE_LABEL_FROM_CONVERSATION": "إزالة الوسم من المحادثة",
-      "REOPEN_CONVERSATION": "إعادة فتح المحادثة",
-      "RESOLVE_CONVERSATION": "حل المحادثة",
-      "SEND_TRANSCRIPT": "إرسال نسخة نصية للبريد الإلكتروني",
-      "SNOOZE_CONVERSATION": "تأجيل المحادثة",
-      "UNTIL_NEXT_REPLY": "حتى الرد القادم",
-      "UNTIL_NEXT_WEEK": "حتى الأسبوع القادم",
-      "UNTIL_TOMORROW": "حتى الغد",
-      "UNTIL_NEXT_MONTH": "حتي الشهر القادم",
-      "AN_HOUR_FROM_NOW": "حتي ساعة من الأن",
-      "UNTIL_CUSTOM_TIME": "مخصص...",
-      "CHANGE_APPEARANCE": "تغيير المظهر",
-      "LIGHT_MODE": "فاتح",
-      "DARK_MODE": "مظلم",
-      "SYSTEM_MODE": "النظام",
-      "SNOOZE_NOTIFICATION": "تأجيل الإشعارات"
+      "GO_TO_SETTINGS_ACCOUNT": "Ø§Ù„Ø°Ù‡Ø§Ø¨ Ø¥Ù„Ù‰ Ø¥Ø¹Ø¯Ø§Ø¯Ø§Øª Ø§Ù„Ø­Ø³Ø§Ø¨",
+      "GO_TO_SETTINGS_PROFILE": "Ø§Ù„Ø°Ù‡Ø§Ø¨ Ø¥Ù„Ù‰ Ø¥Ø¹Ø¯Ø§Ø¯Ø§Øª Ø§Ù„Ù…Ù„Ù Ø§Ù„Ø´Ø®ØµÙŠ",
+      "GO_TO_NOTIFICATIONS": "Ø§Ù„Ø°Ù‡Ø§Ø¨ Ø¥Ù„Ù‰ Ø§Ù„Ø¥Ø´Ø¹Ø§Ø±Ø§Øª",
+      "ADD_LABELS_TO_CONVERSATION": "Ø¥Ø¶Ø§ÙØ© ÙˆØ³Ù… Ø¥Ù„Ù‰ Ø§Ù„Ù…Ø­Ø§Ø¯Ø«Ø©",
+      "ASSIGN_AN_AGENT": "ØªØ¹ÙŠÙŠÙ† ÙˆÙƒÙŠÙ„",
+      "AI_ASSIST": "Ù…Ø³Ø§Ø¹Ø¯Ø© AI",
+      "ASSIGN_PRIORITY": "ØªØ¹ÙŠÙŠÙ† Ø§Ù„Ø£ÙˆÙ„ÙˆÙŠØ©",
+      "ASSIGN_A_TEAM": "ØªØ¹ÙŠÙŠÙ† ÙØ±ÙŠÙ‚",
+      "MUTE_CONVERSATION": "ÙƒØªÙ… Ø§Ù„Ù…Ø­Ø§Ø¯Ø«Ø©",
+      "UNMUTE_CONVERSATION": "Ø¥Ù„ØºØ§Ø¡ ÙƒØªÙ… Ø§Ù„Ù…Ø­Ø§Ø¯Ø«Ø©",
+      "REMOVE_LABEL_FROM_CONVERSATION": "Ø¥Ø²Ø§Ù„Ø© Ø§Ù„ÙˆØ³Ù… Ù…Ù† Ø§Ù„Ù…Ø­Ø§Ø¯Ø«Ø©",
+      "REOPEN_CONVERSATION": "Ø¥Ø¹Ø§Ø¯Ø© ÙØªØ­ Ø§Ù„Ù…Ø­Ø§Ø¯Ø«Ø©",
+      "RESOLVE_CONVERSATION": "Ø­Ù„ Ø§Ù„Ù…Ø­Ø§Ø¯Ø«Ø©",
+      "SEND_TRANSCRIPT": "Ø¥Ø±Ø³Ø§Ù„ Ù†Ø³Ø®Ø© Ù†ØµÙŠØ© Ù„Ù„Ø¨Ø±ÙŠØ¯ Ø§Ù„Ø¥Ù„ÙƒØªØ±ÙˆÙ†ÙŠ",
+      "SNOOZE_CONVERSATION": "ØªØ£Ø¬ÙŠÙ„ Ø§Ù„Ù…Ø­Ø§Ø¯Ø«Ø©",
+      "UNTIL_NEXT_REPLY": "Ø­ØªÙ‰ Ø§Ù„Ø±Ø¯ Ø§Ù„Ù‚Ø§Ø¯Ù…",
+      "UNTIL_NEXT_WEEK": "Ø­ØªÙ‰ Ø§Ù„Ø£Ø³Ø¨ÙˆØ¹ Ø§Ù„Ù‚Ø§Ø¯Ù…",
+      "UNTIL_TOMORROW": "Ø­ØªÙ‰ Ø§Ù„ØºØ¯",
+      "UNTIL_NEXT_MONTH": "Ø­ØªÙŠ Ø§Ù„Ø´Ù‡Ø± Ø§Ù„Ù‚Ø§Ø¯Ù…",
+      "AN_HOUR_FROM_NOW": "Ø­ØªÙŠ Ø³Ø§Ø¹Ø© Ù…Ù† Ø§Ù„Ø£Ù†",
+      "UNTIL_CUSTOM_TIME": "Ù…Ø®ØµØµ...",
+      "CHANGE_APPEARANCE": "ØªØºÙŠÙŠØ± Ø§Ù„Ù…Ø¸Ù‡Ø±",
+      "LIGHT_MODE": "ÙØ§ØªØ­",
+      "DARK_MODE": "Ù…Ø¸Ù„Ù…",
+      "SYSTEM_MODE": "Ø§Ù„Ù†Ø¸Ø§Ù…",
+      "SNOOZE_NOTIFICATION": "ØªØ£Ø¬ÙŠÙ„ Ø§Ù„Ø¥Ø´Ø¹Ø§Ø±Ø§Øª"
     }
   },
   "DASHBOARD_APPS": {
-    "LOADING_MESSAGE": "جاري جلب تطبيق لوحة التحكم..."
+    "LOADING_MESSAGE": "Ø¬Ø§Ø±ÙŠ Ø¬Ù„Ø¨ ØªØ·Ø¨ÙŠÙ‚ Ù„ÙˆØ­Ø© Ø§Ù„ØªØ­ÙƒÙ…..."
   },
   "COMMON": {
-    "OR": "أو",
-    "CLICK_HERE": "اضغط هنا"
+    "OR": "Ø£Ùˆ",
+    "CLICK_HERE": "Ø§Ø¶ØºØ· Ù‡Ù†Ø§"
   }
 }

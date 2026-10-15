@@ -63,9 +63,9 @@ export default {
 
 <template>
   <Modal v-model:show="localShow" :on-close="closeModal">
-    <woot-modal-header :header-title="title" :header-content="message" />
+    <kairos-modal-header :header-title="title" :header-content="message" />
     <form @submit.prevent="onConfirm">
-      <woot-input
+      <kairos-input
         v-model="value"
         type="text"
         :class="{ error: v$.value.$error }"

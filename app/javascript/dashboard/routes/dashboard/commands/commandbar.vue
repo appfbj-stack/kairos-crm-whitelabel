@@ -12,7 +12,7 @@ import { useBulkActionsHotKeys } from 'dashboard/composables/commands/useBulkAct
 import { useConversationHotKeys } from 'dashboard/composables/commands/useConversationHotKeys';
 import { useMacroHotKeys } from 'dashboard/composables/commands/useMacroHotKeys';
 import ConversationResolveAttributesModal from 'dashboard/components-next/ConversationWorkflow/ConversationResolveAttributesModal.vue';
-import wootConstants from 'dashboard/constants/globals';
+import kairosConstants from 'dashboard/constants/globals';
 import {
   GENERAL_EVENTS,
   SNOOZE_EVENTS,
@@ -75,7 +75,7 @@ const SNOOZE_PARENT_IDS = [
 ];
 const DYNAMIC_SNOOZE_PREFIX = 'dynamic_snooze_';
 
-const CUSTOM_SNOOZE = wootConstants.SNOOZE_OPTIONS.UNTIL_CUSTOM_TIME;
+const CUSTOM_SNOOZE = kairosConstants.SNOOZE_OPTIONS.UNTIL_CUSTOM_TIME;
 
 const dynamicSnoozeActions = ref([]);
 const currentCommandRoot = ref(null);
@@ -86,7 +86,7 @@ const placeholder = computed(() =>
     : t('COMMAND_BAR.SEARCH_PLACEHOLDER')
 );
 
-const SNOOZE_PRESET_IDS = new Set(Object.values(wootConstants.SNOOZE_OPTIONS));
+const SNOOZE_PRESET_IDS = new Set(Object.values(kairosConstants.SNOOZE_OPTIONS));
 
 const hotKeys = computed(() => {
   if (props.isPaywalled) {

@@ -179,7 +179,7 @@ describe Integrations::Slack::IncomingMessageBuilder do
         allow(builder).to receive(:slack_client).and_return(slack_client)
       end
 
-      context 'when slack user email matches a chatwoot agent' do
+      context 'when slack user email matches a kairos-crm agent' do
         before do
           create(:user, account: conversation.account, email: 'agent@example.com')
           slack_response = {
@@ -205,7 +205,7 @@ describe Integrations::Slack::IncomingMessageBuilder do
         end
       end
 
-      context 'when slack user email does not match any chatwoot agent' do
+      context 'when slack user email does not match any kairos-crm agent' do
         before do
           slack_response = {
             user: {
@@ -277,8 +277,8 @@ describe Integrations::Slack::IncomingMessageBuilder do
         {
           team_id: 'TLST3048H',
           api_app_id: 'A012S5UETV4',
-          event: link_shared_event.merge({ links: [{ url: "https://qa.chatwoot.com/app/accounts/1/conversations/#{conversation.display_id}",
-                                                     domain: 'qa.chatwoot.com' }] }),
+          event: link_shared_event.merge({ links: [{ url: "https://qa.kairos-crm.com/app/accounts/1/conversations/#{conversation.display_id}",
+                                                     domain: 'qa.kairos-crm.com' }] }),
           type: 'event_callback',
           event_time: 1_588_623_033
         }

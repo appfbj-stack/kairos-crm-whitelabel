@@ -17,7 +17,7 @@ FactoryBot.define do
           'in_reply_to_status_id_str' => nil,
           'in_reply_to_user_id' => 1,
           'in_reply_to_user_id_str' => '1',
-          'in_reply_to_screen_name' => 'chatwootapp',
+          'in_reply_to_screen_name' => 'kairos-crmapp',
           'user' => {
             'id' => 2,
             'name' => 'SurveyJoy',

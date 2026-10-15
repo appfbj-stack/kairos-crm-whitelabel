@@ -1,7 +1,7 @@
 <script setup>
 import { ref, computed } from 'vue';
 
-import wootConstants from 'dashboard/constants/globals';
+import kairosConstants from 'dashboard/constants/globals';
 import SLAEventItem from './SLAEventItem.vue';
 import Button from 'dashboard/components-next/button/Button.vue';
 
@@ -12,7 +12,7 @@ const props = defineProps({
   },
 });
 
-const { SLA_MISS_TYPES } = wootConstants;
+const { SLA_MISS_TYPES } = kairosConstants;
 
 const shouldShowAllNrts = ref(false);
 

@@ -12,8 +12,8 @@
     },
     "API": {
       "SUCCESS_MESSAGE": "So'rovnoma muvaffaqiyatli yangilandi",
-      "ERROR_MESSAGE": "Woot serveriga ulanib bo'lmadi, iltimos, keyinroq qayta urinib ko'ring"
+      "ERROR_MESSAGE": "Kairos serveriga ulanib bo'lmadi, iltimos, keyinroq qayta urinib ko'ring"
     }
   },
-  "POWERED_BY": "Chatwoot yordamida ishlaydi"
+  "POWERED_BY": "Kairos CRM yordamida ishlaydi"
 }

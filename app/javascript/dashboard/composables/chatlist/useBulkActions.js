@@ -4,7 +4,7 @@ import { useAlert } from 'dashboard/composables';
 import { useI18n } from 'vue-i18n';
 import { useMapGetter } from 'dashboard/composables/store.js';
 import { useConversationRequiredAttributes } from 'dashboard/composables/useConversationRequiredAttributes';
-import wootConstants from 'dashboard/constants/globals';
+import kairosConstants from 'dashboard/constants/globals';
 
 export function useBulkActions() {
   const store = useStore();
@@ -163,7 +163,7 @@ export function useBulkActions() {
     let skippedCount = 0;
 
     // If resolving, check for required attributes
-    if (status === wootConstants.STATUS_TYPE.RESOLVED) {
+    if (status === kairosConstants.STATUS_TYPE.RESOLVED) {
       const { validIds, skippedIds } = selectedConversations.value.reduce(
         (acc, id) => {
           const conversation = store.getters.getConversationById(id);

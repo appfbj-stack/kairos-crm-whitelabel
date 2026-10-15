@@ -1,6 +1,6 @@
 <script setup>
 import { ref, inject } from 'vue';
-import CopilotEditor from 'dashboard/components/widgets/WootWriter/CopilotEditor.vue';
+import CopilotEditor from 'dashboard/components/widgets/KairosWriter/CopilotEditor.vue';
 import CaptainLoader from 'dashboard/components/widgets/conversation/copilot/CaptainLoader.vue';
 
 const props = defineProps({

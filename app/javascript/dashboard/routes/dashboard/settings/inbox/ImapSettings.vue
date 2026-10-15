@@ -126,7 +126,7 @@ export default {
       </label>
       <p>{{ $t('INBOX_MGMT.IMAP.TOGGLE_HELP') }}</p>
       <div v-if="isIMAPEnabled" class="mb-6">
-        <woot-input
+        <kairos-input
           v-model="address"
           :class="{ error: v$.address.$error }"
           class="w-full"
@@ -134,7 +134,7 @@ export default {
           :placeholder="$t('INBOX_MGMT.IMAP.ADDRESS.PLACE_HOLDER')"
           @blur="v$.address.$touch"
         />
-        <woot-input
+        <kairos-input
           v-model="port"
           type="number"
           :class="{ error: v$.port.$error }"
@@ -143,7 +143,7 @@ export default {
           :placeholder="$t('INBOX_MGMT.IMAP.PORT.PLACE_HOLDER')"
           @blur="v$.port.$touch"
         />
-        <woot-input
+        <kairos-input
           v-model="login"
           :class="{ error: v$.login.$error }"
           class="w-full"
@@ -151,7 +151,7 @@ export default {
           :placeholder="$t('INBOX_MGMT.IMAP.LOGIN.PLACE_HOLDER')"
           @blur="v$.login.$touch"
         />
-        <woot-input
+        <kairos-input
           v-model="password"
           :class="{ error: v$.password.$error }"
           class="w-full"

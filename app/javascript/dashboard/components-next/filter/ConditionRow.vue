@@ -84,7 +84,7 @@ const queryOperatorOptions = computed(() => {
     {
       label: t(`FILTER.QUERY_DROPDOWN_LABELS.OR`),
       value: 'or',
-      icon: h('span', { class: 'i-woot-logic-or !text-n-blue-11' }),
+      icon: h('span', { class: 'i-kairos-logic-or !text-n-blue-11' }),
     },
   ];
 });

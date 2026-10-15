@@ -135,7 +135,7 @@ const saveMacro = async macroData => {
 
 <template>
   <div class="flex flex-col gap-6 mb-8 max-w-7xl mx-auto h-full w-full !px-6">
-    <woot-loading-state
+    <kairos-loading-state
       v-if="uiFlags.isFetchingItem"
       :message="t('MACROS.EDITOR.LOADING')"
     />

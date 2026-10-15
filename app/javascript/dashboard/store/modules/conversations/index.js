@@ -3,7 +3,7 @@ import getters, { getSelectedChatConversation } from './getters';
 import actions from './actions';
 import { findPendingMessageIndex } from './helpers';
 import { MESSAGE_STATUS } from 'shared/constants/messages';
-import wootConstants from 'dashboard/constants/globals';
+import kairosConstants from 'dashboard/constants/globals';
 import { BUS_EVENTS } from '../../../../shared/constants/busEvents';
 import { emitter } from 'shared/helpers/mitt';
 import { CONTENT_TYPES } from 'dashboard/components-next/message/constants.js';
@@ -12,8 +12,8 @@ const state = {
   allConversations: [],
   attachments: {},
   listLoadingStatus: true,
-  chatStatusFilter: wootConstants.STATUS_TYPE.OPEN,
-  chatSortFilter: wootConstants.SORT_BY_TYPE.LATEST,
+  chatStatusFilter: kairosConstants.STATUS_TYPE.OPEN,
+  chatSortFilter: kairosConstants.SORT_BY_TYPE.LATEST,
   currentInbox: null,
   selectedChatId: null,
   appliedFilters: [],
@@ -262,7 +262,7 @@ export const mutations = {
       }
     } else {
       const { conversationType } = _state.conversationFilters || {};
-      const { MENTION, PARTICIPATING } = wootConstants.CONVERSATION_TYPE;
+      const { MENTION, PARTICIPATING } = kairosConstants.CONVERSATION_TYPE;
       if (![MENTION, PARTICIPATING].includes(conversationType)) {
         _state.allConversations.push(conversation);
       }

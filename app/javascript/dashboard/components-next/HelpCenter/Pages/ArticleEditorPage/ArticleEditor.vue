@@ -6,7 +6,7 @@ import { ARTICLE_EDITOR_MENU_OPTIONS } from 'dashboard/constants/editor';
 
 import HelpCenterLayout from 'dashboard/components-next/HelpCenter/HelpCenterLayout.vue';
 import TextArea from 'dashboard/components-next/textarea/TextArea.vue';
-import FullEditor from 'dashboard/components/widgets/WootWriter/FullEditor.vue';
+import FullEditor from 'dashboard/components/widgets/KairosWriter/FullEditor.vue';
 import ArticleEditorHeader from 'dashboard/components-next/HelpCenter/Pages/ArticleEditorPage/ArticleEditorHeader.vue';
 import ArticleEditorControls from 'dashboard/components-next/HelpCenter/Pages/ArticleEditorPage/ArticleEditorControls.vue';
 import ArticleDiffPanel from 'dashboard/components-next/HelpCenter/Pages/ArticleEditorPage/ArticleDiffPanel.vue';
@@ -198,7 +198,7 @@ const handleCreateArticle = event => {
 }
 
 :deep(.ProseMirror-menubar-wrapper) {
-  .ProseMirror-woot-style {
+  .ProseMirror-kairos-style {
     @apply min-h-[15rem] max-h-full;
   }
 }

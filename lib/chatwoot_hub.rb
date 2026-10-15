@@ -1,6 +1,6 @@
 # TODO: lets use HTTParty instead of RestClient
-class ChatwootHub
-  DEFAULT_BASE_URL = 'https://hub.2.chatwoot.com'.freeze
+class Kairos CRMHub
+  DEFAULT_BASE_URL = 'https://hub.2.kairos-crm.com'.freeze
 
   def self.base_url
     DEFAULT_BASE_URL
@@ -37,29 +37,29 @@ class ChatwootHub
   end
 
   def self.pricing_plan
-    return 'community' unless ChatwootApp.enterprise?
+    return 'community' unless Kairos CRMApp.enterprise?
 
     InstallationConfig.find_by(name: 'INSTALLATION_PRICING_PLAN')&.value || 'community'
   end
 
   def self.pricing_plan_quantity
-    return 0 unless ChatwootApp.enterprise?
+    return 0 unless Kairos CRMApp.enterprise?
 
     InstallationConfig.find_by(name: 'INSTALLATION_PRICING_PLAN_QUANTITY')&.value || 0
   end
 
   def self.support_config
     {
-      support_website_token: InstallationConfig.find_by(name: 'CHATWOOT_SUPPORT_WEBSITE_TOKEN')&.value,
-      support_script_url: InstallationConfig.find_by(name: 'CHATWOOT_SUPPORT_SCRIPT_URL')&.value,
-      support_identifier_hash: InstallationConfig.find_by(name: 'CHATWOOT_SUPPORT_IDENTIFIER_HASH')&.value
+      support_website_token: InstallationConfig.find_by(name: 'KAIROS CRM_SUPPORT_WEBSITE_TOKEN')&.value,
+      support_script_url: InstallationConfig.find_by(name: 'KAIROS CRM_SUPPORT_SCRIPT_URL')&.value,
+      support_identifier_hash: InstallationConfig.find_by(name: 'KAIROS CRM_SUPPORT_IDENTIFIER_HASH')&.value
     }
   end
 
   def self.instance_config
     {
       installation_identifier: installation_identifier,
-      installation_version: Chatwoot.config[:version],
+      installation_version: Kairos CRM.config[:version],
       installation_host: URI.parse(ENV.fetch('FRONTEND_URL', '')).host,
       installation_env: ENV.fetch('INSTALLATION_ENV', ''),
       edition: ENV.fetch('CW_EDITION', '')
@@ -91,7 +91,7 @@ class ChatwootHub
     rescue *ExceptionList::REST_CLIENT_EXCEPTIONS => e
       Rails.logger.error "Exception: #{e.message}"
     rescue StandardError => e
-      ChatwootExceptionTracker.new(e).capture_exception
+      Kairos CRMExceptionTracker.new(e).capture_exception
     end
     parsed_response
   end
@@ -102,7 +102,7 @@ class ChatwootHub
   rescue *ExceptionList::REST_CLIENT_EXCEPTIONS => e
     Rails.logger.error "Exception: #{e.message}"
   rescue StandardError => e
-    ChatwootExceptionTracker.new(e).capture_exception
+    Kairos CRMExceptionTracker.new(e).capture_exception
   end
 
   def self.send_push(fcm_options)
@@ -110,7 +110,7 @@ class ChatwootHub
   rescue *ExceptionList::REST_CLIENT_EXCEPTIONS => e
     Rails.logger.error "Exception: #{e.message}"
   rescue StandardError => e
-    ChatwootExceptionTracker.new(e).capture_exception
+    Kairos CRMExceptionTracker.new(e).capture_exception
   end
 
   def self.send_push_with_response(fcm_options)
@@ -126,8 +126,8 @@ class ChatwootHub
   rescue *ExceptionList::REST_CLIENT_EXCEPTIONS => e
     Rails.logger.error "Exception: #{e.message}"
   rescue StandardError => e
-    ChatwootExceptionTracker.new(e).capture_exception
+    Kairos CRMExceptionTracker.new(e).capture_exception
   end
 end
 
-ChatwootHub.singleton_class.prepend_mod_with('ChatwootHub')
+Kairos CRMHub.singleton_class.prepend_mod_with('Kairos CRMHub')

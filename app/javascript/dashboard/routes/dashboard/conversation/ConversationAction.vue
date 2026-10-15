@@ -36,27 +36,27 @@ export default {
         {
           id: null,
           name: this.$t('CONVERSATION.PRIORITY.OPTIONS.NONE'),
-          icon: 'i-woot-priority-empty',
+          icon: 'i-kairos-priority-empty',
         },
         {
           id: CONVERSATION_PRIORITY.URGENT,
           name: this.$t('CONVERSATION.PRIORITY.OPTIONS.URGENT'),
-          icon: 'i-woot-priority-urgent',
+          icon: 'i-kairos-priority-urgent',
         },
         {
           id: CONVERSATION_PRIORITY.HIGH,
           name: this.$t('CONVERSATION.PRIORITY.OPTIONS.HIGH'),
-          icon: 'i-woot-priority-high',
+          icon: 'i-kairos-priority-high',
         },
         {
           id: CONVERSATION_PRIORITY.MEDIUM,
           name: this.$t('CONVERSATION.PRIORITY.OPTIONS.MEDIUM'),
-          icon: 'i-woot-priority-medium',
+          icon: 'i-kairos-priority-medium',
         },
         {
           id: CONVERSATION_PRIORITY.LOW,
           name: this.$t('CONVERSATION.PRIORITY.OPTIONS.LOW'),
-          icon: 'i-woot-priority-low',
+          icon: 'i-kairos-priority-low',
         },
       ],
     };

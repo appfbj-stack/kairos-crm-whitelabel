@@ -19,7 +19,7 @@ import { setCookieWithDomain } from '../sdk/cookieHelpers';
 import { SDK_SET_BUBBLE_VISIBILITY } from 'shared/constants/sharedFrameEvents';
 
 const runSDK = ({ baseUrl, websiteToken }) => {
-  if (window.$chatwoot) {
+  if (window.$kairos-crm) {
     return;
   }
 
@@ -47,64 +47,64 @@ const runSDK = ({ baseUrl, websiteToken }) => {
     restoreWidgetInDOM(event.newDocument.body)
   );
 
-  const chatwootSettings = window.chatwootSettings || {};
-  let locale = chatwootSettings.locale;
-  let baseDomain = chatwootSettings.baseDomain;
+  const kairos-crmSettings = window.kairos-crmSettings || {};
+  let locale = kairos-crmSettings.locale;
+  let baseDomain = kairos-crmSettings.baseDomain;
 
-  if (chatwootSettings.useBrowserLanguage) {
+  if (kairos-crmSettings.useBrowserLanguage) {
     locale = window.navigator.language.replace('-', '_');
   }
 
-  window.$chatwoot = {
+  window.$kairos-crm = {
     baseUrl,
     baseDomain,
     hasLoaded: false,
-    hideMessageBubble: chatwootSettings.hideMessageBubble || false,
+    hideMessageBubble: kairos-crmSettings.hideMessageBubble || false,
     isOpen: false,
-    position: chatwootSettings.position === 'left' ? 'left' : 'right',
+    position: kairos-crmSettings.position === 'left' ? 'left' : 'right',
     websiteToken,
     locale,
-    useBrowserLanguage: chatwootSettings.useBrowserLanguage || false,
-    type: getBubbleView(chatwootSettings.type),
-    launcherTitle: chatwootSettings.launcherTitle || '',
-    showPopoutButton: chatwootSettings.showPopoutButton || false,
-    showUnreadMessagesDialog: chatwootSettings.showUnreadMessagesDialog ?? true,
-    widgetStyle: getWidgetStyle(chatwootSettings.widgetStyle) || 'standard',
+    useBrowserLanguage: kairos-crmSettings.useBrowserLanguage || false,
+    type: getBubbleView(kairos-crmSettings.type),
+    launcherTitle: kairos-crmSettings.launcherTitle || '',
+    showPopoutButton: kairos-crmSettings.showPopoutButton || false,
+    showUnreadMessagesDialog: kairos-crmSettings.showUnreadMessagesDialog ?? true,
+    widgetStyle: getWidgetStyle(kairos-crmSettings.widgetStyle) || 'standard',
     resetTriggered: false,
-    darkMode: getDarkMode(chatwootSettings.darkMode),
-    welcomeTitle: chatwootSettings.welcomeTitle || '',
-    welcomeDescription: chatwootSettings.welcomeDescription || '',
-    availableMessage: chatwootSettings.availableMessage || '',
-    unavailableMessage: chatwootSettings.unavailableMessage || '',
-    enableFileUpload: chatwootSettings.enableFileUpload,
-    enableEmojiPicker: chatwootSettings.enableEmojiPicker ?? true,
-    enableEndConversation: chatwootSettings.enableEndConversation ?? true,
+    darkMode: getDarkMode(kairos-crmSettings.darkMode),
+    welcomeTitle: kairos-crmSettings.welcomeTitle || '',
+    welcomeDescription: kairos-crmSettings.welcomeDescription || '',
+    availableMessage: kairos-crmSettings.availableMessage || '',
+    unavailableMessage: kairos-crmSettings.unavailableMessage || '',
+    enableFileUpload: kairos-crmSettings.enableFileUpload,
+    enableEmojiPicker: kairos-crmSettings.enableEmojiPicker ?? true,
+    enableEndConversation: kairos-crmSettings.enableEndConversation ?? true,
 
     toggle(state) {
       IFrameHelper.events.toggleBubble(state);
     },
 
     toggleBubbleVisibility(visibility) {
-      let widgetElm = document.querySelector('.woot--bubble-holder');
-      let widgetHolder = document.querySelector('.woot-widget-holder');
+      let widgetElm = document.querySelector('.kairos--bubble-holder');
+      let widgetHolder = document.querySelector('.kairos-widget-holder');
       if (visibility === 'hide') {
-        addClasses(widgetHolder, 'woot-widget--without-bubble');
-        addClasses(widgetElm, 'woot-hidden');
-        window.$chatwoot.hideMessageBubble = true;
+        addClasses(widgetHolder, 'kairos-widget--without-bubble');
+        addClasses(widgetElm, 'kairos-hidden');
+        window.$kairos-crm.hideMessageBubble = true;
       } else if (visibility === 'show') {
-        removeClasses(widgetElm, 'woot-hidden');
-        removeClasses(widgetHolder, 'woot-widget--without-bubble');
-        window.$chatwoot.hideMessageBubble = false;
+        removeClasses(widgetElm, 'kairos-hidden');
+        removeClasses(widgetHolder, 'kairos-widget--without-bubble');
+        window.$kairos-crm.hideMessageBubble = false;
       }
       IFrameHelper.sendMessage(SDK_SET_BUBBLE_VISIBILITY, {
-        hideMessageBubble: window.$chatwoot.hideMessageBubble,
+        hideMessageBubble: window.$kairos-crm.hideMessageBubble,
       });
     },
 
     popoutChatWindow() {
       IFrameHelper.events.popoutChatWindow({
-        baseUrl: window.$chatwoot.baseUrl,
-        websiteToken: window.$chatwoot.websiteToken,
+        baseUrl: window.$kairos-crm.baseUrl,
+        websiteToken: window.$kairos-crm.websiteToken,
         locale,
       });
     },
@@ -127,8 +127,8 @@ const runSDK = ({ baseUrl, websiteToken }) => {
         return;
       }
 
-      window.$chatwoot.identifier = identifier;
-      window.$chatwoot.user = user;
+      window.$kairos-crm.identifier = identifier;
+      window.$kairos-crm.user = user;
       IFrameHelper.sendMessage('set-user', { identifier, user });
 
       setCookieWithDomain(userCookieName, hashToBeStored, {
@@ -193,7 +193,7 @@ const runSDK = ({ baseUrl, websiteToken }) => {
     },
 
     reset() {
-      if (window.$chatwoot.isOpen) {
+      if (window.$kairos-crm.isOpen) {
         IFrameHelper.events.toggleBubble();
       }
 
@@ -202,11 +202,11 @@ const runSDK = ({ baseUrl, websiteToken }) => {
 
       const iframe = IFrameHelper.getAppFrame();
       iframe.src = IFrameHelper.getUrl({
-        baseUrl: window.$chatwoot.baseUrl,
-        websiteToken: window.$chatwoot.websiteToken,
+        baseUrl: window.$kairos-crm.baseUrl,
+        websiteToken: window.$kairos-crm.websiteToken,
       });
 
-      window.$chatwoot.resetTriggered = true;
+      window.$kairos-crm.resetTriggered = true;
     },
   };
 
@@ -216,6 +216,6 @@ const runSDK = ({ baseUrl, websiteToken }) => {
   });
 };
 
-window.chatwootSDK = {
+window.kairos-crmSDK = {
   run: runSDK,
 };

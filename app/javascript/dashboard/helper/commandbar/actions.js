@@ -1,4 +1,4 @@
-import wootConstants from 'dashboard/constants/globals';
+import kairosConstants from 'dashboard/constants/globals';
 import { emitter } from 'shared/helpers/mitt';
 
 import {
@@ -19,7 +19,7 @@ import {
   ICON_UNMUTE_CONVERSATION,
 } from 'dashboard/helper/commandbar/icons';
 
-const SNOOZE_OPTIONS = wootConstants.SNOOZE_OPTIONS;
+const SNOOZE_OPTIONS = kairosConstants.SNOOZE_OPTIONS;
 
 export const OPEN_CONVERSATION_ACTIONS = [
   {

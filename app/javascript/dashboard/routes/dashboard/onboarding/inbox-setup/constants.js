@@ -98,13 +98,13 @@ export const CHANNEL_LIST = [
   {
     type: 'voice',
     labelKey: 'INBOX_MGMT.ADD.AUTH.CHANNEL.VOICE.TITLE',
-    fallbackIcon: 'i-woot-voice',
+    fallbackIcon: 'i-kairos-voice',
     setupLater: true,
   },
   {
     type: 'email',
     labelKey: 'ONBOARDING_INBOX_SETUP.CHANNELS.OTHER_EMAIL',
-    fallbackIcon: 'i-woot-mail',
+    fallbackIcon: 'i-kairos-mail',
     setupLater: true,
   },
 ];

@@ -51,8 +51,8 @@ const scenarioTitles = computed(() =>
 );
 
 // Fallback for agents without a matching scenario title:
-// "chatwoot_assistant" → "Chatwoot assistant",
-// "scenario_5_chatwoot_uptime_agent" → "Chatwoot uptime".
+// "kairos-crm_assistant" → "Kairos CRM assistant",
+// "scenario_5_kairos-crm_uptime_agent" → "Kairos CRM uptime".
 const humanizeAgentName = agentName => {
   const label = agentName
     .replace(/^scenario_\d+_/, '')

@@ -57,8 +57,8 @@ const onClose = () => {
 </script>
 
 <template>
-  <woot-modal v-model:show="localShow" :on-close="onClose" size="modal-big">
-    <woot-modal-header
+  <kairos-modal v-model:show="localShow" :on-close="onClose" size="modal-big">
+    <kairos-modal-header
       :header-title="$t('CONTENT_TEMPLATES.MODAL.TITLE')"
       :header-content="modalHeaderContent"
     />
@@ -93,5 +93,5 @@ const onClose = () => {
         </template>
       </TemplateParser>
     </div>
-  </woot-modal>
+  </kairos-modal>
 </template>

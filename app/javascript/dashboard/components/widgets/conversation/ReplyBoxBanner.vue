@@ -4,7 +4,7 @@ import { useStore } from 'vuex';
 import { useMapGetter } from 'dashboard/composables/store';
 import { useAlert } from 'dashboard/composables';
 import { useI18n } from 'vue-i18n';
-import wootConstants from 'dashboard/constants/globals';
+import kairosConstants from 'dashboard/constants/globals';
 
 import Banner from 'dashboard/components/ui/Banner.vue';
 
@@ -57,7 +57,7 @@ const showSelfAssignBanner = computed(() => {
 });
 
 const isPendingConversation = computed(
-  () => currentChat.value?.status === wootConstants.STATUS_TYPE.PENDING
+  () => currentChat.value?.status === kairosConstants.STATUS_TYPE.PENDING
 );
 
 const isAgentBotOwned = computed(

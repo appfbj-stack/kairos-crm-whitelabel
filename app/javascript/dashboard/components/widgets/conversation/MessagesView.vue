@@ -34,7 +34,7 @@ import {
 // constants
 import { BUS_EVENTS } from 'shared/constants/busEvents';
 import { REPLY_POLICY } from 'shared/constants/links';
-import wootConstants, {
+import kairosConstants, {
   META_RESTRICTION_STATUS_URL,
 } from 'dashboard/constants/globals';
 import { LOCAL_STORAGE_KEYS } from 'dashboard/constants/localStorage';
@@ -100,7 +100,7 @@ export default {
       isMetaMessageSendingDisabled: 'globalConfig/isMetaMessageSendingDisabled',
     }),
     isOpen() {
-      return this.currentChat?.status === wootConstants.STATUS_TYPE.OPEN;
+      return this.currentChat?.status === kairosConstants.STATUS_TYPE.OPEN;
     },
     shouldShowLabelSuggestions() {
       return (

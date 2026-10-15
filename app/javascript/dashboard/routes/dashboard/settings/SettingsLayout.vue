@@ -26,7 +26,7 @@ defineProps({
     <main>
       <slot name="preBody" />
       <slot v-if="isLoading" name="loading">
-        <woot-loading-state :message="loadingMessage" />
+        <kairos-loading-state :message="loadingMessage" />
       </slot>
       <p
         v-else-if="noRecordsFound"

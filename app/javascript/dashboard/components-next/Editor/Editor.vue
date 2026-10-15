@@ -1,7 +1,7 @@
 <script setup>
 import { computed, ref, watch, useSlots } from 'vue';
 
-import WootEditor from 'dashboard/components/widgets/WootWriter/Editor.vue';
+import KairosEditor from 'dashboard/components/widgets/KairosWriter/Editor.vue';
 
 const props = defineProps({
   modelValue: { type: String, default: '' },
@@ -96,7 +96,7 @@ watch(
         },
       ]"
     >
-      <WootEditor
+      <KairosEditor
         :editor-id="editorKey"
         :model-value="modelValue"
         :placeholder="placeholder"
@@ -143,7 +143,7 @@ watch(
 <style lang="scss" scoped>
 .editor-wrapper {
   :deep(.ProseMirror-menubar-wrapper) {
-    .ProseMirror.ProseMirror-woot-style {
+    .ProseMirror.ProseMirror-kairos-style {
       p {
         @apply first:mt-0 !important;
       }

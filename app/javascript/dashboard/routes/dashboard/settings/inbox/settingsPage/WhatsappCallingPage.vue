@@ -163,7 +163,7 @@ export default {
         :label="$t('INBOX_MGMT.WHATSAPP_CALLING.PHONE_NUMBER.LABEL')"
         :help-text="$t('INBOX_MGMT.WHATSAPP_CALLING.PHONE_NUMBER.HELP_TEXT')"
       >
-        <woot-code :script="phoneNumber" lang="html" />
+        <kairos-code :script="phoneNumber" lang="html" />
       </SettingsFieldSection>
 
       <SettingsFieldSection

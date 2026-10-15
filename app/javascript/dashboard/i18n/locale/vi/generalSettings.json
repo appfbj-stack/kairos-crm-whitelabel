@@ -1,4 +1,4 @@
-{
+﻿{
   "GENERAL_SETTINGS": {
     "LIMIT_MESSAGES": {
       "CONVERSATION": "You have exceeded the conversation limit. Hacker plan allows only 500 conversations.",
@@ -6,13 +6,13 @@
       "AGENTS": "You have exceeded the agent limit. Your plan only allows {allowedAgents} agents.",
       "NON_ADMIN": "Please contact your administrator to upgrade the plan and continue using all features."
     },
-    "TITLE": "Cài đặt tài khoản",
-    "SUBMIT": "Cập nhật cài đặt",
-    "BACK": "Trờ về",
+    "TITLE": "CÃ i Ä‘áº·t tÃ i khoáº£n",
+    "SUBMIT": "Cáº­p nháº­t cÃ i Ä‘áº·t",
+    "BACK": "Trá» vá»",
     "DISMISS": "Dismiss",
     "UPDATE": {
-      "ERROR": "Không thể cập nhật cài đặt, hãy thử lại!",
-      "SUCCESS": "Đã cập nhật thành công cài đặt tài khoản"
+      "ERROR": "KhÃ´ng thá»ƒ cáº­p nháº­t cÃ i Ä‘áº·t, hÃ£y thá»­ láº¡i!",
+      "SUCCESS": "ÄÃ£ cáº­p nháº­t thÃ nh cÃ´ng cÃ i Ä‘áº·t tÃ i khoáº£n"
     },
     "ACCOUNT_DELETE_SECTION": {
       "TITLE": "Delete your Account",
@@ -21,9 +21,9 @@
       "CONFIRM": {
         "TITLE": "Delete Account",
         "MESSAGE": "Deleting your Account is irreversible. Enter your account name below to confirm you want to permanently delete it.",
-        "BUTTON_TEXT": "Xoá",
-        "DISMISS": "Huỷ",
-        "PLACE_HOLDER": "Vui lòng điền {accountName} để xác nhận"
+        "BUTTON_TEXT": "XoÃ¡",
+        "DISMISS": "Huá»·",
+        "PLACE_HOLDER": "Vui lÃ²ng Ä‘iá»n {accountName} Ä‘á»ƒ xÃ¡c nháº­n"
       },
       "SUCCESS": "Account marked for deletion",
       "FAILURE": "Could not delete account, try again!",
@@ -35,14 +35,14 @@
       }
     },
     "FORM": {
-      "ERROR": "Vui lòng sửa lỗi biểu mẫu",
+      "ERROR": "Vui lÃ²ng sá»­a lá»—i biá»ƒu máº«u",
       "GENERAL_SECTION": {
-        "TITLE": "Cài đặt chung",
+        "TITLE": "CÃ i Ä‘áº·t chung",
         "NOTE": ""
       },
       "ACCOUNT_ID": {
-        "TITLE": "Tài khoản SID",
-        "NOTE": "ID này là bắt buộc nếu bạn đang xây dựng tích hợp dựa trên API"
+        "TITLE": "TÃ i khoáº£n SID",
+        "NOTE": "ID nÃ y lÃ  báº¯t buá»™c náº¿u báº¡n Ä‘ang xÃ¢y dá»±ng tÃ­ch há»£p dá»±a trÃªn API"
       },
       "AUTO_RESOLVE": {
         "TITLE": "Auto-resolve conversations",
@@ -68,28 +68,28 @@
           "PLACEHOLDER": "Select a label"
         },
         "IGNORE_WAITING": {
-          "LABEL": "Skip conversations waiting for agent’s reply"
+          "LABEL": "Skip conversations waiting for agentâ€™s reply"
         },
         "UPDATE_BUTTON": "Save Changes"
       },
       "NAME": {
-        "LABEL": "Tên tài khoản",
-        "PLACEHOLDER": "Tên tài khoản của bạn",
-        "ERROR": "Vui lòng nhập tên tài khoản hợp lệ"
+        "LABEL": "TÃªn tÃ i khoáº£n",
+        "PLACEHOLDER": "TÃªn tÃ i khoáº£n cá»§a báº¡n",
+        "ERROR": "Vui lÃ²ng nháº­p tÃªn tÃ i khoáº£n há»£p lá»‡"
       },
       "LANGUAGE": {
-        "LABEL": "Ngôn ngữ",
-        "PLACEHOLDER": "Tên tài khoản của bạn",
+        "LABEL": "NgÃ´n ngá»¯",
+        "PLACEHOLDER": "TÃªn tÃ i khoáº£n cá»§a báº¡n",
         "ERROR": ""
       },
       "DOMAIN": {
-        "LABEL": "Tên miền email đến",
-        "PLACEHOLDER": "Miền mà bạn sẽ nhận được email",
+        "LABEL": "TÃªn miá»n email Ä‘áº¿n",
+        "PLACEHOLDER": "Miá»n mÃ  báº¡n sáº½ nháº­n Ä‘Æ°á»£c email",
         "ERROR": ""
       },
       "SUPPORT_EMAIL": {
-        "LABEL": "Email hỗ trợ",
-        "PLACEHOLDER": "Email hỗ trợ của công ty bạn",
+        "LABEL": "Email há»— trá»£",
+        "PLACEHOLDER": "Email há»— trá»£ cá»§a cÃ´ng ty báº¡n",
         "ERROR": ""
       },
       "AUTO_RESOLVE_IGNORE_WAITING": {
@@ -113,58 +113,58 @@
           "SUCCESS": "Auto resolve settings updated successfully",
           "ERROR": "Failed to update auto resolve settings"
         },
-        "UPDATE_BUTTON": "Cập nhật",
+        "UPDATE_BUTTON": "Cáº­p nháº­t",
         "MESSAGE_LABEL": "Custom resolution message",
         "MESSAGE_PLACEHOLDER": "Conversation was marked resolved by system due to 15 days of inactivity",
         "MESSAGE_HELP": "This message is sent to the customer when a conversation is automatically resolved by the system due to inactivity."
       },
       "FEATURES": {
-        "INBOUND_EMAIL_ENABLED": "Tính liên tục của cuộc trò chuyện với email được kích hoạt cho tài khoản của bạn.",
-        "CUSTOM_EMAIL_DOMAIN_ENABLED": "Bạn có thể nhận email trong miền tùy chỉnh của mình ngay bây giờ."
+        "INBOUND_EMAIL_ENABLED": "TÃ­nh liÃªn tá»¥c cá»§a cuá»™c trÃ² chuyá»‡n vá»›i email Ä‘Æ°á»£c kÃ­ch hoáº¡t cho tÃ i khoáº£n cá»§a báº¡n.",
+        "CUSTOM_EMAIL_DOMAIN_ENABLED": "Báº¡n cÃ³ thá»ƒ nháº­n email trong miá»n tÃ¹y chá»‰nh cá»§a mÃ¬nh ngay bÃ¢y giá»."
       }
     },
-    "UPDATE_CHATWOOT": "Đã có bản cập nhật {latestChatwootVersion} cho Chatwoot. Vui lòng cập nhật phiên bản của bạn.",
-    "LEARN_MORE": "Tìm hiểu thêm",
-    "PAYMENT_PENDING": "Your payment is pending. Please update your payment information to continue using Chatwoot",
-    "UPGRADE": "Upgrade to continue using Chatwoot",
-    "LIMITS_UPGRADE": "Your account has exceeded the usage limits, please upgrade your plan to continue using Chatwoot",
+    "UPDATE_KAIROS_CRM": "ÄÃ£ cÃ³ báº£n cáº­p nháº­t {latestKairos CRMVersion} cho Kairos CRM. Vui lÃ²ng cáº­p nháº­t phiÃªn báº£n cá»§a báº¡n.",
+    "LEARN_MORE": "TÃ¬m hiá»ƒu thÃªm",
+    "PAYMENT_PENDING": "Your payment is pending. Please update your payment information to continue using Kairos CRM",
+    "UPGRADE": "Upgrade to continue using Kairos CRM",
+    "LIMITS_UPGRADE": "Your account has exceeded the usage limits, please upgrade your plan to continue using Kairos CRM",
     "OPEN_BILLING": "Open billing"
   },
   "FORMS": {
     "MULTISELECT": {
-      "ENTER_TO_SELECT": "Bấm enter để chọn",
-      "ENTER_TO_REMOVE": "Bấm enter để xoá",
+      "ENTER_TO_SELECT": "Báº¥m enter Ä‘á»ƒ chá»n",
+      "ENTER_TO_REMOVE": "Báº¥m enter Ä‘á»ƒ xoÃ¡",
       "NO_OPTIONS": "List is empty",
-      "SELECT_ONE": "Chọn một",
-      "SELECT": "Chọn"
+      "SELECT_ONE": "Chá»n má»™t",
+      "SELECT": "Chá»n"
     }
   },
   "NOTIFICATIONS_PAGE": {
-    "HEADER": "Thông báo",
-    "MARK_ALL_DONE": "Đánh dấu tất cả đã xong",
-    "DELETE_TITLE": "đã xoá",
+    "HEADER": "ThÃ´ng bÃ¡o",
+    "MARK_ALL_DONE": "ÄÃ¡nh dáº¥u táº¥t cáº£ Ä‘Ã£ xong",
+    "DELETE_TITLE": "Ä‘Ã£ xoÃ¡",
     "UNREAD_NOTIFICATION": {
-      "TITLE": "Thông báo tin chưa đọc",
-      "ALL_NOTIFICATIONS": "Xem tất cả thông báo",
-      "LOADING_UNREAD_MESSAGE": "Đang tải thông báo tin chưa đọc...",
-      "EMPTY_MESSAGE": "Bạn không có thông báo tin chưa đọc"
+      "TITLE": "ThÃ´ng bÃ¡o tin chÆ°a Ä‘á»c",
+      "ALL_NOTIFICATIONS": "Xem táº¥t cáº£ thÃ´ng bÃ¡o",
+      "LOADING_UNREAD_MESSAGE": "Äang táº£i thÃ´ng bÃ¡o tin chÆ°a Ä‘á»c...",
+      "EMPTY_MESSAGE": "Báº¡n khÃ´ng cÃ³ thÃ´ng bÃ¡o tin chÆ°a Ä‘á»c"
     },
     "LIST": {
-      "LOADING_MESSAGE": "Đang tải thông báo...",
-      "404": "Không có thông báo",
+      "LOADING_MESSAGE": "Äang táº£i thÃ´ng bÃ¡o...",
+      "404": "KhÃ´ng cÃ³ thÃ´ng bÃ¡o",
       "TABLE_HEADER": [
-        "Tên",
-        "Số điện thoại",
-        "Các cuộc hội thoại",
-        "Liên hệ lần cuối"
+        "TÃªn",
+        "Sá»‘ Ä‘iá»‡n thoáº¡i",
+        "CÃ¡c cuá»™c há»™i thoáº¡i",
+        "LiÃªn há»‡ láº§n cuá»‘i"
       ]
     },
     "TYPE_LABEL": {
-      "conversation_creation": "Hội thoại mới mới",
-      "conversation_assignment": "Hội thoại đã được phân công",
-      "assigned_conversation_new_message": "Tin nhắn mới",
-      "participating_conversation_new_message": "Tin nhắn mới",
-      "conversation_mention": "Nhắc đến",
+      "conversation_creation": "Há»™i thoáº¡i má»›i má»›i",
+      "conversation_assignment": "Há»™i thoáº¡i Ä‘Ã£ Ä‘Æ°á»£c phÃ¢n cÃ´ng",
+      "assigned_conversation_new_message": "Tin nháº¯n má»›i",
+      "participating_conversation_new_message": "Tin nháº¯n má»›i",
+      "conversation_mention": "Nháº¯c Ä‘áº¿n",
       "sla_missed_first_response": "SLA Missed",
       "sla_missed_next_response": "SLA Missed",
       "sla_missed_resolution": "SLA Missed"
@@ -172,82 +172,82 @@
   },
   "NETWORK": {
     "NOTIFICATION": {
-      "OFFLINE": "Không Trực Tuyến",
+      "OFFLINE": "KhÃ´ng Trá»±c Tuyáº¿n",
       "RECONNECTING": "Reconnecting...",
       "RECONNECT_SUCCESS": "Reconnected"
     },
     "BUTTON": {
-      "REFRESH": "Làm mới"
+      "REFRESH": "LÃ m má»›i"
     }
   },
   "COMMAND_BAR": {
-    "SEARCH_PLACEHOLDER": "Tìm kiếm hoặc nhảy đến",
+    "SEARCH_PLACEHOLDER": "TÃ¬m kiáº¿m hoáº·c nháº£y Ä‘áº¿n",
     "SNOOZE_PLACEHOLDER": "Type a time e.g. tomorrow, 2 hours, next friday, jan 15...",
     "SECTIONS": {
       "GENERAL": "Chung",
-      "REPORTS": "Báo cáo",
-      "CONVERSATION": "Hội thoại",
+      "REPORTS": "BÃ¡o cÃ¡o",
+      "CONVERSATION": "Há»™i thoáº¡i",
       "BULK_ACTIONS": "Bulk Actions",
-      "CHANGE_ASSIGNEE": "Thay đổi người được phân công",
+      "CHANGE_ASSIGNEE": "Thay Ä‘á»•i ngÆ°á»i Ä‘Æ°á»£c phÃ¢n cÃ´ng",
       "CHANGE_PRIORITY": "Change Priority",
-      "CHANGE_TEAM": "Thay đổi nhóm",
-      "SNOOZE_CONVERSATION": "Tạm dừng \bhội thoại",
-      "ADD_LABEL": "Thêm nhãn vào hội thoại",
-      "REMOVE_LABEL": "Xoá nhãn khỏi hội thoại",
-      "SETTINGS": "Cài đặt",
+      "CHANGE_TEAM": "Thay Ä‘á»•i nhÃ³m",
+      "SNOOZE_CONVERSATION": "Táº¡m dá»«ng \bhá»™i thoáº¡i",
+      "ADD_LABEL": "ThÃªm nhÃ£n vÃ o há»™i thoáº¡i",
+      "REMOVE_LABEL": "XoÃ¡ nhÃ£n khá»i há»™i thoáº¡i",
+      "SETTINGS": "CÃ i Ä‘áº·t",
       "AI_ASSIST": "AI Assist",
       "APPEARANCE": "Appearance",
       "SNOOZE_NOTIFICATION": "Snooze Notification"
     },
     "COMMANDS": {
       "GO_TO_MY_INBOX": "Go to My Inbox",
-      "GO_TO_CONVERSATION_DASHBOARD": "Đi tới Trang tổng quan hội thoại",
-      "GO_TO_CONTACTS_DASHBOARD": "Đi tới Trang tổng quan liên hệ",
+      "GO_TO_CONVERSATION_DASHBOARD": "Äi tá»›i Trang tá»•ng quan há»™i thoáº¡i",
+      "GO_TO_CONTACTS_DASHBOARD": "Äi tá»›i Trang tá»•ng quan liÃªn há»‡",
       "GO_TO_CAPTAIN": "Go to Captain",
       "GO_TO_CALLS_DASHBOARD": "Go to Calls Dashboard",
       "GO_TO_CAMPAIGNS": "Go to Campaigns",
       "GO_TO_HELP_CENTER": "Go to Help Center",
-      "GO_TO_REPORTS_OVERVIEW": "Đi đến Tổng quan Báo cáo",
-      "GO_TO_CONVERSATION_REPORTS": "Đi tới Trang Báo cáo hội thoại",
-      "GO_TO_AGENT_REPORTS": "Đi đến Báo cáo Tổng đài viên",
-      "GO_TO_LABEL_REPORTS": "Đi đến Báo cáo Nhãn",
-      "GO_TO_INBOX_REPORTS": "Đi đến Báo cáo Kênh",
-      "GO_TO_TEAM_REPORTS": "Đi đến Báo cáo Nhóm",
+      "GO_TO_REPORTS_OVERVIEW": "Äi Ä‘áº¿n Tá»•ng quan BÃ¡o cÃ¡o",
+      "GO_TO_CONVERSATION_REPORTS": "Äi tá»›i Trang BÃ¡o cÃ¡o há»™i thoáº¡i",
+      "GO_TO_AGENT_REPORTS": "Äi Ä‘áº¿n BÃ¡o cÃ¡o Tá»•ng Ä‘Ã i viÃªn",
+      "GO_TO_LABEL_REPORTS": "Äi Ä‘áº¿n BÃ¡o cÃ¡o NhÃ£n",
+      "GO_TO_INBOX_REPORTS": "Äi Ä‘áº¿n BÃ¡o cÃ¡o KÃªnh",
+      "GO_TO_TEAM_REPORTS": "Äi Ä‘áº¿n BÃ¡o cÃ¡o NhÃ³m",
       "GO_TO_CSAT_REPORTS": "Go to CSAT Reports",
       "GO_TO_BOT_REPORTS": "Go to Bot Reports",
       "GO_TO_SLA_REPORTS": "Go to SLA Reports",
-      "GO_TO_SETTINGS_AGENTS": "Đi đến Cài đặt Tổng đài viên",
-      "GO_TO_SETTINGS_TEAMS": "Đi đến Cài đặt Nhóm",
-      "GO_TO_SETTINGS_INBOXES": "Đi đến Cài đặt Kênh",
+      "GO_TO_SETTINGS_AGENTS": "Äi Ä‘áº¿n CÃ i Ä‘áº·t Tá»•ng Ä‘Ã i viÃªn",
+      "GO_TO_SETTINGS_TEAMS": "Äi Ä‘áº¿n CÃ i Ä‘áº·t NhÃ³m",
+      "GO_TO_SETTINGS_INBOXES": "Äi Ä‘áº¿n CÃ i Ä‘áº·t KÃªnh",
       "GO_TO_SETTINGS_TEMPLATES": "Go to Templates",
-      "GO_TO_SETTINGS_LABELS": "Đi đến Cài đặt Nhãn",
+      "GO_TO_SETTINGS_LABELS": "Äi Ä‘áº¿n CÃ i Ä‘áº·t NhÃ£n",
       "GO_TO_SETTINGS_CUSTOM_ATTRIBUTES": "Go to Custom Attributes",
       "GO_TO_SETTINGS_AUTOMATION": "Go to Automation",
       "GO_TO_SETTINGS_MACROS": "Go to Macros",
-      "GO_TO_SETTINGS_CANNED_RESPONSES": "Đi đến Cài đặt Tin trả lời mẫu",
+      "GO_TO_SETTINGS_CANNED_RESPONSES": "Äi Ä‘áº¿n CÃ i Ä‘áº·t Tin tráº£ lá»i máº«u",
       "GO_TO_SETTINGS_SLA": "Go to SLA Settings",
-      "GO_TO_SETTINGS_APPLICATIONS": "Đi đến Cài đặt Ứng dụng",
+      "GO_TO_SETTINGS_APPLICATIONS": "Äi Ä‘áº¿n CÃ i Ä‘áº·t á»¨ng dá»¥ng",
       "GO_TO_SETTINGS_DATA": "Go to Data",
       "GO_TO_SETTINGS_AUDIT_LOGS": "Go to Audit Logs",
       "GO_TO_SETTINGS_BILLING": "Go to Billing",
-      "GO_TO_SETTINGS_ACCOUNT": "Đi đến Cài đặt Tài khoản",
-      "GO_TO_SETTINGS_PROFILE": "Đi đến Cài đặt Hồ sơ",
-      "GO_TO_NOTIFICATIONS": "Đi đến Thông báo",
-      "ADD_LABELS_TO_CONVERSATION": "Thêm nhãn vào hội thoại",
-      "ASSIGN_AN_AGENT": "Gán cho tổng đài viên",
+      "GO_TO_SETTINGS_ACCOUNT": "Äi Ä‘áº¿n CÃ i Ä‘áº·t TÃ i khoáº£n",
+      "GO_TO_SETTINGS_PROFILE": "Äi Ä‘áº¿n CÃ i Ä‘áº·t Há»“ sÆ¡",
+      "GO_TO_NOTIFICATIONS": "Äi Ä‘áº¿n ThÃ´ng bÃ¡o",
+      "ADD_LABELS_TO_CONVERSATION": "ThÃªm nhÃ£n vÃ o há»™i thoáº¡i",
+      "ASSIGN_AN_AGENT": "GÃ¡n cho tá»•ng Ä‘Ã i viÃªn",
       "AI_ASSIST": "AI Assist",
       "ASSIGN_PRIORITY": "Assign priority",
-      "ASSIGN_A_TEAM": "Phân công một nhóm",
-      "MUTE_CONVERSATION": "Tắt tiếng hội thoại",
-      "UNMUTE_CONVERSATION": "Bật tiếng hội thoại",
-      "REMOVE_LABEL_FROM_CONVERSATION": "Xoá nhãn khỏi hội thoại",
-      "REOPEN_CONVERSATION": "Mở lại hội thoại",
-      "RESOLVE_CONVERSATION": "Giải quyết hội thoại",
-      "SEND_TRANSCRIPT": "Gửi bản ghi qua email",
-      "SNOOZE_CONVERSATION": "Tạm dừng \bhội thoại",
-      "UNTIL_NEXT_REPLY": "Cho đến phản hồi kế tiếp",
-      "UNTIL_NEXT_WEEK": "Cho đến tuần sau",
-      "UNTIL_TOMORROW": "Cho đến ngày mai",
+      "ASSIGN_A_TEAM": "PhÃ¢n cÃ´ng má»™t nhÃ³m",
+      "MUTE_CONVERSATION": "Táº¯t tiáº¿ng há»™i thoáº¡i",
+      "UNMUTE_CONVERSATION": "Báº­t tiáº¿ng há»™i thoáº¡i",
+      "REMOVE_LABEL_FROM_CONVERSATION": "XoÃ¡ nhÃ£n khá»i há»™i thoáº¡i",
+      "REOPEN_CONVERSATION": "Má»Ÿ láº¡i há»™i thoáº¡i",
+      "RESOLVE_CONVERSATION": "Giáº£i quyáº¿t há»™i thoáº¡i",
+      "SEND_TRANSCRIPT": "Gá»­i báº£n ghi qua email",
+      "SNOOZE_CONVERSATION": "Táº¡m dá»«ng \bhá»™i thoáº¡i",
+      "UNTIL_NEXT_REPLY": "Cho Ä‘áº¿n pháº£n há»“i káº¿ tiáº¿p",
+      "UNTIL_NEXT_WEEK": "Cho Ä‘áº¿n tuáº§n sau",
+      "UNTIL_TOMORROW": "Cho Ä‘áº¿n ngÃ y mai",
       "UNTIL_NEXT_MONTH": "Until next month",
       "AN_HOUR_FROM_NOW": "Until an hour from now",
       "UNTIL_CUSTOM_TIME": "Custom...",
@@ -259,10 +259,10 @@
     }
   },
   "DASHBOARD_APPS": {
-    "LOADING_MESSAGE": "Đang tải dữ liệu..."
+    "LOADING_MESSAGE": "Äang táº£i dá»¯ liá»‡u..."
   },
   "COMMON": {
     "OR": "Or",
-    "CLICK_HERE": "click vào đây"
+    "CLICK_HERE": "click vÃ o Ä‘Ã¢y"
   }
 }

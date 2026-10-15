@@ -1,7 +1,7 @@
 <script>
 import AutomationActionTeamMessageInput from './AutomationActionTeamMessageInput.vue';
 import AutomationActionFileInput from './AutomationFileInput.vue';
-import WootMessageEditor from 'dashboard/components/widgets/WootWriter/Editor.vue';
+import KairosMessageEditor from 'dashboard/components/widgets/KairosWriter/Editor.vue';
 import NextButton from 'dashboard/components-next/button/Button.vue';
 import SingleSelect from 'dashboard/components-next/filter/inputs/SingleSelect.vue';
 import MultiSelect from 'dashboard/components-next/filter/inputs/MultiSelect.vue';
@@ -13,7 +13,7 @@ export default {
   components: {
     AutomationActionTeamMessageInput,
     AutomationActionFileInput,
-    WootMessageEditor,
+    KairosMessageEditor,
     NextButton,
     SingleSelect,
     MultiSelect,
@@ -215,7 +215,7 @@ export default {
         :teams="dropdownValues"
         :dropdown-max-height="dropdownMaxHeight"
       />
-      <WootMessageEditor
+      <KairosMessageEditor
         v-else-if="inputType === 'textarea'"
         v-model="castMessageVmodel"
         rows="4"

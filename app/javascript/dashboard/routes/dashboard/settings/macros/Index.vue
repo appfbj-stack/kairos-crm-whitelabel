@@ -116,7 +116,7 @@ const tableHeaders = computed(() => {
           />
         </template>
       </BaseTable>
-      <woot-delete-modal
+      <kairos-delete-modal
         v-model:show="showDeleteConfirmationPopup"
         :on-close="closeDeletePopup"
         :on-confirm="confirmDeletion"

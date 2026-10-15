@@ -30,7 +30,7 @@ export default {
 </script>
 
 <template>
-  <woot-dropdown-item>
+  <kairos-dropdown-item>
     <NextButton
       slate
       ghost
@@ -55,5 +55,5 @@ export default {
         </span>
       </div>
     </NextButton>
-  </woot-dropdown-item>
+  </kairos-dropdown-item>
 </template>

@@ -111,11 +111,11 @@ export default {
 </script>
 
 <template>
-  <woot-modal :show="show" :on-close="closeModal">
+  <kairos-modal :show="show" :on-close="closeModal">
     <div class="flex flex-col h-auto overflow-auto">
-      <woot-modal-header :header-title="header" />
+      <kairos-modal-header :header-title="header" />
       <form class="w-full" @submit.prevent="submit">
-        <woot-input
+        <kairos-input
           v-model="app.title"
           :class="{ error: v$.app.title.$error }"
           class="w-full"
@@ -132,7 +132,7 @@ export default {
           @input="v$.app.title.$touch"
           @blur="v$.app.title.$touch"
         />
-        <woot-input
+        <kairos-input
           v-model="app.content.url"
           :class="{ error: v$.app.content.url.$error }"
           class="w-full"
@@ -168,5 +168,5 @@ export default {
         </div>
       </form>
     </div>
-  </woot-modal>
+  </kairos-modal>
 </template>

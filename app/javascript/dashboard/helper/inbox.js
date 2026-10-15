@@ -57,8 +57,8 @@ export const isVoiceCallEnabled = inbox => getVoiceCallProvider(inbox) !== null;
 
 // Combined channel + voice-wave badge glyph per voice-call provider.
 export const VOICE_CALL_ICONS = {
-  [VOICE_CALL_PROVIDERS.WHATSAPP]: 'i-woot-whatsapp-voice',
-  [VOICE_CALL_PROVIDERS.TWILIO]: 'i-woot-voice-call',
+  [VOICE_CALL_PROVIDERS.WHATSAPP]: 'i-kairos-whatsapp-voice',
+  [VOICE_CALL_PROVIDERS.TWILIO]: 'i-kairos-voice-call',
 };
 
 export const getVoiceCallIcon = provider =>
@@ -95,16 +95,16 @@ const INBOX_ICON_MAP_FILL = {
 const DEFAULT_ICON_FILL = 'i-ri-chat-1-fill';
 
 const INBOX_ICON_MAP_LINE = {
-  [INBOX_TYPES.WEB]: 'i-woot-website',
-  [INBOX_TYPES.FB]: 'i-woot-messenger',
-  [INBOX_TYPES.TWITTER]: 'i-woot-x',
-  [INBOX_TYPES.WHATSAPP]: 'i-woot-whatsapp',
-  [INBOX_TYPES.API]: 'i-woot-api',
-  [INBOX_TYPES.EMAIL]: 'i-woot-mail',
-  [INBOX_TYPES.TELEGRAM]: 'i-woot-telegram',
-  [INBOX_TYPES.LINE]: 'i-woot-line',
-  [INBOX_TYPES.INSTAGRAM]: 'i-woot-instagram',
-  [INBOX_TYPES.TIKTOK]: 'i-woot-tiktok',
+  [INBOX_TYPES.WEB]: 'i-kairos-website',
+  [INBOX_TYPES.FB]: 'i-kairos-messenger',
+  [INBOX_TYPES.TWITTER]: 'i-kairos-x',
+  [INBOX_TYPES.WHATSAPP]: 'i-kairos-whatsapp',
+  [INBOX_TYPES.API]: 'i-kairos-api',
+  [INBOX_TYPES.EMAIL]: 'i-kairos-mail',
+  [INBOX_TYPES.TELEGRAM]: 'i-kairos-telegram',
+  [INBOX_TYPES.LINE]: 'i-kairos-line',
+  [INBOX_TYPES.INSTAGRAM]: 'i-kairos-instagram',
+  [INBOX_TYPES.TIKTOK]: 'i-kairos-tiktok',
 };
 
 const DEFAULT_ICON_LINE = 'i-ri-chat-1-line';

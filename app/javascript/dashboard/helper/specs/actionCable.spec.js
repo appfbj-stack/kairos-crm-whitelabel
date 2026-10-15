@@ -14,8 +14,8 @@ vi.mock('dashboard/composables/useImpersonation', () => ({
   }),
 }));
 
-global.chatwootConfig = {
-  websocketURL: 'wss://test.chatwoot.com',
+global.kairos-crmConfig = {
+  websocketURL: 'wss://test.kairos-crm.com',
 };
 
 const mockRetryJitter = value =>

@@ -2,7 +2,7 @@
 
 require 'pathname'
 
-module ChatwootApp
+module Kairos CRMApp
   def self.root
     Pathname.new(File.expand_path('..', __dir__))
   end
@@ -17,12 +17,12 @@ module ChatwootApp
     @enterprise ||= root.join('enterprise').exist?
   end
 
-  def self.chatwoot_cloud?
+  def self.kairos-crm_cloud?
     enterprise? && GlobalConfig.get_value('DEPLOYMENT_ENV') == 'cloud'
   end
 
   def self.self_hosted_enterprise?
-    enterprise? && !chatwoot_cloud? && GlobalConfig.get_value('INSTALLATION_PRICING_PLAN') == 'enterprise'
+    enterprise? && !kairos-crm_cloud? && GlobalConfig.get_value('INSTALLATION_PRICING_PLAN') == 'enterprise'
   end
 
   def self.custom?

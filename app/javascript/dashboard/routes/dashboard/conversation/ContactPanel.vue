@@ -238,7 +238,7 @@ onMounted(() => {
               />
             </AccordionItem>
           </div>
-          <woot-feature-toggle
+          <kairos-feature-toggle
             v-else-if="element.name === 'macros'"
             feature-key="macros"
           >
@@ -250,7 +250,7 @@ onMounted(() => {
             >
               <MacrosList :conversation-id="conversationId" />
             </AccordionItem>
-          </woot-feature-toggle>
+          </kairos-feature-toggle>
           <div
             v-else-if="
               element.name === 'linear_issues' &&

@@ -37,7 +37,7 @@
       },
       "INTERFACE_SECTION": {
         "TITLE": "İnterfeys",
-        "NOTE": "Chatwoot panelinizin görünüşünü və hissini fərdiləşdirin.",
+        "NOTE": "Kairos CRM panelinizin görünüşünü və hissini fərdiləşdirin.",
         "FONT_SIZE": {
           "TITLE": "Şrift ölçüsü",
           "NOTE": "Panel boyunca mətn ölçüsünü üstünlüklərinizə uyğun tənzimləyin.",
@@ -673,7 +673,7 @@
       "SP_ENTITY_ID": {
         "LABEL": "SP Varlıq ID-si",
         "HELP": "Bu tətbiq üçün xidmət təminatçısı kimi unikal identifikator (avtomatik yaradılır).",
-        "TOOLTIP": "Chatwoot-un Xidmət Təminatçısı kimi unikal identifikatoru - bunu IdP parametrlərinizdə qurun"
+        "TOOLTIP": "Kairos CRM-un Xidmət Təminatçısı kimi unikal identifikatoru - bunu IdP parametrlərinizdə qurun"
       },
       "IDP_ENTITY_ID": {
         "LABEL": "Şəxsiyyət Təminatçısının Varlıq ID-si",
@@ -768,13 +768,13 @@
     }
   },
   "CREATE_ACCOUNT": {
-    "NO_ACCOUNT_WARNING": "Uh oh! Heç bir Chatwoot hesabı tapılmadı. Davam etmək üçün yeni hesab yaradın.",
+    "NO_ACCOUNT_WARNING": "Uh oh! Heç bir Kairos CRM hesabı tapılmadı. Davam etmək üçün yeni hesab yaradın.",
     "NEW_ACCOUNT": "Yeni Hesab",
     "SELECTOR_SUBTITLE": "Yeni hesab yaradın",
     "API": {
       "SUCCESS_MESSAGE": "Hesab uğurla yaradıldı",
       "EXIST_MESSAGE": "Hesab artıq mövcuddur",
-      "ERROR_MESSAGE": "Woot Server-ə qoşulmaq mümkün olmadı, zəhmət olmasa sonra yenidən cəhd edin"
+      "ERROR_MESSAGE": "Kairos Server-ə qoşulmaq mümkün olmadı, zəhmət olmasa sonra yenidən cəhd edin"
     },
     "FORM": {
       "NAME": {

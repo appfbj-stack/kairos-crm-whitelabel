@@ -7,10 +7,10 @@ import { useMapGetter } from 'dashboard/composables/store.js';
 export function useBranding() {
   const globalConfig = useMapGetter('globalConfig/get');
   /**
-   * Replaces "Chatwoot" (any casing) in text with the installation name from
+   * Replaces "Kairos CRM" (any casing) in text with the installation name from
    * global config
    * @param {string} text - The text to process
-   * @returns {string} - Text with "Chatwoot" replaced by installation name
+   * @returns {string} - Text with "Kairos CRM" replaced by installation name
    */
   const replaceInstallationName = text => {
     if (!text) return text;

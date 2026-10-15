@@ -1,6 +1,6 @@
 <script setup>
 import { computed } from 'vue';
-import WootMessageEditor from 'dashboard/components/widgets/WootWriter/Editor.vue';
+import KairosMessageEditor from 'dashboard/components/widgets/KairosWriter/Editor.vue';
 import ResizableTextArea from 'shared/components/ResizableTextArea.vue';
 
 const props = defineProps({
@@ -21,7 +21,7 @@ const greetingsMessage = computed({
 <template>
   <section>
     <div v-if="richtext">
-      <WootMessageEditor
+      <KairosMessageEditor
         v-model="greetingsMessage"
         is-format-mode
         enable-variables

@@ -134,7 +134,7 @@ watch(
       {{ t('CONTACTS_LAYOUT.SIDEBAR.NOTES.CONVERSATION_EMPTY_STATE') }}
     </p>
 
-    <woot-modal
+    <kairos-modal
       v-model:show="shouldShowCreateModal"
       :on-close="closeCreateModal"
       :close-on-backdrop-click="false"
@@ -161,6 +161,6 @@ watch(
           />
         </div>
       </div>
-    </woot-modal>
+    </kairos-modal>
   </div>
 </template>

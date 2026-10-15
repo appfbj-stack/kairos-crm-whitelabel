@@ -309,7 +309,7 @@ export default {
         class="px-4"
       />
       <div class="mt-4 h-72">
-        <woot-loading-state
+        <kairos-loading-state
           v-if="accountReport.isFetching[metric.KEY]"
           class="text-xs"
           :message="$t('REPORT.LOADING_CHART')"

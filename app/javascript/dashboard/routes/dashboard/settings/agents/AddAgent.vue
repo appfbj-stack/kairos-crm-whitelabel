@@ -104,7 +104,7 @@ const addAgent = async () => {
 
 <template>
   <div class="flex flex-col h-auto overflow-auto">
-    <woot-modal-header
+    <kairos-modal-header
       :header-title="$t('AGENT_MGMT.ADD.TITLE')"
       :header-content="$t('AGENT_MGMT.ADD.DESC')"
     />
