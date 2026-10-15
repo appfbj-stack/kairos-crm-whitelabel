@@ -2,8 +2,8 @@ import { addClasses, removeClasses, toggleClass } from './DOMHelpers';
 import { IFrameHelper } from './IFrameHelper';
 import { isExpandedView } from './settingsHelper';
 import {
-  KAIROS CRM_CLOSED,
-  KAIROS CRM_OPENED,
+  KAIROS_CRM_CLOSED,
+  KAIROS_CRM_OPENED,
 } from '../widget/constants/sdkEvents';
 import { dispatchWindowEvent } from 'shared/helpers/CustomEventHelper';
 
@@ -75,9 +75,9 @@ const handleBubbleToggle = newIsOpen => {
   IFrameHelper.events.onBubbleToggle(newIsOpen);
 
   if (newIsOpen) {
-    dispatchWindowEvent({ eventName: KAIROS CRM_OPENED });
+    dispatchWindowEvent({ eventName: KAIROS_CRM_OPENED });
   } else {
-    dispatchWindowEvent({ eventName: KAIROS CRM_CLOSED });
+    dispatchWindowEvent({ eventName: KAIROS_CRM_CLOSED });
     chatBubble.focus();
   }
 };

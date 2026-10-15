@@ -14,7 +14,7 @@ export function useAccount() {
   const route = useRoute();
   const store = useStore();
   const getAccountFn = useMapGetter('accounts/getAccount');
-  const isOnKairos CRMCloud = useMapGetter('globalConfig/isOnKairos CRMCloud');
+  const isOnKairosCrmCloud = useMapGetter('globalConfig/isOnKairosCrmCloud');
   const isMetaInboxCreationDisabled = useMapGetter(
     'globalConfig/isMetaInboxCreationDisabled'
   );
@@ -69,7 +69,7 @@ export function useAccount() {
     accountScopedUrl,
     accountScopedRoute,
     isCloudFeatureEnabled,
-    isOnKairos CRMCloud,
+    isOnKairosCrmCloud,
     isMetaInboxCreationDisabled,
     isMetaMessageSendingDisabled,
     updateAccount,

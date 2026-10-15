@@ -4,6 +4,6 @@ class SuperAdmin::PlatformBannersController < SuperAdmin::ApplicationController
   private
 
   def ensure_kairos-crm_cloud
-    raise ActionController::RoutingError, 'Not Found' unless Kairos CRMApp.kairos-crm_cloud?
+    raise ActionController::RoutingError, 'Not Found' unless KairosCrmApp.kairos-crm_cloud?
   end
 end

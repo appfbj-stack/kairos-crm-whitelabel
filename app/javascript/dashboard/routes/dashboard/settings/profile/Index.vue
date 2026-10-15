@@ -101,10 +101,10 @@ export default {
       currentUser: 'getCurrentUser',
       currentUserId: 'getCurrentUserID',
       globalConfig: 'globalConfig/get',
-      isOnKairos CRMCloud: 'globalConfig/isOnKairos CRMCloud',
+      isOnKairosCrmCloud: 'globalConfig/isOnKairosCrmCloud',
     }),
     apiAndWebhooksEnabled() {
-      if (!this.isOnKairos CRMCloud) return true;
+      if (!this.isOnKairosCrmCloud) return true;
 
       return this.currentUser.accounts.some(
         account => account.api_and_webhooks

@@ -17,7 +17,7 @@ class Integrations::Facebook::MessageCreator
       create_contact_message
     end
     # rescue => e
-    # Kairos CRMExceptionTracker.new(e).capture_exception
+    # KairosCrmExceptionTracker.new(e).capture_exception
     # end
   end
 

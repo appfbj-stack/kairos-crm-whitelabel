@@ -77,25 +77,25 @@ module Concerns::Toolable
   end
 
   def add_base_headers(headers, state)
-    headers['X-Kairos CRM-Account-Id'] = state[:account_id].to_s if state[:account_id]
-    headers['X-Kairos CRM-Assistant-Id'] = state[:assistant_id].to_s if state[:assistant_id]
-    headers['X-Kairos CRM-Tool-Slug'] = slug if slug.present?
+    headers['X-KairosCrm-Account-Id'] = state[:account_id].to_s if state[:account_id]
+    headers['X-KairosCrm-Assistant-Id'] = state[:assistant_id].to_s if state[:assistant_id]
+    headers['X-KairosCrm-Tool-Slug'] = slug if slug.present?
   end
 
   def add_conversation_headers(headers, conversation)
-    headers['X-Kairos CRM-Conversation-Id'] = conversation[:id].to_s if conversation[:id]
-    headers['X-Kairos CRM-Conversation-Display-Id'] = conversation[:display_id].to_s if conversation[:display_id]
+    headers['X-KairosCrm-Conversation-Id'] = conversation[:id].to_s if conversation[:id]
+    headers['X-KairosCrm-Conversation-Display-Id'] = conversation[:display_id].to_s if conversation[:display_id]
   end
 
   def add_contact_headers(headers, contact)
-    headers['X-Kairos CRM-Contact-Id'] = contact[:id].to_s if contact[:id]
-    headers['X-Kairos CRM-Contact-Email'] = contact[:email].to_s if contact[:email].present?
-    headers['X-Kairos CRM-Contact-Phone'] = contact[:phone_number].to_s if contact[:phone_number].present?
+    headers['X-KairosCrm-$1'] = contact[:id].to_s if contact[:id]
+    headers['X-KairosCrm-$1'] = contact[:email].to_s if contact[:email].present?
+    headers['X-KairosCrm-$1'] = contact[:phone_number].to_s if contact[:phone_number].present?
   end
 
   def add_contact_inbox_headers(headers, contact_inbox)
-    headers['X-Kairos CRM-Contact-Inbox-Id'] = contact_inbox[:id].to_s if contact_inbox&.[](:id)
-    headers['X-Kairos CRM-Contact-Inbox-Verified'] = (contact_inbox&.[](:hmac_verified) || false).to_s
+    headers['X-KairosCrm-$1'] = contact_inbox[:id].to_s if contact_inbox&.[](:id)
+    headers['X-KairosCrm-$1'] = (contact_inbox&.[](:hmac_verified) || false).to_s
   end
 
   def format_response(raw_response_body)

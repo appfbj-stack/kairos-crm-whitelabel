@@ -14,7 +14,7 @@ class DashboardController < ActionController::Base
     PRIVACY_URL
     DISPLAY_MANIFEST
     CREATE_NEW_ACCOUNT_FROM_DASHBOARD
-    KAIROS CRM_INBOX_TOKEN
+    KAIROS_CRM_INBOX_TOKEN
     API_CHANNEL_NAME
     API_CHANNEL_THUMBNAIL
     CLOUD_ANALYTICS_TOKEN
@@ -55,7 +55,7 @@ class DashboardController < ActionController::Base
   end
 
   def ensure_installation_onboarding
-    redirect_to '/installation/onboarding' if ::Redis::Alfred.get(::Redis::Alfred::KAIROS CRM_INSTALLATION_ONBOARDING)
+    redirect_to '/installation/onboarding' if ::Redis::Alfred.get(::Redis::Alfred::KAIROS_CRM_INSTALLATION_ONBOARDING)
   end
 
   def render_hc_if_custom_domain
@@ -73,7 +73,7 @@ class DashboardController < ActionController::Base
 
   def app_config
     {
-      APP_VERSION: Kairos CRM.config[:version],
+      APP_VERSION: KairosCrm.config[:version],
       VAPID_PUBLIC_KEY: VapidService.public_key,
       ENABLE_ACCOUNT_SIGNUP: GlobalConfigService.load('ENABLE_ACCOUNT_SIGNUP', 'false'),
       FB_APP_ID: GlobalConfigService.load('FB_APP_ID', ''),
@@ -82,7 +82,7 @@ class DashboardController < ActionController::Base
       FACEBOOK_API_VERSION: GlobalConfigService.load('FACEBOOK_API_VERSION', 'v18.0'),
       WHATSAPP_APP_ID: GlobalConfigService.load('WHATSAPP_APP_ID', ''),
       WHATSAPP_CONFIGURATION_ID: GlobalConfigService.load('WHATSAPP_CONFIGURATION_ID', ''),
-      IS_ENTERPRISE: Kairos CRMApp.enterprise?,
+      IS_ENTERPRISE: KairosCrmApp.enterprise?,
       AZURE_APP_ID: GlobalConfigService.load('AZURE_APP_ID', ''),
       GIT_SHA: GIT_HASH,
       ALLOWED_LOGIN_METHODS: allowed_login_methods,
@@ -91,7 +91,7 @@ class DashboardController < ActionController::Base
   end
 
   def active_platform_banners
-    return [] unless Kairos CRMApp.kairos-crm_cloud?
+    return [] unless KairosCrmApp.kairos-crm_cloud?
 
     PlatformBanner.active.order(created_at: :desc).as_json(only: %i[id banner_message banner_type updated_at])
   end
@@ -99,7 +99,7 @@ class DashboardController < ActionController::Base
   def allowed_login_methods
     methods = ['email']
     methods << 'google_oauth' if GlobalConfigService.load('ENABLE_GOOGLE_OAUTH_LOGIN', 'true').to_s != 'false'
-    methods << 'saml' if Kairos CRMHub.pricing_plan != 'community' && GlobalConfigService.load('ENABLE_SAML_SSO_LOGIN', 'true').to_s != 'false'
+    methods << 'saml' if KairosCrmHub.pricing_plan != 'community' && GlobalConfigService.load('ENABLE_SAML_SSO_LOGIN', 'true').to_s != 'false'
     methods
   end
 

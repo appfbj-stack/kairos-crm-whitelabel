@@ -39,7 +39,7 @@ module Enterprise::DeviseOverrides::OmniauthCallbacksController
 
     Internal::Accounts::MarketingAttributionService.new(account: @account, cookies: cookies).perform
   rescue StandardError => e
-    Kairos CRMExceptionTracker.new(e).capture_exception
+    KairosCrmExceptionTracker.new(e).capture_exception
   end
 
   def handle_saml_auth

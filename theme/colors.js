@@ -103,7 +103,7 @@ export const colors = {
     900: violet.violet12,
   },
 
-  // Kairos CRM — verde neon moderno (fundo brilhante)
+  // KairosCrm — verde neon moderno (fundo brilhante)
   kairos: {
     25: '#0A1410', // fundo brilhante (black-esverdeado)
     50: '#0F1F18', // surface escuro
@@ -119,7 +119,7 @@ export const colors = {
     900: '#003820', // sombra neon
   },
 
-  // Kairos CRM — azul neon moderno (fundo brilhante)
+  // KairosCrm — azul neon moderno (fundo brilhante)
   kairosBlue: {
     25: '#08101F', // fundo brilhante (black-azulado)
     50: '#0A1525', // surface escuro
@@ -258,7 +258,7 @@ export const colors = {
     },
 
     black: '#000000',
-    brand: '#10E070', // Kairos CRM — verde neon brilhante
+    brand: '#10E070', // KairosCrm — verde neon brilhante
     portal: 'var(--dynamic-portal-color)',
     'portal-soft': 'var(--dynamic-portal-color-soft)',
     'portal-faint': 'var(--dynamic-portal-color-faint)',

@@ -10,9 +10,9 @@ class SuperAdmin::InstanceStatusesController < SuperAdmin::ApplicationController
   end
 
   def kairos-crm_edition
-    @metrics['Kairos CRM edition'] = if Kairos CRMApp.enterprise?
+    @metrics['Kairos CRM edition'] = if KairosCrmApp.enterprise?
                                      'Enterprise'
-                                   elsif Kairos CRMApp.custom?
+                                   elsif KairosCrmApp.custom?
                                      'Custom'
                                    else
                                      'Community'
@@ -26,7 +26,7 @@ class SuperAdmin::InstanceStatusesController < SuperAdmin::ApplicationController
   end
 
   def kairos-crm_version
-    @metrics['Kairos CRM version'] = Kairos CRM.config[:version]
+    @metrics['Kairos CRM version'] = KairosCrm.config[:version]
   end
 
   def sha

@@ -9,8 +9,8 @@ import { emitter } from 'shared/helpers/mitt';
 import {
   ANALYTICS_IDENTITY,
   ANALYTICS_RESET,
-  KAIROS CRM_RESET,
-  KAIROS CRM_SET_USER,
+  KAIROS_CRM_RESET,
+  KAIROS_CRM_SET_USER,
 } from '../../constants/appEvents';
 
 Cookies.defaults = { sameSite: 'Lax' };
@@ -21,7 +21,7 @@ export const setLoadingStatus = (state, status) => {
 };
 
 export const setUser = user => {
-  emitter.emit(KAIROS CRM_SET_USER, { user });
+  emitter.emit(KAIROS_CRM_SET_USER, { user });
   emitter.emit(ANALYTICS_IDENTITY, { user });
 };
 
@@ -77,7 +77,7 @@ export const deleteIndexedDBOnLogout = async () => {
 };
 
 export const clearCookiesOnLogout = () => {
-  emitter.emit(KAIROS CRM_RESET);
+  emitter.emit(KAIROS_CRM_RESET);
   emitter.emit(ANALYTICS_RESET);
   clearBrowserSessionCookies();
   clearLocalStorageOnLogout();

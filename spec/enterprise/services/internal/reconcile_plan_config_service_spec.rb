@@ -6,7 +6,7 @@ RSpec.describe Internal::ReconcilePlanConfigService do
 
     context 'when pricing plan is community' do
       before do
-        allow(Kairos CRMHub).to receive(:pricing_plan).and_return('community')
+        allow(KairosCrmHub).to receive(:pricing_plan).and_return('community')
       end
 
       it 'disables the premium features for accounts' do
@@ -27,13 +27,13 @@ RSpec.describe Internal::ReconcilePlanConfigService do
       it 'creates a premium config reset warning if config was modified' do
         create(:installation_config, name: 'INSTALLATION_NAME', value: 'custom-name')
         service.perform
-        expect(Redis::Alfred.get(Redis::Alfred::KAIROS CRM_INSTALLATION_CONFIG_RESET_WARNING)).to eq('true')
+        expect(Redis::Alfred.get(Redis::Alfred::KAIROS_CRM_INSTALLATION_CONFIG_RESET_WARNING)).to eq('true')
       end
 
       it 'will not create a premium config reset warning if config is not modified' do
         create(:installation_config, name: 'INSTALLATION_NAME', value: 'Kairos CRM')
         service.perform
-        expect(Redis::Alfred.get(Redis::Alfred::KAIROS CRM_INSTALLATION_CONFIG_RESET_WARNING)).to be_nil
+        expect(Redis::Alfred.get(Redis::Alfred::KAIROS_CRM_INSTALLATION_CONFIG_RESET_WARNING)).to be_nil
       end
 
       it 'updates the premium configs to default' do
@@ -47,13 +47,13 @@ RSpec.describe Internal::ReconcilePlanConfigService do
 
     context 'when pricing plan is not community' do
       before do
-        allow(Kairos CRMHub).to receive(:pricing_plan).and_return('enterprise')
+        allow(KairosCrmHub).to receive(:pricing_plan).and_return('enterprise')
       end
 
       it 'unset premium config warning on upgrade' do
-        Redis::Alfred.set(Redis::Alfred::KAIROS CRM_INSTALLATION_CONFIG_RESET_WARNING, true)
+        Redis::Alfred.set(Redis::Alfred::KAIROS_CRM_INSTALLATION_CONFIG_RESET_WARNING, true)
         service.perform
-        expect(Redis::Alfred.get(Redis::Alfred::KAIROS CRM_INSTALLATION_CONFIG_RESET_WARNING)).to be_nil
+        expect(Redis::Alfred.get(Redis::Alfred::KAIROS_CRM_INSTALLATION_CONFIG_RESET_WARNING)).to be_nil
       end
 
       it 'does not disable the premium features for accounts' do

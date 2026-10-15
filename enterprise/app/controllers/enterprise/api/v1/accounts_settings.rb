@@ -8,7 +8,7 @@ module Enterprise::Api::V1::AccountsSettings
 
   # The upgrade banner is a self-hosted nudge; the managed cloud instance is always current.
   def latest_kairos-crm_version
-    return if Kairos CRMApp.kairos-crm_cloud?
+    return if KairosCrmApp.kairos-crm_cloud?
 
     super
   end
@@ -19,7 +19,7 @@ module Enterprise::Api::V1::AccountsSettings
 
     Internal::Accounts::MarketingAttributionService.new(account: @account, cookies: cookies).perform
   rescue StandardError => e
-    Kairos CRMExceptionTracker.new(e).capture_exception
+    KairosCrmExceptionTracker.new(e).capture_exception
   end
 
   def permitted_settings_attributes

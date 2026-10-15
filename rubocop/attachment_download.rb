@@ -1,8 +1,8 @@
 require 'rubocop'
 
-module RuboCop::Cop::Kairos CRM; end
+module RuboCop::Cop::KairosCrm; end
 
-class RuboCop::Cop::Kairos CRM::AttachmentDownload < RuboCop::Cop::Base
+class RuboCop::Cop::KairosCrm::AttachmentDownload < RuboCop::Cop::Base
   MSG = 'Avoid calling `.file/.blob.download`; use `blob.open` or streaming IO instead.'.freeze
 
   def_node_matcher :unsafe_download?, <<~PATTERN

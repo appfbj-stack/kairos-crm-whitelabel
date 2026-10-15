@@ -35,7 +35,7 @@ RSpec.describe 'Accounts API', type: :request do
         with_modified_env ENABLE_ACCOUNT_SIGNUP: 'true' do
           captcha = double
           allow(account_builder).to receive(:perform).and_return([user, account])
-          allow(Kairos CRMCaptcha).to receive(:new).and_return(captcha)
+          allow(KairosCrmCaptcha).to receive(:new).and_return(captcha)
           allow(captcha).to receive(:valid?).and_return(true)
 
           params = { account_name: 'test', email: email, user: nil, locale: nil, user_full_name: user_full_name, password: 'Password1!',
@@ -45,7 +45,7 @@ RSpec.describe 'Accounts API', type: :request do
                params: params,
                as: :json
 
-          expect(Kairos CRMCaptcha).to have_received(:new).with('123')
+          expect(KairosCrmCaptcha).to have_received(:new).with('123')
           expect(response.headers.keys).not_to include('access-token', 'token-type', 'client', 'expiry', 'uid')
           expect(response.parsed_body['email']).to eq(email)
         end
@@ -200,7 +200,7 @@ RSpec.describe 'Accounts API', type: :request do
       end
 
       it 'exposes the latest kairos-crm version' do
-        Redis::Alfred.set(Redis::Alfred::LATEST_KAIROS CRM_VERSION, '4.16.1')
+        Redis::Alfred.set(Redis::Alfred::LATEST_KAIROS_CRM_VERSION, '4.16.1')
 
         get "/api/v1/accounts/#{account.id}",
             headers: admin.create_new_auth_token,

@@ -75,7 +75,7 @@ class Captain::Assistant::ResponseRewriter
   end
 
   def install_instrumentation(runner)
-    return unless Kairos CRMApp.otel_enabled?
+    return unless KairosCrmApp.otel_enabled?
 
     Agents::Instrumentation.install(
       runner,

@@ -4,8 +4,8 @@ module SuperAdmin::FeaturesHelper
   end
 
   def self.plan_details
-    plan = Kairos CRMHub.pricing_plan
-    quantity = Kairos CRMHub.pricing_plan_quantity
+    plan = KairosCrmHub.pricing_plan
+    quantity = KairosCrmHub.pricing_plan_quantity
 
     if plan == 'premium'
       "You are currently on the <span class='font-semibold'>#{plan}</span> plan with <span class='font-semibold'>#{quantity} agents</span>."

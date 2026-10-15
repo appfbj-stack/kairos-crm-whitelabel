@@ -30,7 +30,7 @@ class Messages::Facebook::MessageBuilder < Messages::Messenger::MessageBuilder
     Rails.logger.error e
     @inbox.channel.authorization_error!
   rescue StandardError => e
-    Kairos CRMExceptionTracker.new(e, account: @inbox.account).capture_exception
+    KairosCrmExceptionTracker.new(e, account: @inbox.account).capture_exception
     true
   end
 
@@ -158,11 +158,11 @@ class Messages::Facebook::MessageBuilder < Messages::Messenger::MessageBuilder
       if e.message.include?('2018218')
         Rails.logger.warn e
       else
-        Kairos CRMExceptionTracker.new(e, account: @inbox.account).capture_exception unless @outgoing_echo
+        KairosCrmExceptionTracker.new(e, account: @inbox.account).capture_exception unless @outgoing_echo
       end
     rescue StandardError => e
       result = {}
-      Kairos CRMExceptionTracker.new(e, account: @inbox.account).capture_exception
+      KairosCrmExceptionTracker.new(e, account: @inbox.account).capture_exception
     end
     process_contact_params_result(result)
   end

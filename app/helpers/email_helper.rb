@@ -7,7 +7,7 @@ module EmailHelper
   def render_email_html(content)
     return '' if content.blank?
 
-    Kairos CRMMarkdownRenderer.new(content).render_message(hardbreaks: true).to_s
+    KairosCrmMarkdownRenderer.new(content).render_message(hardbreaks: true).to_s
   end
 
   # Raise a standard error if any email address is invalid

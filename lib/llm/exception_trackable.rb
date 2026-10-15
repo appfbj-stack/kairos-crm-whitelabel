@@ -3,7 +3,7 @@ module Llm::ExceptionTrackable
 
   def capture_llm_exception(error, credential:)
     if credential && credential[:source] == :system
-      Kairos CRMExceptionTracker.new(error, account: exception_tracking_account).capture_exception
+      KairosCrmExceptionTracker.new(error, account: exception_tracking_account).capture_exception
     else
       Rails.logger.error("[LLM] account=#{exception_tracking_account&.id} #{error.class}: #{error.message}")
     end

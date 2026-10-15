@@ -15,10 +15,10 @@ const props = defineProps({
 
 const emit = defineEmits(['refresh', 'buy']);
 const { t } = useI18n();
-const { isOnKairos CRMCloud } = useAccount();
+const { isOnKairosCrmCloud } = useAccount();
 const { isAdmin } = useAdmin();
 
-const canBuyCredits = computed(() => isOnKairos CRMCloud.value && isAdmin.value);
+const canBuyCredits = computed(() => isOnKairosCrmCloud.value && isAdmin.value);
 
 const percentage = limits => {
   const total = Number(limits?.totalCount || 0);

@@ -9,7 +9,7 @@ import { hasAnUpdateAvailable } from './versionCheckHelper';
 export default {
   components: { Banner },
   props: {
-    latestKairos CRMVersion: { type: String, default: '' },
+    latestKairosCrmVersion: { type: String, default: '' },
   },
   setup() {
     const { isAdmin } = useAdmin();
@@ -24,13 +24,13 @@ export default {
     ...mapGetters({ globalConfig: 'globalConfig/get' }),
     updateAvailable() {
       return hasAnUpdateAvailable(
-        this.latestKairos CRMVersion,
+        this.latestKairosCrmVersion,
         this.globalConfig.appVersion
       );
     },
     bannerMessage() {
       return this.$t('GENERAL_SETTINGS.UPDATE_KAIROS_CRM', {
-        latestKairos CRMVersion: this.latestKairos CRMVersion,
+        latestKairosCrmVersion: this.latestKairosCrmVersion,
       });
     },
     shouldShowBanner() {
@@ -38,7 +38,7 @@ export default {
         !this.userDismissedBanner &&
         this.globalConfig.displayManifest &&
         this.updateAvailable &&
-        !this.isVersionNotificationDismissed(this.latestKairos CRMVersion) &&
+        !this.isVersionNotificationDismissed(this.latestKairosCrmVersion) &&
         this.isAdmin
       );
     },
@@ -53,9 +53,9 @@ export default {
       let updatedDismissedItems =
         LocalStorage.get(LOCAL_STORAGE_KEYS.DISMISSED_UPDATES) || [];
       if (updatedDismissedItems instanceof Array) {
-        updatedDismissedItems.push(this.latestKairos CRMVersion);
+        updatedDismissedItems.push(this.latestKairosCrmVersion);
       } else {
-        updatedDismissedItems = [this.latestKairos CRMVersion];
+        updatedDismissedItems = [this.latestKairosCrmVersion];
       }
       LocalStorage.set(
         LOCAL_STORAGE_KEYS.DISMISSED_UPDATES,

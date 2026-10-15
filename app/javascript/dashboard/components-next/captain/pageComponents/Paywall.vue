@@ -19,10 +19,10 @@ const currentUser = useMapGetter('getCurrentUser');
 const isSuperAdmin = computed(() => {
   return currentUser.value.type === 'SuperAdmin';
 });
-const { accountId, isOnKairos CRMCloud } = useAccount();
+const { accountId, isOnKairosCrmCloud } = useAccount();
 
 const i18nKey = computed(() =>
-  isOnKairos CRMCloud.value ? 'PAYWALL' : 'ENTERPRISE_PAYWALL'
+  isOnKairosCrmCloud.value ? 'PAYWALL' : 'ENTERPRISE_PAYWALL'
 );
 const openBilling = () => {
   router.push({
@@ -41,7 +41,7 @@ const openBilling = () => {
       :feature-prefix="featurePrefix"
       :i18n-key="i18nKey"
       :is-super-admin="isSuperAdmin"
-      :is-on-kairos-crm-cloud="isOnKairos CRMCloud"
+      :is-on-kairos-crm-cloud="isOnKairosCrmCloud"
       @upgrade="openBilling"
     />
   </div>

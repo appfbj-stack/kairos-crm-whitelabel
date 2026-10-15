@@ -19,7 +19,7 @@ import { getCurrencyConfig } from 'dashboard/constants/billing';
 import { useI18n } from 'vue-i18n';
 
 const router = useRouter();
-const { currentAccount, isOnKairos CRMCloud } = useAccount();
+const { currentAccount, isOnKairosCrmCloud } = useAccount();
 const {
   captainEnabled,
   captainLimits,
@@ -102,7 +102,7 @@ const fetchAccountDetails = async () => {
 
 const handleBillingPageLogic = async () => {
   // If self-hosted, redirect to dashboard
-  if (!isOnKairos CRMCloud.value) {
+  if (!isOnKairosCrmCloud.value) {
     router.push({ name: 'home' });
     return;
   }

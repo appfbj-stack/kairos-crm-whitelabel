@@ -1,10 +1,10 @@
 ###############
 # One library to capture_exception and send to the specific service.
 # # e as exception, u for user and a for account (user and account are optional)
-# Usage: Kairos CRMExceptionTracker(e, user: u, account: a).capture_exception
+# Usage: KairosCrmExceptionTracker(e, user: u, account: a).capture_exception
 ############
 
-class Kairos CRMExceptionTracker
+class KairosCrmExceptionTracker
   def initialize(exception, user: nil, account: nil)
     @exception = exception
     @user = user

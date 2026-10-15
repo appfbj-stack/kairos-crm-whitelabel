@@ -6,7 +6,7 @@ export function useConfig() {
   const config = window.kairos-crmConfig || {};
 
   /**
-   * The host URL of the Kairos CRM instance.
+   * The host URL of the KairosCrm instance.
    * @type {string|undefined}
    */
   const hostURL = config.hostURL;
@@ -18,7 +18,7 @@ export function useConfig() {
   const vapidPublicKey = config.vapidPublicKey;
 
   /**
-   * An array of enabled languages in the Kairos CRM instance.
+   * An array of enabled languages in the KairosCrm instance.
    * @type {string[]|undefined}
    */
   const enabledLanguages = config.enabledLanguages;

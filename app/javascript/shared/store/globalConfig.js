@@ -7,7 +7,7 @@ const {
   APP_VERSION: appVersion,
   AZURE_APP_ID: azureAppId,
   BRAND_NAME: brandName,
-  KAIROS CRM_INBOX_TOKEN: kairos-crmInboxToken,
+  KAIROS_CRM_INBOX_TOKEN: kairos-crmInboxToken,
   CREATE_NEW_ACCOUNT_FROM_DASHBOARD: createNewAccountFromDashboard,
   DIRECT_UPLOADS_ENABLED: directUploadsEnabled,
   DISPLAY_MANIFEST: displayManifest,
@@ -59,13 +59,13 @@ const state = {
 
 export const getters = {
   get: $state => $state,
-  isOnKairos CRMCloud: $state => $state.deploymentEnv === 'cloud',
+  isOnKairosCrmCloud: $state => $state.deploymentEnv === 'cloud',
   isMetaInboxCreationDisabled: $state =>
     $state.deploymentEnv === 'cloud' && $state.disableMetaInboxCreation,
   isMetaMessageSendingDisabled: $state =>
     $state.deploymentEnv === 'cloud' && $state.disableMetaMessageSending,
   isACustomBrandedInstance: $state => $state.installationName !== 'Kairos CRM',
-  isAKairos CRMInstance: $state => $state.installationName === 'Kairos CRM',
+  isAKairosCrmInstance: $state => $state.installationName === 'Kairos CRM',
 };
 
 export const actions = {};

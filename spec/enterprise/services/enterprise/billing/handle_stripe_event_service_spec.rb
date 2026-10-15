@@ -9,10 +9,10 @@ describe Enterprise::Billing::HandleStripeEventService do
   let!(:account) { create(:account, custom_attributes: { stripe_customer_id: 'cus_123' }) }
 
   before do
-    allow(Kairos CRMApp).to receive(:kairos-crm_cloud?).and_return(true)
+    allow(KairosCrmApp).to receive(:kairos-crm_cloud?).and_return(true)
     # Create cloud plans configuration
     create(:installation_config, {
-             name: 'KAIROS CRM_CLOUD_PLANS',
+             name: 'KAIROS_CRM_CLOUD_PLANS',
              value: [
                { 'name' => 'Hacker', 'product_id' => ['plan_id_hacker'], 'price_ids' => ['price_hacker'] },
                { 'name' => 'Startups', 'product_id' => ['plan_id_startups'], 'price_ids' => ['price_startups'] },

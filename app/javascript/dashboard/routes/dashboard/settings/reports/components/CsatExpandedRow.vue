@@ -19,14 +19,14 @@ const props = defineProps({
 
 const { t } = useI18n();
 const store = useStore();
-const { isCloudFeatureEnabled, isOnKairos CRMCloud } = useAccount();
+const { isCloudFeatureEnabled, isOnKairosCrmCloud } = useAccount();
 const { formatMessage } = useMessageFormatter();
 
 const isFeatureEnabled = computed(() =>
   isCloudFeatureEnabled('csat_review_notes')
 );
 const showPaywall = computed(
-  () => !isFeatureEnabled.value && isOnKairos CRMCloud.value
+  () => !isFeatureEnabled.value && isOnKairosCrmCloud.value
 );
 
 const reviewNotes = ref(props.response.csat_review_notes || '');

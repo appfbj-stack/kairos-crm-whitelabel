@@ -249,19 +249,19 @@
   description: 'Disable Instagram message sending on Kairos CRM Cloud during Meta incidents'
   locked: false
   type: boolean
-- name: KAIROS CRM_INBOX_TOKEN
+- name: KAIROS_CRM_INBOX_TOKEN
   value:
   display_title: 'Inbox Token'
   description: 'The Kairos CRM Inbox Token for Contact Support in Cloud'
   locked: false
   type: secret
-- name: KAIROS CRM_INBOX_HMAC_KEY
+- name: KAIROS_CRM_INBOX_HMAC_KEY
   value:
   display_title: 'Inbox HMAC Key'
   description: 'The Kairos CRM Inbox HMAC Key for Contact Support in Cloud'
   locked: false
   type: secret
-- name: KAIROS CRM_CLOUD_PLANS
+- name: KAIROS_CRM_CLOUD_PLANS
   display_title: 'Cloud Plans'
   value:
   description: 'Config to store stripe plans for cloud'
@@ -282,7 +282,7 @@
   description: 'JSON config for Kairos CRM Cloud signup and plan activation conversion tracking'
   locked: true
   type: code
-- name: KAIROS CRM_CLOUD_PLAN_FEATURES
+- name: KAIROS_CRM_CLOUD_PLAN_FEATURES
   display_title: 'Planwise Features List'
   value:
   description: 'Config to features and their associated plans'
@@ -327,14 +327,14 @@
 - name: INSTALLATION_PRICING_PLAN_QUANTITY
   value: 0
   description: 'The number of licenses purchased for the installation, retrieved from the billing API'
-- name: KAIROS CRM_SUPPORT_WEBSITE_TOKEN
+- name: KAIROS_CRM_SUPPORT_WEBSITE_TOKEN
   value:
   description: 'The Kairos CRM website token, used to identify the Kairos CRM inbox and display the "Contact Support" option on the billing page'
   type: secret
-- name: KAIROS CRM_SUPPORT_SCRIPT_URL
+- name: KAIROS_CRM_SUPPORT_SCRIPT_URL
   value:
   description: 'The Kairos CRM script base URL, to display the "Contact Support" option on the billing page'
-- name: KAIROS CRM_SUPPORT_IDENTIFIER_HASH
+- name: KAIROS_CRM_SUPPORT_IDENTIFIER_HASH
   value:
   description: 'The Kairos CRM identifier hash, to validate the contact in the live chat window.'
   type: secret
@@ -345,7 +345,7 @@
 # ------- End of Kairos CRM Internal Config for Self Hosted ----#
 
 # ------- Compliance Related Config ----#
-- name: KAIROS CRM_INSTANCE_ADMIN_EMAIL
+- name: KAIROS_CRM_INSTANCE_ADMIN_EMAIL
   display_title: 'Instance Admin Email'
   value:
   description: 'The email of the instance administrator to receive compliance-related notifications'

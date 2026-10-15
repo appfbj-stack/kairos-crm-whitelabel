@@ -58,7 +58,7 @@ export default {
     ...mapGetters({
       accountId: 'getCurrentAccountId',
       isFeatureEnabledonAccount: 'accounts/isFeatureEnabledonAccount',
-      isOnKairos CRMCloud: 'globalConfig/isOnKairos CRMCloud',
+      isOnKairosCrmCloud: 'globalConfig/isOnKairosCrmCloud',
     }),
     isEmbeddedSignupWhatsApp() {
       return this.inbox.provider_config?.source === 'embedded_signup';
@@ -68,7 +68,7 @@ export default {
         this.isEmbeddedSignupWhatsApp &&
         this.isFeatureEnabledonAccount(
           this.accountId,
-          this.isOnKairos CRMCloud
+          this.isOnKairosCrmCloud
             ? FEATURE_FLAGS.WHATSAPP_EMBEDDED_SIGNUP_FLOW
             : FEATURE_FLAGS.WHATSAPP_RECONFIGURE
         )
@@ -473,7 +473,7 @@ export default {
       </template>
       <WhatsappBusinessManagementToken
         v-if="
-          isOnKairos CRMCloud &&
+          isOnKairosCrmCloud &&
           inbox.provider === 'whatsapp_cloud' &&
           isEmbeddedSignupWhatsApp
         "

@@ -57,7 +57,7 @@ class Captain::ConversationEvents
     def dispatch(event_name, at:, **data)
       Rails.configuration.dispatcher.dispatch(event_name, at, data)
     rescue StandardError => e
-      Kairos CRMExceptionTracker.new(e, account: data[:conversation]&.account).capture_exception
+      KairosCrmExceptionTracker.new(e, account: data[:conversation]&.account).capture_exception
     end
   end
 end

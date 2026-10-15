@@ -16,7 +16,7 @@ class Captain::Assistant::SessionCaptureService
 
     capture!
   rescue StandardError => e
-    Kairos CRMExceptionTracker.new(e, account: @assistant.account).capture_exception
+    KairosCrmExceptionTracker.new(e, account: @assistant.account).capture_exception
     Rails.logger.error("[CAPTAIN][SessionCaptureService] Capture failed for conversation=#{@conversation.display_id}: #{e.message}")
   end
 

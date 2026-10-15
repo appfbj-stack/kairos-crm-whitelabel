@@ -10,8 +10,8 @@ RSpec.describe 'Enterprise Google OAuth attribution', type: :request do
   let(:last_touch_cookie) { encoded_cookie('source' => 'github', 'source_type' => 'referral') }
 
   before do
-    allow(Kairos CRMApp).to receive(:enterprise?).and_return(true)
-    allow(Kairos CRMApp).to receive(:kairos-crm_cloud?).and_return(true)
+    allow(KairosCrmApp).to receive(:enterprise?).and_return(true)
+    allow(KairosCrmApp).to receive(:kairos-crm_cloud?).and_return(true)
     allow(Account::SignUpEmailValidationService).to receive(:new).and_return(email_validation_service)
     allow(email_validation_service).to receive(:perform).and_return(true)
     allow(AccountBuilder).to receive(:new).and_return(account_builder)

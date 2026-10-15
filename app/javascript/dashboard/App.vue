@@ -53,7 +53,7 @@ export default {
   },
   data() {
     return {
-      latestKairos CRMVersion: null,
+      latestKairosCrmVersion: null,
       reconnectService: null,
     };
   },
@@ -111,12 +111,12 @@ export default {
         accountId: this.currentAccountId,
       });
       const account = this.getAccount(this.currentAccountId);
-      const { locale, latest_kairos-crm_version: latestKairos CRMVersion } =
+      const { locale, latest_kairos-crm_version: latestKairosCrmVersion } =
         account;
       const { pubsub_token: pubsubToken } = this.currentUser || {};
       // If user locale is set, use it; otherwise use account locale
       this.setLocale(this.uiSettings?.locale || locale);
-      this.latestKairos CRMVersion = latestKairos CRMVersion;
+      this.latestKairosCrmVersion = latestKairosCrmVersion;
       vueActionCable.init(this.store, pubsubToken);
       this.reconnectService = new ReconnectService(this.store, this.router);
       window.reconnectService = this.reconnectService;
@@ -140,7 +140,7 @@ export default {
     class="flex flex-col w-full h-screen min-h-0 bg-n-background"
     :dir="isRTL ? 'rtl' : 'ltr'"
   >
-    <UpdateBanner :latest-kairos-crm-version="latestKairos CRMVersion" />
+    <UpdateBanner :latest-kairos-crm-version="latestKairosCrmVersion" />
     <StatusBanner />
     <template v-if="currentAccountId">
       <PendingEmailVerificationBanner v-if="hideOnOnboardingView" />

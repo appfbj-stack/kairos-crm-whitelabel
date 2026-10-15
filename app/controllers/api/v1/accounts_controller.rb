@@ -71,7 +71,7 @@ class Api::V1::AccountsController < Api::BaseController
   private
 
   def latest_kairos-crm_version
-    Redis::Alfred.get(Redis::Alfred::LATEST_KAIROS CRM_VERSION)
+    Redis::Alfred.get(Redis::Alfred::LATEST_KAIROS_CRM_VERSION)
   end
 
   def enqueue_branding_enrichment
@@ -82,7 +82,7 @@ class Api::V1::AccountsController < Api::BaseController
     Redis::Alfred.set(format(Redis::Alfred::ACCOUNT_ONBOARDING_ENRICHMENT, account_id: @account.id), '1', ex: 30)
   rescue StandardError => e
     # Enrichment is optional — never let queue/Redis failures abort signup
-    Kairos CRMExceptionTracker.new(e).capture_exception
+    KairosCrmExceptionTracker.new(e).capture_exception
   end
 
   def ensure_account_name
@@ -137,7 +137,7 @@ class Api::V1::AccountsController < Api::BaseController
   end
 
   def validate_captcha
-    raise ActionController::InvalidAuthenticityToken, 'Invalid Captcha' unless Kairos CRMCaptcha.new(params[:h_captcha_client_response]).valid?
+    raise ActionController::InvalidAuthenticityToken, 'Invalid Captcha' unless KairosCrmCaptcha.new(params[:h_captcha_client_response]).valid?
   end
 
   def pundit_user

@@ -5,7 +5,7 @@ describe Enterprise::Billing::ReconcilePlanFeaturesService do
 
   before do
     create(:installation_config, {
-             name: 'KAIROS CRM_CLOUD_PLANS',
+             name: 'KAIROS_CRM_CLOUD_PLANS',
              value: [
                { 'name' => 'Hacker', 'product_id' => ['plan_id_hacker'], 'price_ids' => ['price_hacker'] },
                { 'name' => 'Startups', 'product_id' => ['plan_id_startups'], 'price_ids' => ['price_startups'] }

@@ -14,8 +14,8 @@ RSpec.describe Messages::AudioTranscriptionService, type: :service do
     # Mock usage limits for transcription to be available
     allow(account).to receive(:usage_limits).and_return(
       {
-        agents: Kairos CRMApp.max_limit,
-        inboxes: Kairos CRMApp.max_limit,
+        agents: KairosCrmApp.max_limit,
+        inboxes: KairosCrmApp.max_limit,
         captain: { responses: { current_available: 100 } }
       }
     )

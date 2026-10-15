@@ -1,6 +1,6 @@
 class BackfillCaptainDocumentSyncMetadata < ActiveRecord::Migration[7.0]
   def up
-    return unless Kairos CRMApp.enterprise?
+    return unless KairosCrmApp.enterprise?
 
     # rubocop:disable Rails/SkipsModelValidations
     Captain::Document

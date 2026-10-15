@@ -51,15 +51,15 @@ RSpec.describe UserSessionTrackingService do
       expect(existing.last_activity_at).to be_within(1.second).of(Time.current)
     end
 
-    context 'with a Kairos CRM Mobile legacy User-Agent' do
-      context 'when the UA is okhttp (Android Kairos CRM Mobile)' do
+    context 'with a KairosCrm Mobile legacy User-Agent' do
+      context 'when the UA is okhttp (Android KairosCrm Mobile)' do
         let(:ua) { 'okhttp/4.9.2' }
 
-        it 'labels the session as Kairos CRM Mobile on Android', :aggregate_failures do
+        it 'labels the session as KairosCrm Mobile on Android', :aggregate_failures do
           service.create_or_update!
 
           session = user.user_sessions.last
-          expect(session.browser_name).to eq('Kairos CRM Mobile')
+          expect(session.browser_name).to eq('KairosCrm Mobile')
           expect(session.browser_version).to be_nil
           expect(session.platform_name).to eq('Android')
           expect(session.platform_version).to be_nil
@@ -68,14 +68,14 @@ RSpec.describe UserSessionTrackingService do
         end
       end
 
-      context 'when the UA is CFNetwork (iOS Kairos CRM Mobile)' do
+      context 'when the UA is CFNetwork (iOS KairosCrm Mobile)' do
         let(:ua) { 'Kairos CRM/3759 CFNetwork/3886.100.1 Darwin/27.0.0' }
 
-        it 'labels the session as Kairos CRM Mobile on iPhone', :aggregate_failures do
+        it 'labels the session as KairosCrm Mobile on iPhone', :aggregate_failures do
           service.create_or_update!
 
           session = user.user_sessions.last
-          expect(session.browser_name).to eq('Kairos CRM Mobile')
+          expect(session.browser_name).to eq('KairosCrm Mobile')
           expect(session.browser_version).to be_nil
           expect(session.platform_name).to eq('iPhone')
           expect(session.platform_version).to be_nil
@@ -118,11 +118,11 @@ RSpec.describe UserSessionTrackingService do
       context 'when platform is ios and model is an iPhone' do
         let(:headers) do
           {
-            'X-Kairos CRM-Client-Name' => 'Kairos CRM Mobile',
-            'X-Kairos CRM-Client-Version' => '4.7.0',
-            'X-Kairos CRM-Platform' => 'ios',
-            'X-Kairos CRM-Platform-Version' => '18.2',
-            'X-Kairos CRM-Device-Model' => 'iPhone 15 Pro'
+            'X-KairosCrm-$1' => 'KairosCrm Mobile',
+            'X-KairosCrm-$1' => '4.7.0',
+            'X-KairosCrm-$1' => 'ios',
+            'X-KairosCrm-$1' => '18.2',
+            'X-KairosCrm-$1' => 'iPhone 15 Pro'
           }
         end
 
@@ -130,7 +130,7 @@ RSpec.describe UserSessionTrackingService do
           service.create_or_update!
 
           session = user.user_sessions.last
-          expect(session.browser_name).to eq('Kairos CRM Mobile')
+          expect(session.browser_name).to eq('KairosCrm Mobile')
           expect(session.browser_version).to eq('4.7.0')
           expect(session.platform_name).to eq('iPhone 15 Pro')
           expect(session.platform_version).to eq('18.2')
@@ -142,11 +142,11 @@ RSpec.describe UserSessionTrackingService do
       context 'when platform is ios and model is an iPad' do
         let(:headers) do
           {
-            'X-Kairos CRM-Client-Name' => 'Kairos CRM Mobile',
-            'X-Kairos CRM-Client-Version' => '4.7.0',
-            'X-Kairos CRM-Platform' => 'ios',
-            'X-Kairos CRM-Platform-Version' => '18.2',
-            'X-Kairos CRM-Device-Model' => 'iPad Pro 11-inch'
+            'X-KairosCrm-$1' => 'KairosCrm Mobile',
+            'X-KairosCrm-$1' => '4.7.0',
+            'X-KairosCrm-$1' => 'ios',
+            'X-KairosCrm-$1' => '18.2',
+            'X-KairosCrm-$1' => 'iPad Pro 11-inch'
           }
         end
 
@@ -154,7 +154,7 @@ RSpec.describe UserSessionTrackingService do
           service.create_or_update!
 
           session = user.user_sessions.last
-          expect(session.browser_name).to eq('Kairos CRM Mobile')
+          expect(session.browser_name).to eq('KairosCrm Mobile')
           expect(session.platform_name).to eq('iPad Pro 11-inch')
           expect(session.device_name).to eq('iPad')
         end
@@ -164,11 +164,11 @@ RSpec.describe UserSessionTrackingService do
         let(:ua) { 'okhttp/4.9.2' }
         let(:headers) do
           {
-            'X-Kairos CRM-Client-Name' => 'Kairos CRM Mobile',
-            'X-Kairos CRM-Client-Version' => '4.7.0',
-            'X-Kairos CRM-Platform' => 'android',
-            'X-Kairos CRM-Platform-Version' => '14',
-            'X-Kairos CRM-Device-Model' => 'Pixel 7 Pro'
+            'X-KairosCrm-$1' => 'KairosCrm Mobile',
+            'X-KairosCrm-$1' => '4.7.0',
+            'X-KairosCrm-$1' => 'android',
+            'X-KairosCrm-$1' => '14',
+            'X-KairosCrm-$1' => 'Pixel 7 Pro'
           }
         end
 
@@ -176,7 +176,7 @@ RSpec.describe UserSessionTrackingService do
           service.create_or_update!
 
           session = user.user_sessions.last
-          expect(session.browser_name).to eq('Kairos CRM Mobile')
+          expect(session.browser_name).to eq('KairosCrm Mobile')
           expect(session.browser_version).to eq('4.7.0')
           expect(session.platform_name).to eq('Pixel 7 Pro')
           expect(session.platform_version).to eq('14')
@@ -184,13 +184,13 @@ RSpec.describe UserSessionTrackingService do
         end
       end
 
-      context 'when X-Kairos CRM-Client-Name is blank' do
+      context 'when X-KairosCrm-$1 is blank' do
         let(:ua) { 'okhttp/4.9.2' }
         let(:headers) do
           {
-            'X-Kairos CRM-Client-Name' => '',
-            'X-Kairos CRM-Platform' => 'android',
-            'X-Kairos CRM-Device-Model' => 'Pixel 7 Pro'
+            'X-KairosCrm-$1' => '',
+            'X-KairosCrm-$1' => 'android',
+            'X-KairosCrm-$1' => 'Pixel 7 Pro'
           }
         end
 
@@ -198,7 +198,7 @@ RSpec.describe UserSessionTrackingService do
           service.create_or_update!
 
           session = user.user_sessions.last
-          expect(session.browser_name).to eq('Kairos CRM Mobile')
+          expect(session.browser_name).to eq('KairosCrm Mobile')
           expect(session.platform_name).to eq('Android')
           expect(session.platform_version).to be_nil
           expect(session.device_name).to eq('Android')

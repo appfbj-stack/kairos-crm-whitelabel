@@ -34,7 +34,7 @@ class Internal::Accounts::MarketingAttributionService
   pattr_initialize [:account!, :cookies!]
 
   def perform
-    return unless Kairos CRMApp.kairos-crm_cloud?
+    return unless KairosCrmApp.kairos-crm_cloud?
 
     first_touch = attribution_cookie(FIRST_TOUCH_COOKIE)
     last_touch = attribution_cookie(LAST_TOUCH_COOKIE)

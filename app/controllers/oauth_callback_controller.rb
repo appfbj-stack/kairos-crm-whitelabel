@@ -7,7 +7,7 @@ class OauthCallbackController < ApplicationController
 
     handle_response
   rescue StandardError => e
-    Kairos CRMExceptionTracker.new(e).capture_exception
+    KairosCrmExceptionTracker.new(e).capture_exception
     redirect_to '/'
   end
 

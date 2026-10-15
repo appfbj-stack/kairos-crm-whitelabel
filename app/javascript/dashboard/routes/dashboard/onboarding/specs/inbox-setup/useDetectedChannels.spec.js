@@ -15,7 +15,7 @@ const mountComposable = ({
   brandInfo,
   features = { channel_instagram: true },
   inboxes = [],
-  isOnKairos CRMCloud = false,
+  isOnKairosCrmCloud = false,
   disableMetaInboxCreation = false,
 } = {}) => {
   const store = createStore({
@@ -24,9 +24,9 @@ const mountComposable = ({
         namespaced: true,
         getters: {
           get: () => ({}),
-          isOnKairos CRMCloud: () => isOnKairos CRMCloud,
+          isOnKairosCrmCloud: () => isOnKairosCrmCloud,
           isMetaInboxCreationDisabled: () =>
-            isOnKairos CRMCloud && disableMetaInboxCreation,
+            isOnKairosCrmCloud && disableMetaInboxCreation,
           isMetaMessageSendingDisabled: () => false,
         },
       },
@@ -221,7 +221,7 @@ describe('useDetectedChannels', () => {
           channel_instagram: true,
           whatsapp_embedded_signup_inbox_creation: true,
         },
-        isOnKairos CRMCloud: true,
+        isOnKairosCrmCloud: true,
         disableMetaInboxCreation: true,
         brandInfo: {
           socials: [
@@ -241,7 +241,7 @@ describe('useDetectedChannels', () => {
     it('hides Instagram when disabled for the account', () => {
       const { displayedChannels } = mountComposable({
         features: { channel_instagram: false },
-        isOnKairos CRMCloud: true,
+        isOnKairosCrmCloud: true,
         brandInfo: {
           socials: [
             { type: 'instagram', url: 'https://instagram.com/acme' },

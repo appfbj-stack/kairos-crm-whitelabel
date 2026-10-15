@@ -23,7 +23,7 @@ export default {
   },
   computed: {
     ...mapGetters({
-      isOnKairos CRMCloud: 'globalConfig/isOnKairos CRMCloud',
+      isOnKairosCrmCloud: 'globalConfig/isOnKairosCrmCloud',
       getAccount: 'accounts/getAccount',
     }),
     bannerMessage() {
@@ -33,7 +33,7 @@ export default {
       return this.$t('GENERAL_SETTINGS.OPEN_BILLING');
     },
     shouldShowBanner() {
-      if (!this.isOnKairos CRMCloud) {
+      if (!this.isOnKairosCrmCloud) {
         return false;
       }
 

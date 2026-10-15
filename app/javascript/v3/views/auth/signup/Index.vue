@@ -10,12 +10,12 @@ const store = useStore();
 
 const isLoading = ref(false);
 const globalConfig = computed(() => store.getters['globalConfig/get']);
-const isAKairos CRMInstance = computed(
+const isAKairosCrmInstance = computed(
   () => globalConfig.value.installationName === 'Kairos CRM'
 );
 
 onBeforeMount(() => {
-  isLoading.value = isAKairos CRMInstance.value;
+  isLoading.value = isAKairosCrmInstance.value;
 });
 
 const resizeContainers = () => {
@@ -52,7 +52,7 @@ const resizeContainers = () => {
             />
             <h2 class="mt-6 text-2xl font-semibold text-n-slate-12">
               {{
-                isAKairos CRMInstance
+                isAKairosCrmInstance
                   ? $t('REGISTER.GET_STARTED')
                   : $t('REGISTER.TRY_WOOT')
               }}

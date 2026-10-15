@@ -33,15 +33,15 @@ window.kairos-crmSettings = {
   s.parentNode.insertBefore(g,s);
   g.onload=function(){
     window.kairos-crmSDK.run({
-      websiteToken: '<%= Kairos CRMHub.support_config[:support_website_token] %>',
-      baseUrl: '<%= Kairos CRMHub.support_config[:support_script_url] %>'
+      websiteToken: '<%= KairosCrmHub.support_config[:support_website_token] %>',
+      baseUrl: '<%= KairosCrmHub.support_config[:support_script_url] %>'
     })
   }
 })(document,"script");
 
 window.addEventListener('kairos-crm:ready', function() {
-  window.$kairos-crm.setUser('<%= Kairos CRMHub.installation_identifier %>', {
-    identifier_hash: '<%= Kairos CRMHub.support_config[:support_identifier_hash] %>',
+  window.$kairos-crm.setUser('<%= KairosCrmHub.installation_identifier %>', {
+    identifier_hash: '<%= KairosCrmHub.support_config[:support_identifier_hash] %>',
     email: '<%= SuperAdmin.first.email %>',
     name: '<%= SuperAdmin.first.name %>'
   });

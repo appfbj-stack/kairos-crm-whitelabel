@@ -7,7 +7,7 @@ class Integrations::BotProcessorService
 
     process_content(message)
   rescue StandardError => e
-    Kairos CRMExceptionTracker.new(e, account: (hook&.account || agent_bot&.account)).capture_exception
+    KairosCrmExceptionTracker.new(e, account: (hook&.account || agent_bot&.account)).capture_exception
   end
 
   private

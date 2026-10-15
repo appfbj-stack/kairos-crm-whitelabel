@@ -1,7 +1,7 @@
 import { useConfig } from '../useConfig';
 
 describe('useConfig', () => {
-  const originalKairos CRMConfig = window.kairos-crmConfig;
+  const originalKairosCrmConfig = window.kairos-crmConfig;
 
   beforeEach(() => {
     window.kairos-crmConfig = {
@@ -14,7 +14,7 @@ describe('useConfig', () => {
   });
 
   afterEach(() => {
-    window.kairos-crmConfig = originalKairos CRMConfig;
+    window.kairos-crmConfig = originalKairosCrmConfig;
   });
 
   it('returns the correct configuration values', () => {

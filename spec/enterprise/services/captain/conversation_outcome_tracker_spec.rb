@@ -79,9 +79,9 @@ RSpec.describe Captain::ConversationOutcomeTracker do
 
     it 'captures boundary failures without raising' do
       error = ActiveRecord::StatementInvalid.new('database unavailable')
-      exception_tracker = instance_double(Kairos CRMExceptionTracker)
+      exception_tracker = instance_double(KairosCrmExceptionTracker)
       allow(ConversationOutcome).to receive(:create!).and_raise(error)
-      expect(Kairos CRMExceptionTracker).to receive(:new).with(error, account: account).and_return(exception_tracker)
+      expect(KairosCrmExceptionTracker).to receive(:new).with(error, account: account).and_return(exception_tracker)
       expect(exception_tracker).to receive(:capture_exception)
 
       expect do

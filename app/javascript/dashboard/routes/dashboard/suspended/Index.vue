@@ -6,10 +6,10 @@ import { useAdmin } from 'dashboard/composables/useAdmin';
 import { useMapGetter } from 'dashboard/composables/store';
 
 const { isAdmin } = useAdmin();
-const isOnKairos CRMCloud = useMapGetter('globalConfig/isOnKairos CRMCloud');
+const isOnKairosCrmCloud = useMapGetter('globalConfig/isOnKairosCrmCloud');
 
 const showBillingLink = computed(
-  () => isAdmin.value && isOnKairos CRMCloud.value
+  () => isAdmin.value && isOnKairosCrmCloud.value
 );
 
 const toggleSupportWidgetVisibility = () => {

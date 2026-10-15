@@ -22,8 +22,8 @@ RSpec.describe Llm::SpeechToTextService, type: :service do
     before do
       allow(account).to receive(:usage_limits).and_return(
         {
-          agents: Kairos CRMApp.max_limit,
-          inboxes: Kairos CRMApp.max_limit,
+          agents: KairosCrmApp.max_limit,
+          inboxes: KairosCrmApp.max_limit,
           captain: { responses: { current_available: 100 } }
         }
       )

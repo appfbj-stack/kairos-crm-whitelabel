@@ -10,7 +10,7 @@ RSpec.describe Inboxes::FetchImapEmailInboxesJob do
     before do
       premium_account.custom_attributes['plan_name'] = 'Startups'
       InstallationConfig.where(name: 'DEPLOYMENT_ENV').first_or_create!(value: 'cloud')
-      InstallationConfig.where(name: 'KAIROS CRM_CLOUD_PLANS').first_or_create!(value: [{ 'name' => 'Hacker' }])
+      InstallationConfig.where(name: 'KAIROS_CRM_CLOUD_PLANS').first_or_create!(value: [{ 'name' => 'Hacker' }])
     end
 
     it 'skips inboxes with default plan' do

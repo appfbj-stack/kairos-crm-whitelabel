@@ -148,7 +148,7 @@ Rails.application.routes.draw do
             end
           end
           resources :campaigns, only: [:index, :create, :show, :update, :destroy] do
-            if Kairos CRMApp.enterprise?
+            if KairosCrmApp.enterprise?
               get 'analytics/metrics', to: 'campaigns/analytics#metrics'
               get 'analytics/contacts', to: 'campaigns/analytics#contacts'
             end
@@ -190,7 +190,7 @@ Rails.application.routes.draw do
               post :destroy_custom_attributes
               get :attachments
               get :inbox_assistant
-              get :reporting_events if Kairos CRMApp.enterprise?
+              get :reporting_events if KairosCrmApp.enterprise?
             end
           end
 
@@ -240,7 +240,7 @@ Rails.application.routes.draw do
               resources :labels, only: [:create, :index]
               resources :notes
               get :attachments, to: 'attachments#index'
-              post :call, on: :member, to: 'calls#create' if Kairos CRMApp.enterprise?
+              post :call, on: :member, to: 'calls#create' if KairosCrmApp.enterprise?
             end
           end
           resources :data_imports, only: [:index, :show, :create] do
@@ -261,7 +261,7 @@ Rails.application.routes.draw do
               get :download
             end
             member do
-              patch :update if Kairos CRMApp.enterprise?
+              patch :update if KairosCrmApp.enterprise?
             end
           end
           resources :applied_slas, only: [:index] do
@@ -270,9 +270,9 @@ Rails.application.routes.draw do
               get :download
             end
           end
-          resources :reporting_events, only: [:index] if Kairos CRMApp.enterprise?
+          resources :reporting_events, only: [:index] if KairosCrmApp.enterprise?
 
-          if Kairos CRMApp.enterprise?
+          if KairosCrmApp.enterprise?
             resources :calls, only: [:index]
             resources :whatsapp_calls, only: [:show] do
               member do
@@ -302,7 +302,7 @@ Rails.application.routes.draw do
             get :health, on: :member
             post :register_webhook, on: :member
             post :reset_secret, on: :member
-            if Kairos CRMApp.enterprise?
+            if KairosCrmApp.enterprise?
               resource :conference, only: %i[create destroy], controller: 'conference' do
                 get :token, on: :member
               end
@@ -560,7 +560,7 @@ Rails.application.routes.draw do
     end
   end
 
-  if Kairos CRMApp.enterprise?
+  if KairosCrmApp.enterprise?
     namespace :enterprise, defaults: { format: 'json' } do
       namespace :api do
         namespace :v1 do
@@ -687,7 +687,7 @@ Rails.application.routes.draw do
     resources :callback, only: [:create]
     resources :delivery_status, only: [:create]
 
-    if Kairos CRMApp.enterprise?
+    if KairosCrmApp.enterprise?
       post 'voice/call/:phone', to: 'voice#call_twiml', as: :voice_call
       post 'voice/status/:phone', to: 'voice#status', as: :voice_status
       post 'voice/conference_status/:phone', to: 'voice#conference_status', as: :voice_conference_status

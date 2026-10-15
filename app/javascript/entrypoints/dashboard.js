@@ -22,7 +22,7 @@ import constants from 'dashboard/constants/globals';
 import * as Sentry from '@sentry/vue';
 import {
   initializeAnalyticsEvents,
-  initializeKairos CRMEvents,
+  initializeKairosCrmEvents,
 } from 'dashboard/helper/scriptHelpers.js';
 import FluentIcon from 'shared/components/FluentIcon/DashboardIcon.vue';
 import VueDOMPurifyHTML from 'vue-dompurify-html';
@@ -114,7 +114,7 @@ window.axios = createAxios(axios);
 // [VITE] Disabled this we don't need it, we can use `useEmitter` directly
 // app.prototype.$emitter = emitter;
 
-initializeKairos CRMEvents();
+initializeKairosCrmEvents();
 initializeAnalyticsEvents();
 initalizeRouter();
 

@@ -7,7 +7,7 @@ RSpec.describe Enterprise::Concerns::Portal do
     context 'when custom_domain is changed' do
       context 'when on kairos-crm cloud' do
         before do
-          allow(Kairos CRMApp).to receive(:kairos-crm_cloud?).and_return(true)
+          allow(KairosCrmApp).to receive(:kairos-crm_cloud?).and_return(true)
         end
 
         it 'enqueues cloudflare verification job' do
@@ -19,7 +19,7 @@ RSpec.describe Enterprise::Concerns::Portal do
 
       context 'when not on kairos-crm cloud' do
         before do
-          allow(Kairos CRMApp).to receive(:kairos-crm_cloud?).and_return(false)
+          allow(KairosCrmApp).to receive(:kairos-crm_cloud?).and_return(false)
         end
 
         it 'does not enqueue cloudflare verification job' do
@@ -32,7 +32,7 @@ RSpec.describe Enterprise::Concerns::Portal do
 
     context 'when custom_domain is not changed' do
       before do
-        allow(Kairos CRMApp).to receive(:kairos-crm_cloud?).and_return(true)
+        allow(KairosCrmApp).to receive(:kairos-crm_cloud?).and_return(true)
         portal.update(custom_domain: 'test.example.com')
       end
 
@@ -45,7 +45,7 @@ RSpec.describe Enterprise::Concerns::Portal do
 
     context 'when custom_domain is set to blank' do
       before do
-        allow(Kairos CRMApp).to receive(:kairos-crm_cloud?).and_return(true)
+        allow(KairosCrmApp).to receive(:kairos-crm_cloud?).and_return(true)
         portal.update(custom_domain: 'test.example.com')
       end
 

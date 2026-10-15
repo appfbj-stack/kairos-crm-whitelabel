@@ -2,8 +2,8 @@ require 'rails_helper'
 
 RSpec.describe 'MFA API', type: :request do
   before do
-    skip('Skipping since MFA is not configured in this environment') unless Kairos CRM.encryption_configured?
-    allow(Kairos CRM).to receive(:mfa_enabled?).and_return(true)
+    skip('Skipping since MFA is not configured in this environment') unless KairosCrm.encryption_configured?
+    allow(KairosCrm).to receive(:mfa_enabled?).and_return(true)
   end
 
   let(:account) { create(:account) }

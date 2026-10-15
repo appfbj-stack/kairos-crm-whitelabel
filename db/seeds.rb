@@ -5,7 +5,7 @@ ConfigLoader.new.process
 ## Seeds productions
 if Rails.env.production?
   # Setup Onboarding flow
-  Redis::Alfred.set(Redis::Alfred::KAIROS CRM_INSTALLATION_ONBOARDING, true)
+  Redis::Alfred.set(Redis::Alfred::KAIROS_CRM_INSTALLATION_ONBOARDING, true)
 end
 
 ## Seeds for Local Development

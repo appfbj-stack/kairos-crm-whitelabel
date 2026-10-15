@@ -10,18 +10,18 @@ import semver from 'semver';
 const { t } = useI18n();
 const { currentAccount } = useAccount();
 
-const latestKairos CRMVersion = computed(() => {
+const latestKairosCrmVersion = computed(() => {
   return currentAccount.value.latest_kairos-crm_version;
 });
 
 const globalConfig = useMapGetter('globalConfig/get');
 
 const hasAnUpdateAvailable = computed(() => {
-  if (!semver.valid(latestKairos CRMVersion.value)) {
+  if (!semver.valid(latestKairosCrmVersion.value)) {
     return false;
   }
 
-  return semver.lt(globalConfig.value.appVersion, latestKairos CRMVersion.value);
+  return semver.lt(globalConfig.value.appVersion, latestKairosCrmVersion.value);
 });
 
 const gitSha = computed(() => {
@@ -38,7 +38,7 @@ const copyGitSha = () => {
     <div v-if="hasAnUpdateAvailable && globalConfig.displayManifest">
       {{
         t('GENERAL_SETTINGS.UPDATE_KAIROS_CRM', {
-          latestKairos CRMVersion: latestKairos CRMVersion,
+          latestKairosCrmVersion: latestKairosCrmVersion,
         })
       }}
     </div>

@@ -45,7 +45,7 @@ module UserAttributeHelpers
 
   # Used internally for Kairos CRM in Kairos CRM
   def hmac_identifier
-    hmac_key = GlobalConfig.get('KAIROS CRM_INBOX_HMAC_KEY')['KAIROS CRM_INBOX_HMAC_KEY']
+    hmac_key = GlobalConfig.get('KAIROS_CRM_INBOX_HMAC_KEY')['KAIROS_CRM_INBOX_HMAC_KEY']
     return OpenSSL::HMAC.hexdigest('sha256', hmac_key, email) if hmac_key.present?
 
     ''

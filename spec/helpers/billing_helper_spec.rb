@@ -7,7 +7,7 @@ RSpec.describe BillingHelper do
 
     before do
       create(:installation_config, {
-               name: 'KAIROS CRM_CLOUD_PLANS',
+               name: 'KAIROS_CRM_CLOUD_PLANS',
                value: [
                  {
                    'name' => 'Hacker',

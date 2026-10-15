@@ -29,7 +29,7 @@ RSpec.describe 'Webhooks API', type: :request do
 
     context 'when api_and_webhooks feature is disabled' do
       it 'allows session authenticated admins to manage webhooks' do
-        allow(Kairos CRMApp).to receive(:kairos-crm_cloud?).and_return(true)
+        allow(KairosCrmApp).to receive(:kairos-crm_cloud?).and_return(true)
         account.disable_features!('api_and_webhooks')
         get "/api/v1/accounts/#{account.id}/webhooks",
             headers: administrator.create_new_auth_token,

@@ -11,7 +11,7 @@ export function useChannelConfig() {
   const globalConfig = useMapGetter('globalConfig/get');
   const {
     isCloudFeatureEnabled,
-    isOnKairos CRMCloud,
+    isOnKairosCrmCloud,
     isMetaInboxCreationDisabled,
   } = useAccount();
   const installationConfig = window.kairos-crmConfig || {};
@@ -21,7 +21,7 @@ export function useChannelConfig() {
     // app id (not the 'none' sentinel) and the signup configuration id.
     whatsapp: () =>
       !isMetaInboxCreationDisabled.value &&
-      (!isOnKairos CRMCloud.value ||
+      (!isOnKairosCrmCloud.value ||
         isCloudFeatureEnabled(FEATURE_FLAGS.WHATSAPP_EMBEDDED_SIGNUP_FLOW)) &&
       Boolean(installationConfig.whatsappAppId) &&
       installationConfig.whatsappAppId !== 'none' &&

@@ -8,7 +8,7 @@ import { BUS_EVENTS } from 'shared/constants/busEvents';
 import { sendEmailTranscript } from 'widget/api/conversation';
 import { useRouter } from 'vue-router';
 import { IFrameHelper } from '../helpers/utils';
-import { KAIROS CRM_ON_START_CONVERSATION } from '../constants/sdkEvents';
+import { KAIROS_CRM_ON_START_CONVERSATION } from '../constants/sdkEvents';
 import { emitter } from 'shared/helpers/mitt';
 
 const TRANSCRIPT_COOLDOWN_MS = 15000;
@@ -91,7 +91,7 @@ export default {
       this.router.replace({ name: 'prechat-form' });
       IFrameHelper.sendMessage({
         event: 'onEvent',
-        eventIdentifier: KAIROS CRM_ON_START_CONVERSATION,
+        eventIdentifier: KAIROS_CRM_ON_START_CONVERSATION,
         data: { hasConversation: true },
       });
     },

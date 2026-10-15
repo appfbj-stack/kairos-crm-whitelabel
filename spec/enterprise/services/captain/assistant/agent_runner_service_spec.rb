@@ -452,8 +452,8 @@ RSpec.describe Captain::Assistant::AgentRunnerService do
 
       it 'rejects a rewrite that changes the response part citation order' do
         channel_limit_rewrite[:rewrite_run_result].output['response_parts'].reverse!
-        allow(Kairos CRMExceptionTracker).to receive(:new).and_return(
-          instance_double(Kairos CRMExceptionTracker, capture_exception: true)
+        allow(KairosCrmExceptionTracker).to receive(:new).and_return(
+          instance_double(KairosCrmExceptionTracker, capture_exception: true)
         )
 
         result = service.generate_response(message_history: message_history)
@@ -468,13 +468,13 @@ RSpec.describe Captain::Assistant::AgentRunnerService do
 
       before do
         allow(mock_runner).to receive(:run).and_raise(error)
-        allow(Kairos CRMExceptionTracker).to receive(:new).and_return(
-          instance_double(Kairos CRMExceptionTracker, capture_exception: true)
+        allow(KairosCrmExceptionTracker).to receive(:new).and_return(
+          instance_double(KairosCrmExceptionTracker, capture_exception: true)
         )
       end
 
       it 'captures exception and returns error response' do
-        expect(Kairos CRMExceptionTracker).to receive(:new).with(error, account: conversation.account)
+        expect(KairosCrmExceptionTracker).to receive(:new).with(error, account: conversation.account)
 
         result = service.generate_response(message_history: message_history)
 
@@ -505,7 +505,7 @@ RSpec.describe Captain::Assistant::AgentRunnerService do
         subject(:service) { described_class.new(assistant: assistant, conversation: nil) }
 
         it 'handles missing conversation gracefully' do
-          expect(Kairos CRMExceptionTracker).to receive(:new).with(error, account: nil)
+          expect(KairosCrmExceptionTracker).to receive(:new).with(error, account: nil)
 
           result = service.generate_response(message_history: message_history)
 
@@ -857,7 +857,7 @@ RSpec.describe Captain::Assistant::AgentRunnerService do
       root_span = instance_double(span_class)
       context_wrapper = Struct.new(:context).new({ __otel_tracing: { root_span: root_span } })
 
-      allow(Kairos CRMApp).to receive(:otel_enabled?).and_return(true)
+      allow(KairosCrmApp).to receive(:otel_enabled?).and_return(true)
       allow(runner).to receive(:on_tool_complete) do |&block|
         tool_complete_callback = block
         runner
@@ -880,7 +880,7 @@ RSpec.describe Captain::Assistant::AgentRunnerService do
       runner = instance_double(Agents::AgentRunner)
       tool_complete_callback = nil
 
-      allow(Kairos CRMApp).to receive(:otel_enabled?).and_return(false)
+      allow(KairosCrmApp).to receive(:otel_enabled?).and_return(false)
       allow(runner).to receive(:on_tool_complete) do |&block|
         tool_complete_callback = block
         runner
@@ -904,7 +904,7 @@ RSpec.describe Captain::Assistant::AgentRunnerService do
       runner = instance_double(Agents::AgentRunner)
       run_complete_callback = nil
 
-      allow(Kairos CRMApp).to receive(:otel_enabled?).and_return(false)
+      allow(KairosCrmApp).to receive(:otel_enabled?).and_return(false)
       allow(runner).to receive(:on_tool_complete).and_return(runner)
       allow(runner).to receive(:on_run_complete) do |&block|
         run_complete_callback = block
@@ -922,7 +922,7 @@ RSpec.describe Captain::Assistant::AgentRunnerService do
       service = described_class.new(assistant: assistant, conversation: conversation)
       runner = instance_double(Agents::AgentRunner)
 
-      allow(Kairos CRMApp).to receive(:otel_enabled?).and_return(false)
+      allow(KairosCrmApp).to receive(:otel_enabled?).and_return(false)
       allow(runner).to receive(:on_tool_complete).and_return(runner)
       expect(runner).not_to receive(:on_run_complete)
 
@@ -937,7 +937,7 @@ RSpec.describe Captain::Assistant::AgentRunnerService do
       )
       runner = instance_double(Agents::AgentRunner)
 
-      allow(Kairos CRMApp).to receive(:otel_enabled?).and_return(true)
+      allow(KairosCrmApp).to receive(:otel_enabled?).and_return(true)
       allow(runner).to receive(:on_tool_complete).and_return(runner)
       expect(runner).not_to receive(:on_run_complete)
 
@@ -954,7 +954,7 @@ RSpec.describe Captain::Assistant::AgentRunnerService do
       root_span = instance_double(span_class)
       context_wrapper = Struct.new(:context).new({ __otel_tracing: { root_span: root_span } })
 
-      allow(Kairos CRMApp).to receive(:otel_enabled?).and_return(true)
+      allow(KairosCrmApp).to receive(:otel_enabled?).and_return(true)
       allow(runner).to receive(:on_tool_complete).and_return(runner)
       allow(runner).to receive(:on_run_complete) do |&block|
         run_complete_callback = block
@@ -978,7 +978,7 @@ RSpec.describe Captain::Assistant::AgentRunnerService do
       root_span = instance_double(span_class)
       context_wrapper = Struct.new(:context).new({ __otel_tracing: { root_span: root_span } })
 
-      allow(Kairos CRMApp).to receive(:otel_enabled?).and_return(true)
+      allow(KairosCrmApp).to receive(:otel_enabled?).and_return(true)
       allow(runner).to receive(:on_tool_complete).and_return(runner)
       allow(runner).to receive(:on_run_complete) do |&block|
         run_complete_callback = block

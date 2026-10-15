@@ -73,7 +73,7 @@ class Notification::PushTestService
   end
 
   def test_fcm_via_hub(subscription)
-    response = Kairos CRMHub.send_push_with_response(fcm_options(subscription))
+    response = KairosCrmHub.send_push_with_response(fcm_options(subscription))
     result(subscription, 'fcm_via_hub', :success, "HTTP #{response.code} — #{response.body}")
   rescue RestClient::ExceptionWithResponse => e
     result(subscription, 'fcm_via_hub', :failure, "HTTP #{e.response&.code} — #{e.response&.body}")

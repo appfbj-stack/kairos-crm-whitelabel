@@ -11,6 +11,6 @@ module MessageFormatHelper
   end
 
   def render_message_content(message_content)
-    Kairos CRMMarkdownRenderer.new(message_content).render_message
+    KairosCrmMarkdownRenderer.new(message_content).render_message
   end
 end

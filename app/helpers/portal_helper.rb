@@ -94,7 +94,7 @@ module PortalHelper
   end
 
   def render_category_content(content)
-    Kairos CRMMarkdownRenderer.new(content).render_markdown_to_plain_text
+    KairosCrmMarkdownRenderer.new(content).render_markdown_to_plain_text
   end
 
   # Renders a stored category icon: a bare ri icon name (e.g. `vip-crown-2-fill/line`) saved color, or a plain emoji character.

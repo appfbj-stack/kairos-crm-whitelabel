@@ -15,7 +15,7 @@ const getters = useStoreGetters();
 const { t } = useI18n();
 
 const globalConfig = getters['globalConfig/get'];
-const isAKairos CRMInstance = getters['globalConfig/isAKairos CRMInstance'];
+const isAKairosCrmInstance = getters['globalConfig/isAKairos CRMInstance'];
 
 const emailProviderList = computed(() => {
   return [
@@ -41,7 +41,7 @@ const emailProviderList = computed(() => {
       icon: 'i-kairos-mail',
     },
   ].filter(providerConfig => {
-    if (isAKairos CRMInstance.value) {
+    if (isAKairosCrmInstance.value) {
       return true;
     }
     return providerConfig.isEnabled;

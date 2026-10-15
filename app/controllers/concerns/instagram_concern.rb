@@ -62,7 +62,7 @@ module InstagramConcern
     begin
       JSON.parse(response.body)
     rescue JSON::ParserError => e
-      Kairos CRMExceptionTracker.new(e).capture_exception
+      KairosCrmExceptionTracker.new(e).capture_exception
       Rails.logger.error "Invalid JSON response: #{response.body}"
       raise e
     end

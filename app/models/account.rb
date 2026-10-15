@@ -158,8 +158,8 @@ class Account < ApplicationRecord
 
   def usage_limits
     {
-      agents: Kairos CRMApp.max_limit.to_i,
-      inboxes: Kairos CRMApp.max_limit.to_i
+      agents: KairosCrmApp.max_limit.to_i,
+      inboxes: KairosCrmApp.max_limit.to_i
     }
   end
 

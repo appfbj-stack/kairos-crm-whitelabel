@@ -82,7 +82,7 @@ class Notification::PushNotificationService
     when Errno::ECONNRESET, Net::OpenTimeout, Net::ReadTimeout, Socket::ResolutionError
       Rails.logger.error "WebPush operation error: #{error.message}"
     else
-      Kairos CRMExceptionTracker.new(error, account: notification.account).capture_exception
+      KairosCrmExceptionTracker.new(error, account: notification.account).capture_exception
       true
     end
   end
@@ -104,7 +104,7 @@ class Notification::PushNotificationService
     return unless kairos-crm_hub_enabled?
     return unless subscription.fcm?
 
-    Kairos CRMHub.send_push(fcm_options(subscription))
+    KairosCrmHub.send_push(fcm_options(subscription))
   end
 
   def firebase_credentials_present?

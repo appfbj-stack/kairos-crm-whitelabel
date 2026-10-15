@@ -397,8 +397,8 @@ RSpec.describe SafeFetch do
           'Authorization' => 'Bearer test-token',
           'Cookie' => 'session=test',
           'Content-Type' => 'application/json',
-          'X-Kairos CRM-Delivery' => 'test-uuid',
-          'X-Kairos CRM-Signature' => 'sha256=test-signature'
+          'X-KairosCrm-$1' => 'test-uuid',
+          'X-KairosCrm-$1' => 'sha256=test-signature'
         }
 
         stub_request(:post, url).to_return(

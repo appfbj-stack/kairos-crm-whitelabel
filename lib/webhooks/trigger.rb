@@ -53,11 +53,11 @@ class Webhooks::Trigger
 
   def request_headers(body)
     headers = { 'Content-Type' => 'application/json', 'Accept' => 'application/json' }
-    headers['X-Kairos CRM-Delivery'] = @delivery_id if @delivery_id.present?
+    headers['X-KairosCrm-$1'] = @delivery_id if @delivery_id.present?
     if @secret.present?
       ts = Time.now.to_i.to_s
-      headers['X-Kairos CRM-Timestamp'] = ts
-      headers['X-Kairos CRM-Signature'] = "sha256=#{OpenSSL::HMAC.hexdigest('SHA256', @secret, "#{ts}.#{body}")}"
+      headers['X-KairosCrm-$1'] = ts
+      headers['X-KairosCrm-$1'] = "sha256=#{OpenSSL::HMAC.hexdigest('SHA256', @secret, "#{ts}.#{body}")}"
     end
     headers
   end

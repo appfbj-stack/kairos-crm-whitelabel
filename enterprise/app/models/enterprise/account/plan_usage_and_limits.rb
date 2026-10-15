@@ -16,7 +16,7 @@ module Enterprise::Account::PlanUsageAndLimits # rubocop:disable Metrics/ModuleL
   end
 
   def increment_response_usage
-    return unless Kairos CRMApp.kairos-crm_cloud?
+    return unless KairosCrmApp.kairos-crm_cloud?
 
     increment_custom_attribute(CAPTAIN_RESPONSES_USAGE)
   end
@@ -30,7 +30,7 @@ module Enterprise::Account::PlanUsageAndLimits # rubocop:disable Metrics/ModuleL
   end
 
   def email_transcript_enabled?
-    default_plan = InstallationConfig.find_by(name: 'KAIROS CRM_CLOUD_PLANS')&.value&.first
+    default_plan = InstallationConfig.find_by(name: 'KAIROS_CRM_CLOUD_PLANS')&.value&.first
     return true if default_plan.blank?
 
     plan_name.present? && plan_name != default_plan['name']
@@ -41,7 +41,7 @@ module Enterprise::Account::PlanUsageAndLimits # rubocop:disable Metrics/ModuleL
   end
 
   def subscribed_features
-    plan_features = InstallationConfig.find_by(name: 'KAIROS CRM_CLOUD_PLAN_FEATURES')&.value
+    plan_features = InstallationConfig.find_by(name: 'KAIROS_CRM_CLOUD_PLAN_FEATURES')&.value
     return [] if plan_features.blank?
 
     plan_features[plan_name]
@@ -95,12 +95,12 @@ module Enterprise::Account::PlanUsageAndLimits # rubocop:disable Metrics/ModuleL
   end
 
   def free_plan?
-    default_plan = InstallationConfig.find_by(name: 'KAIROS CRM_CLOUD_PLANS')&.value&.first
+    default_plan = InstallationConfig.find_by(name: 'KAIROS_CRM_CLOUD_PLANS')&.value&.first
     default_plan.present? && plan_name&.downcase == default_plan['name']&.downcase
   end
 
   def default_captain_limits
-    max_limits = { documents: Kairos CRMApp.max_limit, responses: Kairos CRMApp.max_limit }.with_indifferent_access
+    max_limits = { documents: KairosCrmApp.max_limit, responses: KairosCrmApp.max_limit }.with_indifferent_access
     zero_limits = { documents: 0, responses: 0 }.with_indifferent_access
     plan_quota = InstallationConfig.find_by(name: 'CAPTAIN_CLOUD_PLAN_LIMITS')&.value
 
@@ -137,7 +137,7 @@ module Enterprise::Account::PlanUsageAndLimits # rubocop:disable Metrics/ModuleL
 
     return GlobalConfig.get(config_name)[config_name] if GlobalConfig.get(config_name)[config_name].present?
 
-    Kairos CRMApp.max_limit
+    KairosCrmApp.max_limit
   end
 
   # Atomic jsonb_set to avoid clobbering concurrent writes to other custom_attributes keys.

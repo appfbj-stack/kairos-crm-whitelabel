@@ -33,10 +33,10 @@ RSpec.describe Macros::ExecutionService, type: :service do
       end
 
       context 'when an action raises an error' do
-        let(:exception_tracker) { instance_spy(Kairos CRMExceptionTracker) }
+        let(:exception_tracker) { instance_spy(KairosCrmExceptionTracker) }
 
         before do
-          allow(Kairos CRMExceptionTracker).to receive(:new).and_return(exception_tracker)
+          allow(KairosCrmExceptionTracker).to receive(:new).and_return(exception_tracker)
         end
 
         it 'captures the exception' do

@@ -10,7 +10,7 @@ class Api::V1::WebhooksController < ApplicationController
     twitter_consumer.consume
     head :ok
   rescue StandardError => e
-    Kairos CRMExceptionTracker.new(e).capture_exception
+    KairosCrmExceptionTracker.new(e).capture_exception
     head :ok
   end
 

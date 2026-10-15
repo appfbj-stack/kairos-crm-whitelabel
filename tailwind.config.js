@@ -267,7 +267,7 @@ const tailwindConfig = {
     require('@tailwindcss/typography'),
     iconsPlugin({
       collections: {
-        kairos: { icons }, // Kairos CRM primary icon collection
+        kairos: { icons }, // KairosCrm primary icon collection
         kairos: { icons }, // legacy collection (back-compat)
         ...getIconCollections([
           'lucide',

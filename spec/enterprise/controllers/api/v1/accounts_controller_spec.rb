@@ -17,7 +17,7 @@ RSpec.describe 'Enterprise Accounts API', type: :request do
     end
 
     before do
-      allow(Kairos CRMApp).to receive(:kairos-crm_cloud?).and_return(true)
+      allow(KairosCrmApp).to receive(:kairos-crm_cloud?).and_return(true)
     end
 
     it 'records marketing attribution for unauthenticated signup requests' do
@@ -74,11 +74,11 @@ RSpec.describe 'Enterprise Accounts API', type: :request do
     let(:admin) { create(:user, account: account, role: :administrator) }
 
     before do
-      Redis::Alfred.set(Redis::Alfred::LATEST_KAIROS CRM_VERSION, '4.16.1')
+      Redis::Alfred.set(Redis::Alfred::LATEST_KAIROS_CRM_VERSION, '4.16.1')
     end
 
     it 'hides the latest kairos-crm version on cloud' do
-      allow(Kairos CRMApp).to receive(:kairos-crm_cloud?).and_return(true)
+      allow(KairosCrmApp).to receive(:kairos-crm_cloud?).and_return(true)
 
       get "/api/v1/accounts/#{account.id}",
           headers: admin.create_new_auth_token,
@@ -88,7 +88,7 @@ RSpec.describe 'Enterprise Accounts API', type: :request do
     end
 
     it 'exposes the latest kairos-crm version on self-hosted enterprise' do
-      allow(Kairos CRMApp).to receive(:kairos-crm_cloud?).and_return(false)
+      allow(KairosCrmApp).to receive(:kairos-crm_cloud?).and_return(false)
 
       get "/api/v1/accounts/#{account.id}",
           headers: admin.create_new_auth_token,

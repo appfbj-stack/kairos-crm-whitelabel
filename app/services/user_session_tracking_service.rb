@@ -55,18 +55,18 @@ class UserSessionTrackingService
   end
 
   def mobile_client_headers
-    name = @request.headers['X-Kairos CRM-Client-Name']
+    name = @request.headers['X-KairosCrm-$1']
     return nil if name.blank?
 
-    platform = @request.headers['X-Kairos CRM-Platform']
-    model = @request.headers['X-Kairos CRM-Device-Model']
+    platform = @request.headers['X-KairosCrm-$1']
+    model = @request.headers['X-KairosCrm-$1']
 
     {
       browser_name: name,
-      browser_version: @request.headers['X-Kairos CRM-Client-Version'],
+      browser_version: @request.headers['X-KairosCrm-$1'],
       device_name: device_name_for_icon(platform, model),
       platform_name: model,
-      platform_version: @request.headers['X-Kairos CRM-Platform-Version']
+      platform_version: @request.headers['X-KairosCrm-$1']
     }
   end
 
@@ -85,7 +85,7 @@ class UserSessionTrackingService
     return attrs unless hit
 
     attrs.merge(
-      browser_name: 'Kairos CRM Mobile',
+      browser_name: 'KairosCrm Mobile',
       browser_version: nil,
       platform_name: hit[:platform],
       platform_version: nil,

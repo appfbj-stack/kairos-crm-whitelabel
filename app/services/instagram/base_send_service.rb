@@ -23,7 +23,7 @@ class Instagram::BaseSendService < Base::SendOnChannelService
   end
 
   def handle_error(error)
-    Kairos CRMExceptionTracker.new(error, account: message.account, user: message.sender).capture_exception
+    KairosCrmExceptionTracker.new(error, account: message.account, user: message.sender).capture_exception
   end
 
   def message_params

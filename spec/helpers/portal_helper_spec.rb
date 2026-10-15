@@ -228,10 +228,10 @@ describe PortalHelper do
   describe '#render_category_content' do
     let(:markdown_content) { 'This is a *test* markdown content' }
     let(:plain_text_content) { 'This is a test markdown content' }
-    let(:renderer) { instance_double(Kairos CRMMarkdownRenderer) }
+    let(:renderer) { instance_double(KairosCrmMarkdownRenderer) }
 
     before do
-      allow(Kairos CRMMarkdownRenderer).to receive(:new).with(markdown_content).and_return(renderer)
+      allow(KairosCrmMarkdownRenderer).to receive(:new).with(markdown_content).and_return(renderer)
       allow(renderer).to receive(:render_markdown_to_plain_text).and_return(plain_text_content)
     end
 

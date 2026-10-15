@@ -60,7 +60,7 @@ export default {
       getAccount: 'accounts/getAccount',
       uiFlags: 'accounts/getUIFlags',
       isFeatureEnabledonAccount: 'accounts/isFeatureEnabledonAccount',
-      isOnKairos CRMCloud: 'globalConfig/isOnKairos CRMCloud',
+      isOnKairosCrmCloud: 'globalConfig/isOnKairosCrmCloud',
     }),
     showAudioTranscriptionConfig() {
       return this.isFeatureEnabledonAccount(
@@ -249,7 +249,7 @@ export default {
     </div>
     <AudioTranscription v-if="showAudioTranscriptionConfig" />
     <AccountId />
-    <div v-if="!uiFlags.isFetchingItem && isOnKairos CRMCloud">
+    <div v-if="!uiFlags.isFetchingItem && isOnKairosCrmCloud">
       <AccountDelete />
     </div>
     <BuildInfo />

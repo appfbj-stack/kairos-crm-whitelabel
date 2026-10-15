@@ -23,9 +23,9 @@ import {
 import { isWidgetColorLighter } from 'shared/helpers/colorHelper';
 import { dispatchWindowEvent } from 'shared/helpers/CustomEventHelper';
 import {
-  KAIROS CRM_ERROR,
-  KAIROS CRM_POSTBACK,
-  KAIROS CRM_READY,
+  KAIROS_CRM_ERROR,
+  KAIROS_CRM_POSTBACK,
+  KAIROS_CRM_READY,
 } from '../widget/constants/sdkEvents';
 import { SET_USER_ERROR } from '../widget/constants/errorTypes';
 import { getUserCookieName, setCookieWithDomain } from './cookieHelpers';
@@ -189,11 +189,11 @@ export const IFrameHelper = {
       });
 
       if (!window.$kairos-crm.resetTriggered) {
-        dispatchWindowEvent({ eventName: KAIROS CRM_READY });
+        dispatchWindowEvent({ eventName: KAIROS_CRM_READY });
       }
     },
     error: ({ errorType, data }) => {
-      dispatchWindowEvent({ eventName: KAIROS CRM_ERROR, data: data });
+      dispatchWindowEvent({ eventName: KAIROS_CRM_ERROR, data: data });
 
       if (errorType === SET_USER_ERROR) {
         Cookies.remove(getUserCookieName());
@@ -216,7 +216,7 @@ export const IFrameHelper = {
 
     postback(data) {
       dispatchWindowEvent({
-        eventName: KAIROS CRM_POSTBACK,
+        eventName: KAIROS_CRM_POSTBACK,
         data,
       });
     },

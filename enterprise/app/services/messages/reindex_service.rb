@@ -2,7 +2,7 @@ class Messages::ReindexService
   pattr_initialize [:account!]
 
   def perform
-    return unless Kairos CRMApp.advanced_search_allowed?
+    return unless KairosCrmApp.advanced_search_allowed?
 
     reindex_messages
   end

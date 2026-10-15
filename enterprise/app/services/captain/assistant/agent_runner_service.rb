@@ -34,7 +34,7 @@ class Captain::Assistant::AgentRunnerService
     process_agent_result(@last_run_result)
   rescue StandardError => e
     # In rake/local runs, conversation may not be present, so account is optional here.
-    Kairos CRMExceptionTracker.new(e, account: @conversation&.account).capture_exception
+    KairosCrmExceptionTracker.new(e, account: @conversation&.account).capture_exception
     Rails.logger.error "[Captain V2] AgentRunnerService error: #{e.message}"
     Rails.logger.error e.backtrace.join("\n")
 

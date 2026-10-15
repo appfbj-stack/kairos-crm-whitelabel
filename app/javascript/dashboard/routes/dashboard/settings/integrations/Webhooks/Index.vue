@@ -44,11 +44,11 @@ export default {
       uiFlags: 'webhooks/getUIFlags',
       accountId: 'getCurrentAccountId',
       isFeatureEnabledonAccount: 'accounts/isFeatureEnabledonAccount',
-      isOnKairos CRMCloud: 'globalConfig/isOnKairos CRMCloud',
+      isOnKairosCrmCloud: 'globalConfig/isOnKairosCrmCloud',
     }),
     apiAndWebhooksEnabled() {
       return (
-        !this.isOnKairos CRMCloud ||
+        !this.isOnKairosCrmCloud ||
         this.isFeatureEnabledonAccount(
           this.accountId,
           FEATURE_FLAGS.API_AND_WEBHOOKS

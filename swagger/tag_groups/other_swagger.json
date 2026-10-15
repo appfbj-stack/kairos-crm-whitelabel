@@ -1533,7 +1533,7 @@
           "secret": {
             "type": "string",
             "nullable": true,
-            "description": "Secret used to sign webhook requests. Signed webhook deliveries include `X-Kairos CRM-Timestamp` and `X-Kairos CRM-Signature`; the signature is `sha256=` followed by the HMAC-SHA256 of `{timestamp}.{raw_request_body}` using this secret. Deliveries also include `X-Kairos CRM-Delivery` when a delivery id is available."
+            "description": "Secret used to sign webhook requests. Signed webhook deliveries include `X-KairosCrm-$1` and `X-KairosCrm-$1`; the signature is `sha256=` followed by the HMAC-SHA256 of `{timestamp}.{raw_request_body}` using this secret. Deliveries also include `X-KairosCrm-$1` when a delivery id is available."
           },
           "account_id": {
             "type": "number",

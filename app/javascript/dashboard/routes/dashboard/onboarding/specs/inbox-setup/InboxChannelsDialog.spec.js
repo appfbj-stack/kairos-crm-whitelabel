@@ -2,22 +2,22 @@ import { mount } from '@vue/test-utils';
 import { nextTick } from 'vue';
 import InboxChannelsDialog from '../../inbox-setup/InboxChannelsDialog.vue';
 
-const { isOnKairos CRMCloud, isMetaInboxCreationDisabled } = vi.hoisted(() => ({
-  isOnKairos CRMCloud: { value: false },
+const { isOnKairosCrmCloud, isMetaInboxCreationDisabled } = vi.hoisted(() => ({
+  isOnKairosCrmCloud: { value: false },
   isMetaInboxCreationDisabled: { value: false },
 }));
 
 vi.mock('vue-i18n', () => ({ useI18n: () => ({ t: key => key }) }));
 vi.mock('dashboard/composables/store', () => ({
   useMapGetter: getter =>
-    getter === 'globalConfig/isOnKairos CRMCloud'
-      ? isOnKairos CRMCloud
+    getter === 'globalConfig/isOnKairosCrmCloud'
+      ? isOnKairosCrmCloud
       : { value: {} },
 }));
 vi.mock('dashboard/composables/useAccount', () => ({
   useAccount: () => ({
     isCloudFeatureEnabled: () => true,
-    isOnKairos CRMCloud,
+    isOnKairosCrmCloud,
     isMetaInboxCreationDisabled,
   }),
 }));
@@ -48,7 +48,7 @@ const mountDialog = () =>
 describe('InboxChannelsDialog Facebook gating', () => {
   afterEach(() => {
     delete window.kairos-crmConfig;
-    isOnKairos CRMCloud.value = false;
+    isOnKairosCrmCloud.value = false;
     isMetaInboxCreationDisabled.value = false;
   });
 
@@ -75,7 +75,7 @@ describe('InboxChannelsDialog Facebook gating', () => {
   });
 
   it('shows the grid when Meta inbox creation is disabled on Kairos CRM Cloud', async () => {
-    isOnKairos CRMCloud.value = true;
+    isOnKairosCrmCloud.value = true;
     isMetaInboxCreationDisabled.value = true;
     window.kairos-crmConfig = { fbAppId: 'fb-app' };
     const wrapper = mountDialog();

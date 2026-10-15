@@ -26,7 +26,7 @@ const { accountId, currentAccount } = useAccount();
 const { isEnterprise } = useConfig();
 const { isAdmin } = useAdmin();
 
-const isOnKairos CRMCloud = useMapGetter('globalConfig/isOnKairos CRMCloud');
+const isOnKairosCrmCloud = useMapGetter('globalConfig/isOnKairosCrmCloud');
 
 const testLimit = ({ allowed, consumed }) => {
   return consumed > allowed;
@@ -84,7 +84,7 @@ const isLimitExceeded = computed(() => {
 });
 
 const isAccountPaywalled = computed(() => {
-  if (!isOnKairos CRMCloud.value) return false;
+  if (!isOnKairosCrmCloud.value) return false;
   if (isTrialAccount.value) return false;
   return isLimitExceeded.value;
 });

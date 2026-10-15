@@ -1,4 +1,4 @@
-class FlipKairos CRMV4DefaultFeatureFlagInstallationConfig < ActiveRecord::Migration[7.0]
+class FlipKairosCrmV4DefaultFeatureFlagInstallationConfig < ActiveRecord::Migration[7.0]
   def up
     # Update the default feature flag config to enable kairos-crm_v4
     config = InstallationConfig.find_by(name: 'ACCOUNT_LEVEL_FEATURE_DEFAULTS')

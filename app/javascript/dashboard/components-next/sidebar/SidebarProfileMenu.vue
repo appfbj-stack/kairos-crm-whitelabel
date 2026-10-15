@@ -39,7 +39,7 @@ const showChatSupport = computed(() => {
   return (
     isFeatureEnabledonAccount.value(
       accountId.value,
-      FEATURE_FLAGS.CONTACT_KAIROS CRM_SUPPORT_TEAM
+      FEATURE_FLAGS.CONTACT_KAIROS_CRM_SUPPORT_TEAM
     ) && globalConfig.value.kairos-crmInboxToken
   );
 });

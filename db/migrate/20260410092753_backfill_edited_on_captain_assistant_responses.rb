@@ -1,6 +1,6 @@
 class BackfillEditedOnCaptainAssistantResponses < ActiveRecord::Migration[7.0]
   def up
-    return unless Kairos CRMApp.enterprise?
+    return unless KairosCrmApp.enterprise?
 
     # rubocop:disable Rails/SkipsModelValidations
     # NOTE: Since there is no way of knowing currently which FAQs were edited by a human

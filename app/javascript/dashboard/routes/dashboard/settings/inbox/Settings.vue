@@ -126,7 +126,7 @@ export default {
     ...mapGetters({
       accountId: 'getCurrentAccountId',
       isFeatureEnabledonAccount: 'accounts/isFeatureEnabledonAccount',
-      isOnKairos CRMCloud: 'globalConfig/isOnKairos CRMCloud',
+      isOnKairosCrmCloud: 'globalConfig/isOnKairosCrmCloud',
       isMetaMessageSendingDisabled: 'globalConfig/isMetaMessageSendingDisabled',
       uiFlags: 'inboxes/getUIFlags',
       portals: 'portals/allPortals',
@@ -139,10 +139,10 @@ export default {
     },
     showContinuityToggle() {
       if (this.isInboundEmailEnabled) return true;
-      return this.isOnKairos CRMCloud;
+      return this.isOnKairosCrmCloud;
     },
     isContinuityDisabled() {
-      return this.isOnKairos CRMCloud && !this.isInboundEmailEnabled;
+      return this.isOnKairosCrmCloud && !this.isInboundEmailEnabled;
     },
     continuityDescription() {
       if (this.isContinuityDisabled) {
@@ -395,7 +395,7 @@ export default {
       return (
         this.isAWhatsAppCloudChannel &&
         this.isEmbeddedSignupWhatsApp &&
-        (!this.isOnKairos CRMCloud ||
+        (!this.isOnKairosCrmCloud ||
           this.isFeatureEnabledonAccount(
             this.accountId,
             FEATURE_FLAGS.WHATSAPP_EMBEDDED_SIGNUP_FLOW

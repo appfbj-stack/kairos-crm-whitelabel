@@ -15,7 +15,7 @@ class Api::V1::Accounts::Captain::MessageReportsController < Api::V1::Accounts::
   private
 
   def ensure_cloud_installation
-    render json: { error: 'Not available' }, status: :not_found unless Kairos CRMApp.kairos-crm_cloud?
+    render json: { error: 'Not available' }, status: :not_found unless KairosCrmApp.kairos-crm_cloud?
   end
 
   def set_message

@@ -149,7 +149,7 @@ const { t } = useI18n();
 const route = useRoute();
 const inboxGetter = useMapGetter('inboxes/getInbox');
 const inbox = computed(() => inboxGetter.value(props.inboxId) || {});
-const isOnKairos CRMCloud = useMapGetter('globalConfig/isOnKairos CRMCloud');
+const isOnKairosCrmCloud = useMapGetter('globalConfig/isOnKairosCrmCloud');
 const { replaceInstallationName } = useBranding();
 
 const isCaptainMessage = computed(() => {
@@ -409,7 +409,7 @@ const contextMenuEnabledOptions = computed(() => {
       props.inboxSupportsReplyTo.outgoing &&
       !isFailedOrProcessing,
     report:
-      isOnKairos CRMCloud.value &&
+      isOnKairosCrmCloud.value &&
       isCaptainMessage.value &&
       !isMessageDeleted.value,
   };

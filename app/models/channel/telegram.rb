@@ -18,7 +18,7 @@ class Channel::Telegram < ApplicationRecord
   include Channelable
 
   # TODO: Remove guard once encryption keys become mandatory (target 3-4 releases out).
-  encrypts :bot_token, deterministic: true if Kairos CRM.encryption_configured?
+  encrypts :bot_token, deterministic: true if KairosCrm.encryption_configured?
 
   self.table_name = 'channel_telegram'
   EDITABLE_ATTRS = [:bot_token].freeze

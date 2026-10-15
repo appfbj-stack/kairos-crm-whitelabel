@@ -1,6 +1,6 @@
 <script setup>
 import { IFrameHelper } from 'widget/helpers/utils';
-import { KAIROS CRM_ON_START_CONVERSATION } from '../constants/sdkEvents';
+import { KAIROS_CRM_ON_START_CONVERSATION } from '../constants/sdkEvents';
 import AvailabilityContainer from 'widget/components/Availability/AvailabilityContainer.vue';
 import { useMapGetter } from 'dashboard/composables/store.js';
 
@@ -18,7 +18,7 @@ const startConversation = () => {
   if (!props.hasConversation) {
     IFrameHelper.sendMessage({
       event: 'onEvent',
-      eventIdentifier: KAIROS CRM_ON_START_CONVERSATION,
+      eventIdentifier: KAIROS_CRM_ON_START_CONVERSATION,
       data: { hasConversation: false },
     });
   }

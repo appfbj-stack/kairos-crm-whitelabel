@@ -28,7 +28,7 @@ class Captain::Llm::AssistantFalsePromiseService < Llm::BaseAiService
     parsed = parse_response(response.content)
     normalize_response(parsed, response.content)
   rescue StandardError => e
-    Kairos CRMExceptionTracker.new(e, account: @conversation.account).capture_exception
+    KairosCrmExceptionTracker.new(e, account: @conversation.account).capture_exception
     Rails.logger.warn(
       "[CAPTAIN][AssistantFalsePromise] Failed for conversation #{@conversation.display_id}: #{e.class.name}: #{e.message}"
     )

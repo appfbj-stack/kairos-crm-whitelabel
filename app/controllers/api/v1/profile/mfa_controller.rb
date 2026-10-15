@@ -34,7 +34,7 @@ class Api::V1::Profile::MfaController < Api::BaseController
   end
 
   def check_mfa_feature_available
-    return if Kairos CRM.mfa_enabled?
+    return if KairosCrm.mfa_enabled?
 
     render json: {
       error: I18n.t('errors.mfa.feature_unavailable')

@@ -1,7 +1,7 @@
 import {
   ANALYTICS_IDENTITY,
-  KAIROS CRM_RESET,
-  KAIROS CRM_SET_USER,
+  KAIROS_CRM_RESET,
+  KAIROS_CRM_SET_USER,
 } from '../constants/appEvents';
 import AnalyticsHelper from './AnalyticsHelper';
 import DashboardAudioNotificationHelper from './AudioAlerts/DashboardAudioNotificationHelper';
@@ -34,13 +34,13 @@ export const initializeAudioAlerts = user => {
   });
 };
 
-export const initializeKairos CRMEvents = () => {
-  emitter.on(KAIROS CRM_RESET, () => {
+export const initializeKairosCrmEvents = () => {
+  emitter.on(KAIROS_CRM_RESET, () => {
     if (window.$kairos-crm) {
       window.$kairos-crm.reset();
     }
   });
-  emitter.on(KAIROS CRM_SET_USER, ({ user }) => {
+  emitter.on(KAIROS_CRM_SET_USER, ({ user }) => {
     if (window.$kairos-crm) {
       window.$kairos-crm.setUser(user.email, {
         avatar_url: user.avatar_url,

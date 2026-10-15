@@ -27,7 +27,7 @@ class Captain::Llm::ContactAttributesService < Llm::BaseAiService
     end
     parse_response(response.content)
   rescue RubyLLM::Error => e
-    Kairos CRMExceptionTracker.new(e, account: @conversation.account).capture_exception
+    KairosCrmExceptionTracker.new(e, account: @conversation.account).capture_exception
     []
   end
 

@@ -1,4 +1,4 @@
-class Kairos CRMCaptcha
+class KairosCrmCaptcha
   def initialize(client_response)
     @client_response = client_response
     @server_key = GlobalConfigService.load('HCAPTCHA_SERVER_KEY', '')

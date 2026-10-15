@@ -19,7 +19,7 @@ const router = useRouter();
 const { t } = useI18n();
 const {
   isCloudFeatureEnabled,
-  isOnKairos CRMCloud,
+  isOnKairosCrmCloud,
   isMetaInboxCreationDisabled,
 } = useAccount();
 
@@ -50,7 +50,7 @@ const isWhatsappEmbeddedSignupDisabled = computed(
 
 const isWhatsappEmbeddedSignupFeatureEnabled = computed(
   () =>
-    !isOnKairos CRMCloud.value ||
+    !isOnKairosCrmCloud.value ||
     isCloudFeatureEnabled(FEATURE_FLAGS.WHATSAPP_EMBEDDED_SIGNUP_FLOW)
 );
 
@@ -65,7 +65,7 @@ const shouldShowWhatsappEmbeddedSignup = computed(() => {
 const shouldShowEmbeddedSignupAccessRequest = computed(() => {
   return (
     selectedProvider.value === PROVIDER_TYPES.WHATSAPP &&
-    isOnKairos CRMCloud.value &&
+    isOnKairosCrmCloud.value &&
     hasWhatsappAppId.value &&
     !isWhatsappEmbeddedSignupFeatureEnabled.value &&
     !isWhatsappEmbeddedSignupDisabled.value

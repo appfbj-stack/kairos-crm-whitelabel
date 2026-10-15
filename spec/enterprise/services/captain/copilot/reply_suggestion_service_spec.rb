@@ -39,7 +39,7 @@ RSpec.describe Captain::Copilot::ReplySuggestionService do
 
   before do
     incoming_message
-    allow(Kairos CRMApp).to receive(:kairos-crm_cloud?).and_return(true)
+    allow(KairosCrmApp).to receive(:kairos-crm_cloud?).and_return(true)
     allow(Captain::Assistant::AgentRunnerService).to receive(:new).with(
       hash_including(
         assistant: assistant,
@@ -268,7 +268,7 @@ RSpec.describe Captain::Copilot::ReplySuggestionService do
     let(:tracer) { instance_double(OpenTelemetry::Trace::Tracer) }
 
     before do
-      allow(Kairos CRMApp).to receive(:otel_enabled?).and_return(true)
+      allow(KairosCrmApp).to receive(:otel_enabled?).and_return(true)
       allow(OpentelemetryConfig).to receive(:tracer).and_return(tracer)
       allow(tracer).to receive(:in_span).and_yield(span)
     end

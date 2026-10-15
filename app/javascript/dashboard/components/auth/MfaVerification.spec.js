@@ -12,7 +12,7 @@ vi.mock('dashboard/store/utils/api', () => ({
 
 vi.mock('dashboard/composables/useAccount', async () => {
   const { ref } = await import('vue');
-  return { useAccount: () => ({ isOnKairos CRMCloud: ref(true) }) };
+  return { useAccount: () => ({ isOnKairosCrmCloud: ref(true) }) };
 });
 
 describe('MfaVerification', () => {
