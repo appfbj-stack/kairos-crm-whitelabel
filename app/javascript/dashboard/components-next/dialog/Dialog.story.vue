@@ -1,4 +1,4 @@
-<script setup>
+﻿<script setup>
 import { ref } from 'vue';
 import Dialog from './Dialog.vue';
 import Button from 'dashboard/components-next/button/Button.vue';
@@ -61,7 +61,7 @@ const onConfirm = dialog => {};
             type="text"
             placeholder="user-guide"
             label="Slug"
-            message="app.kairos-crm.com/hc/my-portal/en-US/categories/my-slug"
+            message="app.kairos_crm.com/hc/my-portal/en-US/categories/my-slug"
           />
         </div>
       </Dialog>

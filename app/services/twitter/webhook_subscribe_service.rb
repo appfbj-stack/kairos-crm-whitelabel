@@ -1,4 +1,4 @@
-class Twitter::WebhookSubscribeService
+﻿class Twitter::WebhookSubscribeService
   include Rails.application.routes.url_helpers
 
   pattr_initialize [:inbox_id]
@@ -31,7 +31,7 @@ class Twitter::WebhookSubscribeService
     return true if webhooks&.first&.try(:[], 'url') == twitter_url
 
     # twitter supports only one webhook url per environment
-    # so we will delete the existing one if its not kairos-crm
+    # so we will delete the existing one if its not kairos_crm
     unregister_webhook(webhooks.first) if webhooks&.first
     register_webhook
   end

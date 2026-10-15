@@ -1,10 +1,10 @@
-require 'rails_helper'
+﻿require 'rails_helper'
 
 describe KairosCrmHub do
   describe '.base_url' do
     it 'uses the static hub url' do
-      expect(described_class::DEFAULT_BASE_URL).to eq('https://hub.2.kairos-crm.com')
-      expect(described_class.base_url).to eq('https://hub.2.kairos-crm.com')
+      expect(described_class::DEFAULT_BASE_URL).to eq('https://hub.2.kairos_crm.com')
+      expect(described_class.base_url).to eq('https://hub.2.kairos_crm.com')
     end
   end
 
@@ -15,7 +15,7 @@ describe KairosCrmHub do
   end
 
   context 'when fetching sync_with_hub' do
-    it 'get latest version from kairos-crm hub' do
+    it 'get latest version from kairos_crm hub' do
       version = '1.1.1'
       allow(RestClient).to receive(:post).and_return({ version: version }.to_json)
       expect(described_class.sync_with_hub['version']).to eq version
@@ -33,7 +33,7 @@ describe KairosCrmHub do
       end
     end
 
-    it 'returns nil when kairos-crm hub is down' do
+    it 'returns nil when kairos_crm hub is down' do
       allow(RestClient).to receive(:post).and_raise(ExceptionList::REST_CLIENT_EXCEPTIONS.sample)
       expect(described_class.sync_with_hub).to be_nil
     end

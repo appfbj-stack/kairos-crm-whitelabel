@@ -1,4 +1,4 @@
-import { describe, it, beforeEach, afterEach, expect, vi } from 'vitest';
+﻿import { describe, it, beforeEach, afterEach, expect, vi } from 'vitest';
 import ActionCableConnector from '../actionCable';
 import { FEATURE_FLAGS } from 'dashboard/featureFlags';
 
@@ -14,8 +14,8 @@ vi.mock('dashboard/composables/useImpersonation', () => ({
   }),
 }));
 
-global.kairos-crmConfig = {
-  websocketURL: 'wss://test.kairos-crm.com',
+global.kairos_crmConfig = {
+  websocketURL: 'wss://test.kairos_crm.com',
 };
 
 const mockRetryJitter = value =>

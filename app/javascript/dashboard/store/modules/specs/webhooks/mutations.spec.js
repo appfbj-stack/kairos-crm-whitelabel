@@ -1,4 +1,4 @@
-import * as types from '../../../mutation-types';
+﻿import * as types from '../../../mutation-types';
 import { mutations } from '../../webhooks';
 import webhooks from './fixtures';
 
@@ -37,7 +37,7 @@ describe('#mutations', () => {
         records: [webhooks[0]],
       };
       mutations[types.default.UPDATE_WEBHOOK](state, webhooks[0]);
-      expect(state.records[0].url).toEqual('https://1.kairos-crm.com');
+      expect(state.records[0].url).toEqual('https://1.kairos_crm.com');
     });
   });
 });

@@ -1,4 +1,4 @@
-#######################################
+﻿#######################################
 # To create an external channel reply service
 # - Inherit this as the base class.
 # - Implement `channel_class` method in your child class.
@@ -34,7 +34,7 @@ class Base::SendOnChannelService
 
   def outgoing_message_originated_from_channel?
     # TODO: we need to refactor this logic as more integrations comes by
-    # kairos-crm messages won't have source id at the moment
+    # kairos_crm messages won't have source id at the moment
     # TODO: migrate source_ids to external_source_ids and check the source id relevant to specific channel
     message.source_id.present?
   end

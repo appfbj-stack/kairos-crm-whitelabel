@@ -1,4 +1,4 @@
-import { parseBoolean } from '@chatwoot/utils';
+﻿import { parseBoolean } from '@chatwoot/utils';
 import { resolveMaximumFileUploadSize } from 'shared/helpers/FileHelper';
 
 const {
@@ -7,7 +7,7 @@ const {
   APP_VERSION: appVersion,
   AZURE_APP_ID: azureAppId,
   BRAND_NAME: brandName,
-  KAIROS_CRM_INBOX_TOKEN: kairos-crmInboxToken,
+  KAIROS_CRM_INBOX_TOKEN: kairos_crmInboxToken,
   CREATE_NEW_ACCOUNT_FROM_DASHBOARD: createNewAccountFromDashboard,
   DIRECT_UPLOADS_ENABLED: directUploadsEnabled,
   DISPLAY_MANIFEST: displayManifest,
@@ -35,7 +35,7 @@ const state = {
   appVersion,
   azureAppId,
   brandName,
-  kairos-crmInboxToken,
+  kairos_crmInboxToken,
   deploymentEnv,
   createNewAccountFromDashboard,
   directUploadsEnabled: parseBoolean(directUploadsEnabled),

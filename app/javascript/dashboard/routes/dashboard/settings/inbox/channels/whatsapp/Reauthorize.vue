@@ -1,4 +1,4 @@
-<script setup>
+﻿<script setup>
 import { ref, computed, onMounted } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { useAlert } from 'dashboard/composables';
@@ -27,9 +27,9 @@ const { t } = useI18n();
 const isRequestingAuthorization = ref(false);
 const isLoadingFacebook = ref(true);
 
-const whatsappAppId = computed(() => window.kairos-crmConfig.whatsappAppId);
+const whatsappAppId = computed(() => window.kairos_crmConfig.whatsappAppId);
 const whatsappConfigurationId = computed(
-  () => window.kairos-crmConfig.whatsappConfigurationId
+  () => window.kairos_crmConfig.whatsappConfigurationId
 );
 
 const actionLabel = computed(() => {
@@ -184,7 +184,7 @@ onMounted(async () => {
     // Load Facebook SDK and initialize
     await setupFacebookSdk(
       whatsappAppId.value,
-      window.kairos-crmConfig?.whatsappApiVersion
+      window.kairos_crmConfig?.whatsappApiVersion
     );
   } catch (error) {
     useAlert(t('INBOX.REAUTHORIZE.FACEBOOK_LOAD_ERROR'));

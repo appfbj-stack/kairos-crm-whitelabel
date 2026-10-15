@@ -1,4 +1,4 @@
-import { frontendURL } from '../../../../helper/URLHelper';
+﻿import { frontendURL } from '../../../../helper/URLHelper';
 import { parseBoolean } from '@chatwoot/utils';
 
 import SettingsWrapper from '../SettingsWrapper.vue';
@@ -32,7 +32,7 @@ export default {
           },
           beforeEnter: (to, from, next) => {
             // Check if MFA is enabled globally
-            if (!parseBoolean(window.kairos-crmConfig?.isMfaEnabled)) {
+            if (!parseBoolean(window.kairos_crmConfig?.isMfaEnabled)) {
               // Redirect to profile settings if MFA is disabled
               next({ name: 'profile_settings_index' });
             } else {

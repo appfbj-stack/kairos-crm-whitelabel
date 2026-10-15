@@ -1,10 +1,10 @@
-import { useConfig } from '../useConfig';
+﻿import { useConfig } from '../useConfig';
 
 describe('useConfig', () => {
-  const originalKairosCrmConfig = window.kairos-crmConfig;
+  const originalKairosCrmConfig = window.kairos_crmConfig;
 
   beforeEach(() => {
-    window.kairos-crmConfig = {
+    window.kairos_crmConfig = {
       hostURL: 'https://example.com',
       vapidPublicKey: 'vapid-key',
       enabledLanguages: ['en', 'fr'],
@@ -14,7 +14,7 @@ describe('useConfig', () => {
   });
 
   afterEach(() => {
-    window.kairos-crmConfig = originalKairosCrmConfig;
+    window.kairos_crmConfig = originalKairosCrmConfig;
   });
 
   it('returns the correct configuration values', () => {
@@ -28,7 +28,7 @@ describe('useConfig', () => {
   });
 
   it('handles missing configuration values', () => {
-    window.kairos-crmConfig = {};
+    window.kairos_crmConfig = {};
     const config = useConfig();
 
     expect(config.hostURL).toBeUndefined();
@@ -38,8 +38,8 @@ describe('useConfig', () => {
     expect(config.enterprisePlanName).toBeUndefined();
   });
 
-  it('handles undefined window.kairos-crmConfig', () => {
-    window.kairos-crmConfig = undefined;
+  it('handles undefined window.kairos_crmConfig', () => {
+    window.kairos_crmConfig = undefined;
     const config = useConfig();
 
     expect(config.hostURL).toBeUndefined();

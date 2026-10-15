@@ -1,4 +1,4 @@
-<script setup>
+﻿<script setup>
 import { ref, computed, reactive } from 'vue';
 import { useVuelidate } from '@vuelidate/core';
 import { required, minLength, email } from '@vuelidate/validators';
@@ -54,21 +54,21 @@ const globalConfig = computed(() => store.getters['globalConfig/get']);
 
 const termsLink = computed(() =>
   t('REGISTER.TERMS_ACCEPT')
-    .replace('https://www.kairos-crm.com/terms', globalConfig.value.termsURL)
+    .replace('https://www.kairos_crm.com/terms', globalConfig.value.termsURL)
     .replace(
-      'https://www.kairos-crm.com/privacy-policy',
+      'https://www.kairos_crm.com/privacy-policy',
       globalConfig.value.privacyURL
     )
 );
 
 const allowedLoginMethods = computed(
-  () => window.kairos-crmConfig.allowedLoginMethods || ['email']
+  () => window.kairos_crmConfig.allowedLoginMethods || ['email']
 );
 
 const showGoogleOAuth = computed(
   () =>
     allowedLoginMethods.value.includes('google_oauth') &&
-    Boolean(window.kairos-crmConfig.googleOAuthClientId)
+    Boolean(window.kairos_crmConfig.googleOAuthClientId)
 );
 
 const isFormValid = computed(() => !v$.value.$invalid);

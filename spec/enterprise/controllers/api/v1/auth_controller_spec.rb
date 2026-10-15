@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+﻿# frozen_string_literal: true
 
 require 'rails_helper'
 
@@ -40,7 +40,7 @@ RSpec.describe 'Api::V1::Auth', type: :request do
       it 'redirects to mobile deep link with error when target is mobile' do
         post '/api/v1/auth/saml_login', params: { email: 'nonexistent@example.com', target: 'mobile' }
 
-        expect(response.location).to eq('kairos-crmapp://auth/saml?error=saml-authentication-failed')
+        expect(response.location).to eq('kairos_crmapp://auth/saml?error=saml-authentication-failed')
       end
     end
 
@@ -58,7 +58,7 @@ RSpec.describe 'Api::V1::Auth', type: :request do
       it 'redirects to mobile deep link with error when target is mobile' do
         post '/api/v1/auth/saml_login', params: { email: user.email, target: 'mobile' }
 
-        expect(response.location).to eq('kairos-crmapp://auth/saml?error=saml-authentication-failed')
+        expect(response.location).to eq('kairos_crmapp://auth/saml?error=saml-authentication-failed')
       end
     end
 
@@ -81,7 +81,7 @@ RSpec.describe 'Api::V1::Auth', type: :request do
       it 'redirects to mobile deep link with error when target is mobile' do
         post '/api/v1/auth/saml_login', params: { email: user.email, target: 'mobile' }
 
-        expect(response.location).to eq('kairos-crmapp://auth/saml?error=saml-authentication-failed')
+        expect(response.location).to eq('kairos_crmapp://auth/saml?error=saml-authentication-failed')
       end
     end
 

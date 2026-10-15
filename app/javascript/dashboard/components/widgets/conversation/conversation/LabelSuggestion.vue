@@ -1,4 +1,4 @@
-<script>
+﻿<script>
 // components
 import NextButton from 'dashboard/components-next/button/Button.vue';
 import Avatar from 'dashboard/components-next/avatar/Avatar.vue';
@@ -237,7 +237,7 @@ export default {
             hideOnClick: true,
           }"
           :size="16"
-          name="kairos-crm-ai"
+          name="kairos_crm-ai"
           icon-name="i-lucide-sparkles"
         />
       </div>

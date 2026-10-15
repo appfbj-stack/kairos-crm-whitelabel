@@ -1,4 +1,4 @@
-import { ref } from 'vue';
+﻿import { ref } from 'vue';
 import {
   setupFacebookSdk,
   initWhatsAppEmbeddedSignup,
@@ -8,7 +8,7 @@ import {
 
 // Drives Meta's WhatsApp embedded-signup popup (Facebook JS SDK). FB.login()
 // resolves an auth `code` while the WABA identifiers (waba_id, phone_number_id)
-// arrive separately over a postMessage event — order isn't guaranteed, so we
+// arrive separately over a postMessage event â€” order isn't guaranteed, so we
 // hold both and resolve once both are present.
 //
 // `runEmbeddedSignup` returns the signup credentials; the caller exchanges them
@@ -72,16 +72,16 @@ export function useWhatsappEmbeddedSignup() {
       (async () => {
         try {
           await setupFacebookSdk(
-            window.kairos-crmConfig?.whatsappAppId,
-            window.kairos-crmConfig?.whatsappApiVersion
+            window.kairos_crmConfig?.whatsappAppId,
+            window.kairos_crmConfig?.whatsappApiVersion
           );
           authCode = await initWhatsAppEmbeddedSignup(
-            window.kairos-crmConfig?.whatsappConfigurationId
+            window.kairos_crmConfig?.whatsappConfigurationId
           );
           resolveIfReady();
         } catch (error) {
           // FB.login() rejects with 'Login cancelled' when the user dismisses
-          // the popup — treat it as a cancel rather than an error.
+          // the popup â€” treat it as a cancel rather than an error.
           if (error.message === 'Login cancelled') {
             settle(resolve, null);
           } else {

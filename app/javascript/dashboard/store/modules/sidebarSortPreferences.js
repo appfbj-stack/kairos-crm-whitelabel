@@ -1,11 +1,11 @@
-import { LocalStorage } from 'shared/helpers/localStorage';
+﻿import { LocalStorage } from 'shared/helpers/localStorage';
 import {
   DEFAULT_SIDEBAR_SORT_PREFERENCES,
   isValidSidebarSort,
   normalizeSidebarSortPreferences,
 } from 'dashboard/helper/sidebarSort';
 
-const STORAGE_NAME = 'kairos-crm_sidebar_sort_preferences';
+const STORAGE_NAME = 'kairos_crm_sidebar_sort_preferences';
 export const SET_SIDEBAR_SORT_PREFERENCES = 'SET_SIDEBAR_SORT_PREFERENCES';
 
 const getPreferenceScope = rootGetters => {

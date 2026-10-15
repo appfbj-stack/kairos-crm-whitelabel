@@ -1,4 +1,4 @@
-<script setup>
+﻿<script setup>
 import { computed } from 'vue';
 import ChannelSelector from '../ChannelSelector.vue';
 
@@ -16,15 +16,15 @@ const props = defineProps({
 const emit = defineEmits(['channelItemClick']);
 
 const hasFbConfigured = computed(() => {
-  return window.kairos-crmConfig?.fbAppId;
+  return window.kairos_crmConfig?.fbAppId;
 });
 
 const hasInstagramConfigured = computed(() => {
-  return window.kairos-crmConfig?.instagramAppId;
+  return window.kairos_crmConfig?.instagramAppId;
 });
 
 const hasTiktokConfigured = computed(() => {
-  return window.kairos-crmConfig?.tiktokAppId;
+  return window.kairos_crmConfig?.tiktokAppId;
 });
 
 const isActive = computed(() => {

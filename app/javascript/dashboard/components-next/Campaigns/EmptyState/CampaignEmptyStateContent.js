@@ -1,4 +1,4 @@
-export const ONGOING_CAMPAIGN_EMPTY_STATE_CONTENT = [
+﻿export const ONGOING_CAMPAIGN_EMPTY_STATE_CONTENT = [
   {
     id: 1,
     title: 'Chatbot Assistance',
@@ -12,12 +12,12 @@ export const ONGOING_CAMPAIGN_EMPTY_STATE_CONTENT = [
       id: 1,
       name: 'Alexa Rivera',
     },
-    message: 'Hello! 👋 Need help with our chatbot features? Feel free to ask!',
+    message: 'Hello! ðŸ‘‹ Need help with our chatbot features? Feel free to ask!',
     campaign_status: 'active',
     enabled: true,
     campaign_type: 'ongoing',
     trigger_rules: {
-      url: 'https://www.kairos-crm.com/features/chatbot/',
+      url: 'https://www.kairos_crm.com/features/chatbot/',
       time_on_page: 10,
     },
     trigger_only_during_business_hours: true,
@@ -37,12 +37,12 @@ export const ONGOING_CAMPAIGN_EMPTY_STATE_CONTENT = [
       id: 1,
       name: 'Jamie Lee',
     },
-    message: 'Hello! 👋 Any questions on pricing? I’m here to help!',
+    message: 'Hello! ðŸ‘‹ Any questions on pricing? Iâ€™m here to help!',
     campaign_status: 'active',
     enabled: false,
     campaign_type: 'ongoing',
     trigger_rules: {
-      url: 'https://www.kairos-crm.com/pricings',
+      url: 'https://www.kairos_crm.com/pricings',
       time_on_page: 10,
     },
     trigger_only_during_business_hours: false,
@@ -67,7 +67,7 @@ export const ONGOING_CAMPAIGN_EMPTY_STATE_CONTENT = [
     enabled: false,
     campaign_type: 'ongoing',
     trigger_rules: {
-      url: 'https://{*.}?kairos-crm.com/apps/account/*/settings/inboxes/new/',
+      url: 'https://{*.}?kairos_crm.com/apps/account/*/settings/inboxes/new/',
       time_on_page: 10,
     },
     trigger_only_during_business_hours: false,
@@ -88,7 +88,7 @@ export const ONGOING_CAMPAIGN_EMPTY_STATE_CONTENT = [
       name: 'Chris Barlow',
     },
     message:
-      'Hi there! 👋 I’m here for any questions you may have. Let’s chat!',
+      'Hi there! ðŸ‘‹ Iâ€™m here for any questions you may have. Letâ€™s chat!',
     campaign_status: 'active',
     enabled: true,
     campaign_type: 'ongoing',
@@ -139,7 +139,7 @@ export const ONE_OFF_CAMPAIGN_EMPTY_STATE_CONTENT = [
       phone_number: '+29818373149903',
       provider: 'default',
     },
-    message: 'Welcome aboard! 🎉 Let us know if you have any questions.',
+    message: 'Welcome aboard! ðŸŽ‰ Let us know if you have any questions.',
     campaign_status: 'completed',
     enabled: true,
     campaign_type: 'one_off',
@@ -166,7 +166,7 @@ export const ONE_OFF_CAMPAIGN_EMPTY_STATE_CONTENT = [
       phone_number: '+29818373149903',
       provider: 'default',
     },
-    message: 'Hello! We’re excited to have your business with us!',
+    message: 'Hello! Weâ€™re excited to have your business with us!',
     campaign_status: 'active',
     enabled: true,
     campaign_type: 'one_off',

@@ -1,4 +1,4 @@
-<script setup>
+﻿<script setup>
 import { computed, onUnmounted, onMounted, ref } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { useRouter } from 'vue-router';
@@ -55,7 +55,7 @@ const bannerMessage = computed(() => {
 });
 
 const fetchMfaStatus = async () => {
-  if (!parseBoolean(window.kairos-crmConfig?.isMfaEnabled)) return;
+  if (!parseBoolean(window.kairos_crmConfig?.isMfaEnabled)) return;
 
   try {
     const { data } = await mfaAPI.get();

@@ -1,4 +1,4 @@
-Rails.application.configure do
+﻿Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
@@ -48,7 +48,7 @@ Rails.application.configure do
 
   # Use a real queuing backend for Active Job (and separate queues per environment)
   # config.active_job.queue_adapter     = :resque
-  # config.active_job.queue_name_prefix = "kairos-crm_#{Rails.env}"
+  # config.active_job.queue_name_prefix = "kairos_crm_#{Rails.env}"
 
   Rails.application.routes.default_url_options = { host: ENV['FRONTEND_URL'] }
 

@@ -1,4 +1,4 @@
-## Class to generate sample inboxes for a kairos-crm test @Account.
+﻿## Class to generate sample inboxes for a kairos_crm test @Account.
 ############################################################
 ### Usage #####
 #

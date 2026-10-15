@@ -1,17 +1,17 @@
-<script setup>
+﻿<script setup>
 import { ref } from 'vue';
 import GroupedStackedChangelogCard from './GroupedStackedChangelogCard.vue';
 
 const sampleCards = [
   {
-    id: 'kairos-crm-captain',
+    id: 'kairos_crm-captain',
     title: 'Kairos CRM Captain',
     meta_title: 'Kairos CRM Captain',
     meta_description:
       'Watch how our latest feature can transform your workflow with powerful automation tools.',
-    slug: 'kairos-crm-captain',
+    slug: 'kairos_crm-captain',
     feature_image:
-      'https://www.kairos-crm.com/images/captain/captain_thumbnail.jpg',
+      'https://www.kairos_crm.com/images/captain/captain_thumbnail.jpg',
   },
   {
     id: 'smart-routing',
@@ -20,7 +20,7 @@ const sampleCards = [
     meta_description:
       'Screen bookers with intelligent forms and route them to the right team member.',
     slug: 'smart-routing',
-    feature_image: 'https://www.kairos-crm.com/images/dashboard-dark.webp',
+    feature_image: 'https://www.kairos_crm.com/images/dashboard-dark.webp',
   },
   {
     id: 'instant-meetings',

@@ -1,4 +1,4 @@
-import { actions } from '../../agent';
+﻿import { actions } from '../../agent';
 import { agents } from './data';
 import { getFromCache, setCache } from 'shared/helpers/cache';
 import { getAvailableAgents } from 'widget/api/agent';
@@ -23,7 +23,7 @@ describe('#actions', () => {
       await actions.fetchAvailableAgents({ commit }, websiteToken);
 
       expect(getFromCache).toHaveBeenCalledWith(
-        `kairos-crm_available_agents_${websiteToken}`
+        `kairos_crm_available_agents_${websiteToken}`
       );
       expect(getAvailableAgents).not.toHaveBeenCalled();
       expect(setCache).not.toHaveBeenCalled();
@@ -39,11 +39,11 @@ describe('#actions', () => {
       await actions.fetchAvailableAgents({ commit }, websiteToken);
 
       expect(getFromCache).toHaveBeenCalledWith(
-        `kairos-crm_available_agents_${websiteToken}`
+        `kairos_crm_available_agents_${websiteToken}`
       );
       expect(getAvailableAgents).toHaveBeenCalledWith(websiteToken);
       expect(setCache).toHaveBeenCalledWith(
-        `kairos-crm_available_agents_${websiteToken}`,
+        `kairos_crm_available_agents_${websiteToken}`,
         agents
       );
       expect(commit).toHaveBeenCalledWith('setAgents', agents);

@@ -1,4 +1,4 @@
-class CreateDataImportMappings < ActiveRecord::Migration[7.1]
+﻿class CreateDataImportMappings < ActiveRecord::Migration[7.1]
   def change
     create_table :data_import_mappings do |t|
       t.integer :account_id, null: false
@@ -6,8 +6,8 @@ class CreateDataImportMappings < ActiveRecord::Migration[7.1]
       t.string :source_provider, null: false
       t.string :source_object_type, null: false
       t.string :source_object_id, null: false
-      t.string :kairos-crm_record_type, null: false
-      t.bigint :kairos-crm_record_id, null: false
+      t.string :kairos_crm_record_type, null: false
+      t.bigint :kairos_crm_record_id, null: false
       t.jsonb :metadata, default: {}, null: false
 
       t.timestamps
@@ -17,6 +17,6 @@ class CreateDataImportMappings < ActiveRecord::Migration[7.1]
               [:account_id, :source_provider, :source_object_type, :source_object_id],
               unique: true,
               name: 'idx_data_import_mappings_on_account_and_source'
-    add_index :data_import_mappings, [:kairos-crm_record_type, :kairos-crm_record_id], name: 'idx_data_import_mappings_on_record'
+    add_index :data_import_mappings, [:kairos_crm_record_type, :kairos_crm_record_id], name: 'idx_data_import_mappings_on_record'
   end
 end

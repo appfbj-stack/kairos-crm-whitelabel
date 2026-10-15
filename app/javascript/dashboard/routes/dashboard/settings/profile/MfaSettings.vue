@@ -1,4 +1,4 @@
-<script setup>
+﻿<script setup>
 import { ref, onMounted } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { useRouter, useRoute } from 'vue-router';
@@ -32,7 +32,7 @@ const managementActionsRef = ref(null);
 // Load MFA status on mount
 onMounted(async () => {
   // Check if MFA is enabled globally
-  if (!parseBoolean(window.kairos-crmConfig?.isMfaEnabled)) {
+  if (!parseBoolean(window.kairos_crmConfig?.isMfaEnabled)) {
     // Redirect to profile settings if MFA is disabled
     router.push({
       name: 'profile_settings_index',

@@ -1,4 +1,4 @@
-import { ref } from 'vue';
+﻿import { ref } from 'vue';
 import { useMapGetter } from 'dashboard/composables/store';
 import ChannelApi from 'dashboard/api/channels';
 import { buildFacebookLoginScopes } from 'dashboard/helper/facebookScopes';
@@ -20,13 +20,13 @@ export function useFacebookPageConnect() {
 
   let sdkSetupPromise = null;
 
-  // Idempotent — call this when the picker UI opens. A failed load clears the
+  // Idempotent â€” call this when the picker UI opens. A failed load clears the
   // cache so a later attempt can retry instead of being stuck on a rejection.
   const preloadSdk = () => {
     if (!sdkSetupPromise) {
       sdkSetupPromise = setupFacebookSdk(
-        window.kairos-crmConfig?.fbAppId,
-        window.kairos-crmConfig?.fbApiVersion
+        window.kairos_crmConfig?.fbAppId,
+        window.kairos_crmConfig?.fbApiVersion
       ).catch(error => {
         sdkSetupPromise = null;
         throw error;

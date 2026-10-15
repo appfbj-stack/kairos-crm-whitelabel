@@ -1,7 +1,7 @@
-import { getMostReadArticles } from 'widget/api/article';
+﻿import { getMostReadArticles } from 'widget/api/article';
 import { getFromCache, setCache } from 'shared/helpers/cache';
 
-const CACHE_KEY_PREFIX = 'kairos-crm_most_read_articles_';
+const CACHE_KEY_PREFIX = 'kairos_crm_most_read_articles_';
 
 const state = {
   records: [],

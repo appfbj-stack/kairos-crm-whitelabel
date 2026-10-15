@@ -1,4 +1,4 @@
-class SafeFetch::Fetcher
+﻿class SafeFetch::Fetcher
   def initialize(options)
     @options = options
   end
@@ -22,7 +22,7 @@ class SafeFetch::Fetcher
   attr_reader :options
 
   def with_tempfile
-    tempfile = Tempfile.new('kairos-crm-safe-fetch', binmode: true)
+    tempfile = Tempfile.new('kairos_crm-safe-fetch', binmode: true)
     yield tempfile
   ensure
     tempfile&.close!

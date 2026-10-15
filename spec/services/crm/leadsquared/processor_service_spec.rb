@@ -1,4 +1,4 @@
-require 'rails_helper'
+﻿require 'rails_helper'
 
 RSpec.describe Crm::Leadsquared::ProcessorService do
   let(:account) { create(:account) }
@@ -15,7 +15,7 @@ RSpec.describe Crm::Leadsquared::ProcessorService do
   end
   let(:contact) { create(:contact, account: account, email: 'test@example.com', phone_number: '+1234567890') }
   let(:contact_with_social_profile) do
-    create(:contact, account: account, additional_attributes: { 'social_profiles' => { 'facebook' => 'kairos-crmapp' } })
+    create(:contact, account: account, additional_attributes: { 'social_profiles' => { 'facebook' => 'kairos_crmapp' } })
   end
   let(:blank_contact) { create(:contact, account: account, email: '', phone_number: '') }
   let(:conversation) { create(:conversation, account: account, contact: contact) }

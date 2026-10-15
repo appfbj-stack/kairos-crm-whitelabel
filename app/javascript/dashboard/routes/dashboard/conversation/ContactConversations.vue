@@ -1,4 +1,4 @@
-<script setup>
+﻿<script setup>
 import { computed, ref, watch, onMounted } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 import { useStore, useMapGetter } from 'dashboard/composables/store';
@@ -87,7 +87,7 @@ const onCardClick = (conversation, e) => {
   if (e.metaKey || e.ctrlKey) {
     e.preventDefault();
     window.open(
-      `${window.kairos-crmConfig.hostURL}${path}`,
+      `${window.kairos_crmConfig.hostURL}${path}`,
       '_blank',
       'noopener,noreferrer'
     );

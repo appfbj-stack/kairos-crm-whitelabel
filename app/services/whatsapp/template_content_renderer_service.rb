@@ -1,4 +1,4 @@
-class Whatsapp::TemplateContentRendererService
+﻿class Whatsapp::TemplateContentRendererService
   def initialize(content:, body_params:, value_renderer:, message_drops:)
     @content = content
     @body_params = body_params
@@ -19,7 +19,7 @@ class Whatsapp::TemplateContentRendererService
 
   def prepare_content
     replacements = {}
-    replacement_prefix = "__kairos-crm_whatsapp_template_param_#{SecureRandom.hex(8)}_"
+    replacement_prefix = "__kairos_crm_whatsapp_template_param_#{SecureRandom.hex(8)}_"
     content_to_render = @content.gsub(/{{\s*([^}]+?)\s*}}/) do |placeholder|
       replace_placeholder(placeholder, Regexp.last_match(1), replacement_prefix, replacements)
     end

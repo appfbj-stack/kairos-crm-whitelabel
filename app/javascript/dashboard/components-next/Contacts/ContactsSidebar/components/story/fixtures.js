@@ -1,4 +1,4 @@
-export default [
+﻿export default [
   {
     id: 12,
     content:
@@ -16,7 +16,7 @@ export default [
       name: 'Bruce',
       role: 'administrator',
       thumbnail:
-        'https://sivin-tunnel.kairos-crm.dev/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBJZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--515dbb35e9ba3c36d14f4c4b77220a675513c1fb/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RTNKbGMybDZaVjkwYjE5bWFXeHNXd2RwQWZvdyIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--df796c2af3c0153e55236c2f3cf3a199ac2cb6f7/2.jpg',
+        'https://sivin-tunnel.kairos_crm.dev/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBJZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--515dbb35e9ba3c36d14f4c4b77220a675513c1fb/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RTNKbGMybDZaVjkwYjE5bWFXeHNXd2RwQWZvdyIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--df796c2af3c0153e55236c2f3cf3a199ac2cb6f7/2.jpg',
       custom_role_id: null,
     },
     createdAt: 1730786556,
@@ -25,7 +25,7 @@ export default [
   {
     id: 10,
     content:
-      'We discussed a couple of things:\n\n* Product offering and how it can be useful to talk with people.\n\n* They’ll reach out to us after an internal review.',
+      'We discussed a couple of things:\n\n* Product offering and how it can be useful to talk with people.\n\n* Theyâ€™ll reach out to us after an internal review.',
     accountId: null,
     contactId: null,
     user: {
@@ -47,7 +47,7 @@ export default [
   {
     id: 9,
     content:
-      'We discussed a couple of things:\n\n* Product offering and how it can be useful to talk with people.\n\n* They’ll reach out to us after an internal review.',
+      'We discussed a couple of things:\n\n* Product offering and how it can be useful to talk with people.\n\n* Theyâ€™ll reach out to us after an internal review.',
     accountId: null,
     contactId: null,
     user: {

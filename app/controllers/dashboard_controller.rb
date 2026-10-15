@@ -91,7 +91,7 @@ class DashboardController < ActionController::Base
   end
 
   def active_platform_banners
-    return [] unless KairosCrmApp.kairos-crm_cloud?
+    return [] unless KairosCrmApp.kairos_crm_cloud?
 
     PlatformBanner.active.order(created_at: :desc).as_json(only: %i[id banner_message banner_type updated_at])
   end

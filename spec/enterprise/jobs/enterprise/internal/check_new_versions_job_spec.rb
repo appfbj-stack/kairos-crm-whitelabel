@@ -1,4 +1,4 @@
-require 'rails_helper'
+﻿require 'rails_helper'
 
 RSpec.describe Internal::CheckNewVersionsJob do
   subject(:job) { described_class.perform_now }
@@ -12,8 +12,8 @@ RSpec.describe Internal::CheckNewVersionsJob do
   end
 
   it 'updates the plan info' do
-    data = { 'version' => '1.2.3', 'plan' => 'enterprise', 'plan_quantity' => 1, 'kairos-crm_support_website_token' => '123',
-             'kairos-crm_support_identifier_hash' => '123', 'kairos-crm_support_script_url' => '123' }
+    data = { 'version' => '1.2.3', 'plan' => 'enterprise', 'plan_quantity' => 1, 'kairos_crm_support_website_token' => '123',
+             'kairos_crm_support_identifier_hash' => '123', 'kairos_crm_support_script_url' => '123' }
     allow(KairosCrmHub).to receive(:sync_with_hub).and_return(data)
     job
     expect(InstallationConfig.find_by(name: 'INSTALLATION_PRICING_PLAN').value).to eq 'enterprise'

@@ -1,4 +1,4 @@
-export default {
+﻿export default {
   computed: {
     useInboxAvatarForBot() {
       return this.channelConfig.enabledFeatures.includes(
@@ -6,13 +6,13 @@ export default {
       );
     },
     hasAConnectedAgentBot() {
-      return !!window.kairos-crmWebChannel.hasAConnectedAgentBot;
+      return !!window.kairos_crmWebChannel.hasAConnectedAgentBot;
     },
     inboxAvatarUrl() {
-      return window.kairos-crmWebChannel.avatarUrl;
+      return window.kairos_crmWebChannel.avatarUrl;
     },
     channelConfig() {
-      return window.kairos-crmWebChannel;
+      return window.kairos_crmWebChannel;
     },
     hasEmojiPickerEnabled() {
       return this.channelConfig.enabledFeatures.includes('emoji_picker');
@@ -24,11 +24,11 @@ export default {
       return this.channelConfig.enabledFeatures.includes('end_conversation');
     },
     preChatFormEnabled() {
-      return window.kairos-crmWebChannel.preChatFormEnabled;
+      return window.kairos_crmWebChannel.preChatFormEnabled;
     },
     preChatFormOptions() {
       let preChatMessage = '';
-      const options = window.kairos-crmWebChannel.preChatFormOptions || {};
+      const options = window.kairos_crmWebChannel.preChatFormOptions || {};
       preChatMessage = options.pre_chat_message;
       const { pre_chat_fields: preChatFields = [] } = options;
       return {

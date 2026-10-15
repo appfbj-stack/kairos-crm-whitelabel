@@ -1,4 +1,4 @@
-require 'rails_helper'
+﻿require 'rails_helper'
 
 RSpec.describe DataImports::Intercom::MessageBatchBuilder do
   let(:account) { create(:account) }
@@ -89,8 +89,8 @@ RSpec.describe DataImports::Intercom::MessageBatchBuilder do
       source_provider: 'intercom',
       source_object_type: 'message',
       source_object_id: target_entry.source_id,
-      kairos-crm_record_type: 'Message',
-      kairos-crm_record_id: message.id,
+      kairos_crm_record_type: 'Message',
+      kairos_crm_record_id: message.id,
       metadata: {}
     )
 
@@ -114,8 +114,8 @@ RSpec.describe DataImports::Intercom::MessageBatchBuilder do
       source_provider: 'intercom',
       source_object_type: 'message',
       source_object_id: 'conversation:conversation_1:part:part_1',
-      kairos-crm_record_type: 'Message',
-      kairos-crm_record_id: message.id,
+      kairos_crm_record_type: 'Message',
+      kairos_crm_record_id: message.id,
       metadata: {}
     )
 
@@ -139,8 +139,8 @@ RSpec.describe DataImports::Intercom::MessageBatchBuilder do
       source_provider: 'intercom',
       source_object_type: 'message',
       source_object_id: 'conversation:conversation_1:part:part_1',
-      kairos-crm_record_type: 'Message',
-      kairos-crm_record_id: message.id,
+      kairos_crm_record_type: 'Message',
+      kairos_crm_record_id: message.id,
       metadata: {}
     )
 
@@ -157,8 +157,8 @@ RSpec.describe DataImports::Intercom::MessageBatchBuilder do
       source_provider: 'intercom',
       source_object_type: 'message',
       source_object_id: 'conversation:conversation_1:part:part_1',
-      kairos-crm_record_type: 'Message',
-      kairos-crm_record_id: 0,
+      kairos_crm_record_type: 'Message',
+      kairos_crm_record_id: 0,
       metadata: {}
     )
 
@@ -193,8 +193,8 @@ RSpec.describe DataImports::Intercom::MessageBatchBuilder do
       source_provider: 'intercom',
       source_object_type: 'message',
       source_object_id: 'conversation:conversation_1:part:part_1',
-      kairos-crm_record_type: 'Conversation',
-      kairos-crm_record_id: conversation.id,
+      kairos_crm_record_type: 'Conversation',
+      kairos_crm_record_id: conversation.id,
       metadata: { skipped: true }
     )
 

@@ -1,4 +1,4 @@
-<script>
+﻿<script>
 import { mapGetters } from 'vuex';
 import { useAlert } from 'dashboard/composables';
 import { useWhatsappEmbeddedSignup } from 'dashboard/composables/useWhatsappEmbeddedSignup';
@@ -310,7 +310,7 @@ export default {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://www.kairos-crm.com/docs/product/channels/live-chat/sdk/identity-validation/"
+              href="https://www.kairos_crm.com/docs/product/channels/live-chat/sdk/identity-validation/"
               class="text-n-blue-11 hover:underline text-label-small"
             >
               {{

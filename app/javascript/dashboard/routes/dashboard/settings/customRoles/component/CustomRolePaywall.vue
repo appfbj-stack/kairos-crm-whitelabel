@@ -1,4 +1,4 @@
-<script setup>
+﻿<script setup>
 import { computed } from 'vue';
 import { useMapGetter } from 'dashboard/composables/store';
 import { useRouter } from 'vue-router';
@@ -100,7 +100,7 @@ const tableHeaders = computed(() => {
       <BasePaywallModal
         feature-prefix="CUSTOM_ROLE"
         :i18n-key="i18nKey"
-        :is-on-kairos-crm-cloud="isOnKairosCrmCloud"
+        :is-on-kairos_crm-cloud="isOnKairosCrmCloud"
         :is-super-admin="isSuperAdmin"
         @upgrade="goToBillingSettings"
       />

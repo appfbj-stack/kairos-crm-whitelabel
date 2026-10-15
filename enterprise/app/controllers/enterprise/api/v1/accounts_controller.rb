@@ -97,7 +97,7 @@ class Enterprise::Api::V1::AccountsController < Api::BaseController
   end
 
   def check_cloud_env
-    render json: { error: 'Not found' }, status: :not_found unless KairosCrmApp.kairos-crm_cloud?
+    render json: { error: 'Not found' }, status: :not_found unless KairosCrmApp.kairos_crm_cloud?
   end
 
   def ensure_stripe_customer

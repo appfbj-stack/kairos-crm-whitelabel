@@ -1,4 +1,4 @@
-import {
+﻿import {
   frontendURL,
   conversationUrl,
   isValidURL,
@@ -271,7 +271,7 @@ describe('#URL Helpers', () => {
     });
 
     it('should correctly handle URLs with non-standard TLDs', () => {
-      expect(getHostNameFromURL('https://chatwoot.help')).toBe('kairos-crm.help');
+      expect(getHostNameFromURL('https://chatwoot.help')).toBe('kairos_crm.help');
     });
   });
 

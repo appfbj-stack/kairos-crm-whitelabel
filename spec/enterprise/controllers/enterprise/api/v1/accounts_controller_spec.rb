@@ -7,7 +7,7 @@ RSpec.describe 'Enterprise Billing APIs', type: :request do
 
   describe 'API token access' do
     before do
-      allow(KairosCrmApp).to receive(:kairos-crm_cloud?).and_return(true)
+      allow(KairosCrmApp).to receive(:kairos_crm_cloud?).and_return(true)
       account.disable_features!('api_and_webhooks')
     end
 

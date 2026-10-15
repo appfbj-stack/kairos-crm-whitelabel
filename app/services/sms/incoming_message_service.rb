@@ -1,4 +1,4 @@
-class Sms::IncomingMessageService
+﻿class Sms::IncomingMessageService
   include ::FileTypeHelper
 
   pattr_initialize [:inbox!, :params!]
@@ -80,7 +80,7 @@ class Sms::IncomingMessageService
     return if params[:media].blank?
 
     params[:media].each do |media_url|
-      # we don't need to process this files since kairos-crm doesn't support it
+      # we don't need to process this files since kairos_crm doesn't support it
       next if media_url.end_with?('.smil', '.xml')
 
       attachment_file = Down.download(

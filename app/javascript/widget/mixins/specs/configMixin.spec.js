@@ -1,4 +1,4 @@
-import { shallowMount } from '@vue/test-utils';
+﻿import { shallowMount } from '@vue/test-utils';
 import configMixin from '../configMixin';
 import { reactive } from 'vue';
 
@@ -21,7 +21,7 @@ const preChatFields = [
   },
 ];
 
-global.kairos-crmWebChannel = {
+global.kairos_crmWebChannel = {
   avatarUrl: 'https://test.url',
   hasAConnectedAgentBot: 'AgentBot',
   enabledFeatures: [
@@ -40,7 +40,7 @@ describe('configMixin', () => {
       mixins: [configMixin],
       data() {
         return {
-          channelConfig: reactive(global.kairos-crmWebChannel),
+          channelConfig: reactive(global.kairos_crmWebChannel),
         };
       },
       template: '<div />', // Render a simple div as the template

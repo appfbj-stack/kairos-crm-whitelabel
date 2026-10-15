@@ -1,4 +1,4 @@
-<script>
+﻿<script>
 export default {
   methods: {
     getGoogleAuthUrl() {
@@ -7,8 +7,8 @@ export default {
       // omniauth has a standing issue on redirecting the post request
       // https://github.com/lynndylanhurley/devise_token_auth/issues/1466
       const baseUrl = 'https://accounts.google.com/o/oauth2/auth';
-      const clientId = window.kairos-crmConfig.googleOAuthClientId;
-      const redirectUri = window.kairos-crmConfig.googleOAuthCallbackUrl;
+      const clientId = window.kairos_crmConfig.googleOAuthClientId;
+      const redirectUri = window.kairos_crmConfig.googleOAuthCallbackUrl;
       const responseType = 'code';
       const scope = 'email profile';
 

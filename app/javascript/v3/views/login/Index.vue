@@ -1,4 +1,4 @@
-<script>
+﻿<script>
 // utils and composables
 import { login } from '../../api/auth';
 import { mapGetters } from 'vuex';
@@ -92,16 +92,16 @@ export default {
   computed: {
     ...mapGetters({ globalConfig: 'globalConfig/get' }),
     allowedLoginMethods() {
-      return window.kairos-crmConfig.allowedLoginMethods || ['email'];
+      return window.kairos_crmConfig.allowedLoginMethods || ['email'];
     },
     showGoogleOAuth() {
       return (
         this.allowedLoginMethods.includes('google_oauth') &&
-        Boolean(window.kairos-crmConfig.googleOAuthClientId)
+        Boolean(window.kairos_crmConfig.googleOAuthClientId)
       );
     },
     showSignupLink() {
-      return window.kairos-crmConfig.signupEnabled === 'true';
+      return window.kairos_crmConfig.signupEnabled === 'true';
     },
     showSamlLogin() {
       return this.allowedLoginMethods.includes('saml');

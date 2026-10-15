@@ -1,4 +1,4 @@
-module Whatsapp::IncomingMessageServiceHelpers
+﻿module Whatsapp::IncomingMessageServiceHelpers
   def download_attachment_file(attachment_payload)
     Down.download(inbox.channel.media_url(attachment_payload[:id]), headers: inbox.channel.api_headers)
   end
@@ -27,7 +27,7 @@ module Whatsapp::IncomingMessageServiceHelpers
   def message_content(message)
     return I18n.t('conversations.messages.whatsapp.flow_response') if message.dig(:interactive, :nfm_reply).present?
 
-    # TODO: map interactive messages back to button messages in kairos-crm
+    # TODO: map interactive messages back to button messages in kairos_crm
     message.dig(:text, :body) ||
       message.dig(:button, :text) ||
       message.dig(:interactive, :button_reply, :title) ||

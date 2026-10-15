@@ -1,4 +1,4 @@
-<script setup>
+﻿<script setup>
 import BasePaywallModal from 'dashboard/routes/dashboard/settings/components/BasePaywallModal.vue';
 
 const props = defineProps({
@@ -21,7 +21,7 @@ const i18nKey = props.isOnKairosCrmCloud ? 'PAYWALL' : 'ENTERPRISE_PAYWALL';
     <BasePaywallModal
       feature-prefix="SLA"
       :i18n-key="i18nKey"
-      :is-on-kairos-crm-cloud="isOnKairosCrmCloud"
+      :is-on-kairos_crm-cloud="isOnKairosCrmCloud"
       :is-super-admin="isSuperAdmin"
       @upgrade="emit('upgrade')"
     />

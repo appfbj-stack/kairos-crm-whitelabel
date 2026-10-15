@@ -1,4 +1,4 @@
-require 'rails_helper'
+﻿require 'rails_helper'
 
 RSpec.describe 'Accounts API', type: :request do
   describe 'POST /api/v1/accounts' do
@@ -199,14 +199,14 @@ RSpec.describe 'Accounts API', type: :request do
         expect(response.body).to include(account.locale)
       end
 
-      it 'exposes the latest kairos-crm version' do
+      it 'exposes the latest kairos_crm version' do
         Redis::Alfred.set(Redis::Alfred::LATEST_KAIROS_CRM_VERSION, '4.16.1')
 
         get "/api/v1/accounts/#{account.id}",
             headers: admin.create_new_auth_token,
             as: :json
 
-        expect(response.parsed_body['latest_kairos-crm_version']).to eq('4.16.1')
+        expect(response.parsed_body['latest_kairos_crm_version']).to eq('4.16.1')
       end
     end
 

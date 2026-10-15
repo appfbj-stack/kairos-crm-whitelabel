@@ -74,7 +74,7 @@ module Enterprise::Account
   end
 
   def api_and_webhooks_enabled?
-    return true unless KairosCrmApp.kairos-crm_cloud?
+    return true unless KairosCrmApp.kairos_crm_cloud?
 
     feature_enabled?('api_and_webhooks')
   end
@@ -109,7 +109,7 @@ module Enterprise::Account
     super
     if KairosCrmApp.self_hosted_enterprise?
       enable_features('captain_integration', 'captain_integration_v2')
-    elsif KairosCrmApp.kairos-crm_cloud?
+    elsif KairosCrmApp.kairos_crm_cloud?
       internal_attributes[CAPTAIN_V2_DEFAULT_ELIGIBLE] = true
     end
   end

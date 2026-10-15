@@ -1,4 +1,4 @@
-import { shallowMount } from '@vue/test-utils';
+﻿import { shallowMount } from '@vue/test-utils';
 import GoogleOAuthButton from './Button.vue';
 
 function getWrapper() {
@@ -9,14 +9,14 @@ function getWrapper() {
 
 describe('GoogleOAuthButton.vue', () => {
   beforeEach(() => {
-    window.kairos-crmConfig = {
+    window.kairos_crmConfig = {
       googleOAuthClientId: 'clientId',
       googleOAuthCallbackUrl: 'http://localhost:3000/test-callback',
     };
   });
 
   afterEach(() => {
-    window.kairos-crmConfig = {};
+    window.kairos_crmConfig = {};
   });
 
   it('generates the correct Google Auth URL', () => {

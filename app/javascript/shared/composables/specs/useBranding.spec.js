@@ -1,4 +1,4 @@
-import { useBranding } from '../useBranding';
+﻿import { useBranding } from '../useBranding';
 import { useMapGetter } from 'dashboard/composables/store.js';
 
 // Mock the store composable
@@ -76,7 +76,7 @@ describe('useBranding', () => {
     it('should replace "Kairos CRM" regardless of casing', () => {
       const { replaceInstallationName } = useBranding();
       const result = replaceInstallationName(
-        'Welcome to kairos-crm, Kairos CRM and KAIROS CRM'
+        'Welcome to kairos_crm, Kairos CRM and KAIROS CRM'
       );
 
       expect(result).toBe('Welcome to MyCompany, MyCompany and MyCompany');

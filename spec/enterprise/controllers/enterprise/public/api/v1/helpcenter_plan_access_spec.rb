@@ -1,4 +1,4 @@
-require 'rails_helper'
+﻿require 'rails_helper'
 
 RSpec.describe 'Public Help Center Access', type: :request do
   let(:plan_name) { 'Startups' }
@@ -9,7 +9,7 @@ RSpec.describe 'Public Help Center Access', type: :request do
   let!(:article) { create(:article, category: category, portal: portal, account: account, author: agent, status: :published) }
 
   around do |example|
-    with_modified_env FRONTEND_URL: 'https://app.kairos-crm.com', HELPCENTER_URL: 'https://help.kairos-crm.com' do
+    with_modified_env FRONTEND_URL: 'https://app.kairos_crm.com', HELPCENTER_URL: 'https://help.kairos_crm.com' do
       previous_deployment_env = InstallationConfig.find_by(name: 'DEPLOYMENT_ENV')&.value
       InstallationConfig.where(name: 'DEPLOYMENT_ENV').first_or_initialize.update!(value: 'cloud')
 
@@ -21,9 +21,9 @@ RSpec.describe 'Public Help Center Access', type: :request do
     end
   end
 
-  it 'blocks kairos-crm-hosted portal pages when the help center feature is disabled' do
+  it 'blocks kairos_crm-hosted portal pages when the help center feature is disabled' do
     account.disable_features!(:help_center)
-    host! 'help.kairos-crm.com'
+    host! 'help.kairos_crm.com'
 
     get "/hc/#{portal.slug}/en"
 

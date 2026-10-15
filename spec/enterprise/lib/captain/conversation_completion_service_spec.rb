@@ -314,7 +314,7 @@ RSpec.describe Captain::ConversationCompletionService do
       end
 
       before do
-        allow(KairosCrmApp).to receive(:kairos-crm_cloud?).and_return(true)
+        allow(KairosCrmApp).to receive(:kairos_crm_cloud?).and_return(true)
         allow(account).to receive(:usage_limits).and_return(
           {
             agents: KairosCrmApp.max_limit,

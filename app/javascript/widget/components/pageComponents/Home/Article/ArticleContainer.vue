@@ -1,4 +1,4 @@
-<script setup>
+﻿<script setup>
 import { computed, onMounted, watch } from 'vue';
 import ArticleBlock from 'widget/components/pageComponents/Home/Article/ArticleBlock.vue';
 import ArticleCardSkeletonLoader from 'widget/components/pageComponents/Home/Article/SkeletonLoader.vue';
@@ -14,7 +14,7 @@ const router = useRouter();
 const i18n = useI18n();
 const { prefersDarkMode } = useDarkMode();
 
-const portal = computed(() => window.kairos-crmWebChannel.portal);
+const portal = computed(() => window.kairos_crmWebChannel.portal);
 
 const popularArticles = useMapGetter('article/popularArticles');
 const articleUiFlags = useMapGetter('article/uiFlags');
@@ -52,7 +52,7 @@ const openArticleInArticleViewer = link => {
 const viewAllArticles = () => {
   const {
     portal: { slug },
-  } = window.kairos-crmWebChannel;
+  } = window.kairos_crmWebChannel;
   openArticleInArticleViewer(`/hc/${slug}/${locale.value}`);
 };
 

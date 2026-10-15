@@ -1,4 +1,4 @@
-<script setup>
+﻿<script setup>
 import { useRouter } from 'vue-router';
 import { useMapGetter } from 'dashboard/composables/store';
 import BasePaywallModal from 'dashboard/routes/dashboard/settings/components/BasePaywallModal.vue';
@@ -20,7 +20,7 @@ const goToBillingSettings = () => {
       <BasePaywallModal
         feature-prefix="CSAT_REPORTS.REVIEW_NOTES"
         i18n-key="PAYWALL"
-        is-on-kairos-crm-cloud
+        is-on-kairos_crm-cloud
         @upgrade="goToBillingSettings"
       />
     </div>

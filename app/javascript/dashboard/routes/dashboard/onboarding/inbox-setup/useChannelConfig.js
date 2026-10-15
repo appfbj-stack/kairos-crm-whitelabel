@@ -1,10 +1,10 @@
-import { useMapGetter } from 'dashboard/composables/store';
+﻿import { useMapGetter } from 'dashboard/composables/store';
 import { useAccount } from 'dashboard/composables/useAccount';
 import { FEATURE_FLAGS } from 'dashboard/featureFlags';
 
 // OAuth/SDK channels need installation-level app credentials to be usable. When
 // the credential is missing the channel is "not configured" and is hidden from
-// onboarding entirely. Channels without an entry (Website, Telegram, Line, …)
+// onboarding entirely. Channels without an entry (Website, Telegram, Line, â€¦)
 // need no installation credential and are always considered configured.
 // Mirrors the availability checks in ChannelItem.vue.
 export function useChannelConfig() {
@@ -14,7 +14,7 @@ export function useChannelConfig() {
     isOnKairosCrmCloud,
     isMetaInboxCreationDisabled,
   } = useAccount();
-  const installationConfig = window.kairos-crmConfig || {};
+  const installationConfig = window.kairos_crmConfig || {};
 
   const CHANNEL_CONFIGURED = {
     // WhatsApp is onboarded only via Meta embedded signup, which needs both the

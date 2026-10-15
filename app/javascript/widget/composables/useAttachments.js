@@ -1,4 +1,4 @@
-import { computed } from 'vue';
+﻿import { computed } from 'vue';
 import { useStore } from 'vuex';
 
 export function useAttachments() {
@@ -13,12 +13,12 @@ export function useAttachments() {
   );
 
   const hasAttachmentsEnabled = computed(() => {
-    const channelConfig = window.kairos-crmWebChannel;
+    const channelConfig = window.kairos_crmWebChannel;
     return channelConfig?.enabledFeatures?.includes('attachments') || false;
   });
 
   const hasEmojiPickerEnabled = computed(() => {
-    const channelConfig = window.kairos-crmWebChannel;
+    const channelConfig = window.kairos_crmWebChannel;
     return channelConfig?.enabledFeatures?.includes('emoji_picker') || false;
   });
 

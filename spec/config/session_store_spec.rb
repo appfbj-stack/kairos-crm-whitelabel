@@ -1,4 +1,4 @@
-require 'rails_helper'
+﻿require 'rails_helper'
 
 # rubocop:disable RSpec/DescribeClass
 describe 'Session Store Configuration' do
@@ -11,7 +11,7 @@ describe 'Session Store Configuration' do
   end
 
   it 'sets the session key' do
-    expect(session_options[:key]).to eq('_kairos-crm_session')
+    expect(session_options[:key]).to eq('_kairos_crm_session')
   end
 
   it 'sets same_site to lax' do

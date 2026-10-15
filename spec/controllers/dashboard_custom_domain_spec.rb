@@ -1,11 +1,11 @@
-require 'rails_helper'
+﻿require 'rails_helper'
 
 describe 'GET / on a help center custom domain', type: :request do
   let(:account) { create(:account) }
   let(:agent) { create(:user, account: account, role: :agent) }
 
   around do |example|
-    with_modified_env FRONTEND_URL: 'http://www.kairos-crm.test' do
+    with_modified_env FRONTEND_URL: 'http://www.kairos_crm.test' do
       example.run
     end
   end

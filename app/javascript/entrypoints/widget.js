@@ -1,4 +1,4 @@
-import { createApp } from 'vue';
+﻿import { createApp } from 'vue';
 import { createI18n } from 'vue-i18n';
 
 import VueDOMPurifyHTML from 'vue-dompurify-html';
@@ -49,6 +49,6 @@ window.onload = () => {
   window.KAIROS_WIDGET = app.mount('#app');
   window.actionCable = new ActionCableConnector(
     window.KAIROS_WIDGET,
-    window.kairos-crmPubsubToken
+    window.kairos_crmPubsubToken
   );
 };

@@ -1,4 +1,4 @@
-<script>
+﻿<script>
 import { mapGetters } from 'vuex';
 import { useAdmin } from 'dashboard/composables/useAdmin';
 import { useAlert } from 'dashboard/composables';
@@ -256,14 +256,14 @@ export default {
     openInNewTab() {
       if (!this.conversationUrl) return;
 
-      const url = `${window.kairos-crmConfig.hostURL}${this.conversationUrl}`;
+      const url = `${window.kairos_crmConfig.hostURL}${this.conversationUrl}`;
       window.open(url, '_blank', 'noopener,noreferrer');
       this.$emit('close');
     },
     async copyConversationLink() {
       if (!this.conversationUrl) return;
       try {
-        const url = `${window.kairos-crmConfig.hostURL}${this.conversationUrl}`;
+        const url = `${window.kairos_crmConfig.hostURL}${this.conversationUrl}`;
         await copyTextToClipboard(url);
         useAlert(this.$t('CONVERSATION.CARD_CONTEXT_MENU.COPY_LINK_SUCCESS'));
         this.$emit('close');

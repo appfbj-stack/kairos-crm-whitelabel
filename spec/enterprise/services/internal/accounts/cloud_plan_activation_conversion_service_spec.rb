@@ -6,7 +6,7 @@ RSpec.describe Internal::Accounts::CloudPlanActivationConversionService do
   let(:account) { create(:account) }
 
   before do
-    allow(KairosCrmApp).to receive(:kairos-crm_cloud?).and_return(true)
+    allow(KairosCrmApp).to receive(:kairos_crm_cloud?).and_return(true)
     create(:installation_config, name: 'KAIROS_CRM_CLOUD_PLANS', value: [
              { 'name' => 'Hacker' },
              { 'name' => 'Startups' }

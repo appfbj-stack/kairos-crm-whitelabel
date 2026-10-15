@@ -1,4 +1,4 @@
-# This file is auto-generated from the current state of the database. Instead
+﻿# This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
 #
@@ -1018,15 +1018,15 @@ ActiveRecord::Schema[7.1].define(version: 2026_08_14_000000) do
     t.string "source_object_type", null: false
     t.string "source_object_id", null: false
     t.integer "status", default: 0, null: false
-    t.string "kairos-crm_record_type"
-    t.bigint "kairos-crm_record_id"
+    t.string "kairos_crm_record_type"
+    t.bigint "kairos_crm_record_id"
     t.integer "attempt_count", default: 0, null: false
     t.string "last_error_code"
     t.text "last_error_message"
     t.jsonb "metadata", default: {}, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["kairos-crm_record_type", "kairos-crm_record_id"], name: "idx_data_import_items_on_record"
+    t.index ["kairos_crm_record_type", "kairos_crm_record_id"], name: "idx_data_import_items_on_record"
     t.index ["data_import_id", "source_object_type", "source_object_id"], name: "idx_data_import_items_on_import_and_source", unique: true
     t.index ["data_import_id"], name: "index_data_import_items_on_data_import_id"
     t.index ["source_provider", "source_object_type", "source_object_id"], name: "idx_data_import_items_on_source"
@@ -1038,13 +1038,13 @@ ActiveRecord::Schema[7.1].define(version: 2026_08_14_000000) do
     t.string "source_provider", null: false
     t.string "source_object_type", null: false
     t.string "source_object_id", null: false
-    t.string "kairos-crm_record_type", null: false
-    t.bigint "kairos-crm_record_id", null: false
+    t.string "kairos_crm_record_type", null: false
+    t.bigint "kairos_crm_record_id", null: false
     t.jsonb "metadata", default: {}, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["account_id", "source_provider", "source_object_type", "source_object_id"], name: "idx_data_import_mappings_on_account_and_source", unique: true
-    t.index ["kairos-crm_record_type", "kairos-crm_record_id"], name: "idx_data_import_mappings_on_record"
+    t.index ["kairos_crm_record_type", "kairos_crm_record_id"], name: "idx_data_import_mappings_on_record"
     t.index ["data_import_id"], name: "index_data_import_mappings_on_data_import_id"
   end
 

@@ -1,4 +1,4 @@
-export const APP_BASE_URL = '';
+﻿export const APP_BASE_URL = '';
 
 export const MESSAGE_STATUS = {
   FAILED: 'failed',
@@ -13,4 +13,4 @@ export const MESSAGE_TYPE = {
   TEMPLATE: 3,
 };
 
-export const KAIROS_PREFIX = 'kairos-crm-widget:';
+export const KAIROS_PREFIX = 'kairos_crm-widget:';

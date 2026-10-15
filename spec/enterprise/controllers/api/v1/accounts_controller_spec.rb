@@ -1,4 +1,4 @@
-require 'rails_helper'
+﻿require 'rails_helper'
 require 'base64'
 
 RSpec.describe 'Enterprise Accounts API', type: :request do
@@ -17,7 +17,7 @@ RSpec.describe 'Enterprise Accounts API', type: :request do
     end
 
     before do
-      allow(KairosCrmApp).to receive(:kairos-crm_cloud?).and_return(true)
+      allow(KairosCrmApp).to receive(:kairos_crm_cloud?).and_return(true)
     end
 
     it 'records marketing attribution for unauthenticated signup requests' do
@@ -77,24 +77,24 @@ RSpec.describe 'Enterprise Accounts API', type: :request do
       Redis::Alfred.set(Redis::Alfred::LATEST_KAIROS_CRM_VERSION, '4.16.1')
     end
 
-    it 'hides the latest kairos-crm version on cloud' do
-      allow(KairosCrmApp).to receive(:kairos-crm_cloud?).and_return(true)
+    it 'hides the latest kairos_crm version on cloud' do
+      allow(KairosCrmApp).to receive(:kairos_crm_cloud?).and_return(true)
 
       get "/api/v1/accounts/#{account.id}",
           headers: admin.create_new_auth_token,
           as: :json
 
-      expect(response.parsed_body['latest_kairos-crm_version']).to be_nil
+      expect(response.parsed_body['latest_kairos_crm_version']).to be_nil
     end
 
-    it 'exposes the latest kairos-crm version on self-hosted enterprise' do
-      allow(KairosCrmApp).to receive(:kairos-crm_cloud?).and_return(false)
+    it 'exposes the latest kairos_crm version on self-hosted enterprise' do
+      allow(KairosCrmApp).to receive(:kairos_crm_cloud?).and_return(false)
 
       get "/api/v1/accounts/#{account.id}",
           headers: admin.create_new_auth_token,
           as: :json
 
-      expect(response.parsed_body['latest_kairos-crm_version']).to eq('4.16.1')
+      expect(response.parsed_body['latest_kairos_crm_version']).to eq('4.16.1')
     end
   end
 end

@@ -1,4 +1,4 @@
-require 'opentelemetry/sdk'
+﻿require 'opentelemetry/sdk'
 require 'opentelemetry/exporter/otlp'
 require 'base64'
 
@@ -6,7 +6,7 @@ module OpentelemetryConfig
   class << self
     def tracer
       initialize! unless initialized?
-      OpenTelemetry.tracer_provider.tracer('kairos-crm')
+      OpenTelemetry.tracer_provider.tracer('kairos_crm')
     end
 
     def initialized?
@@ -84,7 +84,7 @@ module OpentelemetryConfig
 
     def configure_opentelemetry
       OpenTelemetry::SDK.configure do |c|
-        c.service_name = 'kairos-crm'
+        c.service_name = 'kairos_crm'
         exporter = OpenTelemetry::Exporter::OTLP::Exporter.new(**exporter_config)
         c.add_span_processor(OpenTelemetry::SDK::Trace::Export::BatchSpanProcessor.new(exporter))
         Rails.logger.info 'OpenTelemetry initialized and configured to export to Langfuse'

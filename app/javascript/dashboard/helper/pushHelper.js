@@ -1,4 +1,4 @@
-/* eslint-disable no-console */
+﻿/* eslint-disable no-console */
 import NotificationSubscriptions from '../api/notificationSubscription';
 import auth from '../api/auth';
 import { useAlert } from 'dashboard/composables';
@@ -54,14 +54,14 @@ export const sendRegistrationToServer = subscription => {
 };
 
 export const registerSubscription = (onSuccess = () => {}) => {
-  if (!window.kairos-crmConfig.vapidPublicKey) {
+  if (!window.kairos_crmConfig.vapidPublicKey) {
     return;
   }
   navigator.serviceWorker.ready
     .then(serviceWorkerRegistration =>
       serviceWorkerRegistration.pushManager.subscribe({
         userVisibleOnly: true,
-        applicationServerKey: window.kairos-crmConfig.vapidPublicKey,
+        applicationServerKey: window.kairos_crmConfig.vapidPublicKey,
       })
     )
     .then(sendRegistrationToServer)

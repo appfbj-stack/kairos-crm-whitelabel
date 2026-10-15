@@ -1,4 +1,4 @@
-<script>
+﻿<script>
 import AddSLA from './AddSLA.vue';
 import SettingsLayout from '../SettingsLayout.vue';
 import BaseSettingsHeader from 'dashboard/routes/dashboard/settings/components/BaseSettingsHeader.vue';
@@ -170,7 +170,7 @@ export default {
       <SLAPaywallEnterprise
         v-if="isBehindAPaywall"
         :is-super-admin="isSuperAdmin"
-        :is-on-kairos-crm-cloud="isOnKairosCrmCloud"
+        :is-on-kairos_crm-cloud="isOnKairosCrmCloud"
         @upgrade="onClickCTA"
       />
       <BaseTable

@@ -1,4 +1,4 @@
-module Enterprise::Internal::CheckNewVersionsJob
+﻿module Enterprise::Internal::CheckNewVersionsJob
   def perform
     super
     update_plan_info
@@ -12,9 +12,9 @@ module Enterprise::Internal::CheckNewVersionsJob
 
     update_installation_config(key: 'INSTALLATION_PRICING_PLAN', value: @instance_info['plan'])
     update_installation_config(key: 'INSTALLATION_PRICING_PLAN_QUANTITY', value: @instance_info['plan_quantity'])
-    update_installation_config(key: 'KAIROS_CRM_SUPPORT_WEBSITE_TOKEN', value: @instance_info['kairos-crm_support_website_token'])
-    update_installation_config(key: 'KAIROS_CRM_SUPPORT_IDENTIFIER_HASH', value: @instance_info['kairos-crm_support_identifier_hash'])
-    update_installation_config(key: 'KAIROS_CRM_SUPPORT_SCRIPT_URL', value: @instance_info['kairos-crm_support_script_url'])
+    update_installation_config(key: 'KAIROS_CRM_SUPPORT_WEBSITE_TOKEN', value: @instance_info['kairos_crm_support_website_token'])
+    update_installation_config(key: 'KAIROS_CRM_SUPPORT_IDENTIFIER_HASH', value: @instance_info['kairos_crm_support_identifier_hash'])
+    update_installation_config(key: 'KAIROS_CRM_SUPPORT_SCRIPT_URL', value: @instance_info['kairos_crm_support_script_url'])
   end
 
   def update_installation_config(key:, value:)

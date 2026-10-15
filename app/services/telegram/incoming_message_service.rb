@@ -1,4 +1,4 @@
-# Find the various telegram payload samples here: https://core.telegram.org/bots/webhooks#testing-your-bot-with-updates
+﻿# Find the various telegram payload samples here: https://core.telegram.org/bots/webhooks#testing-your-bot-with-updates
 # https://core.telegram.org/bots/api#available-types
 
 class Telegram::IncomingMessageService
@@ -7,7 +7,7 @@ class Telegram::IncomingMessageService
   pattr_initialize [:inbox!, :params!]
 
   def perform
-    # kairos-crm doesn't support group conversations at the moment
+    # kairos_crm doesn't support group conversations at the moment
     transform_business_message!
     return unless private_message?
 

@@ -1,4 +1,4 @@
-class Email::FromBuilder < Email::BaseBuilder
+﻿class Email::FromBuilder < Email::BaseBuilder
   pattr_initialize [:inbox!, :message!]
 
   def build
@@ -10,8 +10,8 @@ class Email::FromBuilder < Email::BaseBuilder
                       :microsoft_oauth,
                       :forwarding_own_smtp
                    channel.email
-                 when :imap_kairos-crm_smtp,
-                      :forwarding_kairos-crm_smtp
+                 when :imap_kairos_crm_smtp,
+                      :forwarding_kairos_crm_smtp
                    channel.verified_for_sending ? channel.email : account_support_email
                  else
                    account_support_email
@@ -26,9 +26,9 @@ class Email::FromBuilder < Email::BaseBuilder
     return :google_oauth if channel.google?
     return :microsoft_oauth if channel.microsoft?
     return :standard_imap_smtp if imap_and_smtp_enabled?
-    return :imap_kairos-crm_smtp if imap_enabled_without_smtp?
+    return :imap_kairos_crm_smtp if imap_enabled_without_smtp?
     return :forwarding_own_smtp if forwarding_with_own_smtp?
-    return :forwarding_kairos-crm_smtp if forwarding_without_smtp?
+    return :forwarding_kairos_crm_smtp if forwarding_without_smtp?
 
     :unknown
   end

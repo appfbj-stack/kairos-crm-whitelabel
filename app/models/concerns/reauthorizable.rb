@@ -1,9 +1,9 @@
-# This concern is primarily targeted for business models dependent on external services
+﻿# This concern is primarily targeted for business models dependent on external services
 # The auth tokens we obtained on their behalf could expire or becomes invalid.
 # We would be aware of it until we make the API call to the service and it throws error
 
 # Example:
-# when a user changes his/her password, the auth token they provided to kairos-crm becomes invalid
+# when a user changes his/her password, the auth token they provided to kairos_crm becomes invalid
 
 # This module helps to capture the errors into a counter and when threshold is passed would mark
 # the object to be reauthorized. We will also send an email to the owners alerting them of the error.

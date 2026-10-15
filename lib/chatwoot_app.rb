@@ -17,12 +17,12 @@ module KairosCrmApp
     @enterprise ||= root.join('enterprise').exist?
   end
 
-  def self.kairos-crm_cloud?
+  def self.kairos_crm_cloud?
     enterprise? && GlobalConfig.get_value('DEPLOYMENT_ENV') == 'cloud'
   end
 
   def self.self_hosted_enterprise?
-    enterprise? && !kairos-crm_cloud? && GlobalConfig.get_value('INSTALLATION_PRICING_PLAN') == 'enterprise'
+    enterprise? && !kairos_crm_cloud? && GlobalConfig.get_value('INSTALLATION_PRICING_PLAN') == 'enterprise'
   end
 
   def self.custom?

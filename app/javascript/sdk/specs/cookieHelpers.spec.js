@@ -1,4 +1,4 @@
-import Cookies from 'js-cookie';
+﻿import Cookies from 'js-cookie';
 import {
   computeHashForUserData,
   fnv1a128,
@@ -10,7 +10,7 @@ import {
 
 describe('#getUserCookieName', () => {
   it('returns correct cookie name', () => {
-    global.$kairos-crm = { websiteToken: '123456' };
+    global.$kairos_crm = { websiteToken: '123456' };
     expect(getUserCookieName()).toBe('cw_user_123456');
   });
 });
@@ -22,14 +22,14 @@ describe('#getUserString', () => {
         user: {
           name: 'Pranav',
           email: 'pranav@example.com',
-          avatar_url: 'https://images.kairos-crm.com/placeholder',
+          avatar_url: 'https://images.kairos_crm.com/placeholder',
           identifier_hash: '12345',
         },
         identifier: '12345',
       })
     ).toBe(
       JSON.stringify([
-        ['avatar_url', 'https://images.kairos-crm.com/placeholder'],
+        ['avatar_url', 'https://images.kairos_crm.com/placeholder'],
         ['email', 'pranav@example.com'],
         ['name', 'Pranav'],
         ['identifier_hash', '12345'],
@@ -41,12 +41,12 @@ describe('#getUserString', () => {
       getUserString({
         user: {
           email: 'pranav@example.com',
-          avatar_url: 'https://images.kairos-crm.com/placeholder',
+          avatar_url: 'https://images.kairos_crm.com/placeholder',
         },
       })
     ).toBe(
       JSON.stringify([
-        ['avatar_url', 'https://images.kairos-crm.com/placeholder'],
+        ['avatar_url', 'https://images.kairos_crm.com/placeholder'],
         ['email', 'pranav@example.com'],
         ['name', ''],
         ['identifier_hash', ''],
@@ -93,7 +93,7 @@ describe('#fnv1a128', () => {
   });
 
   it('hashes multi-byte UTF-8 characters', () => {
-    expect(fnv1a128('🦄🌈')).toBe('0a25841ae4659905b36cb0d359fad39f');
+    expect(fnv1a128('ðŸ¦„ðŸŒˆ')).toBe('0a25841ae4659905b36cb0d359fad39f');
   });
 
   it('hashes characters from across the Unicode range', () => {
@@ -130,7 +130,7 @@ describe('#computeHashForUserData', () => {
         user: {
           name: 'Pranav',
           email: 'pranav@example.com',
-          avatar_url: 'https://images.kairos-crm.com/placeholder',
+          avatar_url: 'https://images.kairos_crm.com/placeholder',
           identifier_hash: '12345',
         },
       },
@@ -140,8 +140,8 @@ describe('#computeHashForUserData', () => {
       {
         identifier: 42,
         user: {
-          name: 'Jöhn 🌈',
-          email: '🦄@example.com',
+          name: 'JÃ¶hn ðŸŒˆ',
+          email: 'ðŸ¦„@example.com',
         },
       },
       'ca2a97a04c3bcafc20d9cdeac1e5b3f4',
@@ -247,11 +247,11 @@ describe('#computeHashForUserData', () => {
   it('changes when a social profile changes', () => {
     const currentHash = computeHashForUserData({
       identifier,
-      user: { ...user, social_profiles: { github: 'kairos-crm' } },
+      user: { ...user, social_profiles: { github: 'kairos_crm' } },
     });
     const updatedHash = computeHashForUserData({
       identifier,
-      user: { ...user, social_profiles: { github: 'kairos-crm-app' } },
+      user: { ...user, social_profiles: { github: 'kairos_crm-app' } },
     });
 
     expect(updatedHash).not.toBe(currentHash);
@@ -275,14 +275,14 @@ describe('#computeHashForUserData', () => {
       identifier,
       user: {
         ...user,
-        social_profiles: { github: 'kairos-crm', twitter: 'kairos-crmapp' },
+        social_profiles: { github: 'kairos_crm', twitter: 'kairos_crmapp' },
       },
     });
     const secondHash = computeHashForUserData({
       identifier,
       user: {
         ...user,
-        social_profiles: { twitter: 'kairos-crmapp', github: 'kairos-crm' },
+        social_profiles: { twitter: 'kairos_crmapp', github: 'kairos_crm' },
       },
     });
 

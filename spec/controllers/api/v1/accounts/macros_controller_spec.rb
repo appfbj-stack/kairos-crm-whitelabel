@@ -1,4 +1,4 @@
-require 'rails_helper'
+﻿require 'rails_helper'
 
 RSpec.describe 'Api::V1::Accounts::MacrosController', type: :request do
   include ActiveJob::TestHelper
@@ -86,7 +86,7 @@ RSpec.describe 'Api::V1::Accounts::MacrosController', type: :request do
             },
             {
               'action_name': :send_message,
-              'action_params': ['Welcome to the kairos-crm platform.']
+              'action_params': ['Welcome to the kairos_crm platform.']
             },
             {
               'action_name': :resolve_conversation
@@ -139,7 +139,7 @@ RSpec.describe 'Api::V1::Accounts::MacrosController', type: :request do
         params[:actions] = [
           {
             'action_name': :send_message,
-            'action_params': ['Welcome to the kairos-crm platform.']
+            'action_params': ['Welcome to the kairos_crm platform.']
           },
           {
             'action_name': :send_attachment,

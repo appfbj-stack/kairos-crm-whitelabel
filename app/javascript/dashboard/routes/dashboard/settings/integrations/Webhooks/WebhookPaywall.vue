@@ -1,4 +1,4 @@
-<script setup>
+﻿<script setup>
 import { useRouter } from 'vue-router';
 import { useMapGetter } from 'dashboard/composables/store';
 import BasePaywallModal from 'dashboard/routes/dashboard/settings/components/BasePaywallModal.vue';
@@ -20,7 +20,7 @@ const openBilling = () => {
       class="mx-auto"
       feature-prefix="INTEGRATION_SETTINGS.WEBHOOK"
       i18n-key="PAYWALL"
-      is-on-kairos-crm-cloud
+      is-on-kairos_crm-cloud
       @upgrade="openBilling"
     />
   </div>

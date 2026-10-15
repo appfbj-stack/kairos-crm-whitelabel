@@ -1,4 +1,4 @@
-import AuthAPI from '../api/auth';
+﻿import AuthAPI from '../api/auth';
 import BaseActionCableConnector from '../../shared/helpers/BaseActionCableConnector';
 import DashboardAudioNotificationHelper from './AudioAlerts/DashboardAudioNotificationHelper';
 import { BUS_EVENTS } from 'shared/constants/busEvents';
@@ -28,7 +28,7 @@ const getFilteredUnreadCountsRefreshRetryDelay = () =>
 
 class ActionCableConnector extends BaseActionCableConnector {
   constructor(app, pubsubToken) {
-    const { websocketURL = '' } = window.kairos-crmConfig || {};
+    const { websocketURL = '' } = window.kairos_crmConfig || {};
     super(app, pubsubToken, websocketURL);
     this.CancelTyping = [];
     this.lastUnreadCountsFetchAt = null;
@@ -382,7 +382,7 @@ class ActionCableConnector extends BaseActionCableConnector {
   // Inbound call accepted (in this tab or a sibling tab/window on the same
   // account, on either provider). Broadcast is account-wide, so drop the
   // ringing card everywhere except the tab that actually owns the now-active
-  // call — removing an active call here would tear down its live WebRTC
+  // call â€” removing an active call here would tear down its live WebRTC
   // session. Check isLocalWhatsappCall/isLocalCall (both set synchronously
   // before their respective accept/join API calls) rather than the store's
   // isActive flag, which this tab may not have set yet.
@@ -419,7 +419,7 @@ class ActionCableConnector extends BaseActionCableConnector {
     }
   };
 
-  // Real pickup signal — Meta sends status=ACCEPTED on the call when the
+  // Real pickup signal â€” Meta sends status=ACCEPTED on the call when the
   // contact answers. Flip active (timer starts) and arm the recorder.
   // eslint-disable-next-line class-methods-use-this
   onVoiceCallOutboundAccepted = data => {
@@ -438,17 +438,17 @@ class ActionCableConnector extends BaseActionCableConnector {
     markCallDismissed(data.call_id);
     // The store entry should always be removed for this account-wide broadcast,
     // but the WebRTC/recorder teardown must only run for the call this tab owns
-    // — otherwise an unrelated agent's call ending would stop this tab's
+    // â€” otherwise an unrelated agent's call ending would stop this tab's
     // recorder and upload its chunks against the wrong call id. For Twilio,
     // removeCall's own isActive check already scopes teardown to the owning
     // tab (via TwilioVoiceClient.endClientCall in teardownByProvider), so no
-    // extra guard is needed here — only WhatsApp's recorder upload must be
+    // extra guard is needed here â€” only WhatsApp's recorder upload must be
     // awaited before the store entry (and its in-memory chunks) is wiped.
     if (
       data.provider === VOICE_CALL_PROVIDERS.WHATSAPP &&
       isLocalWhatsappCall(data.id)
     ) {
-      // Await upload before removeCall — the store's sync teardown would otherwise
+      // Await upload before removeCall â€” the store's sync teardown would otherwise
       // wipe the recorder chunks before they reach the server.
       try {
         await handleWhatsappRemoteEnd(data.id);

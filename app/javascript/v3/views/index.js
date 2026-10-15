@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router';
+﻿import { createRouter, createWebHistory } from 'vue-router';
 
 import routes from './routes';
 import AnalyticsHelper from 'dashboard/helper/AnalyticsHelper';
@@ -17,7 +17,7 @@ export const initalizeRouter = () => {
       });
     }
 
-    return validateRouteAccess(to, next, window.kairos-crmConfig);
+    return validateRouteAccess(to, next, window.kairos_crmConfig);
   });
 };
 

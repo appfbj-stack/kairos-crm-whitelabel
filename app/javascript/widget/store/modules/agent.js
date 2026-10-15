@@ -1,4 +1,4 @@
-import { getAvailableAgents } from 'widget/api/agent';
+﻿import { getAvailableAgents } from 'widget/api/agent';
 import * as MutationHelpers from 'shared/helpers/vuex/mutationHelpers';
 import { getFromCache, setCache } from 'shared/helpers/cache';
 
@@ -16,7 +16,7 @@ export const getters = {
     $state.records.filter(agent => agent.availability_status === 'online'),
 };
 
-const CACHE_KEY_PREFIX = 'kairos-crm_available_agents_';
+const CACHE_KEY_PREFIX = 'kairos_crm_available_agents_';
 
 export const actions = {
   fetchAvailableAgents: async ({ commit }, websiteToken) => {

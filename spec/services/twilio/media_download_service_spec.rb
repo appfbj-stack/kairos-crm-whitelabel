@@ -1,4 +1,4 @@
-require 'rails_helper'
+﻿require 'rails_helper'
 
 RSpec.describe Twilio::MediaDownloadService do
   let(:account) { create(:account) }
@@ -146,7 +146,7 @@ RSpec.describe Twilio::MediaDownloadService do
 
   it 'downloads non-Twilio media without channel credentials' do
     public_url = 'https://chatwoot-assets.local/sample.png'
-    allow(Resolv).to receive(:getaddresses).with('kairos-crm-assets.local').and_return(['93.184.216.34'])
+    allow(Resolv).to receive(:getaddresses).with('kairos_crm-assets.local').and_return(['93.184.216.34'])
     stub_request(:get, public_url)
       .with { |request| request.headers['Authorization'].blank? }
       .to_return(status: 200, body: 'image data', headers: { 'Content-Type' => 'image/png' })

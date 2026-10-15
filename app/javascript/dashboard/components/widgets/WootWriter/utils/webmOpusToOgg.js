@@ -1,6 +1,6 @@
-/* eslint-disable no-bitwise */
+﻿/* eslint-disable no-bitwise */
 /**
- * WebM/Opus → OGG/Opus remuxer
+ * WebM/Opus â†’ OGG/Opus remuxer
  *
  * Chrome's MediaRecorder produces WebM containers even when
  * `audio/ogg;codecs=opus` is requested. WhatsApp Cloud API requires
@@ -8,14 +8,14 @@
  *
  * This module extracts raw Opus packets from the WebM (EBML) container
  * and repackages them into a valid OGG bitstream. The audio data itself
- * is never re-encoded — only the container format changes.
+ * is never re-encoded â€” only the container format changes.
  *
  * References:
- *   EBML (container for WebM):   RFC 8794 — https://www.rfc-editor.org/rfc/rfc8794
+ *   EBML (container for WebM):   RFC 8794 â€” https://www.rfc-editor.org/rfc/rfc8794
  *   Matroska/WebM elements:      https://www.matroska.org/technical/elements.html
- *   OGG bitstream framing:       RFC 3533 — https://www.rfc-editor.org/rfc/rfc3533
- *   Opus codec:                  RFC 6716 — https://www.rfc-editor.org/rfc/rfc6716
- *   Opus in OGG (OpusHead/Tags): RFC 7845 — https://www.rfc-editor.org/rfc/rfc7845
+ *   OGG bitstream framing:       RFC 3533 â€” https://www.rfc-editor.org/rfc/rfc3533
+ *   Opus codec:                  RFC 6716 â€” https://www.rfc-editor.org/rfc/rfc6716
+ *   Opus in OGG (OpusHead/Tags): RFC 7845 â€” https://www.rfc-editor.org/rfc/rfc7845
  */
 
 // ======================== EBML / WebM parser ========================
@@ -110,9 +110,9 @@ function extractFrameFromBlock(data, offset, end) {
   if (!trackVint) return null;
   let pos = offset + trackVint.length;
 
-  // int16 relative timecode (big-endian, signed) – skip
+  // int16 relative timecode (big-endian, signed) â€“ skip
   pos += 2;
-  // Flags byte – skip. Lacing (Xiph/EBML/fixed-size) is NOT supported;
+  // Flags byte â€“ skip. Lacing (Xiph/EBML/fixed-size) is NOT supported;
   // this assumes single-frame blocks as produced by MediaRecorder.
   const flags = data[pos];
   const lacingBits = (flags >> 1) & 0x03;
@@ -344,7 +344,7 @@ function buildOpusHead(channels, sampleRate, preSkip) {
 }
 
 function buildOpusTags() {
-  const vendor = new TextEncoder().encode('kairos-crm');
+  const vendor = new TextEncoder().encode('kairos_crm');
   const buf = new Uint8Array(8 + 4 + vendor.length + 4);
   const dv = new DataView(buf.buffer);
   buf.set(new TextEncoder().encode('OpusTags'));
@@ -403,7 +403,7 @@ export async function remuxWebmToOgg(webmBlob) {
   let pageSeq = 0;
   const pages = [];
 
-  // Page 0 – OpusHead (BOS)
+  // Page 0 â€“ OpusHead (BOS)
   pages.push(
     createOggPage(0x02, 0, serial, pageSeq, [
       buildOpusHead(channels, sampleRate, preSkip),
@@ -411,7 +411,7 @@ export async function remuxWebmToOgg(webmBlob) {
   );
   pageSeq += 1;
 
-  // Page 1 – OpusTags
+  // Page 1 â€“ OpusTags
   pages.push(createOggPage(0x00, 0, serial, pageSeq, [buildOpusTags()]));
   pageSeq += 1;
 

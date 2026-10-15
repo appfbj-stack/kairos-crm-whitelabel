@@ -36,14 +36,14 @@ RSpec.describe Account, type: :model do
     let(:account) { create(:account) }
 
     it 'is always enabled for self-hosted enterprise accounts' do
-      allow(KairosCrmApp).to receive(:kairos-crm_cloud?).and_return(false)
+      allow(KairosCrmApp).to receive(:kairos_crm_cloud?).and_return(false)
       account.disable_features!('api_and_webhooks')
 
       expect(account.api_and_webhooks_enabled?).to be true
     end
 
     it 'uses the account feature flag on Kairos CRM Cloud' do
-      allow(KairosCrmApp).to receive(:kairos-crm_cloud?).and_return(true)
+      allow(KairosCrmApp).to receive(:kairos_crm_cloud?).and_return(true)
       account.disable_features!('api_and_webhooks')
 
       expect(account.api_and_webhooks_enabled?).to be false
@@ -82,7 +82,7 @@ RSpec.describe Account, type: :model do
     let(:assistant) { create(:captain_assistant, account: account) }
 
     before do
-      allow(KairosCrmApp).to receive(:kairos-crm_cloud?).and_return(true)
+      allow(KairosCrmApp).to receive(:kairos_crm_cloud?).and_return(true)
       create(:installation_config, name: 'ACCOUNT_AGENTS_LIMIT', value: 20)
     end
 
@@ -287,7 +287,7 @@ RSpec.describe Account, type: :model do
 
     it 'marks new cloud accounts as eligible for the Captain V2 paid-plan default' do
       allow(KairosCrmApp).to receive(:self_hosted_enterprise?).and_return(false)
-      allow(KairosCrmApp).to receive(:kairos-crm_cloud?).and_return(true)
+      allow(KairosCrmApp).to receive(:kairos_crm_cloud?).and_return(true)
 
       account = create(:account)
 

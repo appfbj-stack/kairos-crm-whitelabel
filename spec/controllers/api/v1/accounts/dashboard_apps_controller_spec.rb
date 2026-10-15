@@ -1,4 +1,4 @@
-require 'rails_helper'
+﻿require 'rails_helper'
 
 RSpec.describe 'DashboardAppsController', type: :request do
   let(:account) { create(:account) }
@@ -59,7 +59,7 @@ RSpec.describe 'DashboardAppsController', type: :request do
     let(:invalid_type_payload) { { dashboard_app: { title: 'CRM Dashboard', content: [{ type: 'dda', url: 'https://link.com' }] } } }
     let(:invalid_url_payload) { { dashboard_app: { title: 'CRM Dashboard', content: [{ type: 'frame', url: 'com' }] } } }
     let(:non_http_url_payload) do
-      { dashboard_app: { title: 'CRM Dashboard', content: [{ type: 'frame', url: 'ftp://wontwork.kairos-crm.com/hello-world' }] } }
+      { dashboard_app: { title: 'CRM Dashboard', content: [{ type: 'frame', url: 'ftp://wontwork.kairos_crm.com/hello-world' }] } }
     end
 
     context 'when it is an unauthenticated user' do

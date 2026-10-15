@@ -1,8 +1,8 @@
-import { shallowMount, flushPromises } from '@vue/test-utils';
+﻿import { shallowMount, flushPromises } from '@vue/test-utils';
 import { createStore } from 'vuex';
 import PreChatFormView from '../PreChatForm.vue';
 
-global.kairos-crmWebChannel = {
+global.kairos_crmWebChannel = {
   preChatFormEnabled: true,
   preChatFormOptions: { pre_chat_fields: [], pre_chat_message: '' },
 };

@@ -1,4 +1,4 @@
-export const REPLY_POLICY = {
+﻿export const REPLY_POLICY = {
   FACEBOOK:
     'https://developers.facebook.com/docs/messenger-platform/policy/policy-overview/',
   TWILIO_WHATSAPP:
@@ -8,4 +8,4 @@ export const REPLY_POLICY = {
   TIKTOK: 'https://business-api.tiktok.com/portal/docs?id=1832184236919810',
 };
 
-export const CHANGELOG_API_URL = 'https://hub.2.kairos-crm.com/changelogs';
+export const CHANGELOG_API_URL = 'https://hub.2.kairos_crm.com/changelogs';

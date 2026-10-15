@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+﻿# frozen_string_literal: true
 
 FactoryBot.define do
   factory :tweet_create_event, class: Hash do
@@ -17,7 +17,7 @@ FactoryBot.define do
           'in_reply_to_status_id_str' => nil,
           'in_reply_to_user_id' => 1,
           'in_reply_to_user_id_str' => '1',
-          'in_reply_to_screen_name' => 'kairos-crmapp',
+          'in_reply_to_screen_name' => 'kairos_crmapp',
           'user' => {
             'id' => 2,
             'name' => 'SurveyJoy',

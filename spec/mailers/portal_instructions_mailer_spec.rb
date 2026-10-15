@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+﻿# frozen_string_literal: true
 
 require 'rails_helper'
 
@@ -16,23 +16,23 @@ RSpec.describe PortalInstructionsMailer do
 
     context 'when target domain is available' do
       it 'sends email with cname instructions' do
-        with_modified_env HELPCENTER_URL: 'https://help.kairos-crm.com' do
+        with_modified_env HELPCENTER_URL: 'https://help.kairos_crm.com' do
           mail = described_class.send_cname_instructions(portal: portal, recipient_email: recipient_email).deliver_now
 
           expect(mail.to).to eq([recipient_email])
           expect(mail.subject).to eq("Finish setting up #{portal.custom_domain}")
-          expect(mail.body.encoded).to include('help.example.com CNAME help.kairos-crm.com')
+          expect(mail.body.encoded).to include('help.example.com CNAME help.kairos_crm.com')
         end
       end
     end
 
     context 'when helpcenter url is not available but frontend url is' do
       it 'uses frontend url as target domain' do
-        with_modified_env HELPCENTER_URL: '', FRONTEND_URL: 'https://app.kairos-crm.com' do
+        with_modified_env HELPCENTER_URL: '', FRONTEND_URL: 'https://app.kairos_crm.com' do
           mail = described_class.send_cname_instructions(portal: portal, recipient_email: recipient_email).deliver_now
 
           expect(mail.to).to eq([recipient_email])
-          expect(mail.body.encoded).to include('help.example.com CNAME app.kairos-crm.com')
+          expect(mail.body.encoded).to include('help.example.com CNAME app.kairos_crm.com')
         end
       end
     end

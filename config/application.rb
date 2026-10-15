@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+﻿# frozen_string_literal: true
 
 require_relative 'boot'
 
@@ -59,7 +59,7 @@ module KairosCrm
     config.generators.javascripts = false
     config.generators.stylesheets = false
 
-    # Custom kairos-crm configurations
+    # Custom kairos_crm configurations
     config.x = config_for(:app).with_indifferent_access
 
     # https://stackoverflow.com/questions/72970170/upgrading-to-rails-6-1-6-1-causes-psychdisallowedclass-tried-to-load-unspecif

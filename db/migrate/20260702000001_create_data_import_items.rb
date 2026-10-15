@@ -1,4 +1,4 @@
-class CreateDataImportItems < ActiveRecord::Migration[7.1]
+﻿class CreateDataImportItems < ActiveRecord::Migration[7.1]
   def change
     create_data_import_items
     add_data_import_item_indexes
@@ -13,8 +13,8 @@ class CreateDataImportItems < ActiveRecord::Migration[7.1]
       t.string :source_object_type, null: false
       t.string :source_object_id, null: false
       t.integer :status, default: 0, null: false
-      t.string :kairos-crm_record_type
-      t.bigint :kairos-crm_record_id
+      t.string :kairos_crm_record_type
+      t.bigint :kairos_crm_record_id
       t.integer :attempt_count, default: 0, null: false
       t.string :last_error_code
       t.text :last_error_message
@@ -29,7 +29,7 @@ class CreateDataImportItems < ActiveRecord::Migration[7.1]
               [:data_import_id, :source_object_type, :source_object_id],
               unique: true,
               name: 'idx_data_import_items_on_import_and_source'
-    add_index :data_import_items, [:kairos-crm_record_type, :kairos-crm_record_id], name: 'idx_data_import_items_on_record'
+    add_index :data_import_items, [:kairos_crm_record_type, :kairos_crm_record_id], name: 'idx_data_import_items_on_record'
     add_index :data_import_items, [:source_provider, :source_object_type, :source_object_id], name: 'idx_data_import_items_on_source'
   end
 end

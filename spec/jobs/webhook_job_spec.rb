@@ -1,11 +1,11 @@
-require 'rails_helper'
+﻿require 'rails_helper'
 
 RSpec.describe WebhookJob do
   include ActiveJob::TestHelper
 
   subject(:job) { described_class.perform_later(url, payload, webhook_type) }
 
-  let(:url) { 'https://test.kairos-crm.com' }
+  let(:url) { 'https://test.kairos_crm.com' }
   let(:payload) { { name: 'test' } }
   let(:webhook_type) { :account_webhook }
 

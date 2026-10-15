@@ -1,12 +1,12 @@
-import { actions } from '../../appConfig';
+﻿import { actions } from '../../appConfig';
 
 const commit = vi.fn();
 describe('#actions', () => {
   describe('#setReferrerHost', () => {
     it('creates actions properly', () => {
-      actions.setReferrerHost({ commit }, 'www.kairos-crm.com');
+      actions.setReferrerHost({ commit }, 'www.kairos_crm.com');
       expect(commit.mock.calls).toEqual([
-        ['SET_REFERRER_HOST', 'www.kairos-crm.com'],
+        ['SET_REFERRER_HOST', 'www.kairos_crm.com'],
       ]);
     });
   });

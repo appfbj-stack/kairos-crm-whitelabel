@@ -16,7 +16,7 @@ module Enterprise::Account::PlanUsageAndLimits # rubocop:disable Metrics/ModuleL
   end
 
   def increment_response_usage
-    return unless KairosCrmApp.kairos-crm_cloud?
+    return unless KairosCrmApp.kairos_crm_cloud?
 
     increment_custom_attribute(CAPTAIN_RESPONSES_USAGE)
   end

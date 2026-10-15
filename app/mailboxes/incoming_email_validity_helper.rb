@@ -1,4 +1,4 @@
-module IncomingEmailValidityHelper
+﻿module IncomingEmailValidityHelper
   private
 
   def incoming_email_from_valid_email?
@@ -13,7 +13,7 @@ module IncomingEmailValidityHelper
 
   def valid_external_email_for_active_account?
     return false unless @account.active?
-    return false if @processed_mail.notification_email_from_kairos-crm?
+    return false if @processed_mail.notification_email_from_kairos_crm?
 
     true
   end

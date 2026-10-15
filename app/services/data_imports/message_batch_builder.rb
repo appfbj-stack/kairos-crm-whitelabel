@@ -1,4 +1,4 @@
-class DataImports::MessageBatchBuilder
+﻿class DataImports::MessageBatchBuilder
   REGULAR_PART_TYPES = %w[comment note source].freeze
 
   Entry = Struct.new(:source_id, :part, :position, :mapping, :message, :classification, keyword_init: true) do
@@ -100,11 +100,11 @@ class DataImports::MessageBatchBuilder
 
   def messages_for(source_entries, mappings)
     mapped_message_ids = mappings.values.filter_map do |mapping|
-      mapping.kairos-crm_record_id if mapping.kairos-crm_record_type == 'Message'
+      mapping.kairos_crm_record_id if mapping.kairos_crm_record_type == 'Message'
     end
-    kairos-crm_source_ids = source_entries.map { |entry| "#{@provider}:#{entry[:source_id]}" }
+    kairos_crm_source_ids = source_entries.map { |entry| "#{@provider}:#{entry[:source_id]}" }
     messages = Message.where(id: mapped_message_ids).or(
-      Message.where(conversation_id: @conversation.id, source_id: kairos-crm_source_ids)
+      Message.where(conversation_id: @conversation.id, source_id: kairos_crm_source_ids)
     ).to_a
 
     {
@@ -116,7 +116,7 @@ class DataImports::MessageBatchBuilder
   def build_entry(source_entry, position, mappings, messages)
     source_id = source_entry[:source_id]
     mapping = mappings[source_id]
-    mapped_message = messages[:by_id][mapping.kairos-crm_record_id] if mapping&.kairos-crm_record_type == 'Message'
+    mapped_message = messages[:by_id][mapping.kairos_crm_record_id] if mapping&.kairos_crm_record_type == 'Message'
     existing_message = messages[:by_source_id]["#{@provider}:#{source_id}"]
 
     Entry.new(

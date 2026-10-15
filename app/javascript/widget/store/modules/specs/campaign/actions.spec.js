@@ -1,4 +1,4 @@
-import { API } from 'widget/helpers/axios';
+﻿import { API } from 'widget/helpers/axios';
 import { actions } from '../../campaign';
 import { campaigns } from './data';
 import { getFromCache, setCache } from 'shared/helpers/cache';
@@ -38,7 +38,7 @@ describe('#actions', () => {
       );
 
       expect(getFromCache).toHaveBeenCalledWith(
-        'kairos-crm_campaigns_XDsafmADasd',
+        'kairos_crm_campaigns_XDsafmADasd',
         60 * 60 * 1000
       );
       expect(API.get).not.toHaveBeenCalled();
@@ -76,12 +76,12 @@ describe('#actions', () => {
       );
 
       expect(getFromCache).toHaveBeenCalledWith(
-        'kairos-crm_campaigns_XDsafmADasd',
+        'kairos_crm_campaigns_XDsafmADasd',
         60 * 60 * 1000
       );
       expect(API.get).toHaveBeenCalled();
       expect(setCache).toHaveBeenCalledWith(
-        'kairos-crm_campaigns_XDsafmADasd',
+        'kairos_crm_campaigns_XDsafmADasd',
         campaigns
       );
       expect(commit.mock.calls).toEqual([
@@ -110,7 +110,7 @@ describe('#actions', () => {
         { commit },
         {
           websiteToken: 'XDsafmADasd',
-          currentURL: 'https://www.kairos-crm.com',
+          currentURL: 'https://www.kairos_crm.com',
           isInBusinessHours: true,
         }
       );

@@ -1,4 +1,4 @@
-export default [
+﻿export default [
   {
     attributeKey: 'textContact',
     attributeDisplayName: 'Text Input',
@@ -9,7 +9,7 @@ export default [
     attributeKey: 'linkContact',
     attributeDisplayName: 'URL Input',
     attributeDisplayType: 'link',
-    value: 'https://www.kairos-crm.com',
+    value: 'https://www.kairos_crm.com',
   },
   {
     attributeKey: 'numberContact',

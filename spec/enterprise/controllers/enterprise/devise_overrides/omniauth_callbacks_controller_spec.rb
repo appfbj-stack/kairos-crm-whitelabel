@@ -1,4 +1,4 @@
-require 'rails_helper'
+﻿require 'rails_helper'
 
 RSpec.describe 'Enterprise SAML OmniAuth Callbacks', type: :request do
   let!(:account) { create(:account) }
@@ -56,7 +56,7 @@ RSpec.describe 'Enterprise SAML OmniAuth Callbacks', type: :request do
 
         get "/omniauth/saml/callback?account_id=#{account.id}&RelayState=mobile"
 
-        expect(response).to redirect_to(%r{\Akairos-crmapp://auth/saml\?email=.+&sso_auth_token=.+\z})
+        expect(response).to redirect_to(%r{\Akairos_crmapp://auth/saml\?email=.+&sso_auth_token=.+\z})
       end
     end
 

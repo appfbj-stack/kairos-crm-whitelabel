@@ -1,9 +1,9 @@
-import Auth from '../api/auth';
+﻿import Auth from '../api/auth';
 
 const parseErrorCode = error => Promise.reject(error);
 
 export default axios => {
-  const { apiHost = '' } = window.kairos-crmConfig || {};
+  const { apiHost = '' } = window.kairos_crmConfig || {};
   const kairosApi = axios.create({ baseURL: `${apiHost}/` });
   // Add Auth Headers to requests if logged in
   if (Auth.hasAuthCookie()) {

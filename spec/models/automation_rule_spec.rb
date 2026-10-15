@@ -1,4 +1,4 @@
-require 'rails_helper'
+﻿require 'rails_helper'
 require Rails.root.join 'spec/models/concerns/reauthorizable_shared.rb'
 
 RSpec.describe AutomationRule do
@@ -31,7 +31,7 @@ RSpec.describe AutomationRule do
         actions: [
           {
             action_name: :send_message,
-            action_params: ['Welcome to the kairos-crm platform.']
+            action_params: ['Welcome to the kairos_crm platform.']
           },
           {
             action_name: :assign_team,

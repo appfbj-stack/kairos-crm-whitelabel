@@ -1,4 +1,4 @@
-require 'rails_helper'
+﻿require 'rails_helper'
 
 describe Twilio::SendOnTwilioService do
   subject(:outgoing_message_service) { described_class.new(message: message) }
@@ -53,7 +53,7 @@ describe Twilio::SendOnTwilioService do
     end
 
     context 'with reply' do
-      it 'if message is sent from kairos-crm and is outgoing' do
+      it 'if message is sent from kairos_crm and is outgoing' do
         allow(messages_double).to receive(:create).and_return(message_record_double)
         allow(message_record_double).to receive(:sid).and_return('1234')
 
@@ -98,7 +98,7 @@ describe Twilio::SendOnTwilioService do
       expect(messages_double).to have_received(:create).with(hash_including(media_url: [anything]))
     end
 
-    it 'if message is sent from kairos-crm fails' do
+    it 'if message is sent from kairos_crm fails' do
       allow(messages_double).to receive(:create).and_raise(Twilio::REST::TwilioError)
 
       outgoing_message = create(

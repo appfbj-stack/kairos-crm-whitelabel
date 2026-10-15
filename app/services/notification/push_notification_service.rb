@@ -1,4 +1,4 @@
-class Notification::PushNotificationService
+﻿class Notification::PushNotificationService
   include Rails.application.routes.url_helpers
 
   pattr_initialize [:notification!]
@@ -9,7 +9,7 @@ class Notification::PushNotificationService
     notification_subscriptions.each do |subscription|
       send_browser_push(subscription)
       send_fcm_push(subscription)
-      send_push_via_kairos-crm_hub(subscription)
+      send_push_via_kairos_crm_hub(subscription)
     end
   end
 
@@ -99,9 +99,9 @@ class Notification::PushNotificationService
     remove_subscription_if_error(subscription, response)
   end
 
-  def send_push_via_kairos-crm_hub(subscription)
+  def send_push_via_kairos_crm_hub(subscription)
     return if firebase_credentials_present?
-    return unless kairos-crm_hub_enabled?
+    return unless kairos_crm_hub_enabled?
     return unless subscription.fcm?
 
     KairosCrmHub.send_push(fcm_options(subscription))
@@ -111,7 +111,7 @@ class Notification::PushNotificationService
     GlobalConfigService.load('FIREBASE_PROJECT_ID', nil) && GlobalConfigService.load('FIREBASE_CREDENTIALS', nil)
   end
 
-  def kairos-crm_hub_enabled?
+  def kairos_crm_hub_enabled?
     ActiveModel::Type::Boolean.new.cast(ENV.fetch('ENABLE_PUSH_RELAY_SERVER', true))
   end
 

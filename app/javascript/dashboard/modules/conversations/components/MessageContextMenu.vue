@@ -1,4 +1,4 @@
-<script>
+﻿<script>
 import { useAlert } from 'dashboard/composables';
 import { mapGetters } from 'vuex';
 import { useMessageFormatter } from 'shared/composables/useMessageFormatter';
@@ -88,7 +88,7 @@ export default {
   methods: {
     async copyLinkToMessage() {
       const fullConversationURL =
-        window.kairos-crmConfig.hostURL +
+        window.kairos_crmConfig.hostURL +
         frontendURL(
           conversationUrl({
             id: this.conversationId,

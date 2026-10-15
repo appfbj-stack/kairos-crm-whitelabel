@@ -1,4 +1,4 @@
-require 'rails_helper'
+﻿require 'rails_helper'
 
 RSpec.describe 'Api::V1::Accounts::Portals', type: :request do
   let(:account) { create(:account) }
@@ -88,7 +88,7 @@ RSpec.describe 'Api::V1::Accounts::Portals', type: :request do
           portal: {
             name: 'test_portal',
             slug: 'test_kbase',
-            custom_domain: 'https://support.kairos-crm.dev'
+            custom_domain: 'https://support.kairos_crm.dev'
           }
         }
         post "/api/v1/accounts/#{account.id}/portals",
@@ -98,7 +98,7 @@ RSpec.describe 'Api::V1::Accounts::Portals', type: :request do
         expect(response).to have_http_status(:success)
         json_response = response.parsed_body
         expect(json_response['name']).to eql('test_portal')
-        expect(json_response['custom_domain']).to eql('support.kairos-crm.dev')
+        expect(json_response['custom_domain']).to eql('support.kairos_crm.dev')
       end
 
       it 'creates portal when custom_domain is omitted from request body' do

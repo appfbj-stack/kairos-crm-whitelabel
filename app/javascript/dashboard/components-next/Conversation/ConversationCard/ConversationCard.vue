@@ -1,4 +1,4 @@
-<script setup>
+﻿<script setup>
 import { computed, ref } from 'vue';
 import { getInboxIconByType } from 'dashboard/helper/inbox';
 import { useRouter, useRoute } from 'vue-router';
@@ -79,7 +79,7 @@ const onCardClick = e => {
 
   if (e.metaKey || e.ctrlKey) {
     window.open(
-      window.kairos-crmConfig.hostURL + path,
+      window.kairos_crmConfig.hostURL + path,
       '_blank',
       'noopener noreferrer nofollow'
     );

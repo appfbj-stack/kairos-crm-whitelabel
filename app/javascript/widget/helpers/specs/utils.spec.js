@@ -1,4 +1,4 @@
-import { IFrameHelper } from '../utils';
+﻿import { IFrameHelper } from '../utils';
 
 vi.mock('vue', () => ({
   config: {
@@ -11,7 +11,7 @@ describe('#IFrameHelper', () => {
     it('returns if the event is valid', () => {
       expect(
         IFrameHelper.isAValidEvent({
-          data: 'kairos-crm-widget:{"event":"config-set","locale":"fr","position":"left","hideMessageBubble":false,"showPopoutButton":true}',
+          data: 'kairos_crm-widget:{"event":"config-set","locale":"fr","position":"left","hideMessageBubble":false,"showPopoutButton":true}',
         })
       ).toEqual(true);
       expect(
@@ -25,7 +25,7 @@ describe('#IFrameHelper', () => {
     it('returns parsed message', () => {
       expect(
         IFrameHelper.getMessage({
-          data: 'kairos-crm-widget:{"event":"config-set","locale":"fr","position":"left","hideMessageBubble":false,"showPopoutButton":true}',
+          data: 'kairos_crm-widget:{"event":"config-set","locale":"fr","position":"left","hideMessageBubble":false,"showPopoutButton":true}',
         })
       ).toEqual({
         event: 'config-set',

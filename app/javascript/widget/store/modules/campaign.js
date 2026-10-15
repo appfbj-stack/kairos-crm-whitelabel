@@ -1,4 +1,4 @@
-import { getCampaigns, triggerCampaign } from 'widget/api/campaign';
+﻿import { getCampaigns, triggerCampaign } from 'widget/api/campaign';
 import campaignTimer from 'widget/helpers/campaignTimer';
 import {
   formatCampaigns,
@@ -6,7 +6,7 @@ import {
 } from 'widget/helpers/campaignHelper';
 import { getFromCache, setCache } from 'shared/helpers/cache';
 
-const CACHE_KEY_PREFIX = 'kairos-crm_campaigns_';
+const CACHE_KEY_PREFIX = 'kairos_crm_campaigns_';
 
 const state = {
   records: [],

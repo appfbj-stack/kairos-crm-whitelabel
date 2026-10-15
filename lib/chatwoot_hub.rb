@@ -1,6 +1,6 @@
-# TODO: lets use HTTParty instead of RestClient
+﻿# TODO: lets use HTTParty instead of RestClient
 class KairosCrmHub
-  DEFAULT_BASE_URL = 'https://hub.2.kairos-crm.com'.freeze
+  DEFAULT_BASE_URL = 'https://hub.2.kairos_crm.com'.freeze
 
   def self.base_url
     DEFAULT_BASE_URL

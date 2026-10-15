@@ -1,4 +1,4 @@
-import allLanguages from 'dashboard/components/widgets/conversation/advancedFilterItems/languages';
+﻿import allLanguages from 'dashboard/components/widgets/conversation/advancedFilterItems/languages';
 
 import allCountries from 'shared/constants/countries.js';
 
@@ -473,7 +473,7 @@ export const inboxes = [
     welcome_title: '',
     welcome_tagline: '',
     web_widget_script:
-      '\n    <script>\n      (function(d,t) {\n        var BASE_URL="http://localhost:3000";\n        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];\n        g.src=BASE_URL+"/packs/js/sdk.js";\n        g.async = true;\n        s.parentNode.insertBefore(g,s);\n        g.onload=function(){\n          window.kairos-crmSDK.run({\n            websiteToken: \'yZ7USzaEs7hrwUAHLGwjbxJ1\',\n            baseUrl: BASE_URL\n          })\n        }\n      })(document,"script");\n    </script>\n    ',
+      '\n    <script>\n      (function(d,t) {\n        var BASE_URL="http://localhost:3000";\n        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];\n        g.src=BASE_URL+"/packs/js/sdk.js";\n        g.async = true;\n        s.parentNode.insertBefore(g,s);\n        g.onload=function(){\n          window.kairos_crmSDK.run({\n            websiteToken: \'yZ7USzaEs7hrwUAHLGwjbxJ1\',\n            baseUrl: BASE_URL\n          })\n        }\n      })(document,"script");\n    </script>\n    ',
     website_token: 'yZ7USzaEs7hrwUAHLGwjbxJ1',
     selected_feature_flags: ['attachments', 'emoji_picker', 'end_conversation'],
     reply_time: 'in_a_few_minutes',

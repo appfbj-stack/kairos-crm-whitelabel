@@ -1,4 +1,4 @@
-module SuperAdmin::AccountFeaturesHelper
+﻿module SuperAdmin::AccountFeaturesHelper
   def self.account_features
     YAML.safe_load(Rails.root.join('config/features.yml').read).freeze
   end
@@ -15,9 +15,9 @@ module SuperAdmin::AccountFeaturesHelper
   end
 
   def self.filter_internal_features(features)
-    return features if KairosCrmApp.kairos-crm_cloud?
+    return features if KairosCrmApp.kairos_crm_cloud?
 
-    internal_features = account_features.select { |f| f['kairos-crm_internal'] }.pluck('name')
+    internal_features = account_features.select { |f| f['kairos_crm_internal'] }.pluck('name')
     features.except(*internal_features)
   end
 

@@ -39,7 +39,7 @@ RSpec.describe Captain::Copilot::ReplySuggestionService do
 
   before do
     incoming_message
-    allow(KairosCrmApp).to receive(:kairos-crm_cloud?).and_return(true)
+    allow(KairosCrmApp).to receive(:kairos_crm_cloud?).and_return(true)
     allow(Captain::Assistant::AgentRunnerService).to receive(:new).with(
       hash_including(
         assistant: assistant,

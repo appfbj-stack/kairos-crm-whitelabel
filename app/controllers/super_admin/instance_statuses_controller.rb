@@ -1,15 +1,15 @@
-class SuperAdmin::InstanceStatusesController < SuperAdmin::ApplicationController
+﻿class SuperAdmin::InstanceStatusesController < SuperAdmin::ApplicationController
   def show
     @metrics = {}
-    kairos-crm_version
+    kairos_crm_version
     sha
     postgres_status
     redis_metrics
-    kairos-crm_edition
+    kairos_crm_edition
     instance_meta
   end
 
-  def kairos-crm_edition
+  def kairos_crm_edition
     @metrics['Kairos CRM edition'] = if KairosCrmApp.enterprise?
                                      'Enterprise'
                                    elsif KairosCrmApp.custom?
@@ -25,7 +25,7 @@ class SuperAdmin::InstanceStatusesController < SuperAdmin::ApplicationController
     @metrics['Database Migrations'] = migrations_context.needs_migration? ? 'pending' : 'completed'
   end
 
-  def kairos-crm_version
+  def kairos_crm_version
     @metrics['Kairos CRM version'] = KairosCrm.config[:version]
   end
 

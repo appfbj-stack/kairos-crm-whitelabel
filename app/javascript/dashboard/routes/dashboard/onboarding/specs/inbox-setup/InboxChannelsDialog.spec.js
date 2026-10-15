@@ -1,4 +1,4 @@
-import { mount } from '@vue/test-utils';
+﻿import { mount } from '@vue/test-utils';
 import { nextTick } from 'vue';
 import InboxChannelsDialog from '../../inbox-setup/InboxChannelsDialog.vue';
 
@@ -47,13 +47,13 @@ const mountDialog = () =>
 
 describe('InboxChannelsDialog Facebook gating', () => {
   afterEach(() => {
-    delete window.kairos-crmConfig;
+    delete window.kairos_crmConfig;
     isOnKairosCrmCloud.value = false;
     isMetaInboxCreationDisabled.value = false;
   });
 
   it('opens the Facebook page picker when fbAppId is configured', async () => {
-    window.kairos-crmConfig = { fbAppId: 'fb-app' };
+    window.kairos_crmConfig = { fbAppId: 'fb-app' };
     const wrapper = mountDialog();
 
     wrapper.vm.open('facebook');
@@ -63,7 +63,7 @@ describe('InboxChannelsDialog Facebook gating', () => {
   });
 
   it('shows the grid (not the picker) when fbAppId is missing', async () => {
-    window.kairos-crmConfig = {};
+    window.kairos_crmConfig = {};
     const wrapper = mountDialog();
 
     wrapper.vm.open('facebook');
@@ -77,7 +77,7 @@ describe('InboxChannelsDialog Facebook gating', () => {
   it('shows the grid when Meta inbox creation is disabled on Kairos CRM Cloud', async () => {
     isOnKairosCrmCloud.value = true;
     isMetaInboxCreationDisabled.value = true;
-    window.kairos-crmConfig = { fbAppId: 'fb-app' };
+    window.kairos_crmConfig = { fbAppId: 'fb-app' };
     const wrapper = mountDialog();
 
     wrapper.vm.open('facebook');

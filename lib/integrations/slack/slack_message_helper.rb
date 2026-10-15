@@ -1,4 +1,4 @@
-module Integrations::Slack::SlackMessageHelper
+﻿module Integrations::Slack::SlackMessageHelper
   def process_message_payload
     return unless conversation
 
@@ -90,8 +90,8 @@ module Integrations::Slack::SlackMessageHelper
     return [nil, nil, nil] unless params[:event][:user]
 
     slack_user = slack_client.users_info(user: params[:event][:user])[:user]
-    kairos-crm_user = conversation.account.users.from_email(slack_user[:profile][:email])
-    return [kairos-crm_user, nil, nil] if kairos-crm_user
+    kairos_crm_user = conversation.account.users.from_email(slack_user[:profile][:email])
+    return [kairos_crm_user, nil, nil] if kairos_crm_user
 
     sender_name = slack_user.dig(:profile, :display_name).presence ||
                   slack_user[:real_name].presence ||

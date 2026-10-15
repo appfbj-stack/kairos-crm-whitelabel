@@ -1,4 +1,4 @@
-<% if @article.present? %>
+﻿<% if @article.present? %>
 <script>
   (function() {
     let viewTracked = false;
@@ -95,8 +95,8 @@ html.light {
 </script>
 <% if @portal.channel_web_widget.present? && !@is_plain_layout_enabled %>
 <script>
-  window.kairos-crmSettings = window.kairos-crmSettings || {};
-  window.kairos-crmSettings.locale = '<%= @locale %>';
+  window.kairos_crmSettings = window.kairos_crmSettings || {};
+  window.kairos_crmSettings.locale = '<%= @locale %>';
 </script>
 <%= @portal.channel_web_widget.web_widget_script.html_safe %>
 <% end %>

@@ -1,4 +1,4 @@
-<script setup>
+﻿<script setup>
 import EmptyState from 'dashboard/components/widgets/EmptyState.vue';
 import NextButton from 'dashboard/components-next/button/Button.vue';
 import { computed, onMounted } from 'vue';
@@ -13,19 +13,19 @@ const showBillingLink = computed(
 );
 
 const toggleSupportWidgetVisibility = () => {
-  if (window.$kairos-crm) {
-    window.$kairos-crm.toggleBubbleVisibility('show');
+  if (window.$kairos_crm) {
+    window.$kairos_crm.toggleBubbleVisibility('show');
   }
 };
 
 const toggleSupportWidget = () => {
-  if (window.$kairos-crm) {
-    window.$kairos-crm.toggle();
+  if (window.$kairos_crm) {
+    window.$kairos_crm.toggle();
   }
 };
 
 const setupListenerForWidgetEvent = () => {
-  window.addEventListener('kairos-crm:on-message', () => {
+  window.addEventListener('kairos_crm:on-message', () => {
     toggleSupportWidgetVisibility();
   });
 };

@@ -1,4 +1,4 @@
-# TODO: we should switch to ActionController::API for the base classes
+﻿# TODO: we should switch to ActionController::API for the base classes
 # One of the specs is failing when I tried doing that, lets revisit in future
 class PublicController < ActionController::Base
   include RequestExceptionHandler
@@ -8,7 +8,7 @@ class PublicController < ActionController::Base
 
   def ensure_custom_domain_request
     domain = request.host
-    return if DomainHelper.kairos-crm_domain?(domain)
+    return if DomainHelper.kairos_crm_domain?(domain)
 
     @portal = ::Portal.find_by(custom_domain: domain)
     return if @portal.present?
@@ -20,7 +20,7 @@ class PublicController < ActionController::Base
   end
 
   def ensure_portal_feature_enabled
-    return unless KairosCrmApp.kairos-crm_cloud?
+    return unless KairosCrmApp.kairos_crm_cloud?
     return if @portal.account.feature_enabled?('help_center')
 
     render 'public/api/v1/portals/not_active', status: :payment_required

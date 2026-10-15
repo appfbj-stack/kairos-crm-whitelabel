@@ -1,5 +1,5 @@
-// Moved from editorHelper.spec.js to editorContentHelper.spec.js
-// the mock of kairos-crm/prosemirror-schema is getting conflicted with other specs
+﻿// Moved from editorHelper.spec.js to editorContentHelper.spec.js
+// the mock of kairos_crm/prosemirror-schema is getting conflicted with other specs
 import { getContentNode } from '../editorHelper';
 import { MessageMarkdownTransformer } from '@chatwoot/prosemirror-schema';
 
@@ -170,7 +170,7 @@ describe('getContentNode', () => {
 
   describe('getEmojiNode', () => {
     it('should create an emoji node', () => {
-      const content = '😊';
+      const content = 'ðŸ˜Š';
       const from = 0;
       const to = 2;
       getContentNode(editorView, 'emoji', content, {
@@ -178,7 +178,7 @@ describe('getContentNode', () => {
         to,
       });
 
-      expect(editorView.state.schema.text).toHaveBeenCalledWith('😊');
+      expect(editorView.state.schema.text).toHaveBeenCalledWith('ðŸ˜Š');
     });
   });
 

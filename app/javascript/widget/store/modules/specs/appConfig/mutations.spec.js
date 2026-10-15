@@ -1,11 +1,11 @@
-import { mutations } from '../../appConfig';
+﻿import { mutations } from '../../appConfig';
 
 describe('#mutations', () => {
   describe('#SET_REFERRER_HOST', () => {
     it('sets referrer host properly', () => {
       const state = { referrerHost: '' };
-      mutations.SET_REFERRER_HOST(state, 'www.kairos-crm.com');
-      expect(state.referrerHost).toEqual('www.kairos-crm.com');
+      mutations.SET_REFERRER_HOST(state, 'www.kairos_crm.com');
+      expect(state.referrerHost).toEqual('www.kairos_crm.com');
     });
   });
 

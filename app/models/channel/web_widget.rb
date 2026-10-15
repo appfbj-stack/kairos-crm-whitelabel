@@ -1,4 +1,4 @@
-# == Schema Information
+﻿# == Schema Information
 #
 # Table name: channel_web_widgets
 #
@@ -71,7 +71,7 @@ class Channel::WebWidget < ApplicationRecord
         g.async = true;
         s.parentNode.insertBefore(g,s);
         g.onload=function(){
-          window.kairos-crmSDK.run({
+          window.kairos_crmSDK.run({
             websiteToken: '#{website_token}',
             baseUrl: BASE_URL
           })

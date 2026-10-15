@@ -1,4 +1,4 @@
-<script setup>
+﻿<script setup>
 import { computed } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 import { useI18n, I18nT } from 'vue-i18n';
@@ -34,8 +34,8 @@ const PROVIDER_TYPES = {
 
 const hasWhatsappAppId = computed(() => {
   return (
-    window.kairos-crmConfig?.whatsappAppId &&
-    window.kairos-crmConfig.whatsappAppId !== 'none'
+    window.kairos_crmConfig?.whatsappAppId &&
+    window.kairos_crmConfig.whatsappAppId !== 'none'
   );
 });
 
@@ -122,7 +122,7 @@ const handleManualLinkClick = () => {
 };
 
 const requestEmbeddedSignupAccess = () => {
-  window.$kairos-crm?.toggle();
+  window.$kairos_crm?.toggle();
 };
 </script>
 

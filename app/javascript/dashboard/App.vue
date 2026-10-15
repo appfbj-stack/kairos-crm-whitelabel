@@ -1,4 +1,4 @@
-<script>
+﻿<script>
 import { mapGetters } from 'vuex';
 import LoadingState from './components/widgets/LoadingState.vue';
 import NetworkNotification from './components/NetworkNotification.vue';
@@ -84,7 +84,7 @@ export default {
     this.listenToThemeChanges();
     // If user locale is set, use it; otherwise use account locale
     this.setLocale(
-      this.uiSettings?.locale || window.kairos-crmConfig.selectedLocale
+      this.uiSettings?.locale || window.kairos_crmConfig.selectedLocale
     );
   },
   unmounted() {
@@ -111,7 +111,7 @@ export default {
         accountId: this.currentAccountId,
       });
       const account = this.getAccount(this.currentAccountId);
-      const { locale, latest_kairos-crm_version: latestKairosCrmVersion } =
+      const { locale, latest_kairos_crm_version: latestKairosCrmVersion } =
         account;
       const { pubsub_token: pubsubToken } = this.currentUser || {};
       // If user locale is set, use it; otherwise use account locale
@@ -140,7 +140,7 @@ export default {
     class="flex flex-col w-full h-screen min-h-0 bg-n-background"
     :dir="isRTL ? 'rtl' : 'ltr'"
   >
-    <UpdateBanner :latest-kairos-crm-version="latestKairosCrmVersion" />
+    <UpdateBanner :latest-kairos_crm-version="latestKairosCrmVersion" />
     <StatusBanner />
     <template v-if="currentAccountId">
       <PendingEmailVerificationBanner v-if="hideOnOnboardingView" />

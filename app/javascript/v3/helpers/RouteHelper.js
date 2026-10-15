@@ -1,4 +1,4 @@
-import { frontendURL } from 'dashboard/helper/URLHelper';
+﻿import { frontendURL } from 'dashboard/helper/URLHelper';
 import { clearBrowserSessionCookies } from 'dashboard/store/utils/api';
 import { hasAuthCookie } from './AuthHelper';
 import { DEFAULT_REDIRECT_URL } from 'dashboard/constants/globals';
@@ -11,7 +11,7 @@ const validateSSOLoginParams = to => {
   return isLoginRoute && hasValidSSOParams;
 };
 
-export const validateRouteAccess = (to, next, kairos-crmConfig = {}) => {
+export const validateRouteAccess = (to, next, kairos_crmConfig = {}) => {
   // Pages with ignoreSession:true would be rendered
   // even if there is an active session
   // Used for confirmation or password reset pages
@@ -37,14 +37,14 @@ export const validateRouteAccess = (to, next, kairos-crmConfig = {}) => {
   // Disable navigation to signup page if signups are disabled
   // Signup route has an attribute (requireSignupEnabled) in it's definition
   const isAnInalidSignupNavigation =
-    kairos-crmConfig.signupEnabled !== 'true' &&
+    kairos_crmConfig.signupEnabled !== 'true' &&
     to.meta &&
     to.meta.requireSignupEnabled;
 
   // Disable navigation to SAML login if enterprise is not enabled
   // SAML route has an attribute (requireEnterprise) in it's definition
   const isEnterpriseOnlyPath =
-    kairos-crmConfig.isEnterprise !== 'true' &&
+    kairos_crmConfig.isEnterprise !== 'true' &&
     to.meta &&
     to.meta.requireEnterprise;
 

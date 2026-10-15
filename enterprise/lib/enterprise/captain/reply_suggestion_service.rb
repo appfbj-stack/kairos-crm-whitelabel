@@ -8,7 +8,7 @@ module Enterprise::Captain::ReplySuggestionService
   private
 
   def use_search_tool?
-    KairosCrmApp.kairos-crm_cloud? || KairosCrmApp.self_hosted_enterprise?
+    KairosCrmApp.kairos_crm_cloud? || KairosCrmApp.self_hosted_enterprise?
   end
 
   def prompt_variables

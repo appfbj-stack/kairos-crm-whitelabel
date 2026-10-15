@@ -1,4 +1,4 @@
-import { useWhatsappEmbeddedSignup } from '../useWhatsappEmbeddedSignup';
+﻿import { useWhatsappEmbeddedSignup } from '../useWhatsappEmbeddedSignup';
 import {
   setupFacebookSdk,
   initWhatsAppEmbeddedSignup,
@@ -51,7 +51,7 @@ describe('useWhatsappEmbeddedSignup', () => {
   beforeEach(() => {
     vi.clearAllMocks();
 
-    window.kairos-crmConfig = {
+    window.kairos_crmConfig = {
       whatsappAppId: 'app-id',
       whatsappConfigurationId: 'config-id',
       whatsappApiVersion: 'v22.0',

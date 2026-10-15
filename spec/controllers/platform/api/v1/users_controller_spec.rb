@@ -1,4 +1,4 @@
-require 'rails_helper'
+﻿require 'rails_helper'
 
 RSpec.describe 'Platform Users API', type: :request do
   let!(:user) { create(:user, email: 'dev+testing@chatwoot.com', custom_attributes: { test: 'test' }) }
@@ -71,7 +71,7 @@ RSpec.describe 'Platform Users API', type: :request do
 
         expect(response).to have_http_status(:success)
         data = response.parsed_body
-        expect(data['url']).to include('email=dev%2Btesting%40kairos-crm.com&sso_auth_token=')
+        expect(data['url']).to include('email=dev%2Btesting%40kairos_crm.com&sso_auth_token=')
       end
     end
   end

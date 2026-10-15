@@ -1,4 +1,4 @@
-export const twilioTemplates = [
+﻿export const twilioTemplates = [
   {
     body: 'Introducing our latest release  the {{1}}! Available now for just {{2}}. Be among the first to own this style. Limited stock available!',
     types: {
@@ -129,10 +129,10 @@ export const twilioTemplates = [
     template_type: 'quick_reply',
   },
   {
-    body: 'What type of Kairos CRM installation are you using? Select "Kairos CRM Cloud" if you are using app.kairos-crm.com, otherwise select "Self-hosted Kairos CRM".',
+    body: 'What type of Kairos CRM installation are you using? Select "Kairos CRM Cloud" if you are using app.kairos_crm.com, otherwise select "Self-hosted Kairos CRM".',
     types: {
       'twilio/quick-reply': {
-        body: 'What type of Kairos CRM installation are you using? Select "Kairos CRM Cloud" if you are using app.kairos-crm.com, otherwise select "Self-hosted Kairos CRM".',
+        body: 'What type of Kairos CRM installation are you using? Select "Kairos CRM Cloud" if you are using app.kairos_crm.com, otherwise select "Self-hosted Kairos CRM".',
         actions: [
           {
             id: 'Kairos CRM Cloud_payload',

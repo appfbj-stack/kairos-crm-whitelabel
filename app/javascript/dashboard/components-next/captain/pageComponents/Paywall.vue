@@ -1,4 +1,4 @@
-<script setup>
+﻿<script setup>
 import { computed } from 'vue';
 import { useRouter } from 'vue-router';
 import { useMapGetter } from 'dashboard/composables/store';
@@ -41,7 +41,7 @@ const openBilling = () => {
       :feature-prefix="featurePrefix"
       :i18n-key="i18nKey"
       :is-super-admin="isSuperAdmin"
-      :is-on-kairos-crm-cloud="isOnKairosCrmCloud"
+      :is-on-kairos_crm-cloud="isOnKairosCrmCloud"
       @upgrade="openBilling"
     />
   </div>

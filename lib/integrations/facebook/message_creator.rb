@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+﻿# frozen_string_literal: true
 
 class Integrations::Facebook::MessageCreator
   attr_reader :response
@@ -9,7 +9,7 @@ class Integrations::Facebook::MessageCreator
 
   def perform
     # begin
-    return if response.echo? && response.sent_from_kairos-crm_app?
+    return if response.echo? && response.sent_from_kairos_crm_app?
 
     if agent_message_via_echo?
       create_agent_message
@@ -24,7 +24,7 @@ class Integrations::Facebook::MessageCreator
   private
 
   def agent_message_via_echo?
-    # echoes of kairos-crm-sent messages are skipped in perform; a remaining echo means an agent
+    # echoes of kairos_crm-sent messages are skipped in perform; a remaining echo means an agent
     # replied from the fb page directly (mobile / web messenger), so handle it as an agent message
     response.echo?
   end

@@ -1,4 +1,4 @@
-<script>
+﻿<script>
 /* global FB */
 import InboxReconnectionRequired from '../components/InboxReconnectionRequired.vue';
 import { useAlert } from 'dashboard/composables';
@@ -33,9 +33,9 @@ export default {
   methods: {
     runFBInit() {
       FB.init({
-        appId: window.kairos-crmConfig.fbAppId,
+        appId: window.kairos_crmConfig.fbAppId,
         xfbml: true,
-        version: window.kairos-crmConfig.fbApiVersion,
+        version: window.kairos_crmConfig.fbApiVersion,
         status: true,
       });
       window.fbSDKLoaded = true;

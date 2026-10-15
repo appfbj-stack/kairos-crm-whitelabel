@@ -1,9 +1,9 @@
-export const loadedEventConfig = () => {
+﻿export const loadedEventConfig = () => {
   return {
     event: 'loaded',
     config: {
       authToken: window.authToken,
-      channelConfig: window.kairos-crmWebChannel,
+      channelConfig: window.kairos_crmWebChannel,
     },
   };
 };

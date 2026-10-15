@@ -1,10 +1,10 @@
-class FlipKairosCrmV4DefaultFeatureFlagInstallationConfig < ActiveRecord::Migration[7.0]
+﻿class FlipKairosCrmV4DefaultFeatureFlagInstallationConfig < ActiveRecord::Migration[7.0]
   def up
-    # Update the default feature flag config to enable kairos-crm_v4
+    # Update the default feature flag config to enable kairos_crm_v4
     config = InstallationConfig.find_by(name: 'ACCOUNT_LEVEL_FEATURE_DEFAULTS')
     if config && config.value.present?
       features = config.value.map do |f|
-        if f['name'] == 'kairos-crm_v4'
+        if f['name'] == 'kairos_crm_v4'
           f.merge('enabled' => true)
         else
           f
@@ -14,9 +14,9 @@ class FlipKairosCrmV4DefaultFeatureFlagInstallationConfig < ActiveRecord::Migrat
       config.save!
     end
 
-    # Enable kairos-crm_v4 for all accounts in batches of 100
+    # Enable kairos_crm_v4 for all accounts in batches of 100
     Account.find_in_batches(batch_size: 100) do |accounts|
-      accounts.each { |account| account.enable_features!('kairos-crm_v4') }
+      accounts.each { |account| account.enable_features!('kairos_crm_v4') }
     end
 
     GlobalConfig.clear_cache

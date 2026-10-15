@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Formats a custom domain with https protocol if needed
  * @param {string} customDomain - The custom domain to format
  * @returns {string} Formatted domain with https protocol
@@ -12,7 +12,7 @@ const formatCustomDomain = customDomain =>
  * @throws {Error} If no valid base URL is found
  */
 const getDefaultBaseURL = () => {
-  const { hostURL, helpCenterURL } = window.kairos-crmConfig || {};
+  const { hostURL, helpCenterURL } = window.kairos_crmConfig || {};
   const baseURL = helpCenterURL || hostURL || '';
 
   if (!baseURL) {

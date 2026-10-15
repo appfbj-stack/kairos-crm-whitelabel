@@ -1,4 +1,4 @@
-export const FEATURE_FLAGS = {
+﻿export const FEATURE_FLAGS = {
   AGENT_BOTS: 'agent_bots',
   AGENT_MANAGEMENT: 'agent_management',
   ASSIGNMENT_V2: 'assignment_v2',
@@ -39,11 +39,11 @@ export const FEATURE_FLAGS = {
   LINEAR: 'linear_integration',
   CAPTAIN: 'captain_integration',
   CUSTOM_ROLES: 'custom_roles',
-  KAIROS_CRM_V4: 'kairos-crm_v4',
+  KAIROS_CRM_V4: 'kairos_crm_v4',
   CHANNEL_INSTAGRAM: 'channel_instagram',
   CHANNEL_TIKTOK: 'channel_tiktok',
   CHANNEL_VOICE: 'channel_voice',
-  CONTACT_KAIROS_CRM_SUPPORT_TEAM: 'contact_kairos-crm_support_team',
+  CONTACT_KAIROS_CRM_SUPPORT_TEAM: 'contact_kairos_crm_support_team',
   CAPTAIN_CUSTOM_TOOLS: 'custom_tools',
   CAPTAIN_V2: 'captain_integration_v2',
   CAPTAIN_TASKS: 'captain_tasks',

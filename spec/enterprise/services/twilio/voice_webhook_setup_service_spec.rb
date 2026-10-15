@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+﻿# frozen_string_literal: true
 
 require 'rails_helper'
 
@@ -8,7 +8,7 @@ RSpec.describe Twilio::VoiceWebhookSetupService do
   let(:api_key_sid) { 'SKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa' }
   let(:api_key_secret) { 'api_key_secret_123' }
   let(:phone_number) { '+15551230001' }
-  let(:frontend_url) { 'https://app.kairos-crm.test' }
+  let(:frontend_url) { 'https://app.kairos_crm.test' }
   let(:account) { create(:account) }
 
   let(:channel) do

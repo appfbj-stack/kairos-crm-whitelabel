@@ -1,4 +1,4 @@
-class Notification::PushTestService
+﻿class Notification::PushTestService
   pattr_initialize [:user!, :subscription_ids!, :title, :body]
 
   DEFAULT_TITLE = '%<installation_name>s notification test'.freeze
@@ -52,7 +52,7 @@ class Notification::PushTestService
   def test_fcm(subscription)
     if firebase_credentials_present?
       test_fcm_direct(subscription)
-    elsif kairos-crm_hub_enabled?
+    elsif kairos_crm_hub_enabled?
       test_fcm_via_hub(subscription)
     else
       result(subscription, 'fcm', :skipped, 'No Firebase credentials and push relay disabled')
@@ -67,16 +67,16 @@ class Notification::PushTestService
     response = fcm_service.fcm_client.send_v1(fcm_options(subscription))
     status_code = response[:status_code].to_i
     status = status_code.between?(200, 299) ? :success : :failure
-    result(subscription, 'fcm', status, "HTTP #{status_code} — #{response[:body]}")
+    result(subscription, 'fcm', status, "HTTP #{status_code} â€” #{response[:body]}")
   rescue StandardError => e
     result(subscription, 'fcm', :failure, "#{e.class.name}: #{e.message}")
   end
 
   def test_fcm_via_hub(subscription)
     response = KairosCrmHub.send_push_with_response(fcm_options(subscription))
-    result(subscription, 'fcm_via_hub', :success, "HTTP #{response.code} — #{response.body}")
+    result(subscription, 'fcm_via_hub', :success, "HTTP #{response.code} â€” #{response.body}")
   rescue RestClient::ExceptionWithResponse => e
-    result(subscription, 'fcm_via_hub', :failure, "HTTP #{e.response&.code} — #{e.response&.body}")
+    result(subscription, 'fcm_via_hub', :failure, "HTTP #{e.response&.code} â€” #{e.response&.body}")
   rescue StandardError => e
     result(subscription, 'fcm_via_hub', :failure, "#{e.class.name}: #{e.message}")
   end
@@ -85,7 +85,7 @@ class Notification::PushTestService
     GlobalConfigService.load('FIREBASE_PROJECT_ID', nil) && GlobalConfigService.load('FIREBASE_CREDENTIALS', nil)
   end
 
-  def kairos-crm_hub_enabled?
+  def kairos_crm_hub_enabled?
     ActiveModel::Type::Boolean.new.cast(ENV.fetch('ENABLE_PUSH_RELAY_SERVER', true))
   end
 
@@ -94,13 +94,13 @@ class Notification::PushTestService
       message: JSON.generate(
         title: resolved_title,
         tag: "super_admin_test_#{Time.zone.now.to_i}",
-        url: ENV.fetch('FRONTEND_URL', 'https://app.kairos-crm.com')
+        url: ENV.fetch('FRONTEND_URL', 'https://app.kairos_crm.com')
       ),
       endpoint: subscription.subscription_attributes['endpoint'],
       p256dh: subscription.subscription_attributes['p256dh'],
       auth: subscription.subscription_attributes['auth'],
       vapid: {
-        subject: ENV.fetch('FRONTEND_URL', 'https://app.kairos-crm.com'),
+        subject: ENV.fetch('FRONTEND_URL', 'https://app.kairos_crm.com'),
         public_key: VapidService.public_key,
         private_key: VapidService.private_key
       },
@@ -137,12 +137,12 @@ class Notification::PushTestService
     if subscription.browser_push?
       endpoint_host(attrs['endpoint'].to_s)
     else
-      attrs['device_id'].present? ? "…#{attrs['device_id'].to_s.last(6)}" : '—'
+      attrs['device_id'].present? ? "â€¦#{attrs['device_id'].to_s.last(6)}" : 'â€”'
     end
   end
 
   def endpoint_host(endpoint)
-    return '—' if endpoint.blank?
+    return 'â€”' if endpoint.blank?
 
     URI.parse(endpoint).host.presence || endpoint
   rescue URI::InvalidURIError
@@ -152,9 +152,9 @@ class Notification::PushTestService
   def token_tail(subscription, attrs)
     if subscription.browser_push?
       endpoint = attrs['endpoint'].to_s
-      endpoint.present? ? "…#{endpoint.last(6)}" : '—'
+      endpoint.present? ? "â€¦#{endpoint.last(6)}" : 'â€”'
     else
-      attrs['push_token'].present? ? "…#{attrs['push_token'].to_s.last(6)}" : '—'
+      attrs['push_token'].present? ? "â€¦#{attrs['push_token'].to_s.last(6)}" : 'â€”'
     end
   end
 end

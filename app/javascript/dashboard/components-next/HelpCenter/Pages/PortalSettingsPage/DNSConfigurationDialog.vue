@@ -1,4 +1,4 @@
-<script setup>
+﻿<script setup>
 import { reactive, computed, ref } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { useAlert } from 'dashboard/composables';
@@ -33,7 +33,7 @@ const validationRules = {
 const v$ = useVuelidate(validationRules, state);
 
 const domain = computed(() => {
-  const { hostURL, helpCenterURL } = window?.kairos-crmConfig || {};
+  const { hostURL, helpCenterURL } = window?.kairos_crmConfig || {};
   return getHostNameFromURL(helpCenterURL) || getHostNameFromURL(hostURL) || '';
 });
 

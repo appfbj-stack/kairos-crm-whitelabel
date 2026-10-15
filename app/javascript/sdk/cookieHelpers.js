@@ -1,4 +1,4 @@
-import Cookies from 'js-cookie';
+﻿import Cookies from 'js-cookie';
 
 const REQUIRED_USER_KEYS = ['avatar_url', 'email', 'name'];
 const ALLOWED_USER_ATTRIBUTES = [...REQUIRED_USER_KEYS, 'identifier_hash'];
@@ -23,7 +23,7 @@ const normalizeUserAttribute = value => {
 
 export const getUserCookieName = () => {
   const SET_USER_COOKIE_PREFIX = 'cw_user_';
-  const { websiteToken: websiteIdentifier } = window.$kairos-crm;
+  const { websiteToken: websiteIdentifier } = window.$kairos_crm;
   return `${SET_USER_COOKIE_PREFIX}${websiteIdentifier}`;
 };
 

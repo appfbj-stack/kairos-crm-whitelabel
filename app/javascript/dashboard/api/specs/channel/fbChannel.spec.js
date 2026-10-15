@@ -1,4 +1,4 @@
-import fbChannel from '../../channel/fbChannel';
+﻿import fbChannel from '../../channel/fbChannel';
 import ApiClient from '../../ApiClient';
 
 describe('#FBChannel', () => {
@@ -28,12 +28,12 @@ describe('#FBChannel', () => {
     });
 
     it('#create', () => {
-      fbChannel.create({ omniauthToken: 'ASFM131CSF@#@$', appId: 'kairos-crm' });
+      fbChannel.create({ omniauthToken: 'ASFM131CSF@#@$', appId: 'kairos_crm' });
       expect(axiosMock.post).toHaveBeenCalledWith(
         '/api/v1/callbacks/register_facebook_page',
         {
           omniauthToken: 'ASFM131CSF@#@$',
-          appId: 'kairos-crm',
+          appId: 'kairos_crm',
         }
       );
     });

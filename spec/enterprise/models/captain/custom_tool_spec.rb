@@ -1,4 +1,4 @@
-require 'rails_helper'
+﻿require 'rails_helper'
 
 RSpec.describe Captain::CustomTool, type: :model do
   describe 'associations' do
@@ -239,10 +239,10 @@ RSpec.describe Captain::CustomTool, type: :model do
 
       it 'renders request body template with params' do
         tool = create(:captain_custom_tool, account: account,
-                                            request_template: '{ "order_id": "{{ order_id }}", "source": "kairos-crm" }')
+                                            request_template: '{ "order_id": "{{ order_id }}", "source": "kairos_crm" }')
 
         result = tool.build_request_body({ order_id: '12345' })
-        expect(result).to eq('{ "order_id": "12345", "source": "kairos-crm" }')
+        expect(result).to eq('{ "order_id": "12345", "source": "kairos_crm" }')
       end
     end
 

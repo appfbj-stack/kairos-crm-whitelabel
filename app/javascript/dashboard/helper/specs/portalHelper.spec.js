@@ -1,4 +1,4 @@
-import {
+﻿import {
   buildLocaleMenuItems,
   buildPortalArticleURL,
   buildPortalURL,
@@ -7,33 +7,33 @@ import {
 describe('PortalHelper', () => {
   describe('buildPortalURL', () => {
     it('returns the correct url', () => {
-      window.kairos-crmConfig = {
-        hostURL: 'https://app.kairos-crm.com',
-        helpCenterURL: 'https://help.kairos-crm.com',
+      window.kairos_crmConfig = {
+        hostURL: 'https://app.kairos_crm.com',
+        helpCenterURL: 'https://help.kairos_crm.com',
       };
       expect(buildPortalURL('handbook')).toEqual(
-        'https://help.kairos-crm.com/hc/handbook'
+        'https://help.kairos_crm.com/hc/handbook'
       );
-      window.kairos-crmConfig = {};
+      window.kairos_crmConfig = {};
     });
   });
 
   describe('buildPortalArticleURL', () => {
     it('returns the correct url', () => {
-      window.kairos-crmConfig = {
-        hostURL: 'https://app.kairos-crm.com',
-        helpCenterURL: 'https://help.kairos-crm.com',
+      window.kairos_crmConfig = {
+        hostURL: 'https://app.kairos_crm.com',
+        helpCenterURL: 'https://help.kairos_crm.com',
       };
       expect(
         buildPortalArticleURL('handbook', 'culture', 'fr', 'article-slug')
-      ).toEqual('https://help.kairos-crm.com/hc/handbook/articles/article-slug');
-      window.kairos-crmConfig = {};
+      ).toEqual('https://help.kairos_crm.com/hc/handbook/articles/article-slug');
+      window.kairos_crmConfig = {};
     });
 
     it('returns the correct url with custom domain', () => {
-      window.kairos-crmConfig = {
-        hostURL: 'https://app.kairos-crm.com',
-        helpCenterURL: 'https://help.kairos-crm.com',
+      window.kairos_crmConfig = {
+        hostURL: 'https://app.kairos_crm.com',
+        helpCenterURL: 'https://help.kairos_crm.com',
       };
       expect(
         buildPortalArticleURL(
@@ -47,9 +47,9 @@ describe('PortalHelper', () => {
     });
 
     it('handles https in custom domain correctly', () => {
-      window.kairos-crmConfig = {
-        hostURL: 'https://app.kairos-crm.com',
-        helpCenterURL: 'https://help.kairos-crm.com',
+      window.kairos_crmConfig = {
+        hostURL: 'https://app.kairos_crm.com',
+        helpCenterURL: 'https://help.kairos_crm.com',
       };
       expect(
         buildPortalArticleURL(
@@ -63,13 +63,13 @@ describe('PortalHelper', () => {
     });
 
     it('uses hostURL when helpCenterURL is not available', () => {
-      window.kairos-crmConfig = {
-        hostURL: 'https://app.kairos-crm.com',
+      window.kairos_crmConfig = {
+        hostURL: 'https://app.kairos_crm.com',
         helpCenterURL: '',
       };
       expect(
         buildPortalArticleURL('handbook', 'culture', 'fr', 'article-slug')
-      ).toEqual('https://app.kairos-crm.com/hc/handbook/articles/article-slug');
+      ).toEqual('https://app.kairos_crm.com/hc/handbook/articles/article-slug');
     });
   });
 

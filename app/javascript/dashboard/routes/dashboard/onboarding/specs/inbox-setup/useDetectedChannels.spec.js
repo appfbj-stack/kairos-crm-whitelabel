@@ -1,4 +1,4 @@
-import { defineComponent, h } from 'vue';
+﻿import { defineComponent, h } from 'vue';
 import { createStore } from 'vuex';
 import { mount } from '@vue/test-utils';
 import { useRoute } from 'vue-router';
@@ -64,7 +64,7 @@ beforeEach(() => {
   useRoute.mockReturnValue({ params: { accountId: '1' } });
   // Configure the installation OAuth credentials so detected channels aren't
   // hidden by the config gate; individual tests clear this to assert hiding.
-  window.kairos-crmConfig = {
+  window.kairos_crmConfig = {
     fbAppId: 'fb',
     instagramAppId: 'ig',
     tiktokAppId: 'tt',
@@ -74,7 +74,7 @@ beforeEach(() => {
 });
 
 afterEach(() => {
-  delete window.kairos-crmConfig;
+  delete window.kairos_crmConfig;
 });
 
 describe('useDetectedChannels', () => {
@@ -188,7 +188,7 @@ describe('useDetectedChannels', () => {
     });
 
     it('gates the default suggestions by installation config, keeping the list non-empty', () => {
-      window.kairos-crmConfig = {}; // no OAuth credentials configured
+      window.kairos_crmConfig = {}; // no OAuth credentials configured
       const { displayedChannels } = mountComposable({ brandInfo: undefined });
 
       // Only the credential-free defaults survive (Telegram, LINE).
@@ -199,7 +199,7 @@ describe('useDetectedChannels', () => {
     });
 
     it('hides detected channels whose installation OAuth credentials are missing', () => {
-      window.kairos-crmConfig = {}; // nothing configured
+      window.kairos_crmConfig = {}; // nothing configured
       const { displayedChannels } = mountComposable({
         brandInfo: {
           socials: [
@@ -209,7 +209,7 @@ describe('useDetectedChannels', () => {
         },
       });
 
-      // Facebook needs fbAppId (absent → hidden); LINE needs no install credential.
+      // Facebook needs fbAppId (absent â†’ hidden); LINE needs no install credential.
       expect(displayedChannels.value.map(channel => channel.type)).toEqual([
         'line',
       ]);
@@ -258,7 +258,7 @@ describe('useDetectedChannels', () => {
 
   describe('remainingChannels', () => {
     it('returns the platforms not already shown as default rows', () => {
-      // Nothing detected → displayed falls back to the defaults (WhatsApp,
+      // Nothing detected â†’ displayed falls back to the defaults (WhatsApp,
       // Facebook, Instagram), so the footer previews the remaining platforms.
       const { remainingChannels } = mountComposable({ brandInfo: {} });
 
@@ -296,11 +296,11 @@ describe('useDetectedChannels', () => {
     });
 
     it('excludes channels whose installation OAuth credentials are missing', () => {
-      window.kairos-crmConfig = {}; // nothing configured
+      window.kairos_crmConfig = {}; // nothing configured
       const { remainingChannels } = mountComposable({ brandInfo: {} });
 
       // The only configured channels (Telegram, LINE) are shown as default rows,
-      // and every other platform is gated out — so nothing remains for the footer.
+      // and every other platform is gated out â€” so nothing remains for the footer.
       expect(remainingChannels.value).toEqual([]);
     });
   });

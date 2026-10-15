@@ -260,7 +260,7 @@ class Message < ApplicationRecord
     #   - Adding an extra feature flag here would cause confusion.
     #   - If the user has configured Elasticsearch, enabling `advanced_search`
     #     should automatically work without any additional flags.
-    return false if KairosCrmApp.kairos-crm_cloud? && !account.feature_enabled?('advanced_search_indexing')
+    return false if KairosCrmApp.kairos_crm_cloud? && !account.feature_enabled?('advanced_search_indexing')
 
     true
   end

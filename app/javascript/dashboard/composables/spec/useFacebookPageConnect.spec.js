@@ -1,4 +1,4 @@
-import { useFacebookPageConnect } from '../useFacebookPageConnect';
+﻿import { useFacebookPageConnect } from '../useFacebookPageConnect';
 import { useMapGetter } from 'dashboard/composables/store';
 import ChannelApi from 'dashboard/api/channels';
 import { setupFacebookSdk } from 'dashboard/routes/dashboard/settings/inbox/channels/whatsapp/utils';
@@ -50,7 +50,7 @@ const connected = {
 describe('useFacebookPageConnect', () => {
   beforeEach(() => {
     vi.clearAllMocks();
-    window.kairos-crmConfig = { fbAppId: 'fb-app', fbApiVersion: 'v22.0' };
+    window.kairos_crmConfig = { fbAppId: 'fb-app', fbApiVersion: 'v22.0' };
     useMapGetter.mockReturnValue({ value: ACCOUNT_ID });
     setupFacebookSdk.mockResolvedValue();
     ChannelApi.fetchFacebookPages.mockResolvedValue(pagesResponse);

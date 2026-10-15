@@ -1,4 +1,4 @@
-import { computed, unref } from 'vue';
+﻿import { computed, unref } from 'vue';
 import {
   isOnline as checkIsOnline,
   isInWorkingHours as checkInWorkingHours,
@@ -20,7 +20,7 @@ export function useAvailability(agents = []) {
   // (e.g., after API response updates the Vuex store).
   const availableAgents = computed(() => unref(agents));
 
-  const channelConfig = computed(() => window.kairos-crmWebChannel || {});
+  const channelConfig = computed(() => window.kairos_crmWebChannel || {});
 
   const inboxConfig = computed(() => ({
     workingHours: channelConfig.value.workingHours?.map(useCamelCase) || [],

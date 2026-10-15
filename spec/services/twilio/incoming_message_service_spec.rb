@@ -1,4 +1,4 @@
-require 'rails_helper'
+﻿require 'rails_helper'
 
 describe Twilio::IncomingMessageService do
   let!(:account) { create(:account) }
@@ -12,7 +12,7 @@ describe Twilio::IncomingMessageService do
 
   before do
     allow(Resolv).to receive(:getaddresses).and_call_original
-    allow(Resolv).to receive(:getaddresses).with('kairos-crm-assets.local').and_return(['93.184.216.34'])
+    allow(Resolv).to receive(:getaddresses).with('kairos_crm-assets.local').and_return(['93.184.216.34'])
   end
 
   describe '#perform' do
@@ -615,13 +615,13 @@ describe Twilio::IncomingMessageService do
             AccountSid: 'ACxxx',
             MessagingServiceSid: whatsapp_twilio_channel.messaging_service_sid,
             Body: 'Test message from Brazil',
-            ProfileName: 'João Silva'
+            ProfileName: 'JoÃ£o Silva'
           }
 
           described_class.new(params: params).perform
 
           expect(whatsapp_twilio_channel.inbox.conversations.count).not_to eq(0)
-          expect(whatsapp_twilio_channel.inbox.contacts.first.name).to eq('João Silva')
+          expect(whatsapp_twilio_channel.inbox.contacts.first.name).to eq('JoÃ£o Silva')
           expect(whatsapp_twilio_channel.inbox.messages.first.content).to eq('Test message from Brazil')
           expect(whatsapp_twilio_channel.inbox.contact_inboxes.first.source_id).to eq('whatsapp:+5541988887777')
         end
@@ -639,7 +639,7 @@ describe Twilio::IncomingMessageService do
             AccountSid: 'ACxxx',
             MessagingServiceSid: whatsapp_twilio_channel.messaging_service_sid,
             Body: 'Another message from Brazil',
-            ProfileName: 'João Silva'
+            ProfileName: 'JoÃ£o Silva'
           }
 
           described_class.new(params: params).perform
@@ -694,7 +694,7 @@ describe Twilio::IncomingMessageService do
             AccountSid: 'ACxxx',
             MessagingServiceSid: whatsapp_twilio_channel.messaging_service_sid,
             Body: 'Test message from Brazil',
-            ProfileName: 'João Silva'
+            ProfileName: 'JoÃ£o Silva'
           }
 
           described_class.new(params: params).perform
@@ -796,7 +796,7 @@ describe Twilio::IncomingMessageService do
             AccountSid: 'ACxxx',
             MessagingServiceSid: whatsapp_twilio_channel.messaging_service_sid,
             Body: 'Test message from Argentina',
-            ProfileName: 'Ana García'
+            ProfileName: 'Ana GarcÃ­a'
           }
 
           described_class.new(params: params).perform
@@ -814,13 +814,13 @@ describe Twilio::IncomingMessageService do
             AccountSid: 'ACxxx',
             MessagingServiceSid: whatsapp_twilio_channel.messaging_service_sid,
             Body: 'Test message from Argentina',
-            ProfileName: 'Diego López'
+            ProfileName: 'Diego LÃ³pez'
           }
 
           described_class.new(params: params).perform
 
           expect(whatsapp_twilio_channel.inbox.conversations.count).not_to eq(0)
-          expect(whatsapp_twilio_channel.inbox.contacts.first.name).to eq('Diego López')
+          expect(whatsapp_twilio_channel.inbox.contacts.first.name).to eq('Diego LÃ³pez')
           expect(whatsapp_twilio_channel.inbox.messages.first.content).to eq('Test message from Argentina')
           expect(whatsapp_twilio_channel.inbox.contact_inboxes.first.source_id).to eq('whatsapp:+541123456789')
         end

@@ -1,4 +1,4 @@
-import Cookies from 'js-cookie';
+﻿import Cookies from 'js-cookie';
 import {
   addClasses,
   loadCSS,
@@ -68,14 +68,14 @@ export const IFrameHelper = {
     iframe.src = widgetUrl;
     iframe.allow =
       'camera;microphone;fullscreen;display-capture;picture-in-picture;clipboard-write;';
-    iframe.id = 'kairos-crm_live_chat_widget';
+    iframe.id = 'kairos_crm_live_chat_widget';
     iframe.style.visibility = 'hidden';
 
-    let holderClassName = `kairos-widget-holder kairos--hide kairos-elements--${window.$kairos-crm.position}`;
-    if (window.$kairos-crm.hideMessageBubble) {
+    let holderClassName = `kairos-widget-holder kairos--hide kairos-elements--${window.$kairos_crm.position}`;
+    if (window.$kairos_crm.hideMessageBubble) {
       holderClassName += ` kairos-widget--without-bubble`;
     }
-    if (isFlatWidgetStyle(window.$kairos-crm.widgetStyle)) {
+    if (isFlatWidgetStyle(window.$kairos_crm.widgetStyle)) {
       holderClassName += ` kairos-widget-holder--flat`;
     }
 
@@ -88,12 +88,12 @@ export const IFrameHelper = {
     IFrameHelper.initWindowSizeListener();
     IFrameHelper.preventDefaultScroll();
   },
-  getAppFrame: () => document.getElementById('kairos-crm_live_chat_widget'),
+  getAppFrame: () => document.getElementById('kairos_crm_live_chat_widget'),
   getBubbleHolder: () => document.getElementsByClassName('kairos--bubble-holder'),
   sendMessage: (key, value) => {
     const element = IFrameHelper.getAppFrame();
     element.contentWindow.postMessage(
-      `kairos-crm-widget:${JSON.stringify({ event: key, ...value })}`,
+      `kairos_crm-widget:${JSON.stringify({ event: key, ...value })}`,
       '*'
     );
   },
@@ -101,11 +101,11 @@ export const IFrameHelper = {
     window.onmessage = e => {
       if (
         typeof e.data !== 'string' ||
-        e.data.indexOf('kairos-crm-widget:') !== 0
+        e.data.indexOf('kairos_crm-widget:') !== 0
       ) {
         return;
       }
-      const message = JSON.parse(e.data.replace('kairos-crm-widget:', ''));
+      const message = JSON.parse(e.data.replace('kairos_crm-widget:', ''));
       if (typeof IFrameHelper.events[message.event] === 'function') {
         IFrameHelper.events[message.event](message);
       }
@@ -139,7 +139,7 @@ export const IFrameHelper = {
   },
 
   setupAudioListeners: () => {
-    const { baseUrl = '' } = window.$kairos-crm;
+    const { baseUrl = '' } = window.$kairos_crm;
     getAlertAudio(baseUrl, { type: 'widget', alertTone: 'ding' }).then(() =>
       initOnEvents.forEach(event => {
         document.removeEventListener(
@@ -153,33 +153,33 @@ export const IFrameHelper = {
 
   events: {
     loaded: message => {
-      updateAuthCookie(message.config.authToken, window.$kairos-crm.baseDomain);
-      window.$kairos-crm.hasLoaded = true;
+      updateAuthCookie(message.config.authToken, window.$kairos_crm.baseDomain);
+      window.$kairos_crm.hasLoaded = true;
       const campaignsSnoozedTill = Cookies.get('cw_snooze_campaigns_till');
       IFrameHelper.sendMessage('config-set', {
-        locale: window.$kairos-crm.locale,
-        position: window.$kairos-crm.position,
-        hideMessageBubble: window.$kairos-crm.hideMessageBubble,
-        showPopoutButton: window.$kairos-crm.showPopoutButton,
-        widgetStyle: window.$kairos-crm.widgetStyle,
-        darkMode: window.$kairos-crm.darkMode,
-        showUnreadMessagesDialog: window.$kairos-crm.showUnreadMessagesDialog,
+        locale: window.$kairos_crm.locale,
+        position: window.$kairos_crm.position,
+        hideMessageBubble: window.$kairos_crm.hideMessageBubble,
+        showPopoutButton: window.$kairos_crm.showPopoutButton,
+        widgetStyle: window.$kairos_crm.widgetStyle,
+        darkMode: window.$kairos_crm.darkMode,
+        showUnreadMessagesDialog: window.$kairos_crm.showUnreadMessagesDialog,
         campaignsSnoozedTill,
-        welcomeTitle: window.$kairos-crm.welcomeTitle,
-        welcomeDescription: window.$kairos-crm.welcomeDescription,
-        availableMessage: window.$kairos-crm.availableMessage,
-        unavailableMessage: window.$kairos-crm.unavailableMessage,
-        enableFileUpload: window.$kairos-crm.enableFileUpload,
-        enableEmojiPicker: window.$kairos-crm.enableEmojiPicker,
-        enableEndConversation: window.$kairos-crm.enableEndConversation,
+        welcomeTitle: window.$kairos_crm.welcomeTitle,
+        welcomeDescription: window.$kairos_crm.welcomeDescription,
+        availableMessage: window.$kairos_crm.availableMessage,
+        unavailableMessage: window.$kairos_crm.unavailableMessage,
+        enableFileUpload: window.$kairos_crm.enableFileUpload,
+        enableEmojiPicker: window.$kairos_crm.enableEmojiPicker,
+        enableEndConversation: window.$kairos_crm.enableEndConversation,
       });
       IFrameHelper.onLoad({
         widgetColor: message.config.channelConfig.widgetColor,
       });
       IFrameHelper.toggleCloseButton();
 
-      if (window.$kairos-crm.user) {
-        IFrameHelper.sendMessage('set-user', window.$kairos-crm.user);
+      if (window.$kairos_crm.user) {
+        IFrameHelper.sendMessage('set-user', window.$kairos_crm.user);
       }
 
       window.playAudioAlert = () => {};
@@ -188,7 +188,7 @@ export const IFrameHelper = {
         document.addEventListener(e, IFrameHelper.setupAudioListeners, false);
       });
 
-      if (!window.$kairos-crm.resetTriggered) {
+      if (!window.$kairos_crm.resetTriggered) {
         dispatchWindowEvent({ eventName: KAIROS_CRM_READY });
       }
     },
@@ -203,15 +203,15 @@ export const IFrameHelper = {
       dispatchWindowEvent({ eventName, data });
     },
     setBubbleLabel(message) {
-      setBubbleText(window.$kairos-crm.launcherTitle || message.label);
+      setBubbleText(window.$kairos_crm.launcherTitle || message.label);
     },
 
     setAuthCookie({ data: { widgetAuthToken } }) {
-      updateAuthCookie(widgetAuthToken, window.$kairos-crm.baseDomain);
+      updateAuthCookie(widgetAuthToken, window.$kairos_crm.baseDomain);
     },
 
     setCampaignReadOn() {
-      updateCampaignReadStatus(window.$kairos-crm.baseDomain);
+      updateCampaignReadStatus(window.$kairos_crm.baseDomain);
     },
 
     postback(data) {
@@ -234,7 +234,7 @@ export const IFrameHelper = {
 
     popoutChatWindow: ({ baseUrl, websiteToken, locale }) => {
       const cwCookie = Cookies.get('cw_conversation');
-      window.$kairos-crm.toggle('close');
+      window.$kairos_crm.toggle('close');
       popoutChatWindow(baseUrl, websiteToken, locale, cwCookie);
     },
 
@@ -268,7 +268,7 @@ export const IFrameHelper = {
 
     resetUnreadMode: () => removeUnreadClass(),
     handleNotificationDot: event => {
-      if (window.$kairos-crm.hideMessageBubble) {
+      if (window.$kairos_crm.hideMessageBubble) {
         return;
       }
 
@@ -298,18 +298,18 @@ export const IFrameHelper = {
   onLoad: ({ widgetColor }) => {
     const iframe = IFrameHelper.getAppFrame();
     iframe.style.visibility = '';
-    iframe.setAttribute('id', `kairos-crm_live_chat_widget`);
+    iframe.setAttribute('id', `kairos_crm_live_chat_widget`);
 
     if (IFrameHelper.getBubbleHolder().length) {
       return;
     }
-    createBubbleHolder(window.$kairos-crm.hideMessageBubble);
+    createBubbleHolder(window.$kairos_crm.hideMessageBubble);
     onLocationChangeListener();
 
     let className = 'kairos-widget-bubble';
-    let closeBtnClassName = `kairos-elements--${window.$kairos-crm.position} kairos-widget-bubble kairos--close kairos--hide`;
+    let closeBtnClassName = `kairos-elements--${window.$kairos_crm.position} kairos-widget-bubble kairos--close kairos--hide`;
 
-    if (isFlatWidgetStyle(window.$kairos-crm.widgetStyle)) {
+    if (isFlatWidgetStyle(window.$kairos_crm.widgetStyle)) {
       className += ' kairos-widget-bubble--flat';
       closeBtnClassName += ' kairos-widget-bubble--flat';
     }

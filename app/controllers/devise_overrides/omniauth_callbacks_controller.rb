@@ -1,4 +1,4 @@
-class DeviseOverrides::OmniauthCallbacksController < DeviseTokenAuth::OmniauthCallbacksController
+﻿class DeviseOverrides::OmniauthCallbacksController < DeviseTokenAuth::OmniauthCallbacksController
   include EmailHelper
 
   def omniauth_success
@@ -36,7 +36,7 @@ class DeviseOverrides::OmniauthCallbacksController < DeviseTokenAuth::OmniauthCa
     encoded_email = ERB::Util.url_encode(@resource.email)
     params = { email: encoded_email, sso_auth_token: @resource.generate_sso_auth_token }.to_query
 
-    mobile_deep_link_base = GlobalConfigService.load('MOBILE_DEEP_LINK_BASE', 'kairos-crmapp')
+    mobile_deep_link_base = GlobalConfigService.load('MOBILE_DEEP_LINK_BASE', 'kairos_crmapp')
     redirect_to "#{mobile_deep_link_base}://auth/saml?#{params}", allow_other_host: true
   end
 

@@ -1,4 +1,4 @@
-require 'rails_helper'
+﻿require 'rails_helper'
 
 RSpec.describe KairosCrmHub do
   describe '.base_url' do
@@ -6,7 +6,7 @@ RSpec.describe KairosCrmHub do
       with_modified_env KAIROS_CRM_HUB_URL: 'https://custom.example.com' do
         allow(Rails).to receive(:env).and_return(ActiveSupport::StringInquirer.new('production'))
 
-        expect(described_class.base_url).to eq('https://hub.2.kairos-crm.com')
+        expect(described_class.base_url).to eq('https://hub.2.kairos_crm.com')
       end
     end
 

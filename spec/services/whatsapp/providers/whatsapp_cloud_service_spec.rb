@@ -294,7 +294,7 @@ describe Whatsapp::Providers::WhatsappCloudService do
       context 'with a business management token' do
         let(:business_management_token) { 'business-token' }
 
-        before { allow(KairosCrmApp).to receive(:kairos-crm_cloud?).and_return(true) }
+        before { allow(KairosCrmApp).to receive(:kairos_crm_cloud?).and_return(true) }
 
         it 'uses it instead of the provider API key' do
           request = stub_request(
@@ -311,7 +311,7 @@ describe Whatsapp::Providers::WhatsappCloudService do
       end
 
       context 'without a business management token' do
-        before { allow(KairosCrmApp).to receive(:kairos-crm_cloud?).and_return(true) }
+        before { allow(KairosCrmApp).to receive(:kairos_crm_cloud?).and_return(true) }
 
         it 'uses the provider API key' do
           request = stub_request(
@@ -330,7 +330,7 @@ describe Whatsapp::Providers::WhatsappCloudService do
       context 'with a stored business management token outside Kairos CRM Cloud' do
         let(:business_management_token) { 'business-token' }
 
-        before { allow(KairosCrmApp).to receive(:kairos-crm_cloud?).and_return(false) }
+        before { allow(KairosCrmApp).to receive(:kairos_crm_cloud?).and_return(false) }
 
         it 'uses the provider API key' do
           request = stub_request(

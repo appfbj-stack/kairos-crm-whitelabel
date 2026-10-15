@@ -1,4 +1,4 @@
-<script>
+﻿<script>
 import LoadingState from 'dashboard/components/widgets/LoadingState.vue';
 
 export default {
@@ -61,7 +61,7 @@ export default {
   methods: {
     triggerEvent(event) {
       if (!this.isVisible) return;
-      if (event.data === 'kairos-crm-dashboard-app:fetch-info') {
+      if (event.data === 'kairos_crm-dashboard-app:fetch-info') {
         this.onIframeLoad(0);
       }
     },

@@ -1,4 +1,4 @@
-require 'rails_helper'
+﻿require 'rails_helper'
 
 describe PortalHelper do
   describe '#html_lang_attribute' do
@@ -287,24 +287,24 @@ describe PortalHelper do
 
   describe '#generate_portal_brand_url' do
     it 'builds URL with UTM params and referer host as source (happy path)' do
-      result = helper.generate_portal_brand_url('https://brand.example.com', 'https://app.kairos-crm.com/some/page')
+      result = helper.generate_portal_brand_url('https://brand.example.com', 'https://app.kairos_crm.com/some/page')
       uri = URI.parse(result)
       params = Rack::Utils.parse_query(uri.query)
       expect(uri.scheme).to eq('https')
       expect(uri.host).to eq('brand.example.com')
       expect(params['utm_medium']).to eq('helpcenter')
       expect(params['utm_campaign']).to eq('branding')
-      expect(params['utm_source']).to eq('app.kairos-crm.com')
+      expect(params['utm_source']).to eq('app.kairos_crm.com')
     end
 
     it 'returns utm string when brand_url is nil or empty' do
       expect(helper.generate_portal_brand_url(nil,
-                                              'https://app.kairos-crm.com')).to eq(
-                                                '?utm_campaign=branding&utm_medium=helpcenter&utm_source=app.kairos-crm.com'
+                                              'https://app.kairos_crm.com')).to eq(
+                                                '?utm_campaign=branding&utm_medium=helpcenter&utm_source=app.kairos_crm.com'
                                               )
       expect(helper.generate_portal_brand_url('',
-                                              'https://app.kairos-crm.com')).to eq(
-                                                '?utm_campaign=branding&utm_medium=helpcenter&utm_source=app.kairos-crm.com'
+                                              'https://app.kairos_crm.com')).to eq(
+                                                '?utm_campaign=branding&utm_medium=helpcenter&utm_source=app.kairos_crm.com'
                                               )
     end
 

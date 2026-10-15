@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+﻿# frozen_string_literal: true
 
 FactoryBot.define do
   factory :incoming_ig_text_message, class: Hash do
@@ -13,7 +13,7 @@ FactoryBot.define do
                 'id': 'Sender-id-1'
               },
               'recipient': {
-                'id': 'kairos-crm-app-user-id-1'
+                'id': 'kairos_crm-app-user-id-1'
               },
               'timestamp': '2021-09-08T06:34:04+0000',
               'message': {

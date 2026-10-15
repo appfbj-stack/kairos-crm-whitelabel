@@ -1,4 +1,4 @@
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+﻿<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
 <body>
 </body>
 
@@ -13,7 +13,7 @@
 %>
 <script>
 
-window.kairos-crmSettings = {
+window.kairos_crmSettings = {
   hideMessageBubble: false,
   // showUnreadMessagesDialog: false,
   // baseDomain: '.loca.lt',
@@ -33,17 +33,17 @@ window.kairos-crmSettings = {
   g.async = true;
   s.parentNode.insertBefore(g,s);
   g.onload=function(){
-    window.kairos-crmSDK.run({
+    window.kairos_crmSDK.run({
       websiteToken: '<%= @web_widget.website_token %>',
       baseUrl: BASE_URL
     })
   }
 })(document,"script");
 
-window.addEventListener('kairos-crm:ready', function() {
-  console.log('kairos-crm:ready', window.$kairos-crm);
+window.addEventListener('kairos_crm:ready', function() {
+  console.log('kairos_crm:ready', window.$kairos_crm);
   if (window.location.search.includes('setUser')) {
-    window.$kairos-crm.setUser('<%= user_id %>', {
+    window.$kairos_crm.setUser('<%= user_id %>', {
       identifier_hash: '<%= user_hash %>',
       email: 'jane@example.com',
       name: 'Jane Doe',
@@ -52,28 +52,28 @@ window.addEventListener('kairos-crm:ready', function() {
   }
 })
 
-window.addEventListener('kairos-crm:error', function(e) {
-  console.log('kairos-crm:error', e.detail)
+window.addEventListener('kairos_crm:error', function(e) {
+  console.log('kairos_crm:error', e.detail)
 })
 
 
-window.addEventListener('kairos-crm:on-message', function(e) {
-  console.log('kairos-crm:on-message', e.detail)
+window.addEventListener('kairos_crm:on-message', function(e) {
+  console.log('kairos_crm:on-message', e.detail)
 })
 
-window.addEventListener('kairos-crm:postback', function(e) {
-  console.log('kairos-crm:postback', e.detail)
+window.addEventListener('kairos_crm:postback', function(e) {
+  console.log('kairos_crm:postback', e.detail)
 })
 
-window.addEventListener('kairos-crm:opened', function() {
-  console.log('kairos-crm:opened')
+window.addEventListener('kairos_crm:opened', function() {
+  console.log('kairos_crm:opened')
 })
 
-window.addEventListener('kairos-crm:closed', function() {
-  console.log('kairos-crm:closed')
+window.addEventListener('kairos_crm:closed', function() {
+  console.log('kairos_crm:closed')
 })
 
-window.addEventListener('kairos-crm:on-start-conversation', function(e) {
-  console.log('kairos-crm:on-start-conversation', e.detail)
+window.addEventListener('kairos_crm:on-start-conversation', function(e) {
+  console.log('kairos_crm:on-start-conversation', e.detail)
 })
 </script>

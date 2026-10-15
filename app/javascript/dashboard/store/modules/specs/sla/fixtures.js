@@ -1,9 +1,9 @@
-export default [
+﻿export default [
   {
     id: 1,
     name: 'Premium SLA',
     description:
-      'SLA for kairos-crm cloud premium and self-hosted premium customers.  SLA for kairos-crm cloud premium and self-hosted premium customers',
+      'SLA for kairos_crm cloud premium and self-hosted premium customers.  SLA for kairos_crm cloud premium and self-hosted premium customers',
     first_response_time_threshold: 14400,
     next_response_time_threshold: 18000,
     resolution_time_threshold: 86400,
@@ -13,7 +13,7 @@ export default [
     id: 2,
     name: 'Enterprise SLA',
     description:
-      'SLA for kairos-crm enterprise and self-hosted enterprise customers.',
+      'SLA for kairos_crm enterprise and self-hosted enterprise customers.',
     first_response_time_threshold: 600,
     next_response_time_threshold: 2400,
     resolution_time_threshold: 3600,

@@ -1,4 +1,4 @@
-<script setup>
+﻿<script setup>
 import { computed } from 'vue';
 import { useToggle } from '@vueuse/core';
 import { useI18n } from 'vue-i18n';
@@ -178,7 +178,7 @@ const handleDelete = attribute => {
       class="mx-auto my-8"
       feature-prefix="CONVERSATION_WORKFLOW.REQUIRED_ATTRIBUTES"
       :i18n-key="i18nKey"
-      :is-on-kairos-crm-cloud="isOnKairosCrmCloud"
+      :is-on-kairos_crm-cloud="isOnKairosCrmCloud"
       :is-super-admin="isSuperAdmin"
       @upgrade="goToBillingSettings"
     />

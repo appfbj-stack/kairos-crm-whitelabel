@@ -1,4 +1,4 @@
-<script setup>
+﻿<script setup>
 import { ref, computed } from 'vue';
 import ForwardToOption from './emailChannels/ForwardToOption.vue';
 import Microsoft from './emailChannels/Microsoft.vue';
@@ -29,7 +29,7 @@ const emailProviderList = computed(() => {
     {
       title: t('INBOX_MGMT.EMAIL_PROVIDERS.GOOGLE.TITLE'),
       description: t('INBOX_MGMT.EMAIL_PROVIDERS.GOOGLE.DESCRIPTION'),
-      isEnabled: !!window.kairos-crmConfig.googleOAuthClientId,
+      isEnabled: !!window.kairos_crmConfig.googleOAuthClientId,
       key: 'google',
       icon: 'i-kairos-gmail',
     },

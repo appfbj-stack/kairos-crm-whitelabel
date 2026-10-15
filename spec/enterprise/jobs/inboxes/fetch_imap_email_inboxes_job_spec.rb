@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Inboxes::FetchImapEmailInboxesJob do
-  context 'when kairos-crm_cloud is enabled' do
+  context 'when kairos_crm_cloud is enabled' do
     let(:account) { create(:account) }
     let(:premium_account) { create(:account, custom_attributes: { plan_name: 'Startups' }) }
     let(:imap_email_channel) { create(:channel_email, imap_enabled: true, account: account) }

@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+﻿# frozen_string_literal: true
 
 require 'rails_helper'
 require Rails.root.join 'spec/models/concerns/liquidable_shared.rb'
@@ -667,7 +667,7 @@ RSpec.describe Message do
         end
 
         it 'returns only the base content without URL when survey_url stored separately' do
-          message.content_attributes = { 'survey_url' => 'https://app.kairos-crm.com/survey/responses/12345' }
+          message.content_attributes = { 'survey_url' => 'https://app.kairos_crm.com/survey/responses/12345' }
           expect(message.content).to eq('Rate your experience')
         end
       end
@@ -774,9 +774,9 @@ RSpec.describe Message do
       end
     end
 
-    context 'when advanced search feature is not enabled for account on kairos-crm cloud' do
+    context 'when advanced search feature is not enabled for account on kairos_crm cloud' do
       before do
-        allow(KairosCrmApp).to receive(:kairos-crm_cloud?).and_return(true)
+        allow(KairosCrmApp).to receive(:kairos_crm_cloud?).and_return(true)
         account.disable_features('advanced_search_indexing')
       end
 
@@ -787,7 +787,7 @@ RSpec.describe Message do
 
     context 'when advanced search feature is not enabled for account on self-hosted' do
       before do
-        allow(KairosCrmApp).to receive(:kairos-crm_cloud?).and_return(false)
+        allow(KairosCrmApp).to receive(:kairos_crm_cloud?).and_return(false)
         account.disable_features('advanced_search_indexing')
       end
 
@@ -853,7 +853,7 @@ RSpec.describe Message do
       end
 
       it 'does not call reindex_for_search for unpaid account on cloud' do
-        allow(KairosCrmApp).to receive(:kairos-crm_cloud?).and_return(true)
+        allow(KairosCrmApp).to receive(:kairos_crm_cloud?).and_return(true)
         account.disable_features('advanced_search_indexing')
         message = build(:message, conversation: conversation, account: account, message_type: :incoming)
         expect(message).not_to receive(:reindex_for_search)

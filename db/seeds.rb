@@ -1,4 +1,4 @@
-# loading installation configs
+﻿# loading installation configs
 GlobalConfig.clear_cache
 ConfigLoader.new.process
 
@@ -93,5 +93,5 @@ unless Rails.env.production?
   # csat
   Seeders::MessageSeeder.create_sample_csat_collect_message conversation
 
-  CannedResponse.create!(account: account, short_code: 'start', content: 'Hello welcome to kairos-crm.')
+  CannedResponse.create!(account: account, short_code: 'start', content: 'Hello welcome to kairos_crm.')
 end

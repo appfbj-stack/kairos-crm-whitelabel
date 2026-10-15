@@ -1,4 +1,4 @@
-export default {
+﻿export default {
   GRAVATAR_URL: 'https://www.gravatar.com/avatar/',
   ASSIGNEE_TYPE: {
     ME: 'me',
@@ -38,11 +38,11 @@ export default {
     CONDENSED: 'condensed',
     EXPANDED: 'expanded',
   },
-  DOCS_URL: 'https://www.kairos-crm.com/docs/product/',
+  DOCS_URL: 'https://www.kairos_crm.com/docs/product/',
   HELP_CENTER_DOCS_URL:
-    'https://www.kairos-crm.com/docs/product/others/help-center',
+    'https://www.kairos_crm.com/docs/product/others/help-center',
   TESTIMONIAL_URL:
-    'https://testimonials.cdn.kairos-crm.com/testimonial-content.json',
+    'https://testimonials.cdn.kairos_crm.com/testimonial-content.json',
   WHATSAPP_EMBEDDED_SIGNUP_DOCS_URL:
     'https://developers.facebook.com/docs/whatsapp/embedded-signup/custom-flows/onboarding-business-app-users#limitations',
   SMALL_SCREEN_BREAKPOINT: 768,
@@ -79,4 +79,4 @@ export default {
 };
 export const DEFAULT_REDIRECT_URL = '/app/';
 export const META_RESTRICTION_STATUS_URL =
-  'https://status.kairos-crm.com/incidents';
+  'https://status.kairos_crm.com/incidents';

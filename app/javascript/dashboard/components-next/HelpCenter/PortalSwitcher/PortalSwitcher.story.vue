@@ -1,4 +1,4 @@
-<script setup>
+﻿<script setup>
 import PortalSwitcher from './PortalSwitcher.vue';
 
 const portals = [
@@ -6,21 +6,21 @@ const portals = [
     id: 1,
     name: 'Kairos CRM Help Center',
     articles: 67,
-    domain: 'kairos-crm.help',
+    domain: 'kairos_crm.help',
     slug: 'help-center',
   },
   {
     id: 2,
     name: 'Kairos CRM Handbook',
     articles: 42,
-    domain: 'kairos-crm.help',
+    domain: 'kairos_crm.help',
     slug: 'handbook',
   },
   {
     id: 3,
     name: 'Developer Documentation',
     articles: 89,
-    domain: 'dev.kairos-crm.com',
+    domain: 'dev.kairos_crm.com',
     slug: 'docs',
   },
 ];

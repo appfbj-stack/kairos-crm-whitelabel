@@ -1,4 +1,4 @@
-require 'net/imap'
+﻿require 'net/imap'
 
 class Imap::BaseFetchEmailService
   MAX_MESSAGES_PER_SYNC = 500
@@ -120,7 +120,7 @@ class Imap::BaseFetchEmailService
 
   def build_message_id_entry(data)
     mail = build_mail_from_string(data.attr['BODY[HEADER]'])
-    return nil if MailPresenter.new(mail, channel.account).notification_email_from_kairos-crm?
+    return nil if MailPresenter.new(mail, channel.account).notification_email_from_kairos_crm?
 
     message_id = mail.message_id
     return nil if message_id.blank?

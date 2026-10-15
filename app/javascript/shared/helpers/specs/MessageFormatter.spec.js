@@ -1,19 +1,19 @@
-import MessageFormatter from '../MessageFormatter';
+﻿import MessageFormatter from '../MessageFormatter';
 
 describe('#MessageFormatter', () => {
   describe('content with links', () => {
     it('should format correctly', () => {
       const message =
-        'Kairos CRM is an opensource tool. [Kairos CRM](https://www.kairos-crm.com)';
+        'Kairos CRM is an opensource tool. [Kairos CRM](https://www.kairos_crm.com)';
       expect(new MessageFormatter(message).formattedMessage).toMatch(
-        '<p>Kairos CRM is an opensource tool. <a href="https://www.kairos-crm.com" class="link" rel="noreferrer noopener nofollow" target="_blank">Kairos CRM</a></p>'
+        '<p>Kairos CRM is an opensource tool. <a href="https://www.kairos_crm.com" class="link" rel="noreferrer noopener nofollow" target="_blank">Kairos CRM</a></p>'
       );
     });
     it('should format correctly', () => {
       const message =
-        'Kairos CRM is an opensource tool. https://www.kairos-crm.com';
+        'Kairos CRM is an opensource tool. https://www.kairos_crm.com';
       expect(new MessageFormatter(message).formattedMessage).toMatch(
-        '<p>Kairos CRM is an opensource tool. <a href="https://www.kairos-crm.com" class="link" rel="noreferrer noopener nofollow" target="_blank">https://www.kairos-crm.com</a></p>'
+        '<p>Kairos CRM is an opensource tool. <a href="https://www.kairos_crm.com" class="link" rel="noreferrer noopener nofollow" target="_blank">https://www.kairos_crm.com</a></p>'
       );
     });
     it('should not convert template variables to links when linkify is disabled', () => {
@@ -104,11 +104,11 @@ After`;
     });
 
     it('should add links to #tags', () => {
-      const message = '#kairos-crmapp is an opensource tool';
+      const message = '#kairos_crmapp is an opensource tool';
       expect(
         new MessageFormatter(message, true, false).formattedMessage
       ).toMatch(
-        '<p><a href="https://twitter.com/hashtag/chatwootapp" class="link" rel="noreferrer noopener nofollow" target="_blank">#kairos-crmapp</a> is an opensource tool</p>'
+        '<p><a href="https://twitter.com/hashtag/chatwootapp" class="link" rel="noreferrer noopener nofollow" target="_blank">#kairos_crmapp</a> is an opensource tool</p>'
       );
     });
   });
@@ -128,7 +128,7 @@ After`;
     });
 
     it('should add links to #tags', () => {
-      const message = '#kairos-crmapp is an opensource tool';
+      const message = '#kairos_crmapp is an opensource tool';
       expect(
         new MessageFormatter(message, false, true).formattedMessage
       ).toMatch(message);
@@ -138,9 +138,9 @@ After`;
   describe('plain text content', () => {
     it('returns the plain text without HTML', () => {
       const message =
-        '<b>Kairos CRM is an opensource tool. https://www.kairos-crm.com</b>';
+        '<b>Kairos CRM is an opensource tool. https://www.kairos_crm.com</b>';
       expect(new MessageFormatter(message).plainText).toMatch(
-        'Kairos CRM is an opensource tool. https://www.kairos-crm.com'
+        'Kairos CRM is an opensource tool. https://www.kairos_crm.com'
       );
     });
   });

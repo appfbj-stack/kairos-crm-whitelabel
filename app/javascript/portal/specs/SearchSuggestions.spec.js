@@ -1,4 +1,4 @@
-import { mount } from '@vue/test-utils';
+﻿import { mount } from '@vue/test-utils';
 import { describe, it, expect, vi } from 'vitest';
 import SearchSuggestions from '../components/SearchSuggestions.vue';
 
@@ -22,11 +22,11 @@ describe('SearchSuggestions', () => {
             id: 1,
             title: 'Kairos CRM Glossary',
             content: 'Access Token',
-            link: '/hc/user-guide/articles/1677141565-kairos-crm-glossary',
+            link: '/hc/user-guide/articles/1677141565-kairos_crm-glossary',
           },
         ],
         isLoading: false,
-        searchTerm: 'kairos-crm',
+        searchTerm: 'kairos_crm',
       },
       global: {
         directives: {
@@ -38,7 +38,7 @@ describe('SearchSuggestions', () => {
     });
 
     expect(wrapper.find('a').attributes('href')).toBe(
-      '/hc/user-guide/articles/1677141565-kairos-crm-glossary'
+      '/hc/user-guide/articles/1677141565-kairos_crm-glossary'
     );
   });
 });

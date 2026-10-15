@@ -1,4 +1,4 @@
-<script>
+﻿<script>
 import { mapGetters } from 'vuex';
 import { useAlert } from 'dashboard/composables';
 import { useUISettings } from 'dashboard/composables/useUISettings';
@@ -120,7 +120,7 @@ export default {
       );
     },
     isMfaEnabled() {
-      return parseBoolean(window.kairos-crmConfig?.isMfaEnabled);
+      return parseBoolean(window.kairos_crmConfig?.isMfaEnabled);
     },
   },
   mounted() {

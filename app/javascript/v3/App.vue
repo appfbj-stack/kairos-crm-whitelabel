@@ -1,4 +1,4 @@
-<script>
+﻿<script>
 import SnackbarContainer from './components/SnackBar/Container.vue';
 
 export default {
@@ -9,7 +9,7 @@ export default {
   mounted() {
     this.setColorTheme();
     this.listenToThemeChanges();
-    this.setLocale(window.kairos-crmConfig.selectedLocale);
+    this.setLocale(window.kairos_crmConfig.selectedLocale);
   },
   methods: {
     setColorTheme() {

@@ -1,4 +1,4 @@
-<script>
+﻿<script>
 import Banner from '../Banner.vue';
 import Branding from 'shared/components/Branding.vue';
 import ChatHeader from '../ChatHeader.vue';
@@ -20,7 +20,7 @@ export default {
       showPopoutButton: false,
       scrollPosition: 0,
       ticking: true,
-      disableBranding: window.kairos-crmWebChannel.disableBranding || false,
+      disableBranding: window.kairos_crmWebChannel.disableBranding || false,
       requestID: null,
     };
   },
@@ -30,7 +30,7 @@ export default {
       availableAgents: 'agent/availableAgents',
     }),
     portal() {
-      return window.kairos-crmWebChannel.portal;
+      return window.kairos_crmWebChannel.portal;
     },
     isHeaderCollapsed() {
       if (!this.hasIntroText) {

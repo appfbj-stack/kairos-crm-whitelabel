@@ -1,4 +1,4 @@
-import { KAIROS_PREFIX } from './constants';
+﻿import { KAIROS_PREFIX } from './constants';
 
 export const isEmptyObject = obj => {
   if (!obj) return true;
@@ -7,7 +7,7 @@ export const isEmptyObject = obj => {
 
 export const sendMessage = msg => {
   window.parent.postMessage(
-    `kairos-crm-widget:${JSON.stringify({ ...msg })}`,
+    `kairos_crm-widget:${JSON.stringify({ ...msg })}`,
     '*'
   );
 };
@@ -25,7 +25,7 @@ export const RNHelper = {
   isRNWebView: () => window.ReactNativeWebView,
   sendMessage: msg => {
     window.ReactNativeWebView.postMessage(
-      `kairos-crm-widget:${JSON.stringify({ ...msg })}`
+      `kairos_crm-widget:${JSON.stringify({ ...msg })}`
     );
   },
 };

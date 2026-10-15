@@ -1,9 +1,9 @@
-/**
+﻿/**
  * A function that provides access to various configuration values.
  * @returns {Object} An object containing configuration values.
  */
 export function useConfig() {
-  const config = window.kairos-crmConfig || {};
+  const config = window.kairos_crmConfig || {};
 
   /**
    * The host URL of the KairosCrm instance.

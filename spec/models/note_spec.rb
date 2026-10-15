@@ -1,4 +1,4 @@
-require 'rails_helper'
+﻿require 'rails_helper'
 
 RSpec.describe Note do
   describe 'validations' do
@@ -16,7 +16,7 @@ RSpec.describe Note do
   describe 'validates_factory' do
     it 'creates valid note object' do
       note = create(:note)
-      expect(note.content).to eq 'Hey welcome to kairos-crm'
+      expect(note.content).to eq 'Hey welcome to kairos_crm'
     end
   end
 end

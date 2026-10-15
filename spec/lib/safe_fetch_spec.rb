@@ -1,4 +1,4 @@
-require 'rails_helper'
+﻿require 'rails_helper'
 
 # `SafeFetch.fetch` is a custom method that requires a block (it yields a Result);
 # it is NOT `Hash#fetch`, so RuboCop's autocorrect to `fetch(url, nil)` would break the API.
@@ -422,8 +422,8 @@ RSpec.describe SafeFetch do
 
         expect(redirected_headers).to include(
           'content-type' => 'application/json',
-          'x-kairos-crm-delivery' => 'test-uuid',
-          'x-kairos-crm-signature' => 'sha256=test-signature'
+          'x-kairos_crm-delivery' => 'test-uuid',
+          'x-kairos_crm-signature' => 'sha256=test-signature'
         )
         expect(redirected_headers).not_to include('authorization', 'cookie')
       end

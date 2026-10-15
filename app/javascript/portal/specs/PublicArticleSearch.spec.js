@@ -1,4 +1,4 @@
-import { flushPromises, shallowMount } from '@vue/test-utils';
+﻿import { flushPromises, shallowMount } from '@vue/test-utils';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import PublicArticleSearch from '../components/PublicArticleSearch.vue';
 import ArticlesAPI from '../api/article';
@@ -66,25 +66,25 @@ describe('PublicArticleSearch', () => {
     ArticlesAPI.searchArticles.mockResolvedValue({ data: { payload: [] } });
     const wrapper = buildWrapper();
 
-    wrapper.vm.onUpdateSearchTerm('  kairos-crm  ');
+    wrapper.vm.onUpdateSearchTerm('  kairos_crm  ');
     vi.runAllTimers();
     await flushPromises();
 
     expect(ArticlesAPI.searchArticles).toHaveBeenCalledWith(
       'test-portal',
       'en',
-      'kairos-crm'
+      'kairos_crm'
     );
   });
 
   it('passes the trimmed search term to suggestions for highlighting', async () => {
     const wrapper = buildWrapper();
 
-    wrapper.vm.onUpdateSearchTerm('  kairos-crm  ');
+    wrapper.vm.onUpdateSearchTerm('  kairos_crm  ');
     await wrapper.vm.$nextTick();
 
     expect(
       wrapper.findComponent(SearchSuggestionsStub).props('searchTerm')
-    ).toBe('kairos-crm');
+    ).toBe('kairos_crm');
   });
 });

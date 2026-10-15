@@ -7,8 +7,8 @@ module Enterprise::Api::V1::AccountsSettings
   private
 
   # The upgrade banner is a self-hosted nudge; the managed cloud instance is always current.
-  def latest_kairos-crm_version
-    return if KairosCrmApp.kairos-crm_cloud?
+  def latest_kairos_crm_version
+    return if KairosCrmApp.kairos_crm_cloud?
 
     super
   end

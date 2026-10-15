@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+﻿# frozen_string_literal: true
 
 require 'rails_helper'
 
@@ -53,7 +53,7 @@ RSpec.describe 'Enterprise Portal API', type: :request do
       {  portal: {
         name: 'test_portal',
         slug: 'test_kbase',
-        custom_domain: 'https://support.kairos-crm.dev'
+        custom_domain: 'https://support.kairos_crm.dev'
       } }
     end
 

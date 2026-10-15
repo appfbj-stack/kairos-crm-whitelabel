@@ -1,4 +1,4 @@
-<script setup>
+﻿<script setup>
 import { computed } from 'vue';
 import BaseSettingsHeader from '../components/BaseSettingsHeader.vue';
 import SettingsLayout from '../SettingsLayout.vue';
@@ -11,7 +11,7 @@ import { FEATURE_FLAGS } from 'dashboard/featureFlags';
 const { shouldShow, shouldShowPaywall } = usePolicy();
 
 const allowedLoginMethods = computed(
-  () => window.kairos-crmConfig.allowedLoginMethods || ['email']
+  () => window.kairos_crmConfig.allowedLoginMethods || ['email']
 );
 
 const isSamlSsoEnabled = computed(() =>

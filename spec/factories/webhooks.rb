@@ -1,8 +1,8 @@
-FactoryBot.define do
+﻿FactoryBot.define do
   factory :webhook do
     account_id { 1 }
     inbox_id { 1 }
-    url { 'https://api.kairos-crm.com' }
+    url { 'https://api.kairos_crm.com' }
     name { 'My Webhook' }
     subscriptions do
       %w[

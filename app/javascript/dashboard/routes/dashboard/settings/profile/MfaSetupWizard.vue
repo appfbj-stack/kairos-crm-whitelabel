@@ -1,4 +1,4 @@
-<script setup>
+﻿<script setup>
 import { ref, watch } from 'vue';
 import { useI18n } from 'vue-i18n';
 import QRCode from 'qrcode';
@@ -104,7 +104,7 @@ const downloadBackupCodes = () => {
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
   a.href = url;
-  a.download = 'kairos-crm-backup-codes.txt';
+  a.download = 'kairos_crm-backup-codes.txt';
   a.click();
   URL.revokeObjectURL(url);
 };

@@ -1,4 +1,4 @@
-<script setup>
+﻿<script setup>
 import { computed } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { useRouter } from 'vue-router';
@@ -17,7 +17,7 @@ const globalConfig = useMapGetter('globalConfig/get');
 const enabledFeatures = computed(() => currentAccount.value?.features || {});
 
 const hasTiktokConfigured = computed(() => {
-  return window.kairos-crmConfig?.tiktokAppId;
+  return window.kairos_crmConfig?.tiktokAppId;
 });
 
 const channelList = computed(() => {

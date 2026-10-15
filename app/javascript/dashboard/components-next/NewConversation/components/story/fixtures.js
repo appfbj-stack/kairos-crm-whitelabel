@@ -1,4 +1,4 @@
-export const contacts = [
+﻿export const contacts = [
   {
     additionalAttributes: {
       city: 'kerala',
@@ -21,10 +21,10 @@ export const contacts = [
     phoneNumber: '+246232222222',
     identifier: null,
     thumbnail:
-      'https://sivin-tunnel.kairos-crm.dev/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBc0FCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c20b627b384f5981112e949b8414cd4d3e5912ee/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RTNKbGMybDZaVjkwYjE5bWFXeHNXd2RwQWZvdyIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--ebe60765d222d11ade39165eae49cc4b2de18d89/Avatar%201.20.41%E2%80%AFAM.png',
+      'https://sivin-tunnel.kairos_crm.dev/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBc0FCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c20b627b384f5981112e949b8414cd4d3e5912ee/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RTNKbGMybDZaVjkwYjE5bWFXeHNXd2RwQWZvdyIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--ebe60765d222d11ade39165eae49cc4b2de18d89/Avatar%201.20.41%E2%80%AFAM.png',
     customAttributes: {
       dateContact: '2024-02-01T00:00:00.000Z',
-      linkContact: 'https://staging.kairos-crm.com/app/accounts/3/contacts-new',
+      linkContact: 'https://staging.kairos_crm.com/app/accounts/3/contacts-new',
       listContact: 'Not spam',
       numberContact: '12',
     },
@@ -40,7 +40,7 @@ export const activeContact = {
   name: 'Abraham Ozlers',
   thumbnail: {
     name: 'Abraham Ozlers',
-    src: 'https://sivin-tunnel.kairos-crm.dev/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBc0FCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c20b627b384f5981112e949b8414cd4d3e5912ee/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RTNKbGMybDZaVjkwYjE5bWFXeHNXd2RwQWZvdyIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--ebe60765d222d11ade39165eae49cc4b2de18d89/Avatar%201.20.41%E2%80%AFAM.png',
+    src: 'https://sivin-tunnel.kairos_crm.dev/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBc0FCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c20b627b384f5981112e949b8414cd4d3e5912ee/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RTNKbGMybDZaVjkwYjE5bWFXeHNXd2RwQWZvdyIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--ebe60765d222d11ade39165eae49cc4b2de18d89/Avatar%201.20.41%E2%80%AFAM.png',
   },
   contactInboxes: [
     {

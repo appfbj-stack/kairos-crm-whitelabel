@@ -1,4 +1,4 @@
-import { getters } from '../../appConfig';
+﻿import { getters } from '../../appConfig';
 
 describe('#getters', () => {
   describe('#getWidgetColor', () => {
@@ -9,8 +9,8 @@ describe('#getters', () => {
   });
   describe('#getReferrerHost', () => {
     it('returns correct value', () => {
-      const state = { referrerHost: 'www.kairos-crm.com' };
-      expect(getters.getReferrerHost(state)).toEqual('www.kairos-crm.com');
+      const state = { referrerHost: 'www.kairos_crm.com' };
+      expect(getters.getReferrerHost(state)).toEqual('www.kairos_crm.com');
     });
   });
   describe('#getShowUnreadMessagesDialog', () => {

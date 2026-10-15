@@ -17,7 +17,7 @@ class Api::V1::AccountsController < Api::BaseController
               with: :render_error_response
 
   def show
-    @latest_kairos-crm_version = latest_kairos-crm_version
+    @latest_kairos_crm_version = latest_kairos_crm_version
     render 'api/v1/accounts/show', format: :json
   end
 
@@ -70,7 +70,7 @@ class Api::V1::AccountsController < Api::BaseController
 
   private
 
-  def latest_kairos-crm_version
+  def latest_kairos_crm_version
     Redis::Alfred.get(Redis::Alfred::LATEST_KAIROS_CRM_VERSION)
   end
 

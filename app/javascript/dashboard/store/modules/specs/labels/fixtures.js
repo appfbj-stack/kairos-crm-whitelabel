@@ -1,4 +1,4 @@
-export default [
+﻿export default [
   {
     id: 1,
     title: 'customer-support',
@@ -9,7 +9,7 @@ export default [
   {
     id: 4,
     title: 'saas-customer',
-    description: 'Customers who have account on app.kairos-crm.com',
+    description: 'Customers who have account on app.kairos_crm.com',
     color: '#A8DBCB',
     show_on_sidebar: false,
   },

@@ -1,4 +1,4 @@
-FactoryBot.define do
+﻿FactoryBot.define do
   factory :captain_custom_tool, class: 'Captain::CustomTool' do
     sequence(:title) { |n| "Custom Tool #{n}" }
     description { 'A custom HTTP tool for external API integration' }
@@ -31,7 +31,7 @@ FactoryBot.define do
     end
 
     trait :with_templates do
-      request_template { '{ "order_id": "{{ order_id }}", "source": "kairos-crm" }' }
+      request_template { '{ "order_id": "{{ order_id }}", "source": "kairos_crm" }' }
       response_template { 'Order status: {{ response.status }}' }
     end
 

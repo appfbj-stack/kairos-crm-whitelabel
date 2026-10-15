@@ -1,4 +1,4 @@
-import { addClasses, removeClasses, toggleClass } from './DOMHelpers';
+﻿import { addClasses, removeClasses, toggleClass } from './DOMHelpers';
 import { IFrameHelper } from './IFrameHelper';
 import { isExpandedView } from './settingsHelper';
 import {
@@ -19,14 +19,14 @@ export const closeBubble = document.createElement('button');
 export const notificationBubble = document.createElement('span');
 
 export const setBubbleText = bubbleText => {
-  if (isExpandedView(window.$kairos-crm.type)) {
+  if (isExpandedView(window.$kairos_crm.type)) {
     const textNode = document.getElementById('kairos-widget--expanded__text');
     textNode.innerText = bubbleText;
   }
 };
 
 export const createBubbleIcon = ({ className, path, target }) => {
-  let bubbleClassName = `${className} kairos-elements--${window.$kairos-crm.position}`;
+  let bubbleClassName = `${className} kairos-elements--${window.$kairos_crm.position}`;
   const bubbleIcon = document.createElementNS(
     'http://www.w3.org/2000/svg',
     'svg'
@@ -48,7 +48,7 @@ export const createBubbleIcon = ({ className, path, target }) => {
   bubbleIcon.appendChild(bubblePath);
   target.appendChild(bubbleIcon);
 
-  if (isExpandedView(window.$kairos-crm.type)) {
+  if (isExpandedView(window.$kairos_crm.type)) {
     const textNode = document.createElement('div');
     textNode.id = 'kairos-widget--expanded__text';
     textNode.innerText = '';
@@ -84,11 +84,11 @@ const handleBubbleToggle = newIsOpen => {
 
 export const onBubbleClick = (props = {}) => {
   const { toggleValue } = props;
-  const { isOpen } = window.$kairos-crm;
+  const { isOpen } = window.$kairos_crm;
   if (isOpen === toggleValue) return;
 
   const newIsOpen = toggleValue === undefined ? !isOpen : toggleValue;
-  window.$kairos-crm.isOpen = newIsOpen;
+  window.$kairos_crm.isOpen = newIsOpen;
 
   toggleClass(chatBubble, 'kairos--hide');
   toggleClass(closeBubble, 'kairos--hide');

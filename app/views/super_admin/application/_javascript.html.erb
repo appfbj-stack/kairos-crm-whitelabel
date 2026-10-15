@@ -1,4 +1,4 @@
-<%#
+﻿<%#
 # Javascript Partial
 
 This partial imports the necessary javascript on each page.
@@ -21,7 +21,7 @@ by providing a `content_for(:javascript)` block.
 <% end %>
 
 <script>
-window.kairos-crmSettings = {
+window.kairos_crmSettings = {
   hideMessageBubble: true,
 };
 
@@ -32,15 +32,15 @@ window.kairos-crmSettings = {
   g.async = true;
   s.parentNode.insertBefore(g,s);
   g.onload=function(){
-    window.kairos-crmSDK.run({
+    window.kairos_crmSDK.run({
       websiteToken: '<%= KairosCrmHub.support_config[:support_website_token] %>',
       baseUrl: '<%= KairosCrmHub.support_config[:support_script_url] %>'
     })
   }
 })(document,"script");
 
-window.addEventListener('kairos-crm:ready', function() {
-  window.$kairos-crm.setUser('<%= KairosCrmHub.installation_identifier %>', {
+window.addEventListener('kairos_crm:ready', function() {
+  window.$kairos_crm.setUser('<%= KairosCrmHub.installation_identifier %>', {
     identifier_hash: '<%= KairosCrmHub.support_config[:support_identifier_hash] %>',
     email: '<%= SuperAdmin.first.email %>',
     name: '<%= SuperAdmin.first.name %>'

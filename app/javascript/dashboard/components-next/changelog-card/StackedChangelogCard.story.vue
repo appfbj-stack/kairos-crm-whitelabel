@@ -1,15 +1,15 @@
-<script setup>
+﻿<script setup>
 import StackedChangelogCard from './StackedChangelogCard.vue';
 
 const imageCards = {
-  id: 'kairos-crm-captain',
+  id: 'kairos_crm-captain',
   title: 'Kairos CRM Captain',
   meta_title: 'Kairos CRM Captain',
   meta_description:
     'Watch how our latest feature can transform your workflow with powerful automation tools.',
-  slug: 'kairos-crm-captain',
+  slug: 'kairos_crm-captain',
   feature_image:
-    'https://www.kairos-crm.com/images/captain/captain_thumbnail.jpg',
+    'https://www.kairos_crm.com/images/captain/captain_thumbnail.jpg',
 };
 
 const handleReadMore = () => {

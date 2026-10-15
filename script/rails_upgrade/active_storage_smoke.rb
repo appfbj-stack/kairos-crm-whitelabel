@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+﻿# frozen_string_literal: true
 
 require 'json'
 require 'stringio'
@@ -9,7 +9,7 @@ unless ENV['RAILS_UPGRADE_ALLOW_STORAGE_WRITE'] == 'true'
 end
 
 service_name = ENV.fetch('RAILS_UPGRADE_STORAGE_SERVICE')
-payload = "kairos-crm-rails-upgrade-storage-smoke-#{SecureRandom.hex(16)}"
+payload = "kairos_crm-rails-upgrade-storage-smoke-#{SecureRandom.hex(16)}"
 blob = nil
 
 begin

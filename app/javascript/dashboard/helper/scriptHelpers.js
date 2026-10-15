@@ -1,4 +1,4 @@
-import {
+﻿import {
   ANALYTICS_IDENTITY,
   KAIROS_CRM_RESET,
   KAIROS_CRM_SET_USER,
@@ -36,19 +36,19 @@ export const initializeAudioAlerts = user => {
 
 export const initializeKairosCrmEvents = () => {
   emitter.on(KAIROS_CRM_RESET, () => {
-    if (window.$kairos-crm) {
-      window.$kairos-crm.reset();
+    if (window.$kairos_crm) {
+      window.$kairos_crm.reset();
     }
   });
   emitter.on(KAIROS_CRM_SET_USER, ({ user }) => {
-    if (window.$kairos-crm) {
-      window.$kairos-crm.setUser(user.email, {
+    if (window.$kairos_crm) {
+      window.$kairos_crm.setUser(user.email, {
         avatar_url: user.avatar_url,
         email: user.email,
         identifier_hash: user.hmac_identifier,
         name: user.name,
       });
-      window.$kairos-crm.setCustomAttributes({
+      window.$kairos_crm.setCustomAttributes({
         signedUpAt: user.created_at,
         cloudCustomer: 'true',
         account_id: user.account_id,

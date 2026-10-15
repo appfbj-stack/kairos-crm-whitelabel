@@ -1,8 +1,8 @@
-# frozen_string_literal: true
+﻿# frozen_string_literal: true
 
 FactoryBot.define do
   factory :note do
-    content { 'Hey welcome to kairos-crm' }
+    content { 'Hey welcome to kairos_crm' }
     account
     user
     contact

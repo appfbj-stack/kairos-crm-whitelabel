@@ -1,4 +1,4 @@
-<script setup>
+﻿<script setup>
 import { ref } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { toPng } from 'html-to-image';
@@ -122,7 +122,7 @@ const downloadImage = () => {
 
   const link = document.createElement('a');
   link.href = shareImageUrl.value;
-  link.download = `kairos-crm-year-in-review-${props.year}.png`;
+  link.download = `kairos_crm-year-in-review-${props.year}.png`;
   link.click();
 };
 
@@ -132,7 +132,7 @@ const shareImage = async () => {
   try {
     const response = await fetch(shareImageUrl.value);
     const blob = await response.blob();
-    const file = new File([blob], `kairos-crm-year-in-review-${props.year}.png`, {
+    const file = new File([blob], `kairos_crm-year-in-review-${props.year}.png`, {
       type: 'image/png',
     });
 

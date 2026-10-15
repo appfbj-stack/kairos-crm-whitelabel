@@ -7,7 +7,7 @@ module Enterprise::Concerns::Portal
 
   def enqueue_cloudflare_verification
     return if custom_domain.blank?
-    return unless KairosCrmApp.kairos-crm_cloud?
+    return unless KairosCrmApp.kairos_crm_cloud?
 
     Enterprise::CloudflareVerificationJob.perform_later(id)
   end

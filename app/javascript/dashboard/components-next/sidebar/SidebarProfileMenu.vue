@@ -1,4 +1,4 @@
-<script setup>
+﻿<script setup>
 import { computed } from 'vue';
 import Auth from 'dashboard/api/auth';
 import { useMapGetter } from 'dashboard/composables/store';
@@ -40,13 +40,13 @@ const showChatSupport = computed(() => {
     isFeatureEnabledonAccount.value(
       accountId.value,
       FEATURE_FLAGS.CONTACT_KAIROS_CRM_SUPPORT_TEAM
-    ) && globalConfig.value.kairos-crmInboxToken
+    ) && globalConfig.value.kairos_crmInboxToken
   );
 });
 
 const toggleChatSupport = () => {
-  if (window.$kairos-crm) {
-    window.$kairos-crm.toggle();
+  if (window.$kairos_crm) {
+    window.$kairos_crm.toggle();
   }
 };
 
@@ -90,7 +90,7 @@ const menuItems = computed(() => {
       showOnCustomBrandedInstance: false,
       label: t('SIDEBAR_ITEMS.DOCS'),
       icon: 'i-lucide-book',
-      link: 'https://www.kairos-crm.com/hc/user-guide/en',
+      link: 'https://www.kairos_crm.com/hc/user-guide/en',
       nativeLink: true,
       target: '_blank',
     },
@@ -99,7 +99,7 @@ const menuItems = computed(() => {
       showOnCustomBrandedInstance: false,
       label: t('SIDEBAR_ITEMS.CHANGELOG'),
       icon: 'i-lucide-scroll-text',
-      link: 'https://www.kairos-crm.com/changelog/',
+      link: 'https://www.kairos_crm.com/changelog/',
       nativeLink: true,
       target: '_blank',
     },

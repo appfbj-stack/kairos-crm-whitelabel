@@ -1,11 +1,11 @@
-import {
+﻿import {
   formatCampaigns,
   filterCampaigns,
   isPatternMatchingWithURL,
 } from '../campaignHelper';
 import campaigns from './campaignFixtures';
 
-global.kairos-crmWebChannel = {
+global.kairos_crmWebChannel = {
   workingHoursEnabled: false,
 };
 describe('#Campaigns Helper', () => {
@@ -20,21 +20,21 @@ describe('#Campaigns Helper', () => {
 
       expect(
         isPatternMatchingWithURL(
-          'https://*.kairos-crm.com/pricing/',
-          'https://app.kairos-crm.com/pricing/'
+          'https://*.kairos_crm.com/pricing/',
+          'https://app.kairos_crm.com/pricing/'
         )
       ).toBe(true);
 
       expect(
         isPatternMatchingWithURL(
-          'https://{*.}?kairos-crm.com/pricing?test=true',
-          'https://app.kairos-crm.com/pricing/?test=true'
+          'https://{*.}?kairos_crm.com/pricing?test=true',
+          'https://app.kairos_crm.com/pricing/?test=true'
         )
       ).toBe(true);
 
       expect(
         isPatternMatchingWithURL(
-          'https://{*.}?kairos-crm.com/pricing*\\?*',
+          'https://{*.}?kairos_crm.com/pricing*\\?*',
           'https://chatwoot.com/pricing/?test=true'
         )
       ).toBe(true);
@@ -48,13 +48,13 @@ describe('#Campaigns Helper', () => {
           id: 1,
           timeOnPage: 3,
           triggerOnlyDuringBusinessHours: false,
-          url: 'https://www.kairos-crm.com/pricing',
+          url: 'https://www.kairos_crm.com/pricing',
         },
         {
           id: 2,
           triggerOnlyDuringBusinessHours: false,
           timeOnPage: 6,
-          url: 'https://www.kairos-crm.com/about',
+          url: 'https://www.kairos_crm.com/about',
         },
       ]);
     });
@@ -67,23 +67,23 @@ describe('#Campaigns Helper', () => {
             {
               id: 1,
               timeOnPage: 3,
-              url: 'https://www.kairos-crm.com/pricing',
+              url: 'https://www.kairos_crm.com/pricing',
               triggerOnlyDuringBusinessHours: false,
             },
             {
               id: 2,
               timeOnPage: 6,
-              url: 'https://www.kairos-crm.com/about',
+              url: 'https://www.kairos_crm.com/about',
               triggerOnlyDuringBusinessHours: false,
             },
           ],
-          currentURL: 'https://www.kairos-crm.com/about/',
+          currentURL: 'https://www.kairos_crm.com/about/',
         })
       ).toStrictEqual([
         {
           id: 2,
           timeOnPage: 6,
-          url: 'https://www.kairos-crm.com/about',
+          url: 'https://www.kairos_crm.com/about',
           triggerOnlyDuringBusinessHours: false,
         },
       ]);
@@ -95,24 +95,24 @@ describe('#Campaigns Helper', () => {
             {
               id: 1,
               timeOnPage: 3,
-              url: 'https://www.kairos-crm.com/pricing',
+              url: 'https://www.kairos_crm.com/pricing',
               triggerOnlyDuringBusinessHours: false,
             },
             {
               id: 2,
               timeOnPage: 6,
-              url: 'https://www.kairos-crm.com/about',
+              url: 'https://www.kairos_crm.com/about',
               triggerOnlyDuringBusinessHours: true,
             },
           ],
-          currentURL: 'https://www.kairos-crm.com/about/',
+          currentURL: 'https://www.kairos_crm.com/about/',
           isInBusinessHours: true,
         })
       ).toStrictEqual([
         {
           id: 2,
           timeOnPage: 6,
-          url: 'https://www.kairos-crm.com/about',
+          url: 'https://www.kairos_crm.com/about',
           triggerOnlyDuringBusinessHours: true,
         },
       ]);
@@ -124,17 +124,17 @@ describe('#Campaigns Helper', () => {
             {
               id: 1,
               timeOnPage: 3,
-              url: 'https://www.kairos-crm.com/pricing',
+              url: 'https://www.kairos_crm.com/pricing',
               triggerOnlyDuringBusinessHours: true,
             },
             {
               id: 2,
               timeOnPage: 6,
-              url: 'https://www.kairos-crm.com/about',
+              url: 'https://www.kairos_crm.com/about',
               triggerOnlyDuringBusinessHours: true,
             },
           ],
-          currentURL: 'https://www.kairos-crm.com/about/',
+          currentURL: 'https://www.kairos_crm.com/about/',
           isInBusinessHours: false,
         })
       ).toStrictEqual([]);

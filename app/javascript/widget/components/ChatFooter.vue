@@ -1,4 +1,4 @@
-<script>
+﻿<script>
 import { mapActions, mapGetters } from 'vuex';
 import { getContrastingTextColor } from '@chatwoot/utils';
 import CustomButton from 'shared/components/Button.vue';
@@ -43,7 +43,7 @@ export default {
       return getContrastingTextColor(this.widgetColor);
     },
     hideReplyBox() {
-      const { allowMessagesAfterResolved } = window.kairos-crmWebChannel;
+      const { allowMessagesAfterResolved } = window.kairos_crmWebChannel;
       const { status } = this.conversationAttributes;
       return !allowMessagesAfterResolved && status === 'resolved';
     },

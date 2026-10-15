@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+﻿# frozen_string_literal: true
 
 class Integrations::Facebook::MessageParser
   def initialize(response_json)
@@ -58,7 +58,7 @@ class Integrations::Facebook::MessageParser
     @messaging.dig('message', 'app_id')
   end
 
-  def sent_from_kairos-crm_app?
+  def sent_from_kairos_crm_app?
     app_id.present? && app_id.to_s == GlobalConfigService.load('FB_APP_ID', '').to_s
   end
 

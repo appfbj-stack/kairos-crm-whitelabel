@@ -1,4 +1,4 @@
-require 'rails_helper'
+﻿require 'rails_helper'
 
 describe Linear do
   let(:access_token) { 'valid_access_token' }
@@ -417,7 +417,7 @@ describe Linear do
       end
 
       it 'returns linked issues' do
-        response = linear_client.linked_issues('app.kairos-crm.com')
+        response = linear_client.linked_issues('app.kairos_crm.com')
         expect(response).to eq({ 'linkedIssue' => { 'id' => 'issue1', 'title' => 'Title' } })
       end
     end
@@ -430,7 +430,7 @@ describe Linear do
       end
 
       it 'raises an exception' do
-        response = linear_client.linked_issues('app.kairos-crm.com')
+        response = linear_client.linked_issues('app.kairos_crm.com')
         expect(response).to eq({ :error => { 'errors' => [{ 'message' => 'Error retrieving data' }] }, :error_code => 422 })
       end
     end

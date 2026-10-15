@@ -1,4 +1,4 @@
-<script setup>
+﻿<script setup>
 import { ref, computed, onMounted } from 'vue';
 import GroupedStackedChangelogCard from 'dashboard/components-next/changelog-card/GroupedStackedChangelogCard.vue';
 import { useUISettings } from 'dashboard/composables/useUISettings';
@@ -85,7 +85,7 @@ const handleDismiss = slug => {
 const handleReadMore = () => {
   const currentPost = unDismissedPosts.value[currentIndex.value];
   if (currentPost?.slug) {
-    window.open(`https://www.kairos-crm.com/blog/${currentPost.slug}`, '_blank');
+    window.open(`https://www.kairos_crm.com/blog/${currentPost.slug}`, '_blank');
   }
 };
 

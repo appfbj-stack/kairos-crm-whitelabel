@@ -1,4 +1,4 @@
-import { defineComponent, h, ref } from 'vue';
+﻿import { defineComponent, h, ref } from 'vue';
 import { createStore } from 'vuex';
 import { mount } from '@vue/test-utils';
 import { useRoute } from 'vue-router';
@@ -20,7 +20,7 @@ const mountComposable = ({
   enabledLanguages = ENABLED_LANGUAGES,
   presets = {},
 } = {}) => {
-  window.kairos-crmConfig = { enabledLanguages };
+  window.kairos_crmConfig = { enabledLanguages };
 
   const store = createStore({
     modules: {
@@ -56,7 +56,7 @@ beforeEach(() => {
 });
 
 afterEach(() => {
-  delete window.kairos-crmConfig;
+  delete window.kairos_crmConfig;
 });
 
 describe('useAccountEnrichment', () => {

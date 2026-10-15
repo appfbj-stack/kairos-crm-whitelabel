@@ -1,4 +1,4 @@
-import { mount, shallowMount } from '@vue/test-utils';
+﻿import { mount, shallowMount } from '@vue/test-utils';
 import AgentMessage from '../AgentMessage.vue';
 import UnreadMessage from '../UnreadMessage.vue';
 
@@ -14,11 +14,11 @@ const channelConfig = {
 
 describe('agent identity rendering', () => {
   beforeEach(() => {
-    window.kairos-crmWebChannel = channelConfig;
+    window.kairos_crmWebChannel = channelConfig;
   });
 
   afterEach(() => {
-    delete window.kairos-crmWebChannel;
+    delete window.kairos_crmWebChannel;
   });
 
   it('renders the agent name as plain text beside widget messages', () => {

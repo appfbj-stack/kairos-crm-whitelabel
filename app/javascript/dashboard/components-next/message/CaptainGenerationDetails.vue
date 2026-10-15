@@ -1,4 +1,4 @@
-<script setup>
+﻿<script setup>
 import { computed, ref } from 'vue';
 import { useI18n, I18nT } from 'vue-i18n';
 import Icon from 'dashboard/components-next/icon/Icon.vue';
@@ -51,8 +51,8 @@ const scenarioTitles = computed(() =>
 );
 
 // Fallback for agents without a matching scenario title:
-// "kairos-crm_assistant" → "Kairos CRM assistant",
-// "scenario_5_kairos-crm_uptime_agent" → "Kairos CRM uptime".
+// "kairos_crm_assistant" â†’ "Kairos CRM assistant",
+// "scenario_5_kairos_crm_uptime_agent" â†’ "Kairos CRM uptime".
 const humanizeAgentName = agentName => {
   const label = agentName
     .replace(/^scenario_\d+_/, '')
@@ -172,7 +172,7 @@ const devDetails = computed(() => {
   const credits = t('CONVERSATION.CAPTAIN_GENERATION.CREDITS', {
     credits: session.value.creditsConsumed,
   });
-  return `${model} · ${credits}`;
+  return `${model} Â· ${credits}`;
 });
 
 // With the sparkle at the row start, the meta gets pushed to the opposite end;

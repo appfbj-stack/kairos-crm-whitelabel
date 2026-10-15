@@ -1,4 +1,4 @@
-<script setup>
+﻿<script setup>
 import { computed, onMounted, ref } from 'vue';
 import { useRouter } from 'vue-router';
 import { useMapGetter, useStore } from 'dashboard/composables/store.js';
@@ -113,7 +113,7 @@ const handleBillingPageLogic = async () => {
   // If cloud user, fetch account details first
   await fetchAccountDetails();
 
-  // Waiting on the user to pick a billing currency — don't auto-refresh.
+  // Waiting on the user to pick a billing currency â€” don't auto-refresh.
   if (currencySelectionRequired.value) return;
 
   // If still no billing plan after fetch
@@ -140,7 +140,7 @@ const handleBillingPageLogic = async () => {
 const onSelectCurrency = async code => {
   await store.dispatch('accounts/selectBillingCurrency', code);
   currencySelectionRequired.value = false;
-  // Currency stored and customer creation kicked off — resume the standard wait flow.
+  // Currency stored and customer creation kicked off â€” resume the standard wait flow.
   await handleBillingPageLogic();
 };
 
@@ -149,8 +149,8 @@ const onClickBillingPortal = () => {
 };
 
 const onToggleChatWindow = () => {
-  if (window.$kairos-crm) {
-    window.$kairos-crm.toggle();
+  if (window.$kairos_crm) {
+    window.$kairos_crm.toggle();
   }
 };
 

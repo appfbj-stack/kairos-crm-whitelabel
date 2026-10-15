@@ -1,4 +1,4 @@
-require 'rails_helper'
+﻿require 'rails_helper'
 RSpec.describe MailPresenter do
   include ActionMailbox::TestHelper
 
@@ -108,9 +108,9 @@ RSpec.describe MailPresenter do
 
     it 'encodes email to UTF-8' do
       decorated_html_mail = described_class.new(ascii_mail)
-      expect(decorated_html_mail.subject).to eq('أهلين عميلنا الكريم ')
+      expect(decorated_html_mail.subject).to eq('Ø£Ù‡Ù„ÙŠÙ† Ø¹Ù…ÙŠÙ„Ù†Ø§ Ø§Ù„ÙƒØ±ÙŠÙ… ')
       expect(decorated_html_mail.text_content[:reply][0..70]).to eq(
-        'أنظروا، أنا أحتاجها فقط لتقوم بالتدقيق في مقالتي الشخصية'
+        'Ø£Ù†Ø¸Ø±ÙˆØ§ØŒ Ø£Ù†Ø§ Ø£Ø­ØªØ§Ø¬Ù‡Ø§ ÙÙ‚Ø· Ù„ØªÙ‚ÙˆÙ… Ø¨Ø§Ù„ØªØ¯Ù‚ÙŠÙ‚ ÙÙŠ Ù…Ù‚Ø§Ù„ØªÙŠ Ø§Ù„Ø´Ø®ØµÙŠØ©'
       )
     end
 
@@ -226,7 +226,7 @@ RSpec.describe MailPresenter do
 
         expect(presenter.original_sender).to be_nil
         expect(presenter.sender_name).to be_nil
-        expect(presenter.notification_email_from_kairos-crm?).to be(false)
+        expect(presenter.notification_email_from_kairos_crm?).to be(false)
       end
 
       it 'falls back to from header when reply_to is malformed' do
@@ -254,7 +254,7 @@ RSpec.describe MailPresenter do
 
         with_modified_env MAILER_SENDER_EMAIL: 'Kairos CRM <accounts@chatwoot.com>' do
           presenter = described_class.new(mail_with_uppercase_sender)
-          expect(presenter.notification_email_from_kairos-crm?).to be(true)
+          expect(presenter.notification_email_from_kairos_crm?).to be(true)
         end
       end
     end
