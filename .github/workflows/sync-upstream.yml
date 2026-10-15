@@ -1,0 +1,66 @@
+name: Sync Upstream
+
+on:
+  schedule:
+    # Roda toda segunda-feira as 06:00 UTC (3h da manha BRT)
+    - cron: "0 6 * * 1"
+  workflow_dispatch: # permite rodar manual
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Checkout fork
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Add upstream remote
+        run: |
+          git remote add upstream https://github.com/chatwoot/chatwoot.git
+          git fetch upstream develop
+        shell: bash
+
+      - name: Create sync branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          # Cria branch a partir do develop do fork
+          git checkout -b upstream-sync/${{ github.run_id }} origin/develop
+        shell: bash
+
+      - name: Merge upstream/develop
+        run: |
+          # Tenta merge; se der conflito, aborta e cria issue
+          if ! git merge upstream/develop --no-edit --allow-unrelated-histories; then
+            echo "MERGE_CONFLICT=true" >> $GITHUB_ENV
+            git merge --abort
+          fi
+        shell: bash
+
+      - name: Open PR
+        if: env.MERGE_CONFLICT != 'true'
+        run: |
+          git push origin HEAD:upstream-sync/${{ github.run_id }}
+          gh pr create \
+            --base develop \
+            --head upstream-sync/${{ github.run_id }} \
+            --title "chore(sync): merge upstream Chatwoot develop" \
+            --body "Sync automatico com [chatwoot/chatwoot@develop](https://github.com/chatwoot/chatwoot/tree/develop). Revisar conflitos de white-label antes de mergear."
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
+
+      - name: Create conflict issue
+        if: env.MERGE_CONFLICT == 'true'
+        run: |
+          gh issue create \
+            --title "Upstream sync com conflito manual" \
+            --body "O sync automatico com chatwoot/chatwoot@develop deu conflito. Revisar manualmente: \`git fetch upstream develop && git merge upstream/develop\`"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
