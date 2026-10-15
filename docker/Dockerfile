@@ -1,5 +1,5 @@
 # pre-build stage
-FROM node:24-alpine as node
+FROM node:25-alpine as node
 FROM ruby:3.4.4-alpine3.21 AS pre-builder
 
 ARG NODE_VERSION="24.13.0"
