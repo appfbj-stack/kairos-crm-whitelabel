@@ -1,5 +1,5 @@
-import { shallowMount } from '@vue/test-utils';
-import { REPLY_EDITOR_MODES } from 'dashboard/components/widgets/KairosWriter/constants';
+﻿import { shallowMount } from '@vue/test-utils';
+import { REPLY_EDITOR_MODES } from 'dashboard/components/widgets/KairosWriter/constants.js';
 import { nextTick } from 'vue';
 import { createStore } from 'vuex';
 import ReplyBox from '../ReplyBox.vue';
@@ -193,7 +193,7 @@ describe('ReplyBox', () => {
       expect(topPanel(wrapper).isReplyRestricted).toBe(true);
       expect(bottomPanel(wrapper).enableWhatsAppTemplates).toBe(false);
       expect(bottomPanel(wrapper).enableContentTemplates).toBe(false);
-      // The note composer stays usable — this is a restriction, not a lockout.
+      // The note composer stays usable â€” this is a restriction, not a lockout.
       expect(topPanel(wrapper).isEditorDisabled).toBe(false);
     });
 

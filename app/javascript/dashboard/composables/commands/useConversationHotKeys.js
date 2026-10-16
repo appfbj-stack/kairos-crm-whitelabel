@@ -1,4 +1,4 @@
-import { computed } from 'vue';
+﻿import { computed } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { useStore, useMapGetter } from 'dashboard/composables/store';
 import { useRoute } from 'vue-router';
@@ -7,7 +7,7 @@ import { useConversationLabels } from 'dashboard/composables/useConversationLabe
 import { useCaptain } from 'dashboard/composables/useCaptain';
 import { useAgentsList } from 'dashboard/composables/useAgentsList';
 import { CMD_AI_ASSIST } from 'dashboard/helper/commandbar/events';
-import { REPLY_EDITOR_MODES } from 'dashboard/components/widgets/KairosWriter/constants';
+import { REPLY_EDITOR_MODES } from 'dashboard/components/widgets/KairosWriter/constants.js';
 
 import kairosConstants from 'dashboard/constants/globals';
 

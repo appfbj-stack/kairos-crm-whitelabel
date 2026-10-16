@@ -1,4 +1,4 @@
-<script>
+﻿<script>
 import { defineAsyncComponent, useTemplateRef } from 'vue';
 import { mapGetters } from 'vuex';
 import { useAlert } from 'dashboard/composables';
@@ -17,7 +17,7 @@ import CopilotEditorSection from './CopilotEditorSection.vue';
 import MessageSignatureMissingAlert from './MessageSignatureMissingAlert.vue';
 import ReplyBoxBanner from './ReplyBoxBanner.vue';
 import QuotedEmailPreview from './QuotedEmailPreview.vue';
-import { REPLY_EDITOR_MODES } from 'dashboard/components/widgets/KairosWriter/constants';
+import { REPLY_EDITOR_MODES } from 'dashboard/components/widgets/KairosWriter/constants.js';
 import KairosMessageEditor from 'dashboard/components/widgets/KairosWriter/Editor.vue';
 import AudioRecorder from 'dashboard/components/widgets/KairosWriter/AudioRecorder.vue';
 import { AUDIO_FORMATS } from 'shared/constants/messages';
@@ -356,7 +356,7 @@ export default {
       }
       const keyLabel = this.isEditorHotKeyEnabled('cmd_enter')
         ? `(${this.shortcutKey})`
-        : '(↵)';
+        : '(â†µ)';
       return `${sendMessageText} ${keyLabel}`;
     },
     replyBoxClass() {

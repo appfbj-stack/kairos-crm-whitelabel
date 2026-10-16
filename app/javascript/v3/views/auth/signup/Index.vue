@@ -1,4 +1,4 @@
-<script setup>
+﻿<script setup>
 import { ref, computed, onBeforeMount } from 'vue';
 import { useStore } from 'vuex';
 import SignupForm from './components/Signup/Form.vue';
@@ -34,7 +34,7 @@ const resizeContainers = () => {
     <div
       v-show="!isLoading"
       class="relative flex max-w-[960px] bg-white dark:bg-n-solid-2 rounded-lg outline outline-1 outline-n-container shadow-sm"
-      :class="{ 'w-auto xl:w-full': isAKairos CRMInstance }"
+      :class="{ 'w-auto xl:w-full': isAKairosCrmInstance }"
     >
       <div class="flex-1 flex items-center justify-center py-10 px-10">
         <div class="max-w-[420px] w-full">
@@ -71,7 +71,7 @@ const resizeContainers = () => {
         </div>
       </div>
       <Testimonials
-        v-if="isAKairos CRMInstance"
+        v-if="isAKairosCrmInstance"
         class="flex-1 hidden xl:flex"
         @resize-containers="resizeContainers"
       />

@@ -1,11 +1,11 @@
-import { useConversationHotKeys } from '../useConversationHotKeys';
+﻿import { useConversationHotKeys } from '../useConversationHotKeys';
 import { useStore, useMapGetter } from 'dashboard/composables/store';
 import { useI18n } from 'vue-i18n';
 import { useRoute } from 'vue-router';
 import { useConversationLabels } from 'dashboard/composables/useConversationLabels';
 import { useCaptain } from 'dashboard/composables/useCaptain';
 import { useAgentsList } from 'dashboard/composables/useAgentsList';
-import { REPLY_EDITOR_MODES } from 'dashboard/components/widgets/KairosWriter/constants';
+import { REPLY_EDITOR_MODES } from 'dashboard/components/widgets/KairosWriter/constants.js';
 import {
   mockAssignableAgents,
   mockCurrentChat,
