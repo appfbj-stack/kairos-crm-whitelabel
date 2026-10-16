@@ -31,7 +31,7 @@ RSpec.describe 'Accounts API', type: :request do
         end
       end
 
-      it 'calls Kairos CRMCaptcha' do
+      it 'calls KairosCrmCaptcha' do
         with_modified_env ENABLE_ACCOUNT_SIGNUP: 'true' do
           captcha = double
           allow(account_builder).to receive(:perform).and_return([user, account])

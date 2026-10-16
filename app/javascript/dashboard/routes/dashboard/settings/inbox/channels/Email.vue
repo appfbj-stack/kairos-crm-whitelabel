@@ -15,7 +15,7 @@ const getters = useStoreGetters();
 const { t } = useI18n();
 
 const globalConfig = getters['globalConfig/get'];
-const isAKairosCrmInstance = getters['globalConfig/isAKairos CRMInstance'];
+const isAKairosCrmInstance = getters['globalConfig/isAKairosCrmInstance'];
 
 const emailProviderList = computed(() => {
   return [
